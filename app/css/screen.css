@@ -6705,7 +6705,6 @@ button.list-group-item-danger.active:focus {
 
 .modal-footer {
   padding: 0.9em 0.9em;
-  text-align: right;
   border-top: 0.05556em solid #cccccc;
 }
 .modal-footer:after {
@@ -8156,13 +8155,16 @@ button.list-group-item-danger.active:focus {
   content: '';
 }
 
+.overflow-text, .sortable-text {
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
 .sortable-text {
   display: inline-block;
   float: left;
-  overflow: hidden;
   width: 80%;
-  text-align: left;
-  text-overflow: ellipsis;
 }
 
 .sortable-drag {
