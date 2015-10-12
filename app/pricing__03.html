@@ -544,36 +544,38 @@
                 $(this__type + "_preview").text(this__title);
                 $(".sortable-workbench " + this__type + " .sortable-text").text(this__title);
             });
+            //  Change Sizes
+
             //  Make bold
             $(this__type + "_style_bold").on("change", function() {
                 if ($(this).prop("checked")) {
                     $(this__type + "_preview").addClass("is-bold");
+                    $(".sortable-workbench " + this__type + " .sortable-text").addClass("is-bold");
                 } else {
                     $(this__type + "_preview").removeClass("is-bold");
+                    $(".sortable-workbench " + this__type + " .sortable-text").removeClass("is-bold");
                 };
             });
             //  Make italic
             $(this__type + "_style_italic").on("change", function() {
                 if ($(this).prop("checked")) {
                     $(this__type + "_preview").addClass("is-italic");
+                    $(".sortable-workbench " + this__type + " .sortable-text").addClass("is-italic");
                 } else {
                     $(this__type + "_preview").removeClass("is-italic");
+                    $(".sortable-workbench " + this__type + " .sortable-text").removeClass("is-italic");
                 };
             });
-            //  Make strikethrough
+            //  Make strike
             $(this__type + "_style_strike").on("change", function() {
                 if ($(this).prop("checked")) {
                     $(this__type + "_preview").addClass("is-strike");
+                    $(".sortable-workbench " + this__type + " .sortable-text").addClass("is-strike");
                 } else {
                     $(this__type + "_preview").removeClass("is-strike");
+                    $(".sortable-workbench " + this__type + " .sortable-text").removeClass("is-strike");
                 };
             });
-            //  id="static_price_input"
-            //  id="static_price_style_bold"
-            //  id="static_price_style_italic"
-            //  id="static_price_style_strike"
-            //  id="static_price_logic"
-            //  id="static_price_preview"
         </script>
     </body>
 
