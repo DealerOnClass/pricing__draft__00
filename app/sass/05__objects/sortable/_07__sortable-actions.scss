@@ -1,0 +1,9 @@
+.sortable-action-item {
+    padding: ($global__x / 2);
+}
+
+.sortable-toolbox {
+    .sortable-action-item {
+        display: none;
+    }
+}

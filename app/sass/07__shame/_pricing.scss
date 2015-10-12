@@ -1,0 +1,24 @@
+// For pricing demo - delete later
+$pricing__y: rhythm(2);
+.pricing {
+    margin-bottom: rhythm(6);
+    .navbar-static-top {
+        margin-bottom: $pricing__y;
+    }
+    header + section {
+        margin-top: $pricing__y;
+    }
+    .btn-primary {
+        transition: border-color 0.15s ease-in-out;
+
+        color: $body__color;
+        border-width: $two__pixels;
+        border-color: $gray__01;
+        background-color: $white;
+        &:hover,
+        &:active,
+        &:focus {
+            border-color: shade($gray__01, 10%);
+        }
+    }
+}

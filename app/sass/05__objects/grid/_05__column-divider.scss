@@ -1,0 +1,14 @@
+.col-divider:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: $one__pixel;
+    height: 100%;
+
+    content: '';
+
+    background-color: $col-divider__bg;
+}

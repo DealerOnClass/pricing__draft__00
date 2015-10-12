@@ -1,0 +1,17 @@
+.panel-body {
+    padding: $panel-body__padding;
+
+    @include clearfix;
+
+    > form {
+        > .form-group:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.panel {
+    > .btn.btn-block + .panel-collapse {
+        border-top: $one__pixel solid $panel-body__border;
+    }
+}

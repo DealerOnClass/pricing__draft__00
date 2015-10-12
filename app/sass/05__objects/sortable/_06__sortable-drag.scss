@@ -1,0 +1,12 @@
+.sortable-drag {
+    position: relative;
+    top: $global__y;
+
+    float: right;
+}
+
+.sortable-workbench {
+    .sortable-drag {
+        display: none;
+    }
+}

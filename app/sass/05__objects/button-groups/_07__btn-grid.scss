@@ -1,0 +1,11 @@
+.btn-grid {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .btn {
+        float: left;
+        margin: $btn-grid__margin;
+    }
+}
