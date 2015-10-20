@@ -2502,32 +2502,38 @@ h6 .small,
 }
 
 h1,
-.h1 {
+.h1,
+[data-size="h1"] {
   font-size: 3.15733em;
 }
 
 h2,
-.h2 {
+.h2,
+[data-size="h2"] {
   font-size: 2.36859em;
 }
 
 h3,
-.h3 {
+.h3,
+[data-size="h3"] {
   font-size: 1.77689em;
 }
 
 h4,
-.h4 {
+.h4,
+[data-size="h4"] {
   font-size: 1.333em;
 }
 
 h5,
-.h5 {
+.h5,
+[data-size="h5"] {
   font-size: 1em;
 }
 
 h6,
 .h6,
+[data-size="h6"],
 small,
 .small {
   font-size: 0.75019em;
