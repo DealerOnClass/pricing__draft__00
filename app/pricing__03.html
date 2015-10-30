@@ -34,7 +34,7 @@
 
                 <div class="collapse navbar-collapse" id="navbar-dealeron">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
                     </ul>
                     <div class="navbar-brand">Pricing 03</div>
                 </div>
@@ -337,7 +337,7 @@
                             <div class="form-group">
                                 <label for="static_price_label" class="col-sm-4 control-label">Label</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" data-change="text" id="static_price_text" placeholder="Static Price" type="text">
+                                    <input class="form-control" data-change="text" id="static_price_text" placeholder="Static Price" type="text" value="Static Price">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -409,7 +409,7 @@
                             <div class="form-group">
                                 <label for="calc_price_label" class="col-sm-4 control-label">Label</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" data-change="text" id="calc_price_text" placeholder="Static Price" type="text">
+                                    <input class="form-control" data-change="text" id="calc_price_text" placeholder="Static Price" type="text" value="Calculated Price">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -474,10 +474,67 @@
                         <button type="button" class="close btn btn-default" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
-                        <h4 id="modal-title" class="modal-title">Edit Feed Price</h4>
+                        <h4 id="modal-title" class="modal-title">Edit feed Price</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Do some stuff</p>
+                        <form class="form form-horizontal text-left">
+                            <div class="form-group">
+                                <label for="feed_price_label" class="col-sm-4 control-label">Label</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" data-change="text" id="feed_price_text" placeholder="feed Price" type="text" value="Feed Price">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="feed_price_size" class="col-sm-4 control-label">Size</label>
+                                <div class="col-sm-8">
+                                    <select id="feed_price_size" data-change="size" class="form-control">
+                                        <option value="">Default</option>
+                                        <option value="h1">Heading 1</option>
+                                        <option value="h2">Heading 2</option>
+                                        <option value="h3">Heading 3</option>
+                                        <option value="h4">Heading 4</option>
+                                        <option value="h5">Regular</option>
+                                        <option value="h6">Small</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="feed_price_style" class="col-sm-4 control-label">Style</label>
+                                <div class="col-sm-8">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="" id="feed_price_bold" data-parent="feed_price" data-change="style" type="checkbox"><strong>Bold</strong>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="" id="feed_price_italic" data-parent="feed_price" data-change="style" type="checkbox"><em>Italic</em>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="" id="feed_price_strike" data-parent="feed_price" data-change="style" type="checkbox"><strike>Strikethrough</strike>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="feed_price_logic" class="col-sm-4 control-label">Logic</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" id="feed_price_logic" placeholder="#Item|<widget type>|<vehicle type>|<filter>#" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <span>Preview</span>
+                            </div>
+                            <div class="col-sm-8">
+                                <span id="feed_price_preview"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -551,7 +608,6 @@
         <script src="js/sortable.min.js"></script>
         <script src="js/functions.js"></script>
         <script src="js/pricing/pricing__03.js"></script>
-        <script src="js/sortable.js"></script>
     </body>
 
 </html>

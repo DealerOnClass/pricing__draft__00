@@ -28,7 +28,8 @@ gulp.task('compass', function() {
 //  Serve
 gulp.task('serve',['compass'], function() {
     browserSync.init({
-        server: "./app"
+        server: "./app",
+        notify: false
     });
     gulp.watch('app/sass/**/*.scss', ['compass']);
     gulp.watch('app/*.html').on('change', reload);

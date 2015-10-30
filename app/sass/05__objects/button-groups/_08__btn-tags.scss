@@ -1,0 +1,31 @@
+.btn-tags {
+    &:after {
+        display: block;
+        clear: both;
+
+        content: '';
+    }
+    .btn {
+        float: left;
+
+        margin: $btn-grid__margin;
+    }
+    .sortable-text {
+        width: 90%;
+
+        &:after {
+            display: block;
+            float: left;
+
+            width: $global__x;
+
+            content: '';
+        }
+    }
+    .sortable-remove {
+        margin: 0;
+    }
+    .sortable-action-item {
+        padding: 0;
+    }
+}

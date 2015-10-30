@@ -114,7 +114,9 @@
     "05__objects/button-groups/05__btn-group__dropdown-toggle",
     "05__objects/button-groups/06__btn-toolbar",
     "05__objects/button-groups/07__btn-grid",
-    "05__objects/button-groups/08__btn-group-variations";
+    "05__objects/button-groups/08__btn-tags",
+    "05__objects/button-groups/09__btn-sentence",
+    "05__objects/button-groups/10__btn-group-variations";
 
 @import
     "05__objects/card/00__variables",
@@ -309,7 +311,9 @@
     "05__objects/sortable/07__sortable-actions",
     "05__objects/sortable/08__sortable-remove",
     "05__objects/sortable/09__sortable-remove-all",
-    "05__objects/sortable/10__sortable-select-all";
+    "05__objects/sortable/10__sortable-select-all",
+    "05__objects/sortable/11__sortable-is-enabled",
+    "05__objects/sortable/12__sortable-is-joiner";
 
 @import
     "05__objects/sr";
@@ -351,5 +355,7 @@
     "06__components/navs";
 
 //  07  Shame
-@import "07__shame/demo";
-@import "07__shame/pricing";
+@import
+    "07__shame/demo",
+    "07__shame/pricing",
+    "07__shame/querylang";

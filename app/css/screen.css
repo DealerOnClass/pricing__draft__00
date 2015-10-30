@@ -3642,6 +3642,57 @@ h5.btn-group {
   margin: 0 0.45em 0.45em 0;
 }
 
+.btn-tags:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.btn-tags .btn {
+  float: left;
+  margin: 0 0.45em 0.45em 0;
+}
+.btn-tags .sortable-text {
+  width: 90%;
+}
+.btn-tags .sortable-text:after {
+  display: block;
+  float: left;
+  width: 0.9em;
+  content: '';
+}
+.btn-tags .sortable-remove {
+  margin: 0;
+}
+.btn-tags .sortable-action-item {
+  padding: 0;
+}
+
+.btn-sentence .btn {
+  margin-right: 0;
+}
+.btn-sentence .btn + .btn:not(:last-child) {
+  border-radius: 0;
+}
+.btn-sentence .btn:first-child:not(:only-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-sentence .btn:last-child:not(:only-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-sentence .btn[data-type="joiner"] {
+  border-radius: 0.3em !important;
+}
+.btn-sentence .btn[data-type="joiner"] + .btn {
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+.btn-sentence .btn[data-type="value"] {
+  border-top-right-radius: 0.3em !important;
+  border-bottom-right-radius: 0.3em !important;
+}
+
 .card {
   position: relative;
   margin-bottom: 0.9em;
@@ -8195,6 +8246,7 @@ button.list-group-item-danger.active:focus {
   margin-right: -0.9em;
 }
 
+.sortable-finished,
 .sortable-remove-all {
   font-family: "AvenirRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
@@ -8205,6 +8257,18 @@ button.list-group-item-danger.active:focus {
   font-family: "AvenirRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   top: -0.45em;
+}
+
+.sortable-is-enabled {
+  background-color: #ceeace;
+  border-color: #5cb85c;
+}
+
+.sortable-workbench .sortable[data-type="joiner"] {
+  float: none;
+  clear: both;
+  display: block;
+  width: 5em !important;
 }
 
 .sr-only {
@@ -8958,4 +9022,8 @@ h3 {
 }
 .pricing .btn-primary:hover, .pricing .btn-primary:active, .pricing .btn-primary:focus {
   border-color: #cfcfcf;
+}
+
+#querylang__toolbox-parameter .btn {
+  width: 31%;
 }
