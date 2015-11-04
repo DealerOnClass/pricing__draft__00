@@ -32,18 +32,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h5>
-                        Get All
+                    <h5 style="margin-top: .9em">
+                        Create Query
                         <div class="btn-group pull-right">
                             <a class="btn btn-default sortable-remove-all">Clear</a>
                             <a class="btn btn-default sortable-finished">I'm Done</a>
                         </div>
                     </h5>
-                    <div id="querylang__workbench" class="sortable-workbench btn-tags btn-sentence" style="min-height: 16em;"></div>
-                    <h5 style="margin-top: .9em">
-                        Operators
-                    </h5>
+                    <div id="querylang__query-workbench" class="sortable-workbench btn-tags btn-sentence" style="min-height: 6em;"></div>
                     <div id="querylang__toolbox-operator" class="sortable-toolbox btn-tags">
+                        <h5 style="margin-top: .9em">
+                            Operators
+                        </h5>
                         <attr title="Equals" class="btn btn-default clearfix sortable" data-type="operator" data-id="1">
                             <span class="sortable-text">is equal to</span>
                             <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
@@ -55,12 +55,12 @@
                             <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                         </attr>
                         <attr title="Greater than or Equal to" class="btn btn-default clearfix sortable" data-type="operator" data-id="3">
-                            <span class="sortable-text">&gt;=</span>
+                            <span class="sortable-text">greater or equal to</span>
                             <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                             <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                         </attr>
                         <attr title="Less than or Equal to" class="btn btn-default clearfix sortable" data-type="operator" data-id="4">
-                            <span class="sortable-text">&lt;=</span>
+                            <span class="sortable-text">less or equal to</span>
                             <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                             <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                         </attr>
@@ -86,14 +86,28 @@
                         </attr>
                         <div class="clearfix"></div>
                         <h5 style="margin-top: .9em">
-                            Joiners
+                            Little Joiners
                         </h5>
-                        <attr title="or" class="btn btn-default clearfix sortable" data-type="joiner" data-id="9">
+                        <attr title="or" class="btn btn-default clearfix sortable" data-type="s_joiner" data-id="9">
                             <span class="sortable-text">or</span>
                             <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                             <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                         </attr>
-                        <attr title="and" class="btn btn-default clearfix sortable" data-type="joiner" data-id="10">
+                        <attr title="and" class="btn btn-default clearfix sortable" data-type="s_joiner" data-id="10">
+                            <span class="sortable-text">and</span>
+                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                        </attr>
+                        <div class="clearfix"></div>
+                        <h5 style="margin-top: .9em">
+                            Big Joiners
+                        </h5>
+                        <attr title="or" class="btn btn-default clearfix sortable" data-type="b_joiner" data-id="9">
+                            <span class="sortable-text">or</span>
+                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                        </attr>
+                        <attr title="and" class="btn btn-default clearfix sortable" data-type="b_joiner" data-id="10">
                             <span class="sortable-text">and</span>
                             <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                             <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
@@ -102,8 +116,17 @@
                 </div>
                 <div class="col-sm-6">
                     <div id="querylang__toolbox-parameter" class="sortable-toolbox btn-tags">
-                        <h5>
-                            Value
+                        <h5 style="margin-top: .9em">
+                            Group
+                        </h5>
+                        <attr title="String" class="btn btn-default clearfix sortable" data-type="value">
+                            <span class="sortable-text">String</span>
+                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                        </attr>
+                        <div class="clearfix"></div>
+                        <h5 style="margin-top: .9em">
+                            Value (for demo purposes)
                         </h5>
                         <attr title="String" class="btn btn-default clearfix sortable" data-type="value">
                             <span class="sortable-text">String</span>
@@ -254,6 +277,30 @@
                             <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                             <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                         </attr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>When groups are combined...</h3>
+                    <div class="sortable-workbench btn-tags btn-sentence">
+                        <div class="btn btn-default clearfix sortable">
+                            <attr title="Body style" class="btn btn-default clearfix sortable" data-type="combined" data-accepts="[&quot;1&quot;,&quot;2&quot;,&quot;5&quot;,&quot;6&quot;]" draggable="false">
+                                <span class="sortable-text">         Body Style  is equal to String</span>
+                                <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                <a class="sortable-action-item sortable-remove" draggable="false"><i class="fa fa-times fa-sm"></i></a>
+                            </attr>
+                            <attr title="and" class="btn btn-default clearfix sortable" data-type="b_joiner" data-id="10" draggable="false">
+                                <span class="sortable-text">       and</span>
+                                <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                <a class="sortable-action-item sortable-remove" draggable="false"><i class="fa fa-times fa-sm"></i></a>
+                            </attr>
+                            <attr title="Cpo" class="btn btn-default clearfix sortable" data-type="combined" data-accepts="[&quot;1&quot;]" draggable="false">
+                                <span class="sortable-text">       CPO       is equal to       String       and       CPO       is equal to       String and</span>
+                                <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                <a class="sortable-action-item sortable-remove" draggable="false"><i class="fa fa-times fa-sm"></i></a>
+                            </attr>
+                        </div>
                     </div>
                 </div>
             </div>

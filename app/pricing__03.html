@@ -47,7 +47,8 @@
                     <span class="pull-left">Step 1: Name and describe your pricing template</span>
                     <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
                 </a>
-                <div class="panel-collapse collapse in" id="pricing__template__creation__collapse__step1">
+                <!-- had "in" -->
+                <div class="panel-collapse collapse" id="pricing__template__creation__collapse__step1">
                     <div class="panel-body">
                         <form class="form form-horizontal text-left" action="">
                             <div class="form-group">
@@ -221,7 +222,8 @@
                     <span class="pull-left">Step 3: Display</span>
                     <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
                 </a>
-                <div class="panel-collapse collapse" id="pricing__template__creation__collapse__step3">
+                <!-- added "in" -->
+                <div class="panel-collapse collapse in" id="pricing__template__creation__collapse__step3">
                     <div class="panel-body">
                         <h5>How to use:</h5>
                         <p>Create a template by dragging toolbox items onto the workbench.<br>Apply styles by dragging style items onto elements within the workbench.<br>Preview your work on the right.</p>
@@ -229,43 +231,47 @@
                             <div class="col-xs-6 col-sm-6 col-md-4">
                                 <h5>Toolbox</h5>
                                 <div id="pricing__template__creation__step3__toolbox" class="sortable-toolbox">
-                                    <div class="btn btn-default btn-block clearfix sortable" id="static_price">
-                                        <span class="sortable-text">Static Price</span>
+                                    <div class="btn btn-default btn-block clearfix sortable" id="static_price" data-preview="text">
+                                        <span class="sortable-text sortable-text-label">Static Price</span>
+                                        <span class="sortable-text sortable-text-value">XX,XXX</span>
                                         <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                                         <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#static_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
                                         <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                                     </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="calc_price">
-                                        <span class="sortable-text">Calculated Price</span>
+                                    <div class="btn btn-default btn-block clearfix sortable" id="calc_price" data-preview="text">
+                                        <span class="sortable-text sortable-text-label">Calculated Price</span>
+                                        <span class="sortable-text sortable-text-value">XX,XXX</span>
                                         <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                                         <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#calc_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
                                         <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                                     </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="feed_price">
-                                        <span class="sortable-text">Feed Price</span>
+                                    <div class="btn btn-default btn-block clearfix sortable" id="feed_price" data-preview="text">
+                                        <span class="sortable-text sortable-text-label">Feed Price</span>
+                                        <span class="sortable-text sortable-text-value">XX,XXX</span>
                                         <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                                         <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#feed_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
                                         <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                                     </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="rebate">
-                                        <span class="sortable-text">Rebates</span>
+                                    <div class="btn btn-default btn-block clearfix sortable" id="rebate" data-preview="text">
+                                        <span class="sortable-text sortable-text-label">Rebates</span>
+                                        <span class="sortable-text sortable-text-value">XX,XXX</span>
                                         <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                                         <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#rebate_modal"><i class="fa fa-pencil fa-sm"></i></a>
                                         <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                                     </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="text">
+                                    <div class="btn btn-default btn-block clearfix sortable" id="text" data-preview="text">
                                         <span class="sortable-text">Text</span>
                                         <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                                         <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#text_modal"><i class="fa fa-pencil fa-sm"></i></a>
                                         <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                                     </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="button">
+                                    <div class="btn btn-default btn-block clearfix sortable" id="button" data-preview="button">
                                         <span class="sortable-text">Button</span>
                                         <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                                         <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#button_modal"><i class="fa fa-pencil fa-sm"></i></a>
                                         <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
                                     </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="divider">
+                                    <div class="btn btn-default btn-block clearfix sortable" id="divider" data-preview="divider">
                                         <span class="sortable-text">Divider</span>
                                         <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                                         <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#divider_modal"><i class="fa fa-pencil fa-sm"></i></a>
@@ -284,7 +290,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-4">
                                 <h5>Preview</h5>
-                                <form class="form form-horizontal text-left" action="">
+                                <form id="pricing__template__creation__step3__preview" class="form form-horizontal text-left sortable-preview" action="">
                                     <div class="form-group">
                                         <label class="col-xxs-6 control-label">MSRP:</label>
                                         <label class="col-xxs-6 control-label">$XX,XXX</label>
@@ -341,6 +347,12 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="static_price_value" class="col-sm-4 control-label">Value</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" data-change="value" id="static_price_value" placeholder="XX,XXX" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="static_price_size" class="col-sm-4 control-label">Size</label>
                                 <div class="col-sm-8">
                                     <select id="static_price_size" data-change="size" class="form-control">
@@ -388,7 +400,8 @@
                                 <span>Preview</span>
                             </div>
                             <div class="col-sm-8">
-                                <span id="static_price_preview"></span>
+                                <span id="static_price_preview" class="sortable-text-label"></span>
+                                <span id="static_price_preview_value" class="sortable-text-value"></span>
                             </div>
                         </div>
                     </div>
@@ -410,6 +423,12 @@
                                 <label for="calc_price_label" class="col-sm-4 control-label">Label</label>
                                 <div class="col-sm-8">
                                     <input class="form-control" data-change="text" id="calc_price_text" placeholder="Static Price" type="text" value="Calculated Price">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="calc_price_value" class="col-sm-4 control-label">Value</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" data-change="value" id="calc_price_value" placeholder="XX,XXX" type="text" value="">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -460,7 +479,8 @@
                                 <span>Preview</span>
                             </div>
                             <div class="col-sm-8">
-                                <span id="calc_price_preview"></span>
+                                <span id="calc_price_preview" class="sortable-text-label"></span>
+                                <span id="calc_price_preview_value" class="sortable-text-value"></span>
                             </div>
                         </div>
                     </div>
@@ -482,6 +502,12 @@
                                 <label for="feed_price_label" class="col-sm-4 control-label">Label</label>
                                 <div class="col-sm-8">
                                     <input class="form-control" data-change="text" id="feed_price_text" placeholder="feed Price" type="text" value="Feed Price">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="feed_price_value" class="col-sm-4 control-label">Value</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" data-change="value" id="feed_price_value" placeholder="XX,XXX" type="text" value="">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -533,6 +559,8 @@
                             </div>
                             <div class="col-sm-8">
                                 <span id="feed_price_preview"></span>
+                                <span id="feed_price_preview" class="sortable-text-label"></span>
+                                <span id="feed_price_preview_value" class="sortable-text-value"></span>
                             </div>
                         </div>
                     </div>

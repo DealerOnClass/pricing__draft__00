@@ -14,9 +14,7 @@ $(".sortable-remove-all").on("click", function() {
     $(".btn[data-type='operator']").removeClass("sortable-is-enabled");
     $(".btn[data-type='parameter']").removeClass("sortable-is-enabled");
     $(".btn[data-type='value']").removeClass("sortable-is-enabled");
-    $(".btn[data-type='s_joiner']").removeClass("sortable-is-enabled");
-    $(".btn[data-type='b_joiner']").removeClass("sortable-is-enabled");
-    $(".btn[data-type='combined']").removeClass("sortable-is-enabled");
+    $(".btn[data-type='joiner']").removeClass("sortable-is-enabled");
 });
 //
 //
@@ -34,18 +32,14 @@ function CheckPossibleTags(el) {
         $(".btn[data-type='operator']").removeClass(toggleClass);
         $(".btn[data-type='parameter']").removeClass(toggleClass);
         $(".btn[data-type='value']").removeClass(toggleClass);
-        $(".btn[data-type='s_joiner']").removeClass(toggleClass);
-        $(".btn[data-type='b_joiner']").removeClass(toggleClass);
-        $(".btn[data-type='combined']").removeClass(toggleClass);
+        $(".btn[data-type='joiner']").removeClass(toggleClass);
     });
 
     //  Replace with function
     $(".btn[data-type='operator']").removeClass(toggleClass);
     $(".btn[data-type='parameter']").removeClass(toggleClass);
     $(".btn[data-type='value']").removeClass(toggleClass);
-    $(".btn[data-type='s_joiner']").removeClass(toggleClass);
-    $(".btn[data-type='b_joiner']").removeClass(toggleClass);
-    $(".btn[data-type='combined']").removeClass(toggleClass);
+    $(".btn[data-type='joiner']").removeClass(toggleClass);
 
     //  Get this data-type
     var this__type = $(el).data("type");
@@ -58,7 +52,7 @@ function CheckPossibleTags(el) {
         });
     }
 
-    if (this__type == "s_joiner" || this__type == "b_joiner") {
+    if (this__type == "joiner") {
         $(toolboxClass + " .btn[data-type='parameter']").addClass(toggleClass);
     }
 
@@ -67,7 +61,7 @@ function CheckPossibleTags(el) {
     }
 
     if (this__type == "value") {
-        $(toolboxClass + " .btn[data-type='s_joiner']").addClass(toggleClass);
+        $(toolboxClass + " .btn[data-type='joiner']").addClass(toggleClass);
     }
 }
 //
@@ -106,52 +100,48 @@ function AddLockable(el) {
     var this__elem       = $(el);
     var this__siblings   = this__elem.siblings().length;
     var this__elem__lock = $(el).find(".sortable-lock");
-    var prev__elem       = this__elem.prevUntil("[data-type='combined']");
+    var prev__elem       = this__elem.prev();
     var next__elem       = this__elem.next();
 
     if ( this__siblings != 0 ) {
-        if ( this__elem.attr("data-type") != "b_joiner" && this__elem.prev().attr("data-type") != "combined" ) {
-            if (this__elem__lock != null ) {
-                this__elem.append("<a onclick='LockTags(this)' class='sortable-lock btn btn-default'><i class='fa fa-unlock-alt'></i></a>");
-            }
-            prev__elem.children(".sortable-lock").remove();
+        if (this__elem__lock != null ) {
+            this__elem.append("<a onclick='LockTags(this)' class='sortable-lock btn btn-default'><i class='fa fa-unlock-alt'></i></a>");
+        }
+        //  if (prev__elem.hasClass("sortable-lock")) {
+        //      prev__elem.remove();
+        //  }
+        //  if (next__elem.hasClass("sortable-lock")) {
+        //      next__elem.remove();
+        //  }
+        if (prev__elem.find("sortable-lock")) {
+            prev__elem.remove();
+        }
+        if (next__elem.find("sortable-lock")) {
+            next__elem.remove();
         }
     }
 }
 //  Lock Tags
 function LockTags(el) {
-    var this__elem          = $(el);
-    var this__elem__text    = $(el).parent().find(".sortable-text").text();
-    var prev__elems         = $(el).parent().prevUntil("[data-type='b_joiner']");
-    //var prev__elems         = $(el).parent().prevUntil("[data-type='combined']");
+    var this__elem  = $(el);
+    var this__elem__icon = $(el).find("i");
+    var prev__elems = $(el).prevAll();
 
     //  Modify text
     prev__elems.each( function (index, element) {
-        $(this).parent().find(".sortable-text").prepend(" ");
+        $(this).find(".sortable-text").prepend(" ");
     });
     var prev__elems__text = prev__elems.find(".sortable-text").text();
 
+    //  Change Icon
+    if (this__elem__icon.hasClass("fa-unlock-alt")) {
+        this__elem__icon.removeClass("fa-unlock-alt").addClass("fa-lock");
+    }
+
     //  Create New Elem
-    prev__elems.last().attr("data-type","combined");
-    prev__elems.last().find(".sortable-text").text(prev__elems__text + " " + this__elem__text);
-    prev__elems.last().nextAll().remove();
-
-    $(".sortable-toolbox .btn[data-type='b_joiner']").addClass("sortable-is-enabled");
-
-    //  Add Unlock
-    prev__elems.last().append("<a onclick='UnLockTags(this)' class='sortable-lock btn btn-default'><i class='fa fa-lock'></i></a>");
-
-    //  Replace with function
-    $(".btn[data-type='operator']").removeClass("sortable-is-enabled");
-    $(".btn[data-type='parameter']").removeClass("sortable-is-enabled");
-    $(".btn[data-type='value']").removeClass("sortable-is-enabled");
-    $(".btn[data-type='s_joiner']").removeClass("sortable-is-enabled");
+    prev__elems.last().find(".sortable-text").text(prev__elems__text);
+    prev__elems.last().nextAll().not(".sortable-lock").remove();
 };
-//  UnLock Tags
-function UnLockTags(el) {
-    var this__elem = $(el);
-    console.log("Unlock " + this__elem);
-}
 
 
 

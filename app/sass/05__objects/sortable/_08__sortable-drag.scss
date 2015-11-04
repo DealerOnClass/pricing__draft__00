@@ -1,8 +1,8 @@
 .sortable-drag {
-    position: relative;
-    top: $global__y;
-
-    float: right;
+    position: absolute;
+    top: 50%;
+    right: $btn__x;
+    margin-top: -1 * $btn__y;
 }
 
 .sortable-workbench {

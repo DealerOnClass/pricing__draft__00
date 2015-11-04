@@ -1,5 +1,29 @@
 .sortable-action-item {
-    padding: ($global__x / 2);
+    padding: ($btn__x / 2);
+    position: absolute;
+    top: 0;
+}
+.sortable-remove {
+    right: $btn__x / 3;
+}
+.sortable-edit {
+    right: $btn__x * 2;
+}
+.sortable-lock {
+    border-top-right-radius: 50%!important;
+    border-bottom-right-radius: 50%!important;
+    position: absolute;
+    z-index: 10;
+    top: -1 * $one__pixel;
+    right: $btn__x * -2.65;
+}
+.sortable-finished,
+.sortable-remove-all,
+.sortable-select-all {
+    font-family: $sans--regular;
+
+    position: relative;
+    top: ( $btn__y * -1);
 }
 
 .sortable-toolbox {

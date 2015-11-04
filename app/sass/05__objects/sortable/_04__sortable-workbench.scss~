@@ -29,7 +29,4 @@
     .sortable-text {
         white-space: normal;
     }
-    .sortable-text-value {
-        padding-right: $btn__x * 3.5;
-    }
 }

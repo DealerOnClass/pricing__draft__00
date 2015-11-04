@@ -8,9 +8,16 @@
     display: inline-block;
     float: left;
 
-    width: 80%;
-
     @extend .overflow-text;
 }
-
-
+.sortable-text-label {
+    &:after {
+        content: ':';
+    }
+}
+.sortable-text-value {
+    float: right;
+    &:before {
+        content: '$';
+    }
+}

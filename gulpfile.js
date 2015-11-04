@@ -33,7 +33,7 @@ gulp.task('serve',['compass'], function() {
     });
     gulp.watch('app/sass/**/*.scss', ['compass']);
     gulp.watch('app/*.html').on('change', reload);
-    gulp.watch('app/js/*.js').on('change', reload);
+    gulp.watch('app/js/**/*.js').on('change', reload);
 });
 
 //  Default

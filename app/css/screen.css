@@ -3651,20 +3651,11 @@ h5.btn-group {
   float: left;
   margin: 0 0.45em 0.45em 0;
 }
-.btn-tags .sortable-text {
-  width: 90%;
-}
 .btn-tags .sortable-text:after {
   display: block;
   float: left;
   width: 0.9em;
   content: '';
-}
-.btn-tags .sortable-remove {
-  margin: 0;
-}
-.btn-tags .sortable-action-item {
-  padding: 0;
 }
 
 .btn-sentence .btn {
@@ -3681,14 +3672,21 @@ h5.btn-group {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-sentence .btn[data-type="joiner"] {
+.btn-sentence .btn[data-type="b_joiner"] {
   border-radius: 0.3em !important;
+  float: none;
+  clear: both;
+  display: block;
+  width: 5em !important;
 }
-.btn-sentence .btn[data-type="joiner"] + .btn {
+.btn-sentence .btn[data-type="b_joiner"] + .btn {
   border-top-left-radius: 0.3em;
   border-bottom-left-radius: 0.3em;
 }
-.btn-sentence .btn[data-type="value"] {
+.btn-sentence .btn + .btn {
+  margin-right: -0.05556em;
+}
+.btn-sentence .btn[data-type="combined"] {
   border-top-right-radius: 0.3em !important;
   border-bottom-right-radius: 0.3em !important;
 }
@@ -8188,6 +8186,10 @@ button.list-group-item-danger.active:focus {
   background-color: #d2d6dc;
 }
 
+.sortable-toolbox .sortable-text-value {
+  padding-right: 0.9em;
+}
+
 .sortable-workbench {
   position: relative;
   top: -0.45em;
@@ -8211,6 +8213,54 @@ button.list-group-item-danger.active:focus {
   clear: both;
   content: '';
 }
+.sortable-workbench .sortable-text {
+  white-space: normal;
+}
+.sortable-workbench .sortable-text-value {
+  padding-right: 3.15em;
+}
+
+.sortable-preview .sortable[data-preview="text"],
+.sortable-preview .sortable[data-preview="divider"] {
+  border: 0.05556em solid transparent;
+  background-color: transparent;
+  padding-left: 0;
+}
+.sortable-preview .sortable[data-preview="text"]:hover,
+.sortable-preview .sortable[data-preview="divider"]:hover {
+  cursor: default;
+}
+
+.sortable-preview .sortable[data-preview="text"] .sortable-drag,
+.sortable-preview .sortable[data-preview="divider"] .sortable-drag, .sortable-preview .sortable[data-preview="button"] .sortable-drag,
+.sortable-preview .sortable[data-preview="text"] .sortable-action-item,
+.sortable-preview .sortable[data-preview="divider"] .sortable-action-item,
+.sortable-preview .sortable[data-preview="button"] .sortable-action-item {
+  display: none;
+}
+
+.sortable-preview .sortable[data-preview="text"] + .sortable[data-preview="text"],
+.sortable-preview .sortable[data-preview="divider"] + .sortable[data-preview="text"] {
+  padding-top: 0;
+  margin-top: 0;
+}
+.sortable-preview .sortable[data-preview="divider"] .sortable-text {
+  display: none;
+}
+.sortable-preview .sortable[data-preview="divider"]:after {
+  content: "";
+  display: block;
+  height: 0.05556em;
+  width: 100%;
+  background-color: #cccccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sortable-preview .sortable[data-preview="button"] {
+  display: inline-block;
+  width: auto;
+}
 
 .overflow-text, .sortable-text {
   overflow: hidden;
@@ -8221,54 +8271,68 @@ button.list-group-item-danger.active:focus {
 .sortable-text {
   display: inline-block;
   float: left;
-  width: 80%;
 }
 
-.sortable-drag {
-  position: relative;
-  top: 0.45em;
+.sortable-text-label:after {
+  content: ':';
+}
+
+.sortable-text-value {
   float: right;
 }
-
-.sortable-workbench .sortable-drag {
-  display: none;
+.sortable-text-value:before {
+  content: '$';
 }
 
 .sortable-action-item {
   padding: 0.45em;
-}
-
-.sortable-toolbox .sortable-action-item {
-  display: none;
+  position: absolute;
+  top: 0;
 }
 
 .sortable-remove {
-  margin-right: -0.9em;
+  right: 0.3em;
+}
+
+.sortable-edit {
+  right: 1.8em;
+}
+
+.sortable-lock {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+  position: absolute;
+  z-index: 10;
+  top: -0.05556em;
+  right: -2.385em;
 }
 
 .sortable-finished,
-.sortable-remove-all {
-  font-family: "AvenirRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  position: relative;
-  top: -0.45em;
-}
-
+.sortable-remove-all,
 .sortable-select-all {
   font-family: "AvenirRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   top: -0.45em;
 }
 
+.sortable-toolbox .sortable-action-item {
+  display: none;
+}
+
+.sortable-drag {
+  position: absolute;
+  top: 50%;
+  right: 0.9em;
+  margin-top: -0.45em;
+}
+
+.sortable-workbench .sortable-drag {
+  display: none;
+}
+
 .sortable-is-enabled {
   background-color: #ceeace;
   border-color: #5cb85c;
-}
-
-.sortable-workbench .sortable[data-type="joiner"] {
-  float: none;
-  clear: both;
-  display: block;
-  width: 5em !important;
 }
 
 .sr-only {
