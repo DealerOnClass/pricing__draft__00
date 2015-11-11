@@ -29,7 +29,7 @@ $card-footer__radius:             0 0 $card__radius $card__radius;
 $card-img-overlay__bg:            rgba(0, 0, 0, 0.5);
 $card-img-overlay__padding:       ($card__y * 2) ($card__x * 2);
 //  Card-Deck
-$card-deck__gutter:               $card__gutter;
+$card-deck__gutter:               $card__gutter / 2;
 //  Card List-Group-Item
 $card__list-group-item__padding:  ($card__y * 2);
 //  Card-Columns

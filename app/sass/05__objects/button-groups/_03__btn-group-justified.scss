@@ -14,6 +14,8 @@
     }
     > .btn-group .btn {
         width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     > .btn-group .dropdown-menu {
         left: auto;
