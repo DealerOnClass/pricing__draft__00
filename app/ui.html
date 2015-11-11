@@ -9,8 +9,12 @@
         <link href="css/screen.css" rel="stylesheet">
     </head>
 
-    <body data-spy="scroll" data-target="#navbar-main">
+    <body id="body" data-spy="scroll" data-target="#navbar-main">
 
+        <!-- Scroll to Top -->
+        <a href='#ui__top' id='toTop' class='fade btn btn-dealeron btn-toTop'><i class="fa fa-angle-up"></i></a>
+
+        <!-- Main Nav - Top -->
         <nav class="navbar navbar-dealeron navbar-fixed-top">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-dealeron">
@@ -31,11 +35,12 @@
 
             <div class="collapse navbar-collapse" id="navbar-dealeron">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html"><i class="fa fa-mail-reply"></i></a></li>
+                    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
                 </ul>
             </div>
         </nav>
 
+        <!-- Main Nav - Sidebar -->
         <nav id="navbar-main" class="navbar navbar-dealeron navbar-sidebar">
             <div id="ttest51" class="navbar-sidebar-collapse collapse width" role="menu">
                 <div class="navbar-sidebar-wrapper">
@@ -96,7 +101,23 @@
             </div>
         </nav>
 
+        <!-- Main Content -->
         <div class="demo container">
+            <!--SECTION: Intro-->
+            <nav id="ui__top" class="navbar navbar-section" style="visibility: hidden;">
+                <div class="navbar-header">
+                    <div class="navbar-text">Welcome Humans</div>
+                </div>
+            </nav>
+            <section>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3><strong>UI Kit.</strong></h3>
+                        <p>This is where the magic happens.</p>
+                    </div>
+                </div>
+            </section>
+
             <!--SECTION: Colors-->
             <nav id="ui__color" class="navbar navbar-section">
                 <div class="navbar-header">

@@ -36,4 +36,7 @@
         border-top-right-radius: $btn__radius!important;
         border-bottom-right-radius: $btn__radius!important;
     }
+    &[data-type="nested"] {
+        padding-top: $btn-group__x * 2;
+    }
 }

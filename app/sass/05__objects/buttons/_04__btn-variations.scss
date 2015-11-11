@@ -6,6 +6,10 @@
     @include button-variant($btn--primary__bg);
 }
 
+.btn-dealeron {
+    @include button-variant($btn--dealeron__bg);
+}
+
 .btn-success {
     @include button-variant($btn--success__bg);
 }
@@ -32,4 +36,11 @@
 
 .btn-xs {
     font-size: $btn--xs__font-size;
+}
+
+.btn-toTop {
+    position: fixed;
+    bottom: rhythm(1);
+    right: rhythm(1);
+    z-index: $zindex-btn-toTop;
 }

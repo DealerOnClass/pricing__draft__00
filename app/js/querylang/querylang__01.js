@@ -209,7 +209,7 @@ $(".sortable-ungroupem").on("click", function () {
         $("#query__creation__workbench .sortable-lock").remove();
     } else {
         $(this).addClass("active");
-        $("#query__creation__workbench").find("[data-type='nested']").prepend("<a onclick='PrepareToUnLockTag(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
+        $("#query__creation__workbench > [data-type='nested']").prepend("<a onclick='PrepareToUnLockTag(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
     }
 });
 function PrepareToUnLockTag(elem) {
