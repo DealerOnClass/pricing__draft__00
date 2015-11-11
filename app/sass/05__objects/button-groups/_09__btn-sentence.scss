@@ -2,8 +2,14 @@
 //  Used on "querylang__01.html" page
 .btn-sentence .btn {
     margin-right: 0;
+    + .btn {
+        margin-left: -1 * $one__pixel;
+    }
     + .btn:not(:last-child) {
         border-radius: 0;
+    }
+    &.btn-block {
+        width: auto;
     }
     &:first-child:not(:only-child) {
         border-top-right-radius: 0;
@@ -20,20 +26,14 @@
         display: block;
         width: 5em!important;
     }
+    &[data-type="nested"],
     &[data-type="b_joiner"] + .btn {
         border-top-left-radius: $btn__radius;
         border-bottom-left-radius: $btn__radius;
     }
-    + .btn {
-        margin-right: -1 * $one__pixel;
-    }
-    //&[data-type="value"],
+    &[data-type="nested"],
     &[data-type="combined"] {
         border-top-right-radius: $btn__radius!important;
         border-bottom-right-radius: $btn__radius!important;
     }
-    //&[data-type="value"] {
-    //    border-top-right-radius: 0!important;
-    //    border-bottom-right-radius: 0!important;
-    //}
 }

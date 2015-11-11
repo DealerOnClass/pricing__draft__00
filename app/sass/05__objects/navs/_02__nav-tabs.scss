@@ -16,7 +16,8 @@
             }
         }
 
-        &.active > a {
+        &.active > a,
+        > a.active {
             &,
             &:hover,
             &:focus {
@@ -28,6 +29,10 @@
                 background-color: $nav-tabs--active__bg;
             }
         }
+    }
+
+    & + .tab-content {
+        margin-top: $nav__y;
     }
     //
     //  Revisit

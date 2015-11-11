@@ -2694,9 +2694,9 @@ var Tab = (function ($) {
     LI: 'li',
     DROPDOWN: '.dropdown',
     UL: 'ul:not(.dropdown-menu)',
-    FADE_CHILD: '> .nav-item .fade, > .fade',
+    FADE_CHILD: '> li .fade, > .fade',   //  "li" was ".nav-item"
     ACTIVE: '.active',
-    ACTIVE_CHILD: '> .nav-item > .active, > .active',
+    ACTIVE_CHILD: '> li > .active, > .active',   //  "li" was ".nav-item"   //
     DATA_TOGGLE: '[data-toggle="tab"], [data-toggle="pill"]',
     DROPDOWN_TOGGLE: '.dropdown-toggle',
     DROPDOWN_ACTIVE_CHILD: '> .dropdown-menu .active'

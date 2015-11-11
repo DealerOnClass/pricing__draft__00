@@ -20,26 +20,36 @@
         </style>
     </head>
 
-    <body class="pricing">
-        <nav class="navbar navbar-dealeron navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-dealeron">
-                        <span class="sr-only">Toggle navigation</span>
+    <body class="demo pricing">
+        <nav class="navbar navbar-dealeron navbar-fixed-top">
+            <div class="navbar-header">
+                <a href="#ttest51" class="navbar-brand" data-toggle="collapse" data-animate="icon-bar">
+                    <span class="icon-bar-wrapper icon-bar-animate">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
-                </div>
+                    </span>
+                </a>
+                <a class="navbar-brand" href="#">DealerOn</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-dealeron">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><i class="fa fa-mail-reply"></i></a></li>
+                </ul>
+            </div>
+        </nav>
 
-                <div class="collapse navbar-collapse" id="navbar-dealeron">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    </ul>
-                    <div class="navbar-brand">Pricing 03</div>
+        <nav id="navbar-main" class="navbar navbar-dealeron navbar-sidebar">
+            <div id="ttest51" class="navbar-sidebar-collapse collapse width" role="menu">
+                <div class="navbar-sidebar-wrapper">
+                    <div class="navbar-sidebar-body">
+                        <h3>Yo</h3>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </nav>
+
         <div class="container">
             <h3>Pricing Template Creation</h3>
             <div class="panel panel-default">
@@ -88,7 +98,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-lg-4">
                                 <h5>Available OEMs</h5>
-                                <div id="pricing__template__creation__step2__toolbox" class="sortable-toolbox btn-grid">
+                                <div id="pricing__template__creation__step2__toolbox" class="sortable-toolbox btn-tags">
                                     <div class="btn btn-default clearfix sortable" style="width: 6em;">
                                         <span class="sortable-text">Ford</span>
                                         <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
@@ -133,7 +143,7 @@
                                         Clear <!-- <i class="fa fa-times fa-sm"></i> -->
                                     </a>
                                 </h5>
-                                <div id="pricing__template__creation__step2__workbench" class="sortable-workbench btn-grid">
+                                <div id="pricing__template__creation__step2__workbench" class="sortable-workbench btn-tags">
                                 </div>
                             </div>
                             <div class="col-sm-12 col-lg-4">
@@ -148,7 +158,7 @@
                                         </a>
                                     </div>
                                 </h5>
-                                <div class="btn-grid active-toggle">
+                                <div class="btn-tags active-toggle">
                                     <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Alabama">AL</abbr>
                                     <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Alaska">AK</abbr>
                                     <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Arizona">AZ</abbr>
@@ -286,7 +296,7 @@
                                         Clear <!-- <i class="fa fa-times fa-sm"></i> -->
                                     </a>
                                 </h5>
-                                <div id="pricing__template__creation__step3__workbench" class="sortable-workbench btn-grid"></div>
+                                <div id="pricing__template__creation__step3__workbench" class="sortable-workbench btn-tags"></div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-4">
                                 <h5>Preview</h5>
@@ -343,7 +353,7 @@
                             <div class="form-group">
                                 <label for="static_price_label" class="col-sm-4 control-label">Label</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" data-change="text" id="static_price_text" placeholder="Static Price" type="text" value="Static Price">
+                                    <input class="form-control" data-change="text" id="static_price_text" placeholder="Static Price" type="text" value="">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -422,7 +432,7 @@
                             <div class="form-group">
                                 <label for="calc_price_label" class="col-sm-4 control-label">Label</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" data-change="text" id="calc_price_text" placeholder="Static Price" type="text" value="Calculated Price">
+                                    <input class="form-control" data-change="text" id="calc_price_text" placeholder="Calculated Price" type="text" value="">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -501,7 +511,7 @@
                             <div class="form-group">
                                 <label for="feed_price_label" class="col-sm-4 control-label">Label</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" data-change="text" id="feed_price_text" placeholder="feed Price" type="text" value="Feed Price">
+                                    <input class="form-control" data-change="text" id="feed_price_text" placeholder="Feed Price" type="text" value="">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -633,6 +643,7 @@
         <script src="js/tether.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/jquery.easing.min.js"></script>
+
         <script src="js/sortable.min.js"></script>
         <script src="js/functions.js"></script>
         <script src="js/pricing/pricing__03.js"></script>

@@ -33,63 +33,185 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html"><i class="fa fa-mail-reply"></i></a></li>
                 </ul>
+                <!--<ul class="nav navbar-nav navbar-left">-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+                            <!--Components-->
+                            <!--<span class="fa fa-angle-down fa-sm"></span>-->
+                            <!--</a>-->
+                        <!--<ul class="dropdown-menu dropdown-mega-menu" role="menu">-->
+                            <!--<h4>All the things.</h4>-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-md-3 col-sm-6 col-xs-6">-->
+                                    <!--<li><a href="#ui__color">Colors</a></li>-->
+                                    <!--<li><a href="#ui__typography">Typography</a></li>-->
+                                    <!--<li><a href="#ui__code">Code</a></li>-->
+                                    <!--<li><a href="#ui__grid">Grid</a></li>-->
+                                    <!--<li><a href="#ui__tables">Tables</a></li>-->
+                                    <!--<li><a href="#ui__forms">Forms</a></li>-->
+                                    <!--<li><a href="#ui__custom-forms">Custom Forms</a></li>-->
+                                    <!--<li><a href="#ui__buttons">Buttons</a></li>-->
+                                    <!--</div>-->
+                                <!--<div class="col-md-3 col-sm-6 col-xs-6">-->
+                                    <!--<li><a href="#ui__dropdowns">Dropdowns</a></li>-->
+                                    <!--<li><a href="#ui__button-groups">Button Groups</a></li>-->
+                                    <!--<li><a href="#ui__input-groups">Input Groups</a></li>-->
+                                    <!--<li><a href="#ui__navs">Navs</a></li>-->
+                                    <!--<li><a href="#ui__navbar">Navbar</a></li>-->
+                                    <!--<li><a href="#ui__breadcrumbs">Breadcrumbs</a></li>-->
+                                    <!--<li><a href="#ui__pagination">Pagination</a></li>-->
+                                    <!--<li><a href="#ui__pager">Pager</a></li>-->
+                                    <!--</div>-->
+                                <!--<div class="col-md-3 col-sm-6 col-xs-6">-->
+                                    <!--<li><a href="#ui__labels">Labels</a></li>-->
+                                    <!--<li><a href="#ui__badges">Badges</a></li>-->
+                                    <!--<li><a href="#ui__jumbotron">Jumbotron</a></li>-->
+                                    <!--<li><a href="#ui__thumbnails">Thumbnails</a></li>-->
+                                    <!--<li><a href="#ui__alerts">Alerts</a></li>-->
+                                    <!--<li><a href="#ui__progress-bars">Progress Bars</a></li>-->
+                                    <!--<li><a href="#ui__media">Media</a></li>-->
+                                    <!--<li><a href="#ui__list-groups">List Groups</a></li>-->
+                                    <!--</div>-->
+                                <!--<div class="col-md-3 col-sm-6 col-xs-6">-->
+                                    <!--<li><a href="#ui__panels">Panels</a></li>-->
+                                    <!--<li><a href="#ui__card">Card</a></li>-->
+                                    <!--<li><a href="#ui__responsive-embed">Responsive Embed</a></li>-->
+                                    <!--<li><a href="#ui__wells">Wells</a></li>-->
+                                    <!--<li><a href="#ui__modals">Modals</a></li>-->
+                                    <!--<li><a href="#ui__tooltip">Tooltip</a></li>-->
+                                    <!--<li><a href="#ui__popover">Popover</a></li>-->
+                                    <!--<li><a href="#ui__carousel">Carousel</a></li>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                    <!--</ul>-->
             </div>
         </nav>
 
         <nav id="navbar-main" class="navbar navbar-dealeron navbar-sidebar">
             <div id="ttest51" class="navbar-sidebar-collapse collapse width" role="menu">
                 <div class="navbar-sidebar-wrapper">
-                    <div class="navbar-sidebar-body">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#ttest9" class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul id="ttest9" class="collapse dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a>
-                                    </li>
-                                    <li><a href="#">Another action</a>
-                                    </li>
-                                    <li><a href="#">Something else here</a>
-                                    </li>
-                                    <li><a href="#">Separated link</a>
-                                    </li>
-                                    <li><a href="#">One more separated link</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="#ui__alerts">Alerts</a></li>
-                            <li><a href="#ui__badges">Badges</a></li>
-                            <li><a href="#ui__breadcrumbs">Breadcrumbs</a></li>
-                            <li><a href="#ui__button-groups">Button Groups</a></li>
-                            <li><a href="#ui__buttons">Buttons</a></li>
-                            <li><a href="#ui__card">Card</a></li>
-                            <li><a href="#ui__carousel">Carousel</a></li>
-                            <li><a href="#ui__code">Code</a></li>
-                            <li><a href="#ui__color">Colors</a></li>
-                            <li><a href="#ui__custom-forms">Custom Forms</a></li>
-                            <li><a href="#ui__dropdowns">Dropdowns</a></li>
-                            <li><a href="#ui__forms">Forms</a></li>
-                            <li><a href="#ui__grid">Grid</a></li>
-                            <li><a href="#ui__input-groups">Input Groups</a></li>
-                            <li><a href="#ui__jumbotron">Jumbotron</a></li>
-                            <li><a href="#ui__labels">Labels</a></li>
-                            <li><a href="#ui__list-groups">List Groups</a></li>
-                            <li><a href="#ui__media">Media</a></li>
-                            <li><a href="#ui__modals">Modals</a></li>
-                            <li><a href="#ui__navbar">Navbar</a></li>
-                            <li><a href="#ui__navs">Navs</a></li>
-                            <li><a href="#ui__pager">Pager</a></li>
-                            <li><a href="#ui__pagination">Pagination</a></li>
-                            <li><a href="#ui__panels">Panels</a></li>
-                            <li><a href="#ui__popover">Popover</a></li>
-                            <li><a href="#ui__progress-bars">Progress Bars</a></li>
-                            <li><a href="#ui__responsive-embed">Responsive Embed</a></li>
-                            <li><a href="#ui__tables">Tables</a></li>
-                            <li><a href="#ui__thumbnails">Thumbnails</a></li>
-                            <li><a href="#ui__tooltip">Tooltip</a></li>
-                            <li><a href="#ui__typography">Typography</a></li>
-                            <li><a href="#ui__wells">Wells</a></li>
-                        </ul>
-                        <h4>Heading 4</h4>
+                    <ul class="nav navbar-nav navbar-sidebar-body">
+                        <li class="dropdown">
+                            <a href="#ttest9" class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul id="ttest9" class="collapse dropdown-menu" role="menu">
+                                <li><a href="#">Action</a>
+                                </li>
+                                <li><a href="#">Another action</a>
+                                </li>
+                                <li><a href="#">Something else here</a>
+                                </li>
+                                <li><a href="#">Separated link</a>
+                                </li>
+                                <li><a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#ui__alerts">Alerts</a></li>
+                        <li><a href="#ui__badges">Badges</a></li>
+                        <li><a href="#ui__breadcrumbs">Breadcrumbs</a></li>
+                        <li><a href="#ui__button-groups">Button Groups</a></li>
+                        <li><a href="#ui__buttons">Buttons</a></li>
+                        <li><a href="#ui__card">Card</a></li>
+                        <li><a href="#ui__carousel">Carousel</a></li>
+                        <li><a href="#ui__code">Code</a></li>
+                        <li><a href="#ui__color">Colors</a></li>
+                        <li><a href="#ui__custom-forms">Custom Forms</a></li>
+                        <li><a href="#ui__dropdowns">Dropdowns</a></li>
+                        <li><a href="#ui__forms">Forms</a></li>
+                        <li><a href="#ui__grid">Grid</a></li>
+                        <li><a href="#ui__input-groups">Input Groups</a></li>
+                        <li><a href="#ui__jumbotron">Jumbotron</a></li>
+                        <li><a href="#ui__labels">Labels</a></li>
+                        <li><a href="#ui__list-groups">List Groups</a></li>
+                        <li><a href="#ui__media">Media</a></li>
+                        <li><a href="#ui__modals">Modals</a></li>
+                        <li><a href="#ui__navbar">Navbar</a></li>
+                        <li><a href="#ui__navs">Navs</a></li>
+                        <li><a href="#ui__pager">Pager</a></li>
+                        <li><a href="#ui__pagination">Pagination</a></li>
+                        <li><a href="#ui__panels">Panels</a></li>
+                        <li><a href="#ui__popover">Popover</a></li>
+                        <li><a href="#ui__progress-bars">Progress Bars</a></li>
+                        <li><a href="#ui__responsive-embed">Responsive Embed</a></li>
+                        <li><a href="#ui__tables">Tables</a></li>
+                        <li><a href="#ui__thumbnails">Thumbnails</a></li>
+                        <li><a href="#ui__tooltip">Tooltip</a></li>
+                        <li><a href="#ui__typography">Typography</a></li>
+                        <li><a href="#ui__wells">Wells</a></li>
+                    </ul>
+                    <!-- Original Order -->
+                    <!--<ul class="nav navbar-nav navbar-vertical-body">-->
+                        <!--<li><a href="#ui__color">Colors</a></li>-->
+                        <!--<li><a href="#ui__typography">Typography</a></li>-->
+                        <!--<li><a href="#ui__code">Code</a></li>-->
+                        <!--<li><a href="#ui__grid">Grid</a></li>-->
+                        <!--<li><a href="#ui__tables">Tables</a></li>-->
+                        <!--<li><a href="#ui__forms">Forms</a></li>-->
+                        <!--<li><a href="#ui__custom-forms">Custom Forms</a></li>-->
+                        <!--<li><a href="#ui__buttons">Buttons</a></li>-->
+                        <!--<li><a href="#ui__dropdowns">Dropdowns</a></li>-->
+                        <!--<li><a href="#ui__button-groups">Button Groups</a></li>-->
+                        <!--<li><a href="#ui__input-groups">Input Groups</a></li>-->
+                        <!--<li><a href="#ui__navs">Navs</a></li>-->
+                        <!--<li><a href="#ui__navbar">Navbar</a></li>-->
+                        <!--<li><a href="#ui__breadcrumbs">Breadcrumbs</a></li>-->
+                        <!--<li><a href="#ui__pagination">Pagination</a></li>-->
+                        <!--<li><a href="#ui__pager">Pager</a></li>-->
+                        <!--<li><a href="#ui__labels">Labels</a></li>-->
+                        <!--<li><a href="#ui__badges">Badges</a></li>-->
+                        <!--<li><a href="#ui__jumbotron">Jumbotron</a></li>-->
+                        <!--<li><a href="#ui__thumbnails">Thumbnails</a></li>-->
+                        <!--<li><a href="#ui__alerts">Alerts</a></li>-->
+                        <!--<li><a href="#ui__progress-bars">Progress Bars</a></li>-->
+                        <!--<li><a href="#ui__media">Media</a></li>-->
+                        <!--<li><a href="#ui__list-groups">List Groups</a></li>-->
+                        <!--<li><a href="#ui__panels">Panels</a></li>-->
+                        <!--<li><a href="#ui__card">Card</a></li>-->
+                        <!--<li><a href="#ui__responsive-embed">Responsive Embed</a></li>-->
+                        <!--<li><a href="#ui__wells">Wells</a></li>-->
+                        <!--<li><a href="#ui__modals">Modals</a></li>-->
+                        <!--<li><a href="#ui__tooltip">Tooltip</a></li>-->
+                        <!--<li><a href="#ui__popover">Popover</a></li>-->
+                        <!--<li><a href="#ui__carousel">Carousel</a></li>-->
+                        <!--</ul>-->
+
+
+                    <!--<ul class="nav navbar-nav navbar-vertical-body">-->
+                        <!--<li><a href="">Website Settings</a></li>-->
+                        <!--<li><a href="">Inventory Settings</a></li>-->
+                        <!--<li class="dropdown">-->
+                            <!--<a href="#ttest9" class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                            <!--<ul id="ttest9" class="collapse dropdown-menu" role="menu">-->
+                                <!--<li><a href="#">Action</a>-->
+                                    <!--</li>-->
+                                <!--<li><a href="#">Another action</a>-->
+                                    <!--</li>-->
+                                <!--<li><a href="#">Something else here</a>-->
+                                    <!--</li>-->
+                                <!--<li><a href="#">Separated link</a>-->
+                                    <!--</li>-->
+                                <!--<li><a href="#">One more separated link</a>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                            <!--</li>-->
+                        <!--<li><a href="">Third Party Integrations</a></li>-->
+                        <!--<li><a href="">Link 04</a></li>-->
+                        <!--<li><a href="">Link 05</a></li>-->
+                        <!--<li><a href="">Link 06</a></li>-->
+                        <!--<li><a href="">Link 07</a></li>-->
+                        <!--<li><a href="">Link 08</a></li>-->
+                        <!--<li><a href="">Link 09</a></li>-->
+                        <!--<li><a href="">Link 10</a></li>-->
+                        <!--<li><a href="">Link 11</a></li>-->
+                        <!--<li><a href="">Link 12</a></li>-->
+                        <!--<li><a href="">Link 13</a></li>-->
+                        <!--<li><a href="">Link 14</a></li>-->
+                        <!--<li><a href="">Link 15</a></li>-->
+                        <!--<li><a href="">Link 16</a></li>-->
+                        <!--</ul>-->
+                    <div class="navbar-sidebar-footer">
                         <p><small>Consectetur possimus libero expedita eaque voluptatem perferendis nihil consectetur. Tempore placeat quas perspiciatis ipsa rerum rerum similique et labore temporibus reiciendis velit. In eum nulla autem tempore dolorem dolorum, id.</small></p>
                     </div>
                 </div>
@@ -2636,7 +2758,7 @@
                     <nav class="navbar navbar-default navbar-vertical">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-11">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -2646,7 +2768,7 @@
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-11">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
                                 </li>
@@ -2689,23 +2811,56 @@
                 </div>
             </section>
             <section>
-                <h3>Sidebar</h3>
+                <h3>Vertical Tall</h3>
                 <div class="navbar-vertical-container emulate-body">
                     <nav class="navbar navbar-default navbar-fixed-top">
+                        <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-vertical-1">
+                                <i class="fa fa-gear"></i>
+                                <!--<span class="sr-only">Toggle navigation</span>-->
+                                <!--<span class="icon-bar"></span>-->
+                                <!--<span class="icon-bar"></span>-->
+                                <!--<span class="icon-bar"></span>-->
+                            </button>
                             <a href="#ttest4" class="navbar-brand" data-toggle="collapse" data-animate="icon-bar">
                                 <span class="icon-bar-wrapper icon-bar-animate">
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </span>
+                                <!--<i class="fa fa-ellipsis-v"></i>-->
                             </a>
                             <a class="navbar-brand" href="#">DealerOn</a>
                         </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-vertical-1">-->
+                            <!--<ul class="nav navbar-nav navbar-right">-->
+                                <!--<li class="dropdown">-->
+                                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+                                        <!--<i class="fa fa-gear"></i>-->
+                                        <!--<i class="fa fa-circle fa-lg"></i>-->
+                                        <!--User Settings-->
+                                        <!--<span class="caret"></span>-->
+                                        <!--</a>-->
+                                    <!--<ul class="dropdown-menu" role="menu">-->
+                                        <!--<li><a href="#">Action</a></li>-->
+                                        <!--<li><a href="#">Another action</a></li>-->
+                                        <!--<li><a href="#">Something else here</a></li>-->
+                                        <!--<li><a href="#">Separated link</a></li>-->
+                                        <!--<li><a href="#">One more separated link</a></li>-->
+                                        <!--</ul>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
                     </nav>
-                    <nav class="navbar navbar-default navbar-sidebar">
-                        <div id="ttest4" class="navbar-sidebar-collapse collapse width" role="menu">
-                            <div class="navbar-sidebar-wrapper">
+                    <nav class="navbar navbar-dealeron navbar-vertical navbar-vertical-tall">
+                        <!--<a href="#ttest4" class="navbar-vertical-toggle btn" data-toggle="collapse">-->
+                            <!--<i class="fa fa-bars"></i>-->
+                            <!--</a>-->
+                        <div id="ttest4" class="navbar-vertical-collapse collapse width" role="menu">
+                            <div class="navbar-vertical-wrapper">
                                 <ul class="nav navbar-nav navbar-vertical-body">
                                     <li><a class="active" href="">Website Settings</a></li>
                                     <li><a href="">Inventory Settings</a></li>
@@ -2739,6 +2894,9 @@
                                     <li><a href="">Link 15</a></li>
                                     <li><a href="">Link 16</a></li>
                                 </ul>
+                                <div class="navbar-vertical-footer">
+                                    <p><small>Consectetur possimus libero expedita eaque voluptatem perferendis nihil consectetur. Tempore placeat quas perspiciatis ipsa rerum rerum similique et labore temporibus reiciendis velit. In eum nulla autem tempore dolorem dolorum, id.</small></p>
+                                </div>
                             </div>
                         </div>
                     </nav>

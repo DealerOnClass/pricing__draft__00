@@ -1,0 +1,51 @@
+//  Based on code pen by Jesse Couch
+//  http://www.designcouch.com/home
+.icon-bar-animate {
+    width: rhythm(.8);
+    transform: rotate(0deg);
+    transition: .6s ease-in-out;
+    top: $navbar-animate-icon-bar-spacing / 2;
+}
+
+.icon-bar-animate .icon-bar {
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.icon-bar-animate .icon-bar + .icon-bar {
+    margin-top: 0;  //  Reset from navbar-toggle.scss
+}
+
+.icon-bar-animate {
+    .icon-bar:nth-child(1) {
+        top: 0;
+    }
+
+    .icon-bar:nth-child(2) {
+        top: $navbar-animate-icon-bar-spacing;
+    }
+
+    .icon-bar:nth-child(3) {
+        top: $navbar-animate-icon-bar-spacing * 2;
+    }
+}
+
+.navbar-sidebar-is-open {   //  Class declared in functions.js
+    .icon-bar-animate .icon-bar:nth-child(1) {
+        top: $navbar-animate-icon-bar-spacing;
+        transform: rotate(135deg);
+    }
+
+    .icon-bar-animate .icon-bar:nth-child(2) {
+        opacity: 0;
+        left: -$navbar-animate-icon-bar-spacing * 3;
+    }
+
+    .icon-bar-animate .icon-bar:nth-child(3) {
+        top: $navbar-animate-icon-bar-spacing;
+        transform: rotate(-135deg);
+    }
+}

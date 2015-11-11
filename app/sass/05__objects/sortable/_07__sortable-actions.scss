@@ -16,14 +16,39 @@
     z-index: 10;
     top: -1 * $one__pixel;
     right: $btn__x * -2.65;
-}
-.sortable-finished,
-.sortable-remove-all,
-.sortable-select-all {
-    font-family: $sans--regular;
+    padding: $btn__x;
+    height: rhythm(1);
+    width: rhythm(1);
 
-    position: relative;
-    top: ( $btn__y * -1);
+    > i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 1em;
+        width: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+    }
+
+    &.top {
+        top: rhythm(-2);
+        right: 0;
+        border-radius: 50%;
+    }
+}
+h5 {
+    .sortable-finished,
+    .sortable-remove-all,
+    .sortable-groupem,
+    .sortable-ungroupem,
+    .sortable-lockem,
+    .sortable-unlockem,
+    .sortable-select-all {
+        font-family: $sans--regular;
+
+        position: relative;
+        top: ( $btn__y * -1);
+    }
 }
 
 .sortable-toolbox {

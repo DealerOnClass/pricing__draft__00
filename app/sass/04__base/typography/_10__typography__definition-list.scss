@@ -1,3 +1,8 @@
+dt {
+    font-family: $strong__font;
+    font-weight: normal;
+}
+
 .dl-horizontal {
     dd {
         @include clearfix;

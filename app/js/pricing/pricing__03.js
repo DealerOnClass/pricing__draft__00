@@ -9,6 +9,7 @@ $(document).on("click", ".sortable-remove", function() {
 //  Remove all items in workbench on clicking "clear all"
 $(".sortable-remove-all").on("click", function() {
     $(this).parent().next('.sortable-workbench').empty();
+    $("#pricing__template__creation__step3__preview").empty();
 });
 //
 //
@@ -24,11 +25,11 @@ $(".active-toggle .btn").on("click", function () {
 });
 //  Remove active statess in "associated stated" when clicking "clear"
 $(".sortable-remove-all").on("click", function() {
-    $(this).parent().parent().next('.btn-grid').children().removeClass("active");
+    $(this).parent().parent().next('.btn-tags').children().removeClass("active");
 });
 //  Enable all active statess in "associated stated" when clicking "Select all"
 $(".sortable-select-all").on("click", function() {
-    $(this).parent().parent().next('.btn-grid').children().addClass("active");
+    $(this).parent().parent().next('.btn-tags').children().addClass("active");
 });
 //
 //

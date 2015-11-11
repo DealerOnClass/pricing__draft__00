@@ -13,24 +13,25 @@
 }
 
 .caret {
-    @if $dropdown__caret-use-icon {
+    @if $dropdown__has__caret {
         @extend %caret;
+    } @else {
+        display: none;
     }
 }
 .dropdown-toggle {
-    @if $dropdown__caret-use-icon {
-        // do nothing
-    } @else {
-        .fa {
-            display: none;
-        }
+    //  @if $dropdown__use-fa-icon != true {
+    //      .fa {
+    //          display: none;
+    //      }
+    //  }
+    //  @if $dropdown__use-css-icon {
+    //      &:after {
+    //          content: '';
 
-        &:after {
-            content: '';
-
-            @extend %caret;
-        }
-    }
+    //          @extend %caret;
+    //      }
+    //  }
 
     &:focus {
         outline: 0;

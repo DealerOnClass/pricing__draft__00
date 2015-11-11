@@ -3,7 +3,8 @@ $dropdown__radius:                      $global__radius;
 $dropdown__x:                           $global__x;
 $dropdown__y:                           $global__y;
 //  Options
-$dropdown__caret-use-icon:              false !default;
+$dropdown__has__caret:                  true !default;
+//  $dropdown__use-fa-icon:                 true !default;
 //  Dropdown-Menu
 $dropdown-menu__bg:                     $gray__01;
 $dropdown-menu__border:                 $gray__02;

@@ -74,7 +74,7 @@
 @import
     "04__base/forms";
 
-//  ** DO NOT CHANGE ORDER
+//  Animations  ** DO NOT CHANGE ORDER
 @import
     "05__objects/utilities/animations";
 
@@ -337,7 +337,7 @@
     "05__objects/wells/01__well",
     "05__objects/wells/02__well-variations";
 
-//  ** DO NOT CHANGE ORDER
+//  05 Objects - Utilites   ** DO NOT CHANGE ORDER 
 @import
     "05__objects/utilities/alignment",
     "05__objects/utilities/bg-variant",

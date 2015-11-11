@@ -1,4 +1,5 @@
 .pull-right.dropdown-menu,
+.navbar-right .dropdown-menu,
 .pull-right > .dropdown-menu,
 .dropdown-menu-right {
     right: 0;
@@ -6,6 +7,7 @@
 }
 
 .pull-left.dropdown-menu,
+.navbar-left .dropdown-menu,
 .pull-left > .dropdown-menu,
 .dropdown-menu-left {
     right: auto;

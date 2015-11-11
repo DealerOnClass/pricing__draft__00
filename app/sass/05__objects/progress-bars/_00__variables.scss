@@ -1,7 +1,7 @@
 //  Units
 $progress__radius:           $global__radius;
 $progress__x:                $global__x;
-$progress__y:                $global__y;
+$progress__y:                $global__y * 1.5;
 //  Options
 $progress__rounded:          false !default;
 //  Base

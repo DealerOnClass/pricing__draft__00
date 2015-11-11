@@ -23,6 +23,33 @@
         }
     }
 
+    .navbar-vertical-container {
+        overflow: hidden;
+
+        min-height: 10em;
+
+        &.emulate-body {
+            position: relative;
+            z-index: 30;
+
+            min-height: 30em;
+
+            //  border: $one__pixel solid $gray__02;
+            .navbar-fixed-top,
+            .navbar-sidebar {
+                //  overrides default value of fixed
+                //  for demo purposes. Keeps nav confined
+                //  within "emulate-body" container
+                position: absolute;
+            }
+        }
+
+        .emulate-body-content {
+            max-width: 34em;
+            margin: 0 auto;
+            padding: rhythm(3) $global__gutter 0;
+        }
+    }
 }
 
 
@@ -82,12 +109,14 @@ h3 {
 .show__btn-group {
     .btn-group {
         display: block;
+
         margin-bottom: rhythm(1);
 
         &:after {
-            content: "";
             display: block;
             clear: both;
+
+            content: '';
         }
     }
 }
@@ -103,4 +132,3 @@ h3 {
         @include rhythm-rem(margin-bottom, 1);
     }
 }
-
