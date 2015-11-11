@@ -1,5 +1,9 @@
 html {
-    font-size: $base__font-size;
+    font-size: 100%;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: $base__font-size;
+    }
 }
 
 body {
