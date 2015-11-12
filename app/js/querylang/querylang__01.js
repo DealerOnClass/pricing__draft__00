@@ -134,6 +134,12 @@ $("#query_modal attr[data-type]").on("click", function () {
 //  3.) Populate workbench with preview items
 $("#query_modal").on('hide.bs.modal', function () {
     UpdateWorkbench("#query__creation__preview", "#query__creation__workbench");
+
+    //  Remove enabled states
+    $("[data-type='parameter']").removeClass("sortable-is-enabled");
+    $("[data-type='operator']").removeClass("sortable-is-enabled");
+    $("[data-type='value']").removeClass("sortable-is-enabled");
+    $("[data-type='joiner']").removeClass("sortable-is-enabled");
 });
 function UpdateWorkbench(origin, destination) {
     //  create group
@@ -143,7 +149,7 @@ function UpdateWorkbench(origin, destination) {
 }
 //  4.) Make Group
 $(".sortable-groupem").on("click", function () {
-    $(this).toggleClass("active");
+    $(this).toggleClass("active").siblings().removeClass("active");
     if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
         $("#query__creation__workbench .sortable-lock").remove();
     } else {
@@ -187,7 +193,7 @@ function LockTags() {
 };
 //  5.) Un Group
 $(".sortable-ungroupem").on("click", function () {
-    $(this).toggleClass("active");
+    $(this).toggleClass("active").siblings().removeClass("active");
     if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
         $("#query__creation__workbench .sortable-lock").remove();
     } else {
@@ -229,17 +235,15 @@ function UnLockTags() {
     $("#query__creation__workbench .sortable-lock").remove();
     ShowUnGrouper();
 };
-//
-//  - changed sortable-lock to sortable-deletegroup
-//
 //  6.) Delete Groups
 $(".sortable-removegroup").on("click", function () {
-    $(this).toggleClass("active");
+    $(this).toggleClass("active").siblings().removeClass("active");
     if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
         $("#query__creation__workbench .sortable-lock").remove();
     } else {
         //  selected had ">"
         $("#query__creation__workbench [data-type='nested']").prepend("<a onclick='PrepareToDeleteGroup(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
+        $("#query__creation__workbench [data-type='b_joiner']").prepend("<a onclick='PrepareToDeleteGroup(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
     }
 });
 function PrepareToDeleteGroup(elem) {
@@ -277,8 +281,60 @@ function DeleteGroup() {
     $("#query__creation__workbench .sortable-lock").remove();
     HideDeleter();
 };
+//  7.) Edit Group
+$(".sortable-editgroup").on("click", function () {
+    $(this).toggleClass("active").siblings().removeClass("active");
+    if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
+        $("#query__creation__workbench .sortable-lock").remove();
+    } else {
+        //  selected had ">"
+        $("#query__creation__workbench [data-type='nested']").prepend("<a onclick='PrepareToEditGroup(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
+    }
+});
+function PrepareToEditGroup(elem) {
+    var icon = $(elem).children(".fa");
+    if ( icon.hasClass("fa-circle-o") ) {
+        icon.removeClass("fa-circle-o").addClass("fa-circle");
+    } else {
+        icon.removeClass("fa-circle").addClass("fa-circle-o");
+    }
 
+    CountCanEditGroup();
+};
+function CountCanEditGroup() {
+    var deletableGroups = $("#query__creation__workbench .fa-circle").length;
+    $(".sortable-groupdeleter .count").text(deletableGroups);
+    if ( deletableGroups >= 1 ) {
+        ShowEditor();   // stupid i know whatever
+    } else {
+        HideEditor();
+    }
+};
+function ShowEditor() {
+    var lockem = "<a onclick='EditGroup()' class='btn btn-default sortable-groupeditor'><i class='fa fa-pencil'></i> Edit <span class='count'>1</span></a>";
+    if ( $(".sortable-groupeditor").length == 0 ) {
+        $(".sortable-editgroup").addClass("hidden").after(lockem);
+    }
+};
+function HideEditor() {
+    $(".sortable-groupeditor").remove();
+    $(".sortable-editgroup").removeClass("hidden");
+};
+function EditGroup() {
+    $(".sortable-editgroup").removeClass("active");
 
+    var editableGroup = $("#query__creation__workbench .fa-circle").parent().parent().html();
+    $("#query__creation__preview").append(editableGroup);
+    $("#query__creation__preview .sortable-lock").remove();
+
+    $("#query__creation__workbench .fa-circle").parent().parent().remove();
+
+    $("#query_modal").modal('show');
+    $("#query_modal .nav-tabs a[href='#parameter_tab']").click();
+
+    $("#query__creation__workbench .sortable-lock").remove();
+    HideEditor();
+};
 //
 //
 //  Sortable Setup

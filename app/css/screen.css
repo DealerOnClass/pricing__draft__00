@@ -3506,11 +3506,13 @@ h5.btn-group {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-sentence .btn[data-type="b_joiner"] {
+.btn-sentence .btn[data-type="group"], .btn-sentence .btn[data-type="nested"], .btn-sentence .btn[data-type="b_joiner"] {
   border-radius: 0.3em !important;
-  float: none;
   clear: both;
   display: block;
+  width: auto;
+}
+.btn-sentence .btn[data-type="b_joiner"] {
   width: 5em !important;
 }
 .btn-sentence .btn[data-type="nested"], .btn-sentence .btn[data-type="b_joiner"] + .btn {
@@ -8585,6 +8587,8 @@ h5 .sortable-groupem,
 h5 .sortable-ungroupem,
 h5 .sortable-lockem,
 h5 .sortable-unlockem,
+h5 .sortable-editgroup,
+h5 .sortable-groupeditor,
 h5 .sortable-select-all {
   font-family: "AvenirRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;

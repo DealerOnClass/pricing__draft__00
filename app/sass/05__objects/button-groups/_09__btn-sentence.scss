@@ -19,11 +19,15 @@
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
+    &[data-type="group"],
+    &[data-type="nested"],
     &[data-type="b_joiner"] {
         border-radius: $btn__radius!important;
-        float: none;
         clear: both;
         display: block;
+        width: auto;
+    }
+    &[data-type="b_joiner"] {
         width: 5em!important;
     }
     &[data-type="nested"],
