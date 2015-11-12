@@ -64,29 +64,17 @@ $(window).scroll(function(){
 //  Thank you Cody House ** end
 
 
-////////////////////////////////////////
 //
-//  Step through panel wizard
+//  Step through accordions
 //
-$("[data-toggle='panel-wizard__next']").on("click", function() {
+$("[data-toggle='accordion-wizard__next']").on("click", function() {
     $(this).closest(".panel-collapse").collapse('hide');
-    $(this).closest(".panel.panel-wizard").next(".panel").children(".panel-collapse").collapse('show');
+    $(this).closest(".panel.panel-default").next(".panel").children(".panel-collapse").collapse('show');
 });
-$("[data-toggle='panel-wizard__prev']").on("click", function() {
+$("[data-toggle='accordion-wizard__prev']").on("click", function() {
     $(this).closest(".panel-collapse").collapse('hide');
-    $(this).closest(".panel.panel-wizard").prev(".panel").children(".panel-collapse").collapse('show');
+    $(this).closest(".panel.panel-default").prev(".panel").children(".panel-collapse").collapse('show');
 });
-$("[data-toggle='panel-wizard__done']").on("click", function() {
+$("[data-toggle='accordion-wizard__done']").on("click", function() {
     $(this).closest(".panel-collapse").collapse('hide');
-});
-//  Set icon default
-$(document).ready( function() {
-    $(".panel-wizard .panel-collapse.in").prev(".panel-heading").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-});
-//  Toggle accordion icon
-$(".panel-wizard").on("show.bs.collapse", function() {
-    $(this).find(".panel-heading .fa").removeClass("fa-plus").addClass("fa-minus");
-});
-$(".panel-wizard").on("hide.bs.collapse", function() {
-    $(this).find(".panel-heading .fa").removeClass("fa-minus").addClass("fa-plus");
 });

@@ -11,10 +11,14 @@ $panel__shadow:                   0 $one__pixel $one__pixel rgba(0,0,0,0.05);
 $panel__vertical-rhythm:          $panel__y;
 //  Panel Heading
 $panel-heading__border:           $gray__02;
-$panel-heading__padding:          $panel__y $panel__x;
+$panel-heading__padding__x:       $panel__x;
+$panel-heading__padding__y:       $panel__y;
+//  Panel Wizard
+$panel-wizard-step-counter:       true !default;
+$panel-wizard-true-accordion:     true !default;
 //  Panel Body
 $panel-body__border:              $gray__02;
-$panel-body__padding:             $panel__y $panel__x;
+$panel-body__padding:             ( $panel__y * 2 ) $panel__x $panel__y;
 //  Panel Footer
 $panel-footer__bg:                transparent; // was $gray__02;
 $panel-footer__border:            $gray__02;
@@ -28,6 +32,7 @@ $panel__table__border:            $gray__02;
 //  Variations
 $panel--default:                  $gray__01;
 $panel--primary:                  $primary__color;
+$panel--inverse:                  $inverse__color;
 $panel--success:                  $state--success;
 $panel--info:                     $state--info;
 $panel--warning:                  $state--warning;

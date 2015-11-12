@@ -41,20 +41,6 @@ $(".sortable-select-all").on("click", function() {
 });
 //
 //
-//  Step through accordions
-$("[data-toggle='step__next']").on("click", function() {
-    $(this).closest(".panel-collapse").collapse('hide');
-    $(this).closest(".panel.panel-default").next(".panel").children(".panel-collapse").collapse('show');
-});
-$("[data-toggle='step__prev']").on("click", function() {
-    $(this).closest(".panel-collapse").collapse('hide');
-    $(this).closest(".panel.panel-default").prev(".panel").children(".panel-collapse").collapse('show');
-});
-$("[data-toggle='step__done']").on("click", function() {
-    $(this).closest(".panel-collapse").collapse('hide');
-});
-//
-//
 //  1.) Launch Contextual Modal
 function OpenModal(elem) {
 

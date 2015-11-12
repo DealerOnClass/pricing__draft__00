@@ -1,5 +1,5 @@
 @mixin panel-variant($color) {
-    $border:              shade($color, 10%);
+    $border:              shade($color, 14%);
     $heading-text-color:  check-color($color, 70);
     $heading-bg-color:    $color;
     $heading-border:      check-color($color, 70, $border, $color);
@@ -10,6 +10,14 @@
         color: $heading-text-color;
         background-color: $heading-bg-color;
         border-color: $heading-border;
+
+        &.btn {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: darken($heading-bg-color, 3%);
+            }
+        }
 
         + .panel-collapse > .panel-body {
             border-top-color: $border;
@@ -22,6 +30,7 @@
     & > .panel-footer {
         + .panel-collapse > .panel-body {
             border-bottom-color: $border;
+            //  border-top-color: $gray__02;
         }
     }
 }

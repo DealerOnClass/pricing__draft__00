@@ -1,0 +1,33 @@
+.panel-wizard-step {
+    float: left;
+}
+
+@if $panel-wizard-step-counter {
+    .panel-wizard-container {
+        counter-reset: panel-wizard-step;
+    }
+    .panel-wizard-step:before {
+        font-family: $sans--bold;
+
+        content: 'Step ' counter(panel-wizard-step) ': ';
+        counter-increment: panel-wizard-step;
+    }
+}
+
+@if $panel-wizard-true-accordion {
+    .panel-wizard-container {
+        .panel-wizard {
+            margin-bottom: 0;
+        }
+        .panel-wizard:not(:last-child) {
+            border-bottom: 0 none;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .panel-wizard + .panel-wizard {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            //  border-top: 0 none;
+        }
+    }
+}

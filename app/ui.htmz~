@@ -5111,49 +5111,47 @@
 
             <section>
                 <h3>Panel Wizard</h3>
-                <div class="panel-wizard-container">
-                    <div class="panel panel-default panel-wizard">
-                        <a class="panel-heading btn" href="#panel-wizard__step1" data-toggle="collapse">
-                            <span class="panel-wizard-step">Name and describe your pricing template</span>
-                            <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
-                        </a>
-                        <div class="panel-collapse collapse" id="panel-wizard__step1">
-                            <div class="panel-body">
-                                <p>Elit delectus officiis minus odit quam libero harum consectetur? Nam sunt sapiente aut est enim id cumque voluptatibus dolor. Provident totam saepe quod natus cumque ad mollitia vel magnam nihil.</p>
-                            </div>
-                            <div class="panel-footer">
-                                <a class="btn btn-default" data-toggle="panel-wizard__next" href="javaScript:void(0)">Next</a>
-                            </div>
+                <div class="panel panel-default panel-wizard">
+                    <a class="panel-wizard-heading btn" href="#panel-wizard__step1" data-toggle="collapse">
+                        <span class="pull-left">Step 1: Name and describe your pricing template</span>
+                        <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
+                    </a>
+                    <div class="panel-collapse collapse" id="panel-wizard__step1">
+                        <div class="panel-body">
+                            <p>Elit delectus officiis minus odit quam libero harum consectetur? Nam sunt sapiente aut est enim id cumque voluptatibus dolor. Provident totam saepe quod natus cumque ad mollitia vel magnam nihil.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <a class="btn btn-default" data-toggle="panel-wizard__next" href="javaScript:void(0)">Next</a>
                         </div>
                     </div>
-                    <div class="panel panel-default panel-wizard">
-                        <a class="panel-heading btn" href="#panel-wizard__step2" data-toggle="collapse">
-                            <span class="panel-wizard-step">Compliance</span>
-                            <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
-                        </a>
-                        <div class="panel-collapse collapse" id="panel-wizard__step2">
-                            <div class="panel-body">
-                                <p>Elit fuga obcaecati fuga fugiat recusandae dolores rem. Itaque ipsum doloremque molestiae ratione rem tempora assumenda. Eaque ad adipisci minima eos ullam mollitia a nostrum. Minus laborum sequi beatae suscipit?</p>
-                            </div>
-                            <div class="panel-footer">
-                                <a class="btn btn-default" data-toggle="panel-wizard__prev" href="javaScript:void(0)">Previous</a>
-                                <a class="btn btn-default" data-toggle="panel-wizard__next" href="javaScript:void(0)">Next</a>
-                            </div>
+                </div>
+                <div class="panel panel-default panel-wizard">
+                    <a class="panel-heading btn" href="#panel-wizard__step2" data-toggle="collapse">
+                        <span class="pull-left">Step 2: Compliance</span>
+                        <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
+                    </a>
+                    <div class="panel-collapse collapse" id="panel-wizard__step2">
+                        <div class="panel-body">
+                            <p>Elit fuga obcaecati fuga fugiat recusandae dolores rem. Itaque ipsum doloremque molestiae ratione rem tempora assumenda. Eaque ad adipisci minima eos ullam mollitia a nostrum. Minus laborum sequi beatae suscipit?</p>
+                        </div>
+                        <div class="panel-footer">
+                            <a class="btn btn-default" data-toggle="panel-wizard__prev" href="javaScript:void(0)">Previous</a>
+                            <a class="btn btn-default" data-toggle="panel-wizard__next" href="javaScript:void(0)">Next</a>
                         </div>
                     </div>
-                    <div class="panel panel-default panel-wizard">
-                        <a class="panel-heading btn" href="#panel-wizard__step3" data-toggle="collapse">
-                            <span class="panel-wizard-step">Display</span>
-                            <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
-                        </a>
-                        <div class="panel-collapse collapse" id="panel-wizard__step3">
-                            <div class="panel-body">
-                                <p>Elit fuga obcaecati fuga fugiat recusandae dolores rem. Itaque ipsum doloremque molestiae ratione rem tempora assumenda. Eaque ad adipisci minima eos ullam mollitia a nostrum. Minus laborum sequi beatae suscipit?</p>
-                            </div>
-                            <div class="panel-footer">
-                                <a class="btn btn-default" data-toggle="panel-wizard__prev" href="javaScript:void(0)">Previous</a>
-                                <a class="btn btn-default" data-toggle="panel-wizard__done" href="javaScript:void(0)">Done</a>
-                            </div>
+                </div>
+                <div class="panel panel-default panel-wizard">
+                    <a class="panel-heading btn" href="#panel-wizard__step3" data-toggle="collapse">
+                        <span class="pull-left">Step 3: Display</span>
+                        <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
+                    </a>
+                    <div class="panel-collapse collapse" id="panel-wizard__step3">
+                        <div class="panel-body">
+                            <p>Elit fuga obcaecati fuga fugiat recusandae dolores rem. Itaque ipsum doloremque molestiae ratione rem tempora assumenda. Eaque ad adipisci minima eos ullam mollitia a nostrum. Minus laborum sequi beatae suscipit?</p>
+                        </div>
+                        <div class="panel-footer">
+                            <a class="btn btn-default" data-toggle="panel-wizard__prev" href="javaScript:void(0)">Previous</a>
+                            <a class="btn btn-default" data-toggle="panel-wizard__done" href="javaScript:void(0)">Done</a>
                         </div>
                     </div>
                 </div>

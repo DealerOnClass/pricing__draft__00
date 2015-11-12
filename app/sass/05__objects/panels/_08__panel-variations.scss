@@ -4,6 +4,9 @@
 .panel-primary {
     @include panel-variant($panel--primary);
 }
+.panel-inverse {
+    @include panel-variant($panel--inverse);
+}
 .panel-success {
     @include panel-contextual-variant($panel--success);
 }

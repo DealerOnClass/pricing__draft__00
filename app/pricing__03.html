@@ -30,7 +30,7 @@
                         <span class="icon-bar"></span>
                     </span>
                 </a>
-                <a class="navbar-brand" href="#">DealerOn</a>
+                <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-dealeron">
                 <ul class="nav navbar-nav navbar-right">
@@ -52,287 +52,289 @@
 
         <div class="container">
             <h3>Pricing Template Creation</h3>
-            <div class="panel panel-default">
-                <a class="btn btn-block clearfix" href="#pricing__template__creation__collapse__step1" data-toggle="collapse">
-                    <span class="pull-left">Step 1: Name and describe your pricing template</span>
-                    <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
-                </a>
-                <!-- had "in" -->
-                <div class="panel-collapse collapse" id="pricing__template__creation__collapse__step1">
-                    <div class="panel-body">
-                        <form class="form form-horizontal text-left" action="">
-                            <div class="form-group">
-                                <label class="col-sm-4 control-label">Name:</label>
-                                <div class="col-sm-8">
-                                    <input class="form-control" type="text" placeholder="John Doe's pricing template">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-4 control-label">Description:</label>
-                                <div class="col-sm-8">
-                                    <textarea class="form-control" rows="3" placeholder="Use for John Doe's vehicles."></textarea>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="panel-footer">
-                        <form class="form form-horizontal" action="">
-                            <div class="form-group">
-                                <div class="col-sm-offset-4 col-sm-8">
-                                    <div class="pull-right">
-                                        <a class="btn btn-default" data-toggle="step__next" href="javaScript:void(0)">Next</a>
+            <div class="panel-wizard-container">
+                <div class="panel panel-default panel-wizard">
+                    <a class="panel-heading btn" href="#pricing__template__creation__collapse__step1" data-toggle="collapse">
+                        <span class="panel-wizard-step">Name and describe your pricing template</span>
+                        <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
+                    </a>
+                    <!-- had "in" -->
+                    <div class="panel-collapse collapse" id="pricing__template__creation__collapse__step1">
+                        <div class="panel-body">
+                            <form class="form form-horizontal text-left" action="">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Name:</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" placeholder="John Doe's pricing template">
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Description:</label>
+                                    <div class="col-sm-8">
+                                        <textarea class="form-control" rows="3" placeholder="Use for John Doe's vehicles."></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-footer">
+                            <form class="form form-horizontal" action="">
+                                <div class="form-group">
+                                    <div class="col-sm-offset-4 col-sm-8">
+                                        <div class="pull-right">
+                                            <a class="btn btn-default" data-toggle="panel-wizard__next" href="javaScript:void(0)">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="panel panel-default">
-                <a class="btn btn-block clearfix" href="#pricing__template__creation__collapse__step2" data-toggle="collapse">
-                    <span class="pull-left">Step 2: Compliance</span>
-                    <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
-                </a>
-                <div class="panel-collapse collapse" id="pricing__template__creation__collapse__step2">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-lg-4">
-                                <h5>Available OEMs</h5>
-                                <div id="pricing__template__creation__step2__toolbox" class="sortable-toolbox btn-tags">
-                                    <div class="btn btn-default clearfix sortable" style="width: 6em;">
-                                        <span class="sortable-text">Ford</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default clearfix sortable" style="width: 6em;">
-                                        <span class="sortable-text">Honda</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default clearfix sortable" style="width: 6em;">
-                                        <span class="sortable-text">Hyunda</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default clearfix sortable" style="width: 6em;">
-                                        <span class="sortable-text">Infiniti</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default clearfix sortable" style="width: 6em;">
-                                        <span class="sortable-text">Isuzu</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default clearfix sortable" style="width: 6em;">
-                                        <span class="sortable-text">Jaguar</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default clearfix sortable" style="width: 6em;">
-                                        <span class="sortable-text">Jeep</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                <div class="panel panel-default panel-wizard">
+                    <a class="panel-heading btn" href="#pricing__template__creation__collapse__step2" data-toggle="collapse">
+                        <span class="panel-wizard-step">Compliance</span>
+                        <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
+                    </a>
+                    <div class="panel-collapse collapse" id="pricing__template__creation__collapse__step2">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-lg-4">
+                                    <h5>Available OEMs</h5>
+                                    <div id="pricing__template__creation__step2__toolbox" class="sortable-toolbox btn-tags">
+                                        <div class="btn btn-default clearfix sortable" style="width: 6em;">
+                                            <span class="sortable-text">Ford</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default clearfix sortable" style="width: 6em;">
+                                            <span class="sortable-text">Honda</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default clearfix sortable" style="width: 6em;">
+                                            <span class="sortable-text">Hyunda</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default clearfix sortable" style="width: 6em;">
+                                            <span class="sortable-text">Infiniti</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default clearfix sortable" style="width: 6em;">
+                                            <span class="sortable-text">Isuzu</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default clearfix sortable" style="width: 6em;">
+                                            <span class="sortable-text">Jaguar</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default clearfix sortable" style="width: 6em;">
+                                            <span class="sortable-text">Jeep</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-lg-4">
-                                <h5>
-                                    Associated OEMs
-                                    <a class="pull-right btn btn-default sortable-remove-all">
-                                        Clear <!-- <i class="fa fa-times fa-sm"></i> -->
-                                    </a>
-                                </h5>
-                                <div id="pricing__template__creation__step2__workbench" class="sortable-workbench btn-tags">
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-4">
-                                <h5>
-                                    Associated States
-                                    <div class="btn-group pull-right">
-                                        <a class="btn btn-default sortable-select-all">
-                                            All <!--<i class="fa fa-check-square fa-sm"></i> -->
+                                <div class="col-xs-12 col-sm-6 col-lg-4">
+                                    <h5>
+                                        Associated OEMs
+                                        <a class="pull-right btn btn-default sortable-remove-all">
+                                            Clear <!-- <i class="fa fa-times fa-sm"></i> -->
                                         </a>
-                                        <a class="btn btn-default sortable-remove-all">
-                                            None <!-- <i class="fa fa-square-o fa-sm"></i> -->
-                                        </a>
+                                    </h5>
+                                    <div id="pricing__template__creation__step2__workbench" class="sortable-workbench btn-tags">
                                     </div>
-                                </h5>
-                                <div class="btn-tags active-toggle">
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Alabama">AL</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Alaska">AK</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Arizona">AZ</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Arkansas">AR</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="California">CA</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Colorado">CO</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Connecticut">CT</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Delaware">DE</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Florida">FL</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Georgia">GA</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Hawaii">HI</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Idaho">ID</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Illinois">IL</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Indiana">IN</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Iowa">IA</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Kansas">KS</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Kentucky">KY</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Louisiana">LA</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Maine">ME</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Maryland">MD</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Massachusetts">MA</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Michigan">MI</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Minnesota">MN</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Mississippi">MS</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Missouri">MO</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Montana">MT</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Nebraska">NE</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Nevada">NV</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="New Hampshire">NH</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="New Jersey">NJ</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="New Mexico">NM</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="New York">NY</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="North Carolina">NC</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="North Dakota">ND</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Ohio">OH</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Oklahoma">OK</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Oregon">OR</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Pennsylvania">PA</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Rhode Island">RI</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="South Carolina">SC</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="South Dakota">SD</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Tennessee">TN</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Texas">TX</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Utah">UT</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Vermont">VT</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Virginia">VA</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Washington">WA</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="West Virginia">WV</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Wisconsin">WI</abbr>
-                                    <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Wyoming">WY</abbr>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <h5>
+                                        Associated States
+                                        <div class="btn-group pull-right">
+                                            <a class="btn btn-default sortable-select-all">
+                                                All <!--<i class="fa fa-check-square fa-sm"></i> -->
+                                            </a>
+                                            <a class="btn btn-default sortable-remove-all">
+                                                None <!-- <i class="fa fa-square-o fa-sm"></i> -->
+                                            </a>
+                                        </div>
+                                    </h5>
+                                    <div class="btn-tags active-toggle">
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Alabama">AL</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Alaska">AK</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Arizona">AZ</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Arkansas">AR</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="California">CA</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Colorado">CO</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Connecticut">CT</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Delaware">DE</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Florida">FL</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Georgia">GA</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Hawaii">HI</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Idaho">ID</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Illinois">IL</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Indiana">IN</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Iowa">IA</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Kansas">KS</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Kentucky">KY</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Louisiana">LA</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Maine">ME</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Maryland">MD</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Massachusetts">MA</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Michigan">MI</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Minnesota">MN</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Mississippi">MS</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Missouri">MO</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Montana">MT</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Nebraska">NE</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Nevada">NV</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="New Hampshire">NH</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="New Jersey">NJ</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="New Mexico">NM</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="New York">NY</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="North Carolina">NC</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="North Dakota">ND</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Ohio">OH</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Oklahoma">OK</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Oregon">OR</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Pennsylvania">PA</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Rhode Island">RI</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="South Carolina">SC</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="South Dakota">SD</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Tennessee">TN</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Texas">TX</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Utah">UT</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Vermont">VT</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Virginia">VA</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Washington">WA</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="West Virginia">WV</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Wisconsin">WI</abbr>
+                                        <abbr class="btn btn-default btn-sm" style="width: 3em;" title="Wyoming">WY</abbr>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="panel-footer">
-                        <form class="form form-horizontal" action="">
-                            <div class="form-group">
-                                <div class="col-sm-offset-4 col-sm-8">
-                                    <div class="pull-right">
-                                        <a class="btn btn-default" data-toggle="step__prev" href="javaScript:void(0)">Previous</a>
-                                        <a class="btn btn-default" data-toggle="step__next" href="javaScript:void(0)">Next</a>
+                        <div class="panel-footer">
+                            <form class="form form-horizontal" action="">
+                                <div class="form-group">
+                                    <div class="col-sm-offset-4 col-sm-8">
+                                        <div class="pull-right">
+                                            <a class="btn btn-default" data-toggle="panel-wizard__prev" href="javaScript:void(0)">Previous</a>
+                                            <a class="btn btn-default" data-toggle="panel-wizard__next" href="javaScript:void(0)">Next</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <a class="btn btn-block clearfix" href="#pricing__template__creation__collapse__step3" data-toggle="collapse">
-                    <span class="pull-left">Step 3: Display</span>
-                    <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
-                </a>
-                <!-- added "in" -->
-                <div class="panel-collapse collapse in" id="pricing__template__creation__collapse__step3">
-                    <div class="panel-body">
-                        <h5>How to use:</h5>
-                        <p>Create a template by dragging toolbox items onto the workbench.<br>Apply styles by dragging style items onto elements within the workbench.<br>Preview your work on the right.</p>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-4">
-                                <h5>Toolbox</h5>
-                                <div id="pricing__template__creation__step3__toolbox" class="sortable-toolbox">
-                                    <div class="btn btn-default btn-block clearfix sortable" id="static_price" data-preview="text">
-                                        <span class="sortable-text sortable-text-label">Static Price</span>
-                                        <span class="sortable-text sortable-text-value">XX,XXX</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#static_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="calc_price" data-preview="text">
-                                        <span class="sortable-text sortable-text-label">Calculated Price</span>
-                                        <span class="sortable-text sortable-text-value">XX,XXX</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#calc_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="feed_price" data-preview="text">
-                                        <span class="sortable-text sortable-text-label">Feed Price</span>
-                                        <span class="sortable-text sortable-text-value">XX,XXX</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#feed_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="rebate" data-preview="text">
-                                        <span class="sortable-text sortable-text-label">Rebates</span>
-                                        <span class="sortable-text sortable-text-value">XX,XXX</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#rebate_modal"><i class="fa fa-pencil fa-sm"></i></a>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="text" data-preview="text">
-                                        <span class="sortable-text">Text</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#text_modal"><i class="fa fa-pencil fa-sm"></i></a>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="button" data-preview="button">
-                                        <span class="sortable-text">Button</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#button_modal"><i class="fa fa-pencil fa-sm"></i></a>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                    <div class="btn btn-default btn-block clearfix sortable" id="divider" data-preview="divider">
-                                        <span class="sortable-text">Divider</span>
-                                        <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#divider_modal"><i class="fa fa-pencil fa-sm"></i></a>
-                                        <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-4">
-                                <h5>
-                                    Workbench
-                                    <a class="pull-right btn btn-default sortable-remove-all">
-                                        Clear <!-- <i class="fa fa-times fa-sm"></i> -->
-                                    </a>
-                                </h5>
-                                <div id="pricing__template__creation__step3__workbench" class="sortable-workbench btn-tags"></div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-4">
-                                <h5>Preview</h5>
-                                <form id="pricing__template__creation__step3__preview" class="form form-horizontal text-left sortable-preview" action="">
-                                    <div class="form-group">
-                                        <label class="col-xxs-6 control-label">MSRP:</label>
-                                        <label class="col-xxs-6 control-label">$XX,XXX</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-xxs-6 control-label">Retail Price:</label>
-                                        <label class="col-xxs-6 control-label">$XX,XXX</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-xxs-6 control-label">Dealer Discount:</label>
-                                        <label class="col-xxs-6 control-label">$XX,XXX</label>
-                                    </div>
-                                    <hr>
-                                    <div class="form-group">
-                                        <label class="col-xxs-6 control-label">You Save:</label>
-                                        <label class="col-xxs-6 control-label">$XX,XXX</label>
-                                    </div>
-                                </form>
-                            </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="panel-footer">
-                        <form class="form form-horizontal" action="">
-                            <div class="form-group">
-                                <div class="col-sm-offset-4 col-sm-8">
-                                    <div class="pull-right">
-                                        <a class="btn btn-default" data-toggle="step__prev" href="javaScript:void(0)">Previous</a>
-                                        <a class="btn btn-default" data-toggle="step__done" href="javaScript:void(0)">Done</a>
+                </div>
+                <div class="panel panel-default panel-wizard">
+                    <a class="panel-heading btn" href="#pricing__template__creation__collapse__step3" data-toggle="collapse">
+                        <span class="panel-wizard-step">Display</span>
+                        <i class="pull-right fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
+                    </a>
+                    <!-- added "in" -->
+                    <div class="panel-collapse collapse in" id="pricing__template__creation__collapse__step3">
+                        <div class="panel-body">
+                            <h5>How to use:</h5>
+                            <p>Create a template by dragging toolbox items onto the workbench.<br>Apply styles by dragging style items onto elements within the workbench.<br>Preview your work on the right.</p>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <h5>Toolbox</h5>
+                                    <div id="pricing__template__creation__step3__toolbox" class="sortable-toolbox">
+                                        <div class="btn btn-default btn-block clearfix sortable" id="static_price" data-preview="text">
+                                            <span class="sortable-text sortable-text-label">Static Price</span>
+                                            <span class="sortable-text sortable-text-value">XX,XXX</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#static_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default btn-block clearfix sortable" id="calc_price" data-preview="text">
+                                            <span class="sortable-text sortable-text-label">Calculated Price</span>
+                                            <span class="sortable-text sortable-text-value">XX,XXX</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#calc_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default btn-block clearfix sortable" id="feed_price" data-preview="text">
+                                            <span class="sortable-text sortable-text-label">Feed Price</span>
+                                            <span class="sortable-text sortable-text-value">XX,XXX</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#feed_price_modal"><i class="fa fa-pencil fa-sm"></i></a>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default btn-block clearfix sortable" id="rebate" data-preview="text">
+                                            <span class="sortable-text sortable-text-label">Rebates</span>
+                                            <span class="sortable-text sortable-text-value">XX,XXX</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#rebate_modal"><i class="fa fa-pencil fa-sm"></i></a>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default btn-block clearfix sortable" id="text" data-preview="text">
+                                            <span class="sortable-text">Text</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#text_modal"><i class="fa fa-pencil fa-sm"></i></a>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default btn-block clearfix sortable" id="button" data-preview="button">
+                                            <span class="sortable-text">Button</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#button_modal"><i class="fa fa-pencil fa-sm"></i></a>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
+                                        <div class="btn btn-default btn-block clearfix sortable" id="divider" data-preview="divider">
+                                            <span class="sortable-text">Divider</span>
+                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            <a class="sortable-action-item sortable-edit" data-toggle="modal" href="#divider_modal"><i class="fa fa-pencil fa-sm"></i></a>
+                                            <a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                    <h5>
+                                        Workbench
+                                        <a class="pull-right btn btn-default sortable-remove-all">
+                                            Clear <!-- <i class="fa fa-times fa-sm"></i> -->
+                                        </a>
+                                    </h5>
+                                    <div id="pricing__template__creation__step3__workbench" class="sortable-workbench btn-tags"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4">
+                                    <h5>Preview</h5>
+                                    <form id="pricing__template__creation__step3__preview" class="form form-horizontal text-left sortable-preview" action="">
+                                        <div class="form-group">
+                                            <label class="col-xxs-6 control-label">MSRP:</label>
+                                            <label class="col-xxs-6 control-label">$XX,XXX</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xxs-6 control-label">Retail Price:</label>
+                                            <label class="col-xxs-6 control-label">$XX,XXX</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xxs-6 control-label">Dealer Discount:</label>
+                                            <label class="col-xxs-6 control-label">$XX,XXX</label>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label class="col-xxs-6 control-label">You Save:</label>
+                                            <label class="col-xxs-6 control-label">$XX,XXX</label>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="panel-footer">
+                            <form class="form form-horizontal" action="">
+                                <div class="form-group">
+                                    <div class="col-sm-offset-4 col-sm-8">
+                                        <div class="pull-right">
+                                            <a class="btn btn-default" data-toggle="panel-wizard__prev" href="javaScript:void(0)">Previous</a>
+                                            <a class="btn btn-default" data-toggle="panel-wizard__done" href="javaScript:void(0)">Done</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
