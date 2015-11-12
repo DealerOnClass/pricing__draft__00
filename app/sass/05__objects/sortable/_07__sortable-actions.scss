@@ -50,6 +50,8 @@
 h5 {
     .sortable-finished,
     .sortable-remove-all,
+    .sortable-removegroup,
+    .sortable-groupdeleter,
     .sortable-groupem,
     .sortable-ungroupem,
     .sortable-lockem,
@@ -58,6 +60,7 @@ h5 {
         font-family: $sans--regular;
 
         position: relative;
+        right: 0;
         top: ( $btn__y * -1);
     }
 }

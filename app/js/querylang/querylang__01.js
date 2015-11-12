@@ -143,12 +143,10 @@ function UpdateWorkbench(origin, destination) {
 }
 //  4.) Make Group
 $(".sortable-groupem").on("click", function () {
-    $(".sortable-ungroupem").removeClass("active");
+    $(this).toggleClass("active");
     if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
-        $(this).removeClass("active");
         $("#query__creation__workbench .sortable-lock").remove();
     } else {
-        $(this).addClass("active");
         $("#query__creation__workbench").children().prepend("<a onclick='PrepareToLockTag(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
     }
 });
@@ -189,12 +187,10 @@ function LockTags() {
 };
 //  5.) Un Group
 $(".sortable-ungroupem").on("click", function () {
-    $(".sortable-groupem").removeClass("active");
+    $(this).toggleClass("active");
     if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
-        $(this).removeClass("active");
         $("#query__creation__workbench .sortable-lock").remove();
     } else {
-        $(this).addClass("active");
         $("#query__creation__workbench > [data-type='nested']").prepend("<a onclick='PrepareToUnLockTag(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
     }
 });
@@ -233,7 +229,59 @@ function UnLockTags() {
     $("#query__creation__workbench .sortable-lock").remove();
     ShowUnGrouper();
 };
+//
+//  - changed sortable-lock to sortable-deletegroup
+//
+//  6.) Delete Groups
+$(".sortable-removegroup").on("click", function () {
+    $(this).toggleClass("active");
+    if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
+        $("#query__creation__workbench .sortable-lock").remove();
+    } else {
+        //  selected had ">"
+        $("#query__creation__workbench [data-type='nested']").prepend("<a onclick='PrepareToDeleteGroup(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
+    }
+});
+function PrepareToDeleteGroup(elem) {
+    var icon = $(elem).children(".fa");
+    if ( icon.hasClass("fa-circle-o") ) {
+        icon.removeClass("fa-circle-o").addClass("fa-circle");
+    } else {
+        icon.removeClass("fa-circle").addClass("fa-circle-o");
+    }
 
+    CountCanDeleteGroup();
+};
+function CountCanDeleteGroup() {
+    var deletableGroups = $("#query__creation__workbench .fa-circle").length;
+    $(".sortable-groupdeleter .count").text(deletableGroups);
+    if ( deletableGroups >= 1 ) {
+        ShowDeleter();   // stupid i know whatever
+    } else {
+        HideDeleter();
+    }
+};
+function ShowDeleter() {
+    var lockem = "<a onclick='DeleteGroup()' class='btn btn-default sortable-groupdeleter'><i class='fa fa-times'></i> Remove <span class='count'>1</span></a>";
+    if ( $(".sortable-groupdeleter").length == 0 ) {
+        $(".sortable-removegroup").addClass("hidden").after(lockem);
+    }
+};
+function HideDeleter() {
+    $(".sortable-groupdeleter").remove();
+    $(".sortable-removegroup").removeClass("hidden");
+};
+function DeleteGroup() {
+    $(".sortable-removegroup").removeClass("active");
+    $("#query__creation__workbench .fa-circle").parent().parent().remove();
+    $("#query__creation__workbench .sortable-lock").remove();
+    HideDeleter();
+};
+
+
+//
+//
+//  Sortable Setup
 (function () {
     'use strict';
 

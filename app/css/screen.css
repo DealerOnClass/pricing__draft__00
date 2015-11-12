@@ -7795,18 +7795,6 @@ button.list-group-item-danger.active:focus {
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
 }
-.panel-heading.btn {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: -0.05556em;
-  border-width: 0 0 0.05556em;
-  border-radius: 0;
-}
-.panel-heading.btn > .fa {
-  position: relative;
-  top: 0.45em;
-}
 
 .panel-title {
   margin-top: 0;
@@ -8164,10 +8152,6 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #dcb7b6;
 }
 
-.panel-wizard-step {
-  float: left;
-}
-
 .panel-wizard-container {
   counter-reset: panel-wizard-step;
 }
@@ -8189,6 +8173,23 @@ button.list-group-item-danger.active:focus {
 .panel-wizard-container .panel-wizard + .panel-wizard {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.panel-wizard .panel-heading.btn {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: -0.05556em;
+  border-width: 0 0 0.05556em;
+  border-radius: 0;
+}
+.panel-wizard .panel-wizard-step {
+  float: left;
+}
+.panel-wizard .panel-wizard-icon {
+  position: relative;
+  top: 0.45em;
+  float: right;
 }
 
 .progress {
@@ -8578,6 +8579,8 @@ button.list-group-item-danger.active:focus {
 
 h5 .sortable-finished,
 h5 .sortable-remove-all,
+h5 .sortable-removegroup,
+h5 .sortable-groupdeleter,
 h5 .sortable-groupem,
 h5 .sortable-ungroupem,
 h5 .sortable-lockem,
@@ -8585,6 +8588,7 @@ h5 .sortable-unlockem,
 h5 .sortable-select-all {
   font-family: "AvenirRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
+  right: 0;
   top: -0.45em;
 }
 
@@ -9581,26 +9585,6 @@ h3 {
 .show__btn .btn {
   margin-bottom: 27px;
   margin-bottom: 1.5rem;
-}
-
-.pricing {
-  margin-bottom: 9em;
-}
-.pricing .navbar-static-top {
-  margin-bottom: 3em;
-}
-.pricing header + section {
-  margin-top: 3em;
-}
-.pricing .btn-primary {
-  transition: border-color 0.15s ease-in-out;
-  color: #32405a;
-  border-width: 0.11111em;
-  border-color: #e6e6e6;
-  background-color: white;
-}
-.pricing .btn-primary:hover, .pricing .btn-primary:active, .pricing .btn-primary:focus {
-  border-color: #cfcfcf;
 }
 
 #query_modal .tab-pane .btn,

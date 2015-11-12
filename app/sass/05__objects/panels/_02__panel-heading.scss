@@ -6,24 +6,4 @@
     > .dropdown .dropdown-toggle {
         color: inherit;
     }
-
-    //  If panel-heading is a "btn" then remove border-radius and border
-    //  to prevent doubling of border-radius and border
-    //
-    //  example can be found in panel-wizard componenet
-    &.btn {
-        display: block;
-        overflow: hidden;
-
-        width: 100%;
-        margin-bottom: $one__pixel * -1;
-
-        border-width: 0 0 $one__pixel;
-        border-radius: 0;
-
-        > .fa {
-            position: relative;
-            top: $panel-heading__padding__y / 2;
-        }
-    }
 }

@@ -23,6 +23,7 @@ $palette__gray--dark:    #252931;
 $palette__gray:          #74777d;
 $palette__gray--light:   #f3f3f3;
 //  Abstract Palette
+$primary__color--light:  tint($palette__blue, 5%);
 $primary__color:         $palette__blue;
 $primary__color--dark:   $palette__blue--dark;
 $inverse__color:         mix($primary__color, $gray__08, 20%);

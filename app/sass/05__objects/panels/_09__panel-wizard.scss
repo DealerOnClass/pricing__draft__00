@@ -1,7 +1,3 @@
-.panel-wizard-step {
-    float: left;
-}
-
 @if $panel-wizard-step-counter {
     .panel-wizard-container {
         counter-reset: panel-wizard-step;
@@ -29,5 +25,30 @@
             border-top-right-radius: 0;
             //  border-top: 0 none;
         }
+    }
+}
+
+.panel-wizard {
+
+    .panel-heading.btn {
+        display: block;
+        overflow: hidden;
+
+        width: 100%;
+        margin-bottom: $one__pixel * -1;
+
+        border-width: 0 0 $one__pixel;
+        border-radius: 0;
+    }
+
+    .panel-wizard-step {
+        float: left;
+    }
+
+    .panel-wizard-icon {
+        position: relative;
+        top: $panel-heading__padding__y / 2;
+
+        float: right;
     }
 }
