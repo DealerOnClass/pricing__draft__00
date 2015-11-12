@@ -98,8 +98,8 @@ $navbar-primary__link--disabled__color:  white;
 $navbar-dealeron__has__sidebar:           true !default;
 $navbar-dealeron__has__dropdown:          true !default;
 //  Navbar-Dealeron
-$navbar-dealeron__bg:                     $accent__color;
-$navbar-dealeron__border:                 $accent__color;
+$navbar-dealeron__bg:                     $primary__color;
+$navbar-dealeron__border:                 $primary__color;
 $navbar-dealeron__color:                  white;
 //  Navbar-Dealeron-Brand
 $navbar-dealeron-brand__color:            $navbar-dealeron__color;
@@ -139,6 +139,10 @@ $navbar-dealeron-sidebar__link--active__bg:       shade($navbar-dealeron-sidebar
 $navbar-dealeron-sidebar__link--active__color:    mix($primary__color, $gray__01, 05%);
 $navbar-dealeron-sidebar__link--disabled__bg:     shade($navbar-dealeron-sidebar__bg, 2.5%);
 $navbar-dealeron-sidebar__link--disabled__color:  $navbar-dealeron-sidebar__color;
+//  Navbar-Dealeron sidebar Link Active Bar
+$navbar-dealeron-sidebar__link--active__bar:      $accent__color;
+//  ** old$navbar-dealeron-sidebar__link--active__bar:      saturate(lighten($primary__color, 10%), 40%);
+
 //  Navbar-Dealeron sidebar Dropdown-Menu
 $navbar-dealeron-sidebar__dropdown-menu__border:                 $navbar-dealeron-sidebar__border;
 $navbar-dealeron-sidebar__dropdown-menu__bg:                     shade($navbar-dealeron-sidebar__bg, 30%);

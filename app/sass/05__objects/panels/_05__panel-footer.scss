@@ -1,7 +1,7 @@
 .panel-footer {
     padding: $panel-footer__padding;
 
-    border-top: $one__pixel solid $panel-footer__border;
+    border: $one__pixel solid transparent;
     border-radius: 0 0 $panel__radius $panel__radius;
     background-color: $panel-footer__bg;
 

@@ -645,7 +645,7 @@
                             left: 0;
                             width: $two__pixels;
                             height: 100%;
-                            background-color: saturate(lighten($primary__color, 10%), 40%);
+                            background-color: $navbar-dealeron-sidebar__link--active__bar;
                         }
                     }
 

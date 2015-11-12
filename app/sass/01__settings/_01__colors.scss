@@ -27,6 +27,7 @@ $primary__color--light:  tint($palette__blue, 5%);
 $primary__color:         $palette__blue;
 $primary__color--dark:   $palette__blue--dark;
 $inverse__color:         mix($primary__color, $gray__08, 20%);
+//  $inverse__color--light:  mix($primary__color, $gray__08, 50%);
 $accent__color:          $palette__orange;
 $neutral__color--dark:   $palette__gray--dark;
 $neutral__color:         $palette__gray;

@@ -79,14 +79,17 @@ $("[data-toggle='panel-wizard__prev']").on("click", function() {
 $("[data-toggle='panel-wizard__done']").on("click", function() {
     $(this).closest(".panel-collapse").collapse('hide');
 });
-//  Set icon default
+//  Set icon default && active state
 $(document).ready( function() {
     $(".panel-wizard .panel-collapse.in").prev(".panel-heading").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+    $(".panel-wizard .panel-collapse.in").prev(".panel-heading").addClass("current");
 });
-//  Toggle accordion icon
+//  Toggle accordion icon && active state
 $(".panel-wizard").on("show.bs.collapse", function() {
     $(this).find(".panel-heading .fa").removeClass("fa-plus").addClass("fa-minus");
+    $(this).find(".panel-heading").addClass("current");
 });
 $(".panel-wizard").on("hide.bs.collapse", function() {
     $(this).find(".panel-heading .fa").removeClass("fa-minus").addClass("fa-plus");
+    $(this).find(".panel-heading").removeClass("current");
 });

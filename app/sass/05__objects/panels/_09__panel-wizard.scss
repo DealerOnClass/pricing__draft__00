@@ -16,14 +16,17 @@
             margin-bottom: 0;
         }
         .panel-wizard:not(:last-child) {
-            border-bottom: 0 none;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
+            border-bottom-width: 0;
+            .panel-footer {
+                border-bottom-width: 0;
+                border-radius: 0;
+            }
         }
         .panel-wizard + .panel-wizard {
             border-top-left-radius: 0;
             border-top-right-radius: 0;
-            //  border-top: 0 none;
         }
     }
 }
@@ -35,10 +38,25 @@
         overflow: hidden;
 
         width: 100%;
-        margin-bottom: $one__pixel * -1;
+        //  margin-bottom: $one__pixel * -1;
 
-        border-width: 0 0 $one__pixel;
+        //  border-width: 0 0 $one__pixel;
+        //  connected to .panel-body, .panel-heading, .panel-footer
         border-radius: 0;
+
+        &.current {
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                right: 0;
+                border-right: rhythm(.35) solid $accent__color;
+                border-left: rhythm(.35) solid transparent;
+                border-top: rhythm(.35) solid transparent;
+            }
+        }
     }
 
     .panel-wizard-step {

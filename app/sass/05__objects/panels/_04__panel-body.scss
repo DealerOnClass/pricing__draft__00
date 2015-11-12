@@ -1,6 +1,9 @@
 .panel-body {
     padding: $panel-body__padding;
 
+    border-right: $one__pixel solid transparent;
+    border-left: $one__pixel solid transparent;
+
     @include clearfix;
 
     > form {
