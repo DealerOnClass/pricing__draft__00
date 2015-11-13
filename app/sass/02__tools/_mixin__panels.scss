@@ -14,7 +14,8 @@
         &.btn {
             &:hover,
             &:active,
-            &:focus {
+            &:focus,
+            &.current {
                 background-color: darken($heading-bg-color, 3%);
                 border-color: darken($heading-bg-color, 3%);
             }
@@ -22,7 +23,6 @@
 
         + .panel-collapse > .panel-body,
         + .panel-collapse > .panel-footer {
-            //  border-color: $border;
             border-color: $gray__02;
         }
         .badge {

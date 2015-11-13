@@ -2918,7 +2918,7 @@ a.badge:hover, a.badge:focus {
   background-image: none;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  padding: 0.45em 0.9em;
+  padding: 0.675em 0.9em;
   border-radius: 0.3em;
 }
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
@@ -2984,7 +2984,7 @@ abbr.btn {
 }
 
 .btn-block + .btn-block {
-  margin-top: 0.45em;
+  margin-top: 0.675em;
 }
 
 input[type='submit'].btn-block,
@@ -7481,15 +7481,15 @@ button.list-group-item-danger.active:focus {
 }
 
 .navbar-dealeron {
-  border-color: #1c4181;
-  background-color: #1c4181;
+  border-color: #f36c0a;
+  background-color: #f36c0a;
 }
 .navbar-dealeron .navbar-brand {
   color: white;
 }
 .navbar-dealeron .navbar-brand:hover, .navbar-dealeron .navbar-brand:focus {
   color: white;
-  background-color: #193b74;
+  background-color: #db6109;
 }
 .navbar-dealeron .navbar-text {
   color: white;
@@ -7499,32 +7499,32 @@ button.list-group-item-danger.active:focus {
 }
 .navbar-dealeron .navbar-nav > li > a:hover, .navbar-dealeron .navbar-nav > li > a:focus {
   color: white;
-  background-color: #193b74;
+  background-color: #db6109;
 }
 .navbar-dealeron .navbar-nav > .active > a, .navbar-dealeron .navbar-nav > .active > a:hover, .navbar-dealeron .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #193b74;
+  background-color: #db6109;
 }
 .navbar-dealeron .navbar-nav > .disabled > a, .navbar-dealeron .navbar-nav > .disabled > a:hover, .navbar-dealeron .navbar-nav > .disabled > a:focus {
   color: white;
-  background-color: #1b3f7e;
+  background-color: #ed690a;
 }
 .navbar-dealeron .navbar-toggle {
-  border-color: #193b74;
+  border-color: #db6109;
 }
 .navbar-dealeron .navbar-toggle:hover, .navbar-dealeron .navbar-toggle:focus {
-  background-color: #193b74;
+  background-color: #db6109;
 }
 .navbar-dealeron .icon-bar {
   background-color: white;
 }
 .navbar-dealeron .navbar-collapse,
 .navbar-dealeron .navbar-form {
-  border-color: #1c4181;
+  border-color: #f36c0a;
 }
 .navbar-dealeron .navbar-nav > .open > a, .navbar-dealeron .navbar-nav > .open > a:hover, .navbar-dealeron .navbar-nav > .open > a:focus {
   color: white;
-  background-color: #193b74;
+  background-color: #db6109;
 }
 @media (max-width: 479px default) {
   .navbar-dealeron .navbar-nav .open .dropdown-menu > li > a {
@@ -7532,15 +7532,15 @@ button.list-group-item-danger.active:focus {
   }
   .navbar-dealeron .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-dealeron .navbar-nav .open .dropdown-menu > li > a:focus {
     color: white;
-    background-color: #193b74;
+    background-color: #db6109;
   }
   .navbar-dealeron .navbar-nav .open .dropdown-menu > .active > a, .navbar-dealeron .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-dealeron .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: white;
-    background-color: #193b74;
+    background-color: #db6109;
   }
   .navbar-dealeron .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-dealeron .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-dealeron .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: white;
-    background-color: #1b3f7e;
+    background-color: #ed690a;
   }
 }
 .navbar-dealeron .navbar-link {
@@ -8021,7 +8021,7 @@ button.list-group-item-danger.active:focus {
   background-color: #e6e6e6;
   border-color: #dedede;
 }
-.panel-default > .panel-heading.btn:hover, .panel-default > .panel-heading.btn:active, .panel-default > .panel-heading.btn:focus {
+.panel-default > .panel-heading.btn:hover, .panel-default > .panel-heading.btn:active, .panel-default > .panel-heading.btn:focus, .panel-default > .panel-heading.btn.current {
   background-color: #dedede;
   border-color: #dedede;
 }
@@ -8045,7 +8045,7 @@ button.list-group-item-danger.active:focus {
   background-color: #1c4181;
   border-color: #193b74;
 }
-.panel-primary > .panel-heading.btn:hover, .panel-primary > .panel-heading.btn:active, .panel-primary > .panel-heading.btn:focus {
+.panel-primary > .panel-heading.btn:hover, .panel-primary > .panel-heading.btn:active, .panel-primary > .panel-heading.btn:focus, .panel-primary > .panel-heading.btn.current {
   background-color: #193b74;
   border-color: #193b74;
 }
@@ -8069,7 +8069,7 @@ button.list-group-item-danger.active:focus {
   background-color: #2e3643;
   border-color: #282f3a;
 }
-.panel-inverse > .panel-heading.btn:hover, .panel-inverse > .panel-heading.btn:active, .panel-inverse > .panel-heading.btn:focus {
+.panel-inverse > .panel-heading.btn:hover, .panel-inverse > .panel-heading.btn:active, .panel-inverse > .panel-heading.btn:focus, .panel-inverse > .panel-heading.btn.current {
   background-color: #282f3a;
   border-color: #282f3a;
 }
@@ -8602,6 +8602,7 @@ button.list-group-item-danger.active:focus {
 
 h5 .sortable-finished,
 h5 .sortable-remove-all,
+h5 .sortable-cancel-all,
 h5 .sortable-removegroup,
 h5 .sortable-groupdeleter,
 h5 .sortable-groupem,
@@ -8614,7 +8615,7 @@ h5 .sortable-select-all {
   font-family: "AvenirRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   right: 0;
-  top: -0.45em;
+  top: -0.675em;
 }
 
 .sortable-toolbox .sortable-action-item {
@@ -8625,7 +8626,7 @@ h5 .sortable-select-all {
   position: absolute;
   top: 50%;
   right: 0.9em;
-  margin-top: -0.45em;
+  margin-top: -0.675em;
 }
 
 .sortable-workbench .sortable-drag {

@@ -146,6 +146,10 @@ function UpdateWorkbench(origin, destination) {
     $(origin).children().wrapAll("<div class='btn btn-default sortable clearfix' data-type='nested'></div>");
     //  update workbench
     $(origin).children().appendTo(destination);
+    //  insert cancle here
+    //  //  insert cancle here
+    //  //  insert cancle here
+    //  //  insert cancle here
 }
 //  4.) Make Group
 $(".sortable-groupem").on("click", function () {
@@ -335,6 +339,14 @@ function EditGroup() {
     $("#query__creation__workbench .sortable-lock").remove();
     HideEditor();
 };
+//  Cancel Button Functionality
+function ShowCancel() {
+    $(".sortable-remove-all").addClass("hidden");
+    $(".sortable-remove-all").after("<a onclick='CancelAction()' class='btn btn-default sortable-cancel-all'>Cancel</a>");
+}
+function HideCancel() {
+    $(".sortable-remove-all").removeClass("hidden");
+}
 //
 //
 //  Sortable Setup
