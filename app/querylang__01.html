@@ -42,13 +42,13 @@
         <div class="container">
             <h3>Query Creation</h3>
             <div class="panel-wizard-container">
-                <div class="panel panel-primary panel-wizard">
+                <div class="panel panel-inverse panel-wizard">
                     <a class="panel-heading btn" href="#query__creation__collapse__step1" data-toggle="collapse">
                         <span class="panel-wizard-step">Name and describe your query</span>
                         <i class="panel-wizard-icon fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
                     </a>
                     <!-- had "in" -->
-                    <div class="panel-collapse collapse in" id="query__creation__collapse__step1">
+                    <div class="panel-collapse collapse" id="query__creation__collapse__step1">
                         <div class="panel-body">
                             <form class="form form-horizontal text-left" action="">
                                 <div class="form-group">
@@ -78,16 +78,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-primary panel-wizard">
+                <div class="panel panel-inverse panel-wizard">
                     <a class="panel-heading btn" href="#query__creation__collapse__step2" data-toggle="collapse">
                         <span class="panel-wizard-step">Display</span>
                         <i class="panel-wizard-icon fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
                     </a>
                     <!-- added "in" -->
-                    <div class="panel-collapse collapse" id="query__creation__collapse__step2">
+                    <div class="panel-collapse collapse in" id="query__creation__collapse__step2">
                         <div class="panel-body">
-                            <h5>How to use:</h5>
-                            <p>Create a query by dragging toolbox items onto the workbench.</p>
+                            <div><strong>How to use:</strong></div>
+                            <ul>
+                                <li>Create a query by dragging toolbox items onto the workbench.</li>
+                                <li>Rearrange workbench items by dragging.</li>
+                            </ul>
                             <div class="row">
                                 <div class="col-xs-6 col-sm-6 col-md-4">
                                     <h5>Toolbox</h5>
@@ -120,7 +123,7 @@
                                     <h5>
                                         Workbench
                                         <div class="btn-group pull-right">
-                                            <a class="btn btn-default sortable-remove-all">Clear</a>
+                                            <a class="btn btn-default sortable-remove-all" onclick="ClearPreviewAndWorkbench()">Clear</a>
                                             <a class="btn btn-default sortable-groupem"><i class="fa fa-lock"></i></a>
                                             <a class="btn btn-default sortable-ungroupem"><i class="fa fa-unlock"></i></a>
                                             <a class="btn btn-default sortable-removegroup"><i class="fa fa-times"></i></a>

@@ -16,9 +16,9 @@
             margin-bottom: 0;
         }
         .panel-wizard:not(:last-child) {
+            border-bottom-width: 0;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
-            border-bottom-width: 0;
             .panel-footer {
                 border-bottom-width: 0;
                 border-radius: 0;
@@ -32,27 +32,14 @@
 }
 
 .panel-wizard {
-
     .panel-heading.btn {
         display: block;
         overflow: hidden;
 
         width: 100%;
+
+        border-bottom-width: 0;
         border-radius: 0;
-
-        &.current {
-            position: relative;
-
-            &:after {
-                position: absolute;
-                content: "";
-                bottom: 0;
-                right: 0;
-                border-right: rhythm(.35) solid $accent__color;
-                border-left: rhythm(.35) solid transparent;
-                border-top: rhythm(.35) solid transparent;
-            }
-        }
     }
 
     .panel-wizard-step {
@@ -64,5 +51,9 @@
         top: $panel-heading__padding__y / 2;
 
         float: right;
+    }
+
+    .panel-footer {
+        border-top-width: 0;
     }
 }

@@ -9,17 +9,16 @@
     & > .panel-heading {
         color: $heading-text-color;
         background-color: $heading-bg-color;
-        border-color: darken($heading-bg-color, 3%);
+        border-color: darken($heading-bg-color, 5%);
 
         &.btn {
             &:hover,
-            &:active,
-            &:focus,
             &.current {
-                background-color: darken($heading-bg-color, 3%);
-                border-color: darken($heading-bg-color, 3%);
+                background-color: darken($heading-bg-color, 5%);
+                border-color: darken($heading-bg-color, 5%);
             }
         }
+
 
         + .panel-collapse > .panel-body,
         + .panel-collapse > .panel-footer {

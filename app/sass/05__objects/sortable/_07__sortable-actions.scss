@@ -47,25 +47,12 @@
     left: auto;
 }
 
-h5 {
-    .sortable-finished,
-    .sortable-remove-all,
-    .sortable-cancel-all,
-    .sortable-removegroup,
-    .sortable-groupdeleter,
-    .sortable-groupem,
-    .sortable-ungroupem,
-    .sortable-lockem,
-    .sortable-unlockem,
-    .sortable-editgroup,
-    .sortable-groupeditor,
-    .sortable-select-all {
-        font-family: $sans--regular;
+h5 [class*="sortable-"] {
+    font-family: $sans--regular;
 
-        position: relative;
-        right: 0;
-        top: ( $btn__y * -1);
-    }
+    position: relative;
+    right: 0;
+    top: ( $btn__y * -1);
 }
 
 .sortable-toolbox {
