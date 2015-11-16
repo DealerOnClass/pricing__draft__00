@@ -1,5 +1,8 @@
 //
 //
+//  0.) General Utilities
+//
+//
 //  Remove items in workbench on clicking "x"
 $(document).on("click", ".sortable-remove", function() {
     $(this).parent('.sortable').remove();
@@ -14,30 +17,12 @@ $("#query_modal .sortable-finished").on("click", function () {
     $("#query__creation__preview").empty();
     $(this).removeClass("sortable-is-enabled");
 });
-//
+//  Remove enabled states on clicking "I'm Done" in modal or elsewhere
 $(".sortable-finished").on("click", function() {
     $("[data-type='parameter']").removeClass("sortable-is-enabled");
     $("[data-type='operator']").removeClass("sortable-is-enabled");
     $("[data-type='value']").removeClass("sortable-is-enabled");
     $("[data-type='joiner']").removeClass("sortable-is-enabled");
-});
-//
-//
-//  Toggle active state in "Associated States"
-$(".active-toggle .btn").on("click", function () {
-    if ($(this).hasClass("active")) {
-        $(this).removeClass("active")
-    } else {
-        $(this).addClass("active");
-    }
-});
-//  Remove active statess in "associated stated" when clicking "clear"
-$(".sortable-remove-all").on("click", function() {
-    $(this).parent().parent().next('.btn-tags').children().removeClass("active");
-});
-//  Enable all active statess in "associated stated" when clicking "Select all"
-$(".sortable-select-all").on("click", function() {
-    $(this).parent().parent().next('.btn-tags').children().addClass("active");
 });
 //
 //
@@ -118,6 +103,8 @@ $("#query_modal attr[data-type]").on("click", function () {
         }
     }
 });
+//
+//
 //  3.) Populate workbench with preview items
 $("#query_modal").on('hide.bs.modal', function () {
     UpdateWorkbench("#query__creation__preview", "#query__creation__workbench");
@@ -129,265 +116,197 @@ $("#query_modal").on('hide.bs.modal', function () {
     $("[data-type='joiner']").removeClass("sortable-is-enabled");
 });
 function UpdateWorkbench(origin, destination) {
-    //  create group
     $(origin).children().wrapAll("<div class='btn btn-default sortable clearfix' data-type='nested'></div>");
-    //  update workbench
     $(origin).children().appendTo(destination);
 }
 //
 //
-//  DISCLAIMER: SEVER REFACTOR NEEDED
-//
-//
-//  4.) Make Group
-$(".sortable-groupem").on("click", function () {
-    $(this).toggleClass("active").siblings().removeClass("active");
+//  4.) Do Stuff For Action type
+$("[data-action]").on("click", function() {
+    //  Config
+    var action = $(this).attr("data-action");
+    var prepareActionButton = "<button onclick='PrepareAction(this,&quot;" + action + "&quot;);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></button>";
+
+    //  Toggle active class
+    $(this).toggleClass("active");
+
+    //  Toggle disabled state
+    if ( $(this).siblings().attr("disabled") ) {
+        $(this).siblings().removeAttr("disabled");
+    } else {
+        $(this).siblings().attr("disabled", "disabled");
+    }
+
+    //  If locks not null create locks based on action type
     if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
         $("#query__creation__workbench .sortable-lock").remove();
     } else {
-        $("#query__creation__workbench").children().prepend("<a onclick='PrepareToLockTag(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
+        if ( action == "removegroup" ) {
+            $("#query__creation__workbench [data-type='nested']").prepend(prepareActionButton);
+            $("#query__creation__workbench [data-type='b_joiner']").prepend(prepareActionButton);
+        } else if ( action == "editgroup" ) {
+            $("#query__creation__workbench [data-type='nested']").prepend(prepareActionButton);
+        } else {
+            $("#query__creation__workbench").children().prepend(prepareActionButton);
+        }
     }
 });
-function PrepareToLockTag(elem) {
-    var icon = $(elem).children(".fa");
-    if ( icon.hasClass("fa-circle-o") ) {
-        icon.removeClass("fa-circle-o").addClass("fa-circle");
+
+function PrepareAction(elem, action) {
+    var actionIcon = $(elem).children(".fa");
+
+    if ( actionIcon.hasClass("fa-circle-o") ) {
+        actionIcon.removeClass("fa-circle-o").addClass("fa-circle");
     } else {
-        icon.removeClass("fa-circle").addClass("fa-circle-o");
+        actionIcon.removeClass("fa-circle").addClass("fa-circle-o");
     }
 
-    CountLocked();
+    CountPossibleActions(action);
 };
-function CountLocked() {
+
+function CountPossibleActions(action) {
     var locked = $("#query__creation__workbench .fa-circle").length;
-    $(".sortable-lockem .count").text(locked);
-    if ( locked >= 2 ) {
-        ShowLocker();   // stupid i know whatever
-        CancelLocker();
+
+    $(".sortable-" + action + " .count").text(locked);  //  Update Secondary Action Text
+
+    if ( action == "lockgroup" ) {
+        if ( locked >= 2 ) {
+            ShowAction(action);                             //  Create Secondary Action
+            ShowCancelAction(action);                       //  Cancel Secondary Action
+        } else {
+            RestorePrimaryAction(action);                   //  Restore Primary Action
+        }
     } else {
-        ShowGrouper();
+        if ( locked >= 1 ) {
+            ShowAction(action);                             //  Create Secondary Action
+            ShowCancelAction(action);                       //  Cancel Secondary Action
+        } else {
+            RestorePrimaryAction(action);                   //  Restore Primary Action
+        }
     }
 };
-function ShowLocker() {
-    if ( $(".sortable-lockem").length == 0 ) {
-        $(".sortable-groupem").addClass("hidden").after("<a onclick='LockTags()' class='btn btn-default sortable-lockem'><i class='fa fa-lock'></i> Lock <span class='count'>2</span></a>");
+
+function ShowAction(action) {
+    if ( action == "lockgroup" ) {
+        if ( $(".sortable-lockgroup").length == 0 ) {      // Create Secondary Action Button
+            $(".sortable-groupem").addClass("hidden").after("<button onclick='DoAction(this)' class='btn btn-default sortable-lockgroup' data-action='lockgroup'><i class='fa fa-lock'></i> Lock <span class='count'>2</span></button>");
+        }
+    } else if ( action == "unlockgroup" ) {
+        if ( $(".sortable-unlockgroup").length == 0 ) {
+            $(".sortable-ungroupem").addClass("hidden").after("<button onclick='DoAction(this)' class='btn btn-default sortable-unlockgroup' data-action='unlockgroup'><i class='fa fa-unlock'></i> UnLock <span class='count'>1</span></button>");
+        }
+    } else if ( action == "removegroup" ) {
+        if ( $(".sortable-groupdeleter").length == 0 ) {
+            $(".sortable-removegroup").addClass("hidden").after("<button onclick='DoAction(this)' class='btn btn-default sortable-groupdeleter' data-action='removegroup'><i class='fa fa-times'></i> Remove <span class='count'>1</span></button>");
+        }
+    } else if ( action == "editgroup" ) {
+        if ( $(".sortable-groupeditor").length == 0 ) {
+            $(".sortable-editgroup").addClass("hidden").after("<button onclick='DoAction(this)' class='btn btn-default sortable-groupeditor' data-action='editgroup'><i class='fa fa-pencil'></i> Edit <span class='count'>1</span></button>");
+        }
     }
 };
-function CancelLocker() {
-    if ( $(".sortable-cancellockem").length == 0 ) {
-        $(".sortable-groupem").addClass("hidden");
-        $(".sortable-remove-all").after("<a onclick='CancelLockTags()' class='btn btn-default sortable-cancellockem'>Cancel</a>").remove();
+
+function ShowCancelAction(action) {
+    if ( action == "lockgroup" ) {
+        if ( $(".sortable-cancellockgroup").length == 0 ) {
+            $(".sortable-groupem").addClass("hidden");
+            $(".sortable-remove-all").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancellockgroup' data-action='lockgroup'>Cancel</button>").remove();
+        }
+    } else if ( action == "unlockgroup") {
+        if ( $(".sortable-cancelunlockgroup").length == 0 ) {
+            $(".sortable-ungroupem").addClass("hidden");
+            $(".sortable-remove-all").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelunlockgroup' data-action='unlockgroup'>Cancel</button>").remove();
+        }
+    } else if ( action == "removegroup" ) {
+        if ( $(".sortable-cancelgroupdeleter").length == 0 ) {
+            $(".sortable-removegroup").addClass("hidden");
+            $(".sortable-remove-all").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelgroupdeleter' data-action='removegroup'>Cancel</button>").remove();
+        }
+    } else if ( action == "editgroup" ) {
+        if ( $(".sortable-cancelgroupeditor").length == 0 ) {
+            $(".sortable-editgroup").addClass("hidden");
+            $(".sortable-remove-all").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelgroupeditor' data-action='editgroup'>Cancel</button>").remove();
+        }
     }
 };
-function LockTags() {
-    $(".sortable-groupem").removeClass("active");
-    $("#query__creation__workbench .fa-circle").parent().parent().wrapAll("<div class='btn btn-default sortable clearfix' data-type='nested'></div>");
-    $(".sortable-cancellockem").after("<a class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</a>").remove();
-    $("#query__creation__workbench .sortable-lock").remove();
-    ShowGrouper();
-};
-function CancelLockTags() {
-    $(".sortable-groupem").removeClass("active");
-    $(".sortable-cancellockem").after("<a class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</a>").remove();
-    $("#query__creation__workbench .sortable-lock").remove();
-    ShowGrouper();
-};
-function ShowGrouper() {
-    $(".sortable-lockem").remove();
-    $(".sortable-groupem").removeClass("hidden");
-};
-//  5.) Un Group
-$(".sortable-ungroupem").on("click", function () {
-    $(this).toggleClass("active").siblings().removeClass("active");
-    if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
-        $("#query__creation__workbench .sortable-lock").remove();
-    } else {
-        $("#query__creation__workbench > [data-type='nested']").prepend("<a onclick='PrepareToUnLockTag(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
-    }
-});
-function PrepareToUnLockTag(elem) {
-    var icon = $(elem).children(".fa");
-    if ( icon.hasClass("fa-circle-o") ) {
-        icon.removeClass("fa-circle-o").addClass("fa-circle");
-    } else {
-        icon.removeClass("fa-circle").addClass("fa-circle-o");
+
+function DoAction(elem) {
+    var action = $(elem).attr("data-action");
+
+    if ( action == "lockgroup" ) {
+        $(".sortable-groupem").removeClass("active");
+        $("#query__creation__workbench .fa-circle").parent().parent().wrapAll("<div class='btn btn-default sortable clearfix' data-type='nested'></div>");
+        $(".sortable-cancellockgroup").siblings().removeAttr("disabled");
+        $(".sortable-cancellockgroup").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+    } else if ( action == "unlockgroup" ) {
+        $(".sortable-ungroupem").removeClass("active");
+        $("#query__creation__workbench .fa-circle").parent().unwrap();
+        $(".sortable-cancelunlockgroup").siblings().removeAttr("disabled");
+        $(".sortable-cancelunlockgroup").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+    } else if ( action == "removegroup" ) {
+        $(".sortable-removegroup").removeClass("active");
+        $("#query__creation__workbench .fa-circle").parent().parent().remove();
+        $(".sortable-cancelgroupdeleter").siblings().removeAttr("disabled");
+        $(".sortable-cancelgroupdeleter").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+    } else if ( action == "editgroup" ) {
+        $(".sortable-editgroup").removeClass("active");
+        var editableGroup = $("#query__creation__workbench .fa-circle").parent().parent().html();
+        $("#query__creation__preview").append(editableGroup);
+        $("#query__creation__preview .sortable-lock").remove();
+        $("#query__creation__workbench .fa-circle").parent().parent().remove();
+        $("#query_modal").modal('show');
+        $("#query_modal .nav-tabs a[href='#parameter_tab']").click();
+        $(".sortable-cancelgroupeditor").siblings().removeAttr("disabled");
+        $(".sortable-cancelgroupeditor").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
     }
 
-    CountUnLocked();
-};
-function CountUnLocked() {
-    var unlocked = $("#query__creation__workbench .fa-circle").length;
-    $(".sortable-unlockem .count").text(unlocked);
-    if ( unlocked >= 1 ) {
-        ShowUnLocker();   // stupid i know whatever
-        CancelUnLocker();
-    } else {
-        ShowUnGrouper();
-    }
-};
-function ShowUnLocker() {
-    if ( $(".sortable-unlockem").length == 0 ) {
-        $(".sortable-ungroupem").addClass("hidden").after("<a onclick='UnLockTags()' class='btn btn-default sortable-unlockem'><i class='fa fa-unlock'></i> UnLock <span class='count'>1</span></a>");
-    }
-};
-function CancelUnLocker() {
-    if ( $(".sortable-cancelunlockem").length == 0 ) {
-        $(".sortable-ungroupem").addClass("hidden");
-        $(".sortable-remove-all").after("<a onclick='CancelUnLockTags()' class='btn btn-default sortable-cancelunlockem'>Cancel</a>").remove();
-    }
-};
-function UnLockTags() {
-    $(".sortable-ungroupem").removeClass("active");
-    $("#query__creation__workbench .fa-circle").parent().unwrap();
-    $(".sortable-cancelunlockem").after("<a class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</a>").remove();
     $("#query__creation__workbench .sortable-lock").remove();
-    ShowUnGrouper();
+    RestorePrimaryAction(action);
 };
-function CancelUnLockTags() {
-    $(".sortable-ungroupem").removeClass("active");
-    $(".sortable-cancelunlockem").after("<a class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</a>").remove();
-    $("#query__creation__workbench .sortable-lock").remove();
-    ShowUnGrouper();
-};
-function ShowUnGrouper() {
-    $(".sortable-unlockem").remove();
-    $(".sortable-ungroupem").removeClass("hidden");
-};
-//  6.) Delete Groups
-$(".sortable-removegroup").on("click", function () {
-    $(this).toggleClass("active").siblings().removeClass("active");
-    if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
-        $("#query__creation__workbench .sortable-lock").remove();
-    } else {
-        //  selected had ">"
-        $("#query__creation__workbench [data-type='nested']").prepend("<a onclick='PrepareToDeleteGroup(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
-        $("#query__creation__workbench [data-type='b_joiner']").prepend("<a onclick='PrepareToDeleteGroup(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
-    }
-});
-function PrepareToDeleteGroup(elem) {
-    var icon = $(elem).children(".fa");
-    if ( icon.hasClass("fa-circle-o") ) {
-        icon.removeClass("fa-circle-o").addClass("fa-circle");
-    } else {
-        icon.removeClass("fa-circle").addClass("fa-circle-o");
+
+function CancelDoAction(elem) {
+    var action = $(elem).attr("data-action");
+
+    if ( action == "lockgroup" ) {
+        $(".sortable-groupem").removeClass("active");
+        $(".sortable-cancellockgroup").siblings().removeAttr("disabled");
+        $(".sortable-cancellockgroup").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+    } else if ( action == "unlockgroup" ) {
+        $(".sortable-ungroupem").removeClass("active");
+        $(".sortable-cancelunlockgroup").siblings().removeAttr("disabled");
+        $(".sortable-cancelunlockgroup").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+    } else if ( action == "removegroup" ) {
+        $(".sortable-removegroup").removeClass("active");
+        $(".sortable-removegroup").siblings().removeAttr("disabled");
+        $(".sortable-cancelgroupdeleter").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+    } else if ( action == "editgroup" ) {
+        $(".sortable-editgroup").removeClass("active");
+        $(".sortable-editgroup").siblings().removeAttr("disabled");
+        $(".sortable-cancelgroupeditor").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
     }
 
-    CountCanDeleteGroup();
-};
-function CountCanDeleteGroup() {
-    var deletableGroups = $("#query__creation__workbench .fa-circle").length;
-    $(".sortable-groupdeleter .count").text(deletableGroups);
-    if ( deletableGroups >= 1 ) {
-        ShowDeleter();   // stupid i know whatever
-        CancelDeleter();
-    } else {
-        HideDeleter();
-    }
-};
-function ShowDeleter() {
-    if ( $(".sortable-groupdeleter").length == 0 ) {
-        $(".sortable-removegroup").addClass("hidden").after("<a onclick='DeleteGroup()' class='btn btn-default sortable-groupdeleter'><i class='fa fa-times'></i> Remove <span class='count'>1</span></a>");
-    }
-};
-function CancelDeleter() {
-    if ( $(".sortable-cancelgroupdeleter").length == 0 ) {
-        $(".sortable-removegroup").addClass("hidden");
-        $(".sortable-remove-all").after("<a onclick='CancelDeleteGroup()' class='btn btn-default sortable-cancelgroupdeleter'>Cancel</a>").remove();
-    }
-};
-function DeleteGroup() {
-    $(".sortable-removegroup").removeClass("active");
-    $("#query__creation__workbench .fa-circle").parent().parent().remove();
-    $(".sortable-cancelgroupdeleter").after("<a class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</a>").remove();
     $("#query__creation__workbench .sortable-lock").remove();
-    HideDeleter();
+    RestorePrimaryAction(action);
 };
-function CancelDeleteGroup() {
-    $(".sortable-removegroup").removeClass("active");
-    $(".sortable-cancelgroupdeleter").after("<a class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</a>").remove();
-    $("#query__creation__workbench .sortable-lock").remove();
-    HideDeleter();
-};
-function HideDeleter() {
-    $(".sortable-groupdeleter").remove();
-    $(".sortable-removegroup").removeClass("hidden");
-};
-//  7.) Edit Group
-$(".sortable-editgroup").on("click", function () {
-    $(this).toggleClass("active").siblings().removeClass("active");
-    if ( $("#query__creation__workbench .sortable-lock").length != 0 ) {
-        $("#query__creation__workbench .sortable-lock").remove();
-    } else {
-        $("#query__creation__workbench [data-type='nested']").prepend("<a onclick='PrepareToEditGroup(this);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></a>");
-    }
-});
-function PrepareToEditGroup(elem) {
-    var icon = $(elem).children(".fa");
-    if ( icon.hasClass("fa-circle-o") ) {
-        icon.removeClass("fa-circle-o").addClass("fa-circle");
-    } else {
-        icon.removeClass("fa-circle").addClass("fa-circle-o");
-    }
 
-    CountCanEditGroup();
-};
-function CountCanEditGroup() {
-    var deletableGroups = $("#query__creation__workbench .fa-circle").length;
-    $(".sortable-groupdeleter .count").text(deletableGroups);
-    if ( deletableGroups >= 1 ) {
-        ShowEditor();   // stupid i know whatever
-        CancelShowEditor();
-    } else {
-        HideEditor();
+function RestorePrimaryAction(action) {
+    if ( action == "lockgroup" ) {
+        $(".sortable-lockgroup").remove();
+        $(".sortable-groupem").removeClass("hidden");
+    } else if ( action == "unlockgroup" ) {
+        $(".sortable-unlockgroup").remove();
+        $(".sortable-ungroupem").removeClass("hidden");
+    } else if ( action == "removegroup" ) {
+        $(".sortable-groupdeleter").remove();
+        $(".sortable-removegroup").removeClass("hidden");
+    } else if ( action == "editgroup" ) {
+        $(".sortable-groupeditor").remove();
+        $(".sortable-editgroup").removeClass("hidden");
     }
-};
-function ShowEditor() {
-    if ( $(".sortable-groupeditor").length == 0 ) {
-        $(".sortable-editgroup").addClass("hidden").after("<a onclick='EditGroup()' class='btn btn-default sortable-groupeditor'><i class='fa fa-pencil'></i> Edit <span class='count'>1</span></a>");
-    }
-};
-function CancelShowEditor() {
-    if ( $(".sortable-cancelgroupeditor").length == 0 ) {
-        $(".sortable-editgroup").addClass("hidden");
-        $(".sortable-remove-all").after("<a onclick='CancelEditor()' class='btn btn-default sortable-cancelgroupeditor'>Cancel</a>").remove();
-    }
-};
-function EditGroup() {
-    $(".sortable-editgroup").removeClass("active");
-
-    var editableGroup = $("#query__creation__workbench .fa-circle").parent().parent().html();
-    $("#query__creation__preview").append(editableGroup);
-    $("#query__creation__preview .sortable-lock").remove();
-
-    $("#query__creation__workbench .fa-circle").parent().parent().remove();
-
-    $("#query_modal").modal('show');
-    $("#query_modal .nav-tabs a[href='#parameter_tab']").click();
-
-    $(".sortable-cancelgroupeditor").after("<a class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</a>").remove();
-    $("#query__creation__workbench .sortable-lock").remove();
-    HideEditor();
-};
-function CancelEditor() {
-    $(".sortable-editgroup").removeClass("active");
-    $(".sortable-cancelgroupeditor").after("<a class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</a>").remove();
-    $("#query__creation__workbench .sortable-lock").remove();
-    HideEditor();
-};
-function HideEditor() {
-    $(".sortable-groupeditor").remove();
-    $(".sortable-editgroup").removeClass("hidden");
 };
 //
 //
-//  Cancel Button Functionality
-function ShowCancel() {
-    $(".sortable-remove-all").addClass("hidden");
-    $(".sortable-remove-all").after("<a onclick='CancelAction()' class='btn btn-default sortable-cancel-all'>Cancel</a>");
-}
-function HideCancel() {
-    $(".sortable-remove-all").removeClass("hidden");
-}
+//
 //
 //
 //  Sortable Setup

@@ -123,11 +123,11 @@
                                     <h5>
                                         Workbench
                                         <div class="btn-group pull-right">
-                                            <a class="btn btn-default sortable-remove-all" onclick="ClearPreviewAndWorkbench()">Clear</a>
-                                            <a class="btn btn-default sortable-groupem"><i class="fa fa-lock"></i></a>
-                                            <a class="btn btn-default sortable-ungroupem"><i class="fa fa-unlock"></i></a>
-                                            <a class="btn btn-default sortable-removegroup"><i class="fa fa-times"></i></a>
-                                            <a class="btn btn-default sortable-editgroup"><i class="fa fa-pencil"></i></a>
+                                            <button class="btn btn-default sortable-remove-all" onclick="ClearPreviewAndWorkbench()">Clear</button>
+                                            <button class="btn btn-default sortable-groupem" data-action="lockgroup"><i class="fa fa-lock"></i></button>
+                                            <button class="btn btn-default sortable-ungroupem" data-action="unlockgroup"><i class="fa fa-unlock"></i></button>
+                                            <button class="btn btn-default sortable-removegroup" data-action="removegroup"><i class="fa fa-times"></i></button>
+                                                <button class="btn btn-default sortable-editgroup" data-action="editgroup"><i class="fa fa-pencil"></i></button>
                                         </div>
                                     </h5>
                                     <div id="query__creation__workbench" class="sortable-workbench btn-tags btn-sentence"></div>
