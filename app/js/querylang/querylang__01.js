@@ -173,7 +173,13 @@ function PrepareAction(elem, action) {
 function CountPossibleActions(action) {
     var locked = $("#query__creation__workbench .fa-check-square").length;
 
-    $(".sortable-" + action + " .count").text(locked);  //  Update Secondary Action Text
+    if ( action == "editgroup" ) {
+        $(".sortable-groupeditor .count").text(locked);  //  Update Secondary Action Text
+    } else if (action == "removegroup" ) {
+        $(".sortable-groupdeleter .count").text(locked);  //  Update Secondary Action Text
+    } else {
+        $(".sortable-" + action + " .count").text(locked);  //  Update Secondary Action Text
+    }
 
     if ( action == "lockgroup" ) {
         if ( locked >= 2 ) {
@@ -258,7 +264,7 @@ function DoAction(elem) {
         $(".sortable-removegroup").removeClass("active");
         //
         $("#query__creation__workbench " + actionIcon).parent().parent().attr("data-remove","true");
-        $("[data-remove='true']").clone().appendTo("#query__remove__preview");
+        $("#query__creation__workbench [data-remove='true']").clone().appendTo("#query__remove__preview");
         //
         $("#query__remove__preview .sortable-lock").remove();
         $("#remove_modal").modal('show');
@@ -268,10 +274,11 @@ function DoAction(elem) {
     } else if ( action == "editgroup" ) {
         $(".sortable-editgroup").removeClass("active");
         //
-        var editItems = $("#query__creation__workbench " + actionIcon).parent().parent().html();
-        $("#query__creation__preview").append(editItems);
+        $("#query__creation__workbench " + actionIcon).parent().parent().attr("data-edit","true");
+        $("#query__creation__workbench [data-edit='true']").clone().children().appendTo("#query__creation__preview");
+        //
         $("#query__creation__preview .sortable-lock").remove();
-        $("#query__creation__workbench " + actionIcon).parent().parent().remove();
+        $("#query__creation__workbench [data-edit='true']").remove();
         //
         $("#query_modal").modal('show');
         $("#query_modal .nav-tabs a[href='#parameter_tab']").click();

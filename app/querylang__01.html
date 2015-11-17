@@ -43,7 +43,6 @@
                         <span class="panel-wizard-step">Name and describe your query</span>
                         <i class="panel-wizard-icon fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
                     </a>
-                    <!-- had "in" -->
                     <div class="panel-collapse collapse" id="query__creation__collapse__step1">
                         <div class="panel-body">
                             <form class="form form-horizontal text-left" action="">
@@ -88,35 +87,39 @@
                                 <li>Rearrange workbench items by dragging.</li>
                             </ul>
                             <div class="row">
-                                <div class="col-xs-6 col-sm-6 col-md-4">
-                                    <h5>Toolbox</h5>
-                                    <div id="query__creation__toolbox" class="sortable-toolbox">
-                                        <div class="btn btn-default btn-block clearfix sortable sortable-base" data-type="group">
-                                            <span class="sortable-text">New Group</span>
-                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        </div>
-                                        <div class="btn btn-default btn-block clearfix sortable" data-type="b_joiner">
-                                            <span class="sortable-text">or</span>
-                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
-                                        </div>
-                                        <div class="btn btn-default btn-block clearfix sortable" data-type="b_joiner">
-                                            <span class="sortable-text">and</span>
-                                            <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                    <div class="sortable-body">
+                                        <h5>Toolbox</h5>
+                                        <div id="query__creation__toolbox" class="sortable-toolbox">
+                                            <div class="btn btn-default btn-block clearfix sortable sortable-base" data-type="group">
+                                                <span class="sortable-text">New Group</span>
+                                                <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            </div>
+                                            <div class="btn btn-default btn-block clearfix sortable" data-type="b_joiner">
+                                                <span class="sortable-text">or</span>
+                                                <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            </div>
+                                            <div class="btn btn-default btn-block clearfix sortable" data-type="b_joiner">
+                                                <span class="sortable-text">and</span>
+                                                <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-6 col-sm-6 col-md-8">
-                                    <h5>
-                                        Workbench
-                                        <div class="btn-group pull-right">
-                                            <button data-target="#cancel_modal" class="btn btn-default sortable-remove-all" data-toggle="modal">Clear</button>
-                                            <button class="btn btn-default sortable-groupem" data-action="lockgroup"><i class="fa fa-chain"></i></button>
-                                            <button class="btn btn-default sortable-ungroupem" data-action="unlockgroup"><i class="fa fa-chain-broken"></i></button>
-                                            <button class="btn btn-default sortable-removegroup" data-action="removegroup"><i class="fa fa-times"></i></button>
-                                            <button class="btn btn-default sortable-editgroup" data-action="editgroup"><i class="fa fa-pencil"></i></button>
-                                        </div>
-                                    </h5>
-                                    <div id="query__creation__workbench" class="sortable-workbench btn-tags btn-sentence"></div>
+                                <div class="col-xs-8 col-sm-8 col-md-8">
+                                    <div class="sortable-body">
+                                        <h5>
+                                            Workbench
+                                            <div class="btn-group pull-right">
+                                                <button data-target="#cancel_modal" class="btn btn-default sortable-remove-all" data-toggle="modal">Clear</button>
+                                                <button class="btn btn-default sortable-groupem" data-action="lockgroup"><i class="fa fa-chain"></i></button>
+                                                <button class="btn btn-default sortable-ungroupem" data-action="unlockgroup"><i class="fa fa-chain-broken"></i></button>
+                                                <button class="btn btn-default sortable-removegroup" data-action="removegroup"><i class="fa fa-times"></i></button>
+                                                <button class="btn btn-default sortable-editgroup" data-action="editgroup"><i class="fa fa-pencil"></i></button>
+                                            </div>
+                                        </h5>
+                                        <div id="query__creation__workbench" class="sortable-workbench btn-tags btn-sentence"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
