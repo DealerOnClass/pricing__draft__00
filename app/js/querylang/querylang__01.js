@@ -251,9 +251,9 @@ function DoAction(elem) {
     } else if ( action == "removegroup" ) {
         $(".sortable-removegroup").removeClass("active");
         //
-        var removeItems = $("#query__creation__workbench " + actionIcon).parent().parent().html();
+        $("#query__creation__workbench " + actionIcon).parent().parent().attr("data-remove","true");
+        $("[data-remove='true']").clone().appendTo("#query__remove__preview");
         //
-        $("#query__remove__preview").append(removeItems);
         $("#query__remove__preview .sortable-lock").remove();
         $("#remove_modal").modal('show');
         //
@@ -318,6 +318,12 @@ function RestorePrimaryAction(action) {
         $(".sortable-editgroup").removeClass("hidden");
     }
 };
+//
+//
+//
+function QueryRemove() {
+    $("[data-remove='true']").remove();
+}
 //
 //
 //
@@ -397,15 +403,6 @@ function RestorePrimaryAction(action) {
             var itemEl = e.item;
             OpenModal(itemEl);
         },
-    });
-    Sortable.create(byId('query__nested__demo'), {
-        group: {
-            name: "query__creation__step3",
-            pull: false,
-            put: false
-        },
-        sort: true,
-        animation: animation__speed,
     });
 })();
 
