@@ -121,6 +121,12 @@ function UpdateWorkbench(origin, destination) {
 }
 //
 //
+//
+$("#remove_modal").on('hide.bs.modal', function () {
+    $("#query__remove__preview").empty();
+});
+//
+//
 //  4.) Do Stuff For Action type
 $("[data-action]").on("click", function() {
     //  Config

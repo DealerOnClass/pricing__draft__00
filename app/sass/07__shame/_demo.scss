@@ -1,10 +1,12 @@
-.demo {
+body {
     position: relative;
 
     margin-top: rhythm(2);
     margin-bottom: rhythm(6);
     padding-top: rhythm(2);
+}
 
+.demo {
     .navbar-section {
         margin-bottom: rhythm(2);
     }

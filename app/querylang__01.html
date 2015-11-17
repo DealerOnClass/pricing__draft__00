@@ -76,7 +76,7 @@
                 </div>
                 <div class="panel panel-inverse panel-wizard">
                     <a class="panel-heading btn" href="#query__creation__collapse__step2" data-toggle="collapse">
-                        <span class="panel-wizard-step">Display</span>
+                        <span class="panel-wizard-step">Create your query</span>
                         <i class="panel-wizard-icon fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
                     </a>
                     <!-- added "in" -->
@@ -90,21 +90,11 @@
                             <div class="row">
                                 <div class="col-xs-6 col-sm-6 col-md-4">
                                     <h5>Toolbox</h5>
-                                    <!--<a class="sortable-action-item sortable-edit" data-toggle="modal"><i class="fa fa-pencil fa-sm"></i></a>-->
-                                    <!--<a class="sortable-action-item sortable-remove"><i class="fa fa-times fa-sm"></i></a>-->
                                     <div id="query__creation__toolbox" class="sortable-toolbox">
                                         <div class="btn btn-default btn-block clearfix sortable sortable-base" data-type="group">
                                             <span class="sortable-text">New Group</span>
                                             <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
                                         </div>
-                                        <!--<div class="btn btn-default btn-block clearfix sortable is-base" data-type="parameter">-->
-                                            <!--<span class="sortable-text">Parameter</span>-->
-                                            <!--<i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>-->
-                                        <!--</div>-->
-                                        <!--<div class="btn btn-default btn-block clearfix sortable is-base" data-type="operator">-->
-                                            <!--<span class="sortable-text">Operator</span>-->
-                                            <!--<i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>-->
-                                        <!--</div>-->
                                         <div class="btn btn-default btn-block clearfix sortable" data-type="b_joiner">
                                             <span class="sortable-text">or</span>
                                             <i class="sortable-drag fa fa-ellipsis-v fa-sm"></i>
@@ -119,7 +109,7 @@
                                     <h5>
                                         Workbench
                                         <div class="btn-group pull-right">
-                                            <a href="#cancel_modal" class="btn btn-default sortable-remove-all" data-toggle="modal">Clear</a>
+                                            <button data-target="#cancel_modal" class="btn btn-default sortable-remove-all" data-toggle="modal">Clear</button>
                                             <button class="btn btn-default sortable-groupem" data-action="lockgroup"><i class="fa fa-chain"></i></button>
                                             <button class="btn btn-default sortable-ungroupem" data-action="unlockgroup"><i class="fa fa-chain-broken"></i></button>
                                             <button class="btn btn-default sortable-removegroup" data-action="removegroup"><i class="fa fa-times"></i></button>
@@ -316,16 +306,6 @@
                                     </attr>
                                 </div>
                             </div>
-                            <!--<div id="joiner_tab" class="tab-pane">-->
-                                <!--<div class="btn-tags">-->
-                                    <!--<attr title="or" class="btn btn-default clearfix sortable" data-type="joiner" data-id="9">-->
-                                    <!--<span class="sortable-text">or</span>-->
-                                    <!--</attr>-->
-                                    <!--<attr title="and" class="btn btn-default clearfix sortable" data-type="joiner" data-id="10">-->
-                                    <!--<span class="sortable-text">and</span>-->
-                                    <!--</attr>-->
-                                <!--</div>-->
-                            <!--</div>-->
                         </div>
                     </div>
                     <div class="modal-footer">

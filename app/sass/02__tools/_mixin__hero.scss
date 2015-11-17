@@ -1,0 +1,26 @@
+@mixin hero-variant($color) {
+    $color:             $color;
+    $background:        $color;
+    $border:            check-color($color, 70, shade($color, 14%), $background);
+    $color:             check-color($color, 70, $body__color, white);
+
+    background-color: $background;
+    border-color: $border;
+    color: $color;
+
+    .btn {
+        color: $color;
+        border-color: $color;
+        background-color: $background;
+        //  transition: border-color 0.75s ease-in-out;
+        //  transition: background-color 0.75s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color;
+            border-color: mix($color, $background, 30%);
+            background-color: darken($background, 5%);
+        }
+    }
+}

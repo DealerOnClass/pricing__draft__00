@@ -28,6 +28,7 @@
     "02__tools/mixin__forms",
     "02__tools/mixin__gradients",
     "02__tools/mixin__grid",
+    "02__tools/mixin__hero",
     "02__tools/mixin__img-responsive",
     "02__tools/mixin__label-variant",
     "02__tools/mixin__list-group",
@@ -98,7 +99,8 @@
     "05__objects/buttons/01__btn",
     "05__objects/buttons/02__btn-link",
     "05__objects/buttons/03__btn-block",
-    "05__objects/buttons/04__btn-variations";
+    "05__objects/buttons/04__btn-rounded",
+    "05__objects/buttons/05__btn-variations";
 
 @import
     "05__objects/button-groups/00__variables",
@@ -181,6 +183,11 @@
     "05__objects/grid/03__row",
     "05__objects/grid/04__column",
     "05__objects/grid/05__column-divider";
+
+@import
+    "05__objects/hero/00__variables",
+    "05__objects/hero/01__hero",
+    "05__objects/hero/02__hero-variations";
 
 @import
     "05__objects/input-groups/01__input-group",
@@ -343,6 +350,7 @@
 @import
     "05__objects/utilities/alignment",
     "05__objects/utilities/bg-variant",
+    "05__objects/utilities/images",
     "05__objects/utilities/sr",
     "05__objects/utilities/utilities",
     "05__objects/utilities/responsive-utilities";

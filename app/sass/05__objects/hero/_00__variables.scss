@@ -1,0 +1,13 @@
+//  Units
+$hero__x:   $global__x;
+$hero__y:   $global__y * 14;
+//  Base
+$hero__padding__x:  $hero__x;
+$hero__padding__y:  $hero__y;
+//  Variations
+$hero--default__bg:         $gray__02;
+$hero--primary__bg:         $primary__color;
+$hero--inverse--dark__bg:   $inverse__color--dark;
+$hero--inverse__bg:         $inverse__color;
+$hero--inverse--light__bg:  $inverse__color--light;
+$hero--accent__bg:          $accent__color;

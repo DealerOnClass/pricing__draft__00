@@ -3188,6 +3188,7 @@ a.badge:hover, a.badge:focus {
 .btn {
   display: inline-block;
   box-sizing: border-box;
+  padding: 0.675em 0.9em;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3197,11 +3198,10 @@ a.badge:hover, a.badge:focus {
   vertical-align: middle;
   white-space: nowrap;
   border: 0.05556em solid transparent;
+  border-radius: 0.3em;
   background-image: none;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  padding: 0.675em 0.9em;
-  border-radius: 0.3em;
 }
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
   outline: none;
@@ -3273,6 +3273,11 @@ input[type='submit'].btn-block,
 input[type='reset'].btn-block,
 input[type='button'].btn-block {
   width: 100%;
+}
+
+.btn-rounded {
+  padding: 0.675em 1.35em;
+  border-radius: 2.35em;
 }
 
 .btn-default {
@@ -3551,6 +3556,7 @@ input[type='button'].btn-block {
   bottom: 1.5em;
   right: 1.5em;
   z-index: 1080;
+  box-shadow: 0 0.05556em 0.27778em rgba(0, 0, 0, 0.25);
 }
 
 .btn-group,
@@ -6269,6 +6275,106 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
   background-color: #cccccc;
 }
 
+.hero {
+  padding: 6.3em 0.9em;
+}
+
+.hero-default {
+  background-color: #cccccc;
+  border-color: #afafaf;
+  color: #32405a;
+}
+.hero-default .btn {
+  color: #32405a;
+  border-color: #32405a;
+  background-color: #cccccc;
+}
+.hero-default .btn:hover, .hero-default .btn:focus, .hero-default .btn:active {
+  color: #32405a;
+  border-color: #9ea2aa;
+  background-color: #bfbfbf;
+}
+
+.hero-primary {
+  background-color: #1c4181;
+  border-color: #1c4181;
+  color: white;
+}
+.hero-primary .btn {
+  color: white;
+  border-color: white;
+  background-color: #1c4181;
+}
+.hero-primary .btn:hover, .hero-primary .btn:focus, .hero-primary .btn:active {
+  color: white;
+  border-color: #607aa7;
+  background-color: #17366c;
+}
+
+.hero-inverse-dark {
+  background-color: #1a222f;
+  border-color: #1a222f;
+  color: white;
+}
+.hero-inverse-dark .btn {
+  color: white;
+  border-color: white;
+  background-color: #1a222f;
+}
+.hero-inverse-dark .btn:hover, .hero-inverse-dark .btn:focus, .hero-inverse-dark .btn:active {
+  color: white;
+  border-color: #5f646d;
+  background-color: #11161f;
+}
+
+.hero-inverse {
+  background-color: #415474;
+  border-color: #415474;
+  color: white;
+}
+.hero-inverse .btn {
+  color: white;
+  border-color: white;
+  background-color: #415474;
+}
+.hero-inverse .btn:hover, .hero-inverse .btn:focus, .hero-inverse .btn:active {
+  color: white;
+  border-color: #7a879e;
+  background-color: #384864;
+}
+
+.hero-inverse-light {
+  background-color: #959ca9;
+  border-color: #959ca9;
+  color: white;
+}
+.hero-inverse-light .btn {
+  color: white;
+  border-color: white;
+  background-color: #959ca9;
+}
+.hero-inverse-light .btn:hover, .hero-inverse-light .btn:focus, .hero-inverse-light .btn:active {
+  color: white;
+  border-color: #b5bac3;
+  background-color: #878f9e;
+}
+
+.hero-accent {
+  background-color: #f36c0a;
+  border-color: #f36c0a;
+  color: white;
+}
+.hero-accent .btn {
+  color: white;
+  border-color: white;
+  background-color: #f36c0a;
+}
+.hero-accent .btn:hover, .hero-accent .btn:focus, .hero-accent .btn:active {
+  color: white;
+  border-color: #f79854;
+  background-color: #db6109;
+}
+
 .input-group {
   position: relative;
   display: table;
@@ -6390,8 +6496,8 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
 }
 
 .jumbotron {
-  padding: 0.9em 1.8em;
-  margin-bottom: 0.9em;
+  padding: 1.8em 1.8em;
+  margin-bottom: 1.8em;
   color: #32405a;
   background-color: #e6e6e6;
   font-size: 1.333em;
@@ -9477,6 +9583,11 @@ a.thumbnail.active {
   color: #32405a;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -9806,12 +9917,13 @@ a.thumbnail.active {
   background-color: #0a3174;
 }
 
-.demo {
+body {
   position: relative;
   margin-top: 3em;
   margin-bottom: 9em;
   padding-top: 3em;
 }
+
 .demo .navbar-section {
   margin-bottom: 3em;
 }
