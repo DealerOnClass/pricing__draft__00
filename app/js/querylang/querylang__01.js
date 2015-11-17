@@ -125,7 +125,7 @@ function UpdateWorkbench(origin, destination) {
 $("[data-action]").on("click", function() {
     //  Config
     var action = $(this).attr("data-action");
-    var prepareActionButton = "<button onclick='PrepareAction(this,&quot;" + action + "&quot;);' class='btn btn-default sortable-lock top'><i class='fa fa-circle-o'></i></button>";
+    var prepareActionButton = "<button onclick='PrepareAction(this,&quot;" + action + "&quot;);' class='btn btn-default sortable-lock top'><i class='fa fa-square'></i></button>";
 
     //  Toggle active class
     $(this).toggleClass("active");
@@ -155,17 +155,17 @@ $("[data-action]").on("click", function() {
 function PrepareAction(elem, action) {
     var actionIcon = $(elem).children(".fa");
 
-    if ( actionIcon.hasClass("fa-circle-o") ) {
-        actionIcon.removeClass("fa-circle-o").addClass("fa-circle");
+    if ( actionIcon.hasClass("fa-square") ) {
+        actionIcon.removeClass("fa-square").addClass("fa-check-square");
     } else {
-        actionIcon.removeClass("fa-circle").addClass("fa-circle-o");
+        actionIcon.removeClass("fa-check-square").addClass("fa-square");
     }
 
     CountPossibleActions(action);
 };
 
 function CountPossibleActions(action) {
-    var locked = $("#query__creation__workbench .fa-circle").length;
+    var locked = $("#query__creation__workbench .fa-check-square").length;
 
     $(".sortable-" + action + " .count").text(locked);  //  Update Secondary Action Text
 
@@ -210,54 +210,68 @@ function ShowCancelAction(action) {
     if ( action == "lockgroup" ) {
         if ( $(".sortable-cancellockgroup").length == 0 ) {
             $(".sortable-groupem").addClass("hidden");
-            $(".sortable-remove-all").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancellockgroup' data-action='lockgroup'>Cancel</button>").remove();
+            $(".sortable-remove-all[data-toggle='modal']").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancellockgroup' data-action='lockgroup'>Cancel</button>").remove();
         }
     } else if ( action == "unlockgroup") {
         if ( $(".sortable-cancelunlockgroup").length == 0 ) {
             $(".sortable-ungroupem").addClass("hidden");
-            $(".sortable-remove-all").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelunlockgroup' data-action='unlockgroup'>Cancel</button>").remove();
+            $(".sortable-remove-all[data-toggle='modal']").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelunlockgroup' data-action='unlockgroup'>Cancel</button>").remove();
         }
     } else if ( action == "removegroup" ) {
         if ( $(".sortable-cancelgroupdeleter").length == 0 ) {
             $(".sortable-removegroup").addClass("hidden");
-            $(".sortable-remove-all").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelgroupdeleter' data-action='removegroup'>Cancel</button>").remove();
+            $(".sortable-remove-all[data-toggle='modal']").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelgroupdeleter' data-action='removegroup'>Cancel</button>").remove();
         }
     } else if ( action == "editgroup" ) {
         if ( $(".sortable-cancelgroupeditor").length == 0 ) {
             $(".sortable-editgroup").addClass("hidden");
-            $(".sortable-remove-all").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelgroupeditor' data-action='editgroup'>Cancel</button>").remove();
+            $(".sortable-remove-all[data-toggle='modal']").after("<button onclick='CancelDoAction(this)' class='btn btn-default sortable-cancelgroupeditor' data-action='editgroup'>Cancel</button>").remove();
         }
     }
 };
 
 function DoAction(elem) {
     var action = $(elem).attr("data-action");
+    var actionIcon = ".fa-check-square";
 
     if ( action == "lockgroup" ) {
         $(".sortable-groupem").removeClass("active");
-        $("#query__creation__workbench .fa-circle").parent().parent().wrapAll("<div class='btn btn-default sortable clearfix' data-type='nested'></div>");
+        //
+        $("#query__creation__workbench " + actionIcon).parent().parent().wrapAll("<div class='btn btn-default sortable clearfix' data-type='nested'></div>");
+        //
         $(".sortable-cancellockgroup").siblings().removeAttr("disabled");
-        $(".sortable-cancellockgroup").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+        $(".sortable-cancellockgroup").after("<a href='#cancel_modal' class='btn btn-default sortable-remove-all' data-toggle='modal'>Clear</a>").remove();
     } else if ( action == "unlockgroup" ) {
         $(".sortable-ungroupem").removeClass("active");
-        $("#query__creation__workbench .fa-circle").parent().unwrap();
+        //
+        $("#query__creation__workbench " + actionIcon).parent().unwrap();
+        //
         $(".sortable-cancelunlockgroup").siblings().removeAttr("disabled");
-        $(".sortable-cancelunlockgroup").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+        $(".sortable-cancelunlockgroup").after("<a href='#cancel_modal' class='btn btn-default sortable-remove-all' data-toggle='modal'>Clear</a>").remove();
     } else if ( action == "removegroup" ) {
         $(".sortable-removegroup").removeClass("active");
-        $("#query__creation__workbench .fa-circle").parent().parent().remove();
+        //
+        var removeItems = $("#query__creation__workbench " + actionIcon).parent().parent().html();
+        //
+        $("#query__remove__preview").append(removeItems);
+        $("#query__remove__preview .sortable-lock").remove();
+        $("#remove_modal").modal('show');
+        //
         $(".sortable-cancelgroupdeleter").siblings().removeAttr("disabled");
-        $(".sortable-cancelgroupdeleter").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+        $(".sortable-cancelgroupdeleter").after("<a href='#cancel_modal' class='btn btn-default sortable-remove-all' data-toggle='modal'>Clear</a>").remove();
     } else if ( action == "editgroup" ) {
         $(".sortable-editgroup").removeClass("active");
-        var editableGroup = $("#query__creation__workbench .fa-circle").parent().parent().html();
-        $("#query__creation__preview").append(editableGroup);
+        //
+        var editItems = $("#query__creation__workbench " + actionIcon).parent().parent().html();
+        $("#query__creation__preview").append(editItems);
         $("#query__creation__preview .sortable-lock").remove();
-        $("#query__creation__workbench .fa-circle").parent().parent().remove();
+        $("#query__creation__workbench " + actionIcon).parent().parent().remove();
+        //
         $("#query_modal").modal('show');
         $("#query_modal .nav-tabs a[href='#parameter_tab']").click();
+        //
         $(".sortable-cancelgroupeditor").siblings().removeAttr("disabled");
-        $(".sortable-cancelgroupeditor").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+        $(".sortable-cancelgroupeditor").after("<a href='#cancel_modal' class='btn btn-default sortable-remove-all' data-toggle='modal'>Clear</a>").remove();
     }
 
     $("#query__creation__workbench .sortable-lock").remove();
@@ -270,19 +284,19 @@ function CancelDoAction(elem) {
     if ( action == "lockgroup" ) {
         $(".sortable-groupem").removeClass("active");
         $(".sortable-cancellockgroup").siblings().removeAttr("disabled");
-        $(".sortable-cancellockgroup").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+        $(".sortable-cancellockgroup").after("<a href='#cancel_modal' class='btn btn-default sortable-remove-all' data-toggle='modal'>Clear</a>").remove();
     } else if ( action == "unlockgroup" ) {
         $(".sortable-ungroupem").removeClass("active");
         $(".sortable-cancelunlockgroup").siblings().removeAttr("disabled");
-        $(".sortable-cancelunlockgroup").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+        $(".sortable-cancelunlockgroup").after("<a href='#cancel_modal' class='btn btn-default sortable-remove-all' data-toggle='modal'>Clear</a>").remove();
     } else if ( action == "removegroup" ) {
         $(".sortable-removegroup").removeClass("active");
         $(".sortable-removegroup").siblings().removeAttr("disabled");
-        $(".sortable-cancelgroupdeleter").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+        $(".sortable-cancelgroupdeleter").after("<a href='#cancel_modal' class='btn btn-default sortable-remove-all' data-toggle='modal'>Clear</a>").remove();
     } else if ( action == "editgroup" ) {
         $(".sortable-editgroup").removeClass("active");
         $(".sortable-editgroup").siblings().removeAttr("disabled");
-        $(".sortable-cancelgroupeditor").after("<button class='btn btn-default sortable-remove-all' onclick='ClearPreviewAndWorkbench()'>Clear</button>").remove();
+        $(".sortable-cancelgroupeditor").after("<a href='#cancel_modal' class='btn btn-default sortable-remove-all' data-toggle='modal'>Clear</a>").remove();
     }
 
     $("#query__creation__workbench .sortable-lock").remove();

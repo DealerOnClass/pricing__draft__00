@@ -1,6 +1,4 @@
-/* FONT PATH
- * -------------------------- */
-
+// FONT PATH
 @font-face {
   font-family: 'FontAwesome';
   src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.eot'), '#{$fa-font-path}#{$fa-font-name}.eot'));
