@@ -24,36 +24,7 @@ body {
             max-width: 100%;
         }
     }
-
-    .navbar-vertical-container {
-        overflow: hidden;
-
-        min-height: 10em;
-
-        &.emulate-body {
-            position: relative;
-            z-index: 30;
-
-            min-height: 30em;
-
-            //  border: $one__pixel solid $gray__02;
-            .navbar-fixed-top,
-            .navbar-sidebar {
-                //  overrides default value of fixed
-                //  for demo purposes. Keeps nav confined
-                //  within "emulate-body" container
-                position: absolute;
-            }
-        }
-
-        .emulate-body-content {
-            max-width: 34em;
-            margin: 0 auto;
-            padding: rhythm(3) $global__gutter 0;
-        }
-    }
 }
-
 
 h3 {
     @include rhythm-rem(margin-top, 1);
@@ -135,3 +106,37 @@ h3 {
         @include rhythm-rem(margin-bottom, 1);
     }
 }
+
+
+
+.navbar-vertical-container {
+    overflow-y: auto;
+}
+
+.emulate-html-element {
+    position: relative;
+    z-index: 30;
+
+    min-height: 20em;
+    max-height: 24em;
+
+    .navbar-fixed-top,
+    .navbar-sidebar:not(.offcanvas-nav) {
+        //  overrides default value of fixed
+        //  for demo purposes. Keeps nav confined
+        //  within "emulate-body" container
+        position: absolute;
+    }
+}
+
+.emulate-body-element {
+
+}
+
+.emulate-container-class {
+    max-width: 34em;
+    margin: 0 auto;
+    padding: rhythm(3) $global__gutter 0;
+}
+
+

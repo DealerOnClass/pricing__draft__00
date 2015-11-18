@@ -32,10 +32,29 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
     padding-left: $navbar__x;
 
     color: $navbar-dealeron-sidebar__color;
+}
 
+.navbar-sidebar {
     .navbar-nav {
         margin-right: $navbar__x * -1;
         margin-left: $navbar__x * -1;
         margin-bottom: rhythm(2);
     }
+    .caret {
+        float: right;
+        position: relative;
+        top: $navbar__y / 2;
+    }
 }
+
+.offcanvas-nav {
+    position: relative;
+}
+
+.offcanvas-body {
+    display: table-cell;
+    width: 10000px;
+}
+
+
+

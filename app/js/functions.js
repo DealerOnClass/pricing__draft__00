@@ -92,17 +92,20 @@ $(".panel-wizard").on("hide.bs.collapse", function() {
 //
 //  Open Nav Bar
 //
-//  Set icon default && active state if open
-$(document).ready( function() {
-    var icon = $(".navbar-sidebar-collapse.in").attr("data-animate-icon");
-    $(icon).addClass("navbar-sidebar-is-open");
+$('[data-animate="icon-bar"]').click(function(){
+    $(this).toggleClass('navbar-sidebar-is-open');
 });
-//  Toggle sidebar icon && active state
-$(".navbar-sidebar-collapse").on("show.bs.collapse", function() {
-    var icon = $(this).attr("data-animate-icon");
-    $(icon).addClass("navbar-sidebar-is-open");
-});
-$(".navbar-sidebar-collapse").on("hide.bs.collapse", function() {
-    var icon = $(this).attr("data-animate-icon");
-    $(icon).removeClass("navbar-sidebar-is-open");
-});
+//  //  Set icon default && active state if open
+//  $(document).ready( function() {
+//      var icon = $(".navbar-sidebar-collapse.in").attr("data-animate-icon");
+//      $(icon).addClass("navbar-sidebar-is-open");
+//  });
+//  //  Toggle sidebar icon && active state
+//  $(".navbar-sidebar-collapse").on("show.bs.collapse", function() {
+//      var icon = $(this).attr("data-animate-icon");
+//      $(icon).addClass("navbar-sidebar-is-open");
+//  });
+//  $(".navbar-sidebar-collapse").on("hide.bs.collapse", function() {
+//      var icon = $(this).attr("data-animate-icon");
+//      $(icon).removeClass("navbar-sidebar-is-open");
+//  });

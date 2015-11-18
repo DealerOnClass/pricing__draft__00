@@ -217,29 +217,30 @@
 
 
             //  Navbar-sidebar-Wrapper Dropdown-Menu
-            //          .dropdown-toggle,
-            //          .dropdown-menu {
-            //              position: relative;
-            //              &:after {
-            //                  content: "";
-            //                  position: absolute;
-            //                  top: 0;
-            //                  left: 0;
-            //                  width: $two__pixels;
-            //                  height: 100%;
-            //                  background-color: $navbar-dealeron-sidebar__link--active__bar;
-            //              }
-            //          }
+            .dropdown-toggle,
+            .dropdown-menu {
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: $two__pixels;
+                    height: 100%;
+                    background-color: $navbar-dealeron-sidebar__link--active__bar;
+                }
+            }
+
             .dropdown-toggle.collapsed {
                 &:after {
                     display: none;
                 }
             }
+
             .dropdown-menu {
                 border-color:$navbar-dealeron-sidebar__dropdown-menu__border;
                 background-color: $navbar-dealeron-sidebar__dropdown-menu__bg;
 
-                .dropdown-item,
                 > li > a {
                     color: $navbar-dealeron-sidebar__dropdown-menu__link__color;
 
@@ -249,7 +250,6 @@
                         background-color: $navbar-dealeron-sidebar__dropdown-menu__link--hover__bg;
                     }
                 }
-                .dropdown-item.active,
                 .active > a {
                     &,
                     &:hover,
@@ -258,7 +258,6 @@
                         background-color: $navbar-dealeron-sidebar__dropdown-menu__link--active__bg;
                     }
                 }
-                .dropdown-item.disabled,
                 .disabled > a {
                     &,
                     &:hover,
@@ -294,6 +293,10 @@
                             color: $navbar-dealeron-sidebar__link--active__color;
                             background-color: $navbar-dealeron-sidebar__link--active__bg;
                         }
+                   }
+
+                   > .active,
+                   > .active.dropdown {
                         position: relative;
                         &:after {
                             content: "";
