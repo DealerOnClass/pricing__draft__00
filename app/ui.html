@@ -17,7 +17,7 @@
         <!-- Main Nav - Top -->
         <nav class="navbar navbar-dealeron navbar-fixed-top">
             <div class="navbar-header">
-                <a href="#ttest51" class="navbar-brand" data-toggle="collapse" data-animate="icon-bar">
+                <a href="#ttest51" id="sidebar__icon" class="navbar-brand" data-toggle="collapse">
                     <span class="icon-bar-wrapper icon-bar-animate">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -31,15 +31,14 @@
 
         <!-- Main Nav - Sidebar -->
         <nav id="navbar-main" class="navbar navbar-dealeron navbar-sidebar">
-            <div id="ttest51" class="navbar-sidebar-collapse collapse width" role="menu">
+            <div id="ttest51" class="navbar-sidebar-collapse collapse width" data-animate-icon="#sidebar__icon">
                 <div class="navbar-sidebar-wrapper">
                     <div class="navbar-sidebar-body">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#ttest9" class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
+                                <a href="#ttest9" class="dropdown-toggle collapsed" data-toggle="collapse" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
                                 <ul id="ttest9" class="collapse dropdown-menu" role="menu">
-                                    <li><a href="">Panel Wizard</a>
-                                    </li>
+                                    <li><a href="">Panel Wizard</a></li>
                                 </ul>
                             </li>
                             <li><a href="#ui__alerts">Alerts</a></li>
@@ -62,7 +61,16 @@
                             <li><a href="#ui__list-groups">List Groups</a></li>
                             <li><a href="#ui__media">Media</a></li>
                             <li><a href="#ui__modals">Modals</a></li>
-                            <li><a href="#ui__navbar">Navbar</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#ui__navbarchi">
+                                    Navbar
+                                    <span class="caret"></span>
+                                </a>
+                                <ul id="ui__navbarchi" class="collapse dropdown-menu">
+                                    <li><a href="#ui__navbar-navbar">Navbar</a></li>
+                                    <li><a href="#ui__navbar-brandimage">Brand Image</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#ui__navs">Navs</a></li>
                             <li><a href="#ui__pager">Pager</a></li>
                             <li><a href="#ui__pagination">Pagination</a></li>
@@ -3333,7 +3341,7 @@
             </section>
 
             <!--SECTION: Navbar-->
-            <nav id="ui__navbar" class="navbar navbar-section">
+            <nav id="ui__navbar-navbar" class="navbar navbar-section">
                 <div class="navbar-header">
                     <div class="navbar-text">Navbar</div>
                 </div>
@@ -3763,7 +3771,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="ui__navbar-brandimage">
                 <h3>Brand image</h3>
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">

@@ -217,19 +217,19 @@
 
 
             //  Navbar-sidebar-Wrapper Dropdown-Menu
-            .dropdown-toggle,
-            .dropdown-menu {
-                position: relative;
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: $two__pixels;
-                    height: 100%;
-                    background-color: $navbar-dealeron-sidebar__link--active__bar;
-                }
-            }
+            //          .dropdown-toggle,
+            //          .dropdown-menu {
+            //              position: relative;
+            //              &:after {
+            //                  content: "";
+            //                  position: absolute;
+            //                  top: 0;
+            //                  left: 0;
+            //                  width: $two__pixels;
+            //                  height: 100%;
+            //                  background-color: $navbar-dealeron-sidebar__link--active__bar;
+            //              }
+            //          }
             .dropdown-toggle.collapsed {
                 &:after {
                     display: none;

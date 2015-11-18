@@ -35,14 +35,8 @@ $("#toTop").on('click', function(e) {
     });
 });
 
-//  Open Nav Bar
-$(document).ready(function(){
-    $('[data-animate="icon-bar"]').click(function(){
-        $(this).toggleClass('navbar-sidebar-is-open');
-    });
-});
-
-
+//
+//
 //  Thank you Cody House ** start
 //  https://codyhouse.co/demo/back-to-top/index.html
 // browser window scroll (in pixels) after which the "back to top" link is shown
@@ -66,8 +60,9 @@ $(window).scroll(function(){
 
 ////////////////////////////////////////
 //
-//  Step through panel wizard
+//  Panel Wizard
 //
+//  Step through panel wizard
 $("[data-toggle='panel-wizard__next']").on("click", function() {
     $(this).closest(".panel-collapse").collapse('hide');
     $(this).closest(".panel.panel-wizard").next(".panel").children(".panel-collapse").collapse('show');
@@ -79,7 +74,7 @@ $("[data-toggle='panel-wizard__prev']").on("click", function() {
 $("[data-toggle='panel-wizard__done']").on("click", function() {
     $(this).closest(".panel-collapse").collapse('hide');
 });
-//  Set icon default && active state
+//  Set icon default && active state if open
 $(document).ready( function() {
     $(".panel-wizard .panel-collapse.in").prev(".panel-heading").find(".fa").removeClass("fa-plus").addClass("fa-minus");
     $(".panel-wizard .panel-collapse.in").prev(".panel-heading").addClass("current");
@@ -92,4 +87,22 @@ $(".panel-wizard").on("show.bs.collapse", function() {
 $(".panel-wizard").on("hide.bs.collapse", function() {
     $(this).find(".panel-heading .fa").removeClass("fa-minus").addClass("fa-plus");
     $(this).find(".panel-heading").removeClass("current");
+});
+////////////////////////////////////////
+//
+//  Open Nav Bar
+//
+//  Set icon default && active state if open
+$(document).ready( function() {
+    var icon = $(".navbar-sidebar-collapse.in").attr("data-animate-icon");
+    $(icon).addClass("navbar-sidebar-is-open");
+});
+//  Toggle sidebar icon && active state
+$(".navbar-sidebar-collapse").on("show.bs.collapse", function() {
+    var icon = $(this).attr("data-animate-icon");
+    $(icon).addClass("navbar-sidebar-is-open");
+});
+$(".navbar-sidebar-collapse").on("hide.bs.collapse", function() {
+    var icon = $(this).attr("data-animate-icon");
+    $(icon).removeClass("navbar-sidebar-is-open");
 });

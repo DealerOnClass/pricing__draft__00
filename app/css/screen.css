@@ -8212,20 +8212,6 @@ button.list-group-item-danger.active:focus {
 .navbar-dealeron .navbar-sidebar-wrapper {
   border-color: #1a222f;
 }
-.navbar-dealeron .navbar-sidebar-wrapper .dropdown-toggle,
-.navbar-dealeron .navbar-sidebar-wrapper .dropdown-menu {
-  position: relative;
-}
-.navbar-dealeron .navbar-sidebar-wrapper .dropdown-toggle:after,
-.navbar-dealeron .navbar-sidebar-wrapper .dropdown-menu:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0.11111em;
-  height: 100%;
-  background-color: #f36c0a;
-}
 .navbar-dealeron .navbar-sidebar-wrapper .dropdown-toggle.collapsed:after {
   display: none;
 }
