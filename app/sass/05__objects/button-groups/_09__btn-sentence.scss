@@ -41,6 +41,6 @@
         border-bottom-right-radius: $btn__radius!important;
     }
     &[data-type="nested"] {
-        padding-top: $btn-group__x * 2;
+        padding-top: $btn-group__x;
     }
 }
