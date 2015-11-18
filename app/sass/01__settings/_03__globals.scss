@@ -2,7 +2,8 @@
 $global__radius:           rhythm(.2) !default;     //  rhythm(.2)
 $global__x:                rhythm(.6) !default;     //  rhythm(.5)
 $global__y:                rhythm(.4) !default;     //  rhythm(.5)
-$global__gutter:           30px;                    //  30px
+$global__gutter:           30px !default;           //  30px
+$global__contrast:         10% !default;             //  default 5%;
 //  Pixel Units
 $one__pixel:               $base__font-unit / $master__font-size;
 $two__pixels:              $one__pixel * 2;

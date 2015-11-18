@@ -1,7 +1,7 @@
 //  Units
 $alert__radius:                   $global__radius;
-$alert__x:                        $global__x;
-$alert__y:                        $global__y;
+$alert__x:                        $global__x * 1.5;
+$alert__y:                        $global__y * 1.5;
 //  Options
 $alert__contextual--desaturated:  true !default;
 //  Base

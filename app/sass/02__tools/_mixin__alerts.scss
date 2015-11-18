@@ -3,9 +3,11 @@
     $color: check-color($background, 70, red, shade($background ,40%));
 
     @if $alert__contextual--desaturated {
-        color:             $color;
-        border-color:      check-color($background, 70, red, tint($background ,50%));
-        background-color:  tint($background, 70%);
+        color:             saturate($color, 20%);
+        //  border-color:      check-color($background, 70, red, tint($background ,50%));
+        //  background-color:  tint($background, 70%);
+        border-color:      saturate($color, 20%);
+        background-color:  white;
     } @else {
         color:             white;
         border-color:      $background;

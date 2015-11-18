@@ -1,7 +1,8 @@
 .alert-dismissible .close {
     position: relative;
-    top: $two__pixels * -1;
-    right: $alert__padding;
+    top: $alert__y / -3;
+    right: $alert__x / -2;
 
     color: inherit;
+    background-color: transparent;
 }
