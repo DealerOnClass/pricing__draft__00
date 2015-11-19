@@ -293,7 +293,7 @@ optgroup {
 }
 
 .fa-fw {
-  width: 1.28571em;
+  width: 1em;
   text-align: center;
 }
 
@@ -2757,8 +2757,8 @@ h5,
 h6,
 .h6 {
   font-family: "AvenirHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 27px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 13.5px;
+  margin-bottom: 0.75rem;
 }
 h1 small,
 h1 .small,
@@ -3052,85 +3052,81 @@ tbody.collapse.in {
 }
 
 .alert {
+  position: relative;
   margin-bottom: 1.8em;
   padding: 0.9em 1.35em;
   border: 0.05556em solid transparent;
   border-radius: 0.3em;
 }
-.alert > a,
-.alert h1,
-.alert h2,
-.alert h3,
-.alert h4,
-.alert h5,
-.alert h6 {
+
+.alert-heading {
+  margin-top: 0;
   color: inherit;
 }
-.alert h1,
-.alert h2,
-.alert h3,
-.alert h4,
-.alert h5,
-.alert h6 {
-  margin-top: 0;
-  margin-bottom: 13.5px;
-  margin-bottom: 0.75rem;
+
+.alert-link {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.alert-disclaimer {
+  font-size: 0.75019em;
+  display: block;
+  clear: both;
+  color: inherit;
+}
+
+.alert-icon {
+  position: relative;
+  top: 0.225em;
+  float: left;
+  padding-right: 1.35em;
+}
+.alert-icon > img {
+  border-radius: 0.3em;
+}
+
+.alert-body {
+  display: table-cell;
+  width: 10000px;
 }
 
 .alert-dismissible .close {
-  position: relative;
-  top: -0.3em;
-  right: -0.675em;
+  position: absolute;
+  top: 0.45em;
+  right: 0.45em;
   color: inherit;
   background-color: transparent;
 }
 
+.alert-default {
+  color: inherit;
+  border-color: inherit;
+  background-color: transparent;
+}
+
 .alert-success {
-  color: #277f27;
-  border-color: #277f27;
-  background-color: white;
-}
-.alert-success > a {
-  text-decoration: underline;
-}
-.alert-success > a:hover, .alert-success > a:active, .alert-success > a:focus {
-  color: #152a15;
+  color: #53a653;
+  border-color: #53a653;
+  background-color: transparent;
 }
 
 .alert-info {
-  color: #247d98;
-  border-color: #247d98;
-  background-color: white;
-}
-.alert-info > a {
-  text-decoration: underline;
-}
-.alert-info > a:hover, .alert-info > a:active, .alert-info > a:focus {
-  color: #19353d;
+  color: #52adc8;
+  border-color: #52adc8;
+  background-color: transparent;
 }
 
 .alert-warning {
-  color: #a36b1c;
-  border-color: #a36b1c;
-  background-color: white;
-}
-.alert-warning > a {
-  text-decoration: underline;
-}
-.alert-warning > a:hover, .alert-warning > a:active, .alert-warning > a:focus {
-  color: #433016;
+  color: #d89c46;
+  border-color: #d89c46;
+  background-color: transparent;
 }
 
 .alert-danger {
-  color: #94221d;
-  border-color: #94221d;
-  background-color: white;
-}
-.alert-danger > a {
-  text-decoration: underline;
-}
-.alert-danger > a:hover, .alert-danger > a:active, .alert-danger > a:focus {
-  color: #371514;
+  color: #c34b47;
+  border-color: #c34b47;
+  background-color: transparent;
 }
 
 .badge {
@@ -3866,7 +3862,7 @@ h5.btn-group {
 }
 
 .card-block {
-  padding: 0.9em 1.35em;
+  padding: 1.35em 1.35em;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -10188,6 +10184,24 @@ body {
   padding-top: 3em;
 }
 
+.demo > section > h3 {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: gray;
+  font-size: 1em;
+  position: relative;
+  padding-bottom: 0.45em;
+  margin-bottom: 0.75em;
+}
+.demo > section > h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1.5em;
+  height: 0.075em;
+  background-color: #35435b;
+}
 .demo .navbar-section {
   margin-bottom: 3em;
 }
@@ -10200,11 +10214,6 @@ body {
 }
 .demo .card img {
   max-width: 100%;
-}
-
-h3 {
-  margin-top: 27px;
-  margin-top: 1.5rem;
 }
 
 .demo__grid .box {

@@ -1,11 +1,13 @@
 //  Units
-$alert__radius:                   $global__radius;
-$alert__x:                        $global__x * 1.5;
-$alert__y:                        $global__y * 1.5;
+$alert__radius:    $global__radius;
+$alert__x:         $global__x * 1.5;
+$alert__y:         $global__y * 1.5;
+$alert__contrast:  $global__contrast;
 //  Options
-$alert__contextual--desaturated:  true !default;
+$alert__solid-color:  false !default;
 //  Base
-$alert__padding:                  $alert__y $alert__x;
-$alert__radius:                   $alert__radius;
-$alert__vertical-rhythm:          ($alert__y * 2);
-
+$alert__padding:          $alert__y $alert__x;
+$alert__radius:           $alert__radius;
+$alert__vertical-rhythm:  ($alert__y * 2);
+//  Alert Disclaimer
+$alert-disclaimer__font-size:  $h6__font-size;

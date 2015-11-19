@@ -12,7 +12,7 @@ h6,
 .h6 {
     font-family: $heading__font;
 
-    @include rhythm-rem(margin-bottom, 1);
+    @include rhythm-rem(margin-bottom, .5);
 
     small,
     .small {

@@ -1,24 +1,17 @@
-@mixin alert-variant ($background) {
-
-    $color: check-color($background, 70, red, shade($background ,40%));
-
-    @if $alert__contextual--desaturated {
-        color:             saturate($color, 20%);
-        //  border-color:      check-color($background, 70, red, tint($background ,50%));
-        //  background-color:  tint($background, 70%);
-        border-color:      saturate($color, 20%);
-        background-color:  white;
+@mixin alert-variant ($color) {
+    @if $alert__solid-color {
+        color: check-color($color, 80, inherit, $white);
+        border-color: $color;
+        background-color: $color;
     } @else {
-        color:             white;
-        border-color:      $background;
-        background-color:  $background;
-    }
-
-    > a {
-        text-decoration: underline;
-
-        @include state {
-            color: darken($color, 20%);
-        }
+        color: check-color($color, 80, inherit, shade($color, $alert__contrast));
+        border-color: check-color($color, 80, inherit, shade($color, $alert__contrast));
+        background-color: transparent;
     }
 }
+//
+//  Original Styling
+//
+//  color:             shade($color, 40%);
+//  border-color:      tint($color,50%);
+//  background-color:  tint($color, 70%);

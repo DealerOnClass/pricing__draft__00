@@ -10,7 +10,7 @@ $card__border:                    $gray__02;
 $card__radius:                    $card__radius;
 $card__vertical-rhythm:           $card__y;
 //  Card-Block
-$card-block__padding:             $card__y $card__x;
+$card-block__padding:             ( $card__y * 1.5 ) $card__x;
 //  Card-Title
 $card-title__vertical-rhythm:     $card__y;
 //  Card-Subtitle

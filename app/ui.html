@@ -114,96 +114,95 @@
             <!--Alerts-->
             <section>
                 <h3>Default example</h3>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="alert alert-success" role="alert">
-                            <strong>Well done!</strong> You successfully read this important alert message.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="alert alert-info" role="alert">
-                            <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="alert alert-warning" role="alert">
-                            <strong>Warning!</strong> Better check yourself, you're not looking too good.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="alert alert-danger" role="alert">
-                            <strong>Oh snap!</strong> Change a few things up and try submitting again.
-                        </div>
-                    </div>
+                <div class="alert alert-default" role="alert">
+                    <strong>Default!</strong> You successfully read this default alert message.
                 </div>
                 <h3>Links in alerts</h3>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="alert alert-success" role="alert">
-                            <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="alert alert-info" role="alert">
-                            <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
-                        </div>
-                    </div>
+                <div class="alert alert-default" role="alert">
+                    <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
                 </div>
                 <h3>Headings in alerts</h3>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="alert alert-success" role="alert">
-                            <h3>Caution!</h3>
-                            <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="alert alert-info" role="alert">
-                            <h3>Caution!</h3>
-                            <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
-                        </div>
-                    </div>
+                <div class="alert alert-default" role="alert">
+                    <h3 class="alert-heading">Caution!</h3>
+                    <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="alert alert-warning" role="alert">
-                            <h3>Caution!</h3>
-                            <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
-                        </div>
+                <h3>Disclaimers in alerts</h3>
+                <div class="alert alert-default" role="alert">
+                    <h3 class="alert-heading">Caution!</h3>
+                    <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
+                    <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                </div>
+                <h3>Icons in alerts</h3>
+                <div class="alert alert-default" role="alert">
+                    <div class="alert-icon">
+                        <i class="fa fa-bomb fa-2x"></i>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="alert alert-danger" role="alert">
-                            <h3>Caution!</h3>
-                            <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
-                        </div>
+                    <div class="alert-body">
+                        <h3 class="alert-heading">Caution!</h3>
+                        <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
+                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
                     </div>
                 </div>
                 <h3>Dismissible alerts</h3>
+                <div class="alert alert-default alert-dismissible" role="alert">
+                    <div class="alert-icon">
+                        <i class="fa fa-bolt fa-2x fa-fw"></i>
+                    </div>
+                    <div class="alert-body">
+                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong>Default!</strong> You successfully read this default alert message.
+                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                    </div>
+                </div>
                 <div class="alert alert-success alert-dismissible" role="alert">
-                    <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <strong>Well done!</strong> You successfully read this important alert message.
+                    <div class="alert-icon">
+                        <i class="fa fa-anchor fa-2x fa-fw"></i>
+                    </div>
+                    <div class="alert-body">
+                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong>Well done!</strong> You successfully read this important alert message.
+                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                    </div>
                 </div>
                 <div class="alert alert-info alert-dismissible" role="alert">
-                    <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                    <div class="alert-icon">
+                        <i class="fa fa-bug fa-2x fa-fw"></i>
+                    </div>
+                    <div class="alert-body">
+                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                    </div>
                 </div>
                 <div class="alert alert-warning alert-dismissible" role="alert">
-                    <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                    <div class="alert-icon">
+                        <i class="fa fa-bullseye fa-2x fa-fw"></i>
+                    </div>
+                    <div class="alert-body">
+                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                    </div>
                 </div>
                 <div class="alert alert-danger alert-dismissible" role="alert">
-                    <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                    <div class="alert-icon">
+                        <i class="fa fa-diamond fa-2x fa-fw"></i>
+                    </div>
+                    <div class="alert-body">
+                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                    </div>
                 </div>
             </section>
 
