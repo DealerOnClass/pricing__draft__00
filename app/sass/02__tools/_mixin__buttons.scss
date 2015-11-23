@@ -66,7 +66,7 @@
 
     .badge {
         color: $color;
-        background-color: check-color($background, 50, shade($background, 10%), shade($background, 30%));
+        background-color: shade($background, $global__contrast * 2);
     }
 }
 

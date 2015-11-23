@@ -1,0 +1,10 @@
+.breadcrumb {
+    .breadcrumb-link,
+    > li > a {
+        display: block;
+
+        padding: $breadcrumb__padding;
+
+        color: inherit;
+    }
+}

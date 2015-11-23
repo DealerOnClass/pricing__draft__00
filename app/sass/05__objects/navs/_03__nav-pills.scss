@@ -17,6 +17,10 @@
                 color: $nav-pills--active__color;
                 background-color: $nav-pills--active__bg;
             }
+
+            .badge {
+                background-color: shade($nav-pills--active__bg, $global__contrast * 2);
+            }
         }
     }
 }

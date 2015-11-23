@@ -2,7 +2,7 @@
  * -------------------------- */
 
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: $fa-font-name;
   src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.eot'), '#{$fa-font-path}#{$fa-font-name}.eot'));
   src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.eot?#iefix'), '#{$fa-font-path}#{$fa-font-name}.eot?#iefix')) format('embedded-opentype'),
     url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.woff2'), '#{$fa-font-path}#{$fa-font-name}.woff2')) format('woff2'),

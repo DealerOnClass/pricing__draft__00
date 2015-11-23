@@ -1,0 +1,28 @@
+.badge {
+    display: inline-block;
+
+    padding: $badge__padding;
+
+    border-radius: $badge__radius;
+
+    &:empty {
+        display: none;
+    }
+
+    .list-group-item > & {
+        float: right;
+    }
+
+    .btn > &,
+    .nav-pills > li > a > & {
+        margin-left: rhythm(0.5);
+    }
+}
+
+a.badge {
+    @include state {
+        cursor: pointer;
+
+        color: $badge__link--hover__color;
+    }
+}

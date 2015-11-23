@@ -1,0 +1,29 @@
+.breadcrumb {
+    .breadcrumb-item,
+    > li {
+        position: relative;
+
+        float: left;
+
+        &:not(:last-child):after {
+            position: absolute;
+            top: $breadcrumb__y;
+            right: 0;
+
+            @if $breadcrumb__separator__use-icon{
+                content: '#{$breadcrumb__separator__icon}';
+                font-family: $fa-font-name;
+            } @else {
+                content: '/';
+            }
+        }
+    }
+
+    > .active {
+        font-family: $sans--bold;
+
+        display: block;
+
+        padding: $breadcrumb__padding;
+    }
+}

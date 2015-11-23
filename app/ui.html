@@ -9,7 +9,7 @@
         <link href="css/screen.css" rel="stylesheet">
     </head>
 
-    <body id="body" data-spy="scroll" data-target="#navbar-main">
+    <body id="body" class="demo__body" data-spy="scroll" data-target="#navbar-main">
 
         <!-- Scroll to Top -->
         <a href='#ui__top' id='toTop' class='fade btn btn-dealeron btn-toTop'><i class="fa fa-angle-up"></i></a>
@@ -91,12 +91,12 @@
         <!-- Main Content -->
         <div class="demo container">
             <!--SECTION: Intro-->
-            <nav id="ui__top" class="navbar navbar-section" style="visibility: hidden;">
+            <nav id="ui__top" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Welcome Humans</div>
                 </div>
             </nav>
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-xs-8 col-sm-6 col-md-5">
                         <h2><strong>This is where the magic happens.</strong></h2>
@@ -105,180 +105,431 @@
             </section>
 
             <!--SECTION: Alerts-->
-            <nav id="ui__alerts" class="navbar navbar-section">
+            <nav id="ui__alerts" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Alerts</div>
                 </div>
             </nav>
 
             <!--Alerts-->
-            <section>
-                <h3>Default example</h3>
-                <div class="alert alert-default" role="alert">
-                    <strong>Default!</strong> You successfully read this default alert message.
-                </div>
-                <h3>Links in alerts</h3>
-                <div class="alert alert-default" role="alert">
-                    <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
-                </div>
-                <h3>Headings in alerts</h3>
-                <div class="alert alert-default" role="alert">
-                    <h3 class="alert-heading">Caution!</h3>
-                    <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
-                </div>
-                <h3>Disclaimers in alerts</h3>
-                <div class="alert alert-default" role="alert">
-                    <h3 class="alert-heading">Caution!</h3>
-                    <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
-                    <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
-                </div>
-                <h3>Icons in alerts</h3>
-                <div class="alert alert-default" role="alert">
-                    <div class="alert-icon">
-                        <i class="fa fa-bomb fa-2x"></i>
+            <section class="demo__section">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Default</h3>
+                        <div class="alert">
+                            <strong>Default!</strong> You successfully read this default alert message.
+                        </div>
                     </div>
-                    <div class="alert-body">
-                        <h3 class="alert-heading">Caution!</h3>
-                        <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
-                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">With links</h3>
+                        <div class="alert">
+                            <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
+                        </div>
                     </div>
                 </div>
-                <h3>Dismissible alerts</h3>
-                <div class="alert alert-default alert-dismissible" role="alert">
-                    <div class="alert-icon">
-                        <i class="fa fa-bolt fa-2x fa-fw"></i>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">With headings</h3>
+                        <div class="alert">
+                            <h3 class="alert-heading">Caution!</h3>
+                            <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
+                        </div>
                     </div>
-                    <div class="alert-body">
-                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <strong>Default!</strong> You successfully read this default alert message.
-                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
-                    </div>
-                </div>
-                <div class="alert alert-success alert-dismissible" role="alert">
-                    <div class="alert-icon">
-                        <i class="fa fa-anchor fa-2x fa-fw"></i>
-                    </div>
-                    <div class="alert-body">
-                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <strong>Well done!</strong> You successfully read this important alert message.
-                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">with disclaimers</h3>
+                        <div class="alert">
+                            <h3 class="alert-heading">Caution!</h3>
+                            <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
+                            <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                        </div>
                     </div>
                 </div>
-                <div class="alert alert-info alert-dismissible" role="alert">
-                    <div class="alert-icon">
-                        <i class="fa fa-bug fa-2x fa-fw"></i>
+                <h3 class="demo__heading">with icons or images</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="alert">
+                            <div class="alert-icon">
+                                <i class="fa fa-bomb fa-2x"></i>
+                            </div>
+                            <div class="alert-body">
+                                <h3 class="alert-heading">Caution!</h3>
+                                <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="alert-body">
-                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                    <div class="col-sm-6">
+                        <div class="alert">
+                            <div class="alert-icon">
+                                <img src="img/nature__small.jpg" alt="">
+                            </div>
+                            <div class="alert-body">
+                                <h3 class="alert-heading">Caution!</h3>
+                                <strong>Default!</strong> You successfully read <a href="#" class="alert-link">this default alert message</a>.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="alert alert-warning alert-dismissible" role="alert">
-                    <div class="alert-icon">
-                        <i class="fa fa-bullseye fa-2x fa-fw"></i>
-                    </div>
-                    <div class="alert-body">
-                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <strong>Warning!</strong> Better check yourself, you're not looking too good.
-                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                <h3 class="demo__heading">Dismissible alerts</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="alert alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-bolt fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Default!</strong> You successfully read this default alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="alert alert-danger alert-dismissible" role="alert">
-                    <div class="alert-icon">
-                        <i class="fa fa-diamond fa-2x fa-fw"></i>
+                <h3 class="demo__heading">Default Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="alert alert-default alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-bell-o fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Yo Son!</strong> You successfully read this important alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="alert-body">
-                        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-                        <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                </div>
+                <h3 class="demo__heading">Color Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="alert alert-cta alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-rocket fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Yo Son!</strong> You successfully read this important alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="alert alert-main alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-lightbulb-o fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Yo Son!</strong> You successfully read this important alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="demo__heading">Neutral Palette</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="alert alert-alt1 alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-balance-scale fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Yo Son!</strong> You successfully read this important alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="alert alert-alt2 alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-balance-scale fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Yo Son!</strong> You successfully read this important alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="alert alert-alt3 alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-balance-scale fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Yo Son!</strong> You successfully read this important alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="demo__heading">State Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="alert alert-success alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-anchor fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Well done!</strong> You successfully read this important alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="alert alert-info alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-bug fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="alert alert-warning alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-bullseye fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="alert alert-danger alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-diamond fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!--SECTION: Badges-->
-            <nav id="ui__badges" class="navbar navbar-section">
+            <nav id="ui__badges" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Badges</div>
                 </div>
             </nav>
 
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Basic</h3>
+                        <h3 class="demo__heading">Basic</h3>
                         <div class="bs-example" data-example-id="simple-badges">
-                            <a href="#">Inbox <span class="badge">42</span></a>
-                            <br>
-                            <br>
+                            <a class="btn btn-default" href="#">Inbox <span class="badge">42</span></a>
                             <button class="btn btn-primary" type="button">
-                                Messages
-                                <span class="badge">4</span>
+                                Messages <span class="badge">4</span>
+                            </button>
+                            <button class="btn btn-success" type="button">
+                                Messages <span class="badge">4</span>
+                            </button>
+                            <button class="btn btn-info" type="button">
+                                Messages <span class="badge">4</span>
+                            </button>
+                            <button class="btn btn-warning" type="button">
+                                Messages <span class="badge">4</span>
+                            </button>
+                            <button class="btn btn-danger" type="button">
+                                Messages <span class="badge">4</span>
                             </button>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Adapts to active nav states</h3>
-                        <ul class="nav nav-pills" role="tablist">
-                            <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a>
-                            </li>
-                            <li role="presentation"><a href="#">Profile</a>
-                            </li>
-                            <li role="presentation"><a href="#">Messages <span class="badge">3</span></a>
-                            </li>
+                        <h3 class="demo__heading">Adapts to active nav states</h3>
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Messages <span class="badge">3</span></a></li>
                         </ul>
                     </div>
                 </div>
             </section>
 
             <!--SECTION: Breadcrumbs-->
-            <nav id="ui__breadcrumbs" class="navbar navbar-section">
+            <nav id="ui__breadcrumbs" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Breadcrumbs</div>
                 </div>
             </nav>
 
-            <section>
+            <section class="demo__section">
+                <h3 class="demo__heading">Default</h3>
                 <ol class="breadcrumb">
-                    <li class="active">Home</li>
+                    <li class="breadcrumb-item active">Home</li>
                 </ol>
                 <ol class="breadcrumb">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li class="active">Library</li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Library</li>
                 </ol>
                 <ol class="breadcrumb">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Library</a>
-                    </li>
-                    <li class="active">Data</li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                    <li class="breadcrumb-item active">Data</li>
+                </ol>
+                <h3 class="demo__heading">Rounded</h3>
+                <ol class="breadcrumb breadcrumb-rounded">
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                    <li class="breadcrumb-item active">Data</li>
+                </ol>
+                <h3 class="demo__heading">Default Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb breadcrumb-default breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                </div>
+                <h3 class="demo__heading">Primary Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb breadcrumb-cta breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb breadcrumb-main breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                </div>
+                <h3 class="demo__heading">Neutral Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <ol class="breadcrumb breadcrumb-alt1 breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <ol class="breadcrumb breadcrumb-alt2 breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <ol class="breadcrumb breadcrumb-alt3 breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                </div>
+                <h3 class="demo__heading">State Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb breadcrumb-success breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb breadcrumb-info breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb breadcrumb-warning breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb breadcrumb-danger breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                </div>
+                <h3 class="demo__heading">Sizing</h3>
+                <ol class="breadcrumb breadcrumb-lg breadcrumb-rounded">
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                    <li class="breadcrumb-item active">Data</li>
+                </ol>
+                <ol class="breadcrumb breadcrumb-rounded">
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                    <li class="breadcrumb-item active">Data</li>
+                </ol>
+                <ol class="breadcrumb breadcrumb-sm breadcrumb-rounded">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                    <li class="breadcrumb-item active">Data</li>
+                </ol>
+                <ol class="breadcrumb breadcrumb-xs breadcrumb-rounded">
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                    <li class="breadcrumb-item active">Data</li>
                 </ol>
             </section>
 
             <!--SECTION: Button Groups-->
-            <nav id="ui__button-groups" class="navbar navbar-section">
+            <nav id="ui__button-groups" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Button Groups</div>
                 </div>
             </nav>
 
             <!--Button Groups-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Basic</h3>
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group" aria-label="Basic example">
                             <button type="button" class="btn btn-default">Left</button>
                             <button type="button" class="btn btn-default">Middle</button>
                             <button type="button" class="btn btn-default">Right</button>
@@ -286,19 +537,19 @@
                     </div>
                     <div class="col-sm-6">
                         <h3>Button toolbar</h3>
-                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                            <div class="btn-group" role="group" aria-label="First group">
+                        <div class="btn-toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group" aria-label="First group">
                                 <button type="button" class="btn btn-default">1</button>
                                 <button type="button" class="btn btn-default">2</button>
                                 <button type="button" class="btn btn-default">3</button>
                                 <button type="button" class="btn btn-default">4</button>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Second group">
+                            <div class="btn-group" aria-label="Second group">
                                 <button type="button" class="btn btn-default">5</button>
                                 <button type="button" class="btn btn-default">6</button>
                                 <button type="button" class="btn btn-default">7</button>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Third group">
+                            <div class="btn-group" aria-label="Third group">
                                 <button type="button" class="btn btn-default">8</button>
                             </div>
                         </div>
@@ -308,22 +559,22 @@
                     <div class="col-sm-6">
                         <h3>Sizing</h3>
                         <div class="show__btn-group">
-                            <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                            <div class="btn-group btn-group-lg" aria-label="Large button group">
                                 <button type="button" class="btn btn-default">Left</button>
                                 <button type="button" class="btn btn-default">Middle</button>
                                 <button type="button" class="btn btn-default">Right</button>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Default button group">
+                            <div class="btn-group" aria-label="Default button group">
                                 <button type="button" class="btn btn-default">Left</button>
                                 <button type="button" class="btn btn-default">Middle</button>
                                 <button type="button" class="btn btn-default">Right</button>
                             </div>
-                            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                            <div class="btn-group btn-group-sm" aria-label="Small button group">
                                 <button type="button" class="btn btn-default">Left</button>
                                 <button type="button" class="btn btn-default">Middle</button>
                                 <button type="button" class="btn btn-default">Right</button>
                             </div>
-                            <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+                            <div class="btn-group btn-group-xs" aria-label="Extra-small button group">
                                 <button type="button" class="btn btn-default">Left</button>
                                 <button type="button" class="btn btn-default">Middle</button>
                                 <button type="button" class="btn btn-default">Right</button>
@@ -332,16 +583,16 @@
                     </div>
                     <div class="col-sm-6">
                         <h3>Nesting</h3>
-                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <div class="btn-group" aria-label="Button group with nested dropdown">
                             <button type="button" class="btn btn-default">1</button>
                             <button type="button" class="btn btn-default">2</button>
 
-                            <div class="btn-group" role="group">
+                            <div class="btn-group">
                                 <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupDrop1">
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                     <li><a href="#">Dropdown link</a>
                                     </li>
                                     <li><a href="#">Dropdown link</a>
@@ -354,15 +605,15 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Vertical variation</h3>
-                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <div class="btn-group-vertical" aria-label="Vertical button group">
                             <button type="button" class="btn btn-default">Button</button>
                             <button type="button" class="btn btn-default">Button</button>
-                            <div class="btn-group" role="group">
+                            <div class="btn-group">
                                 <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
                                     <li><a href="#">Dropdown link</a>
                                     </li>
                                     <li><a href="#">Dropdown link</a>
@@ -371,36 +622,36 @@
                             </div>
                             <button type="button" class="btn btn-default">Button</button>
                             <button type="button" class="btn btn-default">Button</button>
-                            <div class="btn-group" role="group">
+                            <div class="btn-group">
                                 <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop2">
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
                                     <li><a href="#">Dropdown link</a>
                                     </li>
                                     <li><a href="#">Dropdown link</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="btn-group" role="group">
+                            <div class="btn-group">
                                 <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3">
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
                                     <li><a href="#">Dropdown link</a>
                                     </li>
                                     <li><a href="#">Dropdown link</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="btn-group" role="group">
+                            <div class="btn-group">
                                 <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop4">
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
                                     <li><a href="#">Dropdown link</a>
                                     </li>
                                     <li><a href="#">Dropdown link</a>
@@ -411,20 +662,20 @@
                     </div>
                     <div class="col-sm-6">
                         <h3>Justified button groups</h3>
-                        <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
-                            <a href="#" class="btn btn-default" role="button">Left</a>
-                            <a href="#" class="btn btn-default" role="button">Middle</a>
-                            <a href="#" class="btn btn-default" role="button">Right</a>
+                        <div class="btn-group btn-group-justified" aria-label="Justified button group">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
+                            <a href="#" class="btn btn-default">Right</a>
                         </div>
                         <br>
-                        <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="Justified button group with nested dropdown">
-                            <a href="#" class="btn btn-default" role="button">Left</a>
-                            <a href="#" class="btn btn-default" role="button">Middle</a>
-                            <div class="btn-group" role="group">
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <div class="btn-group btn-group-lg btn-group-justified" aria-label="Justified button group with nested dropdown">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -438,14 +689,14 @@
                             </div>
                         </div>
                         <br>
-                        <div class="btn-group btn-group btn-group-justified" role="group" aria-label="Justified button group with nested dropdown">
-                            <a href="#" class="btn btn-default" role="button">Left</a>
-                            <a href="#" class="btn btn-default" role="button">Middle</a>
-                            <div class="btn-group" role="group">
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <div class="btn-group btn-group btn-group-justified" aria-label="Justified button group with nested dropdown">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -459,14 +710,14 @@
                             </div>
                         </div>
                         <br>
-                        <div class="btn-group btn-group-sm btn-group-justified" role="group" aria-label="Justified button group with nested dropdown">
-                            <a href="#" class="btn btn-default" role="button">Left</a>
-                            <a href="#" class="btn btn-default" role="button">Middle</a>
-                            <div class="btn-group" role="group">
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <div class="btn-group btn-group-sm btn-group-justified" aria-label="Justified button group with nested dropdown">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -480,14 +731,14 @@
                             </div>
                         </div>
                         <br>
-                        <div class="btn-group btn-group-xs btn-group-justified" role="group" aria-label="Justified button group with nested dropdown">
-                            <a href="#" class="btn btn-default" role="button">Left</a>
-                            <a href="#" class="btn btn-default" role="button">Middle</a>
-                            <div class="btn-group" role="group">
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <div class="btn-group btn-group-xs btn-group-justified" aria-label="Justified button group with nested dropdown">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -507,7 +758,7 @@
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Default
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -524,7 +775,7 @@
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Primary
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -541,7 +792,7 @@
                     <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Success
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -558,7 +809,7 @@
                     <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Info
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -575,7 +826,7 @@
                     <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Warning
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -592,7 +843,7 @@
                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Danger
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -611,7 +862,7 @@
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -630,7 +881,7 @@
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -649,7 +900,7 @@
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -668,7 +919,7 @@
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -687,7 +938,7 @@
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -706,7 +957,7 @@
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Action</a>
                         </li>
                         <li><a href="#">Another action</a>
@@ -720,13 +971,13 @@
                 </div>
                 <h3>Sizing</h3>
                 <div class="show__btn-group">
-                    <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-toolbar">
                         <div class="btn-group">
                             <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                                 Large button
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu">
                                 <li><a href="#">Action</a>
                                 </li>
                                 <li><a href="#">Another action</a>
@@ -740,13 +991,13 @@
                         </div>
                         <!-- /btn-group -->
                     </div>
-                    <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-toolbar">
                         <div class="btn-group">
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                                 Default button
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu">
                                 <li><a href="#">Action</a>
                                 </li>
                                 <li><a href="#">Another action</a>
@@ -761,13 +1012,13 @@
                         <!-- /btn-group -->
                     </div>
                     <!-- /btn-toolbar -->
-                    <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-toolbar">
                         <div class="btn-group">
                             <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                                 Small button
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu">
                                 <li><a href="#">Action</a>
                                 </li>
                                 <li><a href="#">Another action</a>
@@ -782,13 +1033,13 @@
                         <!-- /btn-group -->
                     </div>
                     <!-- /btn-toolbar -->
-                    <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-toolbar">
                         <div class="btn-group">
                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                                 Extra small button
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu">
                                 <li><a href="#">Action</a>
                                 </li>
                                 <li><a href="#">Another action</a>
@@ -805,14 +1056,14 @@
                     <!-- /btn-toolbar -->
                 </div>
                 <h3>Dropup variation</h3>
-                <div class="btn-toolbar" role="toolbar">
+                <div class="btn-toolbar">
                     <div class="btn-group dropup">
                         <button type="button" class="btn btn-default">Dropup</button>
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <span class="caret"></span>
                             <span class="sr-only">Toggle Dropdown</span>
                         </button>
-                        <ul class="dropdown-menu" role="menu">
+                        <ul class="dropdown-menu">
                             <li><a href="#">Action</a>
                             </li>
                             <li><a href="#">Another action</a>
@@ -831,7 +1082,7 @@
                             <span class="caret"></span>
                             <span class="sr-only">Toggle Dropdown</span>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <ul class="dropdown-menu dropdown-menu-right">
                             <li><a href="#">Action</a>
                             </li>
                             <li><a href="#">Another action</a>
@@ -848,14 +1099,14 @@
             </section>
 
             <!--SECTION: Buttons-->
-            <nav id="ui__buttons" class="navbar navbar-section">
+            <nav id="ui__buttons" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Buttons</div>
                 </div>
             </nav>
 
             <!--Buttons-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Button Sentence</h3>
@@ -867,14 +1118,14 @@
                     </div>
                     <div class="col-sm-6">
                         <h3>Button Rounded</h3>
-                        <a class="btn btn-default btn-rounded" href="#" role="button">Link</a>
+                        <a class="btn btn-default btn-rounded" href="#">Link</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Button tags</h3>
                         <form class="bs-example" data-example-id="btn-tags">
-                            <a class="btn btn-default" href="#" role="button">Link</a>
+                            <a class="btn btn-default" href="#">Link</a>
                             <button class="btn btn-default" type="submit">Button</button>
                             <input class="btn btn-default" value="Input" type="button">
                             <input class="btn btn-default" value="Submit" type="submit">
@@ -924,8 +1175,8 @@
                             <button type="button" class="btn btn-default active">Button</button>
                         </p>
                         <p>
-                            <a href="#" class="btn btn-primary active" role="button">Primary link</a>
-                            <a href="#" class="btn btn-default active" role="button">Link</a>
+                            <a href="#" class="btn btn-primary active">Primary link</a>
+                            <a href="#" class="btn btn-default active">Link</a>
                         </p>
                         <h3>Disabled state</h3>
                         <p>
@@ -933,27 +1184,27 @@
                             <button type="button" class="btn btn-default active" disabled="disabled">Button</button>
                         </p>
                         <p>
-                            <a href="#" class="btn btn-primary disabled" role="button">Primary link</a>
-                            <a href="#" class="btn btn-default disabled" role="button">Link</a>
+                            <a href="#" class="btn btn-primary disabled">Primary link</a>
+                            <a href="#" class="btn btn-default disabled">Link</a>
                         </p>
                     </div>
                 </div>
             </section>
 
             <!--SECTION: Card-->
-            <nav id="ui__card" class="navbar navbar-section">
+            <nav id="ui__card" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Card</div>
                 </div>
             </nav>
 
             <!--Basic-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-md-4">
                         <h3>Basic</h3>
                         <div class="card">
-                            <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -964,7 +1215,7 @@
                     <div class="col-md-4">
                         <h3>Flush(no border)</h3>
                         <div class="card card-flush">
-                            <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -974,12 +1225,12 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Content Types</h3>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -1002,7 +1253,7 @@
                                 <h6 class="card-subtitle text-muted">Support card subtitle</h6>
                             </div>
                             <img src="img/nature__medium.jpg" alt="Card image">
-                            <div class="card-block">
+                            <div class="demo__card-img card-block">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="card-link">Card link</a>
                                 <a href="#" class="card-link">Another link</a>
@@ -1019,7 +1270,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
@@ -1029,7 +1280,7 @@
             </section>
 
             <!--Sizing-->
-            <section>
+            <section class="demo__section">
                 <h3>Sizing</h3>
                 <div class="card card-block">
                     <h3 class="card-title">Special title treatment</h3>
@@ -1055,7 +1306,7 @@
             </section>
 
             <!--Text alignment-->
-            <section>
+            <section class="demo__section">
                 <h3>Text Alignment</h3>
                 <div class="row">
                     <div class="col-md-4">
@@ -1083,7 +1334,7 @@
             </section>
 
             <!--Header and Footer-->
-            <section>
+            <section class="demo__section">
                 <h3>Header and Footer</h3>
                 <div class="row">
                     <div class="col-md-4">
@@ -1130,12 +1381,12 @@
             </section>
 
             <!--Image caps-->
-            <section>
+            <section class="demo__section">
                 <h3>Image Caps</h3>
                 <div class="row">
                     <div class="col-sm-6 col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1148,7 +1399,7 @@
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                             </div>
-                            <img src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -1162,20 +1413,20 @@
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
-                            <img class="card-img-bottom" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-bottom" src="img/nature__medium.jpg" alt="Card image cap">
                         </div>
                     </div>
                 </div>
             </section>
 
             <!--Image overlays-->
-            <section>
+            <section class="demo__section">
                 <h3>Image Overlays</h3>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card card-inverse">
-                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image">
-                            <div class="card-img-overlay">
+                            <img class="demo__card-img card-img" src="img/nature__medium.jpg" alt="Card image">
+                            <div class="demo__card-img card-img-overlay">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -1186,7 +1437,7 @@
             </section>
 
             <!--Inverted text-->
-            <section>
+            <section class="demo__section">
                 <h3>Inverted Text</h3>
                 <div class="row">
                     <div class="col-md-6">
@@ -1205,7 +1456,7 @@
             </section>
 
             <!--Background variants-->
-            <section>
+            <section class="demo__section">
                 <h3>Background Variants</h3>
                 <div class="row">
                     <div class="col-sm-6">
@@ -1275,11 +1526,11 @@
             </section>
 
             <!--Groups-->
-            <section>
+            <section class="demo__section">
                 <h3>Groups</h3>
                 <div class="card-group">
                     <div class="card">
-                        <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1287,7 +1538,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -1295,7 +1546,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -1306,12 +1557,12 @@
             </section>
 
             <!--Decks-->
-            <section>
+            <section class="demo__section">
                 <h3>Decks</h3>
                 <div class="card-deck-wrapper">
                     <div class="card-deck">
                         <div class="card">
-                            <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1319,7 +1570,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -1327,7 +1578,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -1339,11 +1590,11 @@
             </section>
 
             <!--Columns-->
-            <section>
+            <section class="demo__section">
                 <h3>Columns</h3>
                 <div class="card-columns">
                     <div class="card">
-                        <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title that wraps to a new line</h4>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1360,7 +1611,7 @@
                         </blockquote>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -1383,7 +1634,7 @@
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                     <div class="card">
-                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image">
+                        <img class="demo__card-img card-img" src="img/nature__medium.jpg" alt="Card image">
                     </div>
                     <div class="card card-block text-right">
                         <blockquote class="card-blockquote">
@@ -1404,14 +1655,14 @@
             </section>
 
             <!--SECTION: Carousel-->
-            <nav id="ui__carousel" class="navbar navbar-section">
+            <nav id="ui__carousel" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Carousel</div>
                 </div>
             </nav>
 
             <!--Carousel-->
-            <section>
+            <section class="demo__section">
                 <h3>Basic</h3>
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -1419,7 +1670,7 @@
                         <li class="" data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li class="" data-target="#carousel-example-generic" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
                         <div class="item active">
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
@@ -1430,12 +1681,12 @@
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                         <span class="fa fa-chevron-left" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                         <span class="fa fa-chevron-right" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
@@ -1443,7 +1694,7 @@
                 </div>
             </section>
 
-            <section>
+            <section class="demo__section">
                 <h3>Basic(with captions)</h3>
                 <div id="carousel-with-captions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -1451,7 +1702,7 @@
                         <li class="" data-target="#carousel-with-captions" data-slide-to="1"></li>
                         <li class="" data-target="#carousel-with-captions" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
                         <div class="item active">
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                             <div class="carousel-caption">
@@ -1474,12 +1725,12 @@
                             </div>
                         </div>
                     </div>
-                    <a class="left carousel-control" href="#carousel-with-captions" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#carousel-with-captions" data-slide="prev">
                         <span class="fa fa-chevron-left" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-with-captions" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#carousel-with-captions" data-slide="next">
                         <span class="fa fa-chevron-right" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
@@ -1488,7 +1739,7 @@
             </section>
 
             <!--Carousel Rounded-->
-            <section>
+            <section class="demo__section">
                 <h3>Rounded</h3>
                 <div id="carousel-example-rounded" class="carousel carousel-rounded slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -1496,7 +1747,7 @@
                         <li class="" data-target="#carousel-example-rounded" data-slide-to="1"></li>
                         <li class="" data-target="#carousel-example-rounded" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
                         <div class="item active">
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
@@ -1507,12 +1758,12 @@
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
-                    <a class="left carousel-control" href="#carousel-example-rounded" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#carousel-example-rounded" data-slide="prev">
                         <span class="fa fa-chevron-left" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-rounded" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#carousel-example-rounded" data-slide="next">
                         <span class="fa fa-chevron-right" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
@@ -1521,7 +1772,7 @@
             </section>
 
             <!--Carousel Fade-->
-            <section>
+            <section class="demo__section">
                 <h3>Fade</h3>
                 <div id="carousel-example-fade" class="carousel carousel-fade slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -1529,7 +1780,7 @@
                         <li class="" data-target="#carousel-example-fade" data-slide-to="1"></li>
                         <li class="" data-target="#carousel-example-fade" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
                         <div class="item active">
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
@@ -1540,12 +1791,12 @@
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
-                    <a class="left carousel-control" href="#carousel-example-fade" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#carousel-example-fade" data-slide="prev">
                         <span class="fa fa-chevron-left" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-fade" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#carousel-example-fade" data-slide="next">
                         <span class="fa fa-chevron-right" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
@@ -1554,7 +1805,7 @@
             </section>
 
             <!--Carousel Flat-->
-            <section>
+            <section class="demo__section">
                 <h3>Flat</h3>
                 <div id="carousel-example-flat" class="carousel carousel-control-flat slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -1562,7 +1813,7 @@
                         <li class="" data-target="#carousel-example-flat" data-slide-to="1"></li>
                         <li class="" data-target="#carousel-example-flat" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
                         <div class="item active">
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
@@ -1573,12 +1824,12 @@
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
-                    <a class="left carousel-control" href="#carousel-example-flat" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#carousel-example-flat" data-slide="prev">
                         <span class="fa fa-chevron-left" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-flat" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#carousel-example-flat" data-slide="next">
                         <span class="fa fa-chevron-right" aria-hidden="true"></span>
                         <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
@@ -1587,7 +1838,7 @@
             </section>
 
             <!--Carousel Positions-->
-            <section>
+            <section class="demo__section">
                 <h3>Control Positions</h3>
                 <div id="carousel-example-positions" class="carousel carousel-control-position carousel-control-flat slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -1595,7 +1846,7 @@
                         <li class="" data-target="#carousel-example-positions" data-slide-to="1"></li>
                         <li class="" data-target="#carousel-example-positions" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
                         <div class="item active">
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
@@ -1606,11 +1857,11 @@
                             <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
-                    <a class="left carousel-control" href="#carousel-example-positions" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#carousel-example-positions" data-slide="prev">
                         <span class="fa fa-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-positions" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#carousel-example-positions" data-slide="next">
                         <span class="fa fa-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -1618,14 +1869,14 @@
             </section>
 
             <!--SECTION: Code-->
-            <nav id="ui__code" class="navbar navbar-section">
+            <nav id="ui__code" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Code</div>
                 </div>
             </nav>
 
             <!--Code-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Inline</h3>
@@ -1651,7 +1902,7 @@
             </section>
 
             <!--SECTION: Colors-->
-            <nav id="ui__color" class="navbar navbar-section">
+            <nav id="ui__color" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Colors</div>
                 </div>
@@ -1697,14 +1948,14 @@
             </section>
 
             <!--SECTION: Custom Forms-->
-            <nav id="ui__custom-forms" class="navbar navbar-section">
+            <nav id="ui__custom-forms" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Custom Forms</div>
                 </div>
             </nav>
 
             <!--Custom Forms-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Checkboxes</h3>
@@ -1759,14 +2010,14 @@
             </section>
 
             <!--SECTION: Dropdowns-->
-            <nav id="ui__dropdowns" class="navbar navbar-section">
+            <nav id="ui__dropdowns" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Dropdowns</div>
                 </div>
             </nav>
 
             <!--Dropdowns-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Dropdown</h3>
@@ -1775,10 +2026,10 @@
                                 Dropdown
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a tabindex="-1" href="#">Action</a></li>
+                                <li><a tabindex="-1" href="#">Another action</a></li>
+                                <li><a tabindex="-1" href="#">Something else here</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1789,10 +2040,10 @@
                                 Dropdown
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a tabindex="-1" href="#">Action</a></li>
+                                <li><a tabindex="-1" href="#">Another action</a></li>
+                                <li><a tabindex="-1" href="#">Something else here</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1805,13 +2056,13 @@
                                 Dropdown
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
-                                <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                <li class="dropdown-header">Dropdown header</li>
+                                <li><a tabindex="-1" href="#">Action</a></li>
+                                <li><a tabindex="-1" href="#">Another action</a></li>
+                                <li><a tabindex="-1" href="#">Something else here</a></li>
+                                <li class="dropdown-header">Dropdown header</li>
+                                <li><a tabindex="-1" href="#">Separated link</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1822,12 +2073,12 @@
                                 Dropdown
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                <li role="presentation" class="divider"></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                                <li><a tabindex="-1" href="#">Action</a></li>
+                                <li><a tabindex="-1" href="#">Another action</a></li>
+                                <li><a tabindex="-1" href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a tabindex="-1" href="#">Separated link</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1840,10 +2091,10 @@
                                 Dropdown
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
-                                <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <li><a tabindex="-1" href="#">Regular link</a></li>
+                                <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                                <li><a tabindex="-1" href="#">Another link</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1851,14 +2102,14 @@
             </section>
 
             <!--SECTION: Forms-->
-            <nav id="ui__forms" class="navbar navbar-section">
+            <nav id="ui__forms" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Forms</div>
                 </div>
             </nav>
 
             <!--Forms-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Basic</h3>
@@ -1958,7 +2209,7 @@
             </section>
 
             <!--Supported Controls-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Inputs</h3>
@@ -2276,7 +2527,7 @@
             </section>
 
             <!--Control Sizing-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Height sizing</h3>
@@ -2347,7 +2598,7 @@
             </section>
 
             <!--SECTION: Grid-->
-            <nav id="ui__grid" class="navbar navbar-section">
+            <nav id="ui__grid" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Grid</div>
                 </div>
@@ -2355,7 +2606,7 @@
 
             <!--Grid-->
             <section class="demo__grid">
-                <section>
+                <section class="demo__section">
                     <h3>Example: Stacked-to-horizontal</h3>
                     <div class="row">
                         <div class="col-md-1">
@@ -2423,7 +2674,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="demo__section">
                     <h3>Example: Mobile and desktop</h3>
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
@@ -2453,7 +2704,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="demo__section">
                     <h3>Example: Extra Small, Mobile, tablet, desktop</h3>
                     <div class="row">
                         <div class="col-xxs-6 col-xs-12 col-sm-6 col-md-8">
@@ -2477,7 +2728,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="demo__section">
                     <h3>Example: Column wrapping</h3>
                     <div class="row">
                         <div class="col-xs-9">
@@ -2493,7 +2744,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="demo__section">
                     <h3>Example: Responsive column resets</h3>
                     <div class="row">
                         <div class="col-xs-6 col-sm-3">
@@ -2517,7 +2768,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="demo__section">
                     <h3>Offsetting columns</h3>
                     <div class="row">
                         <div class="col-md-4">
@@ -2541,7 +2792,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="demo__section">
                     <h3>Nesting columns</h3>
                     <div class="row">
                         <div class="col-sm-9">
@@ -2563,7 +2814,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="demo__section">
                     <h3>Column ordering</h3>
                     <div class="row">
                         <div class="col-md-9 col-md-push-3">
@@ -2577,7 +2828,7 @@
             </section>
 
             <!--SECTION: Hero-->
-            <nav id="ui__hero" class="navbar navbar-section">
+            <nav id="ui__hero" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Hero</div>
                 </div>
@@ -2596,7 +2847,7 @@
                         <div class="col-sm-6">
                             <h1>iApple.</h1>
                             <p>This article has exceeded my already high expectations of technical ignorance and blatant impartiality. I am quite staggered at how bad it is and how much it lives up to to stereotype of mac users being I-sheep.</p>
-                            <a class="btn btn-primary btn-rounded" href="#" role="button">Learn more</a>
+                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2607,7 +2858,7 @@
                         <div class="col-sm-offset-3 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#" role="button">Learn more</a>
+                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2618,7 +2869,7 @@
                         <div class="col-sm-offset-6 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#" role="button">Learn more</a>
+                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2629,7 +2880,7 @@
                         <div class="col-sm-offset-3 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#" role="button">Learn more</a>
+                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2640,7 +2891,7 @@
                         <div class="col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#" role="button">Learn more</a>
+                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2652,7 +2903,7 @@
                         <div class="col-sm-offset-3 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#" role="button">Learn more</a>
+                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2662,14 +2913,14 @@
         <div class="demo container">
 
             <!--SECTION: Input Groups-->
-            <nav id="ui__input-groups" class="navbar navbar-section">
+            <nav id="ui__input-groups" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Input Groups</div>
                 </div>
             </nav>
 
             <!--Input Groups-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Basic example</h3>
@@ -2755,7 +3006,7 @@
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -2777,7 +3028,7 @@
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <ul class="dropdown-menu dropdown-menu-right">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -2801,7 +3052,7 @@
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -2824,7 +3075,7 @@
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <ul class="dropdown-menu dropdown-menu-right">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -2842,31 +3093,31 @@
             </section>
 
             <!--SECTION: Jumbotron-->
-            <nav id="ui__jumbotron" class="navbar navbar-section">
+            <nav id="ui__jumbotron" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Jumbotron</div>
                 </div>
             </nav>
 
             <!--Jumbotron-->
-            <section>
+            <section class="demo__section">
                 <div class="jumbotron">
                     <h1 id="hello,-world!">Hello, world!
                     </h1>
                     <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <a class="btn btn-primary" href="#" role="button">Learn more</a>
+                    <a class="btn btn-primary" href="#">Learn more</a>
                 </div>
             </section>
 
             <!--SECTION: Labels-->
-            <nav id="ui__labels" class="navbar navbar-section">
+            <nav id="ui__labels" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Labels</div>
                 </div>
             </nav>
 
             <!--Labels-->
-            <section>
+            <section class="demo__section">
                 <h3>Basic</h3>
                 <div>
                     <h1>Example heading
@@ -2900,14 +3151,14 @@
             </section>
 
             <!--SECTION: List Groups-->
-            <nav id="ui__list-groups" class="navbar navbar-section">
+            <nav id="ui__list-groups" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">List Groups</div>
                 </div>
             </nav>
 
             <!--List Groups-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Basic example</h3>
@@ -2923,7 +3174,7 @@
                         <h3>Badges</h3>
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <span class="badge">14</span><span class="badge">14</span> Cras justo odio
+                                <span class="badge">14</span> Cras justo odio
                             </li>
                             <li class="list-group-item">
                                 <span class="badge">12</span> Dapibus ac facilisis in
@@ -3023,14 +3274,14 @@
             </section>
 
             <!--SECTION: Media-->
-            <nav id="ui__media" class="navbar navbar-section">
+            <nav id="ui__media" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Media</div>
                 </div>
             </nav>
 
             <!--Media-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-lg-6">
                         <h3>Default media</h3>
@@ -3205,14 +3456,14 @@
             </section>
 
             <!--SECTION: Modals-->
-            <nav id="ui__modals" class="navbar navbar-section">
+            <nav id="ui__modals" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Modals</div>
                 </div>
             </nav>
 
             <!--Static Example-->
-            <section>
+            <section class="demo__section">
                 <h3>Static example</h3>
                 <div class="modal show__modal">
                     <div class="modal-dialog">
@@ -3242,7 +3493,7 @@
             </section>
 
             <!--Live Demo-->
-            <section>
+            <section class="demo__section">
                 <h3>Live demo</h3>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                     Launch demo modal
@@ -3275,7 +3526,7 @@
             </section>
 
             <!--Optional Sizes-->
-            <section>
+            <section class="demo__section">
                 <h3>Optional Sizes</h3>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalLarge">
                     Large Modal
@@ -3336,12 +3587,12 @@
             </section>
 
             <!--SECTION: Navbar-->
-            <nav id="ui__navbar-navbar" class="navbar navbar-section">
+            <nav id="ui__navbar-navbar" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Navbar</div>
                 </div>
             </nav>
-            <section>
+            <section class="demo__section">
                 <h3>Default</h3>
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -3364,8 +3615,8 @@
                                 <li><a href="#">Link</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" role="menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
                                         <li><a href="#">Action</a>
                                         </li>
                                         <li><a href="#">Another action</a>
@@ -3385,8 +3636,8 @@
                                 <li><a href="#">Link</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" role="menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
                                         <li><a href="#">Action</a>
                                         </li>
                                         <li><a href="#">Another action</a>
@@ -3405,7 +3656,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Primary</h3>
                 <nav class="navbar navbar-primary">
                     <div class="container-fluid">
@@ -3435,7 +3686,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Accent</h3>
                 <nav class="navbar navbar-accent">
                     <div class="container-fluid">
@@ -3465,7 +3716,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Inverse Dark</h3>
                 <nav class="navbar navbar-inverse-dark">
                     <div class="container-fluid">
@@ -3495,7 +3746,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Inverse</h3>
                 <nav class="navbar navbar-inverse">
                     <div class="container-fluid">
@@ -3525,7 +3776,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Inverse Light</h3>
                 <nav class="navbar navbar-inverse-light">
                     <div class="container-fluid">
@@ -3555,7 +3806,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Neutral Dark</h3>
                 <nav class="navbar navbar-neutral-dark">
                     <div class="container-fluid">
@@ -3585,7 +3836,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Neutral</h3>
                 <nav class="navbar navbar-neutral">
                     <div class="container-fluid">
@@ -3615,7 +3866,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Neutral Light</h3>
                 <nav class="navbar navbar-neutral-light">
                     <div class="container-fluid">
@@ -3645,7 +3896,7 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Vertical</h3>
                 <div class="navbar-vertical-container">
                     <nav class="navbar navbar-default navbar-vertical">
@@ -3668,8 +3919,8 @@
                                 <li><a href="#">Link</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#ttest1" class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                    <ul id="ttest1" class="collapse dropdown-menu" role="menu">
+                                    <a href="#ttest1" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul id="ttest1" class="collapse dropdown-menu">
                                         <li><a href="#">Action</a>
                                         </li>
                                         <li><a href="#">Another action</a>
@@ -3685,8 +3936,8 @@
                                 <li><a href="#">Link</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#ttest2" class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                    <ul id="ttest2" class="collapse dropdown-menu" role="menu">
+                                    <a href="#ttest2" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul id="ttest2" class="collapse dropdown-menu">
                                         <li><a href="#">Action</a>
                                         </li>
                                         <li><a href="#">Another action</a>
@@ -3720,15 +3971,15 @@
                             </div>
                         </nav>
                         <nav class="navbar navbar-default navbar-sidebar">
-                            <div id="ttest4" class="navbar-sidebar-collapse collapse width" role="menu">
+                            <div id="ttest4" class="navbar-sidebar-collapse collapse width">
                                 <div class="navbar-sidebar-wrapper">
                                     <div class="navbar-sidebar-body">
                                         <ul class="nav navbar-nav">
                                             <li><a class="active" href="">Website Settings</a></li>
                                             <li><a href="">Inventory Settings</a></li>
                                             <li class="dropdown">
-                                                <a href="#ttest5" class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                                <ul id="ttest5" class="collapse dropdown-menu" role="menu">
+                                                <a href="#ttest5" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                                <ul id="ttest5" class="collapse dropdown-menu">
                                                     <li><a href="#">Action</a>
                                                     </li>
                                                     <li><a href="#">Another action</a>
@@ -3786,15 +4037,15 @@
                     </nav>
                     <div class="emulate-body-element">
                         <nav class="offcanvas-nav navbar navbar-default navbar-sidebar">
-                            <div id="ttest44" class="navbar-sidebar-collapse collapse width" role="menu">
+                            <div id="ttest44" class="navbar-sidebar-collapse collapse width">
                                 <div class="navbar-sidebar-wrapper">
                                     <div class="navbar-sidebar-body">
                                         <ul class="nav navbar-nav">
                                             <li><a class="active" href="">Website Settings</a></li>
                                             <li><a href="">Inventory Settings</a></li>
                                             <li class="dropdown">
-                                                <a href="#ttest54" class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                                <ul id="ttest54" class="collapse dropdown-menu" role="menu">
+                                                <a href="#ttest54" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                                <ul id="ttest54" class="collapse dropdown-menu">
                                                     <li><a href="#">Action</a></li>
                                                     <li><a href="#">Another action</a></li>
                                                     <li><a href="#">Something else here</a></li>
@@ -3844,7 +4095,7 @@
                     </div>
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Forms</h3>
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -3858,7 +4109,7 @@
                             <a class="navbar-brand" href="#">Brand</a>
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                            <form class="navbar-form navbar-left" role="search">
+                            <form class="navbar-form navbar-left">
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Search" type="text">
                                 </div>
@@ -3868,7 +4119,7 @@
                     </div>
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Text</h3>
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -3887,7 +4138,7 @@
                     </div>
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Non-nav links</h3>
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -3907,7 +4158,7 @@
                     </div>
                 </nav>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Static Top</h3>
                 <nav class="navbar navbar-default navbar-static-top">
                     <div class="navbar-header">
@@ -3928,8 +4179,8 @@
                             <li><a href="#">Link</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -3943,7 +4194,7 @@
                 </nav>
             </section>
             <h3>Full Width <small>Wrap "navbar" children with "container". Done.</small></h3>
-            <section>
+            <section class="demo__section">
                 <nav class="navbar navbar-default navbar-static-top">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
@@ -3963,8 +4214,8 @@
                             <li><a href="#">Link</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -3979,34 +4230,34 @@
             </section>
 
             <!--SECTION: Navs-->
-            <nav id="ui__navs" class="navbar navbar-section">
+            <nav id="ui__navs" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Navs</div>
                 </div>
             </nav>
 
             <!--Navs-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Tabs</h3>
                         <ul class="nav nav-tabs">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation"><a href="#">Messages</a>
+                            <li><a href="#">Messages</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3>Pills</h3>
                         <ul class="nav nav-pills">
-                            <li role="presentation" class="active"><a href="#">Home<span class="badge">42</span></a>
+                            <li class="active"><a href="#">Home<span class="badge">42</span></a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation"><a href="#">Messages</a>
+                            <li><a href="#">Messages</a>
                             </li>
                         </ul>
                     </div>
@@ -4015,22 +4266,22 @@
                     <div class="col-sm-6">
                         <h3>Tabs Disabled</h3>
                         <ul class="nav nav-tabs">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation" class="disabled"><a href="#">Messages</a>
+                            <li class="disabled"><a href="#">Messages</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3>Pills Disabled</h3>
                         <ul class="nav nav-pills">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation" class="disabled"><a href="#">Messages</a>
+                            <li class="disabled"><a href="#">Messages</a>
                             </li>
                         </ul>
                     </div>
@@ -4039,15 +4290,15 @@
                     <div class="col-sm-6">
                         <h3>Tabs with dropdowns</h3>
                         <ul class="nav nav-tabs">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation" class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -4064,15 +4315,15 @@
                     <div class="col-sm-6">
                         <h3>Pills with dropdowns</h3>
                         <ul class="nav nav-pills">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation" class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Action</a>
                                     </li>
                                     <li><a href="#">Another action</a>
@@ -4091,22 +4342,22 @@
                     <div class="col-sm-6">
                         <h3>Tabs Justified</h3>
                         <ul class="nav nav-tabs nav-justified">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation"><a href="#">Messages</a>
+                            <li><a href="#">Messages</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3>Pills Justified</h3>
                         <ul class="nav nav-pills nav-justified">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation"><a href="#">Messages</a>
+                            <li><a href="#">Messages</a>
                             </li>
                         </ul>
                     </div>
@@ -4115,22 +4366,22 @@
                     <div class="col-sm-6">
                         <h3>Tabs Stacked</h3>
                         <ul class="nav nav-tabs nav-stacked">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation"><a href="#">Messages</a>
+                            <li><a href="#">Messages</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3>Pills Stacked</h3>
                         <ul class="nav nav-pills nav-stacked">
-                            <li role="presentation" class="active"><a href="#">Home</a>
+                            <li class="active"><a href="#">Home</a>
                             </li>
-                            <li role="presentation"><a href="#">Profile</a>
+                            <li><a href="#">Profile</a>
                             </li>
-                            <li role="presentation"><a href="#">Messages</a>
+                            <li><a href="#">Messages</a>
                             </li>
                         </ul>
                     </div>
@@ -4138,14 +4389,14 @@
             </section>
 
             <!--SECTION: Pager-->
-            <nav id="ui__pager" class="navbar navbar-section">
+            <nav id="ui__pager" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Pager</div>
                 </div>
             </nav>
 
             <!--Pager-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Default</h3>
@@ -4184,14 +4435,14 @@
             </section>
 
             <!--SECTION: Pagination-->
-            <nav id="ui__pagination" class="navbar navbar-section">
+            <nav id="ui__pagination" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Pagination</div>
                 </div>
             </nav>
 
             <!--Pagination-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Default</h3>
@@ -4339,14 +4590,14 @@
             </section>
 
             <!--SECTION: Panels-->
-            <nav id="ui__panels" class="navbar navbar-section">
+            <nav id="ui__panels" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Panels</div>
                 </div>
             </nav>
 
             <!--Panels-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Basic example</h3>
@@ -4558,13 +4809,13 @@
             </section>
 
             <!--SECTION: Panel Wizard-->
-            <nav id="ui__panel-wizard" class="navbar navbar-section">
+            <nav id="ui__panel-wizard" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Panel Wizard</div>
                 </div>
             </nav>
 
-            <section>
+            <section class="demo__section">
                 <h3>Panel Wizard</h3>
                 <div class="panel-wizard-container">
                     <div class="panel panel-inverse panel-wizard">
@@ -4615,14 +4866,14 @@
             </section>
 
             <!--SECTION: Popover-->
-            <nav id="ui__popover" class="navbar navbar-section">
+            <nav id="ui__popover" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Popover</div>
                 </div>
             </nav>
 
             <!--Static Popover-->
-            <section>
+            <section class="demo__section">
                 <h3>Static popover</h3>
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-6">
@@ -4682,13 +4933,13 @@
             </section>
 
             <!--Live Popover-->
-            <section>
+            <section class="demo__section">
                 <h3>Live demo</h3>
                 <button data-original-title="Popover title" type="button" class="btn btn-danger bs-docs-popover" data-toggle="popover" title="" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
             </section>
 
             <!--Four Directions-->
-            <section>
+            <section class="demo__section">
                 <h3>Four directions</h3>
                 <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                     Popover on left
@@ -4705,25 +4956,25 @@
             </section>
 
             <!--Dismissable Popover-->
-            <section>
+            <section class="demo__section">
                 <h3>Dismissable popover</h3>
-                <a data-original-title="Dismissible popover" tabindex="0" class="btn btn-danger bs-docs-popover" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+                <a data-original-title="Dismissible popover" tabindex="0" class="btn btn-danger bs-docs-popover" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
             </section>
 
             <!--SECTION: Progress Bars-->
-            <nav id="ui__progress-bars" class="navbar navbar-section">
+            <nav id="ui__progress-bars" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Progress Bars</div>
                 </div>
             </nav>
 
             <!--Progress Bars-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Basic example</h3>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <div class="progress-bar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                                 <span class="sr-only">60% Complete</span>
                             </div>
                         </div>
@@ -4731,17 +4982,17 @@
                     <div class="col-sm-6">
                         <h3>With label</h3>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <div class="progress-bar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                                 <span>60%</span>
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+                            <div class="progress-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
                                 <span>0%</span>
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
+                            <div class="progress-bar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
                                 <span>2%</span>
                             </div>
                         </div>
@@ -4751,22 +5002,22 @@
                     <div class="col-sm-6">
                         <h3>Contextual alternatives</h3>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <div class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                 <span class="sr-only">40% Complete (success)</span>
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <div class="progress-bar progress-bar-info" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                 <span class="sr-only">20% Complete</span>
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <div class="progress-bar progress-bar-warning" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                 <span class="sr-only">60% Complete (warning)</span>
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <div class="progress-bar progress-bar-danger" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                 <span class="sr-only">80% Complete (danger)</span>
                             </div>
                         </div>
@@ -4774,22 +5025,22 @@
                     <div class="col-sm-6">
                         <h3>Striped</h3>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                 <span class="sr-only">40% Complete (success)</span>
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <div class="progress-bar progress-bar-info progress-bar-striped" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                 <span class="sr-only">20% Complete</span>
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                 <span class="sr-only">60% Complete (warning)</span>
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                 <span class="sr-only">80% Complete (danger)</span>
                             </div>
                         </div>
@@ -4800,7 +5051,7 @@
                         <h3>Animated</h3>
                         <div>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                <div class="progress-bar progress-bar-striped active" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
                                     <span class="sr-only">45% Complete</span>
                                 </div>
                             </div>
@@ -4824,28 +5075,28 @@
             </section>
 
             <!--SECTION: Responsive Embed-->
-            <nav id="ui__responsive-embed" class="navbar navbar-section">
+            <nav id="ui__responsive-embed" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Responsive Embed</div>
                 </div>
             </nav>
 
             <!--Responsive Embed-->
-            <section>
+            <section class="demo__section">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mBlv-eV7lek" allowfullscreen></iframe>
                 </div>
             </section>
 
             <!--SECTION: Tables-->
-            <nav id="ui__tables" class="navbar navbar-section">
+            <nav id="ui__tables" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Tables</div>
                 </div>
             </nav>
 
             <!--Tables-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Basic</h3>
@@ -5102,14 +5353,14 @@
             </section>
 
             <!--SECTION: Thumbnails-->
-            <nav id="ui__thumbnails" class="navbar navbar-section">
+            <nav id="ui__thumbnails" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Thumbnails</div>
                 </div>
             </nav>
 
             <!--Thumbnails-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Thumbnail Link</h3>
@@ -5145,7 +5396,7 @@
                                     <div class="caption">
                                         <h3>Heading</h3>
                                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a>
+                                        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a>
                                         </p>
                                     </div>
                                 </div>
@@ -5156,7 +5407,7 @@
                                     <div class="caption">
                                         <h3>Heading</h3>
                                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a>
+                                        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a>
                                         </p>
                                     </div>
                                 </div>
@@ -5167,18 +5418,18 @@
             </section>
 
             <!--SECTION: Tooltip-->
-            <nav id="ui__tooltip" class="navbar navbar-section">
+            <nav id="ui__tooltip" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Tooltip</div>
                 </div>
             </nav>
 
             <!--Tooltip-->
-            <section>
+            <section class="demo__section">
                 <h3>Static example</h3>
                 <div class="row">
                     <div class="col-sm-3">
-                        <div class="tooltip left show__tooltip" role="tooltip">
+                        <div class="tooltip left show__tooltip">
                             <div class="tooltip-arrow"></div>
                             <div class="tooltip-inner">
                                 Tooltip on the left
@@ -5186,7 +5437,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="tooltip top show__tooltip" role="tooltip">
+                        <div class="tooltip top show__tooltip">
                             <div class="tooltip-arrow"></div>
                             <div class="tooltip-inner">
                                 Tooltip on the top
@@ -5194,7 +5445,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="tooltip bottom show__tooltip" role="tooltip">
+                        <div class="tooltip bottom show__tooltip">
                             <div class="tooltip-arrow"></div>
                             <div class="tooltip-inner">
                                 Tooltip on the bottom
@@ -5202,7 +5453,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="tooltip right show__tooltip" role="tooltip">
+                        <div class="tooltip right show__tooltip">
                             <div class="tooltip-arrow"></div>
                             <div class="tooltip-inner">
                                 Tooltip on the right
@@ -5211,7 +5462,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="demo__section">
                 <h3>Interactive example</h3>
                 <div class="row">
                     <div class="col-sm-3">
@@ -5230,14 +5481,14 @@
             </section>
 
             <!--SECTION: Typography-->
-            <nav id="ui__typography" class="navbar navbar-section">
+            <nav id="ui__typography" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Typography</div>
                 </div>
             </nav>
 
             <!--Headings-->
-            <section>
+            <section class="demo__section">
                 <h3 class="display-1">Display 1</h3>
                 <h3 class="display-2">Display 2</h3>
                 <h3 class="display-3">Display 3</h3>
@@ -5251,7 +5502,7 @@
             </section>
 
             <!--Body Copy-->
-            <section>
+            <section class="demo__section">
                 <p class="lead">This is a lead paragraph. Amet accusamus quas accusantium recusandae ad recusandae doloremque sequi consectetur. Iusto sequi quis voluptatibus sunt architecto. Repudiandae provident quas dignissimos amet dolor nostrum obcaecati nesciunt. Quo blanditiis odio mollitia consequuntur ipsum similique? Consequatur et et nesciunt illum impedit maiores adipisci ipsum impedit ipsam eveniet necessitatibus dolore doloremque. Neque earum magni.</p>
                 <p>Consectetur architecto placeat hic aliquid dolore accusantium dicta enim distinctio. Blanditiis neque harum sint id quidem! Doloremque perferendis quaerat voluptatem animi voluptates. Qui quod fuga cupiditate nobis quod. Necessitatibus ex nihil asperiores molestiae totam animi ipsum illo. Sint excepturi neque porro dicta accusamus nisi. Nemo debitis repudiandae dolor quibusdam quod!</p>
                 <p>Consectetur at iste provident molestias quo iusto laboriosam nisi animi repellat possimus quia sapiente accusantium quidem. Porro totam a architecto nihil deserunt veritatis. Doloribus corporis maiores illum fugiat culpa labore. Beatae obcaecati iure esse perspiciatis laudantium! Nemo pariatur sint facere provident voluptas nesciunt. Nisi sed possimus similique voluptates mollitia! Sint.</p>
@@ -5259,7 +5510,7 @@
             </section>
 
             <!--Inline Text Elements-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Marked text </h3>
@@ -5304,7 +5555,7 @@
             </section>
 
             <!-- Alignment classes  -->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Alignment classes</h3>
@@ -5324,7 +5575,7 @@
             </section>
 
             <!-- Abbreviations -->
-            <section>
+            <section class="demo__section">
                 <h3>Abbreviations</h3>
                 <div class="row">
                     <div class="col-sm-6">
@@ -5339,7 +5590,7 @@
             </section>
 
             <!-- Addresses -->
-            <section>
+            <section class="demo__section">
                 <h3>Addresses</h3>
                 <address><strong>Twitter, Inc.</strong>
                     <br> 795 Folsom Ave, Suite 600
@@ -5351,7 +5602,7 @@
             </section>
 
             <!-- Blockquotes -->
-            <section>
+            <section class="demo__section">
                 <h3>Blockquotes</h3>
                 <h3>Default</h3>
                 <blockquote>
@@ -5380,7 +5631,7 @@
             </section>
 
             <!-- Lists -->
-            <section>
+            <section class="demo__section">
                 <h3>Lists</h3>
                 <div class="row">
                     <div class="col-sm-6">
@@ -5450,7 +5701,7 @@
             </section>
 
             <!-- Description list -->
-            <section>
+            <section class="demo__section">
                 <h3>Description list</h3>
                 <div class="row">
                     <div class="col-sm-6">
@@ -5483,14 +5734,14 @@
             </section>
 
             <!--SECTION: Wells-->
-            <nav id="ui__wells" class="navbar navbar-section">
+            <nav id="ui__wells" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Wells</div>
                 </div>
             </nav>
 
             <!--Wells-->
-            <section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
                         <h3>Defaul well</h3>

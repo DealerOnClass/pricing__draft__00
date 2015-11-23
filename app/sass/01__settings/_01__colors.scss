@@ -34,3 +34,28 @@ $neutral__color--dark:   $gray__07;
 $neutral__color:         $gray__05;
 $neutral__color--light:  $gray__03;
 $default__color:         $gray__01;
+//
+//
+//  Color Maps * For MIXINS
+$default__palette: (
+    'default':  $gray__01,
+) !default;
+
+$primary__palette: (
+    'cta':      $palette__orange,
+    'main':     $palette__blue,
+) !default;
+
+$neutral__palette: (
+    'alt1':     mix($primary__color, $gray__07, 50%),
+    'alt2':     mix($primary__color, $gray__05, 45%),
+    'alt3':     mix($primary__color, $gray__03, 40%),
+) !default;
+
+$state__palette: (
+    'success':    $state--success,
+    'info':       $state--info,
+    'warning':    $state--warning,
+    'danger':     $state--danger,
+) !default;
+

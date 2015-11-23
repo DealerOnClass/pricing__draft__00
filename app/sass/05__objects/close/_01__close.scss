@@ -1,18 +1,18 @@
 .close {
     font-family: $close__font;
 
-    float: right;
+    //  float: right;
 
     color: inherit;
 
-    @include opacity(0.8);
+    //  @include opacity(0.8);
 
     &:hover,
     &:focus {
         cursor: pointer;
         text-decoration: none;
 
-        @include opacity(0.6);
+        //  @include opacity(0.6);
     }
 }
 

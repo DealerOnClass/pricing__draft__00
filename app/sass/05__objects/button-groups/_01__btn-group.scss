@@ -1,4 +1,3 @@
- //  Button Group Base
 .btn-group,
 .btn-group-vertical {
     position: relative;
@@ -10,10 +9,8 @@
         position: relative;
 
         float: left;
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
+
+        @include state(true) {
             z-index: 2;
         }
     }
@@ -26,68 +23,28 @@
     .btn-group + .btn-group {
         margin-left: $one__pixel * -1;
     }
-}
-
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
-    border-radius: 0;
-}
-
-%no-border-radius-right {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-%no-border-radius-left {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.btn-group > .btn:first-child {
-    margin-left: 0;
-    &:not(:last-child):not(.dropdown-toggle) {
-        @extend %no-border-radius-right;
+    > .btn {
+        border-radius: 0;
     }
-}
-
-.btn-group > .btn:last-child:not(:first-child),
-.btn-group > .dropdown-toggle:not(:first-child) {
-    @extend %no-border-radius-left;
-}
-
-.btn-group > .btn-group {
-    float: left;
-}
-
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
-    border-radius: 0;
-}
-
-.btn-group > .btn-group:first-child:not(:last-child) {
+    > .btn:first-child {
+        border-top-left-radius: $btn__radius;
+        border-bottom-left-radius: $btn__radius;
+    }
+    > .dropdown-toggle,
     > .btn:last-child,
-    > .dropdown-toggle {
-        @extend %no-border-radius-right;
+    > .btn-group:last-child > .btn {
+        border-top-right-radius: $btn__radius;
+        border-bottom-right-radius: $btn__radius;
     }
-}
-
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
-    @extend %no-border-radius-left;
-}
-
-.btn-group .dropdown-toggle:active,
-.btn-group.open .dropdown-toggle {
-    outline: 0;
-}
-
-[data-toggle='buttons'] {
-    > .btn,
-    > .btn-group > .btn {
-        input[type='radio'],
-        input[type='checkbox'] {
-            position: absolute;
-
-            clip: rect(0, 0, 0, 0);
-
-            pointer-events: none;
-        }
+    > .btn-group:last-child > .btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    > .btn-group > .dropdown-toggle {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    > .btn-group:not(:first-child):not(:last-child) > .btn {
+        border-radius: 0;
     }
 }

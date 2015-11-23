@@ -1,0 +1,22 @@
+@if $breadcrumb__default-palette {
+    @include breadcrumb-color-variation($default__palette);
+}
+@if $breadcrumb__primary-palette {
+    @include breadcrumb-color-variation($primary__palette);
+}
+@if $breadcrumb__neutral-palette {
+    @include breadcrumb-color-variation($neutral__palette);
+}
+@if $breadcrumb__state-palette {
+    @include breadcrumb-color-variation($state__palette);
+}
+
+.breadcrumb-lg {
+    font-size: $breadcrumb--lg__font-size;
+}
+.breadcrumb-sm {
+    font-size: $breadcrumb--sm__font-size;
+}
+.breadcrumb-xs {
+    font-size: $breadcrumb--xs__font-size;
+}

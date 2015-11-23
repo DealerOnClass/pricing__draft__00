@@ -19,6 +19,7 @@
 @import
     "02__tools/mixin__alerts",
     "02__tools/mixin__bg-variant",
+    "02__tools/mixin__breadcrumb",
     "02__tools/mixin__buttons",
     "02__tools/mixin__card",
     "02__tools/mixin__center-block",
@@ -82,22 +83,26 @@
 
 //  05  Objects
 @import
-    "05__objects/alerts/00__variables",
-    "05__objects/alerts/01__alert",
-    "05__objects/alerts/02__alert-heading",
-    "05__objects/alerts/03__alert-link",
-    "05__objects/alerts/04__alert-disclaimer",
-    "05__objects/alerts/05__alert-icon",
-    "05__objects/alerts/06__alert-dismissible",
-    "05__objects/alerts/07__alert-variations";
+    "05__objects/alert/00__variables",
+    "05__objects/alert/01__alert",
+    "05__objects/alert/02__alert-heading",
+    "05__objects/alert/03__alert-link",
+    "05__objects/alert/04__alert-disclaimer",
+    "05__objects/alert/05__alert-icon",
+    "05__objects/alert/06__alert-dismissible",
+    "05__objects/alert/07__alert-variations";
 
 @import
-    "05__objects/badges/00__variables",
-    "05__objects/badges/01__badges";
+    "05__objects/badge/00__variables",
+    "05__objects/badge/01__badge";
 
 @import
-    "05__objects/breadcrumbs/00__variables",
-    "05__objects/breadcrumbs/01__breadcrumbs";
+    "05__objects/breadcrumb/00__variables",
+    "05__objects/breadcrumb/01__breadcrumb",
+    "05__objects/breadcrumb/02__breadcrumb-item",
+    "05__objects/breadcrumb/03__breadcrumb-link",
+    "05__objects/breadcrumb/04__breadcrumb-rounded",
+    "05__objects/breadcrumb/05__breadcrumb-variations";
 
 @import
     "05__objects/buttons/00__variables",

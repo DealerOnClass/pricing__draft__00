@@ -1,4 +1,4 @@
-body {
+.demo__body {
     position: relative;
 
     margin-top: rhythm(2);
@@ -6,41 +6,35 @@ body {
     padding-top: rhythm(2);
 }
 
-.demo {
-    > section > h3 {
-        text-transform: uppercase;
-        letter-spacing: .1em;
-        color: $gray__05;
-        font-size: 1em;
-        position: relative;
-        padding-bottom: rhythm(.3);
-        margin-bottom: rhythm(.5);
-        &:after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: rhythm(1);
-            height: rhythm(.05);
-            background-color: $body__color;
-        }
-    }
-    .navbar-section {
-        margin-bottom: rhythm(2);
-    }
+.demo__titlebar {
+    margin-bottom: rhythm(2);
+    @include navbar-solid-color-bar($body__color);
+}
 
-    section {
-        margin-bottom: rhythm(3);
+.demo__section {
+    margin-bottom: rhythm(3);
+}
+
+.demo__heading {
+    text-transform: capitalize;
+    letter-spacing: .05em;
+    color: $gray__03;
+    font-size: 1em;
+    margin-top: rhythm(2);
+}
+
+.demo__card-img {
+    max-width: 100%;
+}
+
+.demo {
+    .alert,
+    .breadcrumb {
+        margin-bottom: rhythm(1);
     }
 
     .controls .form-control {
         @include rhythm-rem(margin-bottom, 0.5);
-    }
-
-    .card {
-        img {
-            max-width: 100%;
-        }
     }
 }
 

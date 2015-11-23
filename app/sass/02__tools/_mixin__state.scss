@@ -9,8 +9,14 @@
 //          text-decoration: underline;
 //      }
 //  }
-@mixin state {
-    &:hover, &:active, &:focus {
-        @content;
+@mixin state($use__active-class: false) {
+    @if $use__active-class {
+        &:hover, &:active, &:focus, &.active {
+            @content;
+        }
+    } @else {
+        &:hover, &:active, &:focus {
+            @content;
+        }
     }
 }
