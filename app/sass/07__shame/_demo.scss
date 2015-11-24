@@ -54,13 +54,13 @@
     }
 }
 
-.show__dropdown {
+.demo__dropdown,
+.demo__dropdown + ul,
+.demo__dropup + ul {
     display: block;
 }
-.show__dropdown + ul {
+.demo__dropdown + ul {
     position: relative;
-
-    display: block;
 }
 
 .show__color {
@@ -79,7 +79,7 @@
 
 .show__modal,
 .show__popover,
-.show__dropdown {
+.demo__dropdown {
     position: relative;
 
     display: block;

@@ -2,26 +2,31 @@
 $dropdown__radius:                      $global__radius;
 $dropdown__x:                           $global__x;
 $dropdown__y:                           $global__y * 1.5;
-//  Options
+//  General Options                     // Additional option within ../05__objects/buttons/_00__variables.scss
 $dropdown__has__caret:                  true !default;
-//  $dropdown__use-fa-icon:                 true !default;
+$dropup__has__caret:                    true !default;
+$dropdown__has__indicator:              true !default;
+$dropup__has__indicator:                true !default;
+//  Color Options
+//  $dropdown__default-palette:             false !default;
+//  $dropdown__primary-palette:             false !default;
+//  $dropdown__neutral-palette:             false !default;
+//  $dropdown__state-palette:               false !default;
 //  Dropdown-Menu
-$dropdown-menu__bg:                     $gray__01;
-$dropdown-menu__border:                 $gray__02;
+$dropdown-menu__bg:                     $white;
+$dropdown-menu__shadow:                 0 $six__pixels $twelve__pixels rgba(0,0,0,0.175);
 $dropdown-menu__radius:                 $dropdown__radius;
 $dropdown-menu__divider__bg:            $gray__02;
 $dropdown-menu__link__padding:          $dropdown__y $dropdown__x;
-$dropdown-menu__link__color:            $body__color;
-$dropdown-menu__link--hover__color:     $body__color;
-$dropdown-menu__link--hover__bg:        shade($gray__01, 05%);
-$dropdown-menu__link--active__color:    $gray__06;
-$dropdown-menu__link--active__bg:       $gray__06;
-$dropdown-menu__link--disabled__color:  $gray__06;
 //  Dropdown-Header
 $dropdown-header__font-size:            $h6__font-size;
-$dropdown-header__color:                $body__color;
-$dropdown-header__vertical-padding:     .5;      // Using Rem
-$dropdown-header__horizontal-padding:   .5;      // Using Rem
+$dropdown-header__vertical-padding:     $raw__x;      // Using Rem Mixin ../02__tools/_mixin__rem.scss
+$dropdown-header__horizontal-padding:   $raw__x;      // Using Rem Mixin ../02__tools/_mixin__rem.scss
+//  Dropdown Caret
+$dropdown__caret__use-icon:             true !default;
+$dropdown__caret__icon:                 $fa-var-angle-down;
+$dropup__caret__use-icon:               true !default;
+$dropup__caret__icon:                   $fa-var-angle-up;
 //  Dropdown-Mega-Menu
 $dropdown-mega-menu__bg:                     $gray__01;
 $dropdown-mega-menu__border:                 $gray__02;

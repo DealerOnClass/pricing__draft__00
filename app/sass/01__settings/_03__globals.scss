@@ -1,7 +1,16 @@
-//  General Spacers                                 //  Original Values
-$global__radius:           rhythm(.2) !default;     //  rhythm(.2)
-$global__x:                rhythm(.6) !default;     //  rhythm(.5)
-$global__y:                rhythm(.4) !default;     //  rhythm(.5)
+//
+//  Raw Spacers
+//
+//  Allows for calculations not using rhythm mixin
+//  Ex: ..\05__objects\dropdowns\_00__variables.scss
+//
+$raw__radius:      .2 !default;
+$raw__x:           .6 !default;
+$raw__y:           .4 !default;
+//  General Spacers
+$global__radius:           rhythm($raw__radius) !default;     //  rhythm(.2)
+$global__x:                rhythm($raw__x) !default;     //  rhythm(.5)
+$global__y:                rhythm($raw__y) !default;     //  rhythm(.5)
 $global__gutter:           30px !default;           //  30px
 $global__contrast:         10% !default;             //  default 5%;
 //  Pixel Units

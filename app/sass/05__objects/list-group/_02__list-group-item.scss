@@ -4,11 +4,11 @@
     display: block;
 
     padding: $list-group-item__padding;
+    border: $one__pixel solid;
 
-    border-width: $one__pixel $one__pixel 0;
-    border-style: solid;
-    border-color: $list-group-item__border;
-    background-color: $list-group__bg;
+    & + & {
+        border-top: 0 none;
+    }
     &:first-child {
         border-radius: $list-group-item__radius $list-group-item__radius 0 0;
     }

@@ -30,6 +30,7 @@
         border-bottom-left-radius: $btn__radius;
     }
     > .dropdown-toggle,
+    > .dropup-toggle,
     > .btn:last-child,
     > .btn-group:last-child > .btn {
         border-top-right-radius: $btn__radius;
@@ -40,6 +41,7 @@
         border-bottom-left-radius: 0;
     }
     > .btn-group > .dropdown-toggle {
+    > .btn-group > .dropup-toggle {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }

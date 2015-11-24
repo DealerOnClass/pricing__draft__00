@@ -13,15 +13,36 @@
 
     list-style: none;
 
-    text-align: left;
-
-    border: $one__pixel solid $dropdown-menu__border;
+    border: $one__pixel solid;
     border-radius: $dropdown-menu__radius;
     background-color: $dropdown-menu__bg;
-    background-clip: padding-box;
-    box-shadow: 0 $six__pixels $twelve__pixels rgba(0,0,0,0.175);
+    box-shadow: $dropdown-menu__shadow;
 
-    @include rhythm-actual-rem(font-size, 1);
+    a {
+        color: inherit;
+        @include state {
+            color: inherit;
+        }
+    }
+
+    @if $dropdown__has__indicator {
+        $indicator__multiplier: 1.5;    //  controls size and position proportionately
+
+        &:after {
+            position: absolute;
+            top: ( $caret__width-base * ( $indicator__multiplier * -2 ) );
+            left: $btn__x;
+
+            content: '';
+
+            border-top: ( $caret__width-base * ( $indicator__multiplier ) ) solid transparent;
+            border-bottom: ( $caret__width-base * ( $indicator__multiplier ) ) solid;
+            border-right-width: ( $caret__width-base * ( $indicator__multiplier ) );
+            border-left-width: ( $caret__width-base * ( $indicator__multiplier ) );
+
+            @extend %caret;
+        }
+    }
 
     .dropdown-item,
     > li > a {
@@ -32,42 +53,42 @@
 
         white-space: nowrap; // prevent links from randomly breaking onto new lines
 
-        color: $dropdown-menu__link__color;
+        //  color: $dropdown-menu__link__color;
 
-        &:hover,
-        &:focus {
-            color: $dropdown-menu__link--hover__color;
-            background-color: $dropdown-menu__link--hover__bg;
-        }
+        //  &:hover,
+        //  &:focus {
+        //      color: $dropdown-menu__link--hover__color;
+        //      background-color: $dropdown-menu__link--hover__bg;
+        //  }
     }
-    .dropdown-item.active,
-    .active > a {
-        &,
-        &:hover,
-        &:focus {
-            color: $dropdown-menu__link--active__color;
-            background-color: $dropdown-menu__link--active__bg;
-        }
-    }
-    .dropdown-item.disabled,
-    .disabled > a {
-        &,
-        &:hover,
-        &:focus {
-            color: $dropdown-menu__link--disabled__color;
-        }
+    //  .dropdown-item.active,
+    //  .active > a {
+    //      &,
+    //      &:hover,
+    //      &:focus {
+    //          color: $dropdown-menu__link--active__color;
+    //          background-color: $dropdown-menu__link--active__bg;
+    //      }
+    //  }
+    //  .dropdown-item.disabled,
+    //  .disabled > a {
+    //      &,
+    //      &:hover,
+    //      &:focus {
+    //          color: $dropdown-menu__link--disabled__color;
+    //      }
 
-        &:hover,
-        &:focus {
-            cursor: $cursor-disabled;
-            text-decoration: none;
+    //      &:hover,
+    //      &:focus {
+    //          cursor: $cursor-disabled;
+    //          text-decoration: none;
 
-            background-color: transparent;
-            background-image: none; // Remove CSS gradient
+    //          background-color: transparent;
+    //          background-image: none; // Remove CSS gradient
 
-            @include reset-filter;
-        }
-    }
+    //          @include reset-filter;
+    //      }
+    //  }
 }
 
 .dropdown-divider,
@@ -78,5 +99,30 @@
 .open {
     > .dropdown-menu {
         display: block;
+    }
+}
+
+.dropup .demo__dropup,
+.dropup.open .dropup-toggle {
+    @if $dropup__has__indicator {
+        $indicator__multiplier: 1.5;    //  controls size and position proportionately
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: $btn__x;
+
+            content: '';
+
+            border-top: ( $caret__width-base * ( $indicator__multiplier ) ) solid;
+            border-bottom: ( $caret__width-base * ( $indicator__multiplier ) ) solid transparent;
+            border-right-width: ( $caret__width-base * ( $indicator__multiplier ) );
+            border-left-width: ( $caret__width-base * ( $indicator__multiplier ) );
+
+            @extend %caret;
+        }
+    }
+    + .dropdown-menu:after {
+        display: none;
     }
 }

@@ -42,8 +42,6 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
     }
     .caret {
         float: right;
-        position: relative;
-        top: $navbar__y / 2;
     }
 }
 

@@ -7,31 +7,58 @@
 
     vertical-align: middle;
 
-    border-top: $caret__width-base solid;
     border-right: $caret__width-base solid transparent;
     border-left: $caret__width-base solid transparent;
 }
 
-.caret {
+.dropdown-toggle {
     @if $dropdown__has__caret {
-        @extend %caret;
+        .caret {
+            @if $dropdown__caret__use-icon {
+                &:after {
+                    content: '#{$dropdown__caret__icon}';
+                    font-family: $fa-font-name;
+                }
+            } @else {
+                @extend %caret;
+                border-top: $caret__width-base solid;
+                border-bottom: $caret__width-base solid transparent;
+            }
+        }
     } @else {
-        display: none;
+        .caret {
+            &:after {
+                content: '\00a0';
+            }
+        }
+    }
+
+    &:focus {
+        outline: 0;
     }
 }
-.dropdown-toggle {
-    //  @if $dropdown__use-fa-icon != true {
-    //      .fa {
-    //          display: none;
-    //      }
-    //  }
-    //  @if $dropdown__use-css-icon {
-    //      &:after {
-    //          content: '';
 
-    //          @extend %caret;
-    //      }
-    //  }
+.dropup-toggle {
+    @if $dropup__has__caret {
+        .caret {
+            @if $dropup__caret__use-icon {
+                &:after {
+                    content: '#{$dropup__caret__icon}';
+                    font-family: $fa-font-name;
+                }
+            } @else {
+                @extend %caret;
+                border-bottom: $caret__width-base solid;
+                border-top: $caret__width-base solid transparent;
+            }
+        }
+    } @else {
+        .caret {
+            &:after {
+                content: '\00a0';
+            }
+        }
+    }
 
     &:focus {
         outline: 0;

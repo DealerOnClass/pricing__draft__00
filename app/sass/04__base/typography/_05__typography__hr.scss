@@ -1,7 +1,9 @@
 hr {
-    border: 0;
-    height: $one__pixel;
-    background-color: $hr__color;
     margin-top: $global__y * 2;
     margin-bottom: $global__y * 2;
+
+    border-top: $one__pixel solid;
+    border-right: 0 none;
+    border-bottom: 0 none;
+    border-left: 0 none;
 }
