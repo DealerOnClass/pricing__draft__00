@@ -5,49 +5,39 @@
 
     table-layout: fixed;
 
+    border-right: $one__pixel solid;
+    border-radius: $card__radius;
+
     .card {
         display: table-cell;
 
         vertical-align: top;
 
+        border-top: $one__pixel solid;
+        border-bottom: $one__pixel solid;
+        border-left: $one__pixel solid;
         border-radius: 0;
 
-        + .card {
-            margin-left: 0;
-
-            border-left: 0;
+        .card-header,
+        .card-footer {
+            border: 0 none;
+        }
+        .card-img {
+            border-radius: 0;
+        }
+        .card-block {
+            border-right: 0 none;
+            border-bottom: 0 none;
+            border-left: 0 none;
         }
 
         &:first-child {
-            border-radius: $card__radius 0 0 $card__radius;
-            .card-img-top {
-                border-top-right-radius: 0;
-            }
-            .card-img-bottom {
-                border-bottom-right-radius: 0;
-            }
+            border-top-left-radius: $card__radius;
+            border-bottom-left-radius: $card__radius;
         }
         &:last-child {
-            border-radius: 0 $card__radius $card__radius 0;
-            .card-img-top {
-                border-top-left-radius: 0;
-            }
-            .card-img-bottom {
-                border-bottom-left-radius: 0;
-            }
-        }
-
-        %no-border-radius {
-            border-radius: 0;
-        }
-
-        &:not(:first-child):not(:last-child) {
-            @extend %no-border-radius;
-
-            .card-img-top,
-            .card-img-bottom {
-                @extend %no-border-radius;
-            }
+            border-top-right-radius: $card__radius;
+            border-bottom-right-radius: $card__radius;
         }
     }
 }

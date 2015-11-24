@@ -1,11 +1,12 @@
 .card-footer {
     padding: $card-footer__padding;
 
-    border-top: $one__pixel solid $card__border;
-    background-color: $card-footer__bg;
+    border-right: $one__pixel solid;
+    border-bottom: $one__pixel solid;
+    border-left: $one__pixel solid;
 
-    &:last-child {
-        border-radius: $card-footer__radius;
+    .card-text {
+        margin-bottom: 0;
     }
 }
 

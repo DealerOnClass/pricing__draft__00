@@ -1,8 +1,8 @@
 #query__creation__workbench {
     .sortable.btn-default {
         &:active {
-            background-color: $btn--default__bg;
-            border-color: shade($btn--default__bg, 14%);
+            background-color: $gray__01;
+            border-color: shade($gray__01, 14%);
             box-shadow: none;
         }
     }

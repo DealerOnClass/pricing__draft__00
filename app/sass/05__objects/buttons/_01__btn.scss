@@ -10,8 +10,9 @@
     vertical-align: middle;
     white-space: nowrap;
 
-    border: $one__pixel solid transparent;
+    border: $one__pixel solid;
     border-radius: $btn__radius;
+    background-color: transparent;
     background-image: none;
 
     touch-action: manipulation;

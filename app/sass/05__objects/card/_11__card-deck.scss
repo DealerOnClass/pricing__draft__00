@@ -12,6 +12,18 @@
         width: 1%;
 
         vertical-align: top;
+
+        border: $one__pixel solid;
+
+        .card-header,
+        .card-footer {
+            border: 0 none;
+        }
+        .card-block {
+            border-right: 0 none;
+            border-bottom: 0 none;
+            border-left: 0 none;
+        }
     }
 }
 .card-deck-wrapper {

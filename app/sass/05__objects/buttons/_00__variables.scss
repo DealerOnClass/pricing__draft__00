@@ -1,8 +1,15 @@
 //  Units
+$btn__contrast:               $global__contrast;
 $btn__radius:                 $global__radius;
 $btn__x:                      $global__x;
 $btn__y:                      $global__y;
-$btn__contrast:               $global__contrast;
+//  General Options
+$btn__solid-color:            true !default;
+//  Color Options
+$btn__default-palette:        true !default;
+$btn__primary-palette:        true !default;
+$btn__neutral-palette:        true !default;
+$btn__state-palette:          true !default;
 //  Base
 $btn__padding:                $btn__y $btn__x;
 $btn__radius:                 $btn__radius;
@@ -19,11 +26,3 @@ $btn-block__vertical-rhythm:  $btn__y;
 $btn--xs__font-size:          $h6__font-size / $base__font-ratio;
 $btn--sm__font-size:          $h6__font-size;
 $btn--lg__font-size:          $h4__font-size;
-$btn--default__bg:            $gray__01;
-$btn--primary__bg:            $primary__color;
-$btn--dealeron__bg:           $accent__color;
-$btn--success__bg:            $state--success;
-$btn--info__bg:               $state--info;
-$btn--warning__bg:            $state--warning;
-$btn--danger__bg:             $state--danger;
-

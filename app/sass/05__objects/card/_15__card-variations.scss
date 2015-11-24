@@ -1,21 +1,12 @@
-.card-inverse {
-    @include card-variant($card--inverse__bg);
+@if $card__default-palette {
+    @include card-color-variation($default__palette);
 }
-.card-primary {
-    @include card-variant($card--primary__bg);
+@if $card__primary-palette {
+    @include card-color-variation($primary__palette);
 }
-.card-success {
-    @include card-variant($card--success__bg);
+@if $card__neutral-palette {
+    @include card-color-variation($neutral__palette);
 }
-.card-info {
-    @include card-variant($card--info__bg);
-}
-.card-warning {
-    @include card-variant($card--warning__bg);
-}
-.card-danger {
-    @include card-variant($card--danger__bg);
-}
-.card-flush {
-    border: 0 none;
+@if $card__state-palette {
+    @include card-color-variation($state__palette);
 }

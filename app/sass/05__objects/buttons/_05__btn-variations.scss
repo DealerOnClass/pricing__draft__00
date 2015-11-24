@@ -1,31 +1,15 @@
-.btn-default {
-    @include button-variant($btn--default__bg);
+@if $btn__default-palette {
+    @include btn-color-variation($default__palette);
 }
-
-.btn-primary {
-    @include button-variant($btn--primary__bg);
+@if $btn__primary-palette {
+    @include btn-color-variation($primary__palette);
 }
-
-.btn-dealeron {
-    @include button-variant($btn--dealeron__bg);
+@if $btn__neutral-palette {
+    @include btn-color-variation($neutral__palette);
 }
-
-.btn-success {
-    @include button-variant($btn--success__bg);
+@if $btn__state-palette {
+    @include btn-color-variation($state__palette);
 }
-
-.btn-info {
-    @include button-variant($btn--info__bg);
-}
-
-.btn-warning {
-    @include button-variant($btn--warning__bg);
-}
-
-.btn-danger {
-    @include button-variant($btn--danger__bg);
-}
-
 .btn-lg {
     font-size: $btn--lg__font-size;
 }
@@ -45,3 +29,31 @@
     z-index: $zindex-btn-toTop;
     box-shadow: 0 $one__pixel $five__pixels rgba(0,0,0,0.25);
 }
+//  .btn-default {
+//      @include button-variant($btn--default__bg);
+//  }
+//
+//  .btn-primary {
+//      @include button-variant($btn--primary__bg);
+//  }
+//
+//  .btn-dealeron {
+//      @include button-variant($btn--dealeron__bg);
+//  }
+//
+//  .btn-success {
+//      @include button-variant($btn--success__bg);
+//  }
+//
+//  .btn-info {
+//      @include button-variant($btn--info__bg);
+//  }
+//
+//  .btn-warning {
+//      @include button-variant($btn--warning__bg);
+//  }
+//
+//  .btn-danger {
+//      @include button-variant($btn--danger__bg);
+//  }
+

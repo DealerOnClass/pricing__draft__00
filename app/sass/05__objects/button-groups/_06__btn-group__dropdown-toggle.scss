@@ -1,0 +1,25 @@
+.dropdown-toggle {
+    .btn-group > .btn & {
+        padding-right: $btn__x;
+        padding-left: $btn__x;
+    }
+    .btn-group.open & {
+        box-shadow: $btn-group__dropdown-toggle--active__shadow;
+        &.btn-link {
+            box-shadow: none;
+        }
+    }
+}
+
+.caret {
+    .btn & {
+        margin-left: 0;
+    }
+    .btn-lg & {
+        border-width: $caret__width-large $caret__width-large 0;
+        border-bottom-width: 0;
+    }
+    .dropup .btn-lg & {
+        border-width: 0 $caret__width-large $caret__width-large;
+    }
+}

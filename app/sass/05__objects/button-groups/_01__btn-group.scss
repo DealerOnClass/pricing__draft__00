@@ -6,9 +6,7 @@
 
     vertical-align: middle;
     > .btn {
-        position: relative;
-
-        float: left;
+        //position: relative;
 
         @include state(true) {
             z-index: 2;
@@ -25,6 +23,7 @@
     }
     > .btn {
         border-radius: 0;
+        float: left;
     }
     > .btn:first-child {
         border-top-left-radius: $btn__radius;

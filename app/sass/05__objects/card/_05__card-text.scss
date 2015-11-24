@@ -1,3 +1,7 @@
 .card-text {
-    margin-bottom: rhythm(1);
+    p,
+    &:last-child,
+    &:only-child {
+        margin-bottom: 0;
+    }
 }

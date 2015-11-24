@@ -23,14 +23,15 @@
     margin-top: rhythm(2);
 }
 
-.demo__card-img {
-    max-width: 100%;
-}
-
 .demo {
     .alert,
-    .breadcrumb {
+    .breadcrumb,
+    .card {
         margin-bottom: rhythm(1);
+    }
+
+    .card-img {
+        max-width: 100%;
     }
 
     .controls .form-control {
@@ -88,19 +89,10 @@
     opacity: 1;
 }
 
-.show__btn-group {
-    .btn-group {
-        display: block;
-
-        margin-bottom: rhythm(1);
-
-        &:after {
-            display: block;
-            clear: both;
-
-            content: '';
-        }
-    }
+.show__btn-group .btn-group {
+    display: block;
+    margin-top: rhythm(.5);
+    @include clearfix;
 }
 
 #sidebar {
@@ -108,13 +100,6 @@
         margin-bottom: $two__pixels;
     }
 }
-
-.show__btn {
-    .btn {
-        @include rhythm-rem(margin-bottom, 1);
-    }
-}
-
 
 
 .navbar-vertical-container {

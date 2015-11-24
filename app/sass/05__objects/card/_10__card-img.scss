@@ -1,10 +1,5 @@
-%card-block {
-    display: block;
-}
-
 .card-img {
-    border-radius: $card__radius;
-    @extend %card-block;
+    display: block;
 }
 
 .card-img-overlay {
@@ -16,16 +11,7 @@
 
     padding: $card-img-overlay__padding;
 
+    color: $card-img-overlay__color;
+    border-radius: $card__radius;
     background-color: $card-img-overlay__bg;
 }
-
-.card-img-top {
-    border-radius: $card__radius $card__radius 0 0;
-    @extend %card-block;
-}
-
-.card-img-bottom {
-    border-radius: 0 0 $card__radius $card__radius;
-    @extend %card-block;
-}
-

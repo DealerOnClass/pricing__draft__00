@@ -12,7 +12,7 @@
     <body id="body" class="demo__body" data-spy="scroll" data-target="#navbar-main">
 
         <!-- Scroll to Top -->
-        <a href='#ui__top' id='toTop' class='fade btn btn-dealeron btn-toTop'><i class="fa fa-angle-up"></i></a>
+        <a href='#ui__top' id='toTop' class='fade btn btn-cta btn-toTop'><i class="fa fa-angle-up"></i></a>
 
         <!-- Main Nav - Top -->
         <nav class="navbar navbar-dealeron navbar-fixed-top">
@@ -38,8 +38,8 @@
                             <li><a href="#ui__alerts">Alerts</a></li>
                             <li><a href="#ui__badges">Badges</a></li>
                             <li><a href="#ui__breadcrumbs">Breadcrumbs</a></li>
-                            <li><a href="#ui__button-groups">Button Groups</a></li>
                             <li><a href="#ui__buttons">Buttons</a></li>
+                            <li><a href="#ui__button-groups">Button Groups</a></li>
                             <li><a href="#ui__card">Card</a></li>
                             <li><a href="#ui__carousel">Carousel</a></li>
                             <li><a href="#ui__code">Code</a></li>
@@ -355,20 +355,23 @@
                         <h3 class="demo__heading">Basic</h3>
                         <div class="bs-example" data-example-id="simple-badges">
                             <a class="btn btn-default" href="#">Inbox <span class="badge">42</span></a>
-                            <button class="btn btn-primary" type="button">
-                                Messages <span class="badge">4</span>
+                            <button class="btn btn-cta" type="button">
+                                Messages <span class="badge">8</span>
+                            </button>
+                            <button class="btn btn-main" type="button">
+                                Messages <span class="badge">3</span>
                             </button>
                             <button class="btn btn-success" type="button">
                                 Messages <span class="badge">4</span>
                             </button>
                             <button class="btn btn-info" type="button">
-                                Messages <span class="badge">4</span>
+                                Messages <span class="badge">6</span>
                             </button>
                             <button class="btn btn-warning" type="button">
-                                Messages <span class="badge">4</span>
+                                Messages <span class="badge">9</span>
                             </button>
                             <button class="btn btn-danger" type="button">
-                                Messages <span class="badge">4</span>
+                                Messages <span class="badge">2</span>
                             </button>
                         </div>
                     </div>
@@ -517,6 +520,91 @@
                 </ol>
             </section>
 
+            <!--SECTION: Buttons-->
+            <nav id="ui__buttons" class="navbar demo__titlebar">
+                <div class="navbar-header">
+                    <div class="navbar-text">Buttons</div>
+                </div>
+            </nav>
+
+            <!--Buttons-->
+            <section class="demo__section">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Button Rounded</h3>
+                        <a class="btn btn-rounded" href="#">Link</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Button Link</h3>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+                </div>
+                <div class="row show__btn">
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Sizes</h3>
+                        <p>
+                            <button type="button" class="btn btn-cta btn-lg">Large button<a href="#"><span class="badge">42</span></a></button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-cta">Default button<a href="#"><span class="badge">42</span></a></button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-cta btn-sm">SM button<a href="#"><span class="badge">42</span></a></button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-cta btn-xs">XS button<a href="#"><span class="badge">42</span></a></button>
+                        </p>
+                        <div class="well">
+                            <button type="button" class="btn btn-cta btn-block">Block level button</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Active state</h3>
+                        <p>
+                            <button type="button" class="btn btn-cta active">Primary button</button>
+                            <button type="button" class="btn btn-default active">Button</button>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-cta active">Primary link</a>
+                            <a href="#" class="btn btn-default active">Link</a>
+                        </p>
+                        <h3 class="demo__heading">Disabled state</h3>
+                        <p>
+                            <button type="button" class="btn btn-cta active" disabled="disabled">Primary button</button>
+                            <button type="button" class="btn btn-default active" disabled="disabled">Button</button>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-cta disabled">Primary link</a>
+                            <a href="#" class="btn btn-default disabled">Link</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Default Palette</h3>
+                        <button type="button" class="btn btn-default">Default</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Primary Palette</h3>
+                        <button type="button" class="btn btn-cta">Cta</button>
+                        <button type="button" class="btn btn-main">Main</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Neutral Palette</h3>
+                        <button type="button" class="btn btn-alt1">Alt1</button>
+                        <button type="button" class="btn btn-alt2">Alt2</button>
+                        <button type="button" class="btn btn-alt3">Alt3</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">State Palette</h3>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                    </div>
+                </div>
+            </section>
+
             <!--SECTION: Button Groups-->
             <nav id="ui__button-groups" class="navbar demo__titlebar">
                 <div class="navbar-header">
@@ -528,7 +616,7 @@
             <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Basic</h3>
+                        <h3 class="demo__heading">Basic</h3>
                         <div class="btn-group" aria-label="Basic example">
                             <button type="button" class="btn btn-default">Left</button>
                             <button type="button" class="btn btn-default">Middle</button>
@@ -536,7 +624,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Button toolbar</h3>
+                        <h3 class="demo__heading">Button toolbar</h3>
                         <div class="btn-toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group" aria-label="First group">
                                 <button type="button" class="btn btn-default">1</button>
@@ -557,7 +645,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Sizing</h3>
+                        <h3 class="demo__heading">Sizing</h3>
                         <div class="show__btn-group">
                             <div class="btn-group btn-group-lg" aria-label="Large button group">
                                 <button type="button" class="btn btn-default">Left</button>
@@ -582,7 +670,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Nesting</h3>
+                        <h3 class="demo__heading">Nesting</h3>
                         <div class="btn-group" aria-label="Button group with nested dropdown">
                             <button type="button" class="btn btn-default">1</button>
                             <button type="button" class="btn btn-default">2</button>
@@ -600,11 +688,22 @@
                                 </ul>
                             </div>
                         </div>
+                        <h3 class="demo__heading">Sentence</h3>
+                        <div class="btn-group-sentence">
+                            <button class="btn btn-default" type="submit">Can</button>
+                            <button class="btn btn-default" type="submit">be</button>
+                            <button class="btn btn-default" type="submit">used</button>
+                            <button class="btn btn-default" type="submit">for</button>
+                            <button class="btn btn-default" type="submit">natural</button>
+                            <button class="btn btn-default" type="submit">language</button>
+                            <button class="btn btn-default" type="submit">form,</button>
+                            <button class="btn btn-default" type="submit"> etc.</button>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Vertical variation</h3>
+                        <h3 class="demo__heading">Vertical variation</h3>
                         <div class="btn-group-vertical" aria-label="Vertical button group">
                             <button type="button" class="btn btn-default">Button</button>
                             <button type="button" class="btn btn-default">Button</button>
@@ -661,7 +760,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Justified button groups</h3>
+                        <h3 class="demo__heading">Justified button groups</h3>
                         <div class="btn-group btn-group-justified" aria-label="Justified button group">
                             <a href="#" class="btn btn-default">Left</a>
                             <a href="#" class="btn btn-default">Middle</a>
@@ -753,7 +852,7 @@
                         </div>
                     </div>
                 </div>
-                <h3>Single button dropdowns</h3>
+                <h3 class="demo__heading">Single button dropdowns</h3>
                 <div class="btn-group">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Default
                         <span class="caret"></span>
@@ -772,7 +871,23 @@
                 </div>
                 <!-- /btn-group -->
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Primary
+                    <button type="button" class="btn btn-cta dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Primary
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a>
+                        </li>
+                        <li><a href="#">Another action</a>
+                        </li>
+                        <li><a href="#">Something else here</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-main dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Primary
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
@@ -855,7 +970,7 @@
                         </li>
                     </ul>
                 </div>
-                <h3>Split button dropdowns</h3>
+                <h3 class="demo__heading">Split button dropdowns</h3>
                 <div class="btn-group">
                     <button type="button" class="btn btn-default">Default</button>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -876,8 +991,26 @@
                 </div>
                 <!-- /btn-group -->
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn btn-cta">Primary</button>
+                    <button type="button" class="btn btn-cta dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a>
+                        </li>
+                        <li><a href="#">Another action</a>
+                        </li>
+                        <li><a href="#">Something else here</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-main">Primary</button>
+                    <button type="button" class="btn btn-main dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
@@ -969,7 +1102,7 @@
                         </li>
                     </ul>
                 </div>
-                <h3>Sizing</h3>
+                <h3 class="demo__heading">Sizing</h3>
                 <div class="show__btn-group">
                     <div class="btn-toolbar">
                         <div class="btn-group">
@@ -1055,7 +1188,7 @@
                     </div>
                     <!-- /btn-toolbar -->
                 </div>
-                <h3>Dropup variation</h3>
+                <h3 class="demo__heading">Dropup variation</h3>
                 <div class="btn-toolbar">
                     <div class="btn-group dropup">
                         <button type="button" class="btn btn-default">Dropup</button>
@@ -1077,8 +1210,8 @@
                     </div>
                     <!-- /btn-group -->
                     <div class="btn-group dropup">
-                        <button type="button" class="btn btn-primary">Right dropup</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <button type="button" class="btn btn-cta">Right dropup</button>
+                        <button type="button" class="btn btn-cta dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <span class="caret"></span>
                             <span class="sr-only">Toggle Dropdown</span>
                         </button>
@@ -1098,99 +1231,6 @@
                 </div>
             </section>
 
-            <!--SECTION: Buttons-->
-            <nav id="ui__buttons" class="navbar demo__titlebar">
-                <div class="navbar-header">
-                    <div class="navbar-text">Buttons</div>
-                </div>
-            </nav>
-
-            <!--Buttons-->
-            <section class="demo__section">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3>Button Sentence</h3>
-                        <div class="btn-tags btn-sentence">
-                            <button class="btn btn-default" type="submit">Button</button>
-                            <input class="btn btn-default" value="Input" type="button">
-                            <input class="btn btn-default" value="Submit" type="submit">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>Button Rounded</h3>
-                        <a class="btn btn-default btn-rounded" href="#">Link</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3>Button tags</h3>
-                        <form class="bs-example" data-example-id="btn-tags">
-                            <a class="btn btn-default" href="#">Link</a>
-                            <button class="btn btn-default" type="submit">Button</button>
-                            <input class="btn btn-default" value="Input" type="button">
-                            <input class="btn btn-default" value="Submit" type="submit">
-                        </form>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>Options</h3>
-                        <div>
-                            <button type="button" class="btn btn-default">Default</button>
-                            <button type="button" class="btn btn-primary">Primary</button>
-                            <button type="button" class="btn btn-success">Success</button>
-                            <button type="button" class="btn btn-info">Info</button>
-                            <button type="button" class="btn btn-warning">Warning</button>
-                            <button type="button" class="btn btn-danger">Danger</button>
-                            <button type="button" class="btn btn-link">Link</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row show__btn">
-                    <div class="col-sm-6">
-                        <h3>Sizes</h3>
-                        <p>
-                            <button type="button" class="btn btn-primary btn-lg">Large button<a href="#"><span class="badge">42</span></a></button>
-                            <button type="button" class="btn btn-default btn-lg">Large button<a href="#"><span class="badge">42</span></a></button>
-                        </p>
-                        <p>
-                            <button type="button" class="btn btn-primary">Default button<a href="#"><span class="badge">42</span></a></button>
-                            <button type="button" class="btn btn-default">Default button<a href="#"><span class="badge">42</span></a></button>
-                        </p>
-                        <p>
-                            <button type="button" class="btn btn-primary btn-sm">SM button<a href="#"><span class="badge">42</span></a></button>
-                            <button type="button" class="btn btn-default btn-sm">SM button<a href="#"><span class="badge">42</span></a></button>
-                        </p>
-                        <p>
-                            <button type="button" class="btn btn-primary btn-xs">XS button<a href="#"><span class="badge">42</span></a></button>
-                            <button type="button" class="btn btn-default btn-xs">XS button<a href="#"><span class="badge">42</span></a></button>
-                        </p>
-                        <div class="well">
-                            <button type="button" class="btn btn-primary btn-block">Block level button</button>
-                            <button type="button" class="btn btn-default btn-block">Block level button</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>Active state</h3>
-                        <p>
-                            <button type="button" class="btn btn-primary active">Primary button</button>
-                            <button type="button" class="btn btn-default active">Button</button>
-                        </p>
-                        <p>
-                            <a href="#" class="btn btn-primary active">Primary link</a>
-                            <a href="#" class="btn btn-default active">Link</a>
-                        </p>
-                        <h3>Disabled state</h3>
-                        <p>
-                            <button type="button" class="btn btn-primary active" disabled="disabled">Primary button</button>
-                            <button type="button" class="btn btn-default active" disabled="disabled">Button</button>
-                        </p>
-                        <p>
-                            <a href="#" class="btn btn-primary disabled">Primary link</a>
-                            <a href="#" class="btn btn-default disabled">Link</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
             <!--SECTION: Card-->
             <nav id="ui__card" class="navbar demo__titlebar">
                 <div class="navbar-header">
@@ -1202,35 +1242,24 @@
             <section class="demo__section">
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Basic</h3>
-                        <div class="card">
-                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <h3 class="demo__heading">Basic</h3>
+                        <div class="card card-main">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Flush(no border)</h3>
-                        <div class="card card-flush">
-                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
-                            <div class="card-block">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Button</a>
+                                <a href="#" class="btn">Button</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="demo__section">
-                <h3>Content Types</h3>
+                <h3 class="demo__heading">Content Types</h3>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -1252,8 +1281,8 @@
                                 <h4 class="card-title">Card title</h4>
                                 <h6 class="card-subtitle text-muted">Support card subtitle</h6>
                             </div>
-                            <img src="img/nature__medium.jpg" alt="Card image">
-                            <div class="demo__card-img card-block">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image">
+                            <div class="card-block">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="card-link">Card link</a>
                                 <a href="#" class="card-link">Another link</a>
@@ -1270,7 +1299,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
@@ -1281,25 +1310,25 @@
 
             <!--Sizing-->
             <section class="demo__section">
-                <h3>Sizing</h3>
+                <h3 class="demo__heading">Sizing</h3>
                 <div class="card card-block">
                     <h3 class="card-title">Special title treatment</h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn">Go somewhere</a>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card card-block">
                             <h3 class="card-title">Special title treatment</h3>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn">Go somewhere</a>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="card card-block">
                             <h3 class="card-title">Special title treatment</h3>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -1307,27 +1336,27 @@
 
             <!--Text alignment-->
             <section class="demo__section">
-                <h3>Text Alignment</h3>
+                <h3 class="demo__heading">Text Alignment</h3>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card card-block">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn">Go somewhere</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card card-block text-center">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn">Go somewhere</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card card-block text-right">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -1335,22 +1364,22 @@
 
             <!--Header and Footer-->
             <section class="demo__section">
-                <h3>Header and Footer</h3>
+                <h3 class="demo__heading">Header and Footer</h3>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card card-alt1">
                             <div class="card-header">
                                 Featured
                             </div>
                             <div class="card-block">
                                 <h4 class="card-title">Special title treatment</h4>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn">Go somewhere</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card card-cta">
                             <div class="card-header">
                                 Quote
                             </div>
@@ -1363,14 +1392,14 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center">
+                        <div class="card card-success text-center">
                             <div class="card-header">
                                 Featured
                             </div>
                             <div class="card-block">
                                 <h4 class="card-title">Special title treatment</h4>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn">Go somewhere</a>
                             </div>
                             <div class="card-footer text-muted">
                                 2 days ago
@@ -1382,11 +1411,11 @@
 
             <!--Image caps-->
             <section class="demo__section">
-                <h3>Image Caps</h3>
+                <h3 class="demo__heading">Image Caps</h3>
                 <div class="row">
                     <div class="col-sm-6 col-md-4">
                         <div class="card">
-                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1399,7 +1428,7 @@
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                             </div>
-                            <img class="demo__card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -1413,7 +1442,7 @@
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
-                            <img class="demo__card-img card-img-bottom" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                         </div>
                     </div>
                 </div>
@@ -1421,12 +1450,12 @@
 
             <!--Image overlays-->
             <section class="demo__section">
-                <h3>Image Overlays</h3>
+                <h3 class="demo__heading">Image Overlays</h3>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card card-inverse">
-                            <img class="demo__card-img card-img" src="img/nature__medium.jpg" alt="Card image">
-                            <div class="demo__card-img card-img-overlay">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image">
+                            <div class="card-img-overlay">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -1438,14 +1467,14 @@
 
             <!--Inverted text-->
             <section class="demo__section">
-                <h3>Inverted Text</h3>
+                <h3 class="demo__heading">Inverted Text</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card card-inverse">
                             <div class="card-block">
                                 <h3 class="card-title">Special title treatment</h3>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Button</a>
+                                <a href="#" class="btn">Button</a>
                             </div>
                             <div class="card-footer">
                                 <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
@@ -1457,15 +1486,27 @@
 
             <!--Background variants-->
             <section class="demo__section">
-                <h3>Background Variants</h3>
+                <h3 class="demo__heading">Default Palette</h3>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="card card-primary text-center">
+                        <div class="card card-default">
                             <div class="card-block">
-                                <blockquote class="card-blockquote">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="demo__heading">Primary Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card card-cta">
+                            <div class="card-block">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                             </div>
                             <div class="card-footer">
                                 <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
@@ -1473,12 +1514,62 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="card card-success text-center">
+                        <div class="card card-main">
                             <div class="card-block">
-                                <blockquote class="card-blockquote">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="demo__heading">Neutral Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card card-alt1">
+                            <div class="card-block">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card card-alt2 text-center">
+                            <div class="card-block">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card card-alt3 text-right">
+                            <div class="card-block">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="demo__heading">State Palette</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card card-success">
+                            <div class="card-block">
+                                <h4 class="card-title">Title</h4>
+                                <div class="card-text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
@@ -1486,12 +1577,27 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="card card-info text-center">
+                        <div class="card card-info">
                             <div class="card-block">
-                                <blockquote class="card-blockquote">
+                                <h4 class="card-title">Title</h4>
+                                <div class="card-text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card card-warning">
+                            <div class="card-block">
+                                <h4 class="card-title">Title</h4>
+                                <div class="card-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
@@ -1499,23 +1605,12 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="card card-warning text-center">
+                        <div class="card card-danger">
                             <div class="card-block">
-                                <blockquote class="card-blockquote">
+                                <h4 class="card-title">Title</h4>
+                                <div class="card-text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
-                            </div>
-                            <div class="card-footer">
-                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
-                            </div>
-                        </div>
-                        <div class="card card-danger text-center">
-                            <div class="card-block">
-                                <blockquote class="card-blockquote">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
@@ -1527,10 +1622,10 @@
 
             <!--Groups-->
             <section class="demo__section">
-                <h3>Groups</h3>
+                <h3 class="demo__heading">Groups</h3>
                 <div class="card-group">
                     <div class="card">
-                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1538,7 +1633,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -1546,7 +1641,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -1558,11 +1653,11 @@
 
             <!--Decks-->
             <section class="demo__section">
-                <h3>Decks</h3>
+                <h3 class="demo__heading">Decks</h3>
                 <div class="card-deck-wrapper">
                     <div class="card-deck">
                         <div class="card">
-                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1570,7 +1665,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -1578,7 +1673,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -1591,10 +1686,10 @@
 
             <!--Columns-->
             <section class="demo__section">
-                <h3>Columns</h3>
+                <h3 class="demo__heading">Columns</h3>
                 <div class="card-columns">
                     <div class="card">
-                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title that wraps to a new line</h4>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1611,7 +1706,7 @@
                         </blockquote>
                     </div>
                     <div class="card">
-                        <img class="demo__card-img card-img-top" src="img/nature__medium.jpg" alt="Card image cap">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -1634,7 +1729,7 @@
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                     <div class="card">
-                        <img class="demo__card-img card-img" src="img/nature__medium.jpg" alt="Card image">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image">
                     </div>
                     <div class="card card-block text-right">
                         <blockquote class="card-blockquote">
@@ -2204,7 +2299,7 @@
                             <div class="input-group-addon">.00</div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Transfer cash</button>
+                    <button type="submit" class="btn btn-cta">Transfer cash</button>
                 </form>
             </section>
 
@@ -2376,7 +2471,7 @@
                                         <input type="checkbox"> Can't check this
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-cta">Submit</button>
                             </fieldset>
                         </form>
                     </div>
@@ -2847,7 +2942,7 @@
                         <div class="col-sm-6">
                             <h1>iApple.</h1>
                             <p>This article has exceeded my already high expectations of technical ignorance and blatant impartiality. I am quite staggered at how bad it is and how much it lives up to to stereotype of mac users being I-sheep.</p>
-                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
+                            <a class="btn btn-cta btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2858,7 +2953,7 @@
                         <div class="col-sm-offset-3 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
+                            <a class="btn btn-cta btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2869,7 +2964,7 @@
                         <div class="col-sm-offset-6 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
+                            <a class="btn btn-cta btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2880,7 +2975,7 @@
                         <div class="col-sm-offset-3 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
+                            <a class="btn btn-cta btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2891,7 +2986,7 @@
                         <div class="col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
+                            <a class="btn btn-cta btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -2903,7 +2998,7 @@
                         <div class="col-sm-offset-3 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <a class="btn btn-primary btn-rounded" href="#">Learn more</a>
+                            <a class="btn btn-cta btn-rounded" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -3105,7 +3200,7 @@
                     <h1 id="hello,-world!">Hello, world!
                     </h1>
                     <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <a class="btn btn-primary" href="#">Learn more</a>
+                    <a class="btn btn-cta" href="#">Learn more</a>
                 </div>
             </section>
 
@@ -3483,7 +3578,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-cta">Save changes</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -3495,7 +3590,7 @@
             <!--Live Demo-->
             <section class="demo__section">
                 <h3>Live demo</h3>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                <button type="button" class="btn btn-cta" data-toggle="modal" data-target="#myModal">
                     Launch demo modal
                 </button>
                 <div id="myModal" class="modal fade">
@@ -3516,7 +3611,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-cta">Save changes</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -3528,10 +3623,10 @@
             <!--Optional Sizes-->
             <section class="demo__section">
                 <h3>Optional Sizes</h3>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalLarge">
+                <button type="button" class="btn btn-cta" data-toggle="modal" data-target="#myModalLarge">
                     Large Modal
                 </button>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalSmall">
+                <button type="button" class="btn btn-cta" data-toggle="modal" data-target="#myModalSmall">
                     Small Modal
                 </button>
                 <div id="myModalLarge" class="modal fade">
@@ -3552,7 +3647,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-cta">Save changes</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -3577,7 +3672,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-cta">Save changes</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -5396,7 +5491,7 @@
                                     <div class="caption">
                                         <h3>Heading</h3>
                                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a>
+                                        <p><a href="#" class="btn btn-cta">Button</a> <a href="#" class="btn btn-default">Button</a>
                                         </p>
                                     </div>
                                 </div>
@@ -5407,7 +5502,7 @@
                                     <div class="caption">
                                         <h3>Heading</h3>
                                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a>
+                                        <p><a href="#" class="btn btn-cta">Button</a> <a href="#" class="btn btn-default">Button</a>
                                         </p>
                                     </div>
                                 </div>
