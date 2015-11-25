@@ -11,7 +11,6 @@
     border-left: $caret__width-base solid transparent;
 }
 
-//  Dropdown Caret
 .dropdown-toggle {
     @if $dropdown__has__caret {
         .caret {
@@ -39,7 +38,6 @@
     }
 }
 
-//  Dropup Caret
 .dropup-toggle {
     @if $dropup__has__caret {
         .caret {

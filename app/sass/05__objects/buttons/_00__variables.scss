@@ -4,8 +4,7 @@ $btn__radius:                 $global__radius;
 $btn__x:                      $global__x;
 $btn__y:                      $global__y;
 //  General Options
-$btn__solid-color:            true !default;
-$dropdown__use-btn__color:    true !default;  //  Use btn-*color*
+$btn__solid-color:            true !default;    //  Use palette color for bg and border
 //  Color Options
 $btn__default-palette:        true !default;
 $btn__primary-palette:        true !default;

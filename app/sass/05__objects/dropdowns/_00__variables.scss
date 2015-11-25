@@ -1,17 +1,21 @@
 //  Units
+$dropdown__contrast:                    $global__contrast;
 $dropdown__radius:                      $global__radius;
 $dropdown__x:                           $global__x;
 $dropdown__y:                           $global__y * 1.5;
-//  General Options                     // Additional option within ../05__objects/buttons/_00__variables.scss
-$dropdown__has__caret:                  true !default;
+//  General Options
+$dropdown__has__caret:                  true !default;  //  Caret is the icon within origin btn
 $dropup__has__caret:                    true !default;
-$dropdown__has__indicator:              true !default;
+$dropdown__has__indicator:              true !default;  //  Indicator is the arrow pointing toward origin btn
 $dropup__has__indicator:                true !default;
+//  Color Config
+$dropdown__solid-color:                 true !default;  //  Use same color for bg and border
+$dropdown__use-btn__color:              true !default;  //  Use nearest btn's color
 //  Color Options
-//  $dropdown__default-palette:             false !default;
-//  $dropdown__primary-palette:             false !default;
-//  $dropdown__neutral-palette:             false !default;
-//  $dropdown__state-palette:               false !default;
+$dropdown-menu__default-palette:        true !default;
+$dropdown-menu__primary-palette:        true !default;
+$dropdown-menu__neutral-palette:        true !default;
+$dropdown-menu__state-palette:          true !default;
 //  Dropdown-Menu
 $dropdown-menu__bg:                     $white;
 $dropdown-menu__shadow:                 0 $six__pixels $twelve__pixels rgba(0,0,0,0.175);
@@ -23,10 +27,13 @@ $dropdown-header__font-size:            $h6__font-size;
 $dropdown-header__vertical-padding:     $raw__x;      // Using Rem Mixin ../02__tools/_mixin__rem.scss
 $dropdown-header__horizontal-padding:   $raw__x;      // Using Rem Mixin ../02__tools/_mixin__rem.scss
 //  Dropdown Caret
-$dropdown__caret__use-icon:             true !default;
-$dropdown__caret__icon:                 $fa-var-angle-down;
+$dropdown__caret__use-icon:             true !default;      //  Option will determine use of font-awesome
 $dropup__caret__use-icon:               true !default;
+$dropdown__caret__icon:                 $fa-var-angle-down; //  Font-awesome icon
 $dropup__caret__icon:                   $fa-var-angle-up;
+//  Dropdown Indicator
+$dropdown__indicator__size:             1.5 !default;       //  Value is a multiplier
+$dropup__indicator__size:               1.5 !default;
 //  Dropdown-Mega-Menu
 $dropdown-mega-menu__bg:                     $gray__01;
 $dropdown-mega-menu__border:                 $gray__02;

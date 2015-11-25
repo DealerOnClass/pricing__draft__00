@@ -3,8 +3,6 @@ $form__contrast:                   $global__contrast;
 $form__radius:                     $global__radius;
 $form__x:                          $global__x;
 $form__y:                          $global__y;
-//  General Options
-$form-feedback__use-icon:          true !default;   //  Allow css control for font awesome icons, if false, use html
 //  Color Options
 $form-feedback__default-palette:   false !default;
 $form-feedback__primary-palette:   false !default;
@@ -21,7 +19,7 @@ $form-control-static__padding:     $form__y 0;
 //  Form Control Feedback
 $has-success__icon:                $fa-var-check;
 $has-warning__icon:                $fa-var-warning;
-$has-danger__icon:                 $fa-var-remove;
+$has-danger__icon:                  $fa-var-remove;
 //  Base
 $legend__color:                    $body__color;
 $legend__border__color:            $body__color;

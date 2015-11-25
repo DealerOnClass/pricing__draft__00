@@ -44,7 +44,7 @@
                             <li><a href="#ui__carousel">Carousel</a></li>
                             <li><a href="#ui__code">Code</a></li>
                             <li><a href="#ui__color">Colors</a></li>
-                            <li><a href="#ui__custom-forms">Custom Forms</a></li>
+                            <!--<li><a href="#ui__custom-forms">Custom Forms</a></li>-->
                             <li><a href="#ui__dropdowns">Dropdowns</a></li>
                             <li><a href="#ui__forms">Forms</a></li>
                             <li><a href="#ui__grid">Grid</a></li>
@@ -1974,25 +1974,25 @@
             <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Inline</h3>
+                        <h3 class="demo__heading">Inline</h3>
                         <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
                     </div>
                     <div class="col-sm-6">
-                        <h3>User input</h3>
+                        <h3 class="demo__heading">User input</h3>
                         <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.  <br>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd> </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Basic block</h3>
+                        <h3 class="demo__heading">Basic block</h3>
                         <p><pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre></p>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Variables</h3>
+                        <h3 class="demo__heading">Variables</h3>
                         <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
                     </div>
                 </div>
-                <h3>Sample output</h3>
+                <h3 class="demo__heading">Sample output</h3>
                 <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
             </section>
 
@@ -2042,14 +2042,14 @@
                 </div>
             </section>
 
-            <!--SECTION: Custom Forms-->
+            <!--SECTION: Custom Forms
             <nav id="ui__custom-forms" class="navbar demo__titlebar">
                 <div class="navbar-header">
                     <div class="navbar-text">Custom Forms</div>
                 </div>
             </nav>
 
-            <!--Custom Forms-->
+               Custom Forms
             <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
@@ -2102,7 +2102,7 @@
                         </label>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--SECTION: Dropdowns-->
             <nav id="ui__dropdowns" class="navbar demo__titlebar">
@@ -2207,7 +2207,7 @@
             <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Basic</h3>
+                        <h3 class="demo__heading">Basic</h3>
                         <form>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
@@ -2218,7 +2218,7 @@
                                 <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputFile">File input</label>
+                                <label class="btn" for="exampleInputFile">File input</label>
                                 <input id="exampleInputFile" type="file">
                                 <p class="help-block">Example block-level help text here.</p>
                             </div>
@@ -2227,11 +2227,11 @@
                                     <input type="checkbox"> Check me out
                                 </label>
                             </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <button type="submit" class="btn">Submit</button>
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Horizontal Form</h3>
+                        <h3 class="demo__heading">Horizontal Form</h3>
                         <form class="form-horizontal">
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -2256,13 +2256,13 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit" class="btn btn-default">Sign in</button>
+                                    <button type="submit" class="btn">Sign in</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <h3>Inline</h3>
+                <h3 class="demo__heading">Inline Form</h3>
                 <form class="form-inline">
                     <div class="form-group">
                         <label for="exampleInputName2">Name</label>
@@ -2272,7 +2272,7 @@
                         <label for="exampleInputEmail2">Email</label>
                         <input class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com" type="email">
                     </div>
-                    <button type="submit" class="btn btn-default">Send invitation</button>
+                    <button type="submit" class="btn">Send invitation</button>
                 </form>
                 <form class="form-inline">
                     <div class="form-group">
@@ -2288,7 +2288,7 @@
                             <input type="checkbox"> Remember me
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-default">Sign in</button>
+                    <button type="submit" class="btn">Sign in</button>
                 </form>
                 <form class="form-inline">
                     <div class="form-group">
@@ -2299,7 +2299,7 @@
                             <div class="input-group-addon">.00</div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-cta">Transfer cash</button>
+                    <button type="submit" class="btn">Transfer cash</button>
                 </form>
             </section>
 
@@ -2307,13 +2307,13 @@
             <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Inputs</h3>
+                        <h3 class="demo__heading">Inputs</h3>
                         <form>
                             <input class="form-control" placeholder="Text input" type="text">
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Textarea</h3>
+                        <h3 class="demo__heading">Textarea</h3>
                         <form>
                             <textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
                         </form>
@@ -2321,7 +2321,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Checkboxes and radios</h3>
+                        <h3 class="demo__heading">Checkboxes and radios</h3>
                         <form>
                             <div class="checkbox">
                                 <label>
@@ -2352,7 +2352,7 @@
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Inline vheckboxes and radios</h3>
+                        <h3 class="demo__heading">Inline Checkboxes and radios</h3>
                         <form>
                             <label class="checkbox-inline">
                                 <input id="inlineCheckbox1" value="option1" type="checkbox"> 1
@@ -2376,7 +2376,7 @@
                                 <input name="inlineRadioOptions" id="inlineRadio3" value="option3" type="radio"> 3
                             </label>
                         </form>
-                        <h3>Checkboxes and radios without label text</h3>
+                        <h3 class="demo__heading">Checkboxes and radios without label text</h3>
                         <form>
                             <div class="checkbox">
                                 <label>
@@ -2393,7 +2393,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Selects</h3>
+                        <h3 class="demo__heading">Selects</h3>
                         <form>
                             <select class="form-control">
                                 <option>1</option>
@@ -2414,7 +2414,7 @@
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Static control</h3>
+                        <h3 class="demo__heading">Static control</h3>
                         <form class="form-horizontal">
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Email</label>
@@ -2438,21 +2438,23 @@
                                 <label for="inputPassword2" class="sr-only">Password</label>
                                 <input class="form-control" id="inputPassword2" placeholder="Password" type="password">
                             </div>
-                            <button type="submit" class="btn btn-default">Confirm identity</button>
+                            <button type="submit" class="btn">Confirm identity</button>
                         </form>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Focus state</h3>
+                        <h3 class="demo__heading">Focus state</h3>
                         <form>
                             <input class="form-control" id="focusedInput" value="Demonstrative focus state" type="text">
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Disabled state</h3>
+                        <h3 class="demo__heading">Disabled state</h3>
                         <form>
-                            <input class="form-control" id="disabledInput" placeholder="Disabled input here…" disabled="" type="text">
+                            <div class="form-group">
+                                <input class="form-control" id="disabledInput" placeholder="Disabled input here…" disabled="" type="text">
+                            </div>
                         </form>
                         <form>
                             <fieldset disabled="">
@@ -2471,20 +2473,20 @@
                                         <input type="checkbox"> Can't check this
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-cta">Submit</button>
+                                <button type="submit" class="btn">Submit</button>
                             </fieldset>
                         </form>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Readonly state</h3>
+                        <h3 class="demo__heading">Readonly state</h3>
                         <form>
                             <input class="form-control" placeholder="Readonly input here…" readonly="" type="text">
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Validation states</h3>
+                        <h3 class="demo__heading">Validation states</h3>
                         <form>
                             <div class="form-group has-success">
                                 <label class="control-label" for="inputSuccess1">Input with success</label>
@@ -2494,7 +2496,7 @@
                                 <label class="control-label" for="inputWarning1">Input with warning</label>
                                 <input class="form-control" id="inputWarning1" type="text">
                             </div>
-                            <div class="form-group has-error">
+                            <div class="form-group has-danger">
                                 <label class="control-label" for="inputError1">Input with error</label>
                                 <input class="form-control" id="inputError1" type="text">
                             </div>
@@ -2512,7 +2514,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="has-error">
+                            <div class="has-danger">
                                 <div class="checkbox">
                                     <label>
                                         <input id="checkboxError" value="option1" type="checkbox"> Checkbox with error
@@ -2524,45 +2526,70 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>With optional icons</h3>
+                        <h3 class="demo__heading">With optional icons</h3>
+                        <form>
+                            <div class="form-group has-success has-feedback">
+                                <input class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" type="text">
+                                <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputSuccess2Status" class="sr-only">(success)</span>
+                            </div>
+                            <div class="form-group has-warning has-feedback">
+                                <input class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status" type="text">
+                                <span class="fa fa-warning form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputWarning2Status" class="sr-only">(warning)</span>
+                            </div>
+                            <div class="form-group has-danger has-feedback">
+                                <input class="form-control" id="inputError2" aria-describedby="inputError2Status" type="text">
+                                <span class="fa fa-remove form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputError2Status" class="sr-only">(error)</span>
+                            </div>
+                            <div class="form-group has-success has-feedback">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-home"></i></span>
+                                    <input class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status" type="text">
+                                </div>
+                                <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+                            </div>
+                        </form>
                         <form>
                             <div class="form-group has-success has-feedback">
                                 <label class="control-label" for="inputSuccess2">Input with success</label>
                                 <input class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" type="text">
-                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
                                 <span id="inputSuccess2Status" class="sr-only">(success)</span>
                             </div>
                             <div class="form-group has-warning has-feedback">
                                 <label class="control-label" for="inputWarning2">Input with warning</label>
                                 <input class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status" type="text">
-                                <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                                <span class="fa fa-warning form-control-feedback" aria-hidden="true"></span>
                                 <span id="inputWarning2Status" class="sr-only">(warning)</span>
                             </div>
-                            <div class="form-group has-error has-feedback">
+                            <div class="form-group has-danger has-feedback">
                                 <label class="control-label" for="inputError2">Input with error</label>
                                 <input class="form-control" id="inputError2" aria-describedby="inputError2Status" type="text">
-                                <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                <span class="fa fa-remove form-control-feedback" aria-hidden="true"></span>
                                 <span id="inputError2Status" class="sr-only">(error)</span>
                             </div>
                             <div class="form-group has-success has-feedback">
                                 <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
                                 <div class="input-group">
-                                    <span class="input-group-addon">@</span>
+                                    <span class="input-group-addon"><i class="fa fa-home"></i></span>
                                     <input class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status" type="text">
                                 </div>
-                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
                                 <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
                             </div>
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Optional icons in horizontal and inline forms</h3>
+                        <h3 class="demo__heading">Optional icons in horizontal and inline forms</h3>
                         <form class="form-horizontal">
                             <div class="form-group has-success has-feedback">
                                 <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
                                 <div class="col-sm-9">
                                     <input class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status" type="text">
-                                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                    <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
                                     <span id="inputSuccess3Status" class="sr-only">(success)</span>
                                 </div>
                             </div>
@@ -2570,10 +2597,10 @@
                                 <label class="control-label col-sm-3" for="inputGroupSuccess2">Input group with success</label>
                                 <div class="col-sm-9">
                                     <div class="input-group">
-                                        <span class="input-group-addon">@</span>
+                                        <span class="input-group-addon"><i class="fa fa-home"></i></span>
                                         <input class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status" type="text">
                                     </div>
-                                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                    <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
                                     <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
                                 </div>
                             </div>
@@ -2582,7 +2609,7 @@
                             <div class="form-group has-success has-feedback">
                                 <label class="control-label" for="inputSuccess4">Input with success</label>
                                 <input class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status" type="text">
-                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
                                 <span id="inputSuccess4Status" class="sr-only">(success)</span>
                             </div>
                         </form>
@@ -2590,10 +2617,10 @@
                             <div class="form-group has-success has-feedback">
                                 <label class="control-label" for="inputGroupSuccess3">Input group with success</label>
                                 <div class="input-group">
-                                    <span class="input-group-addon">@</span>
+                                    <span class="input-group-addon"><i class="fa fa-home"></i></span>
                                     <input class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" type="text">
                                 </div>
-                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
                                 <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
                             </div>
                         </form>
@@ -2601,7 +2628,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Optional icons with hidden .sr-only labels</h3>
+                        <h3 class="demo__heading">Optional icons with hidden .sr-only labels</h3>
                         <div class="form-group has-success has-feedback">
                             <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
                             <input class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status" type="text">
@@ -2625,7 +2652,7 @@
             <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Height sizing</h3>
+                        <h3 class="demo__heading">Height sizing</h3>
                         <form>
                             <div class="controls">
                                 <input class="form-control input-lg" placeholder=".input-lg" type="text">
@@ -2645,7 +2672,7 @@
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Horizontal form group sizes</h3>
+                        <h3 class="demo__heading">Horizontal form group sizes</h3>
                         <form class="form-horizontal">
                             <div class="form-group form-group-lg">
                                 <label class="col-sm-2 control-label" for="formGroupInputLarge">Large label</label>
@@ -2664,7 +2691,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Column sizing</h3>
+                        <h3 class="demo__heading">Column sizing</h3>
                         <form>
                             <div class="row">
                                 <div class="col-xs-2">
@@ -2680,7 +2707,7 @@
                         </form>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Help text</h3>
+                        <h3 class="demo__heading">Help text</h3>
                         <form>
                             <div class="form-group">
                                 <label for="inputHelpBlock">Input with help text</label>

@@ -19,26 +19,6 @@
                     color: check-color($color, 80, inherit, $white);
                     background-color: shade($color, $btn__contrast);
                 }
-
-                @if $dropdown__use-btn__color {
-                    + .dropdown-menu {
-                        color: check-color($color, 80, inherit, $white);
-                        border-color: shade($color, $btn__contrast);
-                        background-color: $color;
-                        .dropdown-item,
-                        > li > a {
-                            @include state(true) {
-                                background-color: shade($color, $btn__contrast);
-                            }
-                        }
-                        .divider {
-                            border-color: shade($color, $btn__contrast * 1.5);
-                        }
-                        &:after {
-                            border-bottom-color: $color;
-                        }
-                    }
-                }
             } @else {
                 color: check-color($color, 80, inherit, shade($color, $btn__contrast));
                 border-color: check-color($color, 80, inherit, shade($color, $btn__contrast));

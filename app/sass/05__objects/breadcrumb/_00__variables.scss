@@ -4,8 +4,8 @@ $breadcrumb__radius:                $global__radius;
 $breadcrumb__x:                     $global__x;
 $breadcrumb__y:                     $global__y;
 //  General Options
-$breadcrumb__solid-color:           true !default;
-$breadcrumb__link--hover__bg:       true !default; //  Link changes bg on hover
+$breadcrumb__solid-color:           true !default;  //  Use palette color for bg and border
+$breadcrumb__link--hover__bg:       true !default;  //  Link changes bg on hover
 //  Color Options
 $breadcrumb__default-palette:       true !default;
 $breadcrumb__primary-palette:       true !default;

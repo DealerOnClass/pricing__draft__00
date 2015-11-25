@@ -2,51 +2,73 @@
     position: relative;
 
     .form-control {
-        padding-right: ($input__height--base * 1.25);
+        padding-right: ( $form__x * 2 ) + $base__font-unit;
     }
 }
 
 .form-control-feedback {
-    line-height: $input__height--base;
-
     position: absolute;
     z-index: 2; // Ensure icon is above input groups
     top: 0;
     right: 0;
 
-    display: block;
-
-    width: $input__height--base;
-    height: $input__height--base;
+    height: $base__font-unit;
 
     text-align: center;
     pointer-events: none;
 }
 
-.input-lg + .form-control-feedback,
-.input-group-lg + .form-control-feedback,
-.form-group-lg .form-control + .form-control-feedback {
-    line-height: $input__height--large;
+.has-feedback {
+    .form-control-feedback {
+        top: 50%;
+        right: $form__x;
 
-    width: $input__height--large;
-    height: $input__height--large;
-}
-
-.input-sm + .form-control-feedback,
-.input-group-sm + .form-control-feedback,
-.form-group-sm .form-control + .form-control-feedback {
-    line-height: $input__height--small;
-
-    width: $input__height--small;
-    height: $input__height--small;
-}
-
-.has-feedback label {
-    & ~ .form-control-feedback {
-        top: $form__vertical-padding;
+        margin-top: $base__font-unit / -2;
     }
-    &.sr-only ~ .form-control-feedback {
-        top: 0;
+    label ~ .form-control-feedback {
+        margin-top: $form__y / 3;
+    }
+    label.sr-only ~ .form-control-feedback {
+        margin-top: $form__y * -1;
     }
 }
 
+@if $form-feedback__use-icon {
+    .has-feedback .form-control-feedback:before {
+        display: none;  //  Disable HTML font awesome icons if exist
+    }
+    .has-feedback .form-control-feedback:after {
+        font-family: $fa-font-name;
+
+        display: block;
+
+        width: 1em;
+    }
+    .has-success .form-control-feedback:after {
+        content: '#{$has-success__icon}';
+    }
+    .has-warning .form-control-feedback:after {
+        content: '#{$has-warning__icon}';
+    }
+    .has-danger .form-control-feedback:after {
+        content: '#{$has-danger__icon}';
+    }
+}
+
+//  .input-lg + .form-control-feedback,
+//  .input-group-lg + .form-control-feedback,
+//  .form-group-lg .form-control + .form-control-feedback {
+//      line-height: $input__height--large;
+//
+//      width: $input__height--large;
+//      height: $input__height--large;
+//  }
+//
+//  .input-sm + .form-control-feedback,
+//  .input-group-sm + .form-control-feedback,
+//  .form-group-sm .form-control + .form-control-feedback {
+//      line-height: $input__height--small;
+//
+//      width: $input__height--small;
+//      height: $input__height--small;
+//  }
