@@ -22,7 +22,7 @@
     }
     #{$list} {
         float: left;
-        @include box-sizing(border-box);
+        box-sizing: border-box;
     }
 }
 
@@ -83,7 +83,7 @@
     padding-left:  ($gutter / 2);
     padding-right: ($gutter / 2);
     @include clearfix;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 }
 
 //  Creates a wrapper for a series of columns

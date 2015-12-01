@@ -15,7 +15,7 @@
     background-clip: padding-box;
     //@include reset-text;
 
-    @include box-shadow(0 5px 10px rgba(0,0,0,0.2));
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 
     &.top {
         margin-top: $popover__arrow__width * -1;

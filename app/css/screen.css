@@ -6557,9 +6557,7 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
-  -moz-border-bottom-right-radius: 0;
   border-bottom-right-radius: 0;
-  -moz-border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
 
@@ -6574,9 +6572,7 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
-  -moz-border-bottom-left-radius: 0;
   border-bottom-left-radius: 0;
-  -moz-border-top-left-radius: 0;
   border-top-left-radius: 0;
 }
 

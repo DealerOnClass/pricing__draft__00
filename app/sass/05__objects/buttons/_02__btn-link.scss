@@ -9,8 +9,7 @@
     &[disabled],
     fieldset[disabled] & {
         background-color: transparent;
-
-        @include box-shadow(none);
+        box-shadow: none;
     }
     &,
     &:hover,
