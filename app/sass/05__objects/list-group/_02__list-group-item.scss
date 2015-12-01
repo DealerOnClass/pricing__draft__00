@@ -39,4 +39,7 @@
     color: $list-group-item--disabled__color;
     border-color: $list-group-item--disabled__border;
     background-color: $list-group-item--disabled__bg;
+    box-shadow: none;
+
+    cursor: $cursor-disabled;
 }

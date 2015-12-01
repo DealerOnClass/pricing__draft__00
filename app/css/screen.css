@@ -6900,6 +6900,8 @@ a.label-danger:active {
   color: #999999;
   border-color: #999999;
   background-color: #e6e6e6;
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 a.list-group-item:hover, a.list-group-item:active, a.list-group-item:focus,
@@ -7327,7 +7329,10 @@ button.list-group-item {
 }
 
 .modal-header .close {
-  margin-top: -0.11111em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0 none;
 }
 
 .modal-title {

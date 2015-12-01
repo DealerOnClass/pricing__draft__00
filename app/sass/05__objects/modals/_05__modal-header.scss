@@ -5,5 +5,9 @@
 }
 
 .modal-header .close {
-    margin-top: $two__pixels * -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border: 0 none;
 }
