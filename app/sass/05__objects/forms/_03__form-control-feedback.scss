@@ -33,6 +33,13 @@
     }
 }
 
+.form-horizontal .has-feedback {
+    .form-control-feedback {
+        right: $form__x * 2;    // Multiply by 2 b/c form-horizontal adds padding to form-group
+    }
+    //  Still need a solution for lables breaking line on mobile or under 991px...
+}
+
 @if $form-feedback__use-icon {
     .has-feedback .form-control-feedback:before {
         display: none;  //  Disable HTML font awesome icons if exist

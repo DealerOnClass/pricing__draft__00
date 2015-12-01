@@ -9,7 +9,7 @@
     padding: $navbar-form__vertical-padding $navbar-form__horizontal-padding;
 
     box-shadow: $shadow;
-    @include form-inline;
+    //  @include form-inline;
 
     .form-group {
         @media (max-width: $grid-float-breakpoint-max) {

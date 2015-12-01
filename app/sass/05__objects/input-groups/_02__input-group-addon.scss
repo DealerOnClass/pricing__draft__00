@@ -1,13 +1,12 @@
 .input-group-addon {
     font-weight: normal;
 
-    padding: $form__vertical-padding $form__horizontal-padding;
+    padding: $form__y $form__x;
 
     text-align: center;
 
-    color: $input-group-addon__color;
     border: $one__pixel solid $input-group-addon__border;
-    border-radius: $input-group-addon__radius;
+    border-radius: $form__radius;
     background-color: $input-group-addon__bg;
 
     &.input-sm {

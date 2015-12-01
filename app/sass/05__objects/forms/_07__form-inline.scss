@@ -1,70 +1,104 @@
-@mixin form-inline {
-    @media (min-width: $screen-sm-min) {
-        %form-inline-item {
-            display: inline-block;
+.form-inline {
+    .form-group,
+    .form-control,
+    .form-control-static,
+    .input-group,
+    .radio,
+    .checkbox {
+        display: inline-block;
 
-            vertical-align: middle;
-        }
+        width: auto;
 
-        .form-group {
-            margin-bottom: 0;
+        vertical-align: middle;
+    }
 
-            @extend %form-inline-item;
-        }
+    .input-group {
+        display: inline-table;
 
+        .input-group-addon,
+        .input-group-btn,
         .form-control {
             width: auto;
-
-            @extend %form-inline-item;
         }
 
-        .form-control-static {
-            display: inline-block;
-        }
-
-        .input-group {
-            display: inline-table;
-
-            vertical-align: middle;
-            .input-group-addon,
-            .input-group-btn,
-            .form-control {
-                width: auto;
-            }
-        }
-
-        .input-group > .form-control {
+        > .form-control {
             width: 100%;
         }
+    }
 
-        .control-label {
-            margin-bottom: 0;
-
-            vertical-align: middle;
-        }
-
-        .radio,
-        .checkbox {
-            margin-top: 0;
-            margin-bottom: 0;
-
-            @extend %form-inline-item;
-
-            label {
-                padding-left: 0;
-            }
-        }
-
-        .radio input[type='radio'],
-        .checkbox input[type='checkbox'] {
-            position: relative;
-
-            margin-left: 0;
-        }
+    .radio,
+    .checkbox {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
-
-.form-inline {
-    @include form-inline;
-}
-
+//  @mixin form-inline {
+//      @media (min-width: $screen-sm-min) {
+//          %form-inline-item {
+//              display: inline-block;
+//
+//              vertical-align: middle;
+//          }
+//
+//          .form-group {
+//              margin-bottom: 0;
+//
+//              @extend %form-inline-item;
+//          }
+//
+//          .form-control {
+//              width: auto;
+//
+//              @extend %form-inline-item;
+//          }
+//
+//          .form-control-static {
+//              display: inline-block;
+//          }
+//
+//          .input-group {
+//              display: inline-table;
+//
+//              vertical-align: middle;
+//              .input-group-addon,
+//              .input-group-btn,
+//              .form-control {
+//                  width: auto;
+//              }
+//          }
+//
+//          .input-group > .form-control {
+//              width: 100%;
+//          }
+//
+//          .control-label {
+//              margin-bottom: 0;
+//
+//              vertical-align: middle;
+//          }
+//
+//          .radio,
+//          .checkbox {
+//              margin-top: 0;
+//              margin-bottom: 0;
+//
+//              @extend %form-inline-item;
+//
+//              label {
+//                  padding-left: 0;
+//              }
+//          }
+//
+//          .radio input[type='radio'],
+//          .checkbox input[type='checkbox'] {
+//              position: relative;
+//
+//              margin-left: 0;
+//          }
+//      }
+//  }
+//
+//  .form-inline {
+//      @include form-inline;
+//  }
+//
