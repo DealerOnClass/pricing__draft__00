@@ -1,6 +1,4 @@
 .input-group-btn {
-    font-size: 0;
-
     position: relative;
 
     white-space: nowrap;
@@ -8,32 +6,30 @@
     > .btn {
         position: relative;
 
-        @include rhythm-actual-rem(font-size, 1);
         + .btn {
             margin-left: $one__pixel * -1;
         }
-
-        &:hover,
-        &:focus,
-        &:active {
-            z-index: 2;
-        }
     }
+
+    > .btn,
+    > .dropdown-toggle {
+        z-index: 4;
+    }
+
 
     &:first-child {
         > .btn,
         > .btn-group {
-            margin-right: $one__pixel * -1;
+            margin-right: $six__pixels * -1;
         }
     }
 
     &:last-child {
         > .btn,
         > .btn-group {
-            z-index: 2;
+            z-index: 4;
 
-            margin-left: $one__pixel * -1;
+            margin-left: $six__pixels * -1;
         }
     }
 }
-

@@ -1,23 +1,12 @@
-.label-default {
-    @include label-variant($label--default__bg);
+@if $label__default-palette {
+    @include label-color-variation($default__palette);
 }
-
-.label-primary {
-    @include label-variant($label--primary__bg);
+@if $label__primary-palette {
+    @include label-color-variation($primary__palette);
 }
-
-.label-success {
-    @include label-variant($label--success__bg);
+@if $label__neutral-palette {
+    @include label-color-variation($neutral__palette);
 }
-
-.label-info {
-    @include label-variant($label--info__bg);
-}
-
-.label-warning {
-    @include label-variant($label--warning__bg);
-}
-
-.label-danger {
-    @include label-variant($label--danger__bg);
+@if $label__state-palette {
+    @include label-color-variation($state__palette);
 }

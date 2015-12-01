@@ -2,7 +2,7 @@
     .form-group,
     .form-control,
     .form-control-static,
-    .input-group,
+    .input-group:not([class*='col-']),
     .radio,
     .checkbox {
         display: inline-block;
@@ -12,7 +12,7 @@
         vertical-align: middle;
     }
 
-    .input-group {
+    .input-group:not([class*='col-']) {
         display: inline-table;
 
         .input-group-addon,

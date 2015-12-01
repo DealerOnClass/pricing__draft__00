@@ -12,12 +12,18 @@
 
                 .badge {
                     color: check-color($color, 80, inherit, $white);
+                    border-color: shade($color, $btn__contrast);
                     background-color: shade($color, $btn__contrast);
                 }
 
                 @include state {
                     color: check-color($color, 80, inherit, $white);
                     background-color: shade($color, $btn__contrast);
+
+                    .badge {
+                        border-color: shade($color, $btn__contrast * 2);
+                        background-color: shade($color, $btn__contrast * 2);
+                    }
                 }
             } @else {
                 color: check-color($color, 80, inherit, shade($color, $btn__contrast));

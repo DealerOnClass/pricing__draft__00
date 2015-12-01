@@ -6,13 +6,6 @@
 
     border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
 
-    &[class*='col-'] {
-        float: none;
-
-        padding-right: 0;
-        padding-left: 0;
-    }
-
     .form-control {
         position: relative;
         z-index: 2;

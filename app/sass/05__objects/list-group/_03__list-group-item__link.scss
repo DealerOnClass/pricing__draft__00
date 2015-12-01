@@ -1,17 +1,22 @@
 a.list-group-item,
 button.list-group-item {
-    color: $list-group-item__link__color;
-
-    .list-group-item-heading {
-        color: $list-group-item__link__heading__color;
-    }
-
-    &:hover,
-    &:focus {
-        text-decoration: none;
-
+    @include state {
         color: $list-group-item__link--hover__color;
+        border-color: $list-group-item__link--hover__border;
         background-color: $list-group-item__link--hover__bg;
+        .badge {
+            border-color: shade($list-group-item__link--hover__bg, $list-group__contrast);
+            background-color: shade($list-group-item__link--hover__bg, $list-group__contrast);
+        }
+    }
+    &:active {
+        box-shadow: $list-group-item--active__shadow;
+    }
+    &.active {
+        .badge {
+            border-color: shade($list-group-item__link--hover__bg, $list-group__contrast);
+            background-color: shade($list-group-item__link--hover__bg, $list-group__contrast);
+        }
     }
 }
 

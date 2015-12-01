@@ -6,15 +6,12 @@
                     color: check-color($color, 80, inherit, $white);
                     border-color: $color;
                     background-color: $color;
+
                     &:not(:last-child) {
                         border-bottom-color: shade($color, $list-group__contrast);
                     }
                     &.active {
                         @extend %list-group-item--active;
-                    }
-                    .badge {
-                        border-color: shade($color, $list-group__contrast);
-                        background-color: shade($color, $list-group__contrast);
                     }
                 }
                 a.list-group-item {
@@ -26,13 +23,6 @@
                     color: check-color($color, 80, inherit, $white);
                     border-color: shade($color, $list-group__contrast);
                     background-color: shade($color, $list-group__contrast);
-                    &:active {
-                        box-shadow: $list-group-item--active__shadow;
-                    }
-                    .badge {
-                        border-color: shade($color, $list-group__contrast * 2);
-                        background-color: shade($color, $list-group__contrast * 2);
-                    }
                 }
             } @else {
                 .list-group-item {
@@ -41,10 +31,6 @@
 
                     &.active {
                         @extend %list-group-item--active;
-                    }
-                    .badge {
-                        border-color: shade($color, $list-group__contrast);
-                        background-color: transparent;
                     }
                 }
                 a.list-group-item {
@@ -55,83 +41,41 @@
                 %list-group-item--active {
                     color: check-color($color, 80, inherit, shade($color, $list-group__contrast));
                     border-color: check-color($color, 80, inherit, shade($color, $list-group__contrast));
-                    background-color: check-color($color, 80, inherit, tint($color, 80%));
-                    &:active {
-                        box-shadow: $list-group-item--active__shadow;
-                    }
-                    .badge {
-                        border-color: shade($color, $list-group__contrast * 2);
-                        background-color: check-color($color, 80, inherit, tint($color, 80%));
-                    }
                 }
             }
         }
     }
 }
-//          @mixin list-group-item-color-variation($input__palette) {
-//              @each $class__name, $color in $input__palette {
-//                  .list-group-item-#{$class__name} {
-//                      @if $list-group__solid-color {
-//                          color: check-color($color, 80, inherit, $white);
-//                          border-color: $color;
-//                          background-color: $color;
-//                          &:not(:last-child) {
-//                              border-bottom-color: shade($color, $list-group__contrast);
-//                          }
-//                      } @else {
-//                          color: check-color($color, 80, inherit, shade($color, $list-group__contrast));
-//                          border-color: check-color($color, 80, inherit, shade($color, $list-group__contrast));
-//                          background-color: transparent;
-//                      }
-//                  }
-//                  a.list-group-item-#{$class__name} {
-//                      @if $list-group__solid-color {
-//                          @include state(true) {
-//                              color: check-color($color, 80, inherit, $white);
-//                              border-color: shade($color, $list-group__contrast);
-//                              background-color: shade($color, $list-group__contrast);
-//                              .badge {
-//                                  border-color: shade($color, $list-group__contrast * 2);
-//                                  background-color: shade($color, $list-group__contrast * 2);
-//                              }
-//                          }
-//                          &:active {
-//                              box-shadow: $list-group-item--active__shadow;
-//                          }
-//                          .badge {
-//                              border-color: shade($color, $list-group__contrast);
-//                              background-color: shade($color, $list-group__contrast);
-//                          }
-//                      } @else {
-//                          color: check-color($color, 80, inherit, $color);
-//                          border-color: check-color($color, 80, inherit, $color);
-//
-//                          &.active {
-//                              @extend %list-group-item--active;
-//                          }
-//                          .badge {
-//                              border-color: shade($color, $list-group__contrast);
-//                              background-color: transparent;
-//                          }
-//                          @include state {
-//                              @extend %list-group-item--active;
-//                          }
-//                          %list-group-item--active {
-//                              color: check-color($color, 80, inherit, shade($color, $list-group__contrast));
-//                              border-color: check-color($color, 80, inherit, shade($color, $list-group__contrast));
-//                              background-color: check-color($color, 80, inherit, tint($color, 80%));
-//                              &:active {
-//                                  box-shadow: $list-group-item--active__shadow;
-//                              }
-//                              .badge {
-//                                  border-color: shade($color, $list-group__contrast * 2);
-//                                  background-color: check-color($color, 80, inherit, tint($color, 80%));
-//                              }
-//                          }
-//                      }
-//                  }
-//              }
-//          }
+@mixin list-group-item-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+        .list-group-item-#{$class__name} {
+            @if $list-group__solid-color {
+                color: check-color($color, 80, inherit, $white);
+                border-color: $color;
+                background-color: $color;
+            } @else {
+                color: check-color($color, 80, inherit, shade($color, $list-group__contrast));
+                border-color: check-color($color, 80, inherit, shade($color, $list-group__contrast));
+                background-color: transparent;
+            }
+        }
+        a.list-group-item-#{$class__name} {
+            @if $list-group__solid-color {
+                color: check-color($color, 80, inherit, $white);
+                border-color: $color;
+                background-color: $color;
+
+                @include state {
+                    border-color: shade($color, $list-group__contrast);
+                    background-color: shade($color, $list-group__contrast);
+                }
+            } @else {
+                color: check-color($color, 80, inherit, $color);
+                border-color: check-color($color, 80, inherit, $color);
+            }
+        }
+    }
+}
 //  @mixin list-group-variant($state, $background) {
 //
 //      $color:  check-color($background, 70, red, white);

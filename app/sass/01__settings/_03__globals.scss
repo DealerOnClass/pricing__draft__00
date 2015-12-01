@@ -23,6 +23,16 @@ $six__pixels:              $one__pixel * 6;
 $eight__pixels:            $one__pixel * 8;
 $nine__pixels:             $one__pixel * 9;
 $twelve__pixels:           $one__pixel * 12;
+//  True Pixel Units
+$one__true__pixel:         1px;
+$two__true__pixels:        $one__true__pixel * 2;
+$three__true__pixels:      $one__true__pixel * 3;
+$four__true__pixels:       $one__true__pixel * 4;
+$five__true__pixels:       $one__true__pixel * 5;
+$six__true__pixels:        $one__true__pixel * 6;
+$eight__true__pixels:      $one__true__pixel * 8;
+$nine__true__pixels:       $one__true__pixel * 9;
+$twelve__true__pixels:     $one__true__pixel * 12;
 //  Zindex
 $zindex-navbar:            1000 !default;
 $zindex-dropdown:          1000 !default;

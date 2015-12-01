@@ -1,3 +1,10 @@
+//
+//  Use
+//  .row>.col-sm-6>p{stuff}+.col-sm-6.col-divider>p{stuff}
+//
+//  Output
+//  stuff | stuff
+//
 .col-divider:before {
     position: absolute;
     top: 0;

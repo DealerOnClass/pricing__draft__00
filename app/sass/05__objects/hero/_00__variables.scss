@@ -1,13 +1,14 @@
 //  Units
-$hero__x:   $global__x;
-$hero__y:   $global__y * 7;
+$hero__contrast:  $global__contrast;
+$hero__x:         $global__x;
+$hero__y:         $global__y * 7;
+//  General Options
+$hero__solid-color:      true !default;  //  Use palette color for bg and border
+//  Color Options
+$hero__default-palette:  true !default;
+$hero__primary-palette:  true !default;
+$hero__neutral-palette:  true !default;
+$hero__state-palette:    true !default;
 //  Base
 $hero__padding__x:  $hero__x;
 $hero__padding__y:  $hero__y;
-//  Variations
-$hero--default__bg:         $gray__02;
-$hero--primary__bg:         $primary__color;
-$hero--inverse--dark__bg:   $inverse__color--dark;
-$hero--inverse__bg:         $inverse__color;
-$hero--inverse--light__bg:  $inverse__color--light;
-$hero--accent__bg:          $accent__color;

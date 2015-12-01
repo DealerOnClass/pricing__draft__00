@@ -1,7 +1,7 @@
 .label {
     font-size: $label__font-size;
 
-    display: inline;
+    display: inline-block;
 
     padding: $label__padding;
 
@@ -9,25 +9,16 @@
     vertical-align: baseline;
     white-space: nowrap;
 
-    color: $label__color;
+    border: $one__true__pixel solid;
     border-radius: $label__radius;
 
     &:empty {
         display: none;
     }
-
-    .btn & {
-        position: relative;
-        top: $one__pixel * -1;
-    }
 }
 
 a.label {
-    &:hover,
-    &:focus {
+    @include state {
         cursor: pointer;
-        text-decoration: none;
-
-        color: $label--hover__color;
     }
 }

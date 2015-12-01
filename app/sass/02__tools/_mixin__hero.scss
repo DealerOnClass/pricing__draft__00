@@ -1,26 +1,33 @@
-@mixin hero-variant($color) {
-    $color:             $color;
-    $background:        $color;
-    $border:            check-color($color, 70, shade($color, 14%), $background);
-    $color:             check-color($color, 70, $body__color, white);
+@mixin hero-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+        .hero-#{$class__name} {
+            @if $hero__solid-color {
+                color: check-color($color, 80, inherit, $white);
+                border-color: check-color($color, 80, inherit, $white);
+                background-color: $color;
 
-    background-color: $background;
-    border-color: $border;
-    color: $color;
+                .btn {
+                    color: check-color($color, 80, inherit, $white);
+                    border-color: check-color($color, 80, inherit, $white);
+                    background-color: $color;
 
-    .btn {
-        color: $color;
-        border-color: $color;
-        background-color: $background;
-        //  transition: border-color 0.75s ease-in-out;
-        //  transition: background-color 0.75s ease-in-out;
+                    @include state {
+                        color: check-color($color, 80, inherit, $white);
+                        $over-color: mix($color, $body__color, $hero__contrast * 6);
+                        $under-color: mix($color, $white, $hero__contrast * 6);
+                        border-color: check-color($color, 80, $over-color, $under-color);
+                        background-color: shade($color, $hero__contrast);
+                    }
+                }
+            } @else {
+                color: check-color($color, 80, inherit, shade($color, $hero__contrast));
+                border-color: check-color($color, 80, inherit, shade($color, $hero__contrast));
+                background-color: transparent;
 
-        &:hover,
-        &:focus,
-        &:active {
-            color: $color;
-            border-color: mix($color, $background, 30%);
-            background-color: darken($background, 5%);
+                .btn {
+                    color: inherit;
+                }
+            }
         }
     }
 }
