@@ -19,7 +19,8 @@
             }
 
             .badge {
-                background-color: shade($nav-pills--active__bg, $global__contrast * 2);
+                border-color: shade($nav-pills--active__bg, $global__contrast);
+                background-color: shade($nav-pills--active__bg, $global__contrast);
             }
         }
     }

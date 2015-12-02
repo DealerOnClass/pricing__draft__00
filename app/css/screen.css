@@ -3867,6 +3867,7 @@ h5 .btn-group {
 
 .btn .caret {
   margin-left: 0;
+  line-height: 1;
 }
 .btn-lg .caret, .btn-group-lg .btn .caret {
   border-width: 0.45em 0.45em 0;
@@ -7492,7 +7493,8 @@ button.list-group-item {
   background-color: #3662ad;
 }
 .nav-pills > li.active > a .badge {
-  background-color: #2b4e8a;
+  border-color: #31589c;
+  background-color: #31589c;
 }
 
 .nav-stacked > li {

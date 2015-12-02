@@ -15,6 +15,7 @@
 .caret {
     .btn & {
         margin-left: 0;
+        line-height: 1;
     }
     .btn-lg & {
         border-width: $caret__width-large $caret__width-large 0;
