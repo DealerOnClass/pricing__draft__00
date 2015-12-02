@@ -29,12 +29,14 @@
 .demo {
     .alert,
     .breadcrumb,
-    .card {
+    .card,
+    .form-inline,
+    .list-group {
         margin-bottom: rhythm(1);
     }
 
-    .form-inline {
-        margin-bottom: rhythm(.5);
+    .card .list-group {
+        margin-bottom: 0;
     }
 
     .card-img {

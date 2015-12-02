@@ -10508,11 +10508,13 @@ a.thumbnail.active {
 
 .demo .alert,
 .demo .breadcrumb,
-.demo .card {
+.demo .card,
+.demo .form-inline,
+.demo .list-group {
   margin-bottom: 1.5em;
 }
-.demo .form-inline {
-  margin-bottom: 0.75em;
+.demo .card .list-group {
+  margin-bottom: 0;
 }
 .demo .card-img {
   max-width: 100%;
