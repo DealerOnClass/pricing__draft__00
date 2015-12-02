@@ -5,7 +5,7 @@
 
     table-layout: fixed;
 
-    border-right: $one__pixel solid;
+    border-right: $one__true__pixel solid;
     border-radius: $card__radius;
 
     .card {
@@ -13,9 +13,9 @@
 
         vertical-align: top;
 
-        border-top: $one__pixel solid;
-        border-bottom: $one__pixel solid;
-        border-left: $one__pixel solid;
+        border-top: $one__true__pixel solid;
+        border-bottom: $one__true__pixel solid;
+        border-left: $one__true__pixel solid;
         border-radius: 0;
 
         .card-header,

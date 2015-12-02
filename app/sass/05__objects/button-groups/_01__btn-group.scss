@@ -17,7 +17,7 @@
     .btn + .btn-group,
     .btn-group + .btn,
     .btn-group + .btn-group {
-        margin-left: $one__pixel * -1;
+        margin-left: $one__true__pixel * -1;
     }
     > .btn {
         border-radius: 0;

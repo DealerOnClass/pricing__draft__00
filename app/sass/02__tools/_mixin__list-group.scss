@@ -26,6 +26,9 @@
                     color: check-color($color, 80, inherit, $white);
                     border-color: shade($color, $list-group__contrast);
                     background-color: shade($color, $list-group__contrast);
+                    &:not(:last-child) {
+                        border-bottom-color: shade($color, $list-group__contrast * 2);
+                    }
                     &:active {
                         box-shadow: $list-group-item--active__shadow;
                     }

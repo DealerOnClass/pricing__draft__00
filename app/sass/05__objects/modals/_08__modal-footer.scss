@@ -1,7 +1,7 @@
 .modal-footer {
     padding: $modal-footer__padding;
 
-    border-top: $one__pixel solid $modal-footer__border;
+    border-top: $one__true__pixel solid $modal-footer__border;
 
     @include clearfix;
 

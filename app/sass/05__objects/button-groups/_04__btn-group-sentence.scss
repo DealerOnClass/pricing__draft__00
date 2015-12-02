@@ -3,7 +3,7 @@
         float: left;
     }
     .btn + .btn {
-        margin-left: -1 * $one__pixel;
+        margin-left: -1 * $one__true__pixel;
     }
     .btn + .btn:not(:last-child) {
         border-radius: 0;
