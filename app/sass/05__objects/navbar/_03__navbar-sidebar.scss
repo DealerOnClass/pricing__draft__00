@@ -40,9 +40,6 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
         margin-left: $navbar__x * -1;
         margin-bottom: rhythm(2);
     }
-    .caret {
-        float: right;
-    }
 }
 
 .offcanvas-nav {

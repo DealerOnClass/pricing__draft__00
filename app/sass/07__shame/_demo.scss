@@ -7,6 +7,7 @@
 
 .demo__titlebar {
     margin-bottom: rhythm(2);
+
     @include navbar-solid-color-bar($body__color);
 }
 
@@ -15,11 +16,14 @@
 }
 
 .demo__heading {
-    text-transform: capitalize;
-    letter-spacing: .05em;
-    color: $gray__03;
     font-size: 1em;
+
     margin-top: rhythm(2);
+
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+    color: $gray__03;
 }
 
 .demo__hero {
@@ -51,15 +55,16 @@
 
 .demo__grid {
     .box {
+        overflow: hidden;
+
         margin-bottom: rhythm(0.5);
-        padding-top: rhythm(0.5);
-        padding-bottom: rhythm(0.5);
+        padding-top: $global__y;
+        padding-bottom: $global__y;
 
         text-align: center;
 
-        border: 1px solid rgba(0,0,0,0.2);
+        border: $one__true__pixel solid rgba(0,0,0,0.2);
         border-radius: $global__radius;
-        overflow: hidden;
     }
 }
 
@@ -73,16 +78,14 @@
 }
 
 .demo__color {
-    padding-right: $grid__gutter / 2;
-    padding-left: $grid__gutter / 2;
-
-    .row + .row {
-        margin-top: rhythm(1);
+    .row {
+        margin-bottom: rhythm(1);
     }
 
-    [class*='col-'] {
-        padding-top: rhythm(0.5);
-        padding-bottom: rhythm(0.5);
+    .box {
+        padding: $global__y $global__x;
+
+        border-radius: $global__radius;
     }
 }
 
@@ -100,7 +103,9 @@
 
 .show__btn-group .btn-group {
     display: block;
-    margin-top: rhythm(.5);
+
+    margin-top: $global__y;
+
     @include clearfix;
 }
 
@@ -131,14 +136,10 @@
     }
 }
 
-.emulate-body-element {
 
-}
 
 .emulate-container-class {
     max-width: 34em;
     margin: 0 auto;
     padding: rhythm(3) $global__gutter 0;
 }
-
-

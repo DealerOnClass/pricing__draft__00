@@ -1,4 +1,4 @@
-//  Neutral Palette
+//  Grayscale
 $white:                  white;
 $black:                  black;
 $gray__01:               mix($black,$white,10%);
@@ -10,40 +10,26 @@ $gray__06:               mix($black,$white,60%);
 $gray__07:               mix($black,$white,70%);
 $gray__08:               mix($black,$white,80%);
 $gray__09:               mix($black,$white,90%);
-//  State Palette
+//  Colors
+$default__color:         $gray__01;
+$primary__color:         #3662ad;
+$accent__color:          #f36c0a;
+$inverse__color--dark:   mix($primary__color, $gray__07, 50%);
+$inverse__color:         mix($primary__color, $gray__05, 45%);
+$inverse__color--light:  mix($primary__color, $gray__03, 40%);
+//  States
 $state--success:         #5cb85c !default;
 $state--info:            #5bc0de !default;
 $state--warning:         #f0ad4e !default;
 $state--danger:          #d9534f !default;
-//  True Palette
-$palette__blue:          #3662ad;//was #1c4181 but too dark
-$palette__blue--dark:    #15294b;
-$palette__orange:        #f36c0a;
-$palette__gray--dark:    #252931;
-$palette__gray:          #74777d;
-$palette__gray--light:   #f3f3f3;
-//  Abstract Palette
-$primary__color--light:  tint($palette__blue, 5%);
-$primary__color:         $palette__blue;
-$primary__color--dark:   $palette__blue--dark;
-$accent__color:          $palette__orange;
-$inverse__color--dark:   mix($primary__color, $gray__07, 50%);
-$inverse__color:         mix($primary__color, $gray__05, 45%);
-$inverse__color--light:  mix($primary__color, $gray__03, 40%);
-$neutral__color--dark:   $gray__07;
-$neutral__color:         $gray__05;
-$neutral__color--light:  $gray__03;
-$default__color:         $gray__01;
-//
-//
-//  Color Maps * For MIXINS
+//  Palettes
 $default__palette: (
     'default':  $gray__01,
 ) !default;
 
 $primary__palette: (
-    'cta':      $palette__orange,
-    'main':     $palette__blue,
+    'cta':      $accent__color,
+    'main':     $primary__color,
 ) !default;
 
 $neutral__palette: (

@@ -12,7 +12,7 @@ $mono--regular:         'SourceCodePro' !default;
 //  Body
 $body__font:            $sans--regular;
 $body__line-height:     $base__line-height;
-$body__color:           mix($neutral__color, $primary__color--dark, 30%);
+$body__color:           shade(desaturate($primary__color, 20%), 30%);
 //  Headings
 $h5__font-size:         $base__font-unit;
 $h6__font-size:         $h5__font-size / $base__font-ratio;

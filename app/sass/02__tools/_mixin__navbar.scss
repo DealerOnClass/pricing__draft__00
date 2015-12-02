@@ -8,86 +8,57 @@
 
                 .navbar-brand,
                 .navbar-link,
-                .navbar-toggle {
-                    @extend %navbar__link;
-                }
-
-                .navbar-nav {
-                    > li > a {
-                        @extend %navbar__link;
-                    }
-                    >.active > a {
-                        @extend %navbar__link--active;
-                    }
-                    >.disabled > a {
-                        @extend %navbar__link--disabled;
-                    }
-                }
-
-                %navbar__link {
+                .navbar-toggle,
+                .navbar-nav > li > a {
                     color: check-color($color, 80, inherit, $white);
                     @include state {
                         background-color: shade($color, $navbar__contrast);
                     }
                 }
-                %navbar__link--active {
-                    &,
-                    &:hover,
-                    &:focus {
-                        background-color: shade($color, $navbar__contrast);
+
+                .navbar-nav {
+                    >.disabled > a {
+                        &,
+                        &:hover,
+                        &:focus {
+                            color: shade($color, $navbar__contrast * 3);
+                            background-color: transparent;
+                        }
+                    }
+                    >.active > a,
+                    .open > a {
+                        &,
+                        &:hover,
+                        &:focus {
+                            background-color: shade($color, $navbar__contrast);
+                        }
+                    }
+                    .dropdown-menu {
+                        border-color: shade($color, $navbar__contrast);
+                        > li > a {
+                            color: check-color($color, 80, inherit, $white);
+                            border-color: shade($color, $navbar__contrast);
+                            background-color: shade($color, $navbar__contrast);
+                            @include state {
+                                background-color: shade($color, $navbar__contrast * 2);
+                            }
+                        }
+                        &:after {
+                            display: none;
+                        }
+                        .divider {
+                            border-color: shade($color, $navbar__contrast * 2);
+                        }
                     }
                 }
-                %navbar__link--disabled {
-                    &,
-                    &:hover,
-                    &:focus {
-                        color: shade($color, $navbar__contrast * 3);
-                        background-color: transparent;
-                    }
+
+                .navbar-sidebar-collapse {
+                    border-top: $one__true__pixel solid shade($color, $navbar__contrast * 2);
                 }
 
             } @else {
                 color: check-color($color, 80, inherit, shade($color, $navbar__contrast));
                 border-color: check-color($color, 80, inherit, shade($color, $navbar__contrast));
-
-                .navbar-brand,
-                .navbar-link,
-                .navbar-toggle {
-                    @extend %navbar__link;
-                }
-
-                .navbar-nav {
-                    > li > a {
-                        @extend %navbar__link;
-                    }
-                    >.active > a {
-                        @extend %navbar__link--active;
-                    }
-                    >.disabled > a {
-                        @extend %navbar__link--disabled;
-                    }
-                }
-
-                %navbar__link {
-                    color: inherit;
-                    @include state {
-                        background-color: tint($color, $navbar__contrast * 5);
-                    }
-                }
-                %navbar__link--active {
-                    &,
-                    &:hover,
-                    &:focus {
-                        background-color: tint($color, $navbar__contrast * 5);
-                    }
-                }
-                %navbar__link--disabled {
-                    &,
-                    &:hover,
-                    &:focus {
-                        color: tint($color, $navbar__contrast * 3);
-                    }
-                }
             }
         }
     }

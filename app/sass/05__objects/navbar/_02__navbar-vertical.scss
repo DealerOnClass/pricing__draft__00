@@ -50,6 +50,9 @@
 //  Dropdown-Menu Reset
 .navbar-sidebar,
 .navbar-vertical {
+    .caret {
+        float: right;
+    }
     .dropdown-menu {
         position: relative;
 
