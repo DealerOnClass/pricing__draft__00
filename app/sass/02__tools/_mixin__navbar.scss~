@@ -47,7 +47,7 @@
                 }
 
             } @else {
-                color: check-color($color, 80, inherit, shade($color, $navbar__contrast));
+                color: check-color($color, 80, inherit, $color);
                 border-color: check-color($color, 80, inherit, shade($color, $navbar__contrast));
 
                 .navbar-brand,
@@ -71,21 +71,22 @@
                 %navbar__link {
                     color: inherit;
                     @include state {
-                        background-color: tint($color, $navbar__contrast * 5);
+                        background-color: shade($color, $navbar__contrast);
                     }
                 }
                 %navbar__link--active {
                     &,
                     &:hover,
                     &:focus {
-                        background-color: tint($color, $navbar__contrast * 5);
+                        background-color: shade($color, $navbar__contrast);
                     }
                 }
                 %navbar__link--disabled {
                     &,
                     &:hover,
                     &:focus {
-                        color: tint($color, $navbar__contrast * 3);
+                        color: shade($color, $navbar__contrast * 3);
+                        background-color: transparent;
                     }
                 }
             }

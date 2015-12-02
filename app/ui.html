@@ -18,11 +18,12 @@
         <nav class="navbar navbar-dealeron navbar-fixed-top">
             <div class="navbar-header pull-left">
                 <a href="#ttest51" id="sidebar__icon" class="navbar-brand" data-toggle="collapse" data-animate="icon-bar">
-                    <span class="icon-bar-wrapper icon-bar-animate">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </span>
+                    <i class="fa fa-navicon"></i>
+                    <!--<span class="icon-bar-wrapper icon-bar-animate">-->
+                        <!--<span class="icon-bar"></span>-->
+                        <!--<span class="icon-bar"></span>-->
+                        <!--<span class="icon-bar"></span>-->
+                    <!--</span>-->
                 </a>
                 <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
             </div>
@@ -3852,16 +3853,14 @@
                 </div>
             </nav>
             <section class="demo__section">
-                <h3>Default</h3>
-                <nav class="navbar navbar-default">
+                <h3 class="demo__heading">Basic</h3>
+                <nav class="navbar">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
                             <a class="navbar-brand" href="#">Brand</a>
                         </div>
@@ -3869,10 +3868,8 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -3892,8 +3889,32 @@
                                 </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Link</a>
-                                </li>
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </section>
+            <h3 class="demo__heading">Default Palette</h3>
+            <section class="demo__section">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-navicon"></i>
+                            </button>
+                            <a class="navbar-brand" href="#">Brand</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -3906,38 +3927,59 @@
                                         <li class="divider"></li>
                                         <li><a href="#">Separated link</a>
                                         </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                            </ul>
                         </div>
                         <!-- /.navbar-collapse -->
                     </div>
                     <!-- /.container-fluid -->
                 </nav>
             </section>
+            <h3 class="demo__heading">Primary Palette</h3>
             <section class="demo__section">
-                <h3>Primary</h3>
-                <nav class="navbar navbar-primary">
+                <nav class="navbar navbar-cta">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
-                            <a class="navbar-brand" href="#">Brand</a>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                         </div>
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -3946,28 +3988,87 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Accent</h3>
-                <nav class="navbar navbar-accent">
+                <nav class="navbar navbar-main">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
-                            <a class="navbar-brand" href="#">Brand</a>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                         </div>
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="#">Link</a>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </section>
+            <h3 class="demo__heading">Neutral Palette</h3>
+            <section class="demo__section">
+                <nav class="navbar navbar-alt1">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-navicon"></i>
+                            </button>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="#">Link</a>
-                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -3976,28 +4077,42 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Inverse Dark</h3>
-                <nav class="navbar navbar-inverse-dark">
+                <nav class="navbar navbar-alt2">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
-                            <a class="navbar-brand" href="#">Brand</a>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                         </div>
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -4006,28 +4121,87 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Inverse</h3>
-                <nav class="navbar navbar-inverse">
+                <nav class="navbar navbar-alt3">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
-                            <a class="navbar-brand" href="#">Brand</a>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                         </div>
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="#">Link</a>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </section>
+            <h3 class="demo__heading">State Palette</h3>
+            <section class="demo__section">
+                <nav class="navbar navbar-success">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-navicon"></i>
+                            </button>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="#">Link</a>
-                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -4036,28 +4210,42 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Inverse Light</h3>
-                <nav class="navbar navbar-inverse-light">
+                <nav class="navbar navbar-info">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
-                            <a class="navbar-brand" href="#">Brand</a>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                         </div>
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -4066,28 +4254,42 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Neutral Dark</h3>
-                <nav class="navbar navbar-neutral-dark">
+                <nav class="navbar navbar-warning">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-10">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
-                            <a class="navbar-brand" href="#">Brand</a>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                         </div>
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-10">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -4096,82 +4298,64 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Neutral</h3>
-                <nav class="navbar navbar-neutral">
+                <nav class="navbar navbar-danger">
                     <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">Brand</a>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
-                </nav>
-            </section>
-            <section class="demo__section">
-                <h3>Neutral Light</h3>
-                <nav class="navbar navbar-neutral-light">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">Brand</a>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
-                </nav>
-            </section>
-            <section class="demo__section">
-                <h3>Vertical</h3>
-                <div class="navbar-vertical-container">
-                    <nav class="navbar navbar-default navbar-vertical">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-11">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
-                            <a class="navbar-brand" href="#">Brand</a>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-11">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </section>
+            <section class="demo__section">
+                <h3 class="demo__heading">Vertical</h3>
+                <div class="navbar-vertical-container">
+                    <nav class="navbar navbar-alt1 navbar-vertical">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-12">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-navicon"></i>
+                            </button>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-12">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
                                 </li>
@@ -4214,19 +4398,20 @@
                 </div>
             </section>
             <section id="ui__navbar-sidebar">
-                <h3>Sidebar</h3>
+                <h3 class="demo__heading">Sidebar</h3>
                 <div class="navbar-vertical-container emulate-html-element">
                     <div class="emulate-body-element">
-                        <nav class="navbar navbar-default navbar-fixed-top">
+                        <nav class="navbar navbar-alt1 navbar-fixed-top">
                             <div class="navbar-header">
                                 <a href="#ttest4" class="navbar-brand" data-toggle="collapse" data-animate="icon-bar">
-                                    <span class="icon-bar-wrapper icon-bar-animate">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </span>
+                                    <i class="fa fa-navicon"></i>
+                                    <!--<span class="icon-bar-wrapper icon-bar-animate">-->
+                                        <!--<span class="icon-bar"></span>-->
+                                        <!--<span class="icon-bar"></span>-->
+                                        <!--<span class="icon-bar"></span>-->
+                                    <!--</span>-->
                                 </a>
-                                <a class="navbar-brand" href="#">DealerOn</a>
+                                <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                             </div>
                         </nav>
                         <nav class="navbar navbar-default navbar-sidebar">
@@ -4280,18 +4465,19 @@
                 </div>
             </section>
             <section id="ui__navbar-sidebar-offcanvas">
-                <h3>Sidebar Off-Canvas</h3>
+                <h3 class="demo__heading">Sidebar Off-Canvas</h3>
                 <div class="navbar-vertical-container emulate-html-element">
-                    <nav class="navbar navbar-default navbar-fixed-top">
+                    <nav class="navbar navbar-alt1 navbar-fixed-top">
                         <div class="navbar-header">
                             <a href="#ttest44" class="navbar-brand" data-toggle="collapse" data-animate="icon-bar">
-                                <span class="icon-bar-wrapper icon-bar-animate">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </span>
+                                <i class="fa fa-navicon"></i>
+                                <!--<span class="icon-bar-wrapper icon-bar-animate">-->
+                                    <!--<span class="icon-bar"></span>-->
+                                    <!--<span class="icon-bar"></span>-->
+                                    <!--<span class="icon-bar"></span>-->
+                                <!--</span>-->
                             </a>
-                            <a class="navbar-brand" href="#">DealerOn</a>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
                         </div>
                     </nav>
                     <div class="emulate-body-element">
@@ -4359,15 +4545,13 @@
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-15">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
                             <a class="navbar-brand" href="#">Brand</a>
                         </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-15">
                             <form class="navbar-form navbar-left">
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Search" type="text">
@@ -4383,15 +4567,13 @@
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-16">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
                             <a class="navbar-brand" href="#">Brand</a>
                         </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-16">
                             <p class="navbar-text">Signed in as Mark Otto</p>
                         </div>
                     </div>
@@ -4402,15 +4584,13 @@
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-17">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <i class="fa fa-navicon"></i>
                             </button>
                             <a class="navbar-brand" href="#">Brand</a>
                         </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-17">
                             <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a>
                             </p>
                         </div>
@@ -4423,9 +4603,7 @@
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-priority">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <i class="fa fa-navicon"></i>
                         </button>
                     </div>
 
@@ -4456,15 +4634,13 @@
             <section class="demo__section">
                 <nav class="navbar navbar-default navbar-static-top">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-18">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <i class="fa fa-navicon"></i>
                         </button>
                     </div>
 
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-18">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a>
                             </li>

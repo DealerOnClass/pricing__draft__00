@@ -1,35 +1,47 @@
-//  Navbar Primary
-.navbar-primary {
-    @include navbar-solid-color-variant($primary__color);
+@if $navbar__default-palette {
+    @include navbar-color-variation($default__palette);
 }
-//  Navbar Accent
-.navbar-accent {
-    @include navbar-solid-color-variant($accent__color);
+@if $navbar__primary-palette {
+    @include navbar-color-variation($primary__palette);
 }
-//  Navbar Inverse
-.navbar-inverse-dark {
-    @include navbar-solid-color-variant($inverse__color--dark);
+@if $navbar__neutral-palette {
+    @include navbar-color-variation($neutral__palette);
 }
-.navbar-inverse {
-    @include navbar-solid-color-variant($inverse__color);
+@if $navbar__state-palette {
+    @include navbar-color-variation($state__palette);
 }
-.navbar-inverse-light {
-    @include navbar-solid-color-variant($inverse__color--light);
-}
-//  Navbar Inverse
-.navbar-neutral-dark {
-    @include navbar-solid-color-variant($neutral__color--dark);
-}
-.navbar-neutral {
-    @include navbar-solid-color-variant($neutral__color);
-}
-.navbar-neutral-light {
-    @include navbar-solid-color-variant($neutral__color--light);
-}
-//  Navbar Default
-.navbar-default {
-    @include navbar-solid-color-variant($default__color);
-}
+//  //  Navbar Primary
+//  .navbar-primary {
+//      @include navbar-solid-color-variant($primary__color);
+//  }
+//  //  Navbar Accent
+//  .navbar-accent {
+//      @include navbar-solid-color-variant($accent__color);
+//  }
+//  //  Navbar Inverse
+//  .navbar-inverse-dark {
+//      @include navbar-solid-color-variant($inverse__color--dark);
+//  }
+//  .navbar-inverse {
+//      @include navbar-solid-color-variant($inverse__color);
+//  }
+//  .navbar-inverse-light {
+//      @include navbar-solid-color-variant($inverse__color--light);
+//  }
+//  //  Navbar Inverse
+//  .navbar-neutral-dark {
+//      @include navbar-solid-color-variant($neutral__color--dark);
+//  }
+//  .navbar-neutral {
+//      @include navbar-solid-color-variant($neutral__color);
+//  }
+//  .navbar-neutral-light {
+//      @include navbar-solid-color-variant($neutral__color--light);
+//  }
+//  //  Navbar Default
+//  .navbar-default {
+//      @include navbar-solid-color-variant($default__color);
+//  }
 //  Navbar Dealeron
 .navbar-dealeron {
     border-color: $navbar-dealeron__border;
@@ -213,8 +225,8 @@
 
 
             //  Navbar-sidebar-Wrapper Dropdown-Menu
-            .dropdown-toggle,
-            .dropdown-menu {
+            .dropdown-toggle {
+            //  .dropdown-menu {
                 position: relative;
                 &:after {
                     content: "";
