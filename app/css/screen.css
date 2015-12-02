@@ -6580,6 +6580,11 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
   background-color: #c34b47;
 }
 
+.hero-lg {
+  padding-top: 8.4em;
+  padding-bottom: 8.4em;
+}
+
 .input-group {
   position: relative;
   display: table;
@@ -10474,7 +10479,6 @@ a.thumbnail.active {
 
 .demo__body {
   position: relative;
-  margin-top: 3em;
   margin-bottom: 9em;
   padding-top: 3em;
 }
@@ -10496,6 +10500,10 @@ a.thumbnail.active {
   color: #b3b3b3;
   font-size: 1em;
   margin-top: 3em;
+}
+
+.demo__hero {
+  margin-bottom: 3em;
 }
 
 .demo .alert,

@@ -1,7 +1,6 @@
 .demo__body {
     position: relative;
 
-    margin-top: rhythm(2);
     margin-bottom: rhythm(6);
     padding-top: rhythm(2);
 }
@@ -21,6 +20,10 @@
     color: $gray__03;
     font-size: 1em;
     margin-top: rhythm(2);
+}
+
+.demo__hero {
+    margin-bottom: rhythm(2);
 }
 
 .demo {

@@ -10,6 +10,10 @@
 @if $hero__state-palette {
     @include hero-color-variation($state__palette);
 }
+.hero-lg {
+    padding-top: $hero__padding__y * 2;
+    padding-bottom: $hero__padding__y * 2;
+}
 //  .hero-default {
 //      @include hero-variant($hero--default__bg);
 //  }
