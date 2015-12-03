@@ -41,6 +41,12 @@
             display: block;
         }
 
+        .navbar-header .navbar-brand {
+            border-top-right-radius: $navbar__radius;
+            border-top-left-radius: $navbar__radius;
+        }
+
+
         .navbar-nav > .dropdown:last-child > .dropdown-menu {
             border-bottom-right-radius: $navbar__radius;
             border-bottom-left-radius: $navbar__radius;

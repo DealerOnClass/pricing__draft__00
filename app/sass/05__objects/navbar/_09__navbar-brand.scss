@@ -3,13 +3,12 @@
 
     padding: $navbar-brand__padding;
 
-    border-top-left-radius: $navbar__radius;
-    border-bottom-left-radius: $navbar__radius;
-
     @media (min-width: $grid-float-breakpoint) {
         .navbar > .container &,
         .navbar > .container-fluid & {
-            margin-left: $navbar-brand__margin-left;
+            margin-left: $navbar__x * -1;
+            border-top-left-radius: $navbar__radius;
+            border-bottom-left-radius: $navbar__radius;
         }
     }
 }

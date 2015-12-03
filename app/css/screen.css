@@ -7720,6 +7720,10 @@ button.list-group-item {
   .navbar-vertical .navbar-brand {
     display: block;
   }
+  .navbar-vertical .navbar-header .navbar-brand {
+    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+  }
   .navbar-vertical .navbar-nav > .dropdown:last-child > .dropdown-menu {
     border-bottom-right-radius: 0.3em;
     border-bottom-left-radius: 0.3em;
@@ -7906,12 +7910,12 @@ button.list-group-item {
 .navbar-brand {
   float: left;
   padding: 0.9em 0.9em;
-  border-top-left-radius: 0.3em;
-  border-bottom-left-radius: 0.3em;
 }
 @media (min-width: 480px) {
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -0.9em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
   }
 }
 
