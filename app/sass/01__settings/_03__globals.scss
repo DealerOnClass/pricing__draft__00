@@ -8,12 +8,12 @@ $raw__radius:      .2 !default;
 $raw__x:           .6 !default;
 $raw__y:           .4 !default;
 //  General Spacers
-$global__radius:           rhythm($raw__radius) !default;     //  rhythm(.2)
-$global__x:                rhythm($raw__x) !default;     //  rhythm(.5)
-$global__y:                rhythm($raw__y) !default;     //  rhythm(.5)
-$global__gutter:           30px !default;           //  30px
-$global__contrast:         10% !default;             //  default 5%;
-//  Pixel Units
+$global__radius:           rhythm($raw__radius) !default;
+$global__x:                rhythm($raw__x) !default;
+$global__y:                rhythm($raw__y) !default;
+$global__gutter:           30px !default;
+$global__contrast:         10% !default;
+//  Pixel Units            //   Equivalent to pixels in unit "$base__font-unit"
 $one__pixel:               $base__font-unit / $master__font-size;
 $two__pixels:              $one__pixel * 2;
 $three__pixels:            $one__pixel * 3;
@@ -23,7 +23,7 @@ $six__pixels:              $one__pixel * 6;
 $eight__pixels:            $one__pixel * 8;
 $nine__pixels:             $one__pixel * 9;
 $twelve__pixels:           $one__pixel * 12;
-//  True Pixel Units
+//  True Pixel Units       //   Consistent across all device screens
 $one__true__pixel:         1px;
 $two__true__pixels:        $one__true__pixel * 2;
 $three__true__pixels:      $one__true__pixel * 3;

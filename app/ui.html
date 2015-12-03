@@ -2037,6 +2037,10 @@
                 <div class="row">
                     <div class="col-md-2 col-sm-3 col-xs-4 col-xxs-6"><div class="box bg-default">.bg-default</div></div>
                 </div>
+                <h3 class="demo__heading">Inverse Palette</h3>
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-4 col-xxs-6"><div class="box bg-inverse">.bg-inverse</div></div>
+                </div>
                 <h3 class="demo__heading">Primary Palette</h3>
                 <div class="row">
                     <div class="col-md-2 col-sm-3 col-xs-4 col-xxs-6"><div class="box bg-cta">.bg-cta</div></div>
@@ -3055,10 +3059,10 @@
                     </div>
                 </div>
             </div>
-            <div class="hero text-center">
+            <div class="hero text-right">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-offset-3 col-sm-6">
+                        <div class="col-sm-offset-6 col-sm-6">
                             <h1>Hello, World!</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                             <a class="btn btn-rounded" href="#">Learn more</a>
@@ -4580,8 +4584,8 @@
                 </div>
             </section>
             <section id="ui__navbar-brandimage">
-                <h3>Brand image</h3>
-                <nav class="navbar navbar-default">
+                <h3 class="demo__heading">Brand image</h3>
+                <nav class="navbar">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="#">
@@ -4592,8 +4596,8 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Forms</h3>
-                <nav class="navbar navbar-default">
+                <h3 class="demo__heading">Forms</h3>
+                <nav class="navbar">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-15">
@@ -4614,8 +4618,8 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Text</h3>
-                <nav class="navbar navbar-default">
+                <h3 class="demo__heading">Text</h3>
+                <nav class="navbar">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-16">
@@ -4631,8 +4635,8 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Non-nav links</h3>
-                <nav class="navbar navbar-default">
+                <h3 class="demo__heading">Non-nav links</h3>
+                <nav class="navbar">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-17">
@@ -4649,8 +4653,8 @@
                 </nav>
             </section>
             <section class="demo__section">
-                <h3>Static Top</h3>
-                <nav class="navbar navbar-default navbar-static-top">
+                <h3 class="demo__heading">Static Top</h3>
+                <nav class="navbar navbar-static-top">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-priority">
                             <span class="sr-only">Toggle navigation</span>
@@ -4675,9 +4679,9 @@
                     </div>
                 </nav>
             </section>
-            <h3>Full Width <small>Wrap "navbar" children with "container". Done.</small></h3>
+            <h3 class="demo__heading">Full Width <small>Wrap "navbar" children with "container". Done.</small></h3>
             <section class="demo__section">
-                <nav class="navbar navbar-default navbar-static-top">
+                <nav class="navbar navbar-static-top">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-18">
                             <span class="sr-only">Toggle navigation</span>
@@ -4714,47 +4718,13 @@
             <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Tabs</h3>
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Messages</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>Pills</h3>
-                        <ul class="nav nav-pills">
-                            <li class="active"><a href="#">Home<span class="badge">42</span></a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Messages</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3>Tabs Disabled</h3>
+                        <h3 class="demo__heading">Tabs</h3>
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
                             <li class="disabled"><a href="#">Messages</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>Pills Disabled</h3>
-                        <ul class="nav nav-pills">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3>Tabs with dropdowns</h3>
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -4762,17 +4732,17 @@
                                     <li><a href="#">Another action</a></li>
                                     <li><a href="#">Something else here</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Separated link</a>
-                                    </li>
+                                    <li><a href="#">Separated link</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Pills with dropdowns</h3>
+                        <h3 class="demo__heading">Pills</h3>
                         <ul class="nav nav-pills">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
+                            <li class="disabled"><a href="#">Messages</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -4790,7 +4760,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Tabs Justified</h3>
+                        <h3 class="demo__heading">Tabs Justified</h3>
                         <ul class="nav nav-tabs nav-justified">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
@@ -4798,7 +4768,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Pills Justified</h3>
+                        <h3 class="demo__heading">Pills Justified</h3>
                         <ul class="nav nav-pills nav-justified">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
@@ -4808,7 +4778,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Tabs Stacked</h3>
+                        <h3 class="demo__heading">Tabs Stacked</h3>
                         <ul class="nav nav-tabs nav-stacked">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
@@ -4816,7 +4786,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-6">
-                        <h3>Pills Stacked</h3>
+                        <h3 class="demo__heading">Pills Stacked</h3>
                         <ul class="nav nav-pills nav-stacked">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>

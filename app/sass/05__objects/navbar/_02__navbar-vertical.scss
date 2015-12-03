@@ -77,9 +77,21 @@
         &.collapsing {
             height: auto;
         }
-        //  Nested Links
+        .dropdown-item > a,
         > li > a {
             padding-left: $global__x * 2;
         }
+        .dropdown-item,
+        > li {
+            &:first-child > a,
+            &:last-child > a {
+                border-radius: 0;
+            }
+        }
+    }
+    .navbar-nav {
+        border-bottom-right-radius: $navbar__radius * 1.5;
+        border-bottom-left-radius: $navbar__radius;
+        overflow:hidden;
     }
 }

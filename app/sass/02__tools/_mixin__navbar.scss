@@ -6,6 +6,8 @@
                 border-color: $color;
                 background-color: $color;
 
+                border: 0 none;     // Temp remove later
+
                 .navbar-brand,
                 .navbar-link,
                 .navbar-toggle,
@@ -37,6 +39,11 @@
 
                 .navbar-nav .dropdown-menu {
                     border-color: shade($color, $navbar__contrast);
+                    background-color: shade($color, $navbar__contrast);
+
+                    border: 0 none;     // Temp remove later
+
+                    > .dropdown-item > a,
                     > li > a {
                         color: check-color($color, 80, inherit, $white);
                         border-color: shade($color, $navbar__contrast);
@@ -56,6 +63,7 @@
                 &.navbar-vertical,
                 &.navbar-sidebar {
                     .navbar-nav .dropdown-menu {
+                        > .dropdown-item > a,
                         > li > a {
                             color: check-color($color, 80, inherit, $white);
                             border-color: shade($color, $navbar__contrast * 2);

@@ -16,10 +16,13 @@
             border: 0;
             background-color: transparent;
             box-shadow: none;
-            //  > li > a,
-            //  .dropdown-header {
-            //      padding: 5px 15px 5px 25px;
-            //  }
+        }
+    }
+
+    .dropdown-menu .dropdown-item,
+    .dropdown-menu > li {
+        &:first-child > a {
+            border-radius: 0;
         }
     }
 

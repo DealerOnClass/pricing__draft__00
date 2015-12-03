@@ -6,9 +6,12 @@
                 border-color: $color;
                 background-color: $color;
 
+                border: 0 none;     //  Temp remove later
+
                 @if $breadcrumb__link--hover__bg {
                     .breadcrumb-link,
                     > li > a {
+
                         @include state {
                             background-color: shade($color, $breadcrumb__contrast);
                         }

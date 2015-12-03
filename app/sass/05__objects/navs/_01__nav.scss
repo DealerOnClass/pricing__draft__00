@@ -22,7 +22,7 @@
             @extend %is-relative-block;
             &:hover,
             &:focus {
-                background-color: $nav__link--hover__bg;
+                //background-color: $nav__link--hover__bg;
             }
         }
     }
@@ -47,8 +47,8 @@
         &,
         &:hover,
         &:focus {
-            border-color: $nav__link--hover__border;
-            background-color: $nav__link--hover__bg;
+            //  border-color: $nav__link--hover__border;
+            //  background-color: $nav__link--hover__bg;
         }
     }
 
