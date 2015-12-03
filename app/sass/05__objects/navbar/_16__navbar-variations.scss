@@ -46,290 +46,290 @@
 //      @include navbar-solid-color-variant($default__color);
 //  }
 //  Navbar Dealeron
-.navbar-dealeron {
-    border-color: $navbar-dealeron__border;
-    background-color: $navbar-dealeron__bg;
-
-    .navbar-brand {
-        color: $navbar-dealeron-brand__color;
-
-        &:hover,
-        &:focus {
-            color: $navbar-dealeron-brand--hover__color;
-            background-color: $navbar-dealeron-brand--hover__bg;
-        }
-    }
-
-    .navbar-text {
-        color: $navbar-dealeron__color;
-    }
-
-    .navbar-nav {
-        > li > a {
-            color: $navbar-dealeron__link__color;
-
-            &:hover,
-            &:focus {
-                color: $navbar-dealeron__link--hover__color;
-                background-color: $navbar-dealeron__link--hover__bg;
-            }
-        }
-
-        > .active > a {
-            &,
-            &:hover,
-            &:focus {
-                color: $navbar-dealeron__link--active__color;
-                background-color: $navbar-dealeron__link--active__bg;
-            }
-        }
-
-        > .disabled > a {
-            &,
-            &:hover,
-            &:focus {
-                color: $navbar-dealeron__link--disabled__color;
-                background-color: $navbar-dealeron__link--disabled__bg;
-            }
-        }
-    }
-
-    .navbar-toggle {
-        border-color: $navbar-dealeron-toggle__border;
-        &:hover,
-        &:focus {
-            background-color: $navbar-dealeron-toggle--hover__bg;
-        }
-
-    }
-
-    .icon-bar {
-        background-color: $navbar-dealeron-toggle-icon-bar__bg;
-    }
-
-    .navbar-collapse,
-    .navbar-form {
-        border-color: $navbar-dealeron__border;
-    }
-
-    .navbar-nav {
-        > .open > a {
-            &,
-            &:hover,
-            &:focus {
-                color: $navbar-dealeron__link--active__color;
-                background-color: $navbar-dealeron__link--active__bg;
-            }
-        }
-
-        @media (max-width: $grid-float-breakpoint-max) {
-            .open .dropdown-menu {
-                > li > a {
-                    color: $navbar-dealeron__link__color;
-                    &:hover,
-                    &:focus {
-                        color: $navbar-dealeron__link--hover__color;
-                        background-color: $navbar-dealeron__link--hover__bg;
-                    }
-                }
-                > .active > a {
-                    &,
-                    &:hover,
-                    &:focus {
-                        color: $navbar-dealeron__link--active__color;
-                        background-color: $navbar-dealeron__link--active__bg;
-                    }
-                }
-                > .disabled > a {
-                    &,
-                    &:hover,
-                    &:focus {
-                        color: $navbar-dealeron__link--disabled__color;
-                        background-color: $navbar-dealeron__link--disabled__bg;
-                    }
-                }
-            }
-        }
-    }
-
-    .navbar-link {
-        color: $navbar-dealeron__link__color;
-        &:hover {
-            color: $navbar-dealeron__link--hover__color;
-        }
-    }
-
-    .btn-link {
-        color: $navbar-dealeron__link__color;
-        &:hover,
-        &:focus {
-            color: $navbar-dealeron__link--hover__color;
-        }
-        &[disabled],
-        fieldset[disabled] & {
-            &:hover,
-            &:focus {
-                color: $navbar-dealeron__link--disabled__color;
-            }
-        }
-    }
-
-    //  Dropdown-Menu
-    @if $navbar-dealeron__has__dropdown {
-        .dropdown-menu {
-            border-color:$navbar-dealeron__dropdown-menu__border;
-            background-color: $navbar-dealeron__dropdown-menu__bg;
-
-            .dropdown-item,
-            > li > a {
-                color: $navbar-dealeron__dropdown-menu__link__color;
-
-                &:hover,
-                &:focus {
-                    color: $navbar-dealeron__dropdown-menu__link--hover__color;
-                    background-color: $navbar-dealeron__dropdown-menu__link--hover__bg;
-                }
-            }
-            .dropdown-item.active,
-            .active > a {
-                &,
-                &:hover,
-                &:focus {
-                    color: $navbar-dealeron__dropdown-menu__link--active__color;
-                    background-color: $navbar-dealeron__dropdown-menu__link--active__bg;
-                }
-            }
-            .dropdown-item.disabled,
-            .disabled > a {
-                &,
-                &:hover,
-                &:focus {
-                    color: $navbar-dealeron__dropdown-menu__link--disabled__color;
-                }
-            }
-        }
-
-        .dropdown-divider,
-        .dropdown-menu .divier {
-            @include nav-divider($navbar-dealeron__dropdown-menu__divider__bg);
-        }
-    }
-
-    //  Navbar-Vertical-Wrapper
-    @if $navbar-dealeron__has__sidebar {
-        &.navbar-sidebar {
-            background-color: $navbar-dealeron-sidebar__bg;
-        }
-
-        .navbar-sidebar-wrapper {
-
-            border-color: $navbar-dealeron-sidebar__border;
-            //  background-color: $navbar-dealeron-sidebar__bg;
-
-
-            //  Navbar-sidebar-Wrapper Dropdown-Menu
-            .dropdown-toggle {
-            //  .dropdown-menu {
-                position: relative;
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: $two__pixels;
-                    height: 100%;
-                    background-color: $navbar-dealeron-sidebar__link--active__bar;
-                }
-            }
-
-            .dropdown-toggle.collapsed {
-                &:after {
-                    display: none;
-                }
-            }
-
-            .dropdown-menu {
-                border-color:$navbar-dealeron-sidebar__dropdown-menu__border;
-                background-color: $navbar-dealeron-sidebar__dropdown-menu__bg;
-
-                > li > a {
-                    color: $navbar-dealeron-sidebar__dropdown-menu__link__color;
-
-                    &:hover,
-                    &:focus {
-                        color: $navbar-dealeron-sidebar__dropdown-menu__link--hover__color;
-                        background-color: $navbar-dealeron-sidebar__dropdown-menu__link--hover__bg;
-                    }
-                }
-                .active > a {
-                    &,
-                    &:hover,
-                    &:focus {
-                        color: $navbar-dealeron-sidebar__dropdown-menu__link--active__color;
-                        background-color: $navbar-dealeron-sidebar__dropdown-menu__link--active__bg;
-                    }
-                }
-                .disabled > a {
-                    &,
-                    &:hover,
-                    &:focus {
-                        color: $navbar-dealeron-sidebar__dropdown-menu__link--disabled__color;
-                    }
-                }
-            }
-
-            .dropdown-divider,
-            .dropdown-menu .divier {
-                @include nav-divider($navbar-dealeron__dropdown-menu__divider__bg);
-            }
-
-            .navbar-sidebar-body {
-                color: $navbar-dealeron-sidebar__color;
-
-                .navbar-nav {
-                    > li > a {
-                        color: $navbar-dealeron-sidebar__link__color;
-
-                        &:hover,
-                        &:focus {
-                            color: $navbar-dealeron-sidebar__link--hover__color;
-                            background-color: $navbar-dealeron-sidebar__link--hover__bg;
-                        }
-                    }
-
-                    > .active > a {
-                        &,
-                        &:hover,
-                        &:focus {
-                            color: $navbar-dealeron-sidebar__link--active__color;
-                            background-color: $navbar-dealeron-sidebar__link--active__bg;
-                        }
-                   }
-
-                   > .active,
-                   > .active.dropdown {
-                        position: relative;
-                        &:after {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: $two__pixels;
-                            height: 100%;
-                            background-color: $navbar-dealeron-sidebar__link--active__bar;
-                        }
-                    }
-
-                    > .disabled > a {
-                        &,
-                        &:hover,
-                        &:focus {
-                            color: $navbar-dealeron-sidebar__link--disabled__color;
-                            background-color: $navbar-dealeron-sidebar__link--disabled__color;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//  .navbar-dealeron {
+//      border-color: $navbar-dealeron__border;
+//      background-color: $navbar-dealeron__bg;
+//
+//      .navbar-brand {
+//          color: $navbar-dealeron-brand__color;
+//
+//          &:hover,
+//          &:focus {
+//              color: $navbar-dealeron-brand--hover__color;
+//              background-color: $navbar-dealeron-brand--hover__bg;
+//          }
+//      }
+//
+//      .navbar-text {
+//          color: $navbar-dealeron__color;
+//      }
+//
+//      .navbar-nav {
+//          > li > a {
+//              color: $navbar-dealeron__link__color;
+//
+//              &:hover,
+//              &:focus {
+//                  color: $navbar-dealeron__link--hover__color;
+//                  background-color: $navbar-dealeron__link--hover__bg;
+//              }
+//          }
+//
+//          > .active > a {
+//              &,
+//              &:hover,
+//              &:focus {
+//                  color: $navbar-dealeron__link--active__color;
+//                  background-color: $navbar-dealeron__link--active__bg;
+//              }
+//          }
+//
+//          > .disabled > a {
+//              &,
+//              &:hover,
+//              &:focus {
+//                  color: $navbar-dealeron__link--disabled__color;
+//                  background-color: $navbar-dealeron__link--disabled__bg;
+//              }
+//          }
+//      }
+//
+//      .navbar-toggle {
+//          border-color: $navbar-dealeron-toggle__border;
+//          &:hover,
+//          &:focus {
+//              background-color: $navbar-dealeron-toggle--hover__bg;
+//          }
+//
+//      }
+//
+//      .icon-bar {
+//          background-color: $navbar-dealeron-toggle-icon-bar__bg;
+//      }
+//
+//      .navbar-collapse,
+//      .navbar-form {
+//          border-color: $navbar-dealeron__border;
+//      }
+//
+//      .navbar-nav {
+//          > .open > a {
+//              &,
+//              &:hover,
+//              &:focus {
+//                  color: $navbar-dealeron__link--active__color;
+//                  background-color: $navbar-dealeron__link--active__bg;
+//              }
+//          }
+//
+//          @media (max-width: $grid-float-breakpoint-max) {
+//              .open .dropdown-menu {
+//                  > li > a {
+//                      color: $navbar-dealeron__link__color;
+//                      &:hover,
+//                      &:focus {
+//                          color: $navbar-dealeron__link--hover__color;
+//                          background-color: $navbar-dealeron__link--hover__bg;
+//                      }
+//                  }
+//                  > .active > a {
+//                      &,
+//                      &:hover,
+//                      &:focus {
+//                          color: $navbar-dealeron__link--active__color;
+//                          background-color: $navbar-dealeron__link--active__bg;
+//                      }
+//                  }
+//                  > .disabled > a {
+//                      &,
+//                      &:hover,
+//                      &:focus {
+//                          color: $navbar-dealeron__link--disabled__color;
+//                          background-color: $navbar-dealeron__link--disabled__bg;
+//                      }
+//                  }
+//              }
+//          }
+//      }
+//
+//      .navbar-link {
+//          color: $navbar-dealeron__link__color;
+//          &:hover {
+//              color: $navbar-dealeron__link--hover__color;
+//          }
+//      }
+//
+//      .btn-link {
+//          color: $navbar-dealeron__link__color;
+//          &:hover,
+//          &:focus {
+//              color: $navbar-dealeron__link--hover__color;
+//          }
+//          &[disabled],
+//          fieldset[disabled] & {
+//              &:hover,
+//              &:focus {
+//                  color: $navbar-dealeron__link--disabled__color;
+//              }
+//          }
+//      }
+//
+//      //  Dropdown-Menu
+//      @if $navbar-dealeron__has__dropdown {
+//          .dropdown-menu {
+//              border-color:$navbar-dealeron__dropdown-menu__border;
+//              background-color: $navbar-dealeron__dropdown-menu__bg;
+//
+//              .dropdown-item,
+//              > li > a {
+//                  color: $navbar-dealeron__dropdown-menu__link__color;
+//
+//                  &:hover,
+//                  &:focus {
+//                      color: $navbar-dealeron__dropdown-menu__link--hover__color;
+//                      background-color: $navbar-dealeron__dropdown-menu__link--hover__bg;
+//                  }
+//              }
+//              .dropdown-item.active,
+//              .active > a {
+//                  &,
+//                  &:hover,
+//                  &:focus {
+//                      color: $navbar-dealeron__dropdown-menu__link--active__color;
+//                      background-color: $navbar-dealeron__dropdown-menu__link--active__bg;
+//                  }
+//              }
+//              .dropdown-item.disabled,
+//              .disabled > a {
+//                  &,
+//                  &:hover,
+//                  &:focus {
+//                      color: $navbar-dealeron__dropdown-menu__link--disabled__color;
+//                  }
+//              }
+//          }
+//
+//          .dropdown-divider,
+//          .dropdown-menu .divier {
+//              @include nav-divider($navbar-dealeron__dropdown-menu__divider__bg);
+//          }
+//      }
+//
+//      //  Navbar-Vertical-Wrapper
+//      @if $navbar-dealeron__has__sidebar {
+//          &.navbar-sidebar {
+//              background-color: $navbar-dealeron-sidebar__bg;
+//          }
+//
+//          .navbar-sidebar-wrapper {
+//
+//              border-color: $navbar-dealeron-sidebar__border;
+//              //  background-color: $navbar-dealeron-sidebar__bg;
+//
+//
+//              //  Navbar-sidebar-Wrapper Dropdown-Menu
+//              .dropdown-toggle {
+//              //  .dropdown-menu {
+//                  position: relative;
+//                  &:after {
+//                      content: "";
+//                      position: absolute;
+//                      top: 0;
+//                      left: 0;
+//                      width: $two__pixels;
+//                      height: 100%;
+//                      background-color: $navbar-dealeron-sidebar__link--active__bar;
+//                  }
+//              }
+//
+//              .dropdown-toggle.collapsed {
+//                  &:after {
+//                      display: none;
+//                  }
+//              }
+//
+//              .dropdown-menu {
+//                  border-color:$navbar-dealeron-sidebar__dropdown-menu__border;
+//                  background-color: $navbar-dealeron-sidebar__dropdown-menu__bg;
+//
+//                  > li > a {
+//                      color: $navbar-dealeron-sidebar__dropdown-menu__link__color;
+//
+//                      &:hover,
+//                      &:focus {
+//                          color: $navbar-dealeron-sidebar__dropdown-menu__link--hover__color;
+//                          background-color: $navbar-dealeron-sidebar__dropdown-menu__link--hover__bg;
+//                      }
+//                  }
+//                  .active > a {
+//                      &,
+//                      &:hover,
+//                      &:focus {
+//                          color: $navbar-dealeron-sidebar__dropdown-menu__link--active__color;
+//                          background-color: $navbar-dealeron-sidebar__dropdown-menu__link--active__bg;
+//                      }
+//                  }
+//                  .disabled > a {
+//                      &,
+//                      &:hover,
+//                      &:focus {
+//                          color: $navbar-dealeron-sidebar__dropdown-menu__link--disabled__color;
+//                      }
+//                  }
+//              }
+//
+//              .dropdown-divider,
+//              .dropdown-menu .divier {
+//                  @include nav-divider($navbar-dealeron__dropdown-menu__divider__bg);
+//              }
+//
+//              .navbar-sidebar-body {
+//                  color: $navbar-dealeron-sidebar__color;
+//
+//                  .navbar-nav {
+//                      > li > a {
+//                          color: $navbar-dealeron-sidebar__link__color;
+//
+//                          &:hover,
+//                          &:focus {
+//                              color: $navbar-dealeron-sidebar__link--hover__color;
+//                              background-color: $navbar-dealeron-sidebar__link--hover__bg;
+//                          }
+//                      }
+//
+//                      > .active > a {
+//                          &,
+//                          &:hover,
+//                          &:focus {
+//                              color: $navbar-dealeron-sidebar__link--active__color;
+//                              background-color: $navbar-dealeron-sidebar__link--active__bg;
+//                          }
+//                     }
+//
+//                     > .active,
+//                     > .active.dropdown {
+//                          position: relative;
+//                          &:after {
+//                              content: "";
+//                              position: absolute;
+//                              top: 0;
+//                              left: 0;
+//                              width: $two__pixels;
+//                              height: 100%;
+//                              background-color: $navbar-dealeron-sidebar__link--active__bar;
+//                          }
+//                      }
+//
+//                      > .disabled > a {
+//                          &,
+//                          &:hover,
+//                          &:focus {
+//                              color: $navbar-dealeron-sidebar__link--disabled__color;
+//                              background-color: $navbar-dealeron-sidebar__link--disabled__color;
+//                          }
+//                      }
+//                  }
+//              }
+//          }
+//      }
+//  }
