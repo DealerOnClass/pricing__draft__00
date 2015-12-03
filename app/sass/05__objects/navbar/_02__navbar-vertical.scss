@@ -1,61 +1,21 @@
-//  Initial Reset
-.navbar-sidebar {
-    float: left;
-
+.navbar-sidebar,
+.navbar-vertical {
     .navbar-header,
     .navbar-brand,
     .navbar-nav,
     .navbar-nav > li {
         float: none;
     }
-
     .navbar-nav > li {
         clear: both;
     }
-
     .navbar-brand {
         display: block;
     }
-
     .navbar-nav > .dropdown:last-child > .dropdown-menu {
         border-bottom-right-radius: $navbar__radius;
         border-bottom-left-radius: $navbar__radius;
     }
-}
-.navbar-vertical {
-    @media (min-width: $screen-xs-min) {
-        float: left;
-
-        .navbar-header,
-        .navbar-brand,
-        .navbar-nav,
-        .navbar-nav > li {
-            float: none;
-        }
-
-        .navbar-nav > li {
-            clear: both;
-        }
-
-        .navbar-brand {
-            display: block;
-        }
-
-        .navbar-header .navbar-brand {
-            border-top-right-radius: $navbar__radius;
-            border-top-left-radius: $navbar__radius;
-        }
-
-
-        .navbar-nav > .dropdown:last-child > .dropdown-menu {
-            border-bottom-right-radius: $navbar__radius;
-            border-bottom-left-radius: $navbar__radius;
-        }
-    }
-}
-//  Dropdown-Menu Reset
-.navbar-sidebar,
-.navbar-vertical {
     .caret {
         float: right;
     }
@@ -77,21 +37,47 @@
         &.collapsing {
             height: auto;
         }
-        .dropdown-item > a,
-        > li > a {
-            padding-left: $global__x * 2;
-        }
-        .dropdown-item,
         > li {
+            > a {
+                padding-left: $global__x * 2;
+            }
             &:first-child > a,
             &:last-child > a {
                 border-radius: 0;
             }
         }
     }
+
+    .navbar-nav > li.active > a,
+    .dropdown-menu > li.active > a {
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: $two__true__pixels;
+            height: 100%;
+            background-color: tint(saturate($primary__color, $global__contrast * 2), $global__contrast);
+        }
+    }
+
+}
+.navbar-sidebar {
+    float: left;
+}
+.navbar-vertical {
+    @media (min-width: $screen-xs-min) {
+        float: left;
+    }
     .navbar-nav {
+        overflow: hidden;
+
         border-bottom-right-radius: $navbar__radius * 1.5;
         border-bottom-left-radius: $navbar__radius;
-        overflow:hidden;
+    }
+    .navbar-header .navbar-brand {
+        border-top-left-radius: $navbar__radius;
+        border-top-right-radius: $navbar__radius;
     }
 }

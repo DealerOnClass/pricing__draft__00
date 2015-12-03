@@ -42,9 +42,9 @@
         }
     }
 
-    .dropdown-item,
     > li {
         > a {
+            position: relative;
             display: block;
             clear: both;
 
@@ -57,20 +57,12 @@
             border-top-right-radius: $dropdown-menu__radius;
             border-top-left-radius: $dropdown-menu__radius;
         }
+
         &:last-child > a {
             border-bottom-right-radius: $dropdown-menu__radius;
             border-bottom-left-radius: $dropdown-menu__radius;
         }
     }
-    //  .dropdown-item.active,
-    //  .active > a {
-    //      &,
-    //      &:hover,
-    //      &:focus {
-    //          color: $dropdown-menu__link--active__color;
-    //          background-color: $dropdown-menu__link--active__bg;
-    //      }
-    //  }
     //  .dropdown-item.disabled,
     //  .disabled > a {
     //      &,

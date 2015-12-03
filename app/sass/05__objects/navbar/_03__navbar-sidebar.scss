@@ -1,4 +1,4 @@
-$navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rhythm(1) + $one__pixel;
+$navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rhythm(1);
 
 .navbar-sidebar {
     position: fixed;
@@ -19,28 +19,41 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
     overflow-y: scroll;
 
     box-sizing: border-box;
-    //  NOTE: Interpolation is awesome
+
     height: calc( 100% - #{$navbar-sidebar-collapse-unit});
+    border-top: $one__true__pixel solid;
 }
 
 .navbar-sidebar-wrapper {
     width: 18em;    //  ** Required
 }
 
-.navbar-sidebar-body {
+.navbar-sidebar-header,
+.navbar-sidebar-body,
+.navbar-sidebar-footer {
     padding-right: $navbar__x;
     padding-left: $navbar__x;
-
-    color: $navbar-dealeron-sidebar__color;
 }
 
-.navbar-sidebar {
-    .navbar-nav {
-        margin-right: $navbar__x * -1;
-        margin-left: $navbar__x * -1;
-        margin-bottom: rhythm(2);
-    }
+.navbar-sidebar-header,
+.navbar-sidebar-footer {
+    padding-top: $navbar__y * 1.5;
+    padding-bottom: $navbar__y * 1.5;
 }
+
+.navbar-sidebar-header {
+    border-bottom: $one__true__pixel solid;
+}
+
+.navbar-sidebar-body .navbar-nav {
+    margin-right: $navbar__x * -1;
+    margin-left: $navbar__x * -1;
+}
+
+.navbar-sidebar-footer {
+    border-top: $one__true__pixel solid;
+}
+
 
 .offcanvas-nav {
     position: relative;

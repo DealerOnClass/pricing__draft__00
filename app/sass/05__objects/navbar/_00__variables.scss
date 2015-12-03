@@ -3,8 +3,6 @@ $navbar__contrast:                     $global__contrast * 1.5;
 $navbar__radius:                       $global__radius;
 $navbar__x:                            $global__x;
 $navbar__y:                            $global__y * 1.5;
-//  General Options
-$navbar__solid-color:                  true !default;  //  Use palette color for bg and border
 //  Color Options
 $navbar__default-palette:              true !default;
 $navbar__inverse-palette:              true !default;
@@ -32,64 +30,3 @@ $navbar-text__vertical-padding:        $navbar__y;
 $navbar-text__horizontal-margin:       $navbar__x;
 //  Variations
 $navbar-right__padding:                $navbar__x;
-
-
-//  Options
-$navbar-dealeron__has__sidebar:           true !default;
-$navbar-dealeron__has__dropdown:          true !default;
-//  Navbar-Dealeron
-$navbar-dealeron__bg:                     $accent__color;
-$navbar-dealeron__border:                 $accent__color;
-$navbar-dealeron__color:                  white;
-//  Navbar-Dealeron-Brand
-$navbar-dealeron-brand__color:            $navbar-dealeron__color;
-$navbar-dealeron-brand--hover__bg:        shade($navbar-dealeron__bg, 10%);
-$navbar-dealeron-brand--hover__color:     $navbar-dealeron__color;
-//  Navbar-Dealeron-Toggle
-$navbar-dealeron-toggle__border:          shade($navbar-dealeron__bg, 10%);
-$navbar-dealeron-toggle--hover__bg:       shade($navbar-dealeron__bg, 10%);
-$navbar-dealeron-toggle-icon-bar__bg:     $navbar-dealeron__color;
-//  Navbar-Dealeron Link
-$navbar-dealeron__link__color:            $navbar-dealeron__color;
-$navbar-dealeron__link--hover__bg:        shade($navbar-dealeron__bg, 10%);
-$navbar-dealeron__link--hover__color:     $navbar-dealeron__color;
-$navbar-dealeron__link--active__bg:       shade($navbar-dealeron__bg, 10%);
-$navbar-dealeron__link--active__color:    $navbar-dealeron__color;
-$navbar-dealeron__link--disabled__bg:     shade($navbar-dealeron__bg, 2.5%);
-$navbar-dealeron__link--disabled__color:  $navbar-dealeron__color;
-//  Navbar-Dealeron Dropdown-Menu
-$navbar-dealeron__dropdown-menu__border:                 $gray__02;
-$navbar-dealeron__dropdown-menu__bg:                     $gray__01;
-$navbar-dealeron__dropdown-menu__link__color:            $body__color;
-$navbar-dealeron__dropdown-menu__link--hover__color:     $body__color;
-$navbar-dealeron__dropdown-menu__link--hover__bg:        shade($navbar-dealeron__dropdown-menu__bg, 10%);
-$navbar-dealeron__dropdown-menu__link--active__color:    $body__color;
-$navbar-dealeron__dropdown-menu__link--active__bg:       shade($navbar-dealeron__dropdown-menu__bg, 10%);
-$navbar-dealeron__dropdown-menu__link--disabled__color:  $body__color;
-$navbar-dealeron__dropdown-menu__divider__bg:            shade($navbar-dealeron__dropdown-menu__bg, 10%);
-//  Navbar-Dealeron-sidebar
-$navbar-dealeron-sidebar__border:  mix($primary__color, $gray__09, 20%);
-$navbar-dealeron-sidebar__bg:      mix($primary__color, $gray__09, 20%);
-$navbar-dealeron-sidebar__color:   mix($primary__color, $gray__02, 05%);
-//  Navbar-Dealeron sidebar Link
-$navbar-dealeron-sidebar__link__color:            $navbar-dealeron-sidebar__color;
-$navbar-dealeron-sidebar__link--hover__bg:        shade($navbar-dealeron-sidebar__bg, 15%);
-$navbar-dealeron-sidebar__link--hover__color:     $navbar-dealeron-sidebar__color;
-$navbar-dealeron-sidebar__link--active__bg:       shade($navbar-dealeron-sidebar__bg, 15%);
-$navbar-dealeron-sidebar__link--active__color:    mix($primary__color, $gray__01, 05%);
-$navbar-dealeron-sidebar__link--disabled__bg:     shade($navbar-dealeron-sidebar__bg, 2.5%);
-$navbar-dealeron-sidebar__link--disabled__color:  $navbar-dealeron-sidebar__color;
-//  Navbar-Dealeron sidebar Link Active Bar
-$navbar-dealeron-sidebar__link--active__bar:      $accent__color;
-//  ** old$navbar-dealeron-sidebar__link--active__bar:      saturate(lighten($primary__color, 10%), 40%);
-
-//  Navbar-Dealeron sidebar Dropdown-Menu
-$navbar-dealeron-sidebar__dropdown-menu__border:                 $navbar-dealeron-sidebar__border;
-$navbar-dealeron-sidebar__dropdown-menu__bg:                     shade($navbar-dealeron-sidebar__bg, 30%);
-$navbar-dealeron-sidebar__dropdown-menu__link__color:            $navbar-dealeron-sidebar__color;
-$navbar-dealeron-sidebar__dropdown-menu__link--hover__color:     $navbar-dealeron-sidebar__color;
-$navbar-dealeron-sidebar__dropdown-menu__link--hover__bg:        shade($navbar-dealeron-sidebar__dropdown-menu__bg, 10%);
-$navbar-dealeron-sidebar__dropdown-menu__link--active__color:    $navbar-dealeron-sidebar__color;
-$navbar-dealeron-sidebar__dropdown-menu__link--active__bg:       shade($navbar-dealeron-sidebar__dropdown-menu__bg, 10%);
-$navbar-dealeron-sidebar__dropdown-menu__link--disabled__color:  $navbar-dealeron-sidebar__color;
-$navbar-dealeron-sidebar__dropdown-menu__divider__bg:            shade($navbar-dealeron-sidebar__dropdown-menu__bg, 10%);

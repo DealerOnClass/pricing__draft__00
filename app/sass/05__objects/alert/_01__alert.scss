@@ -4,3 +4,10 @@
     border: $one__true__pixel solid;
     border-radius: $alert__radius;
 }
+
+.alert-raw {
+    padding: 0;
+
+    border: 0 none;
+    border-radius: 0;
+}
