@@ -1,12 +1,21 @@
 .nav-justified {
+    display: table;
+
     width: 100%;
 
+    table-layout: fixed;
+    border-spacing: $two__true__pixels;
+
     > li {
+        position: relative;
+        top: $two__true__pixels;
+
+        display: table-cell;
         float: none;
 
-        > a {
-            margin-bottom: $nav-justified__link__vertical-rhythm;
+        width: 1%;
 
+        > a {
             text-align: center;
         }
     }
@@ -16,16 +25,7 @@
         left: auto;
     }
 
-    @media (min-width:$screen-sm-min) {
-        > li {
-            display: table-cell;
-
-            width: 1%;
-
-            > a {
-                margin-bottom: 0;
-            }
-        }
+    &:after {
+        display: none;
     }
 }
-

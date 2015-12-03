@@ -7,10 +7,11 @@
         }
 
         + li {
-            margin-left: $two__pixels;
+            margin-left: $two__true__pixels;
         }
 
-        &.active > a {
+        &.active > a,
+        > a.active {
             &,
             &:hover,
             &:focus {
@@ -25,4 +26,3 @@
         }
     }
 }
-

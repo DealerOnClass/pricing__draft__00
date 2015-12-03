@@ -33,21 +33,36 @@
                             background-color: shade($color, $navbar__contrast);
                         }
                     }
-                    .dropdown-menu {
+                }
+
+                .navbar-nav .dropdown-menu {
+                    border-color: shade($color, $navbar__contrast);
+                    > li > a {
+                        color: check-color($color, 80, inherit, $white);
                         border-color: shade($color, $navbar__contrast);
+                        background-color: shade($color, $navbar__contrast);
+                        @include state {
+                            background-color: shade($color, $navbar__contrast * 2);
+                        }
+                    }
+                    &:after {
+                        display: none;
+                    }
+                    .divider {
+                        border-color: shade($color, $navbar__contrast * 2);
+                    }
+                }
+
+                &.navbar-vertical,
+                &.navbar-sidebar {
+                    .navbar-nav .dropdown-menu {
                         > li > a {
                             color: check-color($color, 80, inherit, $white);
-                            border-color: shade($color, $navbar__contrast);
-                            background-color: shade($color, $navbar__contrast);
-                            @include state {
-                                background-color: shade($color, $navbar__contrast * 2);
-                            }
-                        }
-                        &:after {
-                            display: none;
-                        }
-                        .divider {
                             border-color: shade($color, $navbar__contrast * 2);
+                            background-color: shade($color, $navbar__contrast * 2);
+                            @include state {
+                                background-color: shade($color, $navbar__contrast * 3);
+                            }
                         }
                     }
                 }

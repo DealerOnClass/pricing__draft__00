@@ -14,9 +14,7 @@ $gray__09:               mix($black,$white,90%);
 $default__color:         $gray__01;
 $primary__color:         #3662ad;
 $accent__color:          #f36c0a;
-$inverse__color--dark:   mix($primary__color, $gray__07, 50%);
-$inverse__color:         mix($primary__color, $gray__05, 45%);
-$inverse__color--light:  mix($primary__color, $gray__03, 40%);
+$inverse__color:         mix($primary__color, $gray__08, 20%);
 //  States
 $state--success:         #5cb85c !default;
 $state--info:            #5bc0de !default;
@@ -25,6 +23,10 @@ $state--danger:          #d9534f !default;
 //  Palettes
 $default__palette: (
     'default':  $gray__01,
+) !default;
+
+$inverse__palette: (
+    'inverse':  $inverse__color,
 ) !default;
 
 $primary__palette: (
@@ -44,4 +46,5 @@ $state__palette: (
     'warning':    $state--warning,
     'danger':     $state--danger,
 ) !default;
+
 

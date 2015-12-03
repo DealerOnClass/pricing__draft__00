@@ -1,19 +1,17 @@
 .nav-tabs {
-    border-bottom: $one__pixel solid $nav-tabs__border;
+    border-bottom: $one__true__pixel solid;
+
     > li {
         float: left;
-
-        margin-bottom: $one__pixel * -1;
+        margin-bottom: $one__true__pixel * -1;
 
         > a {
-            margin-right: $two__pixels;
+            border-top-left-radius: $nav-tabs__radius;
+            border-top-right-radius: $nav-tabs__radius;
+        }
 
-            border: $one__pixel solid transparent;
-
-            border-radius: $nav-tabs__radius $nav-tabs__radius 0 0;
-            &:hover {
-                border-color: $nav-tabs--hover__border;
-            }
+        + li {
+            margin-left: $two__true__pixels;
         }
 
         &.active > a,
@@ -24,23 +22,9 @@
                 cursor: default;
 
                 color: $nav-tabs--active__color;
-                border: $one__pixel solid $nav-tabs--active__border;
-                border-bottom-color: transparent;
+                border-color: $nav-tabs--active__border;
                 background-color: $nav-tabs--active__bg;
             }
         }
     }
-
-    & + .tab-content {
-        margin-top: $nav__y;
-    }
-    //
-    //  Revisit
-    //
-    // pulling this in mainly for less shorthand
-    //&.nav-justified {
-    //    @extend .nav-justified;
-    //    @extend .nav-tabs-justified;
-    //}
 }
-

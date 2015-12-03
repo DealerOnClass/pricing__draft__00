@@ -1,4 +1,5 @@
 //  Units
+$nav__contrast:                         $global__contrast;
 $nav__radius:                           $global__radius;
 $nav__x:                                $global__x;
 $nav__y:                                $global__y;
@@ -10,7 +11,7 @@ $nav__link--disabled__color:            $gray__02;
 $nav__link--disabled--hover__color:     $gray__02;
 //  Nav-Tabs
 $nav-tabs__radius:                      $nav__radius;
-$nav-tabs__border:                      $gray__02;
+//$nav-tabs__border:                      $gray__02;
 $nav-tabs--hover__border:               $gray__02;
 $nav-tabs--active__color:               white;
 $nav-tabs--active__bg:                  $primary__color;
@@ -24,6 +25,6 @@ $nav-pills--primary:                    saturate($primary__color, 20%);
 $nav-justified__link__vertical-rhythm:  $nav__y;
 //  Nav-Tabs-Justified
 $nav-tabs-justified__radius:            $nav-tabs__radius;
-$nav-tabs-justified__border:            $nav-tabs__border;
-$nav-tabs-justified--active__border:    $nav-tabs__border;
+//  $nav-tabs-justified__border:            $nav-tabs__border;
+//  $nav-tabs-justified--active__border:    $nav-tabs__border;
 

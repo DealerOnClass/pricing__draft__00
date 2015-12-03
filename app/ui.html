@@ -33,7 +33,7 @@
         </nav>
 
         <!-- Main Nav - Sidebar -->
-        <nav id="navbar-main" class="navbar navbar-main navbar-sidebar">
+        <nav id="navbar-main" class="navbar navbar-inverse navbar-sidebar">
             <div id="ttest51" class="navbar-sidebar-collapse collapse width">
                 <div class="navbar-sidebar-wrapper">
                     <div class="navbar-sidebar-body">
@@ -188,10 +188,25 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="demo__heading">Default Palette</h3>
                 <div class="row">
                     <div class="col-sm-6">
+                        <h3 class="demo__heading">Default Palette</h3>
                         <div class="alert alert-default alert-dismissible">
+                            <div class="alert-icon">
+                                <i class="fa fa-bell-o fa-2x fa-fw"></i>
+                            </div>
+                            <div class="alert-body">
+                                <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Yo Son!</strong> You successfully read this important alert message.
+                                <span class="alert-disclaimer">This is disclaimer text Amet reprehenderit hic reiciendis saepe dicta omnis, quod officiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Inverse Palette</h3>
+                        <div class="alert alert-inverse alert-dismissible">
                             <div class="alert-icon">
                                 <i class="fa fa-bell-o fa-2x fa-fw"></i>
                             </div>
@@ -413,10 +428,18 @@
                     <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
                     <li class="breadcrumb-item active">Data</li>
                 </ol>
-                <h3 class="demo__heading">Default Palette</h3>
                 <div class="row">
                     <div class="col-sm-6">
+                        <h3 class="demo__heading">Default Palette</h3>
                         <ol class="breadcrumb breadcrumb-default breadcrumb-rounded">
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Inverse Palette</h3>
+                        <ol class="breadcrumb breadcrumb-inverse breadcrumb-rounded">
                             <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
                             <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Library</a></li>
                             <li class="breadcrumb-item active">Data</li>
@@ -583,6 +606,10 @@
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Default Palette</h3>
                         <button type="button" class="btn btn-default">Default</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Inverse Palette</h3>
+                        <button type="button" class="btn btn-inverse">Inverse</button>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Primary Palette</h3>
@@ -1486,10 +1513,22 @@
 
             <!--Background variants-->
             <section class="demo__section">
-                <h3 class="demo__heading">Default Palette</h3>
                 <div class="row">
                     <div class="col-sm-6">
+                        <h3 class="demo__heading">Default Palette</h3>
                         <div class="card card-default">
+                            <div class="card-block">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Inverse Palette</h3>
+                        <div class="card card-inverse">
                             <div class="card-block">
                                 <h4 class="card-title">Title</h4>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -2961,6 +3000,17 @@
                     </div>
                 </div>
             </div>
+            <div class="hero hero-inverse">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>Hello, World!</h1>
+                            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                            <a class="btn btn-rounded" href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="hero hero-alt1 text-center">
                 <div class="container">
                     <div class="row">
@@ -3005,8 +3055,18 @@
                     </div>
                 </div>
             </div>
-
             <div class="hero hero-default text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <h1>Hello, World!</h1>
+                            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                            <a class="btn btn-rounded" href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero text-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-offset-3 col-sm-6">
@@ -3309,16 +3369,16 @@
                             <a href="" class="label label-cta">New</a>
                         </h2>
                         <h3>Heading 3
-                            <a href="" class="label label-alt3">New</a>
+                            <a href="" class="label label-inverse">New</a>
                         </h3>
                         <h4>Heading 4
-                            <a href="" class="label label-alt2">New</a>
+                            <a href="" class="label label-alt3">New</a>
                         </h4>
                         <h5>Heading 5
-                            <a href="" class="label label-alt1">New</a>
+                            <a href="" class="label label-alt2">New</a>
                         </h5>
                         <h6>Heading 6
-                            <a href="" class="label label-main">New</a>
+                            <a href="" class="label label-alt1">New</a>
                         </h6>
                     </div>
                 </div>
@@ -3328,18 +3388,24 @@
                         <span class="label label-default">Default</span>
                     </div>
                     <div class="col-sm-6">
+                        <h3 class="demo__heading">Inverse Palette</h3>
+                        <span class="label label-inverse">Inverse</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
                         <h3 class="demo__heading">Color Palette</h3>
                         <span class="label label-cta">Cta</span>
                         <span class="label label-main">Main</span>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Neutral Palette</h3>
                         <span class="label label-alt3">Alt 3</span>
                         <span class="label label-alt2">Alt 2</span>
                         <span class="label label-alt1">Alt 1</span>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-6">
                         <h3 class="demo__heading">State Palette</h3>
                         <span class="label label-success">Success</span>
@@ -3426,10 +3492,19 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="demo__heading">Default Palette</h3>
                 <div class="row">
                     <div class="col-sm-6">
+                        <h3 class="demo__heading">Default Palette</h3>
                         <div class="list-group list-group-default">
+                            <a href="#" class="list-group-item active">Item 1 <span class="badge">10</span></a>
+                            <a href="#" class="list-group-item">Item 2 <span class="badge">12</span></a>
+                            <a href="#" class="list-group-item">Item 3</a>
+                            <a href="#" class="list-group-item">Item 4</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Inverse Palette</h3>
+                        <div class="list-group list-group-inverse">
                             <a href="#" class="list-group-item active">Item 1 <span class="badge">10</span></a>
                             <a href="#" class="list-group-item">Item 2 <span class="badge">12</span></a>
                             <a href="#" class="list-group-item">Item 3</a>
@@ -3929,6 +4004,51 @@
                     <!-- /.container-fluid -->
                 </nav>
             </section>
+            <h3 class="demo__heading">Inverse Palette</h3>
+            <section class="demo__section">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-navicon"></i>
+                            </button>
+                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                <li class="disabled"><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </section>
             <h3 class="demo__heading">Primary Palette</h3>
             <section class="demo__section">
                 <nav class="navbar navbar-cta">
@@ -4330,58 +4450,117 @@
             </section>
             <section class="demo__section">
                 <h3 class="demo__heading">Vertical</h3>
-                <div class="navbar-vertical-container">
-                    <nav class="navbar navbar-alt1 navbar-vertical">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-12">
-                                <span class="sr-only">Toggle navigation</span>
-                                <i class="fa fa-navicon"></i>
-                            </button>
-                            <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
-                        </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="navbar-vertical-container">
+                            <nav class="navbar navbar-inverse navbar-vertical">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-120">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <i class="fa fa-navicon"></i>
+                                    </button>
+                                    <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
+                                </div>
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-12">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#ttest1" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                    <ul id="ttest1" class="collapse dropdown-menu">
-                                        <li><a href="#">Action</a>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-120">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
                                         </li>
-                                        <li><a href="#">Another action</a>
+                                        <li class="disabled"><a href="#">Link</a>
                                         </li>
-                                        <li><a href="#">Something else here</a>
+                                        <li class="dropdown">
+                                            <a href="#ttest1010" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                            <ul id="ttest1010" class="collapse dropdown-menu">
+                                                <li><a href="#">Action</a>
+                                                </li>
+                                                <li><a href="#">Another action</a>
+                                                </li>
+                                                <li><a href="#">Something else here</a>
+                                                </li>
+                                                <li><a href="#">Separated link</a>
+                                                </li>
+                                                <li><a href="#">One more separated link</a>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#">Separated link</a>
+                                        <li><a href="#">Link</a>
                                         </li>
-                                        <li><a href="#">One more separated link</a>
+                                        <li class="dropdown">
+                                            <a href="#ttest2020" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                            <ul id="ttest2020" class="collapse dropdown-menu">
+                                                <li><a href="#">Action</a>
+                                                </li>
+                                                <li><a href="#">Another action</a>
+                                                </li>
+                                                <li><a href="#">Something else here</a>
+                                                </li>
+                                                <li><a href="#">Separated link</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </li>
-                                <li><a href="#">Link</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#ttest2" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                    <ul id="ttest2" class="collapse dropdown-menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li><a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </nav>
                         </div>
-                        <!-- /.navbar-collapse -->
-                    </nav>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="navbar-vertical-container">
+                            <nav class="navbar navbar-danger navbar-vertical">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-121">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <i class="fa fa-navicon"></i>
+                                    </button>
+                                    <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-121">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="disabled"><a href="#">Link</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#ttest100" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                            <ul id="ttest100" class="collapse dropdown-menu">
+                                                <li><a href="#">Action</a>
+                                                </li>
+                                                <li><a href="#">Another action</a>
+                                                </li>
+                                                <li><a href="#">Something else here</a>
+                                                </li>
+                                                <li><a href="#">Separated link</a>
+                                                </li>
+                                                <li><a href="#">One more separated link</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Link</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#ttest200" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                            <ul id="ttest200" class="collapse dropdown-menu">
+                                                <li><a href="#">Action</a>
+                                                </li>
+                                                <li><a href="#">Another action</a>
+                                                </li>
+                                                <li><a href="#">Something else here</a>
+                                                </li>
+                                                <li><a href="#">Separated link</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="ui__navbar-sidebar">
