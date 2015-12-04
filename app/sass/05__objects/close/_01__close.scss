@@ -1,10 +1,7 @@
 .close {
     font-family: $close__font;
 
-    color: inherit;
-
-    &:hover,
-    &:focus {
+    @include state {
         cursor: pointer;
         text-decoration: none;
     }

@@ -7,9 +7,7 @@
                         color: check-color($color, 80, inherit, $white);
                         border-color: shade($color, $btn__contrast);
                         background-color: $color;
-                        > .dropdown-item,
                         > li {
-                            > .dropdown-link,
                             > a {
                                 @include state {
                                     background-color: shade($color, $btn__contrast);
@@ -36,7 +34,6 @@
                         color: check-color($color, 80, inherit, shade($color, $btn__contrast));
                         border-color: shade($color, $btn__contrast * 1.5);
                         background-color: white;
-                        > .dropdown-item > .dropdown-link,
                         > li > a {
                             @include state(true) {
                                 color: check-color($color, 80, inherit, white);

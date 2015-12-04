@@ -1,10 +1,6 @@
 .alert-disclaimer {
     font-size: $alert-disclaimer__font-size;
 
-    display: block;
-    clear: both;
-
     margin-top: $alert__y;
-
-    color: inherit;
+    margin-bottom: 0;
 }

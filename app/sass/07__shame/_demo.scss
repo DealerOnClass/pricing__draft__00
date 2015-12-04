@@ -87,6 +87,10 @@
 
         border-radius: $global__radius;
     }
+
+    .box[class*="text-"] {
+        border: $one__true__pixel solid;
+    }
 }
 
 .demo__btn-group {

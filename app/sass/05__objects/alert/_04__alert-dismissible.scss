@@ -1,15 +1,11 @@
 .alert-dismissible {
     position: relative;
 
-    padding-right: $alert__x * 2;
+    padding-right: $alert__x * 3;
 
     .close {
         position: absolute;
         top: $alert__y / 2;
         right: $alert__x / 3;
-
-        color: inherit;
-        border: 0 none;
-        background-color: transparent;
     }
 }

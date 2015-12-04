@@ -36,9 +36,7 @@
     }
 
     .fa-chevron-left,
-    .fa-chevron-right,
-    .glyphicon-chevron-left,
-    .glyphicon-chevron-right {
+    .fa-chevron-right {
         position: absolute;
         z-index: 5;
         top: 50%;
@@ -47,14 +45,12 @@
 
         margin-top: -10px;
     }
-    .fa-chevron-left,
-    .glyphicon-chevron-left {
+    .fa-chevron-left {
         left: 50%;
 
         margin-left: -10px;
     }
-    .fa-chevron-right,
-    .glyphicon-chevron-right {
+    .fa-chevron-right {
         right: 50%;
 
         margin-right: -10px;
@@ -62,19 +58,15 @@
     @media screen and (min-width: $screen-sm-min) {
         .carousel-control {
             .fa-chevron-left,
-            .fa-chevron-right,
-            .glyphicon-chevron-left,
-            .glyphicon-chevron-right {
+            .fa-chevron-right {
                 width: 1em;
                 height: 1em;
                 margin-top: -0.5em;
             }
-            .fa-chevron-left,
-            .glyphicon-chevron-left {
+            .fa-chevron-left {
                 margin-left: -0.5em;
             }
-            .fa-chevron-right,
-            .glyphicon-chevron-right {
+            .fa-chevron-right {
                 margin-right: -0.5em;
             }
         }

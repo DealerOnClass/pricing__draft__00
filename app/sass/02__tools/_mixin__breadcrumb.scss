@@ -9,7 +9,6 @@
                 border: 0 none;     //  Temp remove later
 
                 @if $breadcrumb__link--hover__bg {
-                    .breadcrumb-link,
                     > li > a {
 
                         @include state {

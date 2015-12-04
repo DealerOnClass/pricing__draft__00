@@ -46,7 +46,8 @@
     "02__tools/mixin__tab-focus",
     "02__tools/mixin__table",
     "02__tools/mixin__text-hide",
-    "02__tools/mixin__text-overflow";
+    "02__tools/mixin__text-overflow",
+    "02__tools/mixin__text-variant";
 
 //  03  Generic
 @import
@@ -84,14 +85,12 @@
 
 //  05  Objects
 @import
-    "05__objects/alert/00__variables",
+    "05__objects/alert/00__var",
     "05__objects/alert/01__alert",
-    "05__objects/alert/02__alert-heading",
-    "05__objects/alert/03__alert-link",
-    "05__objects/alert/04__alert-disclaimer",
-    "05__objects/alert/05__alert-icon",
-    "05__objects/alert/06__alert-dismissible",
-    "05__objects/alert/07__alert-variations";
+    "05__objects/alert/02__alert-icon",
+    "05__objects/alert/03__alert-disclaimer",
+    "05__objects/alert/04__alert-dismissible",
+    "05__objects/alert/05__colors";
 
 @import
     "05__objects/badge/00__variables",
@@ -368,7 +367,8 @@
     "05__objects/utilities/images",
     "05__objects/utilities/sr",
     "05__objects/utilities/utilities",
-    "05__objects/utilities/responsive-utilities";
+    "05__objects/utilities/responsive-utilities",
+    "05__objects/utilities/text-variant";
 
 //  06  Components
 @import
