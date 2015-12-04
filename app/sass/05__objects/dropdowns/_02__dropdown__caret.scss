@@ -1,3 +1,6 @@
+.caret {
+    line-height: 1;
+}
 %caret {
     display: inline-block;
 
@@ -17,13 +20,15 @@
         .caret {
             @if $dropdown__caret__use-icon {
                 &:after {
-                    content: '#{$dropdown__caret__icon}';
                     font-family: $fa-font-name;
+
+                    content: '#{$dropdown__caret__icon}';
                 }
             } @else {
-                @extend %caret;
                 border-top: $caret__width-base solid;
                 border-bottom: $caret__width-base solid transparent;
+
+                @extend %caret;
             }
         }
     } @else {
@@ -45,13 +50,15 @@
         .caret {
             @if $dropup__caret__use-icon {
                 &:after {
-                    content: '#{$dropup__caret__icon}';
                     font-family: $fa-font-name;
+
+                    content: '#{$dropup__caret__icon}';
                 }
             } @else {
-                @extend %caret;
-                border-bottom: $caret__width-base solid;
                 border-top: $caret__width-base solid transparent;
+                border-bottom: $caret__width-base solid;
+
+                @extend %caret;
             }
         }
     } @else {

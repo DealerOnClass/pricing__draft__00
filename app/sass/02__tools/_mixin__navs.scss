@@ -1,28 +1,83 @@
-@mixin nav-pills-variant($class, $background) {
+@mixin nav-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+        .nav-#{$class__name} {
+            border-color: $color;
 
-    $color:       check-color($background, 70, red, white);
-    $background:  $background;
-
-    .nav-pills-#{$class} {
-        > li {
-
-            > a {
-                background-color:  $background;
-                color:             $color;
-
-                &:hover,
-                &:focus {
-                    background-color:  shade($background, 20%);
+            > li > a {
+                color: check-color($color, 80, inherit, $white);
+                border-color: $color;
+                background-color: $color;
+                @include state {
+                    border-color: shade($color, $nav__contrast);
+                    background-color: shade($color, $nav__contrast);
                 }
             }
 
-            &.active > a {
+            > li.active > a,
+            > li.open > a {
                 &,
                 &:hover,
                 &:focus {
-                    background-color:  shade($background, 20%);
+                    color: check-color($color, 80, inherit, $white);
+                    border-color: shade($color, $nav__contrast * 2);
+                    background-color: shade($color, $nav__contrast * 2);
+                }
+            }
+
+            > li.disabled > a {
+                &,
+                &:hover,
+                &:focus {
+                    color: shade($color, $nav__contrast * 4);
+                    background-color: $color;
+                }
+            }
+
+            .dropdown-menu {
+                color: check-color($color, 80, inherit, $white);
+                background-color: shade($color, $nav__contrast * 2);
+                border: 0 none;
+
+                > li > a {
+                    @include state {
+                        background-color: shade($color, $nav__contrast * 3);
+                    }
+                }
+                &:after {
+                    display: none;
+                }
+                .divider {
+                    border-color: shade($color, $nav__contrast * 3);
                 }
             }
         }
     }
 }
+
+//  @mixin nav-pills-variant($class, $background) {
+//      $color:       check-color($background, 70, red, white);
+//      $background:  $background;
+//
+//      .nav-pills-#{$class} {
+//          > li {
+//
+//              > a {
+//                  background-color:  $background;
+//                  color:             $color;
+//
+//                  &:hover,
+//                  &:focus {
+//                      background-color:  shade($background, 20%);
+//                  }
+//              }
+//
+//              &.active > a {
+//                  &,
+//                  &:hover,
+//                  &:focus {
+//                      background-color:  shade($background, 20%);
+//                  }
+//              }
+//          }
+//      }
+//  }

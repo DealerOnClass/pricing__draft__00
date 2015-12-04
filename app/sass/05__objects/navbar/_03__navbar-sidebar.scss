@@ -54,14 +54,18 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
     border-top: $one__true__pixel solid;
 }
 
-
 .offcanvas-nav {
     position: relative;
+
+    .navbar-sidebar-collapse {
+        top: 0;
+        height: 100%;
+    }
 }
 
 .offcanvas-body {
     display: table-cell;
-    width: 10000px;
+    width: 100000px;
 }
 
 

@@ -14,10 +14,10 @@
         float: none;
 
         width: 1%;
+    }
 
-        > a {
-            text-align: center;
-        }
+    > li > a {
+        text-align: center;
     }
 
     > .dropdown .dropdown-menu {

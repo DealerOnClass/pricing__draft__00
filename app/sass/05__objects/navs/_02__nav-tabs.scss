@@ -1,30 +1,50 @@
+.nav-tabs,
+.nav-pills {
+    > li {
+        float: left;
+    }
+
+    > li > a {
+        border: $one__true__pixel solid;
+        border-radius: $nav__radius;
+    }
+
+    > li + li {
+        margin-left: $two__true__pixels;
+    }
+
+    > li.active > a,
+    > li.open > a {
+        &,
+        &:hover,
+        &:focus {
+            color: $nav__link--active__color;
+            border-color: $nav__link--active__border;
+            background-color: $nav__link--active__bg;
+        }
+    }
+}
+
 .nav-tabs {
     border-bottom: $one__true__pixel solid;
 
     > li {
-        float: left;
         margin-bottom: $one__true__pixel * -1;
+    }
 
-        > a {
-            border-top-left-radius: $nav-tabs__radius;
-            border-top-right-radius: $nav-tabs__radius;
-        }
+    > li > a {
+        border-bottom-color: transparent;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 
-        + li {
-            margin-left: $two__true__pixels;
-        }
+    .dropdown-menu {
+        margin-top: $one__true__pixel * -1;
 
-        &.active > a,
-        > a.active {
-            &,
-            &:hover,
-            &:focus {
-                cursor: default;
-
-                color: $nav-tabs--active__color;
-                border-color: $nav-tabs--active__border;
-                background-color: $nav-tabs--active__bg;
-            }
+        &,
+        & > li > a:first-child {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
         }
     }
 }
