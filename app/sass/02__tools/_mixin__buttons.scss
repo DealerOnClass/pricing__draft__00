@@ -1,106 +1,31 @@
 @mixin btn-color-variation($input__palette) {
     @each $class__name, $color in $input__palette {
         .btn-#{$class__name} {
-            @if $btn__solid-color {
-                color: check-color($color, 80, inherit, $white);
-                border-color: shade($color, $btn__contrast * 1.5);
-                background-color: $color;
+            color: check-color($color, 80, inherit, $white);
+            border-color: check-color($color, 80, shade($color, $btn__contrast * 1.5), $color);
+            background-color: $color;
 
-                &.dropdown-toggle {
-                    border-left-color: shade($color, $btn__contrast * 1.5);
-                }
+            &.dropup-toggle:not(:first-child),
+            &.dropdown-toggle:not(:first-child) {
+                border-left-color: shade($color, $btn__contrast * 1.5);
+            }
+
+            .badge {
+                color: check-color($color, 80, inherit, $white);
+                border-color: shade($color, $btn__contrast);
+                background-color: shade($color, $btn__contrast);
+            }
+
+            @include state {
+                color: check-color($color, 80, inherit, $white);
+                border-color: check-color($color, 80, shade($color, $btn__contrast * 3), shade($color, $btn__contrast * 1.5));
+                background-color: shade($color, $btn__contrast);
 
                 .badge {
-                    color: check-color($color, 80, inherit, $white);
-                    border-color: shade($color, $btn__contrast);
-                    background-color: shade($color, $btn__contrast);
+                    border-color: shade($color, $btn__contrast * 2);
+                    background-color: shade($color, $btn__contrast * 2);
                 }
-
-                @include state {
-                    color: check-color($color, 80, inherit, $white);
-                    background-color: shade($color, $btn__contrast);
-
-                    .badge {
-                        border-color: shade($color, $btn__contrast * 2);
-                        background-color: shade($color, $btn__contrast * 2);
-                    }
-                }
-            } @else {
-                color: check-color($color, 80, inherit, shade($color, $btn__contrast));
-                border-color: check-color($color, 80, inherit, shade($color, $btn__contrast));
-                background-color: transparent;
             }
         }
     }
 }
-//  // Button variants
-//  //
-//  // Easily pump out default styles, as well as :hover, :focus, :active,
-//  // and disabled options for all buttons
-//  @mixin button-variant($input__color) {
-//      $background:        $input__color;
-//      $border:            check-color($input__color, 90, shade($input__color, 14%), $background);
-//      $color:             check-color($input__color, 90, $body__color, white);
-//
-//      color: $color;
-//      background-color: $background;
-//      border-color: $border;
-//
-//      &:hover {
-//          color: $color;
-//          background-color: shade($background, $btn__contrast / 2);
-//          border-color: shade($border, $btn__contrast);
-//      }
-//      &:focus,
-//      &.focus {
-//          color: $color;
-//          background-color: shade($background, $btn__contrast / 2);
-//          border-color: shade($border, $btn__contrast * 2);
-//      }
-//
-//      & + .dropdown-toggle {
-//          border-left-color: shade($background, $btn__contrast);
-//          &:hover {
-//              border-left-color: shade($background, $btn__contrast);
-//          }
-//      }
-//
-//      &:active,
-//      &.active,
-//      .open > &.dropdown-toggle {
-//          color: $color;
-//          background-color: shade($background, $btn__contrast / 2);
-//          border-color: shade($background, $btn__contrast * 2);
-//
-//          &:hover,
-//          &:focus,
-//          &.focus {
-//              color: $color;
-//              background-color: shade($background, 17%);
-//              border-color: shade($border, $btn__contrast * 2);
-//          }
-//      }
-//      &:active,
-//      &.active,
-//      .open > &.dropdown-toggle {
-//          background-image: none;
-//      }
-//      &.disabled,
-//      &[disabled],
-//      fieldset[disabled] & {
-//          &,
-//          &:hover,
-//          &:focus,
-//          &.focus,
-//          &:active,
-//          &.active {
-//              background-color: $background;
-//              border-color: $border;
-//          }
-//      }
-//
-//      .badge {
-//          color: $color;
-//          background-color: shade($background, $global__contrast * 2);
-//      }
-//  }

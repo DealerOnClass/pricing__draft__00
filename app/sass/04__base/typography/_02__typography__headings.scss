@@ -31,11 +31,13 @@ h2,
     font-size: $h2__font-size;
 }
 h3,
-.h3 {
+.h3,
+.lg {
     font-size: $h3__font-size;
 }
 h4,
-.h4 {
+.h4,
+.md {
     font-size: $h4__font-size;
 }
 h5,
@@ -45,6 +47,7 @@ h5,
 h6,
 .h6,
 small,
-.small {
+.small,
+.xs {
     font-size: $h6__font-size;
 }

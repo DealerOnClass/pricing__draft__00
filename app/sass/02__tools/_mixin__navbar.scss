@@ -12,8 +12,19 @@
             .navbar-toggle,
             .navbar-nav > li > a {
                 color: check-color($color, 80, inherit, $white);
+
+                .badge {
+                    color: check-color($color, 80, inherit, $white);
+                    border-color: shade($color, $btn__contrast);
+                    background-color: shade($color, $btn__contrast);
+                }
                 @include state {
                     background-color: shade($color, $navbar__contrast);
+
+                    .badge {
+                        border-color: shade($color, $btn__contrast * 2);
+                        background-color: shade($color, $btn__contrast * 2);
+                    }
                 }
             }
 
@@ -24,6 +35,12 @@
                     &:focus {
                         color: shade($color, $navbar__contrast * 3);
                         background-color: transparent;
+
+                        .badge {
+                            color: shade($color, $nav__contrast * 4);
+                            border-color: shade($color, $btn__contrast * 3);
+                            background-color: $color;
+                        }
                     }
                 }
                 >.active > a,
@@ -32,6 +49,11 @@
                     &:hover,
                     &:focus {
                         background-color: shade($color, $navbar__contrast);
+
+                        .badge {
+                            border-color: shade($color, $btn__contrast * 3);
+                            background-color: shade($color, $btn__contrast * 3);
+                        }
                     }
                 }
             }

@@ -5,5 +5,9 @@
         padding: $breadcrumb__padding;
 
         color: inherit;
+
+        &:active {
+            box-shadow: $breadcrumb__link--active__shadow;
+        }
     }
 }

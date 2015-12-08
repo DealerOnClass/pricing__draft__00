@@ -4,7 +4,7 @@
     width: 100%;
 
     table-layout: fixed;
-    border-spacing: $card-deck__gutter;
+    border-spacing: $global__gutter;
 
     .card {
         display: table-cell;
@@ -27,6 +27,6 @@
     }
 }
 .card-deck-wrapper {
-    margin-right: $card-deck__gutter * -1;
-    margin-left: $card-deck__gutter * -1;
+    margin-right: $global__gutter * -1;
+    margin-left: $global__gutter * -1;
 }

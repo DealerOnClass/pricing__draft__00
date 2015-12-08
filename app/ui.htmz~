@@ -648,18 +648,21 @@
                 <div class="row show__btn">
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Sizes</h3>
-                        <p><a class="btn lg" href="#">button</a> .lg</p>
-                        <p><a class="btn md" href="#">button</a> .md</p>
-                        <p><a class="btn" href="#">button</a> default</p>
-                        <p><a class="btn xs" href="#">button</a> .xs</p>
-                        <a class="btn btn-block" href="#">Block level button</a>
-                        <a class="btn btn-block" href="#">Block level button</a>
+                        <p><a class="btn lg">button</a> .lg</p>
+                        <p><a class="btn md">button</a> .md</p>
+                        <p><a class="btn">button</a> default</p>
+                        <p><a class="btn xs">button</a> .xs</p>
+                        <div class="well">
+                            <a class="btn btn-cta btn-block text-left">Block level button</a>
+                            <a class="btn btn-main btn-block">Block level button</a>
+                            <a class="btn btn-alt1 btn-block text-right">Block level button</a>
+                        </div>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Active state</h3>
                         <p>
-                            <a class="btn btn-cta active" href="#">Primary button</a>
-                            <a class="btn btn-default active" href="#">Button</a>
+                            <button type="button" class="btn btn-cta active">Primary button</button>
+                            <button type="button" class="btn btn-default active">Button</button>
                         </p>
                         <p>
                             <a href="#" class="btn btn-cta active">Primary link</a>
@@ -719,27 +722,27 @@
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Basic</h3>
                         <div class="btn-group" aria-label="Basic example">
-                            <a class="btn" href="#">Left</a>
-                            <a class="btn" href="#">Middle</a>
-                            <a class="btn" href="#">Right</a>
+                            <button type="button" class="btn btn-default">Left</button>
+                            <button type="button" class="btn btn-default">Middle</button>
+                            <button type="button" class="btn btn-default">Right</button>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Button toolbar</h3>
                         <div class="btn-toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group" aria-label="First group">
-                                <a class="btn" href="#">1</a>
-                                <a class="btn" href="#">2</a>
-                                <a class="btn" href="#">3</a>
-                                <a class="btn" href="#">4</a>
+                                <button type="button" class="btn btn-default">1</button>
+                                <button type="button" class="btn btn-default">2</button>
+                                <button type="button" class="btn btn-default">3</button>
+                                <button type="button" class="btn btn-default">4</button>
                             </div>
                             <div class="btn-group" aria-label="Second group">
-                                <a class="btn" href="#">5</a>
-                                <a class="btn" href="#">6</a>
-                                <a class="btn" href="#">7</a>
+                                <button type="button" class="btn btn-default">5</button>
+                                <button type="button" class="btn btn-default">6</button>
+                                <button type="button" class="btn btn-default">7</button>
                             </div>
                             <div class="btn-group" aria-label="Third group">
-                                <a class="btn" href="#">8</a>
+                                <button type="button" class="btn btn-default">8</button>
                             </div>
                         </div>
                     </div>
@@ -748,39 +751,39 @@
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Sizing</h3>
                         <div class="show__btn-group">
-                            <div class="btn-group lg" aria-label="Large button group">
-                                <a class="btn" href="#">Left</a>
-                                <a class="btn" href="#">Middle</a>
-                                <a class="btn" href="#">Right</a>
+                            <div class="btn-group btn-group-lg" aria-label="Large button group">
+                                <button type="button" class="btn btn-default">Left</button>
+                                <button type="button" class="btn btn-default">Middle</button>
+                                <button type="button" class="btn btn-default">Right</button>
                             </div>
-                            <div class="btn-group md" aria-label="Default button group">
-                                <a class="btn" href="#">Left</a>
-                                <a class="btn" href="#">Middle</a>
-                                <a class="btn" href="#">Right</a>
+                            <div class="btn-group" aria-label="Default button group">
+                                <button type="button" class="btn btn-default">Left</button>
+                                <button type="button" class="btn btn-default">Middle</button>
+                                <button type="button" class="btn btn-default">Right</button>
                             </div>
-                            <div class="btn-group" aria-label="Small button group">
-                                <a class="btn" href="#">Left</a>
-                                <a class="btn" href="#">Middle</a>
-                                <a class="btn" href="#">Right</a>
+                            <div class="btn-group btn-group-sm" aria-label="Small button group">
+                                <button type="button" class="btn btn-default">Left</button>
+                                <button type="button" class="btn btn-default">Middle</button>
+                                <button type="button" class="btn btn-default">Right</button>
                             </div>
-                            <div class="btn-group xs" aria-label="Extra-small button group">
-                                <a class="btn" href="#">Left</a>
-                                <a class="btn" href="#">Middle</a>
-                                <a class="btn" href="#">Right</a>
+                            <div class="btn-group btn-group-xs" aria-label="Extra-small button group">
+                                <button type="button" class="btn btn-default">Left</button>
+                                <button type="button" class="btn btn-default">Middle</button>
+                                <button type="button" class="btn btn-default">Right</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Nesting</h3>
                         <div class="btn-group" aria-label="Button group with nested dropdown">
-                            <a class="btn" href="#">1</a>
-                            <a class="btn" href="#">2</a>
+                            <button type="button" class="btn btn-default">1</button>
+                            <button type="button" class="btn btn-default">2</button>
 
                             <div class="btn-group">
-                                <a id="btnGroupDrop1" href="#" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
-                                </a>
+                                </button>
                                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                     <li><a href="#">Dropdown link</a></li>
                                     <li><a href="#">Dropdown link</a></li>
@@ -789,14 +792,14 @@
                         </div>
                         <h3 class="demo__heading">Sentence</h3>
                         <div class="btn-group-sentence">
-                            <a class="btn" href="#">Can</a>
-                            <a class="btn" href="#">be</a>
-                            <a class="btn" href="#">used</a>
-                            <a class="btn" href="#">for</a>
-                            <a class="btn" href="#">natural</a>
-                            <a class="btn" href="#">language</a>
-                            <a class="btn" href="#">form,</a>
-                            <a class="btn" href="#"> etc.</a>
+                            <button class="btn btn-default" type="submit">Can</button>
+                            <button class="btn btn-default" type="submit">be</button>
+                            <button class="btn btn-default" type="submit">used</button>
+                            <button class="btn btn-default" type="submit">for</button>
+                            <button class="btn btn-default" type="submit">natural</button>
+                            <button class="btn btn-default" type="submit">language</button>
+                            <button class="btn btn-default" type="submit">form,</button>
+                            <button class="btn btn-default" type="submit"> etc.</button>
                         </div>
                     </div>
                 </div>
@@ -804,45 +807,45 @@
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Vertical variation</h3>
                         <div class="btn-group-vertical" aria-label="Vertical button group">
-                            <a class="btn" href="#">Button</a>
-                            <a class="btn" href="#">Button</a>
+                            <button type="button" class="btn btn-default">Button</button>
+                            <button type="button" class="btn btn-default">Button</button>
                             <div class="btn-group">
-                                <a id="btnGroupVerticalDrop1" href="#" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
-                                </a>
+                                </button>
                                 <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
                                     <li><a href="#">Dropdown link</a></li>
                                     <li><a href="#">Dropdown link</a></li>
                                 </ul>
                             </div>
-                            <a class="btn" href="#">Button</a>
-                            <a class="btn" href="#">Button</a>
+                            <button type="button" class="btn btn-default">Button</button>
+                            <button type="button" class="btn btn-default">Button</button>
                             <div class="btn-group">
-                                <a id="btnGroupVerticalDrop2" href="#" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
-                                </a>
+                                </button>
                                 <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
                                     <li><a href="#">Dropdown link</a></li>
                                     <li><a href="#">Dropdown link</a></li>
                                 </ul>
                             </div>
                             <div class="btn-group">
-                                <a id="btnGroupVerticalDrop3" href="#" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
-                                </a>
+                                </button>
                                 <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
                                     <li><a href="#">Dropdown link</a></li>
                                     <li><a href="#">Dropdown link</a></li>
                                 </ul>
                             </div>
                             <div class="btn-group">
-                                <a id="btnGroupVerticalDrop4" href="#" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                     <span class="caret"></span>
-                                </a>
+                                </button>
                                 <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
                                     <li><a href="#">Dropdown link</a></li>
                                     <li><a href="#">Dropdown link</a></li>
@@ -852,17 +855,17 @@
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Justified button groups</h3>
-                        <div class="btn-group btn-group-justified lg" aria-label="Justified button group">
-                            <a href="#" class="btn">Left</a>
-                            <a href="#" class="btn">Middle</a>
-                            <a href="#" class="btn">Right</a>
+                        <div class="btn-group btn-group-justified" aria-label="Justified button group">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
+                            <a href="#" class="btn btn-default">Right</a>
                         </div>
                         <br>
-                        <div class="btn-group btn-group-justified md" aria-label="Justified button group with nested dropdown">
-                            <a href="#" class="btn">Left</a>
-                            <a href="#" class="btn">Middle</a>
+                        <div class="btn-group btn-group-lg btn-group-justified" aria-label="Justified button group with nested dropdown">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
                             <div class="btn-group">
-                                <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -875,11 +878,11 @@
                             </div>
                         </div>
                         <br>
-                        <div class="btn-group btn-group-justified" aria-label="Justified button group with nested dropdown">
-                            <a href="#" class="btn">Left</a>
-                            <a href="#" class="btn">Middle</a>
+                        <div class="btn-group btn-group btn-group-justified" aria-label="Justified button group with nested dropdown">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
                             <div class="btn-group">
-                                <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -892,11 +895,28 @@
                             </div>
                         </div>
                         <br>
-                        <div class="btn-group btn-group-justified xs" aria-label="Justified button group with nested dropdown">
-                            <a href="#" class="btn">Left</a>
-                            <a href="#" class="btn">Middle</a>
+                        <div class="btn-group btn-group-sm btn-group-justified" aria-label="Justified button group with nested dropdown">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
                             <div class="btn-group">
-                                <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    Dropdown <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="btn-group btn-group-xs btn-group-justified" aria-label="Justified button group with nested dropdown">
+                            <a href="#" class="btn btn-default">Left</a>
+                            <a href="#" class="btn btn-default">Middle</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -910,165 +930,309 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Single button dropdowns</h3>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Default
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Split button dropdowns</h3>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn" href="#">Default</a>
-                            <a class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <h3 class="demo__heading">Single button dropdowns</h3>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Default
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Sizing</h3>
-                        <div class="show__btn-group">
-                            <div class="btn-toolbar">
-                                <div class="btn-group lg">
-                                    <a class="btn dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="btn-toolbar">
-                                <div class="btn-group">
-                                    <a class="btn dropdown-toggle md" href="#" data-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- /btn-toolbar -->
-                            <div class="btn-toolbar">
-                                <div class="btn-group">
-                                    <a class="btn dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- /btn-toolbar -->
-                            <div class="btn-toolbar">
-                                <div class="btn-group">
-                                    <a class="btn dropdown-toggle xs" href="#" data-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- /btn-toolbar -->
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Dropup variation</h3>
-                        <div class="btn-toolbar">
-                            <div class="btn-group dropup">
-                                <a class="btn" href="#">Dropup</a>
-                                <a class="btn dropup-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                    <span class="caret"></span>
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                            <div class="btn-group dropup">
-                                <a class="btn" href="#">Right dropup</a>
-                                <a class="btn dropup-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                    <span class="caret"></span>
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Inverse
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Dropdown Palette</h3>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-default dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                <br>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-cta dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Cta
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-main dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Main
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-alt1 dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Alt1
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-alt2 dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Alt2
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-alt3 dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Alt3
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Success
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Info
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Warning
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Danger
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <h3 class="demo__heading">Split button dropdowns</h3>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-default">Default</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-inverse">Inverse</button>
+                    <button type="button" class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-cta">Cta</button>
+                    <button type="button" class="btn btn-cta dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-main">Main</button>
+                    <button type="button" class="btn btn-main dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-alt1">Alt1</button>
+                    <button type="button" class="btn btn-alt1 dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-alt2">Alt2</button>
+                    <button type="button" class="btn btn-alt2 dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-alt3">Alt3</button>
+                    <button type="button" class="btn btn-alt3 dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group demo__btn-group">
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <h3 class="demo__heading">Sizing</h3>
+                <div class="show__btn-group">
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                Large button
                                 <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-default" href="#">Dropdown</a>
-                            <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
+                            </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -1078,27 +1242,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Inverse Palette</h3>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-inverse dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                Default button
                                 <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-inverse" href="#">Dropdown</a>
-                            <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
+                            </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -1108,55 +1257,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Primary Palette</h3>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-cta dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                    <!-- /btn-toolbar -->
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                Small button
                                 <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-cta" href="#">Dropdown</a>
-                            <a class="btn btn-cta dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-main dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-main" href="#">Dropdown</a>
-                            <a class="btn btn-main dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
+                            </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -1166,83 +1273,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Neutral Palette</h3>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-alt1 dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                    <!-- /btn-toolbar -->
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                Extra small button
                                 <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-alt1" href="#">Dropdown</a>
-                            <a class="btn btn-alt1 dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-alt2 dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-alt2" href="#">Dropdown</a>
-                            <a class="btn btn-alt2 dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-alt3 dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-alt3" href="#">Dropdown</a>
-                            <a class="btn btn-alt3 dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
+                            </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -1252,119 +1289,37 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">States Palette</h3>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-success dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-success" href="#">Dropdown</a>
-                            <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-info dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-info" href="#">Dropdown</a>
-                            <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-warning dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-warning" href="#">Dropdown</a>
-                            <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-danger dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group demo__btn-group">
-                            <a class="btn btn-danger" href="#">Dropdown</a>
-                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
+                    <!-- /btn-toolbar -->
+                </div>
+                <h3 class="demo__heading">Dropup variation</h3>
+                <div class="btn-toolbar">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-default">Dropup</button>
+                        <button type="button" class="btn btn-default dropup-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-cta">Right dropup</button>
+                        <button type="button" class="btn btn-cta dropup-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -1381,7 +1336,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h3 class="demo__heading">Basic</h3>
-                        <div class="card">
+                        <div class="card card-main">
                             <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
@@ -1505,7 +1460,7 @@
                 <h3 class="demo__heading">Header and Footer</h3>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card card-alt1">
                             <div class="card-header">
                                 Featured
                             </div>
@@ -1517,7 +1472,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card card-cta">
                             <div class="card-header">
                                 Quote
                             </div>
@@ -1530,7 +1485,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card card-success text-center">
                             <div class="card-header">
                                 Featured
                             </div>
@@ -1539,7 +1494,7 @@
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <a href="#" class="btn">Go somewhere</a>
                             </div>
-                            <div class="card-footer">
+                            <div class="card-footer text-muted">
                                 2 days ago
                             </div>
                         </div>
@@ -1557,7 +1512,7 @@
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                     </div>
@@ -1569,7 +1524,7 @@
                             <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                     </div>
@@ -1578,7 +1533,7 @@
                             <div class="card-block">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                             <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
                         </div>
@@ -1596,138 +1551,28 @@
                             <div class="card-img-overlay">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!--Groups-->
+            <!--Inverted text-->
             <section class="demo__section">
-                <h3 class="demo__heading">Groups</h3>
-                <div class="card-group">
-                    <div class="card">
-                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Decks-->
-            <section class="demo__section">
-                <h3 class="demo__heading">Decks</h3>
-                <div class="card-deck-wrapper">
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                <h3 class="demo__heading">Inverted Text</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-inverse">
                             <div class="card-block">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                <h3 class="card-title">Special title treatment</h3>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn">Button</a>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Lorem sed accusantium veniam sed nisi aliquid nam nostrum facilis.</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
-                            <div class="card-block">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
-                            <div class="card-block">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Columns-->
-            <section class="demo__section">
-                <h3 class="demo__heading">Columns</h3>
-                <div class="card-columns">
-                    <div class="card">
-                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title">Card title that wraps to a new line</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="card card-block">
-                        <blockquote class="card-blockquote">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer>
-                                <small>
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card">
-                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card card-block card-primary text-center">
-                        <blockquote class="card-blockquote">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                            <footer>
-                                <small>
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card card-block text-center">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                    </div>
-                    <div class="card">
-                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image">
-                    </div>
-                    <div class="card card-block text-right">
-                        <blockquote class="card-blockquote">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer>
-                                <small>
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
                     </div>
                 </div>
             </section>
@@ -1880,6 +1725,135 @@
                 </div>
             </section>
 
+            <!--Groups-->
+            <section class="demo__section">
+                <h3 class="demo__heading">Groups</h3>
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Decks-->
+            <section class="demo__section">
+                <h3 class="demo__heading">Decks</h3>
+                <div class="card-deck-wrapper">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Columns-->
+            <section class="demo__section">
+                <h3 class="demo__heading">Columns</h3>
+                <div class="card-columns">
+                    <div class="card">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title that wraps to a new line</h4>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card card-block">
+                        <blockquote class="card-blockquote">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer>
+                                <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card card-block card-primary text-center">
+                        <blockquote class="card-blockquote">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                            <footer>
+                                <small>
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card card-block text-center">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="img/nature__medium.jpg" alt="Card image">
+                    </div>
+                    <div class="card card-block text-right">
+                        <blockquote class="card-blockquote">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer>
+                                <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </section>
+
             <!--SECTION: Carousel-->
             <nav id="ui__carousel" class="navbar demo__titlebar">
                 <div class="navbar-header">
@@ -1898,13 +1872,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="First slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Second slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Second slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Third slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -1930,21 +1904,21 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="First slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                             <div class="carousel-caption">
                                 <h3>Caption Heading</h3>
                                 <p>Dolor sed totam laboriosam commodi temporibus. Asperiores provident recusandae quibusdam sequi sit laudantium fugit eius ducimus expedita suscipit, dolore perspiciatis.</p>
                             </div>
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Second slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Second slide [900x500]">
                             <div class="carousel-caption">
                                 <h3>Caption Heading</h3>
                                 <p>Dolor sed totam laboriosam commodi temporibus. Asperiores provident recusandae quibusdam sequi sit laudantium fugit eius ducimus expedita suscipit, dolore perspiciatis.</p>
                             </div>
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Third slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                             <div class="carousel-caption">
                                 <h3>Caption Heading</h3>
                                 <p>Dolor sed totam laboriosam commodi temporibus. Asperiores provident recusandae quibusdam sequi sit laudantium fugit eius ducimus expedita suscipit, dolore perspiciatis.</p>
@@ -1975,13 +1949,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="First slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Second slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Second slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Third slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-rounded" data-slide="prev">
@@ -2008,13 +1982,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="First slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Second slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Second slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Third slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-fade" data-slide="prev">
@@ -2041,13 +2015,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="First slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Second slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Second slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Third slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-flat" data-slide="prev">
@@ -2074,13 +2048,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="First slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="First slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Second slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Second slide [900x500]">
                         </div>
                         <div class="item">
-                            <img data-holder-rendered="true" src="img/nature.jpg" alt="Third slide [900x500]">
+                            <img data-holder-rendered="true" src="/img/nature.jpg" alt="Third slide [900x500]">
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-positions" data-slide="prev">

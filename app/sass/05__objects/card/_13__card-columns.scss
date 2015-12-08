@@ -1,6 +1,6 @@
 .card-columns {
     column-count: 3;
-    column-gap: $card-columns__gutter;
+    column-gap: $global__gutter;
 
     .card {
         display: inline-block;

@@ -1,27 +1,21 @@
 @mixin card-color-variation($input__palette) {
     @each $class__name, $color in $input__palette {
         .card-#{$class__name} {
-            @if $card__solid-color {
-                color: check-color($color, 80, inherit, $white);
+            color: check-color($color, 80, inherit, $white);
+            border-color: $color;
+            background-color: $color;
+            a {
+                @include state-and-self {
+                    color: inherit;
+                }
+            }
+            .card-block {
                 border-color: $color;
-                background-color: $color;
-                a {
-                    @include state {
-                        color: inherit;
-                    }
-                }
-                .card-block {
-                    border-color: $color;
-                }
-                .card-header,
-                .card-footer {
-                    background-color:  shade($color, $card__contrast);
-                    border-color:      shade($color, $card__contrast);
-                }
-            } @else {
-                color: check-color($color, 80, inherit, shade($color, $card__contrast));
-                border-color: check-color($color, 80, inherit, shade($color, $card__contrast));
-                background-color: transparent;
+            }
+            .card-header,
+            .card-footer {
+                background-color:  shade($color, $card__contrast);
+                border-color:      shade($color, $card__contrast);
             }
         }
     }

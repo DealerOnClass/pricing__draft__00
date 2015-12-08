@@ -2,13 +2,7 @@
     display: block;
 
     width: 100%;
-    &.text-left {
-        text-align: left;
-    }
-    &.text-right {
-        text-align: right;
-    }
     & + & {
-        margin-top: $btn-block__vertical-rhythm;
+        margin-top: rhythm(.5);
     }
 }

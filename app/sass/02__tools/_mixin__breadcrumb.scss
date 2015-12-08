@@ -1,25 +1,16 @@
 @mixin breadcrumb-color-variation($input__palette) {
     @each $class__name, $color in $input__palette {
         .breadcrumb-#{$class__name} {
-            @if $breadcrumb__solid-color {
-                color: check-color($color, 80, inherit, $white);
-                border-color: $color;
-                background-color: $color;
+            color: check-color($color, 80, inherit, $white);
+            border-color: $color;
+            background-color: $color;
 
-                border: 0 none;     //  Temp remove later
+            border: 0 none;
 
-                @if $breadcrumb__link--hover__bg {
-                    > li > a {
-
-                        @include state {
-                            background-color: shade($color, $breadcrumb__contrast);
-                        }
-                    }
+            > li > a {
+                @include state {
+                    background-color: shade($color, $breadcrumb__contrast);
                 }
-            } @else {
-                color: check-color($color, 80, inherit, shade($color, $breadcrumb__contrast));
-                border-color: check-color($color, 80, inherit, shade($color, $breadcrumb__contrast));
-                background-color: transparent;
             }
         }
     }

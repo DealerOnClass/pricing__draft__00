@@ -25,11 +25,6 @@
             @include tab-focus;
         }
     }
-    &:hover,
-    &:focus,
-    &.focus {
-        color: $btn--hover__color;
-    }
     &:active,
     &.active {
         outline: 0;

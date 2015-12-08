@@ -1,6 +1,4 @@
 .btn-toolbar {
-    margin-left: $five__true__pixels * -1;
-
     @include clearfix;
     .btn,
     .btn-group,
@@ -10,6 +8,9 @@
     > .btn,
     > .btn-group,
     > .input-group {
-        margin-left: $five__true__pixels;
+        margin-right: $five__true__pixels
+    }
+    > .btn-group {
+        margin-bottom: rhythm(.5);
     }
 }

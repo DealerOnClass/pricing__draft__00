@@ -18,6 +18,7 @@
 //  02  Tools
 @import
     "02__tools/mixin__alerts",
+    "02__tools/mixin__badge",
     "02__tools/mixin__bg-variant",
     "02__tools/mixin__breadcrumb",
     "02__tools/mixin__buttons",
@@ -93,38 +94,36 @@
     "05__objects/alert/05__colors";
 
 @import
-    "05__objects/badge/00__variables",
-    "05__objects/badge/01__badge";
+    "05__objects/badge/00__var",
+    "05__objects/badge/01__badge",
+    "05__objects/badge/02__colors";
 
 @import
-    "05__objects/breadcrumb/00__variables",
+    "05__objects/breadcrumb/00__var",
     "05__objects/breadcrumb/01__breadcrumb",
     "05__objects/breadcrumb/02__breadcrumb-item",
     "05__objects/breadcrumb/03__breadcrumb-link",
     "05__objects/breadcrumb/04__breadcrumb-rounded",
-    "05__objects/breadcrumb/05__breadcrumb-variations";
+    "05__objects/breadcrumb/05__colors";
 
 @import
-    "05__objects/buttons/00__variables",
+    "05__objects/buttons/00__var",
     "05__objects/buttons/01__btn",
     "05__objects/buttons/02__btn-link",
     "05__objects/buttons/03__btn-block",
     "05__objects/buttons/04__btn-rounded",
-    "05__objects/buttons/05__btn-variations";
+    "05__objects/buttons/05__colors";
 
 @import
-    "05__objects/button-groups/00__variables",
     "05__objects/button-groups/01__btn-group",
     "05__objects/button-groups/02__btn-group-vertical",
     "05__objects/button-groups/03__btn-group-justified",
     "05__objects/button-groups/04__btn-group-sentence",
     "05__objects/button-groups/05__btn-group-is-heading",
-    "05__objects/button-groups/06__btn-group__dropdown-toggle",
-    "05__objects/button-groups/07__btn-toolbar",
-    "05__objects/button-groups/08__btn-group-variations";
+    "05__objects/button-groups/06__btn-toolbar";
 
 @import
-    "05__objects/card/00__variables",
+    "05__objects/card/00__var",
     "05__objects/card/01__card",
     "05__objects/card/02__card-block",
     "05__objects/card/03__card-title",
@@ -139,7 +138,7 @@
     "05__objects/card/12__card-group",
     "05__objects/card/13__card-columns",
     "05__objects/card/14__card__list-group",
-    "05__objects/card/15__card-variations";
+    "05__objects/card/15__colors";
 
 @import
     "05__objects/carousel/00__variables",

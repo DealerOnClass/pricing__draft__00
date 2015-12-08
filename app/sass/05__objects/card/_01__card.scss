@@ -3,10 +3,6 @@
 
     border-radius: $card__radius;
 
-    a {
-        color: inherit;
-    }
-
     .card-header:first-child,
     .card-img:first-child,
     .card-block:first-child {
@@ -19,5 +15,4 @@
         border-bottom-right-radius: $card__radius;
         border-bottom-left-radius: $card__radius;
     }
-
 }

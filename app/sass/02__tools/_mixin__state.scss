@@ -20,3 +20,13 @@
         }
     }
 }
+@mixin state-and-active {
+    &:hover, &:active, &:focus, &.active {
+        @content;
+    }
+}
+@mixin state-and-self {
+    &, &:hover, &:active, &:focus {
+        @content;
+    }
+}

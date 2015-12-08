@@ -28,7 +28,7 @@
     @if $dropdown__has__indicator {
         &:after {
             position: absolute;
-            top: ( $caret__width-base * ( $dropdown__indicator__size * -2 ) );
+            top: calc( #{( $caret__width-base * ( $dropdown__indicator__size * -2 ) )} + #{$one__true__pixel} );
             left: $btn__x;
 
             content: '';

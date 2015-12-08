@@ -112,7 +112,7 @@
 .show__btn-group .btn-group {
     display: block;
 
-    margin-top: $global__y;
+    @include rhythm-rem(margin-top, .5);
 
     @include clearfix;
 }

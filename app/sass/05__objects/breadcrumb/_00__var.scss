@@ -1,25 +1,24 @@
+//
 //  Units
 $breadcrumb__contrast:              $global__contrast;
 $breadcrumb__radius:                $global__radius;
 $breadcrumb__x:                     $global__x;
 $breadcrumb__y:                     $global__y;
-//  General Options
-$breadcrumb__solid-color:           true !default;  //  Use palette color for bg and border
-$breadcrumb__link--hover__bg:       true !default;  //  Link changes bg on hover
-//  Color Options
+//
+//  Color
 $breadcrumb__default-palette:       true !default;
 $breadcrumb__inverse-palette:       true !default;
 $breadcrumb__primary-palette:       true !default;
 $breadcrumb__neutral-palette:       true !default;
 $breadcrumb__state-palette:         true !default;
+//
 //  Base
 $breadcrumb__padding:               $breadcrumb__y $breadcrumb__x;
 $breadcrumb__radius:                $breadcrumb__radius;
-//  Breadcrumb Separator
+//
+//  Components
 $breadcrumb__separator__use-icon:   true !default;
 $breadcrumb__separator__icon:       $fa-var-angle-right;
 $breadcrumb__separator__padding:    $breadcrumb__y ( $breadcrumb__x / 4 );
-//  Breadcrumb Sizing
-$breadcrumb--xs__font-size:         $h6__font-size / $base__font-ratio;
-$breadcrumb--sm__font-size:         $h6__font-size;
-$breadcrumb--lg__font-size:         $h4__font-size;
+//
+$breadcrumb__link--active__shadow:  inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
