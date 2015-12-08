@@ -2,25 +2,25 @@
     position: absolute;
     z-index: 10;
     right: 15%;
-    bottom: 20px;
+    bottom: $card__y;
     left: 15%;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+    overflow: hidden;
+
+    padding-top: $card__y;
+    padding-bottom: $card__y;
 
     text-align: center;
 
     color: $carousel-caption__color;
     text-shadow: $carousel-caption__text-shadow;
-    & .btn {
-        text-shadow: none; // No shadow for button elements in carousel-caption
-    }
+
     @media screen and (min-width: $screen-sm-min) {
         .carousel-caption {
             right: 20%;
             left: 20%;
 
-            padding-bottom: 30px;
+            padding-bottom: $card__y * 1.5;
         }
     }
 }

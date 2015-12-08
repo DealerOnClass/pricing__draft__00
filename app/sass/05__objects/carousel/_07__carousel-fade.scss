@@ -10,9 +10,9 @@
             opacity: 0;
         }
 
-        .active,
         .next.left,
-        .prev.right {
+        .prev.right,
+        .active {
             opacity: 1;
         }
 

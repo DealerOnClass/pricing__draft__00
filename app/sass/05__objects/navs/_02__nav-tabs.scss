@@ -13,6 +13,7 @@
         margin-left: $two__true__pixels;
     }
 
+    > li > a.active,
     > li.active > a,
     > li.open > a {
         &,

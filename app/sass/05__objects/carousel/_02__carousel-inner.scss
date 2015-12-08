@@ -18,7 +18,9 @@
 
             @include img-responsive;
         }
+    }
 
+    > .item {
         @media all and (transform-3d), (-webkit-transform-3d) {
             transition-transform: 0.6s ease-in-out;
             backface-visibility: hidden;
@@ -51,11 +53,11 @@
     > .prev {
         display: block;
     }
-
-    > .active {
+    > .active,
+    > .next.left,       //
+    > .prev.right {     //
         left: 0;
     }
-
     > .next,
     > .prev {
         position: absolute;
@@ -63,23 +65,13 @@
 
         width: 100%;
     }
-
-    > .next {
+    > .next,
+    > .active.right {   //
         left: 100%;
     }
-    > .prev {
+    > .prev,
+    > .active.left {    //
         left: -100%;
-    }
-    > .next.left,
-    > .prev.right {
-        left: 0;
-    }
-
-    > .active.left {
-        left: -100%;
-    }
-    > .active.right {
-        left: 100%;
     }
 }
 

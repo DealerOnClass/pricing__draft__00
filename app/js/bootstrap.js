@@ -561,7 +561,7 @@ var Carousel = (function ($) {
   var Default = {
     interval: 5000,
     keyboard: true,
-    slide: false,
+    slide: false,    // default
     pause: 'hover',
     wrap: true
   };

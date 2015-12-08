@@ -22,7 +22,7 @@
         cursor: pointer;
         text-indent: -999px;
 
-        border: 1px solid $carousel-indicator__color;
+        border: 1px solid $carousel-indicator__border;
         border-radius: 10px;
         background-color: #000000 \9; // IE8
         background-color: rgba(0,0,0,0); // IE9

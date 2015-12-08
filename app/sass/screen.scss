@@ -141,7 +141,7 @@
     "05__objects/card/15__colors";
 
 @import
-    "05__objects/carousel/00__variables",
+    "05__objects/carousel/00__var",
     "05__objects/carousel/01__carousel",
     "05__objects/carousel/02__carousel-inner",
     "05__objects/carousel/03__carousel-control",
@@ -153,7 +153,7 @@
     "05__objects/carousel/09__carousel-control-position";
 
 @import
-    "05__objects/close/00__variables",
+    "05__objects/close/00__var",
     "05__objects/close/01__close";
 
 @import
@@ -254,8 +254,7 @@
     "05__objects/navs/03__nav-pills",
     "05__objects/navs/04__nav-stacked",
     "05__objects/navs/05__nav-justified",
-    "05__objects/navs/06__tab-content",
-    "05__objects/navs/07__colors";
+    "05__objects/navs/06__colors";
 
 @import
     "05__objects/navbar/00__variables.scss",
@@ -339,6 +338,11 @@
     "05__objects/tables/05__table-hover",
     "05__objects/tables/06__table-responsive",
     "05__objects/tables/07__table-variations";
+
+@import
+    "05__objects/tabs/00__var",
+    "05__objects/tabs/01__tab-content",
+    "05__objects/tabs/02__tab-pane";
 
 @import
     "05__objects/thumbnails/00__variables",
