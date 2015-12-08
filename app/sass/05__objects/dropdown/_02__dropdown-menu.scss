@@ -1,0 +1,69 @@
+.dropdown-menu {
+    position: absolute;
+    z-index: $zindex-dropdown;
+    top: 100%;
+    left: 0;
+
+    display: none;
+    float: left;
+
+    min-width: 160px;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    list-style: none;
+
+    border: $one__true__pixel solid;
+    border-radius: $dropdown__radius;
+    background-color: $white;
+    box-shadow: $dropdown-menu__shadow;
+
+    > li > a {
+        position: relative;
+        display: block;
+        clear: both;
+
+        padding: $dropdown-menu__link__padding;
+
+        white-space: nowrap;
+    }
+
+    > li.disabled > a,
+    > li > a.disabled,
+    > li > a[disabled] {
+        @include state-and-self {
+            color: $dropdown-menu__link--disabled__color;
+            cursor: $cursor-disabled;
+        }
+    }
+
+    > li:first-child > a {
+        border-top-right-radius: $dropdown__radius;
+        border-top-left-radius: $dropdown__radius;
+    }
+
+    > li:last-child > a {
+        border-bottom-right-radius: $dropdown__radius;
+        border-bottom-left-radius: $dropdown__radius;
+    }
+
+    .open > & {
+        display: block;
+    }
+}
+
+.pull-right.dropdown-menu,
+.navbar-right .dropdown-menu,
+.pull-right > .dropdown-menu,
+.dropdown-menu-right {
+    right: 0;
+    left: auto; // Reset the default from `.dropdown-menu`
+}
+
+.pull-left.dropdown-menu,
+.navbar-left .dropdown-menu,
+.pull-left > .dropdown-menu,
+.dropdown-menu-left {
+    right: auto;
+    left: 0;
+}

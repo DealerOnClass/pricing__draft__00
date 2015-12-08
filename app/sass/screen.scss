@@ -107,20 +107,20 @@
     "05__objects/breadcrumb/05__colors";
 
 @import
-    "05__objects/buttons/00__var",
-    "05__objects/buttons/01__btn",
-    "05__objects/buttons/02__btn-link",
-    "05__objects/buttons/03__btn-block",
-    "05__objects/buttons/04__btn-rounded",
-    "05__objects/buttons/05__colors";
+    "05__objects/button/00__var",
+    "05__objects/button/01__btn",
+    "05__objects/button/02__btn-link",
+    "05__objects/button/03__btn-block",
+    "05__objects/button/04__btn-rounded",
+    "05__objects/button/05__colors";
 
 @import
-    "05__objects/button-groups/01__btn-group",
-    "05__objects/button-groups/02__btn-group-vertical",
-    "05__objects/button-groups/03__btn-group-justified",
-    "05__objects/button-groups/04__btn-group-sentence",
-    "05__objects/button-groups/05__btn-group-is-heading",
-    "05__objects/button-groups/06__btn-toolbar";
+    "05__objects/button-group/01__btn-group",
+    "05__objects/button-group/02__btn-group-vertical",
+    "05__objects/button-group/03__btn-group-justified",
+    "05__objects/button-group/04__btn-group-sentence",
+    "05__objects/button-group/05__btn-group-is-heading",
+    "05__objects/button-group/06__btn-toolbar";
 
 @import
     "05__objects/card/00__var",
@@ -157,17 +157,16 @@
     "05__objects/close/01__close";
 
 @import
-    "05__objects/dropdowns/00__variables",
-    "05__objects/dropdowns/01__dropdown",
-    "05__objects/dropdowns/02__dropdown__caret",
-    "05__objects/dropdowns/03__dropdown-menu",
-    "05__objects/dropdowns/04__dropdown-menu-alignment",
-    "05__objects/dropdowns/05__dropdown-header",
-    "05__objects/dropdowns/06__dropdown-backdrop",
-    "05__objects/dropdowns/07__dropdown-mega-menus",
-    "05__objects/dropdowns/08__dropup",
-    "05__objects/dropdowns/09__dropdown__divider",
-    "05__objects/dropdowns/10__dropdown-variations";
+    "05__objects/dropdown/00__var.scss",
+    "05__objects/dropdown/01__dropdown.scss",
+    "05__objects/dropdown/02__dropdown-menu.scss",
+    "05__objects/dropdown/03__dropdown-header.scss",
+    "05__objects/dropdown/04__dropdown-backdrop.scss",
+    "05__objects/dropdown/05__dropdown-mega-menus.scss",
+    "05__objects/dropdown/06__dropup.scss",
+    "05__objects/dropdown/07__dropdown__caret.scss",
+    "05__objects/dropdown/08__dropdown__divider.scss",
+    "05__objects/dropdown/09__colors.scss";
 
 @import
     "05__objects/forms/00__variables",
@@ -198,6 +197,12 @@
     "05__objects/hero/00__variables",
     "05__objects/hero/01__hero",
     "05__objects/hero/02__hero-variations";
+
+@import
+    "05__objects/img/00__var",
+    "05__objects/img/01__img-responsive",
+    "05__objects/img/02__img-rounded",
+    "05__objects/img/03__img-circle";
 
 @import
     "05__objects/input-groups/00__variables",
