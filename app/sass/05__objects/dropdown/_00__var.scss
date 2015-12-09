@@ -5,8 +5,8 @@ $dropdown__radius:                      $global__radius;
 $dropdown__x:                           $global__x;
 $dropdown__y:                           $global__y * 1.5;
 //
-//  Color Options
-$dropdown__use-btn__color:              true !default;  //  Force use of nearest btn's color
+//  Color
+$dropdown__use-btn__color:              true !default;
 $dropdown-menu__default-palette:        true !default;
 $dropdown-menu__inverse-palette:        true !default;
 $dropdown-menu__primary-palette:        true !default;
@@ -16,9 +16,7 @@ $dropdown-menu__state-palette:          true !default;
 //  Components
 $dropdown-menu__shadow:                 0 $six__pixels $twelve__pixels rgba(0,0,0,0.175);
 $dropdown-menu__link__padding:          $dropdown__y $dropdown__x;
-$dropdown-menu__link--active__bg:       $gray__01;
 $dropdown-menu__link--active__shadow:   inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
-$dropdown-menu__link--disabled__color:  $gray__02;
 $dropdown-header__font-family:          $sans--bold;
 //
 $dropdown__has__caret:                  true !default;

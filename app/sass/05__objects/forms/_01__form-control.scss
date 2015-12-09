@@ -28,24 +28,3 @@
     //      cursor: $cursor-disabled;
     //  }
 }
-
-//  @media screen and (-webkit-min-device-pixel-ratio: 0) {
-//      input[type='date'],
-//      input[type='time'],
-//      input[type='datetime-local'],
-//      input[type='month'] {
-//          &.form-control {
-//              line-height: $input__height--base;
-//          }
-//
-//          &.input-sm,
-//          .input-group-sm & {
-//              line-height: $input__height--small;
-//          }
-//
-//          &.input-lg,
-//          .input-group-lg & {
-//              line-height: $input__height--large;
-//          }
-//      }
-//  }

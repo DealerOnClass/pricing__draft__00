@@ -437,7 +437,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span><span class="badge">02</span></a></li>
-                                <li class="disabled"><a href="#">Link <span class="badge">02</span></a></li>
+                                <li><a href="#" disabled>Link <span class="badge">02</span></a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -463,7 +463,7 @@
                 <ul class="nav nav-pills nav-main">
                     <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
                     <li><a href="#">Profile</a></li>
-                    <li class="disabled"><a href="#">Home <span class="badge">42</span></a></li>
+                    <li><a href="#" disabled>Home <span class="badge">42</span></a></li>
                     <li><a href="#">Messages <span class="badge">3</span></a></li>
                 </ul>
                 <br>
@@ -656,24 +656,38 @@
                         <a class="btn btn-block" href="#">Block level button</a>
                     </div>
                     <div class="col-sm-6">
-                        <h3 class="demo__heading">Active state</h3>
-                        <p>
-                            <a class="btn btn-cta active" href="#">Primary button</a>
-                            <a class="btn btn-default active" href="#">Button</a>
-                        </p>
-                        <p>
-                            <a href="#" class="btn btn-cta active">Primary link</a>
-                            <a href="#" class="btn btn-default active">Link</a>
-                        </p>
-                        <h3 class="demo__heading">Disabled state</h3>
-                        <p>
-                            <button type="button" class="btn btn-cta active" disabled="disabled">Primary button</button>
-                            <button type="button" class="btn btn-default active" disabled="disabled">Button</button>
-                        </p>
-                        <p>
-                            <a href="#" class="btn btn-cta disabled">Primary link</a>
-                            <a href="#" class="btn btn-default disabled">Link</a>
-                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="demo__heading">Active state(anchor)</h3>
+                                <p>
+                                    <a class="btn btn-cta active" href="#">Primary button</a>
+                                    <a class="btn btn-default active" href="#">Button</a>
+                                </p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="demo__heading">Active state(button)</h3>
+                                <p>
+                                    <a class="btn btn-cta active" href="#">Primary button</a>
+                                    <a class="btn btn-default active" href="#">Button</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="demo__heading">Disabled state(anchor)</h3>
+                                <p>
+                                    <a href="#" class="btn btn-cta" disabled>Primary button</a>
+                                    <a href="#" class="btn btn-default" disabled>Button</a>
+                                </p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="demo__heading">Disabled state(button)</h3>
+                                <p>
+                                    <button type="button" class="btn btn-cta" disabled>Primary button</button>
+                                    <button type="button" class="btn btn-default" disabled>Button</button>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -1449,27 +1463,30 @@
             <!--Sizing-->
             <section class="demo__section">
                 <h3 class="demo__heading">Sizing</h3>
-                <div class="card card-block">
+                <div class="card card-block pull-left lg">
                     <h3 class="card-title">Special title treatment</h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn">Go somewhere</a>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card card-block">
-                            <h3 class="card-title">Special title treatment</h3>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card card-block">
-                            <h3 class="card-title">Special title treatment</h3>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="clearfix"></div>
+                <div class="card card-block pull-left md">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn">Go somewhere</a>
                 </div>
+                <div class="clearfix"></div>
+                <div class="card card-block pull-left">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn">Go somewhere</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="card card-block pull-left xs">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn">Go somewhere</a>
+                </div>
+                <div class="clearfix"></div>
             </section>
 
             <!--Text alignment-->
@@ -2318,7 +2335,7 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
                                 <li><a tabindex="-1" href="#">Regular link</a></li>
-                                <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                                <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                                 <li class="divider"></li>
                                 <li><a tabindex="-1" href="#">Another link</a></li>
                             </ul>
@@ -2343,7 +2360,7 @@
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-mega-menu">
                                     <ul class="nav navbar-nav navbar-mega-menu">
                                         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                        <li class="disabled"><a href="#">Link</a></li>
+                                        <li><a href="#" disabled>Disabled link</a></li>
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                             <ul class="dropdown-menu">
@@ -2404,7 +2421,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-default" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2418,7 +2435,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-inverse" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2434,7 +2451,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-cta" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2446,7 +2463,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-main" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2462,7 +2479,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-alt1" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2474,7 +2491,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-alt2" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2486,7 +2503,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-alt3" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2501,7 +2518,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-success" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2513,7 +2530,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-info" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2525,7 +2542,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-warning" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2537,7 +2554,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-danger" aria-labelledby="dropdownMenu4">
                         <li class="active"><a tabindex="-1" href="#">Active link</a></li>
-                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li><a tabindex="-1" href="#" disabled>Disabled link</a></li>
                         <li class="divider"></li>
                         <li><a tabindex="-1" href="#">Regular link</a></li>
                     </ul>
@@ -2807,11 +2824,11 @@
                         <form>
                             <fieldset disabled="">
                                 <div class="form-group">
-                                    <label for="disabledTextInput">Disabled input</label>
+                                    <label class="control-label" for="disabledTextInput">Disabled input</label>
                                     <input id="disabledTextInput" class="form-control" placeholder="Disabled input" type="text">
                                 </div>
                                 <div class="form-group">
-                                    <label for="disabledSelect">Disabled select menu</label>
+                                    <label class="control-label" for="disabledSelect">Disabled select menu</label>
                                     <select id="disabledSelect" class="form-control">
                                         <option>Disabled select</option>
                                     </select>
@@ -4239,7 +4256,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4279,7 +4296,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4319,7 +4336,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4359,7 +4376,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4398,7 +4415,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4438,7 +4455,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4477,7 +4494,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4516,7 +4533,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4556,7 +4573,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4595,7 +4612,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4634,7 +4651,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-10">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4673,7 +4690,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-11">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                <li class="disabled"><a href="#">Link</a></li>
+                                <li><a href="#" disabled>Disabled link</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -4715,7 +4732,7 @@
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-120">
                                     <ul class="nav navbar-nav">
                                         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                        <li class="disabled"><a href="#">Link</a></li>
+                                        <li><a href="#" disabled>Disabled link</a></li>
                                         <li class="dropdown"><a href="#ttest1010" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                             <ul id="ttest1010" class="collapse dropdown-menu">
                                                 <li><a href="#">Action</a></li>
@@ -4757,7 +4774,7 @@
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-121">
                                     <ul class="nav navbar-nav">
                                         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                        <li class="disabled"><a href="#">Link</a></li>
+                                        <li><a href="#" disabled>Disabled link</a></li>
                                         <li class="dropdown">
                                             <a href="#ttest100" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                             <ul id="ttest100" class="collapse dropdown-menu">
@@ -5041,7 +5058,7 @@
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5061,7 +5078,7 @@
                         <ul class="nav nav-pills">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5139,7 +5156,7 @@
                         <ul class="nav nav-default nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5159,7 +5176,7 @@
                         <ul class="nav nav-inverse nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5181,7 +5198,7 @@
                         <ul class="nav nav-cta nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5198,7 +5215,7 @@
                         <ul class="nav nav-main nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5218,7 +5235,7 @@
                         <ul class="nav nav-alt1 nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5235,7 +5252,7 @@
                         <ul class="nav nav-alt2 nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5252,7 +5269,7 @@
                         <ul class="nav nav-alt3 nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5274,7 +5291,7 @@
                         <ul class="nav nav-success nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5291,7 +5308,7 @@
                         <ul class="nav nav-info nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5308,7 +5325,7 @@
                         <ul class="nav nav-warning nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>
@@ -5325,7 +5342,7 @@
                         <ul class="nav nav-danger nav-tabs demo__nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Profile</a></li>
-                            <li class="disabled"><a href="#">Messages</a></li>
+                            <li><a href="#" disabled>Disabled link</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                     Dropdown <span class="caret"></span>

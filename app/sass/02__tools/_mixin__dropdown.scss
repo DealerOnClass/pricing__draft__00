@@ -15,17 +15,10 @@
                     }
                     > li.active > a,
                     > li > a.active {
-                        @include state-and-self {
-                            background-color: shade($color, $btn__contrast * 2);
-                        }
+                        background-color: shade($color, $btn__contrast * 2);
                     }
-                    > li.disabled > a,
-                    > li > a.disabled,
                     > li > a[disabled] {
-                        @include state-and-self {
-                            color: shade($color, $btn__contrast * 3);
-                            background-color: transparent;
-                        }
+                        background-color: transparent;
                     }
                     .divider {
                         border-color: shade($color, $btn__contrast * 1.5);
@@ -52,17 +45,10 @@
             }
             > li.active > a,
             > li > a.active {
-                @include state-and-self {
-                    background-color: shade($color, $btn__contrast * 2);
-                }
+                background-color: shade($color, $btn__contrast * 2);
             }
-            > li.disabled > a,
-            > li > a.disabled,
             > li > a[disabled] {
-                @include state-and-self {
-                    color: shade($color, $btn__contrast * 3);
-                    background-color: transparent;
-                }
+                background-color: transparent;
             }
             .divider {
                 border-color: shade($color, $btn__contrast * 1.5);

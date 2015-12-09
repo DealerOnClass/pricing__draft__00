@@ -5,17 +5,9 @@
 
     text-align: center;
 
-    border: $one__true__pixel solid $input-group-addon__border;
+    border: $one__true__pixel solid $form-control__border;
     border-radius: $form__radius;
-    background-color: $input-group-addon__bg;
-
-    &.input-sm {
-        font-size: $input-group-addon-sm__font-size;
-    }
-
-    &.input-lg {
-        font-size: $input-group-addon-lg__font-size;
-    }
+    background-color: $form-control__bg;
 
     input[type='radio'],
     input[type='checkbox'] {

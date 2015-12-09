@@ -26,10 +26,10 @@
         margin-top: $base__font-unit / -2;
     }
     label ~ .form-control-feedback {
-        margin-top: $form__y / 3;
+        margin-top: calc( #{$form__y * $base__line-height} + #{$two__true__pixels} );
     }
     label.sr-only ~ .form-control-feedback {
-        margin-top: $form__y * -1;
+        margin-top: calc( #{$form__y * -1} - #{$two__true__pixels} );
     }
 }
 
@@ -61,21 +61,3 @@
         content: '#{$has-danger__icon}';
     }
 }
-
-//  .input-lg + .form-control-feedback,
-//  .input-group-lg + .form-control-feedback,
-//  .form-group-lg .form-control + .form-control-feedback {
-//      line-height: $input__height--large;
-//
-//      width: $input__height--large;
-//      height: $input__height--large;
-//  }
-//
-//  .input-sm + .form-control-feedback,
-//  .input-group-sm + .form-control-feedback,
-//  .form-group-sm .form-control + .form-control-feedback {
-//      line-height: $input__height--small;
-//
-//      width: $input__height--small;
-//      height: $input__height--small;
-//  }

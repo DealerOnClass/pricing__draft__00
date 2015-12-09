@@ -5,26 +5,21 @@
             border-color: check-color($color, 80, shade($color, $btn__contrast * 1.5), $color);
             background-color: $color;
 
-            &.dropup-toggle:not(:first-child),
-            &.dropdown-toggle:not(:first-child) {
-                border-left-color: shade($color, $btn__contrast * 1.5);
-            }
-
-            .badge {
-                color: check-color($color, 80, inherit, $white);
-                border-color: shade($color, $btn__contrast);
-                background-color: shade($color, $btn__contrast);
-            }
-
             @include state {
                 color: check-color($color, 80, inherit, $white);
                 border-color: check-color($color, 80, shade($color, $btn__contrast * 3), shade($color, $btn__contrast * 1.5));
                 background-color: shade($color, $btn__contrast);
+            }
 
-                .badge {
-                    border-color: shade($color, $btn__contrast * 2);
-                    background-color: shade($color, $btn__contrast * 2);
-                }
+            &.active,
+            &[disabled] {
+                border-color: check-color($color, 80, shade($color, $btn__contrast * 1.5), $color);
+                background-color: $color;
+            }
+
+            &.dropup-toggle:not(:first-child),
+            &.dropdown-toggle:not(:first-child) {
+                border-left-color: shade($color, $btn__contrast * 1.5);
             }
         }
     }

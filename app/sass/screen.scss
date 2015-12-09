@@ -169,7 +169,7 @@
     "05__objects/dropdown/09__colors.scss";
 
 @import
-    "05__objects/forms/00__variables",
+    "05__objects/forms/00__var",
     "05__objects/forms/01__form-control",
     "05__objects/forms/02__form-control-static",
     "05__objects/forms/03__form-control-feedback",
@@ -178,8 +178,7 @@
     "05__objects/forms/06__form-help-block",
     "05__objects/forms/07__form-inline",
     "05__objects/forms/08__form-horizontal",
-    "05__objects/forms/09__form-sizing",
-    "05__objects/forms/10__form-variations";
+    "05__objects/forms/09__colors";
 
 //  @import
 //      "05__objects/forms-custom/00__variables",
@@ -205,12 +204,11 @@
     "05__objects/img/03__img-circle";
 
 @import
-    "05__objects/input-groups/00__variables",
+    "05__objects/input-groups/00__var",
     "05__objects/input-groups/01__input-group",
     "05__objects/input-groups/02__input-group-addon",
     "05__objects/input-groups/03__input-group-btn",
-    "05__objects/input-groups/04__input-group-reset",
-    "05__objects/input-groups/05__input-group-variations";
+    "05__objects/input-groups/04__input-group-reset";
 
 @import
     "05__objects/jumbotron/00__variables",

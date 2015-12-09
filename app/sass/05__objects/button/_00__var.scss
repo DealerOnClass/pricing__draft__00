@@ -5,7 +5,7 @@ $btn__radius:                 $global__radius;
 $btn__x:                      $global__x;
 $btn__y:                      $global__y;
 //
-//  Color Options
+//  Color
 $btn__default-palette:        true !default;
 $btn__inverse-palette:        true !default;
 $btn__primary-palette:        true !default;
@@ -16,4 +16,3 @@ $btn__state-palette:          true !default;
 $btn__padding:                $btn__y $btn__x;
 $btn__radius:                 $btn__radius;
 $btn--active__shadow:         inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
-$btn--disabled__shadow:       none;

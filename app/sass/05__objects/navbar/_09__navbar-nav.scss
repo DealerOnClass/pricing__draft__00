@@ -3,6 +3,13 @@
         padding-top: $navbar-nav__link__vertical__padding;
         padding-bottom: $navbar-nav__link__vertical__padding;
     }
+    > li > a[disabled] {
+        cursor: $cursor-disabled;
+
+        box-shadow: none;
+
+        @include opacity(0.65);
+    }
 
     @media (max-width: $grid-float-breakpoint-max) {
         .open .dropdown-menu {
