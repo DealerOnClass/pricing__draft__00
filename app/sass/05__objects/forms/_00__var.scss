@@ -20,7 +20,7 @@ $form-control__radius:             $form__radius;
 $form-control--focus__border:      tint($state--info, 30%);
 //
 //  Components
-$form-feedback__use-icon:          true !default;   //  Allow css control for font awesome icons, if false, use html
+$form-feedback__use-icon:          true !default;
 $has-success__icon:                $fa-var-check;
 $has-warning__icon:                $fa-var-warning;
 $has-danger__icon:                 $fa-var-remove;

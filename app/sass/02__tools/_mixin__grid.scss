@@ -68,9 +68,9 @@
 @mixin make-grid($class) {
     @include float-grid-columns($class);
     @include loop-grid-columns($grid__columns, $class, width);
-    @if $grid__has__pull == yes { @include loop-grid-columns($grid__columns, $class, pull); }
-    @if $grid__has__push == yes { @include loop-grid-columns($grid__columns, $class, push); }
-    @if $grid__has__offset == yes { @include loop-grid-columns($grid__columns, $class, offset); }
+    @if $grid__has__pull { @include loop-grid-columns($grid__columns, $class, pull); }
+    @if $grid__has__push { @include loop-grid-columns($grid__columns, $class, push); }
+    @if $grid__has__offset { @include loop-grid-columns($grid__columns, $class, offset); }
 }
 
 //  Grid System

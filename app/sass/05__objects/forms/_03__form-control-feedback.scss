@@ -29,7 +29,7 @@
         margin-top: calc( #{$form__y * $base__line-height} + #{$two__true__pixels} );
     }
     label.sr-only ~ .form-control-feedback {
-        margin-top: calc( #{$form__y * -1} - #{$two__true__pixels} );
+        margin-top: calc( #{$form__y} + #{$two__true__pixels} );
     }
 }
 

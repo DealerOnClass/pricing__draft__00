@@ -6,7 +6,6 @@
     padding: $label__padding;
 
     text-align: center;
-    vertical-align: baseline;
     white-space: nowrap;
 
     border: $one__true__pixel solid;
@@ -20,5 +19,8 @@
 a.label {
     @include state {
         cursor: pointer;
+    }
+    &:active {
+        box-shadow: $label--active__shadow;
     }
 }

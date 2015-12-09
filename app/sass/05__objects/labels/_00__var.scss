@@ -1,16 +1,17 @@
+//
 //  Units
 $label__contrast:            $global__contrast;
 $label__radius:              $global__radius;
 $label__x:                   $global__x;
 $label__y:                   $global__y;
-//  General Options
-$label__solid-color:         true !default;  //  Use palette color for bg and border
-//  Color Options
+//
+//  Color
 $label__default-palette:     true !default;
 $label__inverse-palette:     true !default;
 $label__primary-palette:     true !default;
 $label__neutral-palette:     true !default;
 $label__state-palette:       true !default;
+//
 //  Base
 $label__padding:             ( $label__y / 1.3 ) $label__x ( $label__y / 1.6 );
 $label__font-size:           $h6__font-size;

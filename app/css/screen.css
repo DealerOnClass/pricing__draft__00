@@ -3054,9 +3054,6 @@ tbody.collapse.in {
   padding-right: 1.35em;
   padding-bottom: 1.35em;
 }
-.alert-icon > img {
-  border-radius: 0.375em;
-}
 
 .alert-body {
   display: table-cell;
@@ -5375,7 +5372,7 @@ button.close {
   margin-top: calc( 0.9em + 2px );
 }
 .has-feedback label.sr-only ~ .form-control-feedback {
-  margin-top: calc( -0.6em - 2px );
+  margin-top: calc( 0.6em + 2px );
 }
 
 .form-horizontal .has-feedback .form-control-feedback {
@@ -5417,8 +5414,6 @@ button.close {
 }
 .radio label,
 .checkbox label {
-  font-weight: normal;
-  margin-bottom: 0;
   padding-left: 0.9em;
   cursor: pointer;
 }
@@ -5439,7 +5434,6 @@ button.close {
 
 .radio-inline,
 .checkbox-inline {
-  font-weight: normal;
   position: relative;
   display: inline-block;
   margin-bottom: 1.5em;
@@ -6912,11 +6906,7 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
   background-color: #c34b47;
 }
 
-.hero-lg {
-  padding-top: 8.4em;
-  padding-bottom: 8.4em;
-}
-
+.img-thumbnail,
 .img-rounded {
   overflow: hidden;
   border-radius: 0.375em;
@@ -6959,7 +6949,6 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
 }
 
 .input-group-addon {
-  font-weight: normal;
   padding: 0.6em 0.9em;
   text-align: center;
   border: 1px solid #cccccc;
@@ -7025,25 +7014,11 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
   border-left: 0;
 }
 
-.jumbotron {
-  font-size: 1.25em;
-  padding: 1.8em 1.8em;
-  color: #343c4b;
-  background-color: #e6e6e6;
-}
-.container .jumbotron, .container-fluid .jumbotron {
-  border-radius: 0.375em;
-}
-.jumbotron .container {
-  max-width: 100%;
-}
-
 .label {
   font-size: 0.8em;
   display: inline-block;
   padding: 0.46154em 0.9em 0.375em;
   text-align: center;
-  vertical-align: baseline;
   white-space: nowrap;
   border: 1px solid;
   border-radius: 0.375em;
@@ -7054,6 +7029,9 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
 
 a.label:hover, a.label:active, a.label:focus {
   cursor: pointer;
+}
+a.label:active {
+  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 
 .label-default {
@@ -7067,9 +7045,6 @@ a.label-default:hover, a.label-default:active, a.label-default:focus {
   border-color: #cfcfcf;
   background-color: #cfcfcf;
 }
-a.label-default:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
 
 .label-inverse {
   color: white;
@@ -7081,9 +7056,6 @@ a.label-inverse:hover, a.label-inverse:active, a.label-inverse:focus {
   color: white;
   border-color: #2f3644;
   background-color: #2f3644;
-}
-a.label-inverse:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 
 .label-cta {
@@ -7097,9 +7069,6 @@ a.label-cta:hover, a.label-cta:active, a.label-cta:focus {
   border-color: #db6109;
   background-color: #db6109;
 }
-a.label-cta:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
 
 .label-main {
   color: white;
@@ -7111,9 +7080,6 @@ a.label-main:hover, a.label-main:active, a.label-main:focus {
   color: white;
   border-color: #31589c;
   background-color: #31589c;
-}
-a.label-main:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 
 .label-alt1 {
@@ -7127,9 +7093,6 @@ a.label-alt1:hover, a.label-alt1:active, a.label-alt1:focus {
   border-color: #3b4f71;
   background-color: #3b4f71;
 }
-a.label-alt1:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
 
 .label-alt2 {
   color: white;
@@ -7141,9 +7104,6 @@ a.label-alt2:hover, a.label-alt2:active, a.label-alt2:focus {
   color: white;
   border-color: #566885;
   background-color: #566885;
-}
-a.label-alt2:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 
 .label-alt3 {
@@ -7157,9 +7117,6 @@ a.label-alt3:hover, a.label-alt3:active, a.label-alt3:focus {
   border-color: #74849f;
   background-color: #74849f;
 }
-a.label-alt3:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
 
 .label-success {
   color: white;
@@ -7171,9 +7128,6 @@ a.label-success:hover, a.label-success:active, a.label-success:focus {
   color: white;
   border-color: #53a653;
   background-color: #53a653;
-}
-a.label-success:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 
 .label-info {
@@ -7187,9 +7141,6 @@ a.label-info:hover, a.label-info:active, a.label-info:focus {
   border-color: #52adc8;
   background-color: #52adc8;
 }
-a.label-info:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
 
 .label-warning {
   color: white;
@@ -7202,9 +7153,6 @@ a.label-warning:hover, a.label-warning:active, a.label-warning:focus {
   border-color: #d89c46;
   background-color: #d89c46;
 }
-a.label-warning:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
 
 .label-danger {
   color: white;
@@ -7216,9 +7164,6 @@ a.label-danger:hover, a.label-danger:active, a.label-danger:focus {
   color: white;
   border-color: #c34b47;
   background-color: #c34b47;
-}
-a.label-danger:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 
 .list-group {
@@ -7248,14 +7193,6 @@ a.label-danger:active {
   background-color: #3662ad;
 }
 
-.list-group-item.disabled, .list-group-item[disabled], .list-group-item.disabled:hover, .list-group-item.disabled:active, .list-group-item.disabled:focus, .list-group-item[disabled]:hover, .list-group-item[disabled]:active, .list-group-item[disabled]:focus {
-  color: #999999;
-  border-color: #999999;
-  background-color: #e6e6e6;
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
 a.list-group-item:hover, a.list-group-item:active, a.list-group-item:focus,
 button.list-group-item:hover,
 button.list-group-item:active,
@@ -7264,21 +7201,16 @@ button.list-group-item:focus {
   border-color: #3662ad;
   background-color: #3662ad;
 }
-a.list-group-item:hover .badge, a.list-group-item:active .badge, a.list-group-item:focus .badge,
-button.list-group-item:hover .badge,
-button.list-group-item:active .badge,
-button.list-group-item:focus .badge {
-  border-color: #31589c;
-  background-color: #31589c;
-}
 a.list-group-item:active,
 button.list-group-item:active {
   box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
-a.list-group-item.active .badge,
-button.list-group-item.active .badge {
-  border-color: #31589c;
-  background-color: #31589c;
+a.list-group-item[disabled],
+button.list-group-item[disabled] {
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
 }
 
 button.list-group-item {
@@ -7302,10 +7234,6 @@ button.list-group-item {
 .list-group-default .list-group-item:not(:last-child) {
   border-bottom-color: #cfcfcf;
 }
-.list-group-default .list-group-item .badge {
-  border-color: #cfcfcf;
-  background-color: #cfcfcf;
-}
 .list-group-default .list-group-item.active, .list-group-default a.list-group-item:hover, .list-group-default a.list-group-item:active, .list-group-default a.list-group-item:focus {
   color: inherit;
   border-color: #cfcfcf;
@@ -7313,13 +7241,6 @@ button.list-group-item {
 }
 .list-group-default .list-group-item.active:not(:last-child), .list-group-default a.list-group-item:not(:last-child):hover, .list-group-default a.list-group-item:not(:last-child):active, .list-group-default a.list-group-item:not(:last-child):focus {
   border-bottom-color: #b8b8b8;
-}
-.list-group-default .list-group-item.active:active, .list-group-default a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-default .list-group-item.active .badge, .list-group-default a.list-group-item:hover .badge, .list-group-default a.list-group-item:active .badge, .list-group-default a.list-group-item:focus .badge {
-  border-color: #b8b8b8;
-  background-color: #b8b8b8;
 }
 
 .list-group-inverse .list-group-item {
@@ -7330,10 +7251,6 @@ button.list-group-item {
 .list-group-inverse .list-group-item:not(:last-child) {
   border-bottom-color: #2f3644;
 }
-.list-group-inverse .list-group-item .badge {
-  border-color: #2f3644;
-  background-color: #2f3644;
-}
 .list-group-inverse .list-group-item.active, .list-group-inverse a.list-group-item:hover, .list-group-inverse a.list-group-item:active, .list-group-inverse a.list-group-item:focus {
   color: white;
   border-color: #2f3644;
@@ -7341,13 +7258,6 @@ button.list-group-item {
 }
 .list-group-inverse .list-group-item.active:not(:last-child), .list-group-inverse a.list-group-item:not(:last-child):hover, .list-group-inverse a.list-group-item:not(:last-child):active, .list-group-inverse a.list-group-item:not(:last-child):focus {
   border-bottom-color: #2a303c;
-}
-.list-group-inverse .list-group-item.active:active, .list-group-inverse a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-inverse .list-group-item.active .badge, .list-group-inverse a.list-group-item:hover .badge, .list-group-inverse a.list-group-item:active .badge, .list-group-inverse a.list-group-item:focus .badge {
-  border-color: #2a303c;
-  background-color: #2a303c;
 }
 
 .list-group-cta .list-group-item {
@@ -7358,10 +7268,6 @@ button.list-group-item {
 .list-group-cta .list-group-item:not(:last-child) {
   border-bottom-color: #db6109;
 }
-.list-group-cta .list-group-item .badge {
-  border-color: #db6109;
-  background-color: #db6109;
-}
 .list-group-cta .list-group-item.active, .list-group-cta a.list-group-item:hover, .list-group-cta a.list-group-item:active, .list-group-cta a.list-group-item:focus {
   color: white;
   border-color: #db6109;
@@ -7369,13 +7275,6 @@ button.list-group-item {
 }
 .list-group-cta .list-group-item.active:not(:last-child), .list-group-cta a.list-group-item:not(:last-child):hover, .list-group-cta a.list-group-item:not(:last-child):active, .list-group-cta a.list-group-item:not(:last-child):focus {
   border-bottom-color: #c25608;
-}
-.list-group-cta .list-group-item.active:active, .list-group-cta a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-cta .list-group-item.active .badge, .list-group-cta a.list-group-item:hover .badge, .list-group-cta a.list-group-item:active .badge, .list-group-cta a.list-group-item:focus .badge {
-  border-color: #c25608;
-  background-color: #c25608;
 }
 
 .list-group-main .list-group-item {
@@ -7386,10 +7285,6 @@ button.list-group-item {
 .list-group-main .list-group-item:not(:last-child) {
   border-bottom-color: #31589c;
 }
-.list-group-main .list-group-item .badge {
-  border-color: #31589c;
-  background-color: #31589c;
-}
 .list-group-main .list-group-item.active, .list-group-main a.list-group-item:hover, .list-group-main a.list-group-item:active, .list-group-main a.list-group-item:focus {
   color: white;
   border-color: #31589c;
@@ -7397,13 +7292,6 @@ button.list-group-item {
 }
 .list-group-main .list-group-item.active:not(:last-child), .list-group-main a.list-group-item:not(:last-child):hover, .list-group-main a.list-group-item:not(:last-child):active, .list-group-main a.list-group-item:not(:last-child):focus {
   border-bottom-color: #2b4e8a;
-}
-.list-group-main .list-group-item.active:active, .list-group-main a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-main .list-group-item.active .badge, .list-group-main a.list-group-item:hover .badge, .list-group-main a.list-group-item:active .badge, .list-group-main a.list-group-item:focus .badge {
-  border-color: #2b4e8a;
-  background-color: #2b4e8a;
 }
 
 .list-group-alt1 .list-group-item {
@@ -7414,10 +7302,6 @@ button.list-group-item {
 .list-group-alt1 .list-group-item:not(:last-child) {
   border-bottom-color: #3b4f71;
 }
-.list-group-alt1 .list-group-item .badge {
-  border-color: #3b4f71;
-  background-color: #3b4f71;
-}
 .list-group-alt1 .list-group-item.active, .list-group-alt1 a.list-group-item:hover, .list-group-alt1 a.list-group-item:active, .list-group-alt1 a.list-group-item:focus {
   color: white;
   border-color: #3b4f71;
@@ -7425,13 +7309,6 @@ button.list-group-item {
 }
 .list-group-alt1 .list-group-item.active:not(:last-child), .list-group-alt1 a.list-group-item:not(:last-child):hover, .list-group-alt1 a.list-group-item:not(:last-child):active, .list-group-alt1 a.list-group-item:not(:last-child):focus {
   border-bottom-color: #354664;
-}
-.list-group-alt1 .list-group-item.active:active, .list-group-alt1 a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-alt1 .list-group-item.active .badge, .list-group-alt1 a.list-group-item:hover .badge, .list-group-alt1 a.list-group-item:active .badge, .list-group-alt1 a.list-group-item:focus .badge {
-  border-color: #354664;
-  background-color: #354664;
 }
 
 .list-group-alt2 .list-group-item {
@@ -7442,10 +7319,6 @@ button.list-group-item {
 .list-group-alt2 .list-group-item:not(:last-child) {
   border-bottom-color: #566885;
 }
-.list-group-alt2 .list-group-item .badge {
-  border-color: #566885;
-  background-color: #566885;
-}
 .list-group-alt2 .list-group-item.active, .list-group-alt2 a.list-group-item:hover, .list-group-alt2 a.list-group-item:active, .list-group-alt2 a.list-group-item:focus {
   color: white;
   border-color: #566885;
@@ -7453,13 +7326,6 @@ button.list-group-item {
 }
 .list-group-alt2 .list-group-item.active:not(:last-child), .list-group-alt2 a.list-group-item:not(:last-child):hover, .list-group-alt2 a.list-group-item:not(:last-child):active, .list-group-alt2 a.list-group-item:not(:last-child):focus {
   border-bottom-color: #4c5c76;
-}
-.list-group-alt2 .list-group-item.active:active, .list-group-alt2 a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-alt2 .list-group-item.active .badge, .list-group-alt2 a.list-group-item:hover .badge, .list-group-alt2 a.list-group-item:active .badge, .list-group-alt2 a.list-group-item:focus .badge {
-  border-color: #4c5c76;
-  background-color: #4c5c76;
 }
 
 .list-group-alt3 .list-group-item {
@@ -7470,10 +7336,6 @@ button.list-group-item {
 .list-group-alt3 .list-group-item:not(:last-child) {
   border-bottom-color: #74849f;
 }
-.list-group-alt3 .list-group-item .badge {
-  border-color: #74849f;
-  background-color: #74849f;
-}
 .list-group-alt3 .list-group-item.active, .list-group-alt3 a.list-group-item:hover, .list-group-alt3 a.list-group-item:active, .list-group-alt3 a.list-group-item:focus {
   color: white;
   border-color: #74849f;
@@ -7481,13 +7343,6 @@ button.list-group-item {
 }
 .list-group-alt3 .list-group-item.active:not(:last-child), .list-group-alt3 a.list-group-item:not(:last-child):hover, .list-group-alt3 a.list-group-item:not(:last-child):active, .list-group-alt3 a.list-group-item:not(:last-child):focus {
   border-bottom-color: #67768e;
-}
-.list-group-alt3 .list-group-item.active:active, .list-group-alt3 a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-alt3 .list-group-item.active .badge, .list-group-alt3 a.list-group-item:hover .badge, .list-group-alt3 a.list-group-item:active .badge, .list-group-alt3 a.list-group-item:focus .badge {
-  border-color: #67768e;
-  background-color: #67768e;
 }
 
 .list-group-success .list-group-item {
@@ -7498,10 +7353,6 @@ button.list-group-item {
 .list-group-success .list-group-item:not(:last-child) {
   border-bottom-color: #53a653;
 }
-.list-group-success .list-group-item .badge {
-  border-color: #53a653;
-  background-color: #53a653;
-}
 .list-group-success .list-group-item.active, .list-group-success a.list-group-item:hover, .list-group-success a.list-group-item:active, .list-group-success a.list-group-item:focus {
   color: white;
   border-color: #53a653;
@@ -7509,13 +7360,6 @@ button.list-group-item {
 }
 .list-group-success .list-group-item.active:not(:last-child), .list-group-success a.list-group-item:not(:last-child):hover, .list-group-success a.list-group-item:not(:last-child):active, .list-group-success a.list-group-item:not(:last-child):focus {
   border-bottom-color: #4a934a;
-}
-.list-group-success .list-group-item.active:active, .list-group-success a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-success .list-group-item.active .badge, .list-group-success a.list-group-item:hover .badge, .list-group-success a.list-group-item:active .badge, .list-group-success a.list-group-item:focus .badge {
-  border-color: #4a934a;
-  background-color: #4a934a;
 }
 
 .list-group-info .list-group-item {
@@ -7526,10 +7370,6 @@ button.list-group-item {
 .list-group-info .list-group-item:not(:last-child) {
   border-bottom-color: #52adc8;
 }
-.list-group-info .list-group-item .badge {
-  border-color: #52adc8;
-  background-color: #52adc8;
-}
 .list-group-info .list-group-item.active, .list-group-info a.list-group-item:hover, .list-group-info a.list-group-item:active, .list-group-info a.list-group-item:focus {
   color: white;
   border-color: #52adc8;
@@ -7537,13 +7377,6 @@ button.list-group-item {
 }
 .list-group-info .list-group-item.active:not(:last-child), .list-group-info a.list-group-item:not(:last-child):hover, .list-group-info a.list-group-item:not(:last-child):active, .list-group-info a.list-group-item:not(:last-child):focus {
   border-bottom-color: #499ab2;
-}
-.list-group-info .list-group-item.active:active, .list-group-info a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-info .list-group-item.active .badge, .list-group-info a.list-group-item:hover .badge, .list-group-info a.list-group-item:active .badge, .list-group-info a.list-group-item:focus .badge {
-  border-color: #499ab2;
-  background-color: #499ab2;
 }
 
 .list-group-warning .list-group-item {
@@ -7554,10 +7387,6 @@ button.list-group-item {
 .list-group-warning .list-group-item:not(:last-child) {
   border-bottom-color: #d89c46;
 }
-.list-group-warning .list-group-item .badge {
-  border-color: #d89c46;
-  background-color: #d89c46;
-}
 .list-group-warning .list-group-item.active, .list-group-warning a.list-group-item:hover, .list-group-warning a.list-group-item:active, .list-group-warning a.list-group-item:focus {
   color: white;
   border-color: #d89c46;
@@ -7565,13 +7394,6 @@ button.list-group-item {
 }
 .list-group-warning .list-group-item.active:not(:last-child), .list-group-warning a.list-group-item:not(:last-child):hover, .list-group-warning a.list-group-item:not(:last-child):active, .list-group-warning a.list-group-item:not(:last-child):focus {
   border-bottom-color: #c08a3e;
-}
-.list-group-warning .list-group-item.active:active, .list-group-warning a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-warning .list-group-item.active .badge, .list-group-warning a.list-group-item:hover .badge, .list-group-warning a.list-group-item:active .badge, .list-group-warning a.list-group-item:focus .badge {
-  border-color: #c08a3e;
-  background-color: #c08a3e;
 }
 
 .list-group-danger .list-group-item {
@@ -7582,10 +7404,6 @@ button.list-group-item {
 .list-group-danger .list-group-item:not(:last-child) {
   border-bottom-color: #c34b47;
 }
-.list-group-danger .list-group-item .badge {
-  border-color: #c34b47;
-  background-color: #c34b47;
-}
 .list-group-danger .list-group-item.active, .list-group-danger a.list-group-item:hover, .list-group-danger a.list-group-item:active, .list-group-danger a.list-group-item:focus {
   color: white;
   border-color: #c34b47;
@@ -7593,13 +7411,6 @@ button.list-group-item {
 }
 .list-group-danger .list-group-item.active:not(:last-child), .list-group-danger a.list-group-item:not(:last-child):hover, .list-group-danger a.list-group-item:not(:last-child):active, .list-group-danger a.list-group-item:not(:last-child):focus {
   border-bottom-color: #ae423f;
-}
-.list-group-danger .list-group-item.active:active, .list-group-danger a.list-group-item:active {
-  box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.list-group-danger .list-group-item.active .badge, .list-group-danger a.list-group-item:hover .badge, .list-group-danger a.list-group-item:active .badge, .list-group-danger a.list-group-item:focus .badge {
-  border-color: #ae423f;
-  background-color: #ae423f;
 }
 
 .media {
@@ -12293,7 +12104,6 @@ a.thumbnail.active {
 .demo__body {
   position: relative;
   margin-bottom: 9em;
-  padding-top: 3em;
 }
 
 .demo__titlebar {

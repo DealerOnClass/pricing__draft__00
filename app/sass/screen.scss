@@ -185,7 +185,7 @@
 //      "05__objects/forms-custom/01__forms-custom";
 
 @import
-    "05__objects/grid/00__variables",
+    "05__objects/grid/00__var",
     "05__objects/grid/01__container",
     "05__objects/grid/02__container-fluid",
     "05__objects/grid/03__row",
@@ -193,9 +193,9 @@
     "05__objects/grid/05__column-divider";
 
 @import
-    "05__objects/hero/00__variables",
+    "05__objects/hero/00__var",
     "05__objects/hero/01__hero",
-    "05__objects/hero/02__hero-variations";
+    "05__objects/hero/02__colors";
 
 @import
     "05__objects/img/00__var",
@@ -204,23 +204,18 @@
     "05__objects/img/03__img-circle";
 
 @import
-    "05__objects/input-groups/00__var",
     "05__objects/input-groups/01__input-group",
     "05__objects/input-groups/02__input-group-addon",
     "05__objects/input-groups/03__input-group-btn",
     "05__objects/input-groups/04__input-group-reset";
 
 @import
-    "05__objects/jumbotron/00__variables",
-    "05__objects/jumbotron/01__jumbotron";
-
-@import
-    "05__objects/labels/00__variables",
+    "05__objects/labels/00__var",
     "05__objects/labels/01__label",
-    "05__objects/labels/02__label-variations";
+    "05__objects/labels/02__colors";
 
 @import
-    "05__objects/list-group/00__variables",
+    "05__objects/list-group/00__var",
     "05__objects/list-group/01__list-group",
     "05__objects/list-group/02__list-group-item",
     "05__objects/list-group/03__list-group-item__link",

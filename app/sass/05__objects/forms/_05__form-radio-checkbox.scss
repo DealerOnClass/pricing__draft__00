@@ -8,9 +8,6 @@
     margin-left: $form__x / 1.5;
 
     label {
-        font-weight: normal;
-
-        margin-bottom: 0;
         padding-left: $form__x;
 
         cursor: pointer;
@@ -34,8 +31,6 @@
 
 .radio-inline,
 .checkbox-inline {
-    font-weight: normal;
-
     position: relative;
 
     display: inline-block;

@@ -5,10 +5,10 @@
 
     > .btn {
         position: relative;
+    }
 
-        + .btn {
-            margin-left: $one__true__pixel * -1;
-        }
+    > .btn + .btn {
+        margin-left: $one__true__pixel * -1;
     }
 
     > .btn,
