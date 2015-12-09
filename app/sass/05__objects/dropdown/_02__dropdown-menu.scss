@@ -27,7 +27,16 @@
 
         white-space: nowrap;
     }
-
+    > li > a:active {
+        box-shadow: $dropdown-menu__link--active__shadow;
+    }
+    > li.active > a,
+    > li > a.active {
+        @include state-and-self {
+            box-shadow: $dropdown-menu__link--active__shadow;
+            background-color: $dropdown-menu__link--active__bg;
+        }
+    }
     > li.disabled > a,
     > li > a.disabled,
     > li > a[disabled] {
@@ -36,7 +45,6 @@
             cursor: $cursor-disabled;
         }
     }
-
     > li:first-child > a {
         border-top-right-radius: $dropdown__radius;
         border-top-left-radius: $dropdown__radius;

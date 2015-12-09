@@ -4,13 +4,27 @@
             .btn-#{$class__name} {
                 + .dropdown-menu {
                     color: check-color($color, 80, inherit, $white);
-                    border-color: shade($color, $btn__contrast);
+                    border: 0 none;
                     background-color: $color;
                     > li > a {
                         color: inherit;
                         @include state {
                             color: inherit;
                             background-color: shade($color, $btn__contrast);
+                        }
+                    }
+                    > li.active > a,
+                    > li > a.active {
+                        @include state-and-self {
+                            background-color: shade($color, $btn__contrast * 2);
+                        }
+                    }
+                    > li.disabled > a,
+                    > li > a.disabled,
+                    > li > a[disabled] {
+                        @include state-and-self {
+                            color: shade($color, $btn__contrast * 3);
+                            background-color: transparent;
                         }
                     }
                     .divider {
@@ -27,13 +41,27 @@
         }
         .dropdown-menu-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border-color: shade($color, $btn__contrast);
+            border: 0 none;
             background-color: $color;
             > li > a {
                 color: inherit;
                 @include state {
                     color: inherit;
                     background-color: shade($color, $btn__contrast);
+                }
+            }
+            > li.active > a,
+            > li > a.active {
+                @include state-and-self {
+                    background-color: shade($color, $btn__contrast * 2);
+                }
+            }
+            > li.disabled > a,
+            > li > a.disabled,
+            > li > a[disabled] {
+                @include state-and-self {
+                    color: shade($color, $btn__contrast * 3);
+                    background-color: transparent;
                 }
             }
             .divider {

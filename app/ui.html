@@ -2244,7 +2244,7 @@
             <!--Dropdowns-->
             <section class="demo__section">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-xs-6">
                         <h3 class="demo__heading">Dropdown</h3>
                         <div class="dropdown clearfix">
                             <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -2258,8 +2258,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Dropup</h3>
+                    <div class="col-xs-6">
                         <div class="dropup clearfix">
                             <button class="btn dropup-toggle demo__dropup" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
                                 Dropup
@@ -2271,10 +2270,11 @@
                                 <li><a tabindex="-1" href="#">Something else here</a></li>
                             </ul>
                         </div>
+                        <h3 class="demo__heading">Dropup</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-xs-6">
                         <h3 class="demo__heading">Headers</h3>
                         <div class="dropdown clearfix">
                             <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="true">
@@ -2291,7 +2291,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-xs-6">
                         <h3 class="demo__heading">Divider</h3>
                         <div class="dropdown clearfix">
                             <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-expanded="true">
@@ -2319,6 +2319,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
                                 <li><a tabindex="-1" href="#">Regular link</a></li>
                                 <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                                <li class="divider"></li>
                                 <li><a tabindex="-1" href="#">Another link</a></li>
                             </ul>
                         </div>
@@ -2329,14 +2330,14 @@
             <section class="demo__section">
                 <div class="emulate-html-element">
                     <div class="emulate-body-element">
-                        <nav class="navbar navbar-alt1 navbar-static-top">
+                        <nav class="navbar navbar-static-top">
                             <div class="container-fluid">
                                 <div class="navbar-header">
                                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-mega-menu">
                                         <span class="sr-only">Toggle navigation</span>
                                         <i class="fa fa-navicon"></i>
                                     </button>
-                                    <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
+                                    <a class="navbar-brand" href="#">Brand</a>
                                 </div>
 
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-mega-menu">
@@ -2393,6 +2394,155 @@
                     </div>
                 </div>
             </section>
+
+            <div class="row">
+                <div class="dropdown col-xs-4">
+                    <h3 class="demo__heading">Default palette</h3>
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-default" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown col-xs-4">
+                    <h3 class="demo__heading">Inverse palette</h3>
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-inverse" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="demo__heading">Primary palette</h3>
+            <div class="row">
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-cta" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-main" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="demo__heading">Neutral palette</h3>
+            <div class="row">
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-alt1" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-alt2" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-alt3" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h3 class="demo__heading">States palette</h3>
+            <div class="row">
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-success" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-info" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-warning" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-xs-4">
+                    <button class="btn dropdown-toggle demo__dropdown" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-danger" aria-labelledby="dropdownMenu4">
+                        <li class="active"><a tabindex="-1" href="#">Active link</a></li>
+                        <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Regular link</a></li>
+                    </ul>
+                </div>
+            </div>
 
             <!--SECTION: Forms-->
             <nav id="ui__forms" class="navbar demo__titlebar">

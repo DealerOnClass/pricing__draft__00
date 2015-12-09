@@ -4,7 +4,6 @@
 }
 .dropdown-mega-menu .dropdown-menu {
     padding-top: $dropdown__y;
-    padding-bottom: $dropdown__y;
 }
 
 @media (min-width:  $grid-float-breakpoint) {

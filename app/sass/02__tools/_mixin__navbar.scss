@@ -59,21 +59,25 @@
             }
 
             .navbar-nav .dropdown-menu {
-                border-color: shade($color, $navbar__contrast);
                 background-color: shade($color, $navbar__contrast);
 
-                border: 0 none;     // Temp remove later
-
                 > li > a {
-                    color: check-color($color, 80, inherit, $white);
-                    border-color: shade($color, $navbar__contrast);
                     background-color: shade($color, $navbar__contrast);
                     @include state {
                         background-color: shade($color, $navbar__contrast * 2);
                     }
                 }
-                &:after {
-                    display: none;
+                > li.active > a,
+                > li > a.active {
+                    background-color: shade($color, $navbar__contrast * 2);
+                }
+                > li.disabled > a,
+                > li > a.disabled,
+                > li > a[disabled] {
+                    @include state-and-self {
+                        color: shade($color, $navbar__contrast * 3);
+                        background-color: transparent;
+                    }
                 }
                 .divider {
                     border-color: shade($color, $navbar__contrast * 2);
