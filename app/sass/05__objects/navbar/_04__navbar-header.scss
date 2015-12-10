@@ -1,7 +1,6 @@
 .navbar-header {
-    @include clearfix;
     @media (min-width:  $grid-float-breakpoint) {
         float: left;
     }
+    @include clearfix;
 }
-

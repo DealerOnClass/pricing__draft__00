@@ -3,21 +3,16 @@
 
     border: $one__true__pixel solid;
 
+    @include clearfix;
     @media (min-width: $grid-float-breakpoint) {
         border-radius: $navbar__radius;
     }
-
-    @include clearfix;
 }
 
 .navbar .dropdown-menu {
     border: 0 none;
     border-radius: 0;
     box-shadow: none;
-}
-
-.navbar .dropdown-menu > li:first-child > a {
-    border-radius: 0;
 }
 
 .navbar .caret {

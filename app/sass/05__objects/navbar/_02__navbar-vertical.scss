@@ -1,5 +1,4 @@
-.navbar-sidebar,
-.navbar-vertical {
+.navbar-stacked {
     .navbar-header,
     .navbar-brand,
     .navbar-nav,
@@ -50,7 +49,7 @@
         }
     }
 }
-.navbar-vertical {
+.navbar-stacked {
     @media (min-width: $screen-xs-min) {
         float: left;
     }

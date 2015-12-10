@@ -84,8 +84,7 @@
                 }
             }
 
-            &.navbar-vertical,
-            &.navbar-sidebar {
+            &.navbar-stacked {
                 .navbar-nav .dropdown-menu {
                     > li > a {
                         color: check-color($color, 80, inherit, $white);
@@ -101,7 +100,7 @@
                 }
             }
 
-            &.navbar-sidebar {
+            &.navbar-stacked {
                 .navbar-sidebar-collapse,
                 .navbar-sidebar-header,
                 .navbar-sidebar-footer {
