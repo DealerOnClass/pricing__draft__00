@@ -8630,6 +8630,18 @@ button.list-group-item {
   }
 }
 
+.navbar .dropdown-menu {
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.navbar .caret {
+  line-height: 1.5;
+  float: right;
+  margin-left: 0.45em;
+}
+
 .navbar-sidebar .navbar-header,
 .navbar-sidebar .navbar-brand,
 .navbar-sidebar .navbar-nav,
@@ -8648,24 +8660,12 @@ button.list-group-item {
 .navbar-vertical .navbar-brand {
   display: block;
 }
-.navbar-sidebar .navbar-nav > .dropdown:last-child > .dropdown-menu,
-.navbar-vertical .navbar-nav > .dropdown:last-child > .dropdown-menu {
-  border-bottom-right-radius: 0.375em;
-  border-bottom-left-radius: 0.375em;
-}
-.navbar-sidebar .caret,
-.navbar-vertical .caret {
-  float: right;
-}
 .navbar-sidebar .dropdown-menu,
 .navbar-vertical .dropdown-menu {
   position: relative;
   display: block;
   overflow: hidden;
   width: 100%;
-  border: 0 none;
-  border-radius: 0;
-  box-shadow: none;
 }
 .navbar-sidebar .dropdown-menu.collapse,
 .navbar-vertical .dropdown-menu.collapse {
@@ -8699,10 +8699,6 @@ button.list-group-item {
   background-color: #356cca;
 }
 
-.navbar-sidebar {
-  float: left;
-}
-
 @media (min-width: 480px) {
   .navbar-vertical {
     float: left;
@@ -8732,9 +8728,7 @@ button.list-group-item {
   position: relative;
   top: 3.3em;
   overflow-y: scroll;
-  box-sizing: border-box;
   height: calc( 100% - 3.3em);
-  border-top: 1px solid;
 }
 
 .navbar-sidebar-wrapper {
@@ -8768,6 +8762,7 @@ button.list-group-item {
 }
 
 .offcanvas-nav {
+  float: left;
   position: relative;
 }
 .offcanvas-nav .navbar-sidebar-collapse {
@@ -8816,10 +8811,6 @@ button.list-group-item {
   }
   .navbar-collapse.in {
     overflow-y: visible;
-  }
-  .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
   }
 }
 
@@ -9006,17 +8997,6 @@ button.list-group-item {
   .navbar-text {
     float: left;
   }
-}
-
-.navbar-nav > li > .dropdown-menu {
-  margin-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
-  margin-bottom: 0;
-  border: 0.375em 0.375em 0 0;
 }
 
 @media (min-width: 480px) {

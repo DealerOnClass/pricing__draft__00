@@ -9,3 +9,16 @@
     }
 }
 
+.navbar .dropdown-menu {
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.navbar .caret {
+    line-height: $base__line-height;
+
+    float: right;
+
+    margin-left: $navbar__x / 2;
+}

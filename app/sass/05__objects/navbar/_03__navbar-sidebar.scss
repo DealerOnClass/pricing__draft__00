@@ -18,14 +18,11 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
 
     overflow-y: scroll;
 
-    box-sizing: border-box;
-
     height: calc( 100% - #{$navbar-sidebar-collapse-unit});
-    border-top: $one__true__pixel solid;
 }
 
 .navbar-sidebar-wrapper {
-    width: 18em;    //  ** Required
+    width: $navbar-sidebar__width;
 }
 
 .navbar-sidebar-header,
@@ -55,18 +52,18 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
 }
 
 .offcanvas-nav {
+    float: left;
     position: relative;
 
     .navbar-sidebar-collapse {
         top: 0;
+
         height: 100%;
     }
 }
 
 .offcanvas-body {
     display: table-cell;
+
     width: 100000px;
 }
-
-
-

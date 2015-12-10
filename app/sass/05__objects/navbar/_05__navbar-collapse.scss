@@ -26,13 +26,6 @@
         &.in {
             overflow-y: visible;
         }
-
-        .navbar-fixed-top &,
-        .navbar-static-top &,
-        .navbar-fixed-bottom & {
-            padding-right: 0;
-            padding-left: 0;
-        }
     }
 }
 

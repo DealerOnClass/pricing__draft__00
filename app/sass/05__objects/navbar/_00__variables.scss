@@ -1,14 +1,22 @@
+//
 //  Units
 $navbar__contrast:                     $global__contrast * 1.5;
 $navbar__radius:                       $global__radius;
 $navbar__x:                            $global__x;
 $navbar__y:                            $global__y * 1.5;
+//
 //  Color Options
 $navbar__default-palette:              true !default;
 $navbar__inverse-palette:              true !default;
 $navbar__primary-palette:              true !default;
 $navbar__neutral-palette:              true !default;
 $navbar__state-palette:                true !default;
+//
+//  Base
+$navbar-sidebar__width:                 18em;
+//
+//  Components
+
 //  Navbar-Collapse
 $navbar-collapse__padding:             $global__gutter / 2;
 $navbar-collapse__max-height:          340px;
