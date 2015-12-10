@@ -4,16 +4,6 @@
             color: check-color($color, 80, inherit, $white);
             border-color: $color;
             background-color: $color;
-
-            .close {
-
-                border: 0 none;
-
-                @include state {
-                    color: check-color($color, 80, inherit, $white);
-                    background-color: shade($color, $alert__contrast);
-                }
-            }
         }
     }
 }

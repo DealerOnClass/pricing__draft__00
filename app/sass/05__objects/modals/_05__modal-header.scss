@@ -1,13 +1,15 @@
 .modal-header {
     padding: $modal-header__padding;
 
-    border-bottom: $one__true__pixel solid $modal-header__border;
-}
+    .close {
+        line-height: 1;
 
-.modal-header .close {
-    position: absolute;
-    top: 0;
-    right: 0;
+        position: absolute;
+        top: $modal__y / 2;
+        right: $modal__x / 3;
 
-    border: 0 none;
+        padding: $global__y;
+
+        border-radius: $modal__radius;
+    }
 }

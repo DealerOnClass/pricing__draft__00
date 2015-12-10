@@ -6,7 +6,6 @@
     padding: $list-group-item__padding;
 
     border: $one__true__pixel solid;
-
     & + & {
         border-top: 0 none;
     }
@@ -19,8 +18,31 @@
         border-bottom-left-radius: $list-group-item__radius;
     }
     &.active {
-        color: $list-group-item--active__color;
-        border-color: $list-group-item--active__border;
-        background-color: $list-group-item--active__bg;
+        box-shadow: $list-group-item--active__shadow;
     }
+    &[disabled] {
+        cursor: $cursor-disabled;
+
+        box-shadow: none;
+
+        @include opacity(0.65);
+    }
+
+    .badge {
+        border-color: transparent;
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+a.list-group-item,
+button.list-group-item {
+    &:active {
+        box-shadow: $list-group-item--active__shadow;
+    }
+}
+
+button.list-group-item {
+    width: 100%;
+
+    text-align: left;
 }

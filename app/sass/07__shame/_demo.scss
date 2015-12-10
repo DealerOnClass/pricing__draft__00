@@ -97,11 +97,21 @@
     margin-bottom: rhythm(.5);
 }
 .show__modal,
+.show__modal--palette,
 .show__popover,
 .demo__dropdown {
     position: relative;
 
     display: block;
+}
+
+.show__modal--palette {
+    .modal-content {
+        margin: rhythm(.5);
+    }
+    .modal-dialog {
+        width: 100%;
+    }
 }
 
 .show__tooltip {

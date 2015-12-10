@@ -4,8 +4,14 @@
     padding-right: $alert__x * 3;
 
     .close {
+        line-height: 1;
+
         position: absolute;
         top: $alert__y / 2;
         right: $alert__x / 3;
+
+        padding: $global__y;
+
+        border-radius: $alert__radius;
     }
 }

@@ -2,10 +2,10 @@
     position: relative;
 
     width: auto;
-    margin: 10px;
+    margin: $global__gutter / 3;
 
     @media (min-width: $screen-sm-min) {
-        width: $modal--md;
+        width: $modal--md__width;
         margin: $grid__gutter auto;
     }
 }

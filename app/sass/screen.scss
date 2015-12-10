@@ -35,6 +35,7 @@
     "02__tools/mixin__img-responsive",
     "02__tools/mixin__label-variant",
     "02__tools/mixin__list-group",
+    "02__tools/mixin__modal",
     "02__tools/mixin__nav-divider",
     "02__tools/mixin__navbar",
     "02__tools/mixin__navs",
@@ -218,22 +219,18 @@
     "05__objects/list-group/00__var",
     "05__objects/list-group/01__list-group",
     "05__objects/list-group/02__list-group-item",
-    "05__objects/list-group/03__list-group-item__link",
-    "05__objects/list-group/04__list-group-item-heading",
-    "05__objects/list-group/05__list-group-item-text",
-    "05__objects/list-group/06__list-group-variations";
+    "05__objects/list-group/03__list-group-item-text",
+    "05__objects/list-group/04__colors";
 
 @import
-    "05__objects/media/00__variables",
+    "05__objects/media/00__var",
     "05__objects/media/01__media",
     "05__objects/media/02__media-body",
     "05__objects/media/03__media-object",
-    "05__objects/media/04__media-alignment",
-    "05__objects/media/05__media-heading",
-    "05__objects/media/06__media-list";
+    "05__objects/media/04__media-alignment";
 
 @import
-    "05__objects/modals/00__variables",
+    "05__objects/modals/00__var",
     "05__objects/modals/01__modal",
     "05__objects/modals/02__modal-dialog",
     "05__objects/modals/03__modal-content",
@@ -243,7 +240,8 @@
     "05__objects/modals/07__modal-body",
     "05__objects/modals/08__modal-footer",
     "05__objects/modals/09__modal-scrollbar-measure",
-    "05__objects/modals/10__modal-variations";
+    "05__objects/modals/10__modal-variations",
+    "05__objects/modals/11__colors";
 
 @import
     "05__objects/navs/00__var",

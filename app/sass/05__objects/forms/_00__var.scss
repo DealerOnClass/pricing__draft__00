@@ -11,7 +11,7 @@ $form-feedback__primary-palette:   false !default;
 $form-feedback__neutral-palette:   false !default;
 $form-feedback__state-palette:     true !default;
 //
-//  Base
+//  Components
 $form-control__bg:                 $gray__01;
 $form-control__border:             $gray__02;
 $form-control__color:              $body__color;
@@ -19,7 +19,6 @@ $form-control__padding:            $form__y $form__x;
 $form-control__radius:             $form__radius;
 $form-control--focus__border:      tint($state--info, 30%);
 //
-//  Components
 $form-feedback__use-icon:          true !default;
 $has-success__icon:                $fa-var-check;
 $has-warning__icon:                $fa-var-warning;

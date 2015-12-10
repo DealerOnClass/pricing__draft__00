@@ -1,6 +1,14 @@
 @mixin list-group-color-variation($input__palette) {
     @each $class__name, $color in $input__palette {
         .list-group-#{$class__name} {
+            background-color: $color;
+            a.list-group-item {
+                @include state {
+                    color: check-color($color, 80, inherit, $white);
+                    border-color: shade($color, $list-group__contrast);
+                    background-color: shade($color, $list-group__contrast);
+                }
+            }
             .list-group-item {
                 color: check-color($color, 80, inherit, $white);
                 border-color: $color;
@@ -9,20 +17,13 @@
                     border-bottom-color: shade($color, $list-group__contrast);
                 }
                 &.active {
-                    @extend %list-group-item--active;
+                    border-color: shade($color, $list-group__contrast);
+                    background-color: shade($color, $list-group__contrast);
                 }
-            }
-            a.list-group-item {
-                @include state {
-                    @extend %list-group-item--active;
-                }
-            }
-            %list-group-item--active {
-                color: check-color($color, 80, inherit, $white);
-                border-color: shade($color, $list-group__contrast);
-                background-color: shade($color, $list-group__contrast);
-                &:not(:last-child) {
-                    border-bottom-color: shade($color, $list-group__contrast * 2);
+                &[disabled] {
+                    @include state-and-self {
+                        background-color: transparent;
+                    }
                 }
             }
         }

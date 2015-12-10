@@ -1,30 +1,18 @@
 //
 //  Units
-$list-group__contrast:  $global__contrast;
-$list-group__radius:    $global__radius;
-$list-group__x:         $global__x;
-$list-group__y:         $global__y;
+$list-group__contrast:              $global__contrast;
+$list-group__radius:                $global__radius;
+$list-group__x:                     $global__x;
+$list-group__y:                     $global__y;
 //
 //  Color
-$list-group__default-palette:        true !default;
-$list-group__inverse-palette:        true !default;
-$list-group__primary-palette:        true !default;
-$list-group__neutral-palette:        true !default;
-$list-group__state-palette:          true !default;
-//  List Group Item
-$list-group-item__padding:               $list-group__y $list-group__x;
-$list-group-item__border:                $gray__02;
-$list-group-item__radius:                $list-group__radius;
-$list-group-item--active__shadow:        inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
-//  List Group Item Active
-$list-group-item--active__color:         $white;
-$list-group-item--active__border:        $primary__color;
-$list-group-item--active__bg:            $primary__color;
-//  List Group Item Disabled
-$list-group-item--disabled__color:       $gray__04;
-$list-group-item--disabled__border:      $gray__04;
-$list-group-item--disabled__bg:          $gray__01;
-//  List Group Item Link
-$list-group-item__link--hover__color:    $white;
-$list-group-item__link--hover__border:   $primary__color;
-$list-group-item__link--hover__bg:       $primary__color;
+$list-group__default-palette:       true !default;
+$list-group__inverse-palette:       true !default;
+$list-group__primary-palette:       true !default;
+$list-group__neutral-palette:       true !default;
+$list-group__state-palette:         true !default;
+//
+//  Components
+$list-group-item__padding:          $list-group__y $list-group__x;
+$list-group-item__radius:           $list-group__radius;
+$list-group-item--active__shadow:   inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
