@@ -8,38 +8,35 @@
     padding: $navbar-toggle__padding;
 
     border: 0;
-    border-radius: $navbar-toggle__radius;
+    border-top-right-radius: $navbar__radius;
+    border-bottom-right-radius: $navbar__radius;
     background-color: transparent;
     background-image: none;
-
-    &:focus {
-        outline: 0;
-    }
 
     @media (min-width: $grid-float-breakpoint) {
         display: none;
     }
 }
 
-.icon-bar-wrapper {
-    position: relative;
-    top: rhythm(0.2);
-
-    display: block;
-
-    height: rhythm(1);
-}
-
-.icon-bar {
-    display: block;
-
-    width: $navbar-toggle__icon-bar__width;
-    height: $two__pixels;
-
-    border-radius: $one__pixel;
-    background-color: $navbar-toggle__icon-bar__bg;
-
-    & + & {
-        margin-top: $four__pixels;
-    }
-}
+//  .icon-bar-wrapper {
+//      position: relative;
+//      top: rhythm(0.2);
+//
+//      display: block;
+//
+//      height: rhythm(1);
+//  }
+//
+//  .icon-bar {
+//      display: block;
+//
+//      width: $navbar-toggle__icon-bar__width;
+//      height: $two__pixels;
+//
+//      border-radius: $one__pixel;
+//      background-color: $navbar-toggle__icon-bar__bg;
+//
+//      & + & {
+//          margin-top: $four__pixels;
+//      }
+//  }

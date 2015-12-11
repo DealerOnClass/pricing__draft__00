@@ -8,20 +8,9 @@
                 border-color: $color;
                 background-color: $color;
 
-                .badge {
-                    color: check-color($color, 80, inherit, $white);
-                    border-color: shade($color, $btn__contrast);
-                    background-color: shade($color, $btn__contrast);
-                }
-
                 @include state {
                     border-color: shade($color, $nav__contrast);
                     background-color: shade($color, $nav__contrast);
-
-                    .badge {
-                        border-color: shade($color, $btn__contrast * 2);
-                        background-color: shade($color, $btn__contrast * 2);
-                    }
                 }
             }
 
@@ -34,11 +23,6 @@
                     color: check-color($color, 80, inherit, $white);
                     border-color: shade($color, $nav__contrast * 2);
                     background-color: shade($color, $nav__contrast * 2);
-
-                    .badge {
-                        border-color: shade($color, $btn__contrast * 3);
-                        background-color: shade($color, $btn__contrast * 3);
-                    }
                 }
             }
 
@@ -50,12 +34,6 @@
                 &:focus {
                     color: shade($color, $nav__contrast * 4);
                     background-color: $color;
-
-                    .badge {
-                        color: shade($color, $nav__contrast * 4);
-                        border-color: shade($color, $btn__contrast * 3);
-                        background-color: $color;
-                    }
                 }
             }
 

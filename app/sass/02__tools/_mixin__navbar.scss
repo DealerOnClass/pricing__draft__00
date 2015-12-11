@@ -2,109 +2,44 @@
     @each $class__name, $color in $input__palette {
         .navbar-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border-color: $color;
+            border: 0 none;
             background-color: $color;
-
-            border: 0 none;     // Temp remove later
-
-            .navbar-brand,
-            .navbar-link,
-            .navbar-toggle,
-            .navbar-nav > li > a {
-                color: check-color($color, 80, inherit, $white);
-
-                .badge {
-                    color: check-color($color, 80, inherit, $white);
-                    border-color: shade($color, $btn__contrast);
-                    background-color: shade($color, $btn__contrast);
-                }
+            a {
                 @include state {
                     background-color: shade($color, $navbar__contrast);
-
-                    .badge {
-                        border-color: shade($color, $btn__contrast * 2);
-                        background-color: shade($color, $btn__contrast * 2);
-                    }
                 }
             }
-
-            .navbar-nav {
-                >.disabled > a {
-                    &,
-                    &:hover,
-                    &:focus {
-                        color: shade($color, $navbar__contrast * 3);
-                        background-color: transparent;
-
-                        .badge {
-                            color: shade($color, $nav__contrast * 4);
-                            border-color: shade($color, $btn__contrast * 3);
-                            background-color: $color;
-                        }
-                    }
-                }
-                >.active > a,
-                .open > a {
-                    &,
-                    &:hover,
-                    &:focus {
-                        background-color: shade($color, $navbar__contrast);
-
-                        .badge {
-                            border-color: shade($color, $btn__contrast * 3);
-                            background-color: shade($color, $btn__contrast * 3);
-                        }
-                    }
-                }
-            }
-
-            .navbar-nav .dropdown-menu {
+            li.open > a,
+            li.active > a,
+            a.active {
                 background-color: shade($color, $navbar__contrast);
-
-                > li > a {
-                    background-color: shade($color, $navbar__contrast);
-                    @include state {
-                        background-color: shade($color, $navbar__contrast * 2);
-                    }
-                }
-                > li.active > a,
-                > li > a.active {
+            }
+        }
+        .navbar-#{$class__name} .dropdown-menu {
+            background-color: shade($color, $navbar__contrast);
+            a {
+                @include state {
                     background-color: shade($color, $navbar__contrast * 2);
                 }
-                > li.disabled > a,
-                > li > a.disabled,
-                > li > a[disabled] {
-                    @include state-and-self {
-                        color: shade($color, $navbar__contrast * 3);
-                        background-color: transparent;
-                    }
-                }
-                .divider {
-                    border-color: shade($color, $navbar__contrast * 2);
-                }
             }
-
-            &.navbar-stacked {
-                .navbar-nav .dropdown-menu {
-                    > li > a {
-                        color: check-color($color, 80, inherit, $white);
-                        border-color: shade($color, $navbar__contrast * 2);
-                        background-color: shade($color, $navbar__contrast * 2);
-                        @include state {
-                            background-color: shade($color, $navbar__contrast * 3);
-                        }
-                    }
-                    > li.active > a {
+            li.open > a,
+            li.active > a,
+            a.active {
+                background-color: shade($color, $navbar__contrast * 2);
+            }
+        }
+        .navbar-#{$class__name}.navbar-stacked {
+            .dropdown-menu {
+                background-color: shade($color, $navbar__contrast * 2);
+                a {
+                    @include state {
                         background-color: shade($color, $navbar__contrast * 3);
                     }
                 }
-            }
-
-            &.navbar-stacked {
-                .navbar-sidebar-collapse,
-                .navbar-sidebar-header,
-                .navbar-sidebar-footer {
-                    border-color: shade($color, $navbar__contrast * 2);
+                li.open > a,
+                li.active > a,
+                a.active {
+                    background-color: shade($color, $navbar__contrast * 3);
                 }
             }
         }

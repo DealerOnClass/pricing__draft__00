@@ -17,12 +17,6 @@
                     > li > a.active {
                         background-color: shade($color, $btn__contrast * 2);
                     }
-                    > li > a[disabled] {
-                        background-color: transparent;
-                    }
-                    .divider {
-                        border-color: shade($color, $btn__contrast * 1.5);
-                    }
                 }
                 .btn-group &.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
                     border-bottom-color: shade($color, $btn__contrast * 1.5);
@@ -46,12 +40,6 @@
             > li.active > a,
             > li > a.active {
                 background-color: shade($color, $btn__contrast * 2);
-            }
-            > li > a[disabled] {
-                background-color: transparent;
-            }
-            .divider {
-                border-color: shade($color, $btn__contrast * 1.5);
             }
         }
         .dropdown-toggle + .dropdown-menu-#{$class__name}:after {

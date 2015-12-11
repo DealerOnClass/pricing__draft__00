@@ -39,7 +39,7 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
 }
 
 .navbar-sidebar-header {
-    border-bottom: $one__true__pixel solid;
+    border-bottom: $one__true__pixel solid rgba(0,0,0,0.20);
 }
 
 .navbar-sidebar-body .navbar-nav {
@@ -48,7 +48,7 @@ $navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rh
 }
 
 .navbar-sidebar-footer {
-    border-top: $one__true__pixel solid;
+    border-top: $one__true__pixel solid rgba(0,0,0,0.20);
 }
 
 .offcanvas-nav {

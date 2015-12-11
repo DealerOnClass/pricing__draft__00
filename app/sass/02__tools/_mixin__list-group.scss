@@ -20,11 +20,6 @@
                     border-color: shade($color, $list-group__contrast);
                     background-color: shade($color, $list-group__contrast);
                 }
-                &[disabled] {
-                    @include state-and-self {
-                        background-color: transparent;
-                    }
-                }
             }
         }
     }

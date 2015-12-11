@@ -5,8 +5,9 @@
 
     padding: $badge__padding;
 
-    border: $one__true__pixel solid;
+    border: $one__true__pixel solid transparent;
     border-radius: $badge__radius;
+    background-color: rgba(0,0,0,0.2);
 
     .list-group-item > & {
         float: right;

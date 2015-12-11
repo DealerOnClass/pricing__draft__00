@@ -2,17 +2,24 @@
     position: relative;
 
     border: $one__true__pixel solid;
-
-    @media (min-width: $grid-float-breakpoint) {
-        border-radius: $navbar__radius;
-    }
+    border-radius: $navbar__radius;
 
     @include clearfix;
+
+    .navbar-brand,
+    .navbar-link,
+    .navbar-toggle,
+    .navbar-nav > li > a,
+    .dropdown-menu > li > a {
+        color: inherit;
+    }
 }
 
 .navbar .dropdown-menu {
+    overflow: hidden;
+
     border: 0 none;
-    border-radius: 0;
+    border-radius: 0 0 $navbar__radius $navbar__radius;
     box-shadow: none;
 }
 
