@@ -2,7 +2,7 @@
     @each $class__name, $color in $input__palette {
         .navbar-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border: 0 none;
+            border-color: transparent;
             background-color: $color;
             a {
                 @include state {
@@ -16,6 +16,7 @@
             }
         }
         .navbar-#{$class__name} .dropdown-menu {
+            border-color: transparent;
             background-color: shade($color, $navbar__contrast);
             a {
                 @include state {

@@ -14,8 +14,8 @@
 .navbar .dropdown-menu {
     overflow: hidden;
 
-    border: 0 none;
-    border-radius: 0 0 $navbar__radius $navbar__radius;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     box-shadow: none;
 }
 
