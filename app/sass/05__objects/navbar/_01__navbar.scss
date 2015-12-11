@@ -6,11 +6,7 @@
 
     @include clearfix;
 
-    .navbar-brand,
-    .navbar-link,
-    .navbar-toggle,
-    .navbar-nav > li > a,
-    .dropdown-menu > li > a {
+    a {
         color: inherit;
     }
 }

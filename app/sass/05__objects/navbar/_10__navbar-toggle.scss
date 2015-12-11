@@ -5,7 +5,7 @@
 
     box-sizing: content-box;
     height: $base__line-height * $base__font-unit;
-    padding: $navbar-toggle__padding;
+    padding: $navbar__link__padding;
 
     border: 0;
     border-top-right-radius: $navbar__radius;
@@ -17,7 +17,7 @@
         display: none;
     }
 }
-
+//
 //  .icon-bar-wrapper {
 //      position: relative;
 //      top: rhythm(0.2);

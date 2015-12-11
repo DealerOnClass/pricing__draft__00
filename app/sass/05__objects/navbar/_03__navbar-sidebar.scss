@@ -1,4 +1,4 @@
-$navbar-sidebar-collapse-unit: ( $navbar-nav__link__vertical__padding * 2 ) + rhythm(1);
+$navbar-sidebar-collapse-unit: ( $navbar__y * 2 ) + rhythm(1);
 
 .navbar-sidebar {
     position: fixed;

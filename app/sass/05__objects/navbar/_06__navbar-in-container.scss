@@ -2,8 +2,8 @@
 .container-fluid {
     > .navbar-header,
     > .navbar-collapse {
-        margin-right: $navbar-collapse__padding * -1;
-        margin-left: $navbar-collapse__padding * -1;
+        margin-right: $global__gutter * -1;
+        margin-left: $global__gutter * -1;
 
         @media (min-width:  $grid-float-breakpoint) {
             margin-right: 0;

@@ -11,10 +11,14 @@
                 background-color: shade($color, $btn__contrast);
             }
 
-            &.active,
-            &[disabled] {
+            &.active {
                 border-color: check-color($color, 80, shade($color, $btn__contrast * 1.5), $color);
                 background-color: $color;
+            }
+            &[disabled] {
+                @include state-and-self {
+                    background-color: $color;
+                }
             }
 
             &.dropup-toggle:not(:first-child),

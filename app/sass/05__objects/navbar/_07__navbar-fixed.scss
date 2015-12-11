@@ -1,7 +1,7 @@
 .navbar-fixed-top,
 .navbar-fixed-bottom {
     .navbar-collapse {
-        max-height: $navbar-collapse__max-height;
+        max-height: 340px;
 
         @media (max-device-width: $screen-xs-min) and (orientation: landscape) {
             max-height: 200px;

@@ -17,9 +17,6 @@
         border-bottom-right-radius: $list-group-item__radius;
         border-bottom-left-radius: $list-group-item__radius;
     }
-    &.active {
-        box-shadow: $list-group-item--active__shadow;
-    }
     &[disabled] {
         cursor: $cursor-disabled;
 

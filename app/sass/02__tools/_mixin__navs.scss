@@ -17,22 +17,15 @@
             > li > a.active,
             > li.active > a,
             > li.open > a {
-                &,
-                &:hover,
-                &:focus {
+                @include state-and-self {
                     color: check-color($color, 80, inherit, $white);
                     border-color: shade($color, $nav__contrast * 2);
                     background-color: shade($color, $nav__contrast * 2);
                 }
             }
 
-            > li > a.disabled,
-            > li > a[disabled],
-            > li.disabled > a {
-                &,
-                &:hover,
-                &:focus {
-                    color: shade($color, $nav__contrast * 4);
+            > li > a[disabled] {
+                @include state-and-self {
                     background-color: $color;
                 }
             }
@@ -46,12 +39,6 @@
                     @include state {
                         background-color: shade($color, $nav__contrast * 3);
                     }
-                }
-                &:after {
-                    display: none;
-                }
-                .divider {
-                    border-color: shade($color, $nav__contrast * 3);
                 }
             }
         }

@@ -17,14 +17,12 @@
         padding: $nav__link__padding;
     }
 
-    > li.disabled > a {
-        &,
-        &:hover,
-        &:focus {
-            cursor: $cursor-disabled;
+    > li > a:active {
+        box-shadow: $nav__link--active__shadow;
+    }
 
-            color: $nav__link--disabled__color;
-        }
+    > li > a[disabled] {
+        @include state-disabled;
     }
 
     @include clearfix;

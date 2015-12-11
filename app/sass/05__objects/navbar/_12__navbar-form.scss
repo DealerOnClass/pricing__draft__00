@@ -4,12 +4,11 @@
     position: relative;
     top: rhythm(0.05);
 
-    margin-right: $navbar-form__horizontal-padding;
-    margin-left: $navbar-form__horizontal-padding;
-    padding: $navbar-form__vertical-padding $navbar-form__horizontal-padding;
+    margin-right: $navbar__x;
+    margin-left: $navbar__x;
+    padding: $navbar__y $navbar__x;
 
     box-shadow: $shadow;
-    //  @include form-inline;
 
     .form-group {
         @media (max-width: $grid-float-breakpoint-max) {

@@ -23,11 +23,7 @@
     }
 
     &[disabled] {
-        cursor: $cursor-disabled;
-
-        box-shadow: none;
-
-        @include opacity(0.65);
+        @include state-disabled;
     }
 
     .badge {

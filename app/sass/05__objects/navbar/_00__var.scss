@@ -1,40 +1,21 @@
 //
 //  Units
-$navbar__contrast:                     $global__contrast;
-$navbar__radius:                       $global__radius;
-$navbar__x:                            $global__x;
-$navbar__y:                            $global__y * 1.5;
+$navbar__contrast:              $global__contrast;
+$navbar__radius:                $global__radius;
+$navbar__x:                     $global__x;
+$navbar__y:                     $global__y * 1.5;
 //
 //  Color Options
-$navbar__default-palette:              true !default;
-$navbar__inverse-palette:              true !default;
-$navbar__primary-palette:              true !default;
-$navbar__neutral-palette:              true !default;
-$navbar__state-palette:                true !default;
-//
-//  Base
-$navbar-sidebar__width:                 18em;
+$navbar__default-palette:       true !default;
+$navbar__inverse-palette:       true !default;
+$navbar__primary-palette:       true !default;
+$navbar__neutral-palette:       true !default;
+$navbar__state-palette:         true !default;
 //
 //  Components
-$navbar-nav__link--active__shadow:     inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
-//  Navbar-Collapse
-$navbar-collapse__padding:             $global__gutter / 2;
-$navbar-collapse__max-height:          340px;
-//  Navbar-Brand
-$navbar-brand__padding:                $navbar__y $navbar__x;
-//  Navbar-Toggle
-$navbar-toggle__radius:                0;
-$navbar-toggle__border:                $gray__01;
-$navbar-toggle__icon-bar__bg:          $body__color;
-$navbar-toggle__icon-bar__width:       rhythm(.75);
-$navbar-toggle__padding:               $navbar__y $navbar__x;
-$navbar-animate-icon-bar-spacing:      rhythm(.3);
-//  Navbar-Nav Link
-$navbar-nav__link__vertical__padding:  $navbar__y;
-//  Navbar-Form
-$navbar-form__vertical-padding:        $navbar__y;
-$navbar-form__horizontal-padding:      $navbar__x;
-$navbar-text__vertical-padding:        $navbar__y;
-$navbar-text__horizontal-margin:       $navbar__x;
-//  Variations
-$navbar-right__padding:                $navbar__x;
+$navbar__link__padding:         $navbar__y $navbar__x;
+$navbar__link--active__shadow:  inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
+//
+$navbar-stacked__link__padding: $navbar__y $navbar__x $navbar__y ( $navbar__x * 2 );
+//
+$navbar-sidebar__width:         30em;

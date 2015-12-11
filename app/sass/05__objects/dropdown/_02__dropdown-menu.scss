@@ -29,19 +29,13 @@
         white-space: nowrap;
     }
 
-    > li.active > a,
-    > li > a:active,
-    > li > a.active {
+    > li > a:active {
         box-shadow: $dropdown-menu__link--active__shadow;
     }
 
     > li > a[disabled] {
-        cursor: $cursor-disabled;
-
         background-color: transparent!important;
-        box-shadow: none;
-
-        @include opacity(0.65);
+        @include state-disabled;
     }
 
     > li:first-child > a {

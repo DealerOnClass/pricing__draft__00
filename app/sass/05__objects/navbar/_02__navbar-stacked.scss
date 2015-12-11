@@ -25,9 +25,8 @@
     }
     .dropdown-menu > li {
         > a {
-            padding-left: $global__x * 2;
+            padding: $navbar-stacked__link__padding;
         }
-        &:first-child > a,
         &:last-child > a {
             border-radius: 0;
         }

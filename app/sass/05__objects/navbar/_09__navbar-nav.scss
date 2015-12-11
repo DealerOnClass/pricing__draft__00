@@ -1,22 +1,15 @@
 .navbar-nav {
     > li > a {
-        padding-top: $navbar-nav__link__vertical__padding;
-        padding-bottom: $navbar-nav__link__vertical__padding;
+        padding: $navbar__link__padding;
     }
 
-    > li.active > a,
-    > li > a:active,
-    > li > a.active {
-        box-shadow: $navbar-nav__link--active__shadow;
+    > li > a:active {
+        box-shadow: $navbar__link--active__shadow;
     }
 
     > li > a[disabled] {
-        cursor: $cursor-disabled;
-
         background-color: transparent!important;
-        box-shadow: none;
-
-        @include opacity(0.65);
+        @include state-disabled;
     }
 
     @media (min-width: $grid-float-breakpoint) {
