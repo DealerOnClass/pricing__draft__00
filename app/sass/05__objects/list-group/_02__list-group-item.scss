@@ -6,6 +6,11 @@
     padding: $list-group-item__padding;
 
     border: $one__true__pixel solid;
+    &.active {
+        color: $list-group-item--active__color;
+        border-color: $list-group-item--active__border;
+        background-color: $list-group-item--active__bg;
+    }
     & + & {
         border-top: 0 none;
     }

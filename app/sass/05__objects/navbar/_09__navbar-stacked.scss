@@ -1,4 +1,5 @@
 .navbar-stacked {
+
     float: left;
     .navbar-header,
     .navbar-brand,
@@ -8,6 +9,7 @@
         float: none;
         clear: both;
     }
+
     .dropdown-menu {
         position: relative;
 
@@ -24,6 +26,7 @@
             height: auto;
         }
     }
+
     .dropdown-menu > li {
         > a {
             padding: $navbar-stacked__link__padding;
@@ -32,6 +35,7 @@
             border-radius: 0;
         }
     }
+
     .navbar-nav > li.active > a,
     .dropdown-menu > li.active > a {
         &:after {
@@ -49,12 +53,14 @@
             background-color: tint(saturate($primary__color, $global__contrast * 2), $global__contrast);
         }
     }
+
     .navbar-nav {
         overflow: hidden;
 
         border-bottom-right-radius: $navbar__radius * 1.5;
         border-bottom-left-radius: $navbar__radius;
     }
+
     .navbar-brand {
         border-top-left-radius: $navbar__radius;
         border-top-right-radius: $navbar__radius;

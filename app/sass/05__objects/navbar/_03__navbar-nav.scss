@@ -1,6 +1,17 @@
 .navbar-nav {
+
     > li > a {
         padding: $navbar__link__padding;
+    }
+
+    > li > a.active,
+    > li.active > a,
+    > li.open > a {
+        @include state-and-self {
+            color: $navbar__link--active__color;
+            border-color: $navbar__link--active__border;
+            background-color: $navbar__link--active__bg;
+        }
     }
 
     > li > a:active {
@@ -19,6 +30,12 @@
 
         > li {
             float: left;
+        }
+    }
+    @media (max-width: $grid-float-breakpoint-max) {
+        > li {
+            clear: both;
+            //  @include clearfix;
         }
     }
 }

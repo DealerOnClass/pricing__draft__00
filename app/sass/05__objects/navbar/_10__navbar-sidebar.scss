@@ -1,4 +1,4 @@
-$navbar-sidebar-collapse-unit: ( $navbar__y * 2 ) + rhythm(1);
+$navbar-sidebar-collapse-unit: ( $navbar__y * 2 ) + $base__line-height;
 
 .navbar-sidebar {
     position: fixed;
@@ -50,20 +50,20 @@ $navbar-sidebar-collapse-unit: ( $navbar__y * 2 ) + rhythm(1);
 .navbar-sidebar-footer {
     border-top: $one__true__pixel solid rgba(0,0,0,0.20);
 }
-
-.offcanvas-nav {
-    float: left;
-    position: relative;
-
-    .navbar-sidebar-collapse {
-        top: 0;
-
-        height: 100%;
-    }
-}
-
-.offcanvas-body {
-    display: table-cell;
-
-    width: 100000px;
-}
+//
+//  .offcanvas-nav {
+//      float: left;
+//      position: relative;
+//
+//      .navbar-sidebar-collapse {
+//          top: 0;
+//
+//          height: 100%;
+//      }
+//  }
+//
+//  .offcanvas-body {
+//      display: table-cell;
+//
+//      width: 100000px;
+//  }

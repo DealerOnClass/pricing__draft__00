@@ -1,15 +1,18 @@
 @mixin nav-color-variation($input__palette) {
     @each $class__name, $color in $input__palette {
         .nav-#{$class__name} {
+            color: check-color($color, 80, inherit, $white);
             border-color: $color;
 
+            a {
+                color: inherit;
+            }
+
             > li > a {
-                color: check-color($color, 80, inherit, $white);
-                border-color: $color;
+                border-color: transparent;
                 background-color: $color;
 
                 @include state {
-                    border-color: shade($color, $nav__contrast);
                     background-color: shade($color, $nav__contrast);
                 }
             }
@@ -18,26 +21,23 @@
             > li.active > a,
             > li.open > a {
                 @include state-and-self {
-                    color: check-color($color, 80, inherit, $white);
-                    border-color: shade($color, $nav__contrast * 2);
-                    background-color: shade($color, $nav__contrast * 2);
+                    color: inherit;
+                    border-color: shade($color, $nav__contrast);
+                    background-color: shade($color, $nav__contrast);
                 }
             }
 
             > li > a[disabled] {
-                @include state-and-self {
-                    background-color: $color;
-                }
+                background-color: $color;
             }
 
             .dropdown-menu {
-                color: check-color($color, 80, inherit, $white);
-                background-color: shade($color, $nav__contrast * 2);
                 border: 0 none;
+                background-color: shade($color, $nav__contrast);
 
                 > li > a {
                     @include state {
-                        background-color: shade($color, $nav__contrast * 3);
+                        background-color: shade($color, $nav__contrast * 2);
                     }
                 }
             }

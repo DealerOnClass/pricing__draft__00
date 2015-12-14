@@ -1,7 +1,13 @@
 .nav-tabs,
 .nav-pills {
+
     > li {
         float: left;
+    }
+
+    > li + li {
+        margin-left: $two__true__pixels;
+        border-radius: $nav__radius;
     }
 
     > li > a {
@@ -9,16 +15,10 @@
         border-radius: $nav__radius;
     }
 
-    > li + li {
-        margin-left: $two__true__pixels;
-    }
-
     > li > a.active,
     > li.active > a,
     > li.open > a {
-        &,
-        &:hover,
-        &:focus {
+        @include state-and-self {
             color: $nav__link--active__color;
             border-color: $nav__link--active__border;
             background-color: $nav__link--active__bg;
@@ -28,10 +28,6 @@
 
 .nav-tabs {
     border-bottom: $one__true__pixel solid;
-
-    > li {
-        margin-bottom: $one__true__pixel * -1;
-    }
 
     > li > a {
         border-bottom-color: transparent;

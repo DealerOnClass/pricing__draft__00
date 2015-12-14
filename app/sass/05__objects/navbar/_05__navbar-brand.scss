@@ -1,0 +1,10 @@
+.navbar-brand {
+    float: left;
+
+    padding: $navbar__link__padding;
+
+    @media (min-width: $grid-float-breakpoint) {
+        border-top-left-radius: $navbar__radius;
+        border-bottom-left-radius: $navbar__radius;
+    }
+}

@@ -2,13 +2,17 @@
     @each $class__name, $color in $input__palette {
         .navbar-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border-color: transparent;
+            border: 0 none;
             background-color: $color;
-            a {
+
+            a,
+            button {
+                color: inherit;
                 @include state {
                     background-color: shade($color, $navbar__contrast);
                 }
             }
+
             li.open > a,
             li.active > a,
             a.active {
@@ -16,17 +20,32 @@
             }
         }
         .navbar-#{$class__name} .dropdown-menu {
-            border-color: transparent;
+            border: 0 none;
             background-color: shade($color, $navbar__contrast);
+
             a {
                 @include state {
                     background-color: shade($color, $navbar__contrast * 2);
                 }
             }
+
             li.open > a,
             li.active > a,
             a.active {
                 background-color: shade($color, $navbar__contrast * 2);
+            }
+            @media (max-width: $grid-float-breakpoint-max) {
+                background-color: shade($color, $navbar__contrast * 2);
+                a {
+                    @include state {
+                        background-color: shade($color, $navbar__contrast * 3);
+                    }
+                }
+                li.open > a,
+                li.active > a,
+                a.active {
+                    background-color: shade($color, $navbar__contrast * 3);
+                }
             }
         }
         .navbar-#{$class__name}.navbar-stacked {
@@ -42,6 +61,11 @@
                 a.active {
                     background-color: shade($color, $navbar__contrast * 3);
                 }
+            }
+        }
+        .navbar-#{$class__name}.navbar-mega-menu {
+            .dropdown-mega-menu .dropdown-menu {
+                margin: 0;
             }
         }
     }

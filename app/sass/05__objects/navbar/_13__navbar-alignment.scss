@@ -1,12 +1,19 @@
 @media (min-width: $grid-float-breakpoint) {
+
     .navbar-left {
         float: left !important;
     }
+
     .navbar-right {
         float: right !important;
 
         ~ .navbar-right {
             margin-right: 0;
         }
+    }
+
+    .navbar-right > li:last-child > a {
+        border-top-right-radius: $navbar__radius;
+        border-bottom-right-radius: $navbar__radius;
     }
 }

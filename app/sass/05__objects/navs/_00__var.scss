@@ -1,23 +1,22 @@
 //
 //  Units
-$nav__contrast:         $global__contrast;
-$nav__radius:           $global__radius;
-$nav__x:                $global__x;
-$nav__y:                $global__y;
+$nav__contrast:                 $global__contrast;
+$nav__radius:                   $global__radius;
+$nav__x:                        $global__x;
+$nav__y:                        $global__y;
 //
 //  Colors
-$nav__default-palette:  true !default;
-$nav__inverse-palette:  true !default;
-$nav__primary-palette:  true !default;
-$nav__neutral-palette:  true !default;
-$nav__state-palette:    true !default;
+$nav__default-palette:          true !default;
+$nav__inverse-palette:          true !default;
+$nav__primary-palette:          true !default;
+$nav__neutral-palette:          true !default;
+$nav__state-palette:            true !default;
 //
 //  Base
-$nav__link__padding:    $nav__y $nav__x;
-$nav__link--active__shadow:  inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
+$nav__link__padding:            $nav__y $nav__x;
+$nav__link--active__shadow:     inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
 //
 //  Components
-$nav__link--active__color:    $white;
-$nav__link--active__border:   $primary__color;
-$nav__link--active__bg:       $primary__color;
-$nav__link--disabled__color:  $gray__02;
+$nav__link--active__color:      $white;
+$nav__link--active__border:     $primary__color;
+$nav__link--active__bg:         $primary__color;

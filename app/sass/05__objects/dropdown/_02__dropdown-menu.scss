@@ -29,6 +29,16 @@
         white-space: nowrap;
     }
 
+    > li > a.active,
+    > li.active > a,
+    > li.open > a {
+        @include state-and-self {
+            color: $dropdown-menu__link--active__color;
+            border-color: $dropdown-menu__link--active__border;
+            background-color: $dropdown-menu__link--active__bg;
+        }
+    }
+
     > li > a:active {
         box-shadow: $dropdown-menu__link--active__shadow;
     }
