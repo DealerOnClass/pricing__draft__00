@@ -5646,8 +5646,11 @@
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Aligned links</h3>
                         <ul class="pager">
-                            <li class="previous"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -5655,15 +5658,21 @@
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Optional disabled state</h3>
                         <ul class="pager">
-                            <li class="previous"><a href="#" disabled>Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous">
+                                <a href="#" disabled>
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Optional active state</h3>
                         <ul class="pager">
-                            <li class="previous"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -5671,60 +5680,93 @@
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Default Palette</h3>
                         <ul class="pager pager-default">
-                            <li class="previous"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Inverse Palette</h3>
                         <ul class="pager pager-inverse">
-                            <li class="previous"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Primary Palette</h3>
                         <ul class="pager pager-main">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                         <ul class="pager pager-cta">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Neutral Palette</h3>
                         <ul class="pager pager-alt1">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                         <ul class="pager pager-alt2">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                         <ul class="pager pager-alt3">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="demo__heading">State Palette</h3>
                          <ul class="pager pager-success">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                         <ul class="pager pager-info">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                         <ul class="pager pager-warning">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                         <ul class="pager pager-danger">
-                            <li class="previous active"><a href="#">Older</a></li>
-                            <li class="next"><a href="#">Newer</a></li>
+                            <li class="previous active">
+                                <a href="#">
+                                    <span aria-hidden="true">←</span> Older</a>
+                            </li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -5741,7 +5783,7 @@
             <section class="demo__section">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="demo__heading">Default</h3>
+                        <h3>Default</h3>
                         <ul class="pagination">
                             <li>
                                 <a href="#" aria-label="Previous">
@@ -5761,10 +5803,10 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h3 class="demo__heading">Disabled and active states</h3>
+                        <h3>Disabled and active states</h3>
                         <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous" disabled>
+                            <li class="disabled">
+                                <a href="#" aria-label="Previous">
                                     <span aria-hidden="true">«</span>
                                 </a>
                             </li>
@@ -5782,310 +5824,82 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Sizing</h3>
-                        <div>
-                            <ul class="pagination lg">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">«</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">»</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="pagination md">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">«</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">»</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">«</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">»</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="pagination xs">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">«</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">»</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Rounded</h3>
-                        <ul class="pagination pagination-rounded">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <h3>Sizing</h3>
+                <div>
+                    <ul class="pagination pagination-lg">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Default Palette</h3>
-                        <ul class="pagination pagination-default">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Inverse Palette</h3>
-                        <ul class="pagination pagination-inverse">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Primary Palette</h3>
-                        <ul class="pagination pagination-cta">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="pagination pagination-main">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">Neutral Palette</h3>
-                        <ul class="pagination pagination-alt1">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="pagination pagination-alt2">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="pagination pagination-alt3">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3 class="demo__heading">State Palette</h3>
-                         <ul class="pagination pagination-success">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="pagination pagination-info">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="pagination pagination-warning">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="pagination pagination-danger">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#" disabled>2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="pagination pagination-sm">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="pagination pagination-xs">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
 

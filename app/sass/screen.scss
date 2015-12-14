@@ -40,6 +40,8 @@
     "02__tools/mixin__navbar",
     "02__tools/mixin__navs",
     "02__tools/mixin__opacity",
+    "02__tools/mixin__pager",
+    "02__tools/mixin__pagination",
     "02__tools/mixin__panels",
     "02__tools/mixin__progress-bar-variant",
     "02__tools/mixin__reset-filter",
@@ -271,15 +273,17 @@
 
 
 @import
-    "05__objects/pager/00__variables",
+    "05__objects/pager/00__var",
     "05__objects/pager/01__pager",
     "05__objects/pager/02__pager-next",
-    "05__objects/pager/03__pager-prev";
+    "05__objects/pager/03__pager-prev",
+    "05__objects/pager/04__colors";
 
 @import
-    "05__objects/pagination/00__variables",
+    "05__objects/pagination/00__var",
     "05__objects/pagination/01__pagination",
-    "05__objects/pagination/02__pagination-variations";
+    "05__objects/pagination/02__pagination-rounded",
+    "05__objects/pagination/03__pagination-variations";
 
 @import
     "05__objects/panels/00__variables.scss",

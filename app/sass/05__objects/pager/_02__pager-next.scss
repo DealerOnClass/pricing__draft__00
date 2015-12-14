@@ -1,9 +1,13 @@
-.pager .next,
-.pager-next {
-    > a,
-    > span {
-        float: right;
+.pager .next {
+    float: right;
+
+    @if $pager__next__use-icon {
+        > a:after {
+            font-family: $fa-font-name;
+
+            margin-left: $pager__x / 2;
+
+            content: '#{$pager__next__icon}';
+        }
     }
 }
-
-

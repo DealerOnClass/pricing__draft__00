@@ -1,0 +1,29 @@
+@mixin pagination-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+        .pagination-#{$class__name} {
+            color: check-color($color, 80, inherit, $white);
+
+            > li > a {
+                color: inherit;
+                border-color: $color;
+                background-color: $color;
+
+                @include state {
+                    border-color: shade($color, $pagination__contrast);
+                    background-color: shade($color, $pagination__contrast);
+                }
+            }
+
+            > li > a.active,
+            > li.active > a {
+                border-color: shade($color, $pagination__contrast * 2);
+                background-color: shade($color, $pagination__contrast * 2);
+            }
+
+            > li > a[disabled] {
+                background-color: $color;
+            }
+        }
+    }
+}
+

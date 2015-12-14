@@ -1,8 +1,13 @@
-.pager .previous,
-.pager-prev {
-    > a,
-    > span {
-        float: left;
+.pager .previous {
+    float: left;
+
+    @if $pager__previous__use-icon {
+        > a:before {
+            font-family: $fa-font-name;
+
+            margin-right: $pager__x / 2;
+
+            content: '#{$pager__previous__icon}';
+        }
     }
 }
-
