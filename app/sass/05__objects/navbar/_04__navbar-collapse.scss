@@ -1,4 +1,5 @@
 .navbar-collapse {
+
     -webkit-overflow-scrolling: touch;
 
     &.in {
@@ -18,5 +19,10 @@
         &.in {
             overflow-y: visible;
         }
+    }
+
+    .dropdown-menu {
+        border-right: 0 none;
+        border-left: 0 none;
     }
 }

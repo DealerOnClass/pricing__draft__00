@@ -8250,6 +8250,10 @@ button.list-group-item {
     overflow-y: visible;
   }
 }
+.navbar-collapse .dropdown-menu {
+  border-right: 0 none;
+  border-left: 0 none;
+}
 
 .navbar-brand {
   float: left;
