@@ -14,7 +14,7 @@ $gray__09:               mix($black,$white,90%);
 //
 //  Colors
 $default__color:         $gray__01;
-$primary__color:         #3662ad;
+$primary__color:         #3662ad;   // hex: 3662ad
 $accent__color:          adjust-hue(saturate(tint($primary__color, 7%), 50%), 170);     //  hex: f36c0a;
 $inverse__color:         mix($primary__color, $gray__08, 20%);
 //

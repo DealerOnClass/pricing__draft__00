@@ -1,4 +1,6 @@
 .panel {
+    position: relative;
+
     border-radius: $panel__radius;
 }
 
@@ -26,7 +28,7 @@
         border-top: 0 none;
     }
 
-    &:first-child + :not(:last-child) {
+    &:not(:last-child) {
         border-right: $one__true__pixel solid;
         border-left: $one__true__pixel solid;
     }

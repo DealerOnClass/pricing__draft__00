@@ -3884,43 +3884,51 @@ h5 .btn-group {
   position: relative;
   border-radius: 0.375em;
 }
-.card .card-header:only-child,
-.card .card-img:only-child,
-.card .card-block:only-child,
-.card .card-footer:only-child {
+
+.card-header:only-child,
+.card-img:only-child,
+.card-block:only-child,
+.card-footer:only-child {
   border: 1px solid;
   border-radius: 0.375em;
 }
-.card .card-header:first-child,
-.card .card-img:first-child,
-.card .card-block:first-child,
-.card .card-footer:first-child {
+.card-header:first-child,
+.card-img:first-child,
+.card-block:first-child,
+.card-footer:first-child {
   border: 1px solid;
   border-top-right-radius: 0.375em;
   border-top-left-radius: 0.375em;
 }
-.card .card-header:last-child,
-.card .card-img:last-child,
-.card .card-block:last-child,
-.card .card-footer:last-child {
+.card-header:last-child,
+.card-img:last-child,
+.card-block:last-child,
+.card-footer:last-child {
   border: 1px solid;
   border-bottom-right-radius: 0.375em;
   border-bottom-left-radius: 0.375em;
 }
-.card .card-header:first-child + :last-child,
-.card .card-img:first-child + :last-child,
-.card .card-block:first-child + :last-child,
-.card .card-footer:first-child + :last-child {
+.card-header:first-child + :last-child,
+.card-img:first-child + :last-child,
+.card-block:first-child + :last-child,
+.card-footer:first-child + :last-child {
   border-top: 0 none;
 }
-.card .card-header:first-child + :not(:last-child),
-.card .card-img:first-child + :not(:last-child),
-.card .card-block:first-child + :not(:last-child),
-.card .card-footer:first-child + :not(:last-child) {
+.card-header:not(:last-child),
+.card-img:not(:last-child),
+.card-block:not(:last-child),
+.card-footer:not(:last-child) {
   border-right: 1px solid;
   border-left: 1px solid;
 }
 
+/*
+ * - from homepage,
+ * - select customer support tab,
+ * - select print statements and documents,
+ * - select account summary,
+ * - upload account summary.
+ */
 .card-block {
   padding: 1.35em 1.35em;
   box-sizing: border-box;
@@ -8473,9 +8481,15 @@ button.list-group-item {
 .navbar-default button:focus {
   background-color: #cfcfcf;
 }
-.navbar-default li.open > a,
+.navbar-default li.open > a, .navbar-default li.open > a:hover, .navbar-default li.open > a:active, .navbar-default li.open > a:focus,
 .navbar-default li.active > a,
-.navbar-default a.active {
+.navbar-default li.active > a:hover,
+.navbar-default li.active > a:active,
+.navbar-default li.active > a:focus,
+.navbar-default a.active,
+.navbar-default a.active:hover,
+.navbar-default a.active:active,
+.navbar-default a.active:focus {
   background-color: #cfcfcf;
 }
 
@@ -8486,9 +8500,15 @@ button.list-group-item {
 .navbar-default .dropdown-menu a:hover, .navbar-default .dropdown-menu a:active, .navbar-default .dropdown-menu a:focus {
   background-color: #b8b8b8;
 }
-.navbar-default .dropdown-menu li.open > a,
+.navbar-default .dropdown-menu li.open > a, .navbar-default .dropdown-menu li.open > a:hover, .navbar-default .dropdown-menu li.open > a:active, .navbar-default .dropdown-menu li.open > a:focus,
 .navbar-default .dropdown-menu li.active > a,
-.navbar-default .dropdown-menu a.active {
+.navbar-default .dropdown-menu li.active > a:hover,
+.navbar-default .dropdown-menu li.active > a:active,
+.navbar-default .dropdown-menu li.active > a:focus,
+.navbar-default .dropdown-menu a.active,
+.navbar-default .dropdown-menu a.active:hover,
+.navbar-default .dropdown-menu a.active:active,
+.navbar-default .dropdown-menu a.active:focus {
   background-color: #b8b8b8;
 }
 @media (max-width: 767px) {
@@ -8511,9 +8531,15 @@ button.list-group-item {
 .navbar-default.navbar-stacked .dropdown-menu a:hover, .navbar-default.navbar-stacked .dropdown-menu a:active, .navbar-default.navbar-stacked .dropdown-menu a:focus {
   background-color: #a1a1a1;
 }
-.navbar-default.navbar-stacked .dropdown-menu li.open > a,
+.navbar-default.navbar-stacked .dropdown-menu li.open > a, .navbar-default.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-default.navbar-stacked .dropdown-menu li.open > a:active, .navbar-default.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-default.navbar-stacked .dropdown-menu li.active > a,
-.navbar-default.navbar-stacked .dropdown-menu a.active {
+.navbar-default.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-default.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-default.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-default.navbar-stacked .dropdown-menu a.active,
+.navbar-default.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-default.navbar-stacked .dropdown-menu a.active:active,
+.navbar-default.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #a1a1a1;
 }
 
@@ -8536,9 +8562,15 @@ button.list-group-item {
 .navbar-inverse button:focus {
   background-color: #2f3644;
 }
-.navbar-inverse li.open > a,
+.navbar-inverse li.open > a, .navbar-inverse li.open > a:hover, .navbar-inverse li.open > a:active, .navbar-inverse li.open > a:focus,
 .navbar-inverse li.active > a,
-.navbar-inverse a.active {
+.navbar-inverse li.active > a:hover,
+.navbar-inverse li.active > a:active,
+.navbar-inverse li.active > a:focus,
+.navbar-inverse a.active,
+.navbar-inverse a.active:hover,
+.navbar-inverse a.active:active,
+.navbar-inverse a.active:focus {
   background-color: #2f3644;
 }
 
@@ -8549,9 +8581,15 @@ button.list-group-item {
 .navbar-inverse .dropdown-menu a:hover, .navbar-inverse .dropdown-menu a:active, .navbar-inverse .dropdown-menu a:focus {
   background-color: #2a303c;
 }
-.navbar-inverse .dropdown-menu li.open > a,
+.navbar-inverse .dropdown-menu li.open > a, .navbar-inverse .dropdown-menu li.open > a:hover, .navbar-inverse .dropdown-menu li.open > a:active, .navbar-inverse .dropdown-menu li.open > a:focus,
 .navbar-inverse .dropdown-menu li.active > a,
-.navbar-inverse .dropdown-menu a.active {
+.navbar-inverse .dropdown-menu li.active > a:hover,
+.navbar-inverse .dropdown-menu li.active > a:active,
+.navbar-inverse .dropdown-menu li.active > a:focus,
+.navbar-inverse .dropdown-menu a.active,
+.navbar-inverse .dropdown-menu a.active:hover,
+.navbar-inverse .dropdown-menu a.active:active,
+.navbar-inverse .dropdown-menu a.active:focus {
   background-color: #2a303c;
 }
 @media (max-width: 767px) {
@@ -8574,9 +8612,15 @@ button.list-group-item {
 .navbar-inverse.navbar-stacked .dropdown-menu a:hover, .navbar-inverse.navbar-stacked .dropdown-menu a:active, .navbar-inverse.navbar-stacked .dropdown-menu a:focus {
   background-color: #242a35;
 }
-.navbar-inverse.navbar-stacked .dropdown-menu li.open > a,
+.navbar-inverse.navbar-stacked .dropdown-menu li.open > a, .navbar-inverse.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-inverse.navbar-stacked .dropdown-menu li.open > a:active, .navbar-inverse.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-inverse.navbar-stacked .dropdown-menu li.active > a,
-.navbar-inverse.navbar-stacked .dropdown-menu a.active {
+.navbar-inverse.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-inverse.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-inverse.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-inverse.navbar-stacked .dropdown-menu a.active,
+.navbar-inverse.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-inverse.navbar-stacked .dropdown-menu a.active:active,
+.navbar-inverse.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #242a35;
 }
 
@@ -8599,9 +8643,15 @@ button.list-group-item {
 .navbar-cta button:focus {
   background-color: #d96805;
 }
-.navbar-cta li.open > a,
+.navbar-cta li.open > a, .navbar-cta li.open > a:hover, .navbar-cta li.open > a:active, .navbar-cta li.open > a:focus,
 .navbar-cta li.active > a,
-.navbar-cta a.active {
+.navbar-cta li.active > a:hover,
+.navbar-cta li.active > a:active,
+.navbar-cta li.active > a:focus,
+.navbar-cta a.active,
+.navbar-cta a.active:hover,
+.navbar-cta a.active:active,
+.navbar-cta a.active:focus {
   background-color: #d96805;
 }
 
@@ -8612,9 +8662,15 @@ button.list-group-item {
 .navbar-cta .dropdown-menu a:hover, .navbar-cta .dropdown-menu a:active, .navbar-cta .dropdown-menu a:focus {
   background-color: #c15c05;
 }
-.navbar-cta .dropdown-menu li.open > a,
+.navbar-cta .dropdown-menu li.open > a, .navbar-cta .dropdown-menu li.open > a:hover, .navbar-cta .dropdown-menu li.open > a:active, .navbar-cta .dropdown-menu li.open > a:focus,
 .navbar-cta .dropdown-menu li.active > a,
-.navbar-cta .dropdown-menu a.active {
+.navbar-cta .dropdown-menu li.active > a:hover,
+.navbar-cta .dropdown-menu li.active > a:active,
+.navbar-cta .dropdown-menu li.active > a:focus,
+.navbar-cta .dropdown-menu a.active,
+.navbar-cta .dropdown-menu a.active:hover,
+.navbar-cta .dropdown-menu a.active:active,
+.navbar-cta .dropdown-menu a.active:focus {
   background-color: #c15c05;
 }
 @media (max-width: 767px) {
@@ -8637,9 +8693,15 @@ button.list-group-item {
 .navbar-cta.navbar-stacked .dropdown-menu a:hover, .navbar-cta.navbar-stacked .dropdown-menu a:active, .navbar-cta.navbar-stacked .dropdown-menu a:focus {
   background-color: #a95104;
 }
-.navbar-cta.navbar-stacked .dropdown-menu li.open > a,
+.navbar-cta.navbar-stacked .dropdown-menu li.open > a, .navbar-cta.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-cta.navbar-stacked .dropdown-menu li.open > a:active, .navbar-cta.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-cta.navbar-stacked .dropdown-menu li.active > a,
-.navbar-cta.navbar-stacked .dropdown-menu a.active {
+.navbar-cta.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-cta.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-cta.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-cta.navbar-stacked .dropdown-menu a.active,
+.navbar-cta.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-cta.navbar-stacked .dropdown-menu a.active:active,
+.navbar-cta.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #a95104;
 }
 
@@ -8662,9 +8724,15 @@ button.list-group-item {
 .navbar-main button:focus {
   background-color: #31589c;
 }
-.navbar-main li.open > a,
+.navbar-main li.open > a, .navbar-main li.open > a:hover, .navbar-main li.open > a:active, .navbar-main li.open > a:focus,
 .navbar-main li.active > a,
-.navbar-main a.active {
+.navbar-main li.active > a:hover,
+.navbar-main li.active > a:active,
+.navbar-main li.active > a:focus,
+.navbar-main a.active,
+.navbar-main a.active:hover,
+.navbar-main a.active:active,
+.navbar-main a.active:focus {
   background-color: #31589c;
 }
 
@@ -8675,9 +8743,15 @@ button.list-group-item {
 .navbar-main .dropdown-menu a:hover, .navbar-main .dropdown-menu a:active, .navbar-main .dropdown-menu a:focus {
   background-color: #2b4e8a;
 }
-.navbar-main .dropdown-menu li.open > a,
+.navbar-main .dropdown-menu li.open > a, .navbar-main .dropdown-menu li.open > a:hover, .navbar-main .dropdown-menu li.open > a:active, .navbar-main .dropdown-menu li.open > a:focus,
 .navbar-main .dropdown-menu li.active > a,
-.navbar-main .dropdown-menu a.active {
+.navbar-main .dropdown-menu li.active > a:hover,
+.navbar-main .dropdown-menu li.active > a:active,
+.navbar-main .dropdown-menu li.active > a:focus,
+.navbar-main .dropdown-menu a.active,
+.navbar-main .dropdown-menu a.active:hover,
+.navbar-main .dropdown-menu a.active:active,
+.navbar-main .dropdown-menu a.active:focus {
   background-color: #2b4e8a;
 }
 @media (max-width: 767px) {
@@ -8700,9 +8774,15 @@ button.list-group-item {
 .navbar-main.navbar-stacked .dropdown-menu a:hover, .navbar-main.navbar-stacked .dropdown-menu a:active, .navbar-main.navbar-stacked .dropdown-menu a:focus {
   background-color: #264579;
 }
-.navbar-main.navbar-stacked .dropdown-menu li.open > a,
+.navbar-main.navbar-stacked .dropdown-menu li.open > a, .navbar-main.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-main.navbar-stacked .dropdown-menu li.open > a:active, .navbar-main.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-main.navbar-stacked .dropdown-menu li.active > a,
-.navbar-main.navbar-stacked .dropdown-menu a.active {
+.navbar-main.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-main.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-main.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-main.navbar-stacked .dropdown-menu a.active,
+.navbar-main.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-main.navbar-stacked .dropdown-menu a.active:active,
+.navbar-main.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #264579;
 }
 
@@ -8725,9 +8805,15 @@ button.list-group-item {
 .navbar-alt1 button:focus {
   background-color: #3b4f71;
 }
-.navbar-alt1 li.open > a,
+.navbar-alt1 li.open > a, .navbar-alt1 li.open > a:hover, .navbar-alt1 li.open > a:active, .navbar-alt1 li.open > a:focus,
 .navbar-alt1 li.active > a,
-.navbar-alt1 a.active {
+.navbar-alt1 li.active > a:hover,
+.navbar-alt1 li.active > a:active,
+.navbar-alt1 li.active > a:focus,
+.navbar-alt1 a.active,
+.navbar-alt1 a.active:hover,
+.navbar-alt1 a.active:active,
+.navbar-alt1 a.active:focus {
   background-color: #3b4f71;
 }
 
@@ -8738,9 +8824,15 @@ button.list-group-item {
 .navbar-alt1 .dropdown-menu a:hover, .navbar-alt1 .dropdown-menu a:active, .navbar-alt1 .dropdown-menu a:focus {
   background-color: #354664;
 }
-.navbar-alt1 .dropdown-menu li.open > a,
+.navbar-alt1 .dropdown-menu li.open > a, .navbar-alt1 .dropdown-menu li.open > a:hover, .navbar-alt1 .dropdown-menu li.open > a:active, .navbar-alt1 .dropdown-menu li.open > a:focus,
 .navbar-alt1 .dropdown-menu li.active > a,
-.navbar-alt1 .dropdown-menu a.active {
+.navbar-alt1 .dropdown-menu li.active > a:hover,
+.navbar-alt1 .dropdown-menu li.active > a:active,
+.navbar-alt1 .dropdown-menu li.active > a:focus,
+.navbar-alt1 .dropdown-menu a.active,
+.navbar-alt1 .dropdown-menu a.active:hover,
+.navbar-alt1 .dropdown-menu a.active:active,
+.navbar-alt1 .dropdown-menu a.active:focus {
   background-color: #354664;
 }
 @media (max-width: 767px) {
@@ -8763,9 +8855,15 @@ button.list-group-item {
 .navbar-alt1.navbar-stacked .dropdown-menu a:hover, .navbar-alt1.navbar-stacked .dropdown-menu a:active, .navbar-alt1.navbar-stacked .dropdown-menu a:focus {
   background-color: #2e3e58;
 }
-.navbar-alt1.navbar-stacked .dropdown-menu li.open > a,
+.navbar-alt1.navbar-stacked .dropdown-menu li.open > a, .navbar-alt1.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-alt1.navbar-stacked .dropdown-menu li.open > a:active, .navbar-alt1.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-alt1.navbar-stacked .dropdown-menu li.active > a,
-.navbar-alt1.navbar-stacked .dropdown-menu a.active {
+.navbar-alt1.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-alt1.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-alt1.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-alt1.navbar-stacked .dropdown-menu a.active,
+.navbar-alt1.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-alt1.navbar-stacked .dropdown-menu a.active:active,
+.navbar-alt1.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #2e3e58;
 }
 
@@ -8788,9 +8886,15 @@ button.list-group-item {
 .navbar-alt2 button:focus {
   background-color: #566885;
 }
-.navbar-alt2 li.open > a,
+.navbar-alt2 li.open > a, .navbar-alt2 li.open > a:hover, .navbar-alt2 li.open > a:active, .navbar-alt2 li.open > a:focus,
 .navbar-alt2 li.active > a,
-.navbar-alt2 a.active {
+.navbar-alt2 li.active > a:hover,
+.navbar-alt2 li.active > a:active,
+.navbar-alt2 li.active > a:focus,
+.navbar-alt2 a.active,
+.navbar-alt2 a.active:hover,
+.navbar-alt2 a.active:active,
+.navbar-alt2 a.active:focus {
   background-color: #566885;
 }
 
@@ -8801,9 +8905,15 @@ button.list-group-item {
 .navbar-alt2 .dropdown-menu a:hover, .navbar-alt2 .dropdown-menu a:active, .navbar-alt2 .dropdown-menu a:focus {
   background-color: #4c5c76;
 }
-.navbar-alt2 .dropdown-menu li.open > a,
+.navbar-alt2 .dropdown-menu li.open > a, .navbar-alt2 .dropdown-menu li.open > a:hover, .navbar-alt2 .dropdown-menu li.open > a:active, .navbar-alt2 .dropdown-menu li.open > a:focus,
 .navbar-alt2 .dropdown-menu li.active > a,
-.navbar-alt2 .dropdown-menu a.active {
+.navbar-alt2 .dropdown-menu li.active > a:hover,
+.navbar-alt2 .dropdown-menu li.active > a:active,
+.navbar-alt2 .dropdown-menu li.active > a:focus,
+.navbar-alt2 .dropdown-menu a.active,
+.navbar-alt2 .dropdown-menu a.active:hover,
+.navbar-alt2 .dropdown-menu a.active:active,
+.navbar-alt2 .dropdown-menu a.active:focus {
   background-color: #4c5c76;
 }
 @media (max-width: 767px) {
@@ -8826,9 +8936,15 @@ button.list-group-item {
 .navbar-alt2.navbar-stacked .dropdown-menu a:hover, .navbar-alt2.navbar-stacked .dropdown-menu a:active, .navbar-alt2.navbar-stacked .dropdown-menu a:focus {
   background-color: #435168;
 }
-.navbar-alt2.navbar-stacked .dropdown-menu li.open > a,
+.navbar-alt2.navbar-stacked .dropdown-menu li.open > a, .navbar-alt2.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-alt2.navbar-stacked .dropdown-menu li.open > a:active, .navbar-alt2.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-alt2.navbar-stacked .dropdown-menu li.active > a,
-.navbar-alt2.navbar-stacked .dropdown-menu a.active {
+.navbar-alt2.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-alt2.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-alt2.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-alt2.navbar-stacked .dropdown-menu a.active,
+.navbar-alt2.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-alt2.navbar-stacked .dropdown-menu a.active:active,
+.navbar-alt2.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #435168;
 }
 
@@ -8851,9 +8967,15 @@ button.list-group-item {
 .navbar-alt3 button:focus {
   background-color: #74849f;
 }
-.navbar-alt3 li.open > a,
+.navbar-alt3 li.open > a, .navbar-alt3 li.open > a:hover, .navbar-alt3 li.open > a:active, .navbar-alt3 li.open > a:focus,
 .navbar-alt3 li.active > a,
-.navbar-alt3 a.active {
+.navbar-alt3 li.active > a:hover,
+.navbar-alt3 li.active > a:active,
+.navbar-alt3 li.active > a:focus,
+.navbar-alt3 a.active,
+.navbar-alt3 a.active:hover,
+.navbar-alt3 a.active:active,
+.navbar-alt3 a.active:focus {
   background-color: #74849f;
 }
 
@@ -8864,9 +8986,15 @@ button.list-group-item {
 .navbar-alt3 .dropdown-menu a:hover, .navbar-alt3 .dropdown-menu a:active, .navbar-alt3 .dropdown-menu a:focus {
   background-color: #67768e;
 }
-.navbar-alt3 .dropdown-menu li.open > a,
+.navbar-alt3 .dropdown-menu li.open > a, .navbar-alt3 .dropdown-menu li.open > a:hover, .navbar-alt3 .dropdown-menu li.open > a:active, .navbar-alt3 .dropdown-menu li.open > a:focus,
 .navbar-alt3 .dropdown-menu li.active > a,
-.navbar-alt3 .dropdown-menu a.active {
+.navbar-alt3 .dropdown-menu li.active > a:hover,
+.navbar-alt3 .dropdown-menu li.active > a:active,
+.navbar-alt3 .dropdown-menu li.active > a:focus,
+.navbar-alt3 .dropdown-menu a.active,
+.navbar-alt3 .dropdown-menu a.active:hover,
+.navbar-alt3 .dropdown-menu a.active:active,
+.navbar-alt3 .dropdown-menu a.active:focus {
   background-color: #67768e;
 }
 @media (max-width: 767px) {
@@ -8889,9 +9017,15 @@ button.list-group-item {
 .navbar-alt3.navbar-stacked .dropdown-menu a:hover, .navbar-alt3.navbar-stacked .dropdown-menu a:active, .navbar-alt3.navbar-stacked .dropdown-menu a:focus {
   background-color: #5a677c;
 }
-.navbar-alt3.navbar-stacked .dropdown-menu li.open > a,
+.navbar-alt3.navbar-stacked .dropdown-menu li.open > a, .navbar-alt3.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-alt3.navbar-stacked .dropdown-menu li.open > a:active, .navbar-alt3.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-alt3.navbar-stacked .dropdown-menu li.active > a,
-.navbar-alt3.navbar-stacked .dropdown-menu a.active {
+.navbar-alt3.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-alt3.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-alt3.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-alt3.navbar-stacked .dropdown-menu a.active,
+.navbar-alt3.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-alt3.navbar-stacked .dropdown-menu a.active:active,
+.navbar-alt3.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #5a677c;
 }
 
@@ -8914,9 +9048,15 @@ button.list-group-item {
 .navbar-success button:focus {
   background-color: #53a653;
 }
-.navbar-success li.open > a,
+.navbar-success li.open > a, .navbar-success li.open > a:hover, .navbar-success li.open > a:active, .navbar-success li.open > a:focus,
 .navbar-success li.active > a,
-.navbar-success a.active {
+.navbar-success li.active > a:hover,
+.navbar-success li.active > a:active,
+.navbar-success li.active > a:focus,
+.navbar-success a.active,
+.navbar-success a.active:hover,
+.navbar-success a.active:active,
+.navbar-success a.active:focus {
   background-color: #53a653;
 }
 
@@ -8927,9 +9067,15 @@ button.list-group-item {
 .navbar-success .dropdown-menu a:hover, .navbar-success .dropdown-menu a:active, .navbar-success .dropdown-menu a:focus {
   background-color: #4a934a;
 }
-.navbar-success .dropdown-menu li.open > a,
+.navbar-success .dropdown-menu li.open > a, .navbar-success .dropdown-menu li.open > a:hover, .navbar-success .dropdown-menu li.open > a:active, .navbar-success .dropdown-menu li.open > a:focus,
 .navbar-success .dropdown-menu li.active > a,
-.navbar-success .dropdown-menu a.active {
+.navbar-success .dropdown-menu li.active > a:hover,
+.navbar-success .dropdown-menu li.active > a:active,
+.navbar-success .dropdown-menu li.active > a:focus,
+.navbar-success .dropdown-menu a.active,
+.navbar-success .dropdown-menu a.active:hover,
+.navbar-success .dropdown-menu a.active:active,
+.navbar-success .dropdown-menu a.active:focus {
   background-color: #4a934a;
 }
 @media (max-width: 767px) {
@@ -8952,9 +9098,15 @@ button.list-group-item {
 .navbar-success.navbar-stacked .dropdown-menu a:hover, .navbar-success.navbar-stacked .dropdown-menu a:active, .navbar-success.navbar-stacked .dropdown-menu a:focus {
   background-color: #408140;
 }
-.navbar-success.navbar-stacked .dropdown-menu li.open > a,
+.navbar-success.navbar-stacked .dropdown-menu li.open > a, .navbar-success.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-success.navbar-stacked .dropdown-menu li.open > a:active, .navbar-success.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-success.navbar-stacked .dropdown-menu li.active > a,
-.navbar-success.navbar-stacked .dropdown-menu a.active {
+.navbar-success.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-success.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-success.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-success.navbar-stacked .dropdown-menu a.active,
+.navbar-success.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-success.navbar-stacked .dropdown-menu a.active:active,
+.navbar-success.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #408140;
 }
 
@@ -8977,9 +9129,15 @@ button.list-group-item {
 .navbar-info button:focus {
   background-color: #52adc8;
 }
-.navbar-info li.open > a,
+.navbar-info li.open > a, .navbar-info li.open > a:hover, .navbar-info li.open > a:active, .navbar-info li.open > a:focus,
 .navbar-info li.active > a,
-.navbar-info a.active {
+.navbar-info li.active > a:hover,
+.navbar-info li.active > a:active,
+.navbar-info li.active > a:focus,
+.navbar-info a.active,
+.navbar-info a.active:hover,
+.navbar-info a.active:active,
+.navbar-info a.active:focus {
   background-color: #52adc8;
 }
 
@@ -8990,9 +9148,15 @@ button.list-group-item {
 .navbar-info .dropdown-menu a:hover, .navbar-info .dropdown-menu a:active, .navbar-info .dropdown-menu a:focus {
   background-color: #499ab2;
 }
-.navbar-info .dropdown-menu li.open > a,
+.navbar-info .dropdown-menu li.open > a, .navbar-info .dropdown-menu li.open > a:hover, .navbar-info .dropdown-menu li.open > a:active, .navbar-info .dropdown-menu li.open > a:focus,
 .navbar-info .dropdown-menu li.active > a,
-.navbar-info .dropdown-menu a.active {
+.navbar-info .dropdown-menu li.active > a:hover,
+.navbar-info .dropdown-menu li.active > a:active,
+.navbar-info .dropdown-menu li.active > a:focus,
+.navbar-info .dropdown-menu a.active,
+.navbar-info .dropdown-menu a.active:hover,
+.navbar-info .dropdown-menu a.active:active,
+.navbar-info .dropdown-menu a.active:focus {
   background-color: #499ab2;
 }
 @media (max-width: 767px) {
@@ -9015,9 +9179,15 @@ button.list-group-item {
 .navbar-info.navbar-stacked .dropdown-menu a:hover, .navbar-info.navbar-stacked .dropdown-menu a:active, .navbar-info.navbar-stacked .dropdown-menu a:focus {
   background-color: #40869b;
 }
-.navbar-info.navbar-stacked .dropdown-menu li.open > a,
+.navbar-info.navbar-stacked .dropdown-menu li.open > a, .navbar-info.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-info.navbar-stacked .dropdown-menu li.open > a:active, .navbar-info.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-info.navbar-stacked .dropdown-menu li.active > a,
-.navbar-info.navbar-stacked .dropdown-menu a.active {
+.navbar-info.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-info.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-info.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-info.navbar-stacked .dropdown-menu a.active,
+.navbar-info.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-info.navbar-stacked .dropdown-menu a.active:active,
+.navbar-info.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #40869b;
 }
 
@@ -9040,9 +9210,15 @@ button.list-group-item {
 .navbar-warning button:focus {
   background-color: #d89c46;
 }
-.navbar-warning li.open > a,
+.navbar-warning li.open > a, .navbar-warning li.open > a:hover, .navbar-warning li.open > a:active, .navbar-warning li.open > a:focus,
 .navbar-warning li.active > a,
-.navbar-warning a.active {
+.navbar-warning li.active > a:hover,
+.navbar-warning li.active > a:active,
+.navbar-warning li.active > a:focus,
+.navbar-warning a.active,
+.navbar-warning a.active:hover,
+.navbar-warning a.active:active,
+.navbar-warning a.active:focus {
   background-color: #d89c46;
 }
 
@@ -9053,9 +9229,15 @@ button.list-group-item {
 .navbar-warning .dropdown-menu a:hover, .navbar-warning .dropdown-menu a:active, .navbar-warning .dropdown-menu a:focus {
   background-color: #c08a3e;
 }
-.navbar-warning .dropdown-menu li.open > a,
+.navbar-warning .dropdown-menu li.open > a, .navbar-warning .dropdown-menu li.open > a:hover, .navbar-warning .dropdown-menu li.open > a:active, .navbar-warning .dropdown-menu li.open > a:focus,
 .navbar-warning .dropdown-menu li.active > a,
-.navbar-warning .dropdown-menu a.active {
+.navbar-warning .dropdown-menu li.active > a:hover,
+.navbar-warning .dropdown-menu li.active > a:active,
+.navbar-warning .dropdown-menu li.active > a:focus,
+.navbar-warning .dropdown-menu a.active,
+.navbar-warning .dropdown-menu a.active:hover,
+.navbar-warning .dropdown-menu a.active:active,
+.navbar-warning .dropdown-menu a.active:focus {
   background-color: #c08a3e;
 }
 @media (max-width: 767px) {
@@ -9078,9 +9260,15 @@ button.list-group-item {
 .navbar-warning.navbar-stacked .dropdown-menu a:hover, .navbar-warning.navbar-stacked .dropdown-menu a:active, .navbar-warning.navbar-stacked .dropdown-menu a:focus {
   background-color: #a87937;
 }
-.navbar-warning.navbar-stacked .dropdown-menu li.open > a,
+.navbar-warning.navbar-stacked .dropdown-menu li.open > a, .navbar-warning.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-warning.navbar-stacked .dropdown-menu li.open > a:active, .navbar-warning.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-warning.navbar-stacked .dropdown-menu li.active > a,
-.navbar-warning.navbar-stacked .dropdown-menu a.active {
+.navbar-warning.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-warning.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-warning.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-warning.navbar-stacked .dropdown-menu a.active,
+.navbar-warning.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-warning.navbar-stacked .dropdown-menu a.active:active,
+.navbar-warning.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #a87937;
 }
 
@@ -9103,9 +9291,15 @@ button.list-group-item {
 .navbar-danger button:focus {
   background-color: #c34b47;
 }
-.navbar-danger li.open > a,
+.navbar-danger li.open > a, .navbar-danger li.open > a:hover, .navbar-danger li.open > a:active, .navbar-danger li.open > a:focus,
 .navbar-danger li.active > a,
-.navbar-danger a.active {
+.navbar-danger li.active > a:hover,
+.navbar-danger li.active > a:active,
+.navbar-danger li.active > a:focus,
+.navbar-danger a.active,
+.navbar-danger a.active:hover,
+.navbar-danger a.active:active,
+.navbar-danger a.active:focus {
   background-color: #c34b47;
 }
 
@@ -9116,9 +9310,15 @@ button.list-group-item {
 .navbar-danger .dropdown-menu a:hover, .navbar-danger .dropdown-menu a:active, .navbar-danger .dropdown-menu a:focus {
   background-color: #ae423f;
 }
-.navbar-danger .dropdown-menu li.open > a,
+.navbar-danger .dropdown-menu li.open > a, .navbar-danger .dropdown-menu li.open > a:hover, .navbar-danger .dropdown-menu li.open > a:active, .navbar-danger .dropdown-menu li.open > a:focus,
 .navbar-danger .dropdown-menu li.active > a,
-.navbar-danger .dropdown-menu a.active {
+.navbar-danger .dropdown-menu li.active > a:hover,
+.navbar-danger .dropdown-menu li.active > a:active,
+.navbar-danger .dropdown-menu li.active > a:focus,
+.navbar-danger .dropdown-menu a.active,
+.navbar-danger .dropdown-menu a.active:hover,
+.navbar-danger .dropdown-menu a.active:active,
+.navbar-danger .dropdown-menu a.active:focus {
   background-color: #ae423f;
 }
 @media (max-width: 767px) {
@@ -9141,9 +9341,15 @@ button.list-group-item {
 .navbar-danger.navbar-stacked .dropdown-menu a:hover, .navbar-danger.navbar-stacked .dropdown-menu a:active, .navbar-danger.navbar-stacked .dropdown-menu a:focus {
   background-color: #983a37;
 }
-.navbar-danger.navbar-stacked .dropdown-menu li.open > a,
+.navbar-danger.navbar-stacked .dropdown-menu li.open > a, .navbar-danger.navbar-stacked .dropdown-menu li.open > a:hover, .navbar-danger.navbar-stacked .dropdown-menu li.open > a:active, .navbar-danger.navbar-stacked .dropdown-menu li.open > a:focus,
 .navbar-danger.navbar-stacked .dropdown-menu li.active > a,
-.navbar-danger.navbar-stacked .dropdown-menu a.active {
+.navbar-danger.navbar-stacked .dropdown-menu li.active > a:hover,
+.navbar-danger.navbar-stacked .dropdown-menu li.active > a:active,
+.navbar-danger.navbar-stacked .dropdown-menu li.active > a:focus,
+.navbar-danger.navbar-stacked .dropdown-menu a.active,
+.navbar-danger.navbar-stacked .dropdown-menu a.active:hover,
+.navbar-danger.navbar-stacked .dropdown-menu a.active:active,
+.navbar-danger.navbar-stacked .dropdown-menu a.active:focus {
   background-color: #983a37;
 }
 
@@ -9814,6 +10020,7 @@ button.list-group-item {
 }
 
 .panel {
+  position: relative;
   border-radius: 0.375em;
 }
 
@@ -9842,9 +10049,9 @@ button.list-group-item {
 .panel-footer:first-child + :last-child {
   border-top: 0 none;
 }
-.panel-heading:first-child + :not(:last-child),
-.panel-body:first-child + :not(:last-child),
-.panel-footer:first-child + :not(:last-child) {
+.panel-heading:not(:last-child),
+.panel-body:not(:last-child),
+.panel-footer:not(:last-child) {
   border-right: 1px solid;
   border-left: 1px solid;
 }

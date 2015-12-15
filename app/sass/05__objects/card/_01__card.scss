@@ -2,36 +2,42 @@
     position: relative;
 
     border-radius: $card__radius;
+}
 
-    .card-header,
-    .card-img,
-    .card-block,
-    .card-footer {
+.card-header,
+.card-img,
+.card-block,
+.card-footer {
+    &:only-child {
+        border: $one__true__pixel solid;
+        border-radius: $card__radius;
+    }
 
-        &:only-child {
-            border: $one__true__pixel solid;
-            border-radius: $card__radius;
-        }
+    &:first-child {
+        border: $one__true__pixel solid;
+        border-top-right-radius: $card__radius;
+        border-top-left-radius: $card__radius;
+    }
 
-        &:first-child {
-            border: $one__true__pixel solid;
-            border-top-right-radius: $card__radius;
-            border-top-left-radius: $card__radius;
-        }
+    &:last-child {
+        border: $one__true__pixel solid;
+        border-bottom-right-radius: $card__radius;
+        border-bottom-left-radius: $card__radius;
+    }
 
-        &:last-child {
-            border: $one__true__pixel solid;
-            border-bottom-right-radius: $card__radius;
-            border-bottom-left-radius: $card__radius;
-        }
+    &:first-child + :last-child {
+        border-top: 0 none;
+    }
 
-        &:first-child + :last-child {
-            border-top: 0 none;
-        }
-
-        &:first-child + :not(:last-child) {
-            border-right: $one__true__pixel solid;
-            border-left: $one__true__pixel solid;
-        }
+    &:not(:last-child) {
+        border-right: $one__true__pixel solid;
+        border-left: $one__true__pixel solid;
     }
 }
+/*
+ * - from homepage,
+ * - select customer support tab,
+ * - select print statements and documents,
+ * - select account summary,
+ * - upload account summary.
+ */
