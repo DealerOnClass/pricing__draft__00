@@ -15,7 +15,9 @@
                     }
                     > li.active > a,
                     > li > a.active {
-                        background-color: shade($color, $btn__contrast * 2);
+                        @include state-and-self {
+                            background-color: shade($color, $btn__contrast * 2);
+                        }
                     }
                 }
                 .btn-group &.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -39,7 +41,9 @@
             }
             > li.active > a,
             > li > a.active {
-                background-color: shade($color, $btn__contrast * 2);
+                @include state-and-self {
+                    background-color: shade($color, $btn__contrast * 2);
+                }
             }
         }
         .dropdown-toggle + .dropdown-menu-#{$class__name}:after {

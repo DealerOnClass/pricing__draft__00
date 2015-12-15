@@ -12,34 +12,42 @@
 
 @if $panel-wizard-true-accordion {
     .panel-wizard-container {
+
         .panel-wizard {
             margin-bottom: 0;
-        }
-        .panel-wizard:not(:last-child) {
-            border-bottom-width: 0;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
+
+            .panel-heading,
+            .panel-body,
             .panel-footer {
-                border-bottom-width: 0;
                 border-radius: 0;
             }
-        }
-        .panel-wizard + .panel-wizard {
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
+
+            &:first-child {
+                .panel-heading {
+                    border-top-right-radius: $panel__radius;
+                    border-top-left-radius: $panel__radius;
+                }
+            }
+            &:last-child {
+                .panel-heading,
+                .panel-footer {
+                    border-bottom-right-radius: $panel__radius;
+                    border-bottom-left-radius: $panel__radius;
+                }
+                .panel-heading.current {
+                    border-radius: 0;
+                }
+            }
         }
     }
 }
 
 .panel-wizard {
+
     .panel-heading.btn {
         display: block;
-        overflow: hidden;
-
         width: 100%;
-
-        border-bottom-width: 0;
-        border-radius: 0;
+        overflow: hidden;
     }
 
     .panel-wizard-step {
@@ -48,12 +56,8 @@
 
     .panel-wizard-icon {
         position: relative;
-        top: $panel-heading__padding__y / 2;
+        top: $panel__y / 2;
 
         float: right;
-    }
-
-    .panel-footer {
-        border-top-width: 0;
     }
 }

@@ -14,13 +14,17 @@
                 }
             }
 
-            > li > a.active,
-            > li.active > a {
-                border-color: shade($color, $pagination__contrast * 2);
-                background-color: shade($color, $pagination__contrast * 2);
+            > li.active > a,
+            > li > a.active {
+                @include state-and-self {
+                    border-color: shade($color, $pagination__contrast * 2);
+                    background-color: shade($color, $pagination__contrast * 2);
+                }
             }
 
             > li > a[disabled] {
+                color: check-color($color, 80, tint($body__color, 65%), tint($color, 65%));
+                border-color: $color;
                 background-color: $color;
             }
         }

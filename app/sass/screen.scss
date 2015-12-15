@@ -275,27 +275,25 @@
 @import
     "05__objects/pager/00__var",
     "05__objects/pager/01__pager",
-    "05__objects/pager/02__pager-next",
-    "05__objects/pager/03__pager-prev",
-    "05__objects/pager/04__colors";
+    "05__objects/pager/02__pager-icon",
+    "05__objects/pager/03__colors";
 
 @import
     "05__objects/pagination/00__var",
     "05__objects/pagination/01__pagination",
     "05__objects/pagination/02__pagination-rounded",
-    "05__objects/pagination/03__pagination-variations";
+    "05__objects/pagination/03__pagination-icon",
+    "05__objects/pagination/04__colors";
 
 @import
-    "05__objects/panels/00__variables.scss",
-    "05__objects/panels/01__panel.scss",
-    "05__objects/panels/02__panel-heading.scss",
-    "05__objects/panels/03__panel-title.scss",
-    "05__objects/panels/04__panel-body.scss",
-    "05__objects/panels/05__panel-footer.scss",
-    "05__objects/panels/06__panel__list-group.scss",
-    "05__objects/panels/07__panel__table.scss",
-    "05__objects/panels/08__panel-variations.scss",
-    "05__objects/panels/09__panel-wizard.scss";
+    "05__objects/panels/00__var",
+    "05__objects/panels/01__panel",
+    "05__objects/panels/02__panel-heading",
+    "05__objects/panels/03__panel-title",
+    "05__objects/panels/04__panel-body",
+    "05__objects/panels/05__panel-footer",
+    "05__objects/panels/06__panel-wizard",
+    "05__objects/panels/07__colors";
 
 @import
     "05__objects/progress-bars/00__variables",

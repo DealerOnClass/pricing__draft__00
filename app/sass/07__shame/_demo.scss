@@ -34,24 +34,10 @@
     .breadcrumb,
     .card,
     .form-inline,
-    .list-group,
     .demo__nav {
         margin-bottom: rhythm(1);
     }
-
-    .card .list-group {
-        margin-bottom: 0;
-    }
-
-    .card-img {
-        max-width: 100%;
-    }
-
-    .controls .form-control {
-        @include rhythm-rem(margin-bottom, 0.5);
-    }
 }
-
 
 .demo__grid {
     .box {

@@ -1,73 +1,18 @@
-@mixin panel-variant($color) {
-    $border:              shade($color, 14%);
-    $heading-text-color:  check-color($color, 70);
-    $heading-bg-color:    $color;
-    $heading-border:      check-color($color, 70, $border, $color);
+@mixin panel-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+        .panel-#{$class__name} {
 
-    border-color: $border;
+            .panel-heading {
+                color: check-color($color, 80, inherit, $white);
+                border-color: check-color($color, 80, shade($color, $panel__contrast), $color)!important;
+                background-color: $color;
+            }
 
-    & > .panel-heading {
-        color: $heading-text-color;
-        background-color: $heading-bg-color;
-        border-color: darken($heading-bg-color, 5%);
-
-        &.btn {
-            &:hover,
-            &.current {
-                background-color: darken($heading-bg-color, 5%);
-                border-color: darken($heading-bg-color, 5%);
+            .panel-body,
+            .panel-footer {
+                border-color: $gray__02 !important;
             }
         }
-
-
-        + .panel-collapse > .panel-body,
-        + .panel-collapse > .panel-footer {
-            border-color: $gray__02;
-        }
-        .badge {
-            color: $heading-bg-color;
-            background-color: $heading-text-color;
-        }
-    }
-    & > .panel-footer {
-        + .panel-collapse > .panel-body {
-            border-bottom-color: $border;
-        }
     }
 }
 
-
-@mixin panel-contextual-variant($color) {
-
-    @if $panel__contextual--desaturated {
-        $color:               tint($color, 70%);
-    } @else {
-        $color:               $color;
-    }
-
-    $border:              shade($color, 10%);
-    $heading-text-color:  check-color($color, 70);
-    $heading-bg-color:    $color;
-    $heading-border:      check-color($color, 70, $border, $color);
-
-    border-color: $border;
-
-    & > .panel-heading {
-        color: $heading-text-color;
-        background-color: $heading-bg-color;
-        border-color: $heading-border;
-
-        + .panel-collapse > .panel-body {
-            border-top-color: $border;
-        }
-        .badge {
-            color: $heading-bg-color;
-            background-color: $heading-text-color;
-        }
-    }
-    & > .panel-footer {
-        + .panel-collapse > .panel-body {
-            border-bottom-color: $border;
-        }
-    }
-}

@@ -1,17 +1,17 @@
 .pagination {
-
     display: inline-block;
 
     padding-left: 0;
 
     > li {
-        display: inline;
+        display: inline-block;
+        float: left;
     }
 
     > li > a {
         position: relative;
 
-        float: left;
+        display: inline-block;
 
         margin-left: $one__true__pixel * -1;
         padding: $pagination__padding;
@@ -29,7 +29,8 @@
         border-bottom-right-radius: $pagination__radius;
     }
 
-    > li.active > a {
+    > li.active > a,
+    > li > a.active {
         @include state-and-self {
             z-index: 20;
 
@@ -41,8 +42,12 @@
         }
     }
 
+    > li > a:active {
+        box-shadow: $pagination__link--active__shadow;
+    }
+
     > li > a[disabled] {
-        @include state-disabled;
+        cursor: $cursor-disabled;
     }
 }
 

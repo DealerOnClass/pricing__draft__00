@@ -1,20 +1,4 @@
 .panel-body {
+    box-sizing: border-box;
     padding: $panel-body__padding;
-
-    border-right: $one__pixel solid transparent;
-    border-left: $one__pixel solid transparent;
-
-    @include clearfix;
-
-    > form {
-        > .form-group:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-.panel {
-    > .btn.btn-block + .panel-collapse {
-        border-top: $one__pixel solid $panel-body__border;
-    }
 }

@@ -3,16 +3,35 @@
 
     border-radius: $card__radius;
 
-    .card-header:first-child,
-    .card-img:first-child,
-    .card-block:first-child {
-        border-top-right-radius: $card__radius;
-        border-top-left-radius: $card__radius;
-    }
-    .card-footer:last-child,
-    .card-img:last-child,
-    .card-block:last-child {
-        border-bottom-right-radius: $card__radius;
-        border-bottom-left-radius: $card__radius;
+    .card-header,
+    .card-img,
+    .card-block,
+    .card-footer {
+
+        &:only-child {
+            border: $one__true__pixel solid;
+            border-radius: $card__radius;
+        }
+
+        &:first-child {
+            border: $one__true__pixel solid;
+            border-top-right-radius: $card__radius;
+            border-top-left-radius: $card__radius;
+        }
+
+        &:last-child {
+            border: $one__true__pixel solid;
+            border-bottom-right-radius: $card__radius;
+            border-bottom-left-radius: $card__radius;
+        }
+
+        &:first-child + :last-child {
+            border-top: 0 none;
+        }
+
+        &:first-child + :not(:last-child) {
+            border-right: $one__true__pixel solid;
+            border-left: $one__true__pixel solid;
+        }
     }
 }

@@ -31,12 +31,12 @@
         @include state-disabled;
     }
 
-    //  > a,
-    //  > span {
-    //      display:           inline-block;
-    //      padding:           $pager__link__vertical-padding $pager__link__horizontal-padding;
-    //      border:            $one__true__pixel solid;
-    //      border-radius:     $pager__link__radius;
-    //  }
+    > .next {
+        float: right;
+    }
+
+    > .previous {
+        float: left;
+    }
 }
 

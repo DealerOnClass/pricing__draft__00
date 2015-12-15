@@ -1,10 +1,34 @@
 .panel {
-    overflow: hidden;
-
-    margin-bottom: $panel__vertical-rhythm;
-
-    //  border: $one__pixel solid transparent;
     border-radius: $panel__radius;
-    background-color: $panel__bg;
-    box-shadow: $panel__shadow;
+
+    .panel-heading,
+    .panel-body,
+    .panel-footer {
+
+        &:only-child {
+            border: $one__true__pixel solid;
+            border-radius: $panel__radius;
+        }
+
+        &:first-child {
+            border: $one__true__pixel solid;
+            border-top-right-radius: $panel__radius;
+            border-top-left-radius: $panel__radius;
+        }
+
+        &:last-child {
+            border: $one__true__pixel solid;
+            border-bottom-right-radius: $panel__radius;
+            border-bottom-left-radius: $panel__radius;
+        }
+
+        &:first-child + :last-child {
+            border-top: 0 none;
+        }
+
+        &:first-child + :not(:last-child) {
+            border-right: $one__true__pixel solid;
+            border-left: $one__true__pixel solid;
+        }
+    }
 }

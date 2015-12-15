@@ -19,25 +19,41 @@
         border-radius: 0;
 
         .card-header,
+        .card-img,
+        .card-block,
         .card-footer {
-            border: 0 none;
+            border-right: 0 none !important;
+            border-left: 0 none !important;
+
+            &:first-child {
+                border-top: 0 none;
+            }
+
+            &:last-child {
+                border-bottom: 0 none;
+            }
         }
+
         .card-img {
             border-radius: 0;
-        }
-        .card-block {
-            border-right: 0 none;
-            border-bottom: 0 none;
-            border-left: 0 none;
         }
 
         &:first-child {
             border-top-left-radius: $card__radius;
             border-bottom-left-radius: $card__radius;
+
+            .card-img {
+                border-top-left-radius: $card__radius;
+            }
         }
+
         &:last-child {
             border-top-right-radius: $card__radius;
             border-bottom-right-radius: $card__radius;
+
+            .card-img {
+                border-top-right-radius: $card__radius;
+            }
         }
     }
 }

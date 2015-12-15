@@ -20,8 +20,6 @@ $pager__link--active__border:       $primary__color;
 $pager__link--active__bg:           $primary__color;
 $pager__link--active__shadow:       inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
 //
-$pager__previous__use-icon:         true !default;
-$pager__previous__icon:             $fa-var-angle-left;
-//
-$pager__next__use-icon:             true !default;
+$pager__use-icon:                   true !default;
 $pager__next__icon:                 $fa-var-angle-right;
+$pager__previous__icon:             $fa-var-angle-left;

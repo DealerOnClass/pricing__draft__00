@@ -16,13 +16,19 @@
         border: $one__true__pixel solid;
 
         .card-header,
+        .card-img,
+        .card-block,
         .card-footer {
-            border: 0 none;
-        }
-        .card-block {
-            border-right: 0 none;
-            border-bottom: 0 none;
-            border-left: 0 none;
+            border-right: 0 none !important;
+            border-left: 0 none !important;
+
+            &:first-child {
+                border-top: 0 none;
+            }
+
+            &:last-child {
+                border-bottom: 0 none;
+            }
         }
     }
 }
