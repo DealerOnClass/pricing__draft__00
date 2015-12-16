@@ -10833,11 +10833,14 @@ button.list-group-item {
 
 .progress {
   overflow: hidden;
-  height: 1.2em;
+  height: 1.5em;
   margin-bottom: 1.2em;
   border-radius: 0.375em;
   background-color: #e6e6e6;
   box-shadow: inset 0 0.11765em 0.11765em rgba(0, 0, 0, 0.15);
+}
+.progress-striped .progress {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
 .progress-bar {
@@ -10879,40 +10882,56 @@ button.list-group-item {
   animation: progress-bar-stripes 2s linear infinite;
 }
 
+.progress-bar-default {
+  background-color: #e6e6e6;
+}
+
+.progress-bar-inverse {
+  background-color: #343c4b;
+}
+
+.progress-bar-cta {
+  background-color: #f17306;
+}
+
+.progress-bar-main {
+  background-color: #3662ad;
+}
+
+.progress-bar-alt1 {
+  background-color: #42587d;
+}
+
+.progress-bar-alt2 {
+  background-color: #5f7394;
+}
+
+.progress-bar-alt3 {
+  background-color: #8193b1;
+}
+
 .progress-bar-success {
   background-color: #5cb85c;
-}
-.progress-striped .progress-bar-success {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
 .progress-bar-info {
   background-color: #5bc0de;
 }
-.progress-striped .progress-bar-info {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-}
 
 .progress-bar-warning {
   background-color: #f0ad4e;
-}
-.progress-striped .progress-bar-warning {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
 .progress-bar-danger {
   background-color: #d9534f;
 }
-.progress-striped .progress-bar-danger {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-}
 
 .embed-responsive {
   position: relative;
   display: block;
+  overflow: hidden;
   height: 0;
   padding: 0;
-  overflow: hidden;
 }
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,

@@ -1,7 +1,7 @@
-@mixin progress-bar-variant($background) {
-    background-color:  $background;
-
-    .progress-striped & {
-        @include gradient-striped;
+@mixin progress-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
+        .progress-bar-#{$class__name} {
+            background-color:  $color;
+        }
     }
 }

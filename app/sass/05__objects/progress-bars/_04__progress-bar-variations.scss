@@ -1,16 +1,15 @@
-.progress-bar-success {
-    @include progress-bar-variant($progress-bar--success__bg);
+@if $progress__default-palette {
+    @include progress-color-variation($default__palette);
 }
-
-.progress-bar-info {
-    @include progress-bar-variant($progress-bar--info__bg);
+@if $progress__inverse-palette {
+    @include progress-color-variation($inverse__palette);
 }
-
-.progress-bar-warning {
-    @include progress-bar-variant($progress-bar--warning__bg);
+@if $progress__primary-palette {
+    @include progress-color-variation($primary__palette);
 }
-
-.progress-bar-danger {
-    @include progress-bar-variant($progress-bar--danger__bg);
+@if $progress__neutral-palette {
+    @include progress-color-variation($neutral__palette);
 }
-
+@if $progress__state-palette {
+    @include progress-color-variation($state__palette);
+}
