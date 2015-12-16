@@ -97,6 +97,10 @@
     display: block;
 }
 
+.show__popover {
+    margin-bottom: rhythm(.5);
+}
+
 .show__modal--palette {
     .modal-content {
         margin: rhythm(.5);

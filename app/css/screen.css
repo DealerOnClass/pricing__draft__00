@@ -10386,7 +10386,7 @@ button.list-group-item {
 
 .popover-title {
   margin: 0;
-  padding: 0.6em 0.9em 0;
+  padding: 0.6em 0.9em;
   border-top: 1px solid;
   border-right: 1px solid;
   border-left: 1px solid;
@@ -10433,6 +10433,402 @@ button.list-group-item {
 .popover-arrow:after {
   content: '';
   border-width: 10px;
+}
+
+.popover-default .popover-title,
+.popover-default .popover-content {
+  border-color: #cfcfcf;
+}
+.popover-default .popover-title {
+  color: inherit;
+  background-color: #e6e6e6;
+}
+.popover-default.top .arrow,
+.popover-default.top .popover-arrow, .popover-default.popover-top .arrow,
+.popover-default.popover-top .popover-arrow, .popover-default.bs-tether-element-attached-bottom .arrow,
+.popover-default.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #b8b8b8;
+}
+.popover-default.right .arrow,
+.popover-default.right .popover-arrow, .popover-default.popover-right .arrow,
+.popover-default.popover-right .popover-arrow, .popover-default.bs-tether-element-attached-left .arrow,
+.popover-default.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #b8b8b8;
+}
+.popover-default.bottom .arrow, .popover-default.bottom .arrow:after,
+.popover-default.bottom .popover-arrow,
+.popover-default.bottom .popover-arrow:after, .popover-default.popover-bottom .arrow, .popover-default.popover-bottom .arrow:after,
+.popover-default.popover-bottom .popover-arrow,
+.popover-default.popover-bottom .popover-arrow:after, .popover-default.bs-tether-element-attached-top .arrow, .popover-default.bs-tether-element-attached-top .arrow:after,
+.popover-default.bs-tether-element-attached-top .popover-arrow,
+.popover-default.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #e6e6e6;
+}
+.popover-default.left .arrow,
+.popover-default.left .popover-arrow, .popover-default.popover-left .arrow,
+.popover-default.popover-left .popover-arrow, .popover-default.bs-tether-element-attached-right .arrow,
+.popover-default.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #b8b8b8;
+}
+
+.popover-inverse .popover-title,
+.popover-inverse .popover-content {
+  border-color: #343c4b;
+}
+.popover-inverse .popover-title {
+  color: white;
+  background-color: #343c4b;
+}
+.popover-inverse.top .arrow,
+.popover-inverse.top .popover-arrow, .popover-inverse.popover-top .arrow,
+.popover-inverse.popover-top .popover-arrow, .popover-inverse.bs-tether-element-attached-bottom .arrow,
+.popover-inverse.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #2a303c;
+}
+.popover-inverse.right .arrow,
+.popover-inverse.right .popover-arrow, .popover-inverse.popover-right .arrow,
+.popover-inverse.popover-right .popover-arrow, .popover-inverse.bs-tether-element-attached-left .arrow,
+.popover-inverse.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #2a303c;
+}
+.popover-inverse.bottom .arrow, .popover-inverse.bottom .arrow:after,
+.popover-inverse.bottom .popover-arrow,
+.popover-inverse.bottom .popover-arrow:after, .popover-inverse.popover-bottom .arrow, .popover-inverse.popover-bottom .arrow:after,
+.popover-inverse.popover-bottom .popover-arrow,
+.popover-inverse.popover-bottom .popover-arrow:after, .popover-inverse.bs-tether-element-attached-top .arrow, .popover-inverse.bs-tether-element-attached-top .arrow:after,
+.popover-inverse.bs-tether-element-attached-top .popover-arrow,
+.popover-inverse.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #343c4b;
+}
+.popover-inverse.left .arrow,
+.popover-inverse.left .popover-arrow, .popover-inverse.popover-left .arrow,
+.popover-inverse.popover-left .popover-arrow, .popover-inverse.bs-tether-element-attached-right .arrow,
+.popover-inverse.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #2a303c;
+}
+
+.popover-cta .popover-title,
+.popover-cta .popover-content {
+  border-color: #f17306;
+}
+.popover-cta .popover-title {
+  color: white;
+  background-color: #f17306;
+}
+.popover-cta.top .arrow,
+.popover-cta.top .popover-arrow, .popover-cta.popover-top .arrow,
+.popover-cta.popover-top .popover-arrow, .popover-cta.bs-tether-element-attached-bottom .arrow,
+.popover-cta.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #c15c05;
+}
+.popover-cta.right .arrow,
+.popover-cta.right .popover-arrow, .popover-cta.popover-right .arrow,
+.popover-cta.popover-right .popover-arrow, .popover-cta.bs-tether-element-attached-left .arrow,
+.popover-cta.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #c15c05;
+}
+.popover-cta.bottom .arrow, .popover-cta.bottom .arrow:after,
+.popover-cta.bottom .popover-arrow,
+.popover-cta.bottom .popover-arrow:after, .popover-cta.popover-bottom .arrow, .popover-cta.popover-bottom .arrow:after,
+.popover-cta.popover-bottom .popover-arrow,
+.popover-cta.popover-bottom .popover-arrow:after, .popover-cta.bs-tether-element-attached-top .arrow, .popover-cta.bs-tether-element-attached-top .arrow:after,
+.popover-cta.bs-tether-element-attached-top .popover-arrow,
+.popover-cta.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #f17306;
+}
+.popover-cta.left .arrow,
+.popover-cta.left .popover-arrow, .popover-cta.popover-left .arrow,
+.popover-cta.popover-left .popover-arrow, .popover-cta.bs-tether-element-attached-right .arrow,
+.popover-cta.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #c15c05;
+}
+
+.popover-main .popover-title,
+.popover-main .popover-content {
+  border-color: #3662ad;
+}
+.popover-main .popover-title {
+  color: white;
+  background-color: #3662ad;
+}
+.popover-main.top .arrow,
+.popover-main.top .popover-arrow, .popover-main.popover-top .arrow,
+.popover-main.popover-top .popover-arrow, .popover-main.bs-tether-element-attached-bottom .arrow,
+.popover-main.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #2b4e8a;
+}
+.popover-main.right .arrow,
+.popover-main.right .popover-arrow, .popover-main.popover-right .arrow,
+.popover-main.popover-right .popover-arrow, .popover-main.bs-tether-element-attached-left .arrow,
+.popover-main.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #2b4e8a;
+}
+.popover-main.bottom .arrow, .popover-main.bottom .arrow:after,
+.popover-main.bottom .popover-arrow,
+.popover-main.bottom .popover-arrow:after, .popover-main.popover-bottom .arrow, .popover-main.popover-bottom .arrow:after,
+.popover-main.popover-bottom .popover-arrow,
+.popover-main.popover-bottom .popover-arrow:after, .popover-main.bs-tether-element-attached-top .arrow, .popover-main.bs-tether-element-attached-top .arrow:after,
+.popover-main.bs-tether-element-attached-top .popover-arrow,
+.popover-main.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #3662ad;
+}
+.popover-main.left .arrow,
+.popover-main.left .popover-arrow, .popover-main.popover-left .arrow,
+.popover-main.popover-left .popover-arrow, .popover-main.bs-tether-element-attached-right .arrow,
+.popover-main.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #2b4e8a;
+}
+
+.popover-alt1 .popover-title,
+.popover-alt1 .popover-content {
+  border-color: #42587d;
+}
+.popover-alt1 .popover-title {
+  color: white;
+  background-color: #42587d;
+}
+.popover-alt1.top .arrow,
+.popover-alt1.top .popover-arrow, .popover-alt1.popover-top .arrow,
+.popover-alt1.popover-top .popover-arrow, .popover-alt1.bs-tether-element-attached-bottom .arrow,
+.popover-alt1.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #354664;
+}
+.popover-alt1.right .arrow,
+.popover-alt1.right .popover-arrow, .popover-alt1.popover-right .arrow,
+.popover-alt1.popover-right .popover-arrow, .popover-alt1.bs-tether-element-attached-left .arrow,
+.popover-alt1.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #354664;
+}
+.popover-alt1.bottom .arrow, .popover-alt1.bottom .arrow:after,
+.popover-alt1.bottom .popover-arrow,
+.popover-alt1.bottom .popover-arrow:after, .popover-alt1.popover-bottom .arrow, .popover-alt1.popover-bottom .arrow:after,
+.popover-alt1.popover-bottom .popover-arrow,
+.popover-alt1.popover-bottom .popover-arrow:after, .popover-alt1.bs-tether-element-attached-top .arrow, .popover-alt1.bs-tether-element-attached-top .arrow:after,
+.popover-alt1.bs-tether-element-attached-top .popover-arrow,
+.popover-alt1.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #42587d;
+}
+.popover-alt1.left .arrow,
+.popover-alt1.left .popover-arrow, .popover-alt1.popover-left .arrow,
+.popover-alt1.popover-left .popover-arrow, .popover-alt1.bs-tether-element-attached-right .arrow,
+.popover-alt1.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #354664;
+}
+
+.popover-alt2 .popover-title,
+.popover-alt2 .popover-content {
+  border-color: #5f7394;
+}
+.popover-alt2 .popover-title {
+  color: white;
+  background-color: #5f7394;
+}
+.popover-alt2.top .arrow,
+.popover-alt2.top .popover-arrow, .popover-alt2.popover-top .arrow,
+.popover-alt2.popover-top .popover-arrow, .popover-alt2.bs-tether-element-attached-bottom .arrow,
+.popover-alt2.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #4c5c76;
+}
+.popover-alt2.right .arrow,
+.popover-alt2.right .popover-arrow, .popover-alt2.popover-right .arrow,
+.popover-alt2.popover-right .popover-arrow, .popover-alt2.bs-tether-element-attached-left .arrow,
+.popover-alt2.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #4c5c76;
+}
+.popover-alt2.bottom .arrow, .popover-alt2.bottom .arrow:after,
+.popover-alt2.bottom .popover-arrow,
+.popover-alt2.bottom .popover-arrow:after, .popover-alt2.popover-bottom .arrow, .popover-alt2.popover-bottom .arrow:after,
+.popover-alt2.popover-bottom .popover-arrow,
+.popover-alt2.popover-bottom .popover-arrow:after, .popover-alt2.bs-tether-element-attached-top .arrow, .popover-alt2.bs-tether-element-attached-top .arrow:after,
+.popover-alt2.bs-tether-element-attached-top .popover-arrow,
+.popover-alt2.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #5f7394;
+}
+.popover-alt2.left .arrow,
+.popover-alt2.left .popover-arrow, .popover-alt2.popover-left .arrow,
+.popover-alt2.popover-left .popover-arrow, .popover-alt2.bs-tether-element-attached-right .arrow,
+.popover-alt2.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #4c5c76;
+}
+
+.popover-alt3 .popover-title,
+.popover-alt3 .popover-content {
+  border-color: #8193b1;
+}
+.popover-alt3 .popover-title {
+  color: white;
+  background-color: #8193b1;
+}
+.popover-alt3.top .arrow,
+.popover-alt3.top .popover-arrow, .popover-alt3.popover-top .arrow,
+.popover-alt3.popover-top .popover-arrow, .popover-alt3.bs-tether-element-attached-bottom .arrow,
+.popover-alt3.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #67768e;
+}
+.popover-alt3.right .arrow,
+.popover-alt3.right .popover-arrow, .popover-alt3.popover-right .arrow,
+.popover-alt3.popover-right .popover-arrow, .popover-alt3.bs-tether-element-attached-left .arrow,
+.popover-alt3.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #67768e;
+}
+.popover-alt3.bottom .arrow, .popover-alt3.bottom .arrow:after,
+.popover-alt3.bottom .popover-arrow,
+.popover-alt3.bottom .popover-arrow:after, .popover-alt3.popover-bottom .arrow, .popover-alt3.popover-bottom .arrow:after,
+.popover-alt3.popover-bottom .popover-arrow,
+.popover-alt3.popover-bottom .popover-arrow:after, .popover-alt3.bs-tether-element-attached-top .arrow, .popover-alt3.bs-tether-element-attached-top .arrow:after,
+.popover-alt3.bs-tether-element-attached-top .popover-arrow,
+.popover-alt3.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #8193b1;
+}
+.popover-alt3.left .arrow,
+.popover-alt3.left .popover-arrow, .popover-alt3.popover-left .arrow,
+.popover-alt3.popover-left .popover-arrow, .popover-alt3.bs-tether-element-attached-right .arrow,
+.popover-alt3.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #67768e;
+}
+
+.popover-success .popover-title,
+.popover-success .popover-content {
+  border-color: #5cb85c;
+}
+.popover-success .popover-title {
+  color: white;
+  background-color: #5cb85c;
+}
+.popover-success.top .arrow,
+.popover-success.top .popover-arrow, .popover-success.popover-top .arrow,
+.popover-success.popover-top .popover-arrow, .popover-success.bs-tether-element-attached-bottom .arrow,
+.popover-success.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #4a934a;
+}
+.popover-success.right .arrow,
+.popover-success.right .popover-arrow, .popover-success.popover-right .arrow,
+.popover-success.popover-right .popover-arrow, .popover-success.bs-tether-element-attached-left .arrow,
+.popover-success.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #4a934a;
+}
+.popover-success.bottom .arrow, .popover-success.bottom .arrow:after,
+.popover-success.bottom .popover-arrow,
+.popover-success.bottom .popover-arrow:after, .popover-success.popover-bottom .arrow, .popover-success.popover-bottom .arrow:after,
+.popover-success.popover-bottom .popover-arrow,
+.popover-success.popover-bottom .popover-arrow:after, .popover-success.bs-tether-element-attached-top .arrow, .popover-success.bs-tether-element-attached-top .arrow:after,
+.popover-success.bs-tether-element-attached-top .popover-arrow,
+.popover-success.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #5cb85c;
+}
+.popover-success.left .arrow,
+.popover-success.left .popover-arrow, .popover-success.popover-left .arrow,
+.popover-success.popover-left .popover-arrow, .popover-success.bs-tether-element-attached-right .arrow,
+.popover-success.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #4a934a;
+}
+
+.popover-info .popover-title,
+.popover-info .popover-content {
+  border-color: #5bc0de;
+}
+.popover-info .popover-title {
+  color: white;
+  background-color: #5bc0de;
+}
+.popover-info.top .arrow,
+.popover-info.top .popover-arrow, .popover-info.popover-top .arrow,
+.popover-info.popover-top .popover-arrow, .popover-info.bs-tether-element-attached-bottom .arrow,
+.popover-info.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #499ab2;
+}
+.popover-info.right .arrow,
+.popover-info.right .popover-arrow, .popover-info.popover-right .arrow,
+.popover-info.popover-right .popover-arrow, .popover-info.bs-tether-element-attached-left .arrow,
+.popover-info.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #499ab2;
+}
+.popover-info.bottom .arrow, .popover-info.bottom .arrow:after,
+.popover-info.bottom .popover-arrow,
+.popover-info.bottom .popover-arrow:after, .popover-info.popover-bottom .arrow, .popover-info.popover-bottom .arrow:after,
+.popover-info.popover-bottom .popover-arrow,
+.popover-info.popover-bottom .popover-arrow:after, .popover-info.bs-tether-element-attached-top .arrow, .popover-info.bs-tether-element-attached-top .arrow:after,
+.popover-info.bs-tether-element-attached-top .popover-arrow,
+.popover-info.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #5bc0de;
+}
+.popover-info.left .arrow,
+.popover-info.left .popover-arrow, .popover-info.popover-left .arrow,
+.popover-info.popover-left .popover-arrow, .popover-info.bs-tether-element-attached-right .arrow,
+.popover-info.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #499ab2;
+}
+
+.popover-warning .popover-title,
+.popover-warning .popover-content {
+  border-color: #f0ad4e;
+}
+.popover-warning .popover-title {
+  color: white;
+  background-color: #f0ad4e;
+}
+.popover-warning.top .arrow,
+.popover-warning.top .popover-arrow, .popover-warning.popover-top .arrow,
+.popover-warning.popover-top .popover-arrow, .popover-warning.bs-tether-element-attached-bottom .arrow,
+.popover-warning.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #c08a3e;
+}
+.popover-warning.right .arrow,
+.popover-warning.right .popover-arrow, .popover-warning.popover-right .arrow,
+.popover-warning.popover-right .popover-arrow, .popover-warning.bs-tether-element-attached-left .arrow,
+.popover-warning.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #c08a3e;
+}
+.popover-warning.bottom .arrow, .popover-warning.bottom .arrow:after,
+.popover-warning.bottom .popover-arrow,
+.popover-warning.bottom .popover-arrow:after, .popover-warning.popover-bottom .arrow, .popover-warning.popover-bottom .arrow:after,
+.popover-warning.popover-bottom .popover-arrow,
+.popover-warning.popover-bottom .popover-arrow:after, .popover-warning.bs-tether-element-attached-top .arrow, .popover-warning.bs-tether-element-attached-top .arrow:after,
+.popover-warning.bs-tether-element-attached-top .popover-arrow,
+.popover-warning.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #f0ad4e;
+}
+.popover-warning.left .arrow,
+.popover-warning.left .popover-arrow, .popover-warning.popover-left .arrow,
+.popover-warning.popover-left .popover-arrow, .popover-warning.bs-tether-element-attached-right .arrow,
+.popover-warning.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #c08a3e;
+}
+
+.popover-danger .popover-title,
+.popover-danger .popover-content {
+  border-color: #d9534f;
+}
+.popover-danger .popover-title {
+  color: white;
+  background-color: #d9534f;
+}
+.popover-danger.top .arrow,
+.popover-danger.top .popover-arrow, .popover-danger.popover-top .arrow,
+.popover-danger.popover-top .popover-arrow, .popover-danger.bs-tether-element-attached-bottom .arrow,
+.popover-danger.bs-tether-element-attached-bottom .popover-arrow {
+  border-top-color: #ae423f;
+}
+.popover-danger.right .arrow,
+.popover-danger.right .popover-arrow, .popover-danger.popover-right .arrow,
+.popover-danger.popover-right .popover-arrow, .popover-danger.bs-tether-element-attached-left .arrow,
+.popover-danger.bs-tether-element-attached-left .popover-arrow {
+  border-right-color: #ae423f;
+}
+.popover-danger.bottom .arrow, .popover-danger.bottom .arrow:after,
+.popover-danger.bottom .popover-arrow,
+.popover-danger.bottom .popover-arrow:after, .popover-danger.popover-bottom .arrow, .popover-danger.popover-bottom .arrow:after,
+.popover-danger.popover-bottom .popover-arrow,
+.popover-danger.popover-bottom .popover-arrow:after, .popover-danger.bs-tether-element-attached-top .arrow, .popover-danger.bs-tether-element-attached-top .arrow:after,
+.popover-danger.bs-tether-element-attached-top .popover-arrow,
+.popover-danger.bs-tether-element-attached-top .popover-arrow:after {
+  border-bottom-color: #d9534f;
+}
+.popover-danger.left .arrow,
+.popover-danger.left .popover-arrow, .popover-danger.popover-left .arrow,
+.popover-danger.popover-left .popover-arrow, .popover-danger.bs-tether-element-attached-right .arrow,
+.popover-danger.bs-tether-element-attached-right .popover-arrow {
+  border-left-color: #ae423f;
 }
 
 .progress {
@@ -11739,6 +12135,10 @@ a.thumbnail.active {
 .demo__dropdown {
   position: relative;
   display: block;
+}
+
+.show__popover {
+  margin-bottom: 0.75em;
 }
 
 .show__modal--palette .modal-content {
