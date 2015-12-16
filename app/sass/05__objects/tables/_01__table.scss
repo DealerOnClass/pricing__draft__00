@@ -10,7 +10,7 @@
             > td {
                 padding: $table__padding;
 
-                border-top: $one__pixel solid $table__border;
+                border-top: $one__true__pixel solid;
             }
         }
     }
@@ -18,7 +18,7 @@
     > thead > tr > th {
         vertical-align: bottom;
 
-        border-bottom: $two__pixels solid $table__border;
+        border-bottom: $two__true__pixels solid;
     }
 
     > caption + thead,

@@ -1,27 +1,29 @@
-.breadcrumb {
-    > li {
-        position: relative;
+.breadcrumb > li {
+    position: relative;
 
-        display: inline-block;
+    display: inline-block;
 
-        margin-right: $five__true__pixels * -1;
+    margin-right: $five__true__pixels * -1;
 
-        &:not(:last-child):after {
-            position: absolute;
-            top: $breadcrumb__y;
-            right: 0;
+    &:after {
+        position: absolute;
+        top: $breadcrumb__y;
+        right: 0;
 
-            @if $breadcrumb__separator__use-icon {
-                font-family: $fa-font-name;
+        @if $breadcrumb__separator__use-icon {
+            font-family: $fa-font-name;
 
-                content: '#{$breadcrumb__separator__icon}';
-            } @else {
-                content: '/';
-            }
+            content: '#{$breadcrumb__separator__icon}';
+        } @else {
+            content: '/';
         }
     }
 
-    > .active {
+    &:last-child:after {
+        display: none;
+    }
+
+    &.active {
         font-family: $sans--bold;
 
         display: inline-block;
@@ -29,3 +31,4 @@
         padding: $breadcrumb__padding;
     }
 }
+

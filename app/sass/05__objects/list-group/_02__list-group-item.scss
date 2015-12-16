@@ -6,18 +6,22 @@
     padding: $list-group-item__padding;
 
     border: $one__true__pixel solid;
+
     &.active {
         color: $list-group-item--active__color;
         border-color: $list-group-item--active__border;
         background-color: $list-group-item--active__bg;
     }
+
     & + & {
         border-top: 0 none;
     }
+
     &:first-child {
         border-top-left-radius: $list-group-item__radius;
         border-top-right-radius: $list-group-item__radius;
     }
+
     &:last-child {
         border-bottom-right-radius: $list-group-item__radius;
         border-bottom-left-radius: $list-group-item__radius;
@@ -26,16 +30,14 @@
 
 a.list-group-item,
 button.list-group-item {
+
     &:active {
         box-shadow: $list-group-item--active__shadow;
     }
+
     &[disabled] {
-        cursor: $cursor-disabled;
-
         background-color: transparent!important;
-        box-shadow: none;
-
-        @include opacity(0.65);
+        @include state-disabled;
     }
 }
 

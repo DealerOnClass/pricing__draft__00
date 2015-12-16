@@ -19,21 +19,25 @@
 }
 
 .has-feedback {
+
     .form-control-feedback {
         top: 50%;
         right: $form__x;
 
         margin-top: $base__font-unit / -2;
     }
+
     label ~ .form-control-feedback {
         margin-top: calc( #{$form__y * $base__line-height} + #{$two__true__pixels} );
     }
+
     label.sr-only ~ .form-control-feedback {
         margin-top: calc( #{$form__y} + #{$two__true__pixels} );
     }
 }
 
 .form-horizontal .has-feedback {
+
     .form-control-feedback {
         right: $form__x * 2;    // Multiply by 2 b/c form-horizontal adds padding to form-group
     }
@@ -41,9 +45,11 @@
 }
 
 @if $form-feedback__use-icon {
+
     .has-feedback .form-control-feedback:before {
         display: none;  //  Disable HTML font awesome icons if exist
     }
+
     .has-feedback .form-control-feedback:after {
         font-family: $fa-font-name;
 
@@ -51,12 +57,15 @@
 
         width: 1em;
     }
+
     .has-success .form-control-feedback:after {
         content: '#{$has-success__icon}';
     }
+
     .has-warning .form-control-feedback:after {
         content: '#{$has-warning__icon}';
     }
+
     .has-danger .form-control-feedback:after {
         content: '#{$has-danger__icon}';
     }

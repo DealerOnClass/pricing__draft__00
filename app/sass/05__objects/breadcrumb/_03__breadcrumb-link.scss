@@ -1,13 +1,11 @@
-.breadcrumb {
-    > li > a {
-        display: block;
+.breadcrumb > li > a {
+    display: block;
 
-        padding: $breadcrumb__padding;
+    padding: $breadcrumb__padding;
 
-        color: inherit;
+    color: inherit;
 
-        &:active {
-            box-shadow: $breadcrumb__link--active__shadow;
-        }
+    &:active {
+        box-shadow: $breadcrumb__link--active__shadow;
     }
 }

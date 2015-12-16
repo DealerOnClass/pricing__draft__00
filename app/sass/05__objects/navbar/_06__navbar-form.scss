@@ -11,8 +11,10 @@
     box-shadow: $shadow;
 
     .form-group {
+
         @media (max-width: $grid-float-breakpoint-max) {
             margin-bottom: 5px;
+
             &:last-child {
                 margin-bottom: 0;
             }

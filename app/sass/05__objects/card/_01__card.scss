@@ -8,6 +8,7 @@
 .card-img,
 .card-block,
 .card-footer {
+
     &:only-child {
         border: $one__true__pixel solid;
         border-radius: $card__radius;
@@ -34,10 +35,3 @@
         border-left: $one__true__pixel solid;
     }
 }
-/*
- * - from homepage,
- * - select customer support tab,
- * - select print statements and documents,
- * - select account summary,
- * - upload account summary.
- */

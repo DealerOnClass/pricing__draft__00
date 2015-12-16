@@ -16,7 +16,7 @@
 
     touch-action: manipulation;
 
-    &.bs-tether-enabled,
+    &[data-toggle="popover"].bs-tether-enabled,
     &.active,
     &.open {
         @include state-and-self {
@@ -26,7 +26,7 @@
         }
     }
 
-    &.bs-tether-enabled,
+    &[data-toggle="popover"].bs-tether-enabled,
     &:active,
     &.active,
     &.open {

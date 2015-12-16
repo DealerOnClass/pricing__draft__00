@@ -1,6 +1,6 @@
 .navbar-stacked {
-
     float: left;
+
     .navbar-header,
     .navbar-brand,
     .navbar-nav,
@@ -18,9 +18,11 @@
         border-radius: 0;
 
         width: 100%;
+
         &.collapse {
             height: 0;
         }
+
         &.collapse.in,
         &.collapsing {
             height: auto;
@@ -28,9 +30,11 @@
     }
 
     .dropdown-menu > li {
+
         > a {
             padding: $navbar-stacked__link__padding;
         }
+
         &:last-child > a {
             border-radius: 0;
         }
@@ -38,6 +42,7 @@
 
     .navbar-nav > li.active > a,
     .dropdown-menu > li.active > a {
+
         &:after {
             position: absolute;
             top: 0;

@@ -22,6 +22,7 @@
         transition: transform 0.3 ease-out;
 
     }
+
     &.in .modal-dialog {
         transform: translate(0, 0);
     }
@@ -33,16 +34,19 @@
     border-top-right-radius: $modal__radius;
     border-top-left-radius: $modal__radius;
 }
+
 .modal-header:last-child,
 .modal-body:last-child,
 .modal-footer:last-child {
     border-bottom-right-radius: $modal__radius;
     border-bottom-left-radius: $modal__radius;
 }
+
 .modal-body:first-child,
 .modal-footer:first-child {
     border-bottom: $one__true__pixel solid $modal__border;
 }
+
 .modal-footer:last-child {
     border-top: $one__true__pixel solid $modal__border;
 }

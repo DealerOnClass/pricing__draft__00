@@ -1,6 +1,3 @@
-@if $table__has__hover {
-    .table-hover > tbody > tr:hover {
-        background-color: $table--hover__bg;
-    }
+.table-hover > tbody > tr:hover {
+    background-color: $table--hover__bg;
 }
-

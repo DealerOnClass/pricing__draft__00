@@ -1,6 +1,3 @@
-@if $table__has__striped {
-    .table-striped > tbody > tr:nth-of-type(odd) {
-        background-color: $table--striped__bg;
-    }
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $table--striped__bg;
 }
-

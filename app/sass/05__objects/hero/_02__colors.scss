@@ -13,21 +13,3 @@
 @if $hero__state-palette {
     @include hero-color-variation($state__palette);
 }
-//  .hero-default {
-//      @include hero-variant($hero--default__bg);
-//  }
-//  .hero-primary {
-//      @include hero-variant($hero--primary__bg);
-//  }
-//  .hero-inverse-dark {
-//      @include hero-variant($hero--inverse--dark__bg);
-//  }
-//  .hero-inverse {
-//      @include hero-variant($hero--inverse__bg);
-//  }
-//  .hero-inverse-light {
-//      @include hero-variant($hero--inverse--light__bg);
-//  }
-//  .hero-accent {
-//      @include hero-variant($hero--accent__bg);
-//  }

@@ -1,5 +1,4 @@
 .navbar-nav {
-
     > li > a {
         padding: $navbar__link__padding;
     }
@@ -32,10 +31,10 @@
             float: left;
         }
     }
+
     @media (max-width: $grid-float-breakpoint-max) {
         > li {
             clear: both;
-            //  @include clearfix;
         }
     }
 }

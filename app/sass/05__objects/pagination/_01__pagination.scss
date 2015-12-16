@@ -34,8 +34,6 @@
         @include state-and-self {
             z-index: 20;
 
-            cursor: default;
-
             color: $pagination__link--active__color;
             border-color: $pagination__link--active__border;
             background-color: $pagination__link--active__bg;
@@ -44,10 +42,6 @@
 
     > li > a:active {
         box-shadow: $pagination__link--active__shadow;
-    }
-
-    > li > a[disabled] {
-        cursor: $cursor-disabled;
     }
 }
 

@@ -223,6 +223,10 @@ optgroup {
   font-weight: bold;
 }
 
+[disabled] {
+  cursor: not-allowed;
+}
+
 @font-face {
   font-family: 'AvenirHeavy';
   font-weight: normal;
@@ -3162,7 +3166,7 @@ tbody.collapse.in {
 .list-group-item > .badge {
   float: right;
 }
-.btn .badge, .nav-pills > li > a > .badge {
+.btn .badge, .nav-pills .badge {
   margin-left: 0.75em;
 }
 
@@ -3314,14 +3318,17 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
   display: inline-block;
   margin-right: -5px;
 }
-.breadcrumb > li:not(:last-child):after {
+.breadcrumb > li:after {
   position: absolute;
   top: 0.6em;
   right: 0;
   font-family: "fontawesome-webfont";
   content: "";
 }
-.breadcrumb > .active {
+.breadcrumb > li:last-child:after {
+  display: none;
+}
+.breadcrumb > li.active {
   font-family: "AvenirHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   padding: 0.6em 0.9em;
@@ -3471,16 +3478,15 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
-.btn.bs-tether-enabled, .btn.bs-tether-enabled:hover, .btn.bs-tether-enabled:active, .btn.bs-tether-enabled:focus, .btn.active, .btn.active:hover, .btn.active:active, .btn.active:focus, .btn.open, .btn.open:hover, .btn.open:active, .btn.open:focus {
+.btn[data-toggle="popover"].bs-tether-enabled, .btn[data-toggle="popover"].bs-tether-enabled:hover, .btn[data-toggle="popover"].bs-tether-enabled:active, .btn[data-toggle="popover"].bs-tether-enabled:focus, .btn.active, .btn.active:hover, .btn.active:active, .btn.active:focus, .btn.open, .btn.open:hover, .btn.open:active, .btn.open:focus {
   color: white;
   border-color: #3662ad;
   background-color: #3662ad;
 }
-.btn.bs-tether-enabled, .btn:active, .btn.active, .btn.open {
+.btn[data-toggle="popover"].bs-tether-enabled, .btn:active, .btn.active, .btn.open {
   box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 .btn[disabled] {
-  cursor: not-allowed;
   box-shadow: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
@@ -3922,13 +3928,6 @@ h5 .btn-group {
   border-left: 1px solid;
 }
 
-/*
- * - from homepage,
- * - select customer support tab,
- * - select print statements and documents,
- * - select account summary,
- * - upload account summary.
- */
 .card-block {
   padding: 1.35em 1.35em;
   box-sizing: border-box;
@@ -3978,12 +3977,18 @@ h5 .btn-group {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.card-deck-wrapper {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
 .card-deck {
   display: table;
   width: 100%;
   table-layout: fixed;
   border-spacing: 30px;
 }
+
 .card-deck .card {
   display: table-cell;
   width: 1%;
@@ -4010,11 +4015,6 @@ h5 .btn-group {
   border-bottom: 0 none;
 }
 
-.card-deck-wrapper {
-  margin-right: -30px;
-  margin-left: -30px;
-}
-
 .card-group {
   display: table;
   width: 100%;
@@ -4022,6 +4022,7 @@ h5 .btn-group {
   border-right: 1px solid;
   border-radius: 0.375em;
 }
+
 .card-group .card {
   display: table-cell;
   vertical-align: top;
@@ -4083,15 +4084,13 @@ h5 .btn-group {
 .card .list-group {
   margin-bottom: 0;
 }
+
 .card .list-group-item {
   padding-right: 1.35em;
   padding-left: 1.35em;
 }
 .card .list-group-item:first-child, .card .list-group-item:last-child {
   border-radius: 0;
-}
-.card .list-group-item:first-child {
-  border-top: 0 none;
 }
 .card .list-group-item:last-child {
   border-bottom: 0 none;
@@ -4541,7 +4540,6 @@ h5 .btn-group {
 }
 .dropdown-menu > li > a[disabled] {
   background-color: transparent !important;
-  cursor: not-allowed;
   box-shadow: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
@@ -5251,6 +5249,10 @@ h5 .btn-group {
 .form-control::-webkit-input-placeholder {
   color: #999999;
 }
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  opacity: 1;
+  background-color: #cccccc;
+}
 
 .control-label,
 .form-control-static {
@@ -5359,17 +5361,6 @@ h5 .btn-group {
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 1.35em;
-}
-
-input[type='radio'][disabled], input[type='radio'].disabled, fieldset[disabled] input[type='radio'],
-input[type='checkbox'][disabled],
-input[type='checkbox'].disabled, fieldset[disabled]
-input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline,
-.checkbox-inline.disabled, fieldset[disabled]
-.checkbox-inline, .radio.disabled label, fieldset[disabled] .radio label,
-.checkbox.disabled label, fieldset[disabled]
-.checkbox label {
-  cursor: not-allowed;
 }
 
 .help-block {
@@ -6935,9 +6926,6 @@ input[type='checkbox'], .radio-inline.disabled, fieldset[disabled] .radio-inline
   border: 1px solid;
   border-radius: 0.375em;
 }
-.label:empty {
-  display: none;
-}
 
 a.label:hover, a.label:active, a.label:focus {
   cursor: pointer;
@@ -7114,7 +7102,6 @@ button.list-group-item:active {
 }
 a.list-group-item[disabled],
 button.list-group-item[disabled] {
-  cursor: not-allowed;
   background-color: transparent !important;
   box-shadow: none;
   opacity: 0.65;
@@ -7617,7 +7604,6 @@ button.list-group-item {
   box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 .nav > li > a[disabled] {
-  cursor: not-allowed;
   box-shadow: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
@@ -8211,7 +8197,6 @@ button.list-group-item {
 }
 .navbar-nav > li > a[disabled] {
   background-color: transparent !important;
-  cursor: not-allowed;
   box-shadow: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
@@ -9392,7 +9377,6 @@ button.list-group-item {
   box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
 }
 .pager > li > a[disabled] {
-  cursor: not-allowed;
   box-shadow: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
@@ -9700,16 +9684,12 @@ button.list-group-item {
 .pagination > li > a.active:active,
 .pagination > li > a.active:focus {
   z-index: 20;
-  cursor: default;
   color: white;
   border-color: #3662ad;
   background-color: #3662ad;
 }
 .pagination > li > a:active {
   box-shadow: inset 0 0.17647em 0.29412em rgba(0, 0, 0, 0.125);
-}
-.pagination > li > a[disabled] {
-  cursor: not-allowed;
 }
 
 .pagination-rounded {
@@ -10081,6 +10061,26 @@ button.list-group-item {
   background-color: #e6e6e6;
 }
 
+.panel-wizard .panel-heading.btn {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.panel-wizard .panel-wizard-step {
+  float: left;
+}
+.panel-wizard .panel-wizard-icon {
+  position: relative;
+  top: 0.45em;
+  float: right;
+}
+.panel-wizard .panel-body:first-child {
+  border-bottom: 0 none;
+}
+.panel-wizard .panel-footer {
+  background-color: transparent;
+}
+
 .panel-wizard-container {
   counter-reset: panel-wizard-step;
 }
@@ -10111,31 +10111,12 @@ button.list-group-item {
 .panel-wizard-container .panel-wizard:last-child .panel-heading.current {
   border-radius: 0;
 }
+
 .panel-wizard-container .panel-wizard + .panel-wizard:before {
   content: "";
   display: block;
   width: 100%;
   border-top: 1px solid;
-}
-
-.panel-wizard .panel-heading.btn {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-}
-.panel-wizard .panel-wizard-step {
-  float: left;
-}
-.panel-wizard .panel-wizard-icon {
-  position: relative;
-  top: 0.45em;
-  float: right;
-}
-.panel-wizard .panel-body:first-child {
-  border-bottom: 0 none;
-}
-.panel-wizard .panel-footer {
-  background-color: transparent;
 }
 
 .panel-default .panel-heading {
@@ -10848,10 +10829,19 @@ button.list-group-item {
   width: 0;
   height: 100%;
   transition: width 0.6s ease;
-  text-align: center;
   color: white;
   background-color: #3662ad;
   box-shadow: inset 0 -0.11765em 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.progress-bar > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1em;
+  width: 2em;
+  margin-top: -.75em;
+  margin-left: -1em;
 }
 
 .progress-striped .progress-bar,
@@ -10882,47 +10872,62 @@ button.list-group-item {
   animation: progress-bar-stripes 2s linear infinite;
 }
 
+.progress-rounded {
+  border-radius: 1.5em;
+}
+
 .progress-bar-default {
+  color: inherit;
   background-color: #e6e6e6;
 }
 
 .progress-bar-inverse {
+  color: white;
   background-color: #343c4b;
 }
 
 .progress-bar-cta {
+  color: white;
   background-color: #f17306;
 }
 
 .progress-bar-main {
+  color: white;
   background-color: #3662ad;
 }
 
 .progress-bar-alt1 {
+  color: white;
   background-color: #42587d;
 }
 
 .progress-bar-alt2 {
+  color: white;
   background-color: #5f7394;
 }
 
 .progress-bar-alt3 {
+  color: white;
   background-color: #8193b1;
 }
 
 .progress-bar-success {
+  color: white;
   background-color: #5cb85c;
 }
 
 .progress-bar-info {
+  color: white;
   background-color: #5bc0de;
 }
 
 .progress-bar-warning {
+  color: white;
   background-color: #f0ad4e;
 }
 
 .progress-bar-danger {
+  color: white;
   background-color: #d9534f;
 }
 
@@ -11202,11 +11207,11 @@ h5 [class*='sortable-'] {
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
   padding: 0.6em 0.9em;
-  border-top: 0.05882em solid #cccccc;
+  border-top: 1px solid;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 0.11765em solid #cccccc;
+  border-bottom: 2px solid;
 }
 .table > caption + thead > tr:first-child > th,
 .table > caption + thead > tr:first-child > td,
@@ -11217,12 +11222,37 @@ h5 [class*='sortable-'] {
   border-top: 0;
 }
 
+.table-condensed > thead > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > th,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > th,
+.table-condensed > tfoot > tr > td {
+  padding: 0.3em 0.45em;
+}
+
+.table-bordered {
+  border: 1px solid;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #f3f3f3;
+  background-color: #eeeeee;
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: #e7e7e7;
+  background-color: #eeeeee;
 }
 
 .table-responsive {
@@ -11233,7 +11263,6 @@ h5 [class*='sortable-'] {
   .table-responsive {
     overflow-y: hidden;
     width: 100%;
-    border: 0.05882em solid #cccccc;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
   .table-responsive > .table {
@@ -11274,22 +11303,516 @@ h5 [class*='sortable-'] {
   }
 }
 
-.table > thead > tr > td.active,
-.table > thead > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th,
-.table > tbody > tr > td.active,
-.table > tbody > tr > th.active,
-.table > tbody > tr.active > td,
-.table > tbody > tr.active > th,
-.table > tfoot > tr > td.active,
-.table > tfoot > tr > th.active,
-.table > tfoot > tr.active > td,
-.table > tfoot > tr.active > th {
-  background-color: #c3d0e6;
+.table-default {
+  color: inherit;
+}
+.table-default > thead > tr > td,
+.table-default > thead > tr > th,
+.table-default > tbody > tr > td,
+.table-default > tbody > tr > th,
+.table-default > tfoot > tr > td,
+.table-default > tfoot > tr > th {
+  border-color: #e6e6e6;
+  background-color: #e6e6e6;
+}
+.table-default.table-bordered {
+  border-color: #cfcfcf;
+}
+.table-default.table-bordered > thead > tr > td,
+.table-default.table-bordered > thead > tr > th,
+.table-default.table-bordered > tbody > tr > td,
+.table-default.table-bordered > tbody > tr > th,
+.table-default.table-bordered > tfoot > tr > td,
+.table-default.table-bordered > tfoot > tr > th {
+  border-color: #cfcfcf;
+}
+.table-default.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-default.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #cfcfcf;
+}
+.table-default.table-hover > thead > tr:hover > td,
+.table-default.table-hover > thead > tr:hover > th,
+.table-default.table-hover > tbody > tr:hover > td,
+.table-default.table-hover > tbody > tr:hover > th,
+.table-default.table-hover > tfoot > tr:hover > td,
+.table-default.table-hover > tfoot > tr:hover > th {
+  background-color: #cfcfcf;
 }
 
-.table-hover > tbody > tr > td.active:hover,
-.table-hover > tbody > tr > th.active:hover, .table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr:hover > .active, .table-hover > tbody > tr.active:hover > th {
-  background-color: #b1c2df;
+.table > thead > tr > td.default,
+.table > thead > tr > th.default, .table > thead > tr.default > td, .table > thead > tr.default > th,
+.table > tbody > tr > td.default,
+.table > tbody > tr > th.default,
+.table > tbody > tr.default > td,
+.table > tbody > tr.default > th,
+.table > tfoot > tr > td.default,
+.table > tfoot > tr > th.default,
+.table > tfoot > tr.default > td,
+.table > tfoot > tr.default > th {
+  color: inherit;
+  border-color: #e6e6e6;
+  background-color: #e6e6e6;
+}
+
+.table-hover > thead > tr > td.default:hover,
+.table-hover > thead > tr > th.default:hover, .table-hover > thead > tr.default:hover > td, .table-hover > thead > tr:hover > .default, .table-hover > thead > tr.default:hover > th,
+.table-hover > tbody > tr > td.default:hover,
+.table-hover > tbody > tr > th.default:hover,
+.table-hover > tbody > tr.default:hover > td,
+.table-hover > tbody > tr:hover > .default,
+.table-hover > tbody > tr.default:hover > th,
+.table-hover > tfoot > tr > td.default:hover,
+.table-hover > tfoot > tr > th.default:hover,
+.table-hover > tfoot > tr.default:hover > td,
+.table-hover > tfoot > tr:hover > .default,
+.table-hover > tfoot > tr.default:hover > th {
+  color: inherit;
+  border-color: #cfcfcf;
+  background-color: #cfcfcf;
+}
+
+.table-inverse {
+  color: white;
+}
+.table-inverse > thead > tr > td,
+.table-inverse > thead > tr > th,
+.table-inverse > tbody > tr > td,
+.table-inverse > tbody > tr > th,
+.table-inverse > tfoot > tr > td,
+.table-inverse > tfoot > tr > th {
+  border-color: #343c4b;
+  background-color: #343c4b;
+}
+.table-inverse.table-bordered {
+  border-color: #2f3644;
+}
+.table-inverse.table-bordered > thead > tr > td,
+.table-inverse.table-bordered > thead > tr > th,
+.table-inverse.table-bordered > tbody > tr > td,
+.table-inverse.table-bordered > tbody > tr > th,
+.table-inverse.table-bordered > tfoot > tr > td,
+.table-inverse.table-bordered > tfoot > tr > th {
+  border-color: #2f3644;
+}
+.table-inverse.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-inverse.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #2f3644;
+}
+.table-inverse.table-hover > thead > tr:hover > td,
+.table-inverse.table-hover > thead > tr:hover > th,
+.table-inverse.table-hover > tbody > tr:hover > td,
+.table-inverse.table-hover > tbody > tr:hover > th,
+.table-inverse.table-hover > tfoot > tr:hover > td,
+.table-inverse.table-hover > tfoot > tr:hover > th {
+  background-color: #2f3644;
+}
+
+.table > thead > tr > td.inverse,
+.table > thead > tr > th.inverse, .table > thead > tr.inverse > td, .table > thead > tr.inverse > th,
+.table > tbody > tr > td.inverse,
+.table > tbody > tr > th.inverse,
+.table > tbody > tr.inverse > td,
+.table > tbody > tr.inverse > th,
+.table > tfoot > tr > td.inverse,
+.table > tfoot > tr > th.inverse,
+.table > tfoot > tr.inverse > td,
+.table > tfoot > tr.inverse > th {
+  color: white;
+  border-color: #343c4b;
+  background-color: #343c4b;
+}
+
+.table-hover > thead > tr > td.inverse:hover,
+.table-hover > thead > tr > th.inverse:hover, .table-hover > thead > tr.inverse:hover > td, .table-hover > thead > tr:hover > .inverse, .table-hover > thead > tr.inverse:hover > th,
+.table-hover > tbody > tr > td.inverse:hover,
+.table-hover > tbody > tr > th.inverse:hover,
+.table-hover > tbody > tr.inverse:hover > td,
+.table-hover > tbody > tr:hover > .inverse,
+.table-hover > tbody > tr.inverse:hover > th,
+.table-hover > tfoot > tr > td.inverse:hover,
+.table-hover > tfoot > tr > th.inverse:hover,
+.table-hover > tfoot > tr.inverse:hover > td,
+.table-hover > tfoot > tr:hover > .inverse,
+.table-hover > tfoot > tr.inverse:hover > th {
+  color: white;
+  border-color: #2f3644;
+  background-color: #2f3644;
+}
+
+.table-cta {
+  color: white;
+}
+.table-cta > thead > tr > td,
+.table-cta > thead > tr > th,
+.table-cta > tbody > tr > td,
+.table-cta > tbody > tr > th,
+.table-cta > tfoot > tr > td,
+.table-cta > tfoot > tr > th {
+  border-color: #f17306;
+  background-color: #f17306;
+}
+.table-cta.table-bordered {
+  border-color: #d96805;
+}
+.table-cta.table-bordered > thead > tr > td,
+.table-cta.table-bordered > thead > tr > th,
+.table-cta.table-bordered > tbody > tr > td,
+.table-cta.table-bordered > tbody > tr > th,
+.table-cta.table-bordered > tfoot > tr > td,
+.table-cta.table-bordered > tfoot > tr > th {
+  border-color: #d96805;
+}
+.table-cta.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-cta.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #d96805;
+}
+.table-cta.table-hover > thead > tr:hover > td,
+.table-cta.table-hover > thead > tr:hover > th,
+.table-cta.table-hover > tbody > tr:hover > td,
+.table-cta.table-hover > tbody > tr:hover > th,
+.table-cta.table-hover > tfoot > tr:hover > td,
+.table-cta.table-hover > tfoot > tr:hover > th {
+  background-color: #d96805;
+}
+
+.table > thead > tr > td.cta,
+.table > thead > tr > th.cta, .table > thead > tr.cta > td, .table > thead > tr.cta > th,
+.table > tbody > tr > td.cta,
+.table > tbody > tr > th.cta,
+.table > tbody > tr.cta > td,
+.table > tbody > tr.cta > th,
+.table > tfoot > tr > td.cta,
+.table > tfoot > tr > th.cta,
+.table > tfoot > tr.cta > td,
+.table > tfoot > tr.cta > th {
+  color: white;
+  border-color: #f17306;
+  background-color: #f17306;
+}
+
+.table-hover > thead > tr > td.cta:hover,
+.table-hover > thead > tr > th.cta:hover, .table-hover > thead > tr.cta:hover > td, .table-hover > thead > tr:hover > .cta, .table-hover > thead > tr.cta:hover > th,
+.table-hover > tbody > tr > td.cta:hover,
+.table-hover > tbody > tr > th.cta:hover,
+.table-hover > tbody > tr.cta:hover > td,
+.table-hover > tbody > tr:hover > .cta,
+.table-hover > tbody > tr.cta:hover > th,
+.table-hover > tfoot > tr > td.cta:hover,
+.table-hover > tfoot > tr > th.cta:hover,
+.table-hover > tfoot > tr.cta:hover > td,
+.table-hover > tfoot > tr:hover > .cta,
+.table-hover > tfoot > tr.cta:hover > th {
+  color: white;
+  border-color: #d96805;
+  background-color: #d96805;
+}
+
+.table-main {
+  color: white;
+}
+.table-main > thead > tr > td,
+.table-main > thead > tr > th,
+.table-main > tbody > tr > td,
+.table-main > tbody > tr > th,
+.table-main > tfoot > tr > td,
+.table-main > tfoot > tr > th {
+  border-color: #3662ad;
+  background-color: #3662ad;
+}
+.table-main.table-bordered {
+  border-color: #31589c;
+}
+.table-main.table-bordered > thead > tr > td,
+.table-main.table-bordered > thead > tr > th,
+.table-main.table-bordered > tbody > tr > td,
+.table-main.table-bordered > tbody > tr > th,
+.table-main.table-bordered > tfoot > tr > td,
+.table-main.table-bordered > tfoot > tr > th {
+  border-color: #31589c;
+}
+.table-main.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-main.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #31589c;
+}
+.table-main.table-hover > thead > tr:hover > td,
+.table-main.table-hover > thead > tr:hover > th,
+.table-main.table-hover > tbody > tr:hover > td,
+.table-main.table-hover > tbody > tr:hover > th,
+.table-main.table-hover > tfoot > tr:hover > td,
+.table-main.table-hover > tfoot > tr:hover > th {
+  background-color: #31589c;
+}
+
+.table > thead > tr > td.main,
+.table > thead > tr > th.main, .table > thead > tr.main > td, .table > thead > tr.main > th,
+.table > tbody > tr > td.main,
+.table > tbody > tr > th.main,
+.table > tbody > tr.main > td,
+.table > tbody > tr.main > th,
+.table > tfoot > tr > td.main,
+.table > tfoot > tr > th.main,
+.table > tfoot > tr.main > td,
+.table > tfoot > tr.main > th {
+  color: white;
+  border-color: #3662ad;
+  background-color: #3662ad;
+}
+
+.table-hover > thead > tr > td.main:hover,
+.table-hover > thead > tr > th.main:hover, .table-hover > thead > tr.main:hover > td, .table-hover > thead > tr:hover > .main, .table-hover > thead > tr.main:hover > th,
+.table-hover > tbody > tr > td.main:hover,
+.table-hover > tbody > tr > th.main:hover,
+.table-hover > tbody > tr.main:hover > td,
+.table-hover > tbody > tr:hover > .main,
+.table-hover > tbody > tr.main:hover > th,
+.table-hover > tfoot > tr > td.main:hover,
+.table-hover > tfoot > tr > th.main:hover,
+.table-hover > tfoot > tr.main:hover > td,
+.table-hover > tfoot > tr:hover > .main,
+.table-hover > tfoot > tr.main:hover > th {
+  color: white;
+  border-color: #31589c;
+  background-color: #31589c;
+}
+
+.table-alt1 {
+  color: white;
+}
+.table-alt1 > thead > tr > td,
+.table-alt1 > thead > tr > th,
+.table-alt1 > tbody > tr > td,
+.table-alt1 > tbody > tr > th,
+.table-alt1 > tfoot > tr > td,
+.table-alt1 > tfoot > tr > th {
+  border-color: #42587d;
+  background-color: #42587d;
+}
+.table-alt1.table-bordered {
+  border-color: #3b4f71;
+}
+.table-alt1.table-bordered > thead > tr > td,
+.table-alt1.table-bordered > thead > tr > th,
+.table-alt1.table-bordered > tbody > tr > td,
+.table-alt1.table-bordered > tbody > tr > th,
+.table-alt1.table-bordered > tfoot > tr > td,
+.table-alt1.table-bordered > tfoot > tr > th {
+  border-color: #3b4f71;
+}
+.table-alt1.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-alt1.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #3b4f71;
+}
+.table-alt1.table-hover > thead > tr:hover > td,
+.table-alt1.table-hover > thead > tr:hover > th,
+.table-alt1.table-hover > tbody > tr:hover > td,
+.table-alt1.table-hover > tbody > tr:hover > th,
+.table-alt1.table-hover > tfoot > tr:hover > td,
+.table-alt1.table-hover > tfoot > tr:hover > th {
+  background-color: #3b4f71;
+}
+
+.table > thead > tr > td.alt1,
+.table > thead > tr > th.alt1, .table > thead > tr.alt1 > td, .table > thead > tr.alt1 > th,
+.table > tbody > tr > td.alt1,
+.table > tbody > tr > th.alt1,
+.table > tbody > tr.alt1 > td,
+.table > tbody > tr.alt1 > th,
+.table > tfoot > tr > td.alt1,
+.table > tfoot > tr > th.alt1,
+.table > tfoot > tr.alt1 > td,
+.table > tfoot > tr.alt1 > th {
+  color: white;
+  border-color: #42587d;
+  background-color: #42587d;
+}
+
+.table-hover > thead > tr > td.alt1:hover,
+.table-hover > thead > tr > th.alt1:hover, .table-hover > thead > tr.alt1:hover > td, .table-hover > thead > tr:hover > .alt1, .table-hover > thead > tr.alt1:hover > th,
+.table-hover > tbody > tr > td.alt1:hover,
+.table-hover > tbody > tr > th.alt1:hover,
+.table-hover > tbody > tr.alt1:hover > td,
+.table-hover > tbody > tr:hover > .alt1,
+.table-hover > tbody > tr.alt1:hover > th,
+.table-hover > tfoot > tr > td.alt1:hover,
+.table-hover > tfoot > tr > th.alt1:hover,
+.table-hover > tfoot > tr.alt1:hover > td,
+.table-hover > tfoot > tr:hover > .alt1,
+.table-hover > tfoot > tr.alt1:hover > th {
+  color: white;
+  border-color: #3b4f71;
+  background-color: #3b4f71;
+}
+
+.table-alt2 {
+  color: white;
+}
+.table-alt2 > thead > tr > td,
+.table-alt2 > thead > tr > th,
+.table-alt2 > tbody > tr > td,
+.table-alt2 > tbody > tr > th,
+.table-alt2 > tfoot > tr > td,
+.table-alt2 > tfoot > tr > th {
+  border-color: #5f7394;
+  background-color: #5f7394;
+}
+.table-alt2.table-bordered {
+  border-color: #566885;
+}
+.table-alt2.table-bordered > thead > tr > td,
+.table-alt2.table-bordered > thead > tr > th,
+.table-alt2.table-bordered > tbody > tr > td,
+.table-alt2.table-bordered > tbody > tr > th,
+.table-alt2.table-bordered > tfoot > tr > td,
+.table-alt2.table-bordered > tfoot > tr > th {
+  border-color: #566885;
+}
+.table-alt2.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-alt2.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #566885;
+}
+.table-alt2.table-hover > thead > tr:hover > td,
+.table-alt2.table-hover > thead > tr:hover > th,
+.table-alt2.table-hover > tbody > tr:hover > td,
+.table-alt2.table-hover > tbody > tr:hover > th,
+.table-alt2.table-hover > tfoot > tr:hover > td,
+.table-alt2.table-hover > tfoot > tr:hover > th {
+  background-color: #566885;
+}
+
+.table > thead > tr > td.alt2,
+.table > thead > tr > th.alt2, .table > thead > tr.alt2 > td, .table > thead > tr.alt2 > th,
+.table > tbody > tr > td.alt2,
+.table > tbody > tr > th.alt2,
+.table > tbody > tr.alt2 > td,
+.table > tbody > tr.alt2 > th,
+.table > tfoot > tr > td.alt2,
+.table > tfoot > tr > th.alt2,
+.table > tfoot > tr.alt2 > td,
+.table > tfoot > tr.alt2 > th {
+  color: white;
+  border-color: #5f7394;
+  background-color: #5f7394;
+}
+
+.table-hover > thead > tr > td.alt2:hover,
+.table-hover > thead > tr > th.alt2:hover, .table-hover > thead > tr.alt2:hover > td, .table-hover > thead > tr:hover > .alt2, .table-hover > thead > tr.alt2:hover > th,
+.table-hover > tbody > tr > td.alt2:hover,
+.table-hover > tbody > tr > th.alt2:hover,
+.table-hover > tbody > tr.alt2:hover > td,
+.table-hover > tbody > tr:hover > .alt2,
+.table-hover > tbody > tr.alt2:hover > th,
+.table-hover > tfoot > tr > td.alt2:hover,
+.table-hover > tfoot > tr > th.alt2:hover,
+.table-hover > tfoot > tr.alt2:hover > td,
+.table-hover > tfoot > tr:hover > .alt2,
+.table-hover > tfoot > tr.alt2:hover > th {
+  color: white;
+  border-color: #566885;
+  background-color: #566885;
+}
+
+.table-alt3 {
+  color: white;
+}
+.table-alt3 > thead > tr > td,
+.table-alt3 > thead > tr > th,
+.table-alt3 > tbody > tr > td,
+.table-alt3 > tbody > tr > th,
+.table-alt3 > tfoot > tr > td,
+.table-alt3 > tfoot > tr > th {
+  border-color: #8193b1;
+  background-color: #8193b1;
+}
+.table-alt3.table-bordered {
+  border-color: #74849f;
+}
+.table-alt3.table-bordered > thead > tr > td,
+.table-alt3.table-bordered > thead > tr > th,
+.table-alt3.table-bordered > tbody > tr > td,
+.table-alt3.table-bordered > tbody > tr > th,
+.table-alt3.table-bordered > tfoot > tr > td,
+.table-alt3.table-bordered > tfoot > tr > th {
+  border-color: #74849f;
+}
+.table-alt3.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-alt3.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #74849f;
+}
+.table-alt3.table-hover > thead > tr:hover > td,
+.table-alt3.table-hover > thead > tr:hover > th,
+.table-alt3.table-hover > tbody > tr:hover > td,
+.table-alt3.table-hover > tbody > tr:hover > th,
+.table-alt3.table-hover > tfoot > tr:hover > td,
+.table-alt3.table-hover > tfoot > tr:hover > th {
+  background-color: #74849f;
+}
+
+.table > thead > tr > td.alt3,
+.table > thead > tr > th.alt3, .table > thead > tr.alt3 > td, .table > thead > tr.alt3 > th,
+.table > tbody > tr > td.alt3,
+.table > tbody > tr > th.alt3,
+.table > tbody > tr.alt3 > td,
+.table > tbody > tr.alt3 > th,
+.table > tfoot > tr > td.alt3,
+.table > tfoot > tr > th.alt3,
+.table > tfoot > tr.alt3 > td,
+.table > tfoot > tr.alt3 > th {
+  color: white;
+  border-color: #8193b1;
+  background-color: #8193b1;
+}
+
+.table-hover > thead > tr > td.alt3:hover,
+.table-hover > thead > tr > th.alt3:hover, .table-hover > thead > tr.alt3:hover > td, .table-hover > thead > tr:hover > .alt3, .table-hover > thead > tr.alt3:hover > th,
+.table-hover > tbody > tr > td.alt3:hover,
+.table-hover > tbody > tr > th.alt3:hover,
+.table-hover > tbody > tr.alt3:hover > td,
+.table-hover > tbody > tr:hover > .alt3,
+.table-hover > tbody > tr.alt3:hover > th,
+.table-hover > tfoot > tr > td.alt3:hover,
+.table-hover > tfoot > tr > th.alt3:hover,
+.table-hover > tfoot > tr.alt3:hover > td,
+.table-hover > tfoot > tr:hover > .alt3,
+.table-hover > tfoot > tr.alt3:hover > th {
+  color: white;
+  border-color: #74849f;
+  background-color: #74849f;
+}
+
+.table-success {
+  color: white;
+}
+.table-success > thead > tr > td,
+.table-success > thead > tr > th,
+.table-success > tbody > tr > td,
+.table-success > tbody > tr > th,
+.table-success > tfoot > tr > td,
+.table-success > tfoot > tr > th {
+  border-color: #5cb85c;
+  background-color: #5cb85c;
+}
+.table-success.table-bordered {
+  border-color: #53a653;
+}
+.table-success.table-bordered > thead > tr > td,
+.table-success.table-bordered > thead > tr > th,
+.table-success.table-bordered > tbody > tr > td,
+.table-success.table-bordered > tbody > tr > th,
+.table-success.table-bordered > tfoot > tr > td,
+.table-success.table-bordered > tfoot > tr > th {
+  border-color: #53a653;
+}
+.table-success.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-success.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #53a653;
+}
+.table-success.table-hover > thead > tr:hover > td,
+.table-success.table-hover > thead > tr:hover > th,
+.table-success.table-hover > tbody > tr:hover > td,
+.table-success.table-hover > tbody > tr:hover > th,
+.table-success.table-hover > tfoot > tr:hover > td,
+.table-success.table-hover > tfoot > tr:hover > th {
+  background-color: #53a653;
 }
 
 .table > thead > tr > td.success,
@@ -11302,12 +11825,62 @@ h5 [class*='sortable-'] {
 .table > tfoot > tr > th.success,
 .table > tfoot > tr.success > td,
 .table > tfoot > tr.success > th {
-  background-color: #ceeace;
+  color: white;
+  border-color: #5cb85c;
+  background-color: #5cb85c;
 }
 
+.table-hover > thead > tr > td.success:hover,
+.table-hover > thead > tr > th.success:hover, .table-hover > thead > tr.success:hover > td, .table-hover > thead > tr:hover > .success, .table-hover > thead > tr.success:hover > th,
 .table-hover > tbody > tr > td.success:hover,
-.table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr.success:hover > th {
-  background-color: #bce2bc;
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td,
+.table-hover > tbody > tr:hover > .success,
+.table-hover > tbody > tr.success:hover > th,
+.table-hover > tfoot > tr > td.success:hover,
+.table-hover > tfoot > tr > th.success:hover,
+.table-hover > tfoot > tr.success:hover > td,
+.table-hover > tfoot > tr:hover > .success,
+.table-hover > tfoot > tr.success:hover > th {
+  color: white;
+  border-color: #53a653;
+  background-color: #53a653;
+}
+
+.table-info {
+  color: white;
+}
+.table-info > thead > tr > td,
+.table-info > thead > tr > th,
+.table-info > tbody > tr > td,
+.table-info > tbody > tr > th,
+.table-info > tfoot > tr > td,
+.table-info > tfoot > tr > th {
+  border-color: #5bc0de;
+  background-color: #5bc0de;
+}
+.table-info.table-bordered {
+  border-color: #52adc8;
+}
+.table-info.table-bordered > thead > tr > td,
+.table-info.table-bordered > thead > tr > th,
+.table-info.table-bordered > tbody > tr > td,
+.table-info.table-bordered > tbody > tr > th,
+.table-info.table-bordered > tfoot > tr > td,
+.table-info.table-bordered > tfoot > tr > th {
+  border-color: #52adc8;
+}
+.table-info.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-info.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #52adc8;
+}
+.table-info.table-hover > thead > tr:hover > td,
+.table-info.table-hover > thead > tr:hover > th,
+.table-info.table-hover > tbody > tr:hover > td,
+.table-info.table-hover > tbody > tr:hover > th,
+.table-info.table-hover > tfoot > tr:hover > td,
+.table-info.table-hover > tfoot > tr:hover > th {
+  background-color: #52adc8;
 }
 
 .table > thead > tr > td.info,
@@ -11320,12 +11893,62 @@ h5 [class*='sortable-'] {
 .table > tfoot > tr > th.info,
 .table > tfoot > tr.info > td,
 .table > tfoot > tr.info > th {
-  background-color: #ceecf5;
+  color: white;
+  border-color: #5bc0de;
+  background-color: #5bc0de;
 }
 
+.table-hover > thead > tr > td.info:hover,
+.table-hover > thead > tr > th.info:hover, .table-hover > thead > tr.info:hover > td, .table-hover > thead > tr:hover > .info, .table-hover > thead > tr.info:hover > th,
 .table-hover > tbody > tr > td.info:hover,
-.table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr.info:hover > th {
-  background-color: #b9e4f1;
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr:hover > .info,
+.table-hover > tbody > tr.info:hover > th,
+.table-hover > tfoot > tr > td.info:hover,
+.table-hover > tfoot > tr > th.info:hover,
+.table-hover > tfoot > tr.info:hover > td,
+.table-hover > tfoot > tr:hover > .info,
+.table-hover > tfoot > tr.info:hover > th {
+  color: white;
+  border-color: #52adc8;
+  background-color: #52adc8;
+}
+
+.table-warning {
+  color: white;
+}
+.table-warning > thead > tr > td,
+.table-warning > thead > tr > th,
+.table-warning > tbody > tr > td,
+.table-warning > tbody > tr > th,
+.table-warning > tfoot > tr > td,
+.table-warning > tfoot > tr > th {
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+}
+.table-warning.table-bordered {
+  border-color: #d89c46;
+}
+.table-warning.table-bordered > thead > tr > td,
+.table-warning.table-bordered > thead > tr > th,
+.table-warning.table-bordered > tbody > tr > td,
+.table-warning.table-bordered > tbody > tr > th,
+.table-warning.table-bordered > tfoot > tr > td,
+.table-warning.table-bordered > tfoot > tr > th {
+  border-color: #d89c46;
+}
+.table-warning.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-warning.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #d89c46;
+}
+.table-warning.table-hover > thead > tr:hover > td,
+.table-warning.table-hover > thead > tr:hover > th,
+.table-warning.table-hover > tbody > tr:hover > td,
+.table-warning.table-hover > tbody > tr:hover > th,
+.table-warning.table-hover > tfoot > tr:hover > td,
+.table-warning.table-hover > tfoot > tr:hover > th {
+  background-color: #d89c46;
 }
 
 .table > thead > tr > td.warning,
@@ -11338,12 +11961,62 @@ h5 [class*='sortable-'] {
 .table > tfoot > tr > th.warning,
 .table > tfoot > tr.warning > td,
 .table > tfoot > tr.warning > th {
-  background-color: #fbe6ca;
+  color: white;
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
 }
 
+.table-hover > thead > tr > td.warning:hover,
+.table-hover > thead > tr > th.warning:hover, .table-hover > thead > tr.warning:hover > td, .table-hover > thead > tr:hover > .warning, .table-hover > thead > tr.warning:hover > th,
 .table-hover > tbody > tr > td.warning:hover,
-.table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr.warning:hover > th {
-  background-color: #f9dbb2;
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr:hover > .warning,
+.table-hover > tbody > tr.warning:hover > th,
+.table-hover > tfoot > tr > td.warning:hover,
+.table-hover > tfoot > tr > th.warning:hover,
+.table-hover > tfoot > tr.warning:hover > td,
+.table-hover > tfoot > tr:hover > .warning,
+.table-hover > tfoot > tr.warning:hover > th {
+  color: white;
+  border-color: #d89c46;
+  background-color: #d89c46;
+}
+
+.table-danger {
+  color: white;
+}
+.table-danger > thead > tr > td,
+.table-danger > thead > tr > th,
+.table-danger > tbody > tr > td,
+.table-danger > tbody > tr > th,
+.table-danger > tfoot > tr > td,
+.table-danger > tfoot > tr > th {
+  border-color: #d9534f;
+  background-color: #d9534f;
+}
+.table-danger.table-bordered {
+  border-color: #c34b47;
+}
+.table-danger.table-bordered > thead > tr > td,
+.table-danger.table-bordered > thead > tr > th,
+.table-danger.table-bordered > tbody > tr > td,
+.table-danger.table-bordered > tbody > tr > th,
+.table-danger.table-bordered > tfoot > tr > td,
+.table-danger.table-bordered > tfoot > tr > th {
+  border-color: #c34b47;
+}
+.table-danger.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-danger.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: #c34b47;
+}
+.table-danger.table-hover > thead > tr:hover > td,
+.table-danger.table-hover > thead > tr:hover > th,
+.table-danger.table-hover > tbody > tr:hover > td,
+.table-danger.table-hover > tbody > tr:hover > th,
+.table-danger.table-hover > tfoot > tr:hover > td,
+.table-danger.table-hover > tfoot > tr:hover > th {
+  background-color: #c34b47;
 }
 
 .table > thead > tr > td.danger,
@@ -11356,12 +12029,26 @@ h5 [class*='sortable-'] {
 .table > tfoot > tr > th.danger,
 .table > tfoot > tr.danger > td,
 .table > tfoot > tr.danger > th {
-  background-color: #f4cbca;
+  color: white;
+  border-color: #d9534f;
+  background-color: #d9534f;
 }
 
+.table-hover > thead > tr > td.danger:hover,
+.table-hover > thead > tr > th.danger:hover, .table-hover > thead > tr.danger:hover > td, .table-hover > thead > tr:hover > .danger, .table-hover > thead > tr.danger:hover > th,
 .table-hover > tbody > tr > td.danger:hover,
-.table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr.danger:hover > th {
-  background-color: #f0b6b5;
+.table-hover > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td,
+.table-hover > tbody > tr:hover > .danger,
+.table-hover > tbody > tr.danger:hover > th,
+.table-hover > tfoot > tr > td.danger:hover,
+.table-hover > tfoot > tr > th.danger:hover,
+.table-hover > tfoot > tr.danger:hover > td,
+.table-hover > tfoot > tr:hover > .danger,
+.table-hover > tfoot > tr.danger:hover > th {
+  color: white;
+  border-color: #c34b47;
+  background-color: #c34b47;
 }
 
 .tab-content {

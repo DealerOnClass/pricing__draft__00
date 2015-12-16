@@ -415,3 +415,8 @@ optgroup {
 //  th {
 //    padding: 0;
 //  }
+//
+
+[disabled] {
+    cursor: $cursor-disabled;
+}

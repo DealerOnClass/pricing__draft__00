@@ -1,33 +1,93 @@
-@mixin table-row-variant($state, $background) {
+@mixin table-color-variation($input__palette) {
+    @each $class__name, $color in $input__palette {
 
-    @if $table--contextual--desaturated == yes {
-        $background:    tint($background, 70%);
-    }
-    @if $table--contextual--desaturated != yes {
-        $backgound:     $background;
-    }
+        .table-#{$class__name} {
+            color: check-color($color, 80, inherit, $white);
 
-    .table > thead > tr,
-    .table > tbody > tr,
-    .table > tfoot > tr {
-        > td.#{$state},
-        > th.#{$state},
-        &.#{$state} > td,
-        &.#{$state} > th {
-            @if $table--contextual--desaturated != yes {
-                color:             white;
+            > thead > tr,
+            > tbody > tr,
+            > tfoot > tr {
+
+                > td,
+                > th {
+                    border-color: $color;
+                    background-color: $color;
+                }
             }
-            background-color:  $background;
-        }
-    }
 
-    .table-hover > tbody > tr {
-        > td.#{$state}:hover,
-        > th.#{$state}:hover,
-        &.#{$state}:hover > td,
-        &:hover > .#{$state},
-        &.#{$state}:hover > th {
-            background-color: darken($background, 5%);
+            &.table-bordered {
+                border-color: shade($color, $table__contrast);
+
+                > thead > tr,
+                > tbody > tr,
+                > tfoot > tr {
+
+                    > td,
+                    > th {
+                        border-color: shade($color, $table__contrast);
+                    }
+                }
+            }
+
+            &.table-striped {
+
+                > tbody > tr:nth-of-type(odd) {
+
+                    > td,
+                    > th, {
+                        background-color: shade($color, $table__contrast);
+                    }
+                }
+            }
+
+            &.table-hover {
+
+                > thead > tr:hover,
+                > tbody > tr:hover,
+                > tfoot > tr:hover {
+
+                    > td,
+                    > th {
+                        background-color: shade($color, $table__contrast);
+                    }
+                }
+            }
+        }
+
+
+        .table {
+
+            > thead > tr,
+            > tbody > tr,
+            > tfoot > tr {
+
+                > td.#{$class__name},
+                > th.#{$class__name},
+                &.#{$class__name} > td,
+                &.#{$class__name} > th {
+                    color: check-color($color, 80, inherit, $white);
+                    border-color: $color;
+                    background-color: $color;
+                }
+            }
+        }
+
+        .table-hover {
+
+            > thead > tr,
+            > tbody > tr,
+            > tfoot > tr {
+
+                > td.#{$class__name}:hover,
+                > th.#{$class__name}:hover,
+                &.#{$class__name}:hover > td,
+                &:hover > .#{$class__name},
+                &.#{$class__name}:hover > th {
+                    color: check-color($color, 80, inherit, $white);
+                    border-color: shade($color, $table__contrast);
+                    background-color: shade($color, $table__contrast);
+                }
+            }
         }
     }
 }

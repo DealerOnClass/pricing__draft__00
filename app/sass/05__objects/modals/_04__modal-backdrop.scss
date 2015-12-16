@@ -7,10 +7,14 @@
     left: 0;
 
     background-color: $modal-backdrop__bg;
+
     &.fade {
+
         @include opacity(0);
     }
+
     &.in {
+
         @include opacity($modal-backdrop__opacity);
     }
 }

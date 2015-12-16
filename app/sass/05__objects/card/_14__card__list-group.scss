@@ -1,19 +1,17 @@
-.card {
-    .list-group {
-        margin-bottom: 0;
+.card .list-group {
+    margin-bottom: 0;
+}
+
+.card .list-group-item {
+    padding-right: $card__x;
+    padding-left: $card__x;
+
+    &:first-child,
+    &:last-child {
+        border-radius: 0;
     }
-    .list-group-item {
-        padding-right: $card__x;
-        padding-left: $card__x;
-        &:first-child,
-        &:last-child {
-            border-radius: 0;
-        }
-        &:first-child {
-            border-top: 0 none;
-        }
-        &:last-child {
-            border-bottom: 0 none;
-        }
+
+    &:last-child {
+        border-bottom: 0 none;
     }
 }

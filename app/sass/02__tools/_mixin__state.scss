@@ -20,19 +20,20 @@
         }
     }
 }
+
 @mixin state-and-active {
     &:hover, &:active, &:focus, &.active {
         @content;
     }
 }
+
 @mixin state-and-self {
     &, &:hover, &:active, &:focus {
         @content;
     }
 }
-@mixin state-disabled {
-    cursor: $cursor-disabled;
 
+@mixin state-disabled {
     box-shadow: none;
 
     @include opacity(0.65);

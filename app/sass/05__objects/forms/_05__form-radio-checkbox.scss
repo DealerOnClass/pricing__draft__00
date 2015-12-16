@@ -42,39 +42,9 @@
     cursor: pointer;
     vertical-align: middle;
 }
+
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
     margin-top: 0;
     margin-left: $form__x * 1.5;
-}
-
-%state--disabled {
-    cursor: $cursor-disabled;
-}
-
-input[type='radio'],
-input[type='checkbox'] {
-    &[disabled],
-    &.disabled,
-    fieldset[disabled] & {
-        @extend %state--disabled;
-    }
-}
-
-.radio-inline,
-.checkbox-inline {
-    &.disabled,
-    fieldset[disabled] & {
-        @extend %state--disabled;
-    }
-}
-
-.radio,
-.checkbox {
-    &.disabled,
-    fieldset[disabled] & {
-        label {
-            @extend %state--disabled;
-        }
-    }
 }

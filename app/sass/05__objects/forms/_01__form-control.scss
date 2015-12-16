@@ -16,15 +16,10 @@
     @include form-control-focus;
     @include placeholder;
 
-    //  &[disabled],
-    //  &[readonly],
-    //  fieldset[disabled] & {
-    //      opacity: 1;
-    //      background-color: $input__bg--disabled;
-    //  }
-
-    //  &[disabled],
-    //  fieldset[disabled] & {
-    //      cursor: $cursor-disabled;
-    //  }
+    &[disabled],
+    &[readonly],
+    fieldset[disabled] & {
+        opacity: 1;
+        background-color: $input__bg--disabled;
+    }
 }
