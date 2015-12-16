@@ -3232,7 +3232,10 @@ var Tooltip = (function ($) {
       value: function setContent() {
         var tip = this.getTipElement();
         var title = this.getTitle();
+        var style = this.getStyle();    //  Added by Dr.Scss    **
         var method = this.config.html ? 'innerHTML' : 'innerText';
+
+        $(tip).addClass("tooltip-" + style);         //  Added by Dr.Scss    **
 
         $(tip).find(Selector.TOOLTIP_INNER)[0][method] = title;
 
@@ -3250,6 +3253,17 @@ var Tooltip = (function ($) {
         }
 
         return title;
+      }
+    }, {
+      key: 'getStyle',  //  Added by Dr.Scss    **
+      value: function getStyle() {
+        var style = this.element.getAttribute('data-style');
+
+        if (!style) {
+          style = typeof this.config.style === 'function' ? this.config.style.call(this.element) : this.config.style;
+        }
+
+        return style;
       }
     }, {
       key: 'cleanupTether',
@@ -3595,8 +3609,11 @@ var Popover = (function ($) {
       value: function setContent() {
         var tip = this.getTipElement();
         var title = this.getTitle();
+        var style = this.getStyle();    //  Added by Dr.Scss    **
         var content = this._getContent();
         var titleElement = $(tip).find(Selector.TITLE)[0];
+
+        $(tip).addClass("popover-" + style);         //  Added by Dr.Scss    **
 
         if (titleElement) {
           titleElement[this.config.html ? 'innerHTML' : 'innerText'] = title;

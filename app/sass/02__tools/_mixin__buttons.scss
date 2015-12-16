@@ -11,6 +11,7 @@
                 background-color: shade($color, $btn__contrast);
             }
 
+            &.bs-tether-enabled,
             &.active {
                 border-color: check-color($color, 80, shade($color, $btn__contrast * 1.5), $color);
                 background-color: $color;

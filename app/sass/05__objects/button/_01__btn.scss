@@ -16,6 +16,7 @@
 
     touch-action: manipulation;
 
+    &.bs-tether-enabled,
     &.active,
     &.open {
         @include state-and-self {
@@ -25,6 +26,7 @@
         }
     }
 
+    &.bs-tether-enabled,
     &:active,
     &.active,
     &.open {

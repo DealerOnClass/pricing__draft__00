@@ -13,6 +13,8 @@
     border-radius: $popover__radius;
     background-color: $popover__bg;
     background-clip: padding-box;
+    //@include reset-text;
+
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 
     &.top {
@@ -43,7 +45,6 @@
     padding: $popover-content__padding;
 }
 
-.popover-arrow,
 .popover > .arrow {
     &,
     &:after {
@@ -59,14 +60,14 @@
     }
 }
 
-.popover-arrow,
 .popover > .arrow {
     border-width: $popover__arrow__width;
-    &:after {
-        content: '';
+}
 
-        border-width: $popover__arrow__width;
-    }
+.popover > .arrow:after {
+    content: '';
+
+    border-width: $popover__arrow__width;
 }
 
 .popover {

@@ -4,146 +4,117 @@
     top: 0;
     left: 0;
 
-    display: none;
+    display: block;
 
     max-width: $popover__max-width;
-    padding: $popover__padding;
 
-    border: $one__pixel solid $popover__border;
     border-radius: $popover__radius;
-    background-color: $popover__bg;
-    background-clip: padding-box;
-    //@include reset-text;
-
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 
-    &.top {
-        margin-top: $popover__arrow__width * -1;
-    }
-    &.right {
-        margin-left: $popover__arrow__width;
-    }
-    &.bottom {
-        margin-top: $popover__arrow__width;
-    }
-    &.left {
-        margin-left: $popover__arrow__width * -1;
-    }
-}
+    // Popover directions
+    &.top,
+    &.popover-top,
+    &.bs-tether-element-attached-bottom {
+        margin-top: -$popover-arrow--inner__width;
 
-.popover-title {
-    border-bottom: $one__pixel solid $popover-title__border;
-    border-top-left-radius: $popover__radius;
-    border-top-right-radius: $popover__radius;
-    background-color: $popover-title__bg;
+        .arrow,
+        .popover-arrow {
+            bottom: -$popover-arrow--outer__width + $popover-arrow__offset;
+            left: 50%;
 
-    @include rhythm-rem(margin, 0 -0.5);
-    @include rhythm-rem(padding, 0.5);
-}
+            margin-left: -$popover-arrow--outer__width;
 
-.popover-content {
-    padding: $popover-content__padding;
-}
-
-.popover > .arrow {
-    &,
-    &:after {
-        position: absolute;
-
-        display: block;
-
-        width: 0;
-        height: 0;
-
-        border-style: solid;
-        border-color: transparent;
-    }
-}
-
-.popover > .arrow {
-    border-width: $popover__arrow__width;
-}
-
-.popover > .arrow:after {
-    content: '';
-
-    border-width: $popover__arrow__width;
-}
-
-.popover {
-    &.top > .arrow {
-        bottom: $popover__arrow__outer__width * -1;
-        left: 50%;
-
-        margin-left: $popover__arrow__outer__width * -1;
-
-        border-top-color: $popover__arrow__outer__color;
-        border-bottom-width: 0;
-        &:after {
-            bottom: $two__pixels;
-
-            margin-left: $popover__arrow__width * -1;
-
-            content: ' ';
-
-            border-top-color: $popover__arrow__color;
+            border-top-color: $popover-arrow--outer__color;
             border-bottom-width: 0;
+            &:after {
+                bottom: $one__true__pixel;
+
+                margin-left: -$popover-arrow--inner__width;
+
+                content: '';
+
+                border-top-color: $popover-arrow--inner__color;
+                border-bottom-width: 0;
+            }
         }
     }
-    &.right > .arrow {
-        top: 50%;
-        left: $popover__arrow__outer__width * -1;
 
-        margin-top: $popover__arrow__outer__width * -1;
+    &.right,
+    &.popover-right,
+    &.bs-tether-element-attached-left {
+        margin-left: $popover-arrow--inner__width;
 
-        border-right-color: $popover__arrow__outer__color;
-        border-left-width: 0;
-        &:after {
-            bottom: $popover__arrow__width * -1;
-            left: $two__pixels;
+        .arrow,
+        .popover-arrow {
+            top: 50%;
+            left: -$popover-arrow--outer__width + $popover-arrow__offset;
 
-            content: ' ';
+            margin-top: -$popover-arrow--outer__width;
 
-            border-right-color: $popover__arrow__color;
+            border-right-color: $popover-arrow--outer__color;
             border-left-width: 0;
+            &:after {
+                bottom: -$popover-arrow--inner__width;
+                left: $one__true__pixel;
+
+                content: '';
+
+                border-right-color: $popover-arrow--inner__color;
+                border-left-width: 0;
+            }
         }
     }
-    &.bottom > .arrow {
-        top: $popover__arrow__outer__width * -1;
-        left: 50%;
 
-        margin-left: $popover__arrow__outer__width * -1;
+    &.bottom,
+    &.popover-bottom,
+    &.bs-tether-element-attached-top {
+        margin-top: $popover-arrow--inner__width;
 
-        border-top-width: 0;
-        border-bottom-color: $popover__arrow__outer__color;
-        &:after {
-            top: $two__pixels;
+        .arrow,
+        .popover-arrow {
+            top: -$popover-arrow--outer__width + $popover-arrow__offset;
+            left: 50%;
 
-            margin-left: $popover__arrow__width * -1;
-
-            content: ' ';
+            margin-left: -$popover-arrow--outer__width;
 
             border-top-width: 0;
-            border-bottom-color: $popover__arrow__color;
+            border-bottom-color: $popover-arrow--outer__color;
+            &:after {
+                top: $one__true__pixel;
+
+                margin-left: -$popover-arrow--inner__width;
+
+                content: '';
+
+                border-top-width: 0;
+                border-bottom-color: $popover-arrow--inner__color;
+            }
         }
     }
 
-    &.left > .arrow {
-        top: 50%;
-        right: $popover__arrow__outer__width * -1;
+    &.left,
+    &.popover-left,
+    &.bs-tether-element-attached-right {
+        margin-left: -$popover-arrow--inner__width;
 
-        margin-top: $popover__arrow__outer__width * -1;
+        .arrow,
+        .popover-arrow {
+            top: 50%;
+            right: -$popover-arrow--outer__width + $popover-arrow__offset;
 
-        border-right-width: 0;
-        border-left-color: $popover__arrow__outer__color;
-        &:after {
-            right: $two__pixels;
-            bottom: $popover__arrow__width * -1;
-
-            content: ' ';
+            margin-top: -$popover-arrow--outer__width;
 
             border-right-width: 0;
-            border-left-color: $popover__arrow__color;
+            border-left-color: $popover-arrow--outer__color;
+            &:after {
+                right: $one__true__pixel;
+                bottom: -$popover-arrow--inner__width;
+
+                content: '';
+
+                border-right-width: 0;
+                border-left-color: $popover-arrow--inner__color;
+            }
         }
     }
 }
