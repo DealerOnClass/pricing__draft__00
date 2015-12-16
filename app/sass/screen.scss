@@ -296,15 +296,15 @@
     "05__objects/panels/07__colors";
 
 @import
+    "05__objects/popovers/00__var",
+    "05__objects/popovers/02__popover";
+
+@import
     "05__objects/progress-bars/00__variables",
     "05__objects/progress-bars/01__progress-bar",
     "05__objects/progress-bars/02__progress-bar-striped",
     "05__objects/progress-bars/03__progress-bar-animation",
     "05__objects/progress-bars/04__progress-bar-variations";
-
-@import
-    "05__objects/popovers/00__variables",
-    "05__objects/popovers/01__popover";
 
 @import
     "05__objects/responsive-embed/01__responsive-embed",

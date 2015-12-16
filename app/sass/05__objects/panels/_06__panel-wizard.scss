@@ -68,4 +68,12 @@
 
         float: right;
     }
+
+    .panel-body:first-child {
+        border-bottom: 0 none;
+    }
+
+    .panel-footer {
+        background-color: transparent;
+    }
 }

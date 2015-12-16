@@ -8,11 +8,6 @@
                 background-color: $color;
             }
 
-            .panel-body,
-            .panel-footer {
-                border-color: $gray__02 !important;
-            }
-
             .panel-heading.btn {
                 @include state {
                     @extend %panel-active-item;
@@ -29,7 +24,7 @@
             }
 
             &.panel-wizard:before {
-                color: shade($color, $panel__contrast * 2);
+                color: shade($color, $panel__contrast * 1.5);
             }
         }
     }
