@@ -7,7 +7,9 @@
         > tr {
             > th,
             > td {
-                border: $one__true__pixel solid;
+                &:not(:last-child) {
+                    border-right: $one__true__pixel solid;
+                }
             }
         }
     }

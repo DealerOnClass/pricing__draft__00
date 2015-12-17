@@ -11234,13 +11234,13 @@ h5 [class*='sortable-'] {
 .table-bordered {
   border: 1px solid;
 }
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > th,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > th,
-.table-bordered > tfoot > tr > td {
-  border: 1px solid;
+.table-bordered > thead > tr > th:not(:last-child),
+.table-bordered > thead > tr > td:not(:last-child),
+.table-bordered > tbody > tr > th:not(:last-child),
+.table-bordered > tbody > tr > td:not(:last-child),
+.table-bordered > tfoot > tr > th:not(:last-child),
+.table-bordered > tfoot > tr > td:not(:last-child) {
+  border-right: 1px solid;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -11303,8 +11303,15 @@ h5 [class*='sortable-'] {
   }
 }
 
+.table-rounded {
+  border-radius: 0.375em;
+  border-collapse: separate;
+  overflow: hidden;
+}
+
 .table-default {
   color: inherit;
+  background-color: #e6e6e6;
 }
 .table-default > thead > tr > td,
 .table-default > thead > tr > th,
@@ -11313,7 +11320,6 @@ h5 [class*='sortable-'] {
 .table-default > tfoot > tr > td,
 .table-default > tfoot > tr > th {
   border-color: #e6e6e6;
-  background-color: #e6e6e6;
 }
 .table-default.table-bordered {
   border-color: #cfcfcf;
@@ -11373,6 +11379,7 @@ h5 [class*='sortable-'] {
 
 .table-inverse {
   color: white;
+  background-color: #343c4b;
 }
 .table-inverse > thead > tr > td,
 .table-inverse > thead > tr > th,
@@ -11381,7 +11388,6 @@ h5 [class*='sortable-'] {
 .table-inverse > tfoot > tr > td,
 .table-inverse > tfoot > tr > th {
   border-color: #343c4b;
-  background-color: #343c4b;
 }
 .table-inverse.table-bordered {
   border-color: #2f3644;
@@ -11441,6 +11447,7 @@ h5 [class*='sortable-'] {
 
 .table-cta {
   color: white;
+  background-color: #f17306;
 }
 .table-cta > thead > tr > td,
 .table-cta > thead > tr > th,
@@ -11449,7 +11456,6 @@ h5 [class*='sortable-'] {
 .table-cta > tfoot > tr > td,
 .table-cta > tfoot > tr > th {
   border-color: #f17306;
-  background-color: #f17306;
 }
 .table-cta.table-bordered {
   border-color: #d96805;
@@ -11509,6 +11515,7 @@ h5 [class*='sortable-'] {
 
 .table-main {
   color: white;
+  background-color: #3662ad;
 }
 .table-main > thead > tr > td,
 .table-main > thead > tr > th,
@@ -11517,7 +11524,6 @@ h5 [class*='sortable-'] {
 .table-main > tfoot > tr > td,
 .table-main > tfoot > tr > th {
   border-color: #3662ad;
-  background-color: #3662ad;
 }
 .table-main.table-bordered {
   border-color: #31589c;
@@ -11577,6 +11583,7 @@ h5 [class*='sortable-'] {
 
 .table-alt1 {
   color: white;
+  background-color: #42587d;
 }
 .table-alt1 > thead > tr > td,
 .table-alt1 > thead > tr > th,
@@ -11585,7 +11592,6 @@ h5 [class*='sortable-'] {
 .table-alt1 > tfoot > tr > td,
 .table-alt1 > tfoot > tr > th {
   border-color: #42587d;
-  background-color: #42587d;
 }
 .table-alt1.table-bordered {
   border-color: #3b4f71;
@@ -11645,6 +11651,7 @@ h5 [class*='sortable-'] {
 
 .table-alt2 {
   color: white;
+  background-color: #5f7394;
 }
 .table-alt2 > thead > tr > td,
 .table-alt2 > thead > tr > th,
@@ -11653,7 +11660,6 @@ h5 [class*='sortable-'] {
 .table-alt2 > tfoot > tr > td,
 .table-alt2 > tfoot > tr > th {
   border-color: #5f7394;
-  background-color: #5f7394;
 }
 .table-alt2.table-bordered {
   border-color: #566885;
@@ -11713,6 +11719,7 @@ h5 [class*='sortable-'] {
 
 .table-alt3 {
   color: white;
+  background-color: #8193b1;
 }
 .table-alt3 > thead > tr > td,
 .table-alt3 > thead > tr > th,
@@ -11721,7 +11728,6 @@ h5 [class*='sortable-'] {
 .table-alt3 > tfoot > tr > td,
 .table-alt3 > tfoot > tr > th {
   border-color: #8193b1;
-  background-color: #8193b1;
 }
 .table-alt3.table-bordered {
   border-color: #74849f;
@@ -11781,6 +11787,7 @@ h5 [class*='sortable-'] {
 
 .table-success {
   color: white;
+  background-color: #5cb85c;
 }
 .table-success > thead > tr > td,
 .table-success > thead > tr > th,
@@ -11789,7 +11796,6 @@ h5 [class*='sortable-'] {
 .table-success > tfoot > tr > td,
 .table-success > tfoot > tr > th {
   border-color: #5cb85c;
-  background-color: #5cb85c;
 }
 .table-success.table-bordered {
   border-color: #53a653;
@@ -11849,6 +11855,7 @@ h5 [class*='sortable-'] {
 
 .table-info {
   color: white;
+  background-color: #5bc0de;
 }
 .table-info > thead > tr > td,
 .table-info > thead > tr > th,
@@ -11857,7 +11864,6 @@ h5 [class*='sortable-'] {
 .table-info > tfoot > tr > td,
 .table-info > tfoot > tr > th {
   border-color: #5bc0de;
-  background-color: #5bc0de;
 }
 .table-info.table-bordered {
   border-color: #52adc8;
@@ -11917,6 +11923,7 @@ h5 [class*='sortable-'] {
 
 .table-warning {
   color: white;
+  background-color: #f0ad4e;
 }
 .table-warning > thead > tr > td,
 .table-warning > thead > tr > th,
@@ -11925,7 +11932,6 @@ h5 [class*='sortable-'] {
 .table-warning > tfoot > tr > td,
 .table-warning > tfoot > tr > th {
   border-color: #f0ad4e;
-  background-color: #f0ad4e;
 }
 .table-warning.table-bordered {
   border-color: #d89c46;
@@ -11985,6 +11991,7 @@ h5 [class*='sortable-'] {
 
 .table-danger {
   color: white;
+  background-color: #d9534f;
 }
 .table-danger > thead > tr > td,
 .table-danger > thead > tr > th,
@@ -11993,7 +12000,6 @@ h5 [class*='sortable-'] {
 .table-danger > tfoot > tr > td,
 .table-danger > tfoot > tr > th {
   border-color: #d9534f;
-  background-color: #d9534f;
 }
 .table-danger.table-bordered {
   border-color: #c34b47;
