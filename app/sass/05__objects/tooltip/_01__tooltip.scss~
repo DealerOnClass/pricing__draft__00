@@ -89,3 +89,19 @@
     }
 }
 
+span[data-toggle='tooltip'] {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: -100%;
+        right: 0;
+
+        display: block;
+
+        width: 1em;
+        height: 1em;
+
+        content: 'icon';
+    }
+}

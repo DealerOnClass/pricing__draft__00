@@ -52,7 +52,8 @@
     "02__tools/mixin__table",
     "02__tools/mixin__text-hide",
     "02__tools/mixin__text-overflow",
-    "02__tools/mixin__text-variant";
+    "02__tools/mixin__text-variant",
+    "02__tools/mixin__tooltip";
 
 //  03  Generic
 @import
@@ -357,10 +358,12 @@
     "05__objects/thumbnails/06__colors";
 
 @import
-    "05__objects/tooltip/00__variables",
+    "05__objects/tooltip/00__var",
     "05__objects/tooltip/01__tooltip",
-    "05__objects/tooltip/02__tooltip-inner",
-    "05__objects/tooltip/03__tooltip-arrow";
+    "05__objects/tooltip/02__tooltip-text",
+    "05__objects/tooltip/03__tooltip-inner",
+    "05__objects/tooltip/04__tooltip-arrow",
+    "05__objects/tooltip/05__colors";
 
 @import
     "05__objects/wells/00__variables",

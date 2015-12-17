@@ -12117,50 +12117,48 @@ h5 [class*='sortable-'] {
   z-index: 1070;
   display: block;
   opacity: 0;
-  filter: alpha(opacity=0);
 }
 .tooltip.in {
   opacity: #e6e6e6;
-  filter: alpha(opacity=white);
 }
-.tooltip.tooltip-top, .tooltip.bs-tether-element-attached-bottom {
+.tooltip.top, .tooltip.tooltip-top, .tooltip.bs-tether-element-attached-bottom {
+  margin-top: -6px;
   padding: 0.375em 0;
-  margin-top: -3px;
 }
-.tooltip.tooltip-top .tooltip-arrow, .tooltip.bs-tether-element-attached-bottom .tooltip-arrow {
-  bottom: 0;
+.tooltip.top .tooltip-arrow, .tooltip.tooltip-top .tooltip-arrow, .tooltip.bs-tether-element-attached-bottom .tooltip-arrow {
+  bottom: 1px;
   left: 50%;
   margin-left: -0.375em;
   border-width: 0.375em 0.375em 0;
   border-top-color: #3662ad;
 }
-.tooltip.tooltip-right, .tooltip.bs-tether-element-attached-left {
+.tooltip.right, .tooltip.tooltip-right, .tooltip.bs-tether-element-attached-left {
+  margin-left: 6px;
   padding: 0 0.375em;
-  margin-left: 3px;
 }
-.tooltip.tooltip-right .tooltip-arrow, .tooltip.bs-tether-element-attached-left .tooltip-arrow {
+.tooltip.right .tooltip-arrow, .tooltip.tooltip-right .tooltip-arrow, .tooltip.bs-tether-element-attached-left .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -0.375em;
   border-width: 0.375em 0.375em 0.375em 0;
   border-right-color: #3662ad;
 }
-.tooltip.tooltip-bottom, .tooltip.bs-tether-element-attached-top {
+.tooltip.bottom, .tooltip.tooltip-bottom, .tooltip.bs-tether-element-attached-top {
+  margin-top: 6px;
   padding: 0.375em 0;
-  margin-top: 3px;
 }
-.tooltip.tooltip-bottom .tooltip-arrow, .tooltip.bs-tether-element-attached-top .tooltip-arrow {
+.tooltip.bottom .tooltip-arrow, .tooltip.tooltip-bottom .tooltip-arrow, .tooltip.bs-tether-element-attached-top .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -0.375em;
   border-width: 0 0.375em 0.375em;
   border-bottom-color: #3662ad;
 }
-.tooltip.tooltip-left, .tooltip.bs-tether-element-attached-right {
+.tooltip.left, .tooltip.tooltip-left, .tooltip.bs-tether-element-attached-right {
+  margin-left: -6px;
   padding: 0 0.375em;
-  margin-left: -3px;
 }
-.tooltip.tooltip-left .tooltip-arrow, .tooltip.bs-tether-element-attached-right .tooltip-arrow {
+.tooltip.left .tooltip-arrow, .tooltip.tooltip-left .tooltip-arrow, .tooltip.bs-tether-element-attached-right .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -0.375em;
@@ -12168,13 +12166,43 @@ h5 [class*='sortable-'] {
   border-left-color: #3662ad;
 }
 
+span[data-toggle='tooltip'] {
+  position: relative;
+  padding: 0 0.45em;
+  border-bottom: 1px dashed;
+  display: inline-block;
+}
+span[data-toggle='tooltip']:after {
+  font-family: "fontawesome-webfont";
+  position: absolute;
+  top: -0.375em;
+  right: 0;
+  display: block;
+  content: "";
+}
+
+span[data-toggle='tooltip'][data-style='success']:after {
+  content: "";
+}
+
+span[data-toggle='tooltip'][data-style='info']:after {
+  content: "";
+}
+
+span[data-toggle='tooltip'][data-style='warning']:after {
+  content: "";
+}
+
+span[data-toggle='tooltip'][data-style='danger']:after {
+  content: "";
+}
+
 .tooltip-inner {
   max-width: 200px;
   padding: 0.6em 0.9em;
   text-align: center;
-  color: white;
+  border: 1px solid;
   border-radius: 0.375em;
-  background-color: #3662ad;
 }
 
 .tooltip-arrow {
@@ -12183,6 +12211,380 @@ h5 [class*='sortable-'] {
   height: 0;
   border-style: solid;
   border-color: transparent;
+}
+
+span[data-toggle="tooltip"][data-style="default"]:after {
+  color: inherit;
+}
+
+.tooltip-default .tooltip-inner {
+  color: inherit;
+  border-color: #e6e6e6;
+  background-color: #e6e6e6;
+}
+.tooltip-default.top .arrow,
+.tooltip-default.top .tooltip-arrow, .tooltip-default.tooltip-top .arrow,
+.tooltip-default.tooltip-top .tooltip-arrow, .tooltip-default.bs-tether-element-attached-bottom .arrow,
+.tooltip-default.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #e6e6e6;
+}
+.tooltip-default.right .arrow,
+.tooltip-default.right .tooltip-arrow, .tooltip-default.tooltip-right .arrow,
+.tooltip-default.tooltip-right .tooltip-arrow, .tooltip-default.bs-tether-element-attached-left .arrow,
+.tooltip-default.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #e6e6e6;
+}
+.tooltip-default.bottom .arrow,
+.tooltip-default.bottom .tooltip-arrow, .tooltip-default.tooltip-bottom .arrow,
+.tooltip-default.tooltip-bottom .tooltip-arrow, .tooltip-default.bs-tether-element-attached-top .arrow,
+.tooltip-default.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #e6e6e6;
+}
+.tooltip-default.left .arrow,
+.tooltip-default.left .tooltip-arrow, .tooltip-default.tooltip-left .arrow,
+.tooltip-default.tooltip-left .tooltip-arrow, .tooltip-default.bs-tether-element-attached-right .arrow,
+.tooltip-default.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #e6e6e6;
+}
+
+span[data-toggle="tooltip"][data-style="inverse"]:after {
+  color: #343c4b;
+}
+
+.tooltip-inverse .tooltip-inner {
+  color: white;
+  border-color: #343c4b;
+  background-color: #343c4b;
+}
+.tooltip-inverse.top .arrow,
+.tooltip-inverse.top .tooltip-arrow, .tooltip-inverse.tooltip-top .arrow,
+.tooltip-inverse.tooltip-top .tooltip-arrow, .tooltip-inverse.bs-tether-element-attached-bottom .arrow,
+.tooltip-inverse.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #343c4b;
+}
+.tooltip-inverse.right .arrow,
+.tooltip-inverse.right .tooltip-arrow, .tooltip-inverse.tooltip-right .arrow,
+.tooltip-inverse.tooltip-right .tooltip-arrow, .tooltip-inverse.bs-tether-element-attached-left .arrow,
+.tooltip-inverse.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #343c4b;
+}
+.tooltip-inverse.bottom .arrow,
+.tooltip-inverse.bottom .tooltip-arrow, .tooltip-inverse.tooltip-bottom .arrow,
+.tooltip-inverse.tooltip-bottom .tooltip-arrow, .tooltip-inverse.bs-tether-element-attached-top .arrow,
+.tooltip-inverse.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #343c4b;
+}
+.tooltip-inverse.left .arrow,
+.tooltip-inverse.left .tooltip-arrow, .tooltip-inverse.tooltip-left .arrow,
+.tooltip-inverse.tooltip-left .tooltip-arrow, .tooltip-inverse.bs-tether-element-attached-right .arrow,
+.tooltip-inverse.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #343c4b;
+}
+
+span[data-toggle="tooltip"][data-style="cta"]:after {
+  color: #f17306;
+}
+
+.tooltip-cta .tooltip-inner {
+  color: white;
+  border-color: #f17306;
+  background-color: #f17306;
+}
+.tooltip-cta.top .arrow,
+.tooltip-cta.top .tooltip-arrow, .tooltip-cta.tooltip-top .arrow,
+.tooltip-cta.tooltip-top .tooltip-arrow, .tooltip-cta.bs-tether-element-attached-bottom .arrow,
+.tooltip-cta.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #f17306;
+}
+.tooltip-cta.right .arrow,
+.tooltip-cta.right .tooltip-arrow, .tooltip-cta.tooltip-right .arrow,
+.tooltip-cta.tooltip-right .tooltip-arrow, .tooltip-cta.bs-tether-element-attached-left .arrow,
+.tooltip-cta.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #f17306;
+}
+.tooltip-cta.bottom .arrow,
+.tooltip-cta.bottom .tooltip-arrow, .tooltip-cta.tooltip-bottom .arrow,
+.tooltip-cta.tooltip-bottom .tooltip-arrow, .tooltip-cta.bs-tether-element-attached-top .arrow,
+.tooltip-cta.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #f17306;
+}
+.tooltip-cta.left .arrow,
+.tooltip-cta.left .tooltip-arrow, .tooltip-cta.tooltip-left .arrow,
+.tooltip-cta.tooltip-left .tooltip-arrow, .tooltip-cta.bs-tether-element-attached-right .arrow,
+.tooltip-cta.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #f17306;
+}
+
+span[data-toggle="tooltip"][data-style="main"]:after {
+  color: #3662ad;
+}
+
+.tooltip-main .tooltip-inner {
+  color: white;
+  border-color: #3662ad;
+  background-color: #3662ad;
+}
+.tooltip-main.top .arrow,
+.tooltip-main.top .tooltip-arrow, .tooltip-main.tooltip-top .arrow,
+.tooltip-main.tooltip-top .tooltip-arrow, .tooltip-main.bs-tether-element-attached-bottom .arrow,
+.tooltip-main.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #3662ad;
+}
+.tooltip-main.right .arrow,
+.tooltip-main.right .tooltip-arrow, .tooltip-main.tooltip-right .arrow,
+.tooltip-main.tooltip-right .tooltip-arrow, .tooltip-main.bs-tether-element-attached-left .arrow,
+.tooltip-main.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #3662ad;
+}
+.tooltip-main.bottom .arrow,
+.tooltip-main.bottom .tooltip-arrow, .tooltip-main.tooltip-bottom .arrow,
+.tooltip-main.tooltip-bottom .tooltip-arrow, .tooltip-main.bs-tether-element-attached-top .arrow,
+.tooltip-main.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #3662ad;
+}
+.tooltip-main.left .arrow,
+.tooltip-main.left .tooltip-arrow, .tooltip-main.tooltip-left .arrow,
+.tooltip-main.tooltip-left .tooltip-arrow, .tooltip-main.bs-tether-element-attached-right .arrow,
+.tooltip-main.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #3662ad;
+}
+
+span[data-toggle="tooltip"][data-style="alt1"]:after {
+  color: #42587d;
+}
+
+.tooltip-alt1 .tooltip-inner {
+  color: white;
+  border-color: #42587d;
+  background-color: #42587d;
+}
+.tooltip-alt1.top .arrow,
+.tooltip-alt1.top .tooltip-arrow, .tooltip-alt1.tooltip-top .arrow,
+.tooltip-alt1.tooltip-top .tooltip-arrow, .tooltip-alt1.bs-tether-element-attached-bottom .arrow,
+.tooltip-alt1.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #42587d;
+}
+.tooltip-alt1.right .arrow,
+.tooltip-alt1.right .tooltip-arrow, .tooltip-alt1.tooltip-right .arrow,
+.tooltip-alt1.tooltip-right .tooltip-arrow, .tooltip-alt1.bs-tether-element-attached-left .arrow,
+.tooltip-alt1.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #42587d;
+}
+.tooltip-alt1.bottom .arrow,
+.tooltip-alt1.bottom .tooltip-arrow, .tooltip-alt1.tooltip-bottom .arrow,
+.tooltip-alt1.tooltip-bottom .tooltip-arrow, .tooltip-alt1.bs-tether-element-attached-top .arrow,
+.tooltip-alt1.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #42587d;
+}
+.tooltip-alt1.left .arrow,
+.tooltip-alt1.left .tooltip-arrow, .tooltip-alt1.tooltip-left .arrow,
+.tooltip-alt1.tooltip-left .tooltip-arrow, .tooltip-alt1.bs-tether-element-attached-right .arrow,
+.tooltip-alt1.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #42587d;
+}
+
+span[data-toggle="tooltip"][data-style="alt2"]:after {
+  color: #5f7394;
+}
+
+.tooltip-alt2 .tooltip-inner {
+  color: white;
+  border-color: #5f7394;
+  background-color: #5f7394;
+}
+.tooltip-alt2.top .arrow,
+.tooltip-alt2.top .tooltip-arrow, .tooltip-alt2.tooltip-top .arrow,
+.tooltip-alt2.tooltip-top .tooltip-arrow, .tooltip-alt2.bs-tether-element-attached-bottom .arrow,
+.tooltip-alt2.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #5f7394;
+}
+.tooltip-alt2.right .arrow,
+.tooltip-alt2.right .tooltip-arrow, .tooltip-alt2.tooltip-right .arrow,
+.tooltip-alt2.tooltip-right .tooltip-arrow, .tooltip-alt2.bs-tether-element-attached-left .arrow,
+.tooltip-alt2.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #5f7394;
+}
+.tooltip-alt2.bottom .arrow,
+.tooltip-alt2.bottom .tooltip-arrow, .tooltip-alt2.tooltip-bottom .arrow,
+.tooltip-alt2.tooltip-bottom .tooltip-arrow, .tooltip-alt2.bs-tether-element-attached-top .arrow,
+.tooltip-alt2.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #5f7394;
+}
+.tooltip-alt2.left .arrow,
+.tooltip-alt2.left .tooltip-arrow, .tooltip-alt2.tooltip-left .arrow,
+.tooltip-alt2.tooltip-left .tooltip-arrow, .tooltip-alt2.bs-tether-element-attached-right .arrow,
+.tooltip-alt2.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #5f7394;
+}
+
+span[data-toggle="tooltip"][data-style="alt3"]:after {
+  color: #8193b1;
+}
+
+.tooltip-alt3 .tooltip-inner {
+  color: white;
+  border-color: #8193b1;
+  background-color: #8193b1;
+}
+.tooltip-alt3.top .arrow,
+.tooltip-alt3.top .tooltip-arrow, .tooltip-alt3.tooltip-top .arrow,
+.tooltip-alt3.tooltip-top .tooltip-arrow, .tooltip-alt3.bs-tether-element-attached-bottom .arrow,
+.tooltip-alt3.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #8193b1;
+}
+.tooltip-alt3.right .arrow,
+.tooltip-alt3.right .tooltip-arrow, .tooltip-alt3.tooltip-right .arrow,
+.tooltip-alt3.tooltip-right .tooltip-arrow, .tooltip-alt3.bs-tether-element-attached-left .arrow,
+.tooltip-alt3.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #8193b1;
+}
+.tooltip-alt3.bottom .arrow,
+.tooltip-alt3.bottom .tooltip-arrow, .tooltip-alt3.tooltip-bottom .arrow,
+.tooltip-alt3.tooltip-bottom .tooltip-arrow, .tooltip-alt3.bs-tether-element-attached-top .arrow,
+.tooltip-alt3.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #8193b1;
+}
+.tooltip-alt3.left .arrow,
+.tooltip-alt3.left .tooltip-arrow, .tooltip-alt3.tooltip-left .arrow,
+.tooltip-alt3.tooltip-left .tooltip-arrow, .tooltip-alt3.bs-tether-element-attached-right .arrow,
+.tooltip-alt3.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #8193b1;
+}
+
+span[data-toggle="tooltip"][data-style="success"]:after {
+  color: #5cb85c;
+}
+
+.tooltip-success .tooltip-inner {
+  color: white;
+  border-color: #5cb85c;
+  background-color: #5cb85c;
+}
+.tooltip-success.top .arrow,
+.tooltip-success.top .tooltip-arrow, .tooltip-success.tooltip-top .arrow,
+.tooltip-success.tooltip-top .tooltip-arrow, .tooltip-success.bs-tether-element-attached-bottom .arrow,
+.tooltip-success.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #5cb85c;
+}
+.tooltip-success.right .arrow,
+.tooltip-success.right .tooltip-arrow, .tooltip-success.tooltip-right .arrow,
+.tooltip-success.tooltip-right .tooltip-arrow, .tooltip-success.bs-tether-element-attached-left .arrow,
+.tooltip-success.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #5cb85c;
+}
+.tooltip-success.bottom .arrow,
+.tooltip-success.bottom .tooltip-arrow, .tooltip-success.tooltip-bottom .arrow,
+.tooltip-success.tooltip-bottom .tooltip-arrow, .tooltip-success.bs-tether-element-attached-top .arrow,
+.tooltip-success.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #5cb85c;
+}
+.tooltip-success.left .arrow,
+.tooltip-success.left .tooltip-arrow, .tooltip-success.tooltip-left .arrow,
+.tooltip-success.tooltip-left .tooltip-arrow, .tooltip-success.bs-tether-element-attached-right .arrow,
+.tooltip-success.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #5cb85c;
+}
+
+span[data-toggle="tooltip"][data-style="info"]:after {
+  color: #5bc0de;
+}
+
+.tooltip-info .tooltip-inner {
+  color: white;
+  border-color: #5bc0de;
+  background-color: #5bc0de;
+}
+.tooltip-info.top .arrow,
+.tooltip-info.top .tooltip-arrow, .tooltip-info.tooltip-top .arrow,
+.tooltip-info.tooltip-top .tooltip-arrow, .tooltip-info.bs-tether-element-attached-bottom .arrow,
+.tooltip-info.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #5bc0de;
+}
+.tooltip-info.right .arrow,
+.tooltip-info.right .tooltip-arrow, .tooltip-info.tooltip-right .arrow,
+.tooltip-info.tooltip-right .tooltip-arrow, .tooltip-info.bs-tether-element-attached-left .arrow,
+.tooltip-info.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #5bc0de;
+}
+.tooltip-info.bottom .arrow,
+.tooltip-info.bottom .tooltip-arrow, .tooltip-info.tooltip-bottom .arrow,
+.tooltip-info.tooltip-bottom .tooltip-arrow, .tooltip-info.bs-tether-element-attached-top .arrow,
+.tooltip-info.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #5bc0de;
+}
+.tooltip-info.left .arrow,
+.tooltip-info.left .tooltip-arrow, .tooltip-info.tooltip-left .arrow,
+.tooltip-info.tooltip-left .tooltip-arrow, .tooltip-info.bs-tether-element-attached-right .arrow,
+.tooltip-info.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #5bc0de;
+}
+
+span[data-toggle="tooltip"][data-style="warning"]:after {
+  color: #f0ad4e;
+}
+
+.tooltip-warning .tooltip-inner {
+  color: white;
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+}
+.tooltip-warning.top .arrow,
+.tooltip-warning.top .tooltip-arrow, .tooltip-warning.tooltip-top .arrow,
+.tooltip-warning.tooltip-top .tooltip-arrow, .tooltip-warning.bs-tether-element-attached-bottom .arrow,
+.tooltip-warning.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #f0ad4e;
+}
+.tooltip-warning.right .arrow,
+.tooltip-warning.right .tooltip-arrow, .tooltip-warning.tooltip-right .arrow,
+.tooltip-warning.tooltip-right .tooltip-arrow, .tooltip-warning.bs-tether-element-attached-left .arrow,
+.tooltip-warning.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #f0ad4e;
+}
+.tooltip-warning.bottom .arrow,
+.tooltip-warning.bottom .tooltip-arrow, .tooltip-warning.tooltip-bottom .arrow,
+.tooltip-warning.tooltip-bottom .tooltip-arrow, .tooltip-warning.bs-tether-element-attached-top .arrow,
+.tooltip-warning.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #f0ad4e;
+}
+.tooltip-warning.left .arrow,
+.tooltip-warning.left .tooltip-arrow, .tooltip-warning.tooltip-left .arrow,
+.tooltip-warning.tooltip-left .tooltip-arrow, .tooltip-warning.bs-tether-element-attached-right .arrow,
+.tooltip-warning.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #f0ad4e;
+}
+
+span[data-toggle="tooltip"][data-style="danger"]:after {
+  color: #d9534f;
+}
+
+.tooltip-danger .tooltip-inner {
+  color: white;
+  border-color: #d9534f;
+  background-color: #d9534f;
+}
+.tooltip-danger.top .arrow,
+.tooltip-danger.top .tooltip-arrow, .tooltip-danger.tooltip-top .arrow,
+.tooltip-danger.tooltip-top .tooltip-arrow, .tooltip-danger.bs-tether-element-attached-bottom .arrow,
+.tooltip-danger.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #d9534f;
+}
+.tooltip-danger.right .arrow,
+.tooltip-danger.right .tooltip-arrow, .tooltip-danger.tooltip-right .arrow,
+.tooltip-danger.tooltip-right .tooltip-arrow, .tooltip-danger.bs-tether-element-attached-left .arrow,
+.tooltip-danger.bs-tether-element-attached-left .tooltip-arrow {
+  border-right-color: #d9534f;
+}
+.tooltip-danger.bottom .arrow,
+.tooltip-danger.bottom .tooltip-arrow, .tooltip-danger.tooltip-bottom .arrow,
+.tooltip-danger.tooltip-bottom .tooltip-arrow, .tooltip-danger.bs-tether-element-attached-top .arrow,
+.tooltip-danger.bs-tether-element-attached-top .tooltip-arrow {
+  border-bottom-color: #d9534f;
+}
+.tooltip-danger.left .arrow,
+.tooltip-danger.left .tooltip-arrow, .tooltip-danger.tooltip-left .arrow,
+.tooltip-danger.tooltip-left .tooltip-arrow, .tooltip-danger.bs-tether-element-attached-right .arrow,
+.tooltip-danger.bs-tether-element-attached-right .tooltip-arrow {
+  border-left-color: #d9534f;
 }
 
 .well {

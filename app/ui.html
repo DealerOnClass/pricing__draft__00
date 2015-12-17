@@ -7422,7 +7422,7 @@
 
             <!--Tooltip-->
             <section class="demo__section">
-                <h3>Static example</h3>
+                <h3 class="demo__heading">Static example</h3>
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="tooltip left show__tooltip">
@@ -7459,19 +7459,149 @@
                 </div>
             </section>
             <section class="demo__section">
-                <h3>Interactive example</h3>
+                <h3 class="demo__heading">Interactive example</h3>
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-style="cta" data-placement="top" title="Tooltip on top"> Tooltip on top </button>
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-style="main" data-placement="right" title="Tooltip on right"> Tooltip on right </button>
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-style="alt1" data-placement="bottom" title="Tooltip on bottom"> Tooltip on bottom </button>
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-style="alt2" data-placement="left" title="Tooltip on left"> Tooltip on left </button>
+            </section>
+            <section class="demo__section">
                 <div class="row">
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"> Tooltip on top </button>
+                        <h3 class="demo__heading">Default Palette</h3>
+                        <div class="tooltip tooltip-default top show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the right
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right"> Tooltip on right </button>
+                        <h3 class="demo__heading">Inverse Palette</h3>
+                        <div class="tooltip tooltip-inverse top show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the top
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="demo__section">
+                <h3 class="demo__heading">Primary Palette</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="tooltip tooltip-cta bottom show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the bottom
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"> Tooltip on bottom </button>
+                        <div class="tooltip tooltip-main left show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the left
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="demo__section">
+                <h3 class="demo__heading">Neutral Palette</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="tooltip tooltip-alt1 left show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the left
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left"> Tooltip on left </button>
+                        <div class="tooltip tooltip-alt2 top show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the top
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="tooltip tooltip-alt3 right show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the right
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="demo__section">
+                <h3 class="demo__heading">States Palette</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="tooltip tooltip-success left show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the left
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="tooltip tooltip-info top show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the top
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="tooltip tooltip-warning right show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the right
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="tooltip tooltip-danger bottom show__tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Tooltip on the bottom
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="demo__section">
+                <h3 class="demo__heading">In text.</h3>
+                <p>Sit voluptates <span data-toggle="tooltip" data-placement="top" title="Tooltip son!">illo</span> animi illo nihil explicabo. Voluptatem blanditiis debitis repellat et repellendus error. Repudiandae rerum ducimus nemo molestias consectetur eaque maiores asperiores. Illum modi architecto dolore quia similique repudiandae.</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Default Palette</h3>
+                        <p>Sit voluptates <span data-toggle="tooltip" data-style="default" data-placement="top" title="Tooltip son!">illo</span> animi illo nihil explicabo. Blanditiis debitis repellat et repellendus error. Repudiandae rerum ducimus molestias consectetur eaque maiores asperiores. Illum modi architecto dolore quia repudiandae.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Inverse Palette</h3>
+                        <p>Sit voluptates <span data-toggle="tooltip" data-style="inverse" data-placement="top" title="Tooltip son!">illo</span> animi illo nihil explicabo. Blanditiis debitis repellat et repellendus error. Repudiandae rerum ducimus molestias consectetur eaque maiores asperiores. Illum modi architecto dolore quia repudiandae.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Primary Palette</h3>
+                        <p>Sit voluptates <span data-toggle="tooltip" data-style="cta" data-placement="top" title="Tooltip son!">illo</span> animi illo nihil explicabo. <span data-toggle="tooltip" data-style="main" data-placement="top" title="Tooltip son!">Vollipsum</span> blanditiis debitis repellat et repellendus error. Repudiandae rerum ducimus molestias consectetur eaque maiores asperiores. Illum modi architecto dolore quia repudiandae.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">Neutral Palette</h3>
+                        <p>Sit voluptates <span data-toggle="tooltip" data-style="alt1" data-placement="top" title="Tooltip son!">illo</span> animi illo nihil explicabo. <span data-toggle="tooltip" data-style="alt2" data-placement="top" title="Tooltip son!">Vollipsum</span> blanditiis debitis repellat et repellendus error. Repudiandae rerum ducimus <span data-toggle="tooltip" data-style="alt3" data-placement="top" title="Tooltip son!">nemo</span> molestias consectetur eaque maiores asperiores. Illum modi architecto dolore quia repudiandae.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="demo__heading">States Palette</h3>
+                        <p>Sit voluptates <span data-toggle="tooltip" data-style="success" data-placement="top" title="Tooltip son!">illo</span> animi illo nihil explicabo. <span data-toggle="tooltip" data-style="info" data-placement="top" title="Tooltip son!">Vollipsum</span> blanditiis debitis repellat et repellendus error. Repudiandae rerum ducimus <span data-toggle="tooltip" data-style="warning" data-placement="top" title="Tooltip son!">nemo</span> molestias consectetur eaque maiores asperiores. Illum modi architecto dolore quia <span data-toggle="tooltip" data-style="danger" data-placement="top" title="Tooltip son!">similique</span> repudiandae.</p>
                     </div>
                 </div>
             </section>
@@ -7767,7 +7897,7 @@
 
 
         <script src="js/jquery.min.js"></script>
-        <script src="js/tether.min.js"></script>
+        <script src="js/tether.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/functions.js"></script>
