@@ -12203,6 +12203,7 @@ span[data-toggle='tooltip'][data-style='danger']:after {
   text-align: center;
   border: 1px solid;
   border-radius: 0.375em;
+  background-color: white;
 }
 
 .tooltip-arrow {
@@ -12590,9 +12591,8 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
 .well {
   margin-bottom: 1.2em;
   padding: 0.9em;
-  border: 0.05882em solid #cccccc;
+  border: 0.05882em solid;
   border-radius: 0.375em;
-  background-color: #e6e6e6;
   box-shadow: inset 0 0.05882em 0.05882em rgba(0, 0, 0, 0.05);
 }
 .well blockquote {
@@ -12601,18 +12601,77 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
 }
 
 .well-lg {
-  padding: 1.35em;
-  border-radius: 0.5625em;
+  padding: 1.5em 1.125em;
 }
 
 .well-sm {
-  padding: 0.6em;
-  border-radius: 0.25em;
+  padding: 0.375em 0.72em;
 }
 
-.well-xs {
-  padding: 0.4em;
-  border-radius: 0.16667em;
+.well-default {
+  color: inherit;
+  border-color: #e6e6e6;
+  background-color: #e6e6e6;
+}
+
+.well-inverse {
+  color: white;
+  border-color: #343c4b;
+  background-color: #343c4b;
+}
+
+.well-cta {
+  color: white;
+  border-color: #f17306;
+  background-color: #f17306;
+}
+
+.well-main {
+  color: white;
+  border-color: #3662ad;
+  background-color: #3662ad;
+}
+
+.well-alt1 {
+  color: white;
+  border-color: #42587d;
+  background-color: #42587d;
+}
+
+.well-alt2 {
+  color: white;
+  border-color: #5f7394;
+  background-color: #5f7394;
+}
+
+.well-alt3 {
+  color: white;
+  border-color: #8193b1;
+  background-color: #8193b1;
+}
+
+.well-success {
+  color: white;
+  border-color: #5cb85c;
+  background-color: #5cb85c;
+}
+
+.well-info {
+  color: white;
+  border-color: #5bc0de;
+  background-color: #5bc0de;
+}
+
+.well-warning {
+  color: white;
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+}
+
+.well-danger {
+  color: white;
+  border-color: #d9534f;
+  background-color: #d9534f;
 }
 
 .text-xs-left {
@@ -13181,9 +13240,6 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
 
 .demo__titlebar {
   margin-bottom: 3em;
-  color: white;
-  border-color: #343c4b;
-  background-color: #343c4b;
 }
 
 .demo__section {

@@ -6,8 +6,6 @@
 
 .demo__titlebar {
     margin-bottom: rhythm(2);
-
-    @include navbar-solid-color-bar($body__color);
 }
 
 .demo__section {

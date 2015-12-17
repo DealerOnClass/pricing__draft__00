@@ -53,7 +53,8 @@
     "02__tools/mixin__text-hide",
     "02__tools/mixin__text-overflow",
     "02__tools/mixin__text-variant",
-    "02__tools/mixin__tooltip";
+    "02__tools/mixin__tooltip",
+    "02__tools/mixin__well";
 
 //  03  Generic
 @import
@@ -366,9 +367,10 @@
     "05__objects/tooltip/05__colors";
 
 @import
-    "05__objects/wells/00__variables",
+    "05__objects/wells/00__var",
     "05__objects/wells/01__well",
-    "05__objects/wells/02__well-variations";
+    "05__objects/wells/02__well-sizing",
+    "05__objects/wells/03__colors";
 
 //  ** DO NOT CHANGE ORDER
 @import
