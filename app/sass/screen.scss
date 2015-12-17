@@ -348,10 +348,13 @@
     "05__objects/tabs/02__tab-pane";
 
 @import
-    "05__objects/thumbnails/00__variables",
+    "05__objects/thumbnails/00__var",
     "05__objects/thumbnails/01__thumbnail",
-    "05__objects/thumbnails/02__thumbnail__link",
-    "05__objects/thumbnails/03__thumbnail-variations";
+    "05__objects/thumbnails/02__thumbnail-link",
+    "05__objects/thumbnails/03__thumbnail-image",
+    "05__objects/thumbnails/04__thumbnail-caption",
+    "05__objects/thumbnails/05__thumbnail-flush",
+    "05__objects/thumbnails/06__colors";
 
 @import
     "05__objects/tooltip/00__variables",

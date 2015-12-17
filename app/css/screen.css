@@ -12069,14 +12069,11 @@ h5 [class*='sortable-'] {
 
 .thumbnail {
   display: block;
-  overflow: hidden;
-  margin-bottom: 1.2em;
   padding: 0;
-  transition: border 0.2s ease-in-out;
-  border: 0.05882em solid #e6e6e6;
+  border: 0.05882em solid;
   border-radius: 0.375em;
-  background-color: #e6e6e6;
 }
+
 .thumbnail > img,
 .thumbnail a > img {
   margin-right: auto;
@@ -12085,24 +12082,29 @@ h5 [class*='sortable-'] {
   max-width: 100%;
   height: auto;
 }
-.thumbnail .caption {
-  padding: 0 0.9em;
-  color: #343c4b;
-}
-
-a.thumbnail {
-  padding: 0.3em 0.45em;
-  transition: all 0.2s ease-in-out;
-  border-color: #e6e6e6;
+.thumbnail > img:only-child,
+.thumbnail a > img:only-child {
   border-radius: 0.375em;
-  background-color: #e6e6e6;
+}
+.thumbnail > img:first-child,
+.thumbnail a > img:first-child {
+  border-top-right-radius: 0.375em;
+  border-top-left-radius: 0.375em;
+}
+.thumbnail > img:last-child,
+.thumbnail a > img:last-child {
+  border-bottom-right-radius: 0.375em;
+  border-bottom-left-radius: 0.375em;
 }
 
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-  border-color: #3662ad;
-  background-color: #3662ad;
+.thumbnail .caption {
+  padding: 0.9em;
+}
+.thumbnail .caption:last-child {
+  border-top: 1px solid;
+}
+.thumbnail .caption:first-child {
+  border-bottom: 1px solid;
 }
 
 .thumbnail-flush {
