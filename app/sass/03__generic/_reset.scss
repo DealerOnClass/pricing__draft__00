@@ -45,7 +45,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+//
 //  My Additions
 a {
     text-decoration: none;
+}
+
+a[disabled],
+button[disabled] {
+    @include state-and-self {
+        cursor: $cursor-disabled;
+
+        box-shadow: none;
+
+        @include opacity(0.65);
+    }
 }

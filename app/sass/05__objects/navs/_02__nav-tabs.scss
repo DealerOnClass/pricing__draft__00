@@ -20,7 +20,7 @@
     > li.open > a {
         @include state-and-self {
             color: $nav__link--active__color;
-            border-color: $nav__link--active__border;
+            border-color: transparent;
             background-color: $nav__link--active__bg;
         }
     }

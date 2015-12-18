@@ -1,4 +1,5 @@
 .btn-group-vertical {
+
     > .btn,
     > .btn-group,
     > .btn-group > .btn {
@@ -8,6 +9,7 @@
         width: 100%;
         max-width: 100%;
     }
+
     > .btn + .btn,
     > .btn + .btn-group,
     > .btn-group + .btn,
@@ -15,15 +17,18 @@
         margin-top: $one__true__pixel * -1;
         margin-left: 0;
     }
+
     > .btn,
     > .btn-group > .btn {
         border-radius: 0;
     }
+
     > .btn:first-child,
     > .btn-group:first-child > .btn {
         border-top-left-radius: $btn__radius;
         border-top-right-radius: $btn__radius;
     }
+
     > .btn:last-child,
     > .btn-group:last-child > .btn {
         border-bottom-left-radius: $btn__radius;

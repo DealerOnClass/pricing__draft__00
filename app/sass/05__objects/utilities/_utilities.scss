@@ -48,3 +48,102 @@
     border: 0 none;
     border-radius: 0;
 }
+// Wire
+// -------------------------
+@if $global__wire {
+    .wire {
+
+        &,
+        a,
+        h1 small,
+        h2 small,
+        h3 small,
+        h4 small,
+        h5 small,
+        h6 small,
+        span[data-toggle="tooltip"]:after {
+            color: $global__wire__fg;
+        }
+
+        .panel-wizard:before {
+            display: none !important;
+        }
+
+        .progress,
+        .progress-bar {
+            box-shadow: none !important;
+        }
+
+        .progress-bar {
+            color: $global__wire__bg;
+            background-color: $global__wire__fg;
+        }
+
+        .alert,
+        .badge,
+        .breadcrumb,
+        .breadcrumb > li > a,
+        .btn,
+        .card,
+        .card-header,
+        .card-block,
+        .card-footer,
+        .dropdown-menu,
+        .dropdown-menu > li > a,
+        form,
+        .form-control,
+        .form-control-static,
+        .control-label,
+        .input-group-addon,
+        .hero,
+        .nav,
+        .nav > li > a,
+        .pager,
+        .pager > li > a,
+        .pagination,
+        .pagination > li > a,
+        .panel,
+        .panel-heading,
+        .panel-body,
+        .panel-footer,
+        .popover,
+        .popover-title,
+        .popover-content,
+        .table,
+        .table > thead > tr > td,
+        .table > thead > tr > th,
+        .table > tbody > tr > td,
+        .table > tbody > tr > th,
+        .table > tfoot > tr > td,
+        .table > tfoot > tr > th,
+        .tooltip-inner,
+        .well {
+            @include state-and-self {
+                color: $global__wire__fg !important;
+                border-color: $global__wire__fg !important;
+                background-color: $global__wire__bg !important;
+            }
+        }
+
+        .btn.active,
+        .btn[active],
+        .dropdown-menu > li > a.active,
+        .dropdown-menu > li.active > a,
+        .dropdown-menu > li.open > a,
+        .nav > li > a.active,
+        .nav > li.active > a,
+        .nav > li.open > a,
+        .pager > li > a.active,
+        .pager > li.active > a,
+        .pagination > li > a.active,
+        .pagination > li.active > a,
+        .panel-heading.current {
+            color: $global__wire__bg !important;
+            background-color: $global__wire__fg !important;
+        }
+
+        .nav-tabs > li > a {
+            border-bottom: transparent !important;
+        }
+    }
+}

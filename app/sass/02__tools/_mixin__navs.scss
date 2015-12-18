@@ -2,7 +2,7 @@
     @each $class__name, $color in $input__palette {
         .nav-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border-color: $color;
+            border-color: transparent;
 
             a {
                 color: inherit;
@@ -22,7 +22,7 @@
             > li.open > a {
                 @include state-and-self {
                     color: inherit;
-                    border-color: shade($color, $nav__contrast);
+                    border-color: transparent;
                     background-color: shade($color, $nav__contrast);
                 }
             }

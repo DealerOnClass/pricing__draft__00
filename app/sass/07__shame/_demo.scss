@@ -4,12 +4,10 @@
     margin-bottom: rhythm(6);
 }
 
-.demo__titlebar {
+.demo__section,
+.demo__titlebar,
+.demo__hero {
     margin-bottom: rhythm(2);
-}
-
-.demo__section {
-    margin-bottom: rhythm(3);
 }
 
 .demo__heading {
@@ -23,11 +21,8 @@
     color: $gray__03;
 }
 
-.demo__hero {
-    margin-bottom: rhythm(2);
-}
-
 .demo {
+
     .alert,
     .breadcrumb,
     .card,
@@ -37,55 +32,20 @@
     }
 }
 
-.demo__grid {
-    .box {
-        overflow: hidden;
-
-        margin-bottom: rhythm(0.5);
-        padding-top: $global__y;
-        padding-bottom: $global__y;
-
-        text-align: center;
-
-        border: $one__true__pixel solid rgba(0,0,0,0.2);
-        border-radius: $global__radius;
-    }
-}
-
 .demo__dropdown,
 .demo__dropdown + ul,
 .demo__dropup + ul {
     display: block;
 }
+
 .demo__dropdown + ul {
     position: relative;
-}
-
-//  .demo__dropdown {
-//      color: $white;
-//      border-color: $primary__color;
-//      background-color: $primary__color;
-//  }
-
-.demo__color {
-    .row {
-        margin-bottom: rhythm(1);
-    }
-
-    .box {
-        padding: $global__y $global__x;
-
-        border-radius: $global__radius;
-    }
-
-    .box[class*="text-"] {
-        border: $one__true__pixel solid;
-    }
 }
 
 .demo__btn-group {
     margin-bottom: rhythm(.5);
 }
+
 .show__modal,
 .show__modal--palette,
 .show__popover,
@@ -100,9 +60,11 @@
 }
 
 .show__modal--palette {
+
     .modal-content {
         margin: rhythm(.5);
     }
+
     .modal-dialog {
         width: 100%;
     }
@@ -119,13 +81,6 @@
 
     @include clearfix;
 }
-
-#sidebar {
-    .nav-pills > li > a {
-        margin-bottom: $two__pixels;
-    }
-}
-
 
 .navbar-vertical-container {
     overflow-y: auto;
@@ -146,8 +101,6 @@
         position: absolute;
     }
 }
-
-
 
 .emulate-container-class {
     max-width: 34em;

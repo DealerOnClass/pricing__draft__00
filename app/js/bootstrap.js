@@ -2985,8 +2985,10 @@ var Tooltip = (function ($) {
           var tip = this.getTipElement();
           var tipId = Util.getUID(this.constructor.NAME);
 
+
           tip.setAttribute('id', tipId);
           this.element.setAttribute('aria-describedby', tipId);
+          this.element.setAttribute('active', true);  //  Added by Dr.Scss
 
           this.setContent();
 
@@ -3050,6 +3052,7 @@ var Tooltip = (function ($) {
           }
 
           _this17.element.removeAttribute('aria-describedby');
+          _this17.element.removeAttribute('active');  //  Added by Dr.Scss
           $(_this17.element).trigger(_this17.constructor.Event.HIDDEN);
           _this17.cleanupTether();
 

@@ -35,13 +35,13 @@
             z-index: 20;
 
             color: $pagination__link--active__color;
-            border-color: $pagination__link--active__border;
+            border-color: transparent;
             background-color: $pagination__link--active__bg;
         }
     }
 
-    > li > a:active {
-        box-shadow: $pagination__link--active__shadow;
+    > li > a[disabled] {
+        box-shadow: none;
     }
 }
 

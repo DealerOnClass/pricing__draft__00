@@ -2,29 +2,23 @@
     @each $class__name, $color in $input__palette {
         .btn-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border-color: check-color($color, 80, shade($color, $btn__contrast * 1.5), $color);
+            border-color: check-color($color, 80, rgba(0,0,0,0.15), transparent);
             background-color: $color;
 
-            @include state {
+            @include state-and-active {
                 color: check-color($color, 80, inherit, $white);
-                border-color: check-color($color, 80, shade($color, $btn__contrast * 3), shade($color, $btn__contrast * 1.5));
                 background-color: shade($color, $btn__contrast);
             }
 
-            &.bs-tether-enabled,
-            &.active {
-                border-color: check-color($color, 80, shade($color, $btn__contrast * 1.5), $color);
-                background-color: $color;
+            &[active] {
+                color: check-color($color, 80, inherit, $white);
+                background-color: shade($color, $btn__contrast);
             }
+
             &[disabled] {
                 @include state-and-self {
                     background-color: $color;
                 }
-            }
-
-            &.dropup-toggle:not(:first-child),
-            &.dropdown-toggle:not(:first-child) {
-                border-left-color: shade($color, $btn__contrast * 1.5);
             }
         }
     }

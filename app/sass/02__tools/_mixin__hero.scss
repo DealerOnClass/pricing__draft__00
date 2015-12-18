@@ -2,7 +2,7 @@
     @each $class__name, $color in $input__palette {
         .hero-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border-color: check-color($color, 80, inherit, $white);
+            border-color: transparent;
             background-color: $color;
 
             .btn {

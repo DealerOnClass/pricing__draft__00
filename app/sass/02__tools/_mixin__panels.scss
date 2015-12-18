@@ -23,6 +23,11 @@
                 background-color: shade($color, $panel__contrast);
             }
 
+            .panel-body,
+            .panel-footer {
+                border-color: $gray__02;
+            }
+
             &.panel-wizard:before {
                 color: shade($color, $panel__contrast * 1.5);
             }

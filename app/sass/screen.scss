@@ -64,11 +64,12 @@
 //  04  Base
 @import
     "04__base/font__avenir",
+    "04__base/font__merriweather",
     "04__base/font__sourcecodepro",
     "04__base/font-awesome/config";
 
 @import
-    "04__base/typography/00__variables",
+    "04__base/typography/00__var",
     "04__base/typography/01__typography__root",
     "04__base/typography/02__typography__headings",
     "04__base/typography/03__typography__display",
@@ -163,16 +164,17 @@
     "05__objects/close/01__close";
 
 @import
-    "05__objects/dropdown/00__var.scss",
-    "05__objects/dropdown/01__dropdown.scss",
-    "05__objects/dropdown/02__dropdown-menu.scss",
-    "05__objects/dropdown/03__dropdown-header.scss",
-    "05__objects/dropdown/04__dropdown-backdrop.scss",
-    "05__objects/dropdown/05__dropdown-mega-menus.scss",
-    "05__objects/dropdown/06__dropup.scss",
-    "05__objects/dropdown/07__dropdown__caret.scss",
-    "05__objects/dropdown/08__dropdown__divider.scss",
-    "05__objects/dropdown/09__colors.scss";
+    "05__objects/dropdown/00__var",
+    "05__objects/dropdown/01__dropdown",
+    "05__objects/dropdown/02__dropdown-menu",
+    "05__objects/dropdown/03__dropdown-item",
+    "05__objects/dropdown/04__dropdown-header",
+    "05__objects/dropdown/05__dropdown-backdrop",
+    "05__objects/dropdown/06__dropdown-mega-menus",
+    "05__objects/dropdown/07__dropup",
+    "05__objects/dropdown/08__dropdown__caret",
+    "05__objects/dropdown/09__dropdown__divider",
+    "05__objects/dropdown/10__colors";
 
 @import
     "05__objects/forms/00__var",

@@ -12,14 +12,11 @@ legend {
 label {
     display: inline-block;
     max-width: 100%;
-    font-family: inherit;
-    font-weight: normal;
-    //  margin-bottom: 5px;
 }
 
 input[type="search"] {
     box-sizing: border-box;
-    -webkit-appearance: none;
+    appearance: none;
 }
 
 input[type="radio"],

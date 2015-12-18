@@ -19,17 +19,9 @@
     > li > a.active {
         @include state-and-self {
             color: $pager__link--active__color;
-            border-color: $pager__link--active__border;
+            border-color: transparent;
             background-color: $pager__link--active__bg;
         }
-    }
-
-    > li > a:active {
-        box-shadow: $pager__link--active__shadow;
-    }
-
-    > li > a[disabled] {
-        @include state-disabled;
     }
 
     > .next {

@@ -8,10 +8,9 @@
             }
 
             > li > a {
-                border-color: $color;
+                border-color: transparent;
                 background-color: $color;
                 @include state {
-                    border-color: shade($color, $pager__contrast);
                     background-color: shade($color, $pager__contrast);
                 }
             }
@@ -19,7 +18,7 @@
             > li.active > a,
             > li > a.active {
                 @include state-and-self {
-                    border-color: shade($color, $pager__contrast);
+                    border-color: transparent;
                     background-color: shade($color, $pager__contrast);
                 }
             }

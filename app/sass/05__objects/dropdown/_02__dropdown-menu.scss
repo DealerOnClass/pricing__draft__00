@@ -13,50 +13,8 @@
 
     list-style: none;
 
-    border: $one__true__pixel solid;
     border-radius: $dropdown__radius;
-    background-color: $white;
     box-shadow: $dropdown-menu__shadow;
-
-    > li > a {
-        position: relative;
-
-        display: block;
-        clear: both;
-
-        padding: $dropdown-menu__link__padding;
-
-        white-space: nowrap;
-    }
-
-    > li > a.active,
-    > li.active > a,
-    > li.open > a {
-        @include state-and-self {
-            color: $dropdown-menu__link--active__color;
-            border-color: $dropdown-menu__link--active__border;
-            background-color: $dropdown-menu__link--active__bg;
-        }
-    }
-
-    > li > a:active {
-        box-shadow: $dropdown-menu__link--active__shadow;
-    }
-
-    > li > a[disabled] {
-        background-color: transparent!important;
-        @include state-disabled;
-    }
-
-    > li:first-child > a {
-        border-top-left-radius: $dropdown__radius;
-        border-top-right-radius: $dropdown__radius;
-    }
-
-    > li:last-child > a {
-        border-bottom-right-radius: $dropdown__radius;
-        border-bottom-left-radius: $dropdown__radius;
-    }
 
     .open > & {
         display: block;

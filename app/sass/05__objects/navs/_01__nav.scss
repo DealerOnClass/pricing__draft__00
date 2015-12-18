@@ -17,13 +17,5 @@
         padding: $nav__link__padding;
     }
 
-    > li > a:active {
-        box-shadow: $nav__link--active__shadow;
-    }
-
-    > li > a[disabled] {
-        @include state-disabled;
-    }
-
     @include clearfix;
 }

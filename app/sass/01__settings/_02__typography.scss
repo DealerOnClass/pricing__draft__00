@@ -1,19 +1,30 @@
+//
 //  Ratio
 $master__font-size:     17;
 $base__font-size:       ($master__font-size / 16) * 100%;
 $base__font-ratio:      1.25;
 $base__font-unit:       1em;
 $base__line-height:     1.5;
+//
 //  Typeface
 $sans--regular:         'AvenirRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $sans--semibold:        'AvenirMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $sans--bold:            'AvenirHeavy', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$mono--regular:         'SourceCodePro' !default;
-//  Body
-$body__font:            $sans--regular;
-$body__line-height:     $base__line-height;
-$body__color:           $inverse__color;
-//  Headings
+$serif--regular:        'MerriweatherRegular', Georgia, serif !default;
+$serif--bold:           'MerriweatherBold', Georgia, serif !default;
+$serif--black:          'MerriweatherBlack', Georgia, serif !default;
+$mono--regular:         'SourceCodePro', 'Lucida Console', monospace !default;
+//
+//  Typeface Palette
+$primary__font--regular:      $sans--regular;
+$primary__font--bold:         $sans--bold;
+//
+$secondary__font--regular:    $serif--regular;
+$secondary__font--bold:       $serif--bold;
+//
+$code__font--regular:         $mono--regular;
+//
+//  Typeface Rhythm
 $h5__font-size:         $base__font-unit;
 $h6__font-size:         $h5__font-size / $base__font-ratio;
 $h4__font-size:         $h5__font-size * $base__font-ratio;

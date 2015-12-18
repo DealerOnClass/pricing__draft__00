@@ -3,52 +3,81 @@
         @if $dropdown__use-btn__color {
             .btn-#{$class__name} {
                 + .dropdown-menu {
-                    color: check-color($color, 80, inherit, $white);
-                    border: 0 none;
                     background-color: $color;
+
+                    > li.dropdown-header,
+                    > li > a,
+                    > li:last-child > a {
+                        color: check-color($color, 80, inherit, $white);
+                        border-color: transparent;
+                        background-color: $color;
+                    }
+
                     > li > a {
-                        color: inherit;
                         @include state {
-                            color: inherit;
                             background-color: shade($color, $btn__contrast);
                         }
                     }
+
                     > li.active > a,
                     > li > a.active {
                         @include state-and-self {
                             background-color: shade($color, $btn__contrast * 2);
                         }
                     }
+
+                    > li > a[disabled] {
+                        @include state-and-self {
+                            background-color: $color;
+                        }
+                    }
                 }
+
                 .btn-group &.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
                     border-bottom-color: shade($color, $btn__contrast * 1.5);
                 }
+
                 .dropup.open &.dropup-toggle:after {
                     border-top-color: shade($color, $btn__contrast * 1.5);
                 }
             }
         }
+
         .dropdown-menu-#{$class__name} {
-            color: check-color($color, 80, inherit, $white);
-            border: 0 none;
             background-color: $color;
+
+            > li.dropdown-header,
+            > li > a,
+            > li:last-child > a {
+                color: check-color($color, 80, inherit, $white);
+                border-color: transparent;
+                background-color: $color;
+            }
+
             > li > a {
-                color: inherit;
                 @include state {
-                    color: inherit;
                     background-color: shade($color, $btn__contrast);
                 }
             }
+
             > li.active > a,
             > li > a.active {
                 @include state-and-self {
                     background-color: shade($color, $btn__contrast * 2);
                 }
             }
+
+            > li > a[disabled] {
+                @include state-and-self {
+                    background-color: $color;
+                }
+            }
         }
+
         .dropdown-toggle + .dropdown-menu-#{$class__name}:after {
             border-bottom-color: shade($color, $btn__contrast * 1.5);
         }
+
         .dropup-toggle + .dropdown-menu-#{$class__name}:after {
             border-bottom-color: shade($color, $btn__contrast * 1.5);
         }

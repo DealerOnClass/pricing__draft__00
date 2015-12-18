@@ -16,25 +16,21 @@
 
     touch-action: manipulation;
 
-    &[data-toggle="popover"].bs-tether-enabled,
     &.active,
     &.open {
-        @include state-and-self {
-            color: $btn__link--active__color;
-            border-color: $btn__link--active__border;
-            background-color: $btn__link--active__bg;
-        }
+        color: $btn__link--active__color;
+        border-color: transparent;
+        background-color: $btn__link--active__bg;
     }
 
-    &[data-toggle="popover"].bs-tether-enabled,
-    &:active,
+    &[active] {
+        color: $btn__link--active__color;
+        background-color: $btn__link--active__bg;
+    }
+
     &.active,
     &.open {
         box-shadow: $btn--active__shadow;
-    }
-
-    &[disabled] {
-        @include state-disabled;
     }
 }
 

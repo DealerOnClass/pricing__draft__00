@@ -22,9 +22,8 @@ $dropdown-menu__link__padding:          $dropdown__y $dropdown__x;
 $dropdown-menu__link--active__color:    $white;
 $dropdown-menu__link--active__border:   $primary__color;
 $dropdown-menu__link--active__bg:       $primary__color;
-$dropdown-menu__link--active__shadow:   inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
 //
-$dropdown-header__font-family:          $sans--bold;
+$dropdown-header__font:                 $primary__font--bold;
 //
 $dropdown__has__caret:                  true !default;
 $dropdown__caret__use-icon:             true !default;

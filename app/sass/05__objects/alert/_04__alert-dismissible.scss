@@ -1,17 +1,13 @@
 .alert-dismissible {
-    position: relative;
-
-    padding-right: $alert__x * 3;
 
     .close {
         line-height: 1;
+        float: right;
 
-        position: absolute;
-        top: $alert__y / 2;
-        right: $alert__x / 3;
+        position: relative;
+        top: $alert__y * -.75;
+        right: $alert__x * -.75;
 
-        padding: $global__y;
-
-        border-radius: $alert__radius;
+        padding: $alert__y;
     }
 }

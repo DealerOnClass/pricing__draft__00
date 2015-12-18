@@ -1,5 +1,6 @@
 html {
     font-size: 100%;
+    line-height: $base__line-height;
 
     @media (min-width: $screen-sm-min) {
         font-size: $base__font-size;
@@ -8,7 +9,6 @@ html {
 
 body {
     font-family: $body__font;
-    line-height: $body__line-height;
 
     min-width: 300px;
 

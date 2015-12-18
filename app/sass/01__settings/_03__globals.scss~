@@ -16,9 +16,7 @@ $global__gutter:           30px !default;
 $global__contrast:         10% !default;
 //
 //  General Options
-$global__wire:             true !default;
-$global__wire__fg:         $primary__color;
-$global__wire__bg:         $white;
+$global__wire:             false !default;
 //
 //  Pixel Units            //   Equivalent to pixels in unit "$base__font-unit"
 $one__pixel:               $base__font-unit / $master__font-size;

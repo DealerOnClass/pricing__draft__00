@@ -5,14 +5,14 @@
             color: check-color($color, 80, inherit, $white);
 
             .card-block {
-                border-color: $color !important;
+                border-color: transparent;
                 background-color: $color;
             }
 
             .card-header,
             .card-footer {
                 background-color:  shade($color, $card__contrast);
-                border-color:      shade($color, $card__contrast)!important;
+                border-color:      transparent;
             }
         }
     }

@@ -19,8 +19,6 @@ $pagination__radius:                $pagination__radius;
 //  Components
 $pagination__link--active__color:   white;
 $pagination__link--active__bg:      $primary__color;
-$pagination__link--active__border:  $primary__color;
-$pagination__link--active__shadow:  inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
 //
 $pagination__use-icon:              true !default;
 $pagination__next__icon:            $fa-var-angle-right;

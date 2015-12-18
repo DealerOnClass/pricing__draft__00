@@ -1,28 +1,39 @@
+//
+//  Body
+$body__font:            $primary__font--regular;
+$body__color:           $inverse__color;
+//
+//  Heading             Sizes in "../01__settings/02__typography"
+$heading__font:         $primary__font--bold;
+$heading__small__size:  $h6__font-size;
+$heading__small__color: $gray__03;
+//
 //  Display
+$display__font:         $primary__font--bold;
 $display-4__font-size:  $h1__font-size * $base__font-ratio;
 $display-3__font-size:  $display-4__font-size * $base__font-ratio;
 $display-2__font-size:  $display-3__font-size * $base__font-ratio;
 $display-1__font-size:  $display-2__font-size * $base__font-ratio;
-//  Heading Secondary Text
-$heading__font:         $sans--bold;
-$heading__small__size:  $h6__font-size;
-$heading__small__color: $gray__03;
+//
 //  Links
 $link__color:           $primary__color;
 $link--hover__color:    shade($link__color, 20%);
+$link--active__shadow:  inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
+//
 //  Lead Paragraph
 $lead__font-size:       $h4__font-size;
+//
 //  Strong
-$strong__font:          $sans--bold;
+$strong__font:          $primary__font--bold;
+//
 //  List
-$list__is-inside:       true !default;
 $list__padding:         rhythm(1);
+//
 //  Definition List
 $dl__horizontal__width:   rhythm(5);
 $dl__horizontal__gutter:  ($global__x * 2);
+//
 //  Code
-$code__font:            $mono--regular;
+$code__font:            $code__font--regular;
 $mark__bg:              $accent__color;
 $mark__color:           $white;
-//  Hr
-$hr__color:             $gray__02;

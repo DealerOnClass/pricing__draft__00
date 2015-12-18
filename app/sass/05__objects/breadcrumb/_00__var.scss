@@ -21,4 +21,4 @@ $breadcrumb__separator__use-icon:   true !default;
 $breadcrumb__separator__icon:       $fa-var-angle-right;
 $breadcrumb__separator__padding:    $breadcrumb__y ( $breadcrumb__x / 4 );
 //
-$breadcrumb__link--active__shadow:  inset 0 $three__pixels $five__pixels rgba(0, 0, 0, 0.125);
+$breadcrumb__link--active__font:    $primary__font--bold;

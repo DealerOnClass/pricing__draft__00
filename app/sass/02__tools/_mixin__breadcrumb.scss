@@ -2,10 +2,8 @@
     @each $class__name, $color in $input__palette {
         .breadcrumb-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border-color: $color;
+            border-color: transparent;
             background-color: $color;
-
-            border: 0 none;
 
             > li > a {
                 @include state {
