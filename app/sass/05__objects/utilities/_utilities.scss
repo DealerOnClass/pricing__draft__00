@@ -96,6 +96,14 @@
         .control-label,
         .input-group-addon,
         .hero,
+        .label,
+        .list-group-item,
+        .modal-header,
+        .modal-body,
+        .modal-footer,
+        .navbar,
+        .navbar a,
+        .navbar > li > a,
         .nav,
         .nav > li > a,
         .pager,
@@ -125,11 +133,19 @@
             }
         }
 
+        .hero + .hero,
+        .list-group-item + .list-group-item,
+        .panel-wizard + .panel-wizard .panel-heading {
+            border-top: 0 none;
+        }
+
         .btn.active,
         .btn[active],
+        .btn-group.open > a,
         .dropdown-menu > li > a.active,
         .dropdown-menu > li.active > a,
         .dropdown-menu > li.open > a,
+        a.list-group-item.active,
         .nav > li > a.active,
         .nav > li.active > a,
         .nav > li.open > a,
@@ -143,7 +159,33 @@
         }
 
         .nav-tabs > li > a {
-            border-bottom: transparent !important;
+            border-bottom: transparent;
+        }
+
+        .navbar {
+            border: $one__true__pixel solid $global__wire__fg;
+
+            &.navbar-stacked .dropdown-menu > li > a {
+                border-right: 0 none;
+                border-left: 0 none;
+            }
+
+            &.navbar-fixed-top,
+            &.navbar-static-top {
+                border-right: 0 none;
+                border-left: 0 none;
+                border-top: 0 none;
+
+                .dropdown-mega-menu .dropdown-menu {
+                    border-top: $one__true__pixel solid $global__wire__fg;
+                    border-bottom: $one__true__pixel solid $global__wire__fg;
+                }
+            }
+
+            .navbar-right {
+                border-top-right-radius: $navbar__radius;
+                border-bottom-right-radius: $navbar__radius;
+            }
         }
     }
 }

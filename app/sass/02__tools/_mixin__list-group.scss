@@ -2,24 +2,26 @@
     @each $class__name, $color in $input__palette {
         .list-group-#{$class__name} {
             background-color: $color;
+
             a.list-group-item {
                 @include state {
                     color: check-color($color, 80, inherit, $white);
-                    border-color: shade($color, $list-group__contrast);
                     background-color: shade($color, $list-group__contrast);
                 }
             }
+
             .list-group-item {
                 color: check-color($color, 80, inherit, $white);
-                border-color: $color;
+                border-color: transparent;
                 background-color: $color;
-                &:not(:last-child) {
-                    border-bottom-color: shade($color, $list-group__contrast);
-                }
+
                 &.active {
-                    border-color: shade($color, $list-group__contrast);
                     background-color: shade($color, $list-group__contrast);
                 }
+            }
+
+            .list-group-item + .list-group-item {
+                border-top-color: rgba(0,0,0,0.15);
             }
         }
     }

@@ -66,6 +66,15 @@ $("#navbar-main .navbar-sidebar-wrapper a[href^='#ui__']").on('click', function(
 
 ////////////////////////////////////////
 //
+//  Wire
+//
+$("[data-toggle='wire']").on("click", function() {
+    $(this).toggleClass("active");
+    $("#body").toggleClass("wire");
+});
+
+////////////////////////////////////////
+//
 //  Panel Wizard
 //
 //  Step through panel wizard

@@ -11,14 +11,3 @@
     border: $one__true__pixel solid;
     border-radius: $label__radius;
 }
-
-a.label {
-
-    @include state {
-        cursor: pointer;
-    }
-
-    &:active {
-        box-shadow: $label--active__shadow;
-    }
-}

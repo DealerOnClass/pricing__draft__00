@@ -28,18 +28,19 @@
     }
 }
 
-.modal-header:first-child,
-.modal-body:first-child,
-.modal-footer:first-child {
-    border-top-right-radius: $modal__radius;
-    border-top-left-radius: $modal__radius;
-}
+.modal-header,
+.modal-body,
+.modal-footer {
 
-.modal-header:last-child,
-.modal-body:last-child,
-.modal-footer:last-child {
-    border-bottom-right-radius: $modal__radius;
-    border-bottom-left-radius: $modal__radius;
+    &:first-child {
+        border-top-right-radius: $modal__radius;
+        border-top-left-radius: $modal__radius;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: $modal__radius;
+        border-bottom-left-radius: $modal__radius;
+    }
 }
 
 .modal-body:first-child,

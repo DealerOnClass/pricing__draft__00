@@ -9,12 +9,8 @@
 
     &.active {
         color: $list-group-item--active__color;
-        border-color: $list-group-item--active__border;
+        border-color: transparent;
         background-color: $list-group-item--active__bg;
-    }
-
-    & + & {
-        border-top: 0 none;
     }
 
     &:first-child {
@@ -25,19 +21,6 @@
     &:last-child {
         border-bottom-right-radius: $list-group-item__radius;
         border-bottom-left-radius: $list-group-item__radius;
-    }
-}
-
-a.list-group-item,
-button.list-group-item {
-
-    &:active {
-        box-shadow: $list-group-item--active__shadow;
-    }
-
-    &[disabled] {
-        background-color: transparent!important;
-        @include state-disabled;
     }
 }
 

@@ -13,6 +13,9 @@
                 }
             }
 
+            .navbar-nav > li.open > a,
+            .navbar-nav > li.active > a,
+            .navbar-nav > li > a.active,
             li.open > a,
             li.active > a,
             a.active {
@@ -21,65 +24,62 @@
                 }
             }
         }
+
         .navbar-#{$class__name} .dropdown-menu {
-            border: 0 none;
             background-color: shade($color, $navbar__contrast);
 
-            a {
+            > li > a {
+                border-color: transparent;
+                background-color: shade($color, $navbar__contrast);
                 @include state {
                     background-color: shade($color, $navbar__contrast * 2);
                 }
             }
 
-            li.open > a,
-            li.active > a,
-            a.active {
+            > li.open > a,
+            > li.active > a,
+            > a.active {
                 @include state-and-self {
                     background-color: shade($color, $navbar__contrast * 2);
                 }
             }
+
             @media (max-width: $grid-float-breakpoint-max) {
                 background-color: shade($color, $navbar__contrast * 2);
-                a {
+
+                > li > a {
                     @include state {
                         background-color: shade($color, $navbar__contrast * 3);
                     }
                 }
-                li.open > a,
-                li.active > a,
-                a.active {
+
+                > li.open > a,
+                > li.active > a,
+                > a.active {
                     background-color: shade($color, $navbar__contrast * 3);
                 }
             }
         }
+
         .navbar-#{$class__name}.navbar-stacked {
+
             .dropdown-menu {
-                background-color: shade($color, $navbar__contrast * 2);
-                a {
+
+                > li > a {
+                    background-color: shade($color, $navbar__contrast * 2);
                     @include state {
                         background-color: shade($color, $navbar__contrast * 3);
                     }
                 }
-                li.open > a,
-                li.active > a,
-                a.active {
+
+                > li.open > a,
+                > li.active > a,
+                > a.active {
                     @include state-and-self {
                         background-color: shade($color, $navbar__contrast * 3);
                     }
                 }
             }
         }
-        .navbar-#{$class__name}.navbar-mega-menu {
-            .dropdown-mega-menu .dropdown-menu {
-                margin: 0;
-            }
-        }
     }
-}
-
-
-@mixin navbar-solid-color-bar($input__color) {
-    color: $white;
-    border-color: $input__color;
-    background-color: $input__color;
 }
