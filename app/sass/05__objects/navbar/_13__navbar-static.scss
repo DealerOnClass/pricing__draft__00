@@ -1,5 +1,8 @@
 .navbar-static-top {
-    z-index: $zindex-navbar;
+    border-right: 0 none;
+    border-left: 0 none;
+
+    z-index: $zindex-navbar-fixed;
 
     @media (min-width:  $grid-float-breakpoint) {
         border-radius: 0;

@@ -1,6 +1,10 @@
 a {
     color:  $link__color;
 
+    > svg path {
+        fill: $link__color;
+    }
+
     @include state {
         color: $link--hover__color;
     }
@@ -9,4 +13,3 @@ a {
         box-shadow: $link--active__shadow;
     }
 }
-

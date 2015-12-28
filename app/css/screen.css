@@ -2908,6 +2908,9 @@ hr, .dropdown-menu .divider {
 a {
   color: #3662ad;
 }
+a > svg path {
+  fill: #3662ad;
+}
 a:hover, a:active, a:focus {
   color: #2b4e8a;
 }
@@ -2989,7 +2992,6 @@ ul,
 ol,
 address,
 dd,
-table,
 legend {
   margin-bottom: 1.5em;
 }
@@ -6672,13 +6674,10 @@ h5 .btn-group {
 
 .hero {
   padding: 4.2em 0.9em;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
 }
 
 .hero-default {
   color: inherit;
-  border-color: transparent;
   background-color: #e6e6e6;
 }
 .hero-default a {
@@ -6692,7 +6691,6 @@ h5 .btn-group {
 
 .hero-inverse {
   color: white;
-  border-color: transparent;
   background-color: #343c4b;
 }
 .hero-inverse a {
@@ -6706,7 +6704,6 @@ h5 .btn-group {
 
 .hero-cta {
   color: white;
-  border-color: transparent;
   background-color: #f17306;
 }
 .hero-cta a {
@@ -6720,7 +6717,6 @@ h5 .btn-group {
 
 .hero-main {
   color: white;
-  border-color: transparent;
   background-color: #3662ad;
 }
 .hero-main a {
@@ -6734,7 +6730,6 @@ h5 .btn-group {
 
 .hero-alt1 {
   color: white;
-  border-color: transparent;
   background-color: #42587d;
 }
 .hero-alt1 a {
@@ -6748,7 +6743,6 @@ h5 .btn-group {
 
 .hero-alt2 {
   color: white;
-  border-color: transparent;
   background-color: #5f7394;
 }
 .hero-alt2 a {
@@ -6762,7 +6756,6 @@ h5 .btn-group {
 
 .hero-alt3 {
   color: white;
-  border-color: transparent;
   background-color: #8193b1;
 }
 .hero-alt3 a {
@@ -6776,7 +6769,6 @@ h5 .btn-group {
 
 .hero-success {
   color: white;
-  border-color: transparent;
   background-color: #5cb85c;
 }
 .hero-success a {
@@ -6790,7 +6782,6 @@ h5 .btn-group {
 
 .hero-info {
   color: white;
-  border-color: transparent;
   background-color: #5bc0de;
 }
 .hero-info a {
@@ -6804,7 +6795,6 @@ h5 .btn-group {
 
 .hero-warning {
   color: white;
-  border-color: transparent;
   background-color: #f0ad4e;
 }
 .hero-warning a {
@@ -6818,7 +6808,6 @@ h5 .btn-group {
 
 .hero-danger {
   color: white;
-  border-color: transparent;
   background-color: #d9534f;
 }
 .hero-danger a {
@@ -7070,7 +7059,6 @@ a.label-danger:hover, a.label-danger:active, a.label-danger:focus {
 }
 
 .list-group {
-  margin-bottom: 0;
   padding-left: 0;
   list-style: none;
   border-radius: 0.375em;
@@ -7626,9 +7614,6 @@ button.list-group-item {
   background-color: #3662ad;
 }
 
-.nav-tabs {
-  border-bottom: 1px solid;
-}
 .nav-tabs > li > a {
   border-bottom-color: transparent;
   border-bottom-right-radius: 0;
@@ -7674,9 +7659,27 @@ button.list-group-item {
   display: none;
 }
 
+.nav-flush > li > a {
+  border-radius: 0;
+}
+.nav-flush > li:first-child > a {
+  border-top-left-radius: 0.375em;
+}
+.nav-flush > li:last-child > a {
+  border-top-right-radius: 0.375em;
+}
+.nav-flush > li + li {
+  margin-left: -1px;
+}
+.nav-flush.nav-justified {
+  border-spacing: 0;
+}
+.nav-flush.nav-justified > li {
+  top: 0;
+}
+
 .nav-default {
   color: inherit;
-  border-color: transparent;
 }
 .nav-default a {
   color: inherit;
@@ -7714,7 +7717,6 @@ button.list-group-item {
 
 .nav-inverse {
   color: white;
-  border-color: transparent;
 }
 .nav-inverse a {
   color: inherit;
@@ -7752,7 +7754,6 @@ button.list-group-item {
 
 .nav-cta {
   color: white;
-  border-color: transparent;
 }
 .nav-cta a {
   color: inherit;
@@ -7790,7 +7791,6 @@ button.list-group-item {
 
 .nav-main {
   color: white;
-  border-color: transparent;
 }
 .nav-main a {
   color: inherit;
@@ -7828,7 +7828,6 @@ button.list-group-item {
 
 .nav-alt1 {
   color: white;
-  border-color: transparent;
 }
 .nav-alt1 a {
   color: inherit;
@@ -7866,7 +7865,6 @@ button.list-group-item {
 
 .nav-alt2 {
   color: white;
-  border-color: transparent;
 }
 .nav-alt2 a {
   color: inherit;
@@ -7904,7 +7902,6 @@ button.list-group-item {
 
 .nav-alt3 {
   color: white;
-  border-color: transparent;
 }
 .nav-alt3 a {
   color: inherit;
@@ -7942,7 +7939,6 @@ button.list-group-item {
 
 .nav-success {
   color: white;
-  border-color: transparent;
 }
 .nav-success a {
   color: inherit;
@@ -7980,7 +7976,6 @@ button.list-group-item {
 
 .nav-info {
   color: white;
-  border-color: transparent;
 }
 .nav-info a {
   color: inherit;
@@ -8018,7 +8013,6 @@ button.list-group-item {
 
 .nav-warning {
   color: white;
-  border-color: transparent;
 }
 .nav-warning a {
   color: inherit;
@@ -8056,7 +8050,6 @@ button.list-group-item {
 
 .nav-danger {
   color: white;
-  border-color: transparent;
 }
 .nav-danger a {
   color: inherit;
@@ -8263,6 +8256,11 @@ button.list-group-item {
   }
 }
 
+.navbar-link {
+  display: inline-block;
+  padding: 0.9em 0.9em;
+}
+
 .navbar-toggle {
   position: relative;
   float: right;
@@ -8350,14 +8348,7 @@ button.list-group-item {
 .navbar-sidebar-header,
 .navbar-sidebar-body,
 .navbar-sidebar-footer {
-  padding-right: 0.9em;
-  padding-left: 0.9em;
-}
-
-.navbar-sidebar-header,
-.navbar-sidebar-footer {
-  padding-top: 1.35em;
-  padding-bottom: 1.35em;
+  padding: 1.35em 0.9em;
 }
 
 .navbar-sidebar-header {
@@ -8365,14 +8356,18 @@ button.list-group-item {
 }
 
 .navbar-sidebar-body .navbar-nav {
-  margin-right: -0.9em;
-  margin-left: -0.9em;
+  margin: -1.35em -0.9em;
 }
 
 .navbar-sidebar-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-right: 0 none;
+  border-left: 0 none;
+}
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
@@ -8401,8 +8396,20 @@ button.list-group-item {
   bottom: 0;
 }
 
+.navbar-ghost {
+  width: 100%;
+  height: 3.3em;
+}
+.navbar-ghost:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .navbar-static-top {
-  z-index: 1000;
+  border-right: 0 none;
+  border-left: 0 none;
+  z-index: 1030;
 }
 @media (min-width: 768px) {
   .navbar-static-top {
@@ -8431,6 +8438,9 @@ button.list-group-item {
   color: inherit;
   border: 0 none;
   background-color: #e6e6e6;
+}
+.navbar-default svg path {
+  fill: #343c4b;
 }
 .navbar-default a,
 .navbar-default button {
@@ -8524,6 +8534,9 @@ button.list-group-item {
   border: 0 none;
   background-color: #343c4b;
 }
+.navbar-inverse svg path {
+  fill: white;
+}
 .navbar-inverse a,
 .navbar-inverse button {
   color: inherit;
@@ -8615,6 +8628,9 @@ button.list-group-item {
   color: white;
   border: 0 none;
   background-color: #f17306;
+}
+.navbar-cta svg path {
+  fill: white;
 }
 .navbar-cta a,
 .navbar-cta button {
@@ -8708,6 +8724,9 @@ button.list-group-item {
   border: 0 none;
   background-color: #3662ad;
 }
+.navbar-main svg path {
+  fill: white;
+}
 .navbar-main a,
 .navbar-main button {
   color: inherit;
@@ -8799,6 +8818,9 @@ button.list-group-item {
   color: white;
   border: 0 none;
   background-color: #42587d;
+}
+.navbar-alt1 svg path {
+  fill: white;
 }
 .navbar-alt1 a,
 .navbar-alt1 button {
@@ -8892,6 +8914,9 @@ button.list-group-item {
   border: 0 none;
   background-color: #5f7394;
 }
+.navbar-alt2 svg path {
+  fill: white;
+}
 .navbar-alt2 a,
 .navbar-alt2 button {
   color: inherit;
@@ -8983,6 +9008,9 @@ button.list-group-item {
   color: white;
   border: 0 none;
   background-color: #8193b1;
+}
+.navbar-alt3 svg path {
+  fill: white;
 }
 .navbar-alt3 a,
 .navbar-alt3 button {
@@ -9076,6 +9104,9 @@ button.list-group-item {
   border: 0 none;
   background-color: #5cb85c;
 }
+.navbar-success svg path {
+  fill: white;
+}
 .navbar-success a,
 .navbar-success button {
   color: inherit;
@@ -9167,6 +9198,9 @@ button.list-group-item {
   color: white;
   border: 0 none;
   background-color: #5bc0de;
+}
+.navbar-info svg path {
+  fill: white;
 }
 .navbar-info a,
 .navbar-info button {
@@ -9260,6 +9294,9 @@ button.list-group-item {
   border: 0 none;
   background-color: #f0ad4e;
 }
+.navbar-warning svg path {
+  fill: white;
+}
 .navbar-warning a,
 .navbar-warning button {
   color: inherit;
@@ -9351,6 +9388,9 @@ button.list-group-item {
   color: white;
   border: 0 none;
   background-color: #d9534f;
+}
+.navbar-danger svg path {
+  fill: white;
 }
 .navbar-danger a,
 .navbar-danger button {
@@ -12157,6 +12197,12 @@ h5 [class*='sortable-'] {
 .tab-content > .active {
   display: block;
 }
+.tab-content.well {
+  border-top-left-radius: 0;
+}
+.nav-justified + .tab-content.well {
+  border-top-right-radius: 0;
+}
 
 .thumbnail {
   display: block;
@@ -13015,6 +13061,18 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   padding: 0;
   border: 0 none;
   border-radius: 0;
+}
+
+.wire {
+  margin-bottom: 9em;
+}
+.wire, .wire > * {
+  color: #3662ad;
+  fill: #3662ad;
+  background-color: white;
+}
+.wire hr, .wire .dropdown-menu .divider, .dropdown-menu .wire .divider {
+  border-color: #3662ad;
 }
 
 .visible-xs {

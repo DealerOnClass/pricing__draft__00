@@ -28,14 +28,7 @@ $navbar-sidebar-collapse-unit: ( $navbar__y * 2 ) + $base__line-height;
 .navbar-sidebar-header,
 .navbar-sidebar-body,
 .navbar-sidebar-footer {
-    padding-right: $navbar__x;
-    padding-left: $navbar__x;
-}
-
-.navbar-sidebar-header,
-.navbar-sidebar-footer {
-    padding-top: $navbar__y * 1.5;
-    padding-bottom: $navbar__y * 1.5;
+    padding: ( $navbar__y * 1.5 ) $navbar__x;
 }
 
 .navbar-sidebar-header {
@@ -43,8 +36,7 @@ $navbar-sidebar-collapse-unit: ( $navbar__y * 2 ) + $base__line-height;
 }
 
 .navbar-sidebar-body .navbar-nav {
-    margin-right: $navbar__x * -1;
-    margin-left: $navbar__x * -1;
+    margin: ( $navbar__y * -1.5 ) ( $navbar__x * -1 );
 }
 
 .navbar-sidebar-footer {

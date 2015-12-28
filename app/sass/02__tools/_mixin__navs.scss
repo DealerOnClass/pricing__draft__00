@@ -2,7 +2,6 @@
     @each $class__name, $color in $input__palette {
         .nav-#{$class__name} {
             color: check-color($color, 80, inherit, $white);
-            border-color: transparent;
 
             a {
                 color: inherit;

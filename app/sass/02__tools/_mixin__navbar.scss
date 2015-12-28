@@ -5,6 +5,10 @@
             border: 0 none;
             background-color: $color;
 
+            svg path {
+                fill: check-color($color, 80, $body__color, $white);
+            }
+
             a,
             button {
                 color: inherit;
