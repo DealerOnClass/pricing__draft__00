@@ -1,3 +1,4 @@
+//
 //  http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
 //  Modified a bit
 //
@@ -31,11 +32,11 @@
 
 //            @if $unit == "px" {
 //                $px : append($px,  $value);
-//                $rem: append($rem, ($val / $master__font-size + rem));
+//                $rem: append($rem, ($val / $raw__font-size + rem));
 //            }
 
 //            @if $unit == "rem" {
-                $px : append($px,  ($val * $master__font-size + px));
+                $px : append($px,  ($val * $raw__font-size + px));
                 $rem: append($rem, $value * $base__line-height + rem);
 //            }
         }
@@ -63,7 +64,7 @@
 
         @else {
             $val: parseInt($value);
-                $px : append($px,  ($val * $master__font-size + px));
+                $px : append($px,  ($val * $raw__font-size + px));
                 $rem: append($rem, $value + rem);
         }
     }

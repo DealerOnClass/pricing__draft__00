@@ -10,6 +10,6 @@
 
 .progress.active .progress-bar,
 .progress-bar.active {
-    @include animation(progress-bar-stripes 2s linear infinite);
+    animation: progress-bar-stripes 2s linear infinite;
 }
 

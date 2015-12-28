@@ -21,16 +21,12 @@
         color: $btn__link--active__color;
         border-color: transparent;
         background-color: $btn__link--active__bg;
+        box-shadow: $btn--active__shadow;
     }
 
     &[active] {
         color: $btn__link--active__color;
         background-color: $btn__link--active__bg;
-    }
-
-    &.active,
-    &.open {
-        box-shadow: $btn--active__shadow;
     }
 }
 

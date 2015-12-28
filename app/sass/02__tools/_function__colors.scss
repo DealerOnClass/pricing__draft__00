@@ -1,3 +1,5 @@
+//
+//
 // http://sass-guidelin.es/
 // Slightly lighten a color
 //
@@ -7,7 +9,7 @@
 // }
 //
 @function tint($color, $percentage) {
-  @return mix(white, $color, $percentage);
+    @return mix(white, $color, $percentage);
 }
 
 // Slightly darken a color
@@ -18,6 +20,6 @@
 // }
 //
 @function shade($color, $percentage) {
-  @return mix(black, $color, $percentage);
+    @return mix(black, $color, $percentage);
 }
 

@@ -5,11 +5,11 @@
             border-color: transparent;
             background-color: $color;
 
-            .btn {
-                color: check-color($color, 80, inherit, $white);
-                border-color: check-color($color, 80, inherit, $white);
-                background-color: $color;
+            a {
+                color: inherit;
+            }
 
+            .btn {
                 @include state {
                     color: check-color($color, 80, inherit, $white);
                     $over-color: mix($color, $body__color, $hero__contrast * 6);

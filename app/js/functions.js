@@ -68,10 +68,11 @@ $("#navbar-main .navbar-sidebar-wrapper a[href^='#ui__']").on('click', function(
 //
 //  Wire
 //
-$("[data-toggle='wire']").on("click", function() {
-    $(this).toggleClass("active");
-    $("#body").toggleClass("wire");
-});
+//  $("[data-toggle='wire']").on("click", function(e) {
+//      e.preventDefault();
+//      $(this).toggleClass("active");
+//      $("#body").toggleClass("wire");
+//  });
 
 ////////////////////////////////////////
 //

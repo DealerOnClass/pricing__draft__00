@@ -2,18 +2,18 @@
 
 //  02  Tools
 @import
-    "02__tools/_mixin__check-color",
-    "02__tools/_mixin__colors",
-    "02__tools/_mixin__rem",
-    "02__tools/_mixin__rhythm";
+    "02__tools/_function__check-color",
+    "02__tools/_function__colors",
+    "02__tools/_function__fontsize",
+    "02__tools/_function__rhythm",
+    "02__tools/_mixin__rem";
 
 //  01  Settings
 @import
     "01__settings/01__colors",
     "01__settings/02__typography",
     "01__settings/03__globals",
-    "01__settings/04__media-query",
-    "01__settings/variables";
+    "01__settings/04__media-query";
 
 //  02  Tools
 @import
@@ -25,8 +25,6 @@
     "02__tools/mixin__card",
     "02__tools/mixin__center-block",
     "02__tools/mixin__clearfix",
-    "02__tools/mixin__css3",
-    "02__tools/mixin__decimal",
     "02__tools/mixin__dropdown",
     "02__tools/mixin__forms",
     "02__tools/mixin__gradients",
@@ -36,7 +34,6 @@
     "02__tools/mixin__label-variant",
     "02__tools/mixin__list-group",
     "02__tools/mixin__modal",
-    "02__tools/mixin__nav-divider",
     "02__tools/mixin__navbar",
     "02__tools/mixin__navs",
     "02__tools/mixin__opacity",
@@ -146,6 +143,10 @@
     "05__objects/card/13__card-columns",
     "05__objects/card/14__card__list-group",
     "05__objects/card/15__colors";
+
+@import
+    "05__objects/caret/00__var",
+    "05__objects/caret/01__caret";
 
 @import
     "05__objects/carousel/00__var",

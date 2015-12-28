@@ -1,9 +1,5 @@
 //
 //  Raw Spacers
-//
-//  Allows for calculations not using rhythm mixin
-//  Ex: ..\05__objects\dropdowns\_00__variables.scss
-//
 $raw__radius:      .25 !default;
 $raw__x:           .6 !default;
 $raw__y:           .4 !default;
@@ -16,12 +12,12 @@ $global__gutter:           30px !default;
 $global__contrast:         10% !default;
 //
 //  General Options
-$global__wire:             true !default;
+$global__wire:             false !default;
 $global__wire__fg:         $primary__color;
 $global__wire__bg:         $white;
 //
 //  Pixel Units            //   Equivalent to pixels in unit "$base__font-unit"
-$one__pixel:               $base__font-unit / $master__font-size;
+$one__pixel:               $base__font-unit / $raw__font-size;
 $two__pixels:              $one__pixel * 2;
 $three__pixels:            $one__pixel * 3;
 $four__pixels:             $one__pixel * 4;

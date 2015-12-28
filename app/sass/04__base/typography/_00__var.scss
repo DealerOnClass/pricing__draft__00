@@ -3,17 +3,13 @@
 $body__font:            $primary__font--regular;
 $body__color:           $inverse__color;
 //
-//  Heading             Sizes in "../01__settings/02__typography"
+//  Heading
 $heading__font:         $primary__font--bold;
 $heading__small__size:  $h6__font-size;
 $heading__small__color: $gray__03;
 //
 //  Display
 $display__font:         $primary__font--bold;
-$display-4__font-size:  $h1__font-size * $base__font-ratio;
-$display-3__font-size:  $display-4__font-size * $base__font-ratio;
-$display-2__font-size:  $display-3__font-size * $base__font-ratio;
-$display-1__font-size:  $display-2__font-size * $base__font-ratio;
 //
 //  Links
 $link__color:           $primary__color;

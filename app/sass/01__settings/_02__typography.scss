@@ -1,7 +1,9 @@
 //
-//  Ratio
-$master__font-size:     17;
-$base__font-size:       ($master__font-size / 16) * 100%;
+//  Raw Units
+$raw__font-size:        17;
+//
+//  General Units
+$base__font-size:       fontsize($raw__font-size);
 $base__font-ratio:      1.25;
 $base__font-unit:       1em;
 $base__line-height:     1.5;
@@ -31,6 +33,10 @@ $h4__font-size:         $h5__font-size * $base__font-ratio;
 $h3__font-size:         $h4__font-size * $base__font-ratio;
 $h2__font-size:         $h3__font-size * $base__font-ratio;
 $h1__font-size:         $h2__font-size * $base__font-ratio;
+$display4__font-size:   $h1__font-size * $base__font-ratio;
+$display3__font-size:   $display4__font-size * $base__font-ratio;
+$display2__font-size:   $display3__font-size * $base__font-ratio;
+$display1__font-size:   $display2__font-size * $base__font-ratio;
 //
 //  Ratios based on classical scale
 //

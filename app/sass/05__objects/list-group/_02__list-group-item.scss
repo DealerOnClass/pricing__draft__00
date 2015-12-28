@@ -4,7 +4,6 @@
     display: block;
 
     padding: $list-group-item__padding;
-
     border: $one__true__pixel solid;
 
     &.active {
@@ -21,6 +20,10 @@
     &:last-child {
         border-bottom-right-radius: $list-group-item__radius;
         border-bottom-left-radius: $list-group-item__radius;
+    }
+
+    & + & {
+        border-top: 0 none;
     }
 }
 
