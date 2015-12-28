@@ -10,6 +10,11 @@
                 background-color: shade($color, $btn__contrast);
             }
 
+            .btn-group.open > & {
+                color: check-color($color, 80, inherit, $white);
+                background-color: shade($color, $btn__contrast);
+            }
+
             &[active] {
                 color: check-color($color, 80, inherit, $white);
                 background-color: shade($color, $btn__contrast);

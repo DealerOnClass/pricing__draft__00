@@ -1,5 +1,7 @@
 .modal-header {
     padding: $modal-header__padding;
+    position: relative;
+    z-index: 10;
 
     .close {
         line-height: 1;

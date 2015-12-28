@@ -34,3 +34,12 @@
         border-left: $one__true__pixel solid;
     }
 }
+
+.panel-body,
+.panel-footer {
+
+    &:first-child + .panel-heading {
+        margin-top: $one__true__pixel * -1;
+        margin-bottom: $one__true__pixel * -1;
+    }
+}

@@ -32,6 +32,10 @@
 .modal-body,
 .modal-footer {
 
+    &:only-child {
+        border: $modal__radius;
+    }
+
     &:first-child {
         border-top-right-radius: $modal__radius;
         border-top-left-radius: $modal__radius;
@@ -43,13 +47,21 @@
     }
 }
 
-.modal-body:first-child,
-.modal-footer:first-child {
-    border-bottom: $one__true__pixel solid $modal__border;
-}
+.modal-body,
+.modal-footer {
 
-.modal-footer:last-child {
-    border-top: $one__true__pixel solid $modal__border;
+    &:first-child {
+        border-bottom: $one__true__pixel solid $modal__border;
+
+        + .modal-header {
+            margin-top: $one__true__pixel * -1;
+            margin-bottom: $one__true__pixel * -1;
+        }
+    }
+
+    &:last-child {
+        border-top: $one__true__pixel solid $modal__border;
+    }
 }
 
 .modal-open .modal {

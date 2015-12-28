@@ -16,12 +16,12 @@
 
     touch-action: manipulation;
 
+    .btn-group.open > &,
     &.active,
     &.open {
         color: $btn__link--active__color;
         border-color: transparent;
         background-color: $btn__link--active__bg;
-        box-shadow: $btn--active__shadow;
     }
 
     &[active] {

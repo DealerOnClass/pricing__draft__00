@@ -23,4 +23,15 @@
     > .btn-group .dropdown-menu {
         left: auto;
     }
+
+    //
+    //  Fix one pixel offset ( this is what i get for using ems )
+    > .btn-group {
+        border-bottom: $one__true__pixel solid transparent;
+    }
+
+    &.lg > .btn-group,
+    &.md > .btn-group {
+        border-bottom: 0 none;
+    }
 }
