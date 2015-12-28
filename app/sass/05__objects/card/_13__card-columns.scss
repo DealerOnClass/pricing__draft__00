@@ -1,6 +1,11 @@
+@media (min-width: $screen-xs-min) {
+    .card-columns {
+        column-count: 3;
+        column-gap: $global__gutter;
+    }
+}
+
 .card-columns {
-    column-count: 3;
-    column-gap: $global__gutter;
 
     .card {
         display: inline-block;

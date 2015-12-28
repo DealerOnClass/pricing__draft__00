@@ -1,6 +1,14 @@
-.card-deck-wrapper {
-    margin-right: $global__gutter * -1;
-    margin-left: $global__gutter * -1;
+@media (min-width: $screen-xs-min) {
+    .card-deck-wrapper {
+        margin-right: $global__gutter * -1;
+        margin-left: $global__gutter * -1;
+    }
+
+    .card-deck .card {
+        display: table-cell;
+
+        width: 1%;
+    }
 }
 
 .card-deck {
@@ -13,9 +21,6 @@
 }
 
 .card-deck .card {
-    display: table-cell;
-
-    width: 1%;
 
     vertical-align: top;
 
