@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
 
-    height: 100vh;   //  using vh instead of %
+    height: 100%;
 
     border-width: 0;
     border-radius: 0;
@@ -12,13 +12,13 @@
 }
 
 .offcanvas-inner,
-.navbar-sidebar-collapse {
+.navbar-sidebar-wrapper {
     position: relative;
     top: $navbar-sidebar-collapse-unit;
 
-    overflow-y: scroll;
-
     height: calc( 100vh - #{$navbar-sidebar-collapse-unit});    // using vh instead of %
+
+    overflow-y: scroll;
 }
 
 .navbar-sidebar-wrapper {

@@ -30,10 +30,3 @@
 .navbar-fixed-bottom {
     bottom: 0;
 }
-
-.navbar-ghost {
-    width: 100%;
-    height: ( $navbar__y * 2 ) + $base__line-height;
-
-    @include clearfix;
-}

@@ -2,6 +2,11 @@
     display: table-cell;
 
     &.navbar-sidebar {
-        position: relative !important;
+        position: relative;
+        top: -5px;
+    }
+
+    .navbar-sidebar-wrapper {
+        top: 0;
     }
 }
