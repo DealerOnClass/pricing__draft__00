@@ -1,5 +1,6 @@
 //  within ../navbar/_11__navbar-sidebar.scss
 .offcanvas-inner {
-    border-left: $one__true__pixel solid;
+    box-sizing: border-box;
     width: 100vw;
+    padding-bottom: rhythm(3);
 }
