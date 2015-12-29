@@ -16,7 +16,7 @@
     position: relative;
     top: $navbar-sidebar-collapse-unit;
 
-    height: calc( 100vh - #{$navbar-sidebar-collapse-unit});    // using vh instead of %
+    height: 200px;
 
     overflow-y: scroll;
 }

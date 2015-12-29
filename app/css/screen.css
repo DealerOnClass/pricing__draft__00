@@ -8114,9 +8114,7 @@ button.list-group-item {
 }
 
 .offcanvas-inner {
-  box-sizing: border-box;
   width: 100vw;
-  padding-bottom: 4.5em;
 }
 
 .navbar {
@@ -8373,7 +8371,7 @@ button.list-group-item {
 .navbar-sidebar-wrapper {
   position: relative;
   top: 3.3em;
-  height: calc( 100vh - 3.3em);
+  height: 200px;
   overflow-y: scroll;
 }
 

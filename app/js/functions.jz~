@@ -109,19 +109,9 @@ $(".panel-wizard").on("hide.bs.collapse", function() {
 //  Offcanvas Height
 //
 $(document).ready( function() {
-    UpdateOffCanvasHeight();
-});
-$(window).resize( function() {
-    UpdateOffCanvasHeight();
-});
-function UpdateOffCanvasHeight() {
-    var navHeight    = $('#nav').height();
-    var windowHeight = $(window).height();
-    var adjustHeight = windowHeight - navHeight;
-
-    $('.offcanvas-nav .navbar-sidebar-wrapper').css("height", adjustHeight);
-    $('.offcanvas-inner').css("height", adjustHeight);
-};
+    console.log($(window).height());
+    console.log($(document).height());
+}
 
 ////////////////////////////////////////
 //
