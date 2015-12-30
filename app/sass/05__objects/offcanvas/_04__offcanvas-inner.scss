@@ -2,4 +2,7 @@
     position: relative;
 
     overflow-y: scroll;
+
+    box-sizing: border-box;
+    padding-bottom: rhythm(3);
 }

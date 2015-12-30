@@ -37,7 +37,7 @@
 .navbar .caret {
     line-height: $base__line-height;
 
-    float: right;
+    display: inline-block;
 
     margin-left: $navbar__x / 2;
 }

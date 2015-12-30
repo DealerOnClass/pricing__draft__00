@@ -94,12 +94,12 @@ $(window).resize( function() {
     UpdateOffcanvasElements();
 });
 function UpdateOffcanvasElements() {
-    var navHeight        = $('#nav').height();
+    var navHeight        = $('[oncanvas-nav]').height();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
+    var adjustedHeight   = windowHeight - navHeight;
 
-    var calculatedHeight = windowHeight - navHeight;
-
-    $('[data-adjust-height="true"]').css("height", calculatedHeight);
-    $('[data-adjust-width="true"]').css("width", windowWidth);
+    $('[offcanvas-set-height]').css("height", adjustedHeight);
+    $('[offcanvas-set-width]').css("width", windowWidth);
+    $('[offcanvas-set-top]').css("top", navHeight);
 };

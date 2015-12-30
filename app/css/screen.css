@@ -8086,8 +8086,7 @@ button.list-group-item {
   background-color: #ae423f;
 }
 
-body,
-.offcanvas {
+.offcanvas-wrapper {
   overflow: hidden;
 }
 
@@ -8108,6 +8107,8 @@ body,
 .offcanvas-inner {
   position: relative;
   overflow-y: scroll;
+  box-sizing: border-box;
+  padding-bottom: 4.5em;
 }
 
 .navbar {
@@ -8151,7 +8152,7 @@ body,
 
 .navbar .caret {
   line-height: 1.5;
-  float: right;
+  display: inline-block;
   margin-left: 0.45em;
 }
 
@@ -8358,6 +8359,9 @@ body,
   border-width: 0;
   border-radius: 0;
   overflow: visible;
+}
+.navbar-sidebar .caret {
+  float: right;
 }
 
 .navbar-sidebar-wrapper {
@@ -13372,6 +13376,7 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
 
 .logo__svg {
   height: 1.5em;
+  width: 3em;
   margin-bottom: -0.45em;
   position: relative;
   top: -0.1125em;

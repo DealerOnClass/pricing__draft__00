@@ -9,9 +9,9 @@
         <link href="css/screen.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="offcanvas-wrapper">
 
-        <nav id="nav" class="navbar navbar-main navbar-static-top">
+        <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
             <div class="pull-right">
                 <a class="navbar-link" href="index.html"><i class="fa fa-home"></i></a>
             </div>
@@ -19,14 +19,16 @@
                 <a href="#ttest51" id="sidebar__icon" class="navbar-brand" data-toggle="collapse">
                     <i class="fa fa-navicon"></i>
                 </a>
-                <a class="navbar-brand" href="#"><img class="logo__svg" src='img/logo__symbol.svg'></a>
+                <a class="navbar-brand" href="#">
+                    <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml"></object>
+                </a>
             </div>
         </nav>
 
         <div class="offcanvas">
             <nav class="offcanvas-nav navbar navbar-inverse navbar-sidebar" id="navbar-main">
                 <div id="ttest51" class="navbar-sidebar-collapse collapse width" data-animate-icon="#sidebar__icon">
-                    <div class="navbar-sidebar-wrapper" data-adjust-height="true">
+                    <div class="navbar-sidebar-wrapper" offcanvas-set-height>
                         <div class="navbar-sidebar-header">
                             <div class="alert raw">
                                 <div class="alert-icon">
@@ -62,7 +64,7 @@
             </nav>
 
             <div class="offcanvas-body">
-                <div class="offcanvas-inner" data-adjust-height="true" data-adjust-width="true">
+                <div class="offcanvas-inner" offcanvas-set-height offcanvas-set-width>
                     <div class="hero">
                         <div class="container">
                             <h2>Sit lorem dicta.</h2>
