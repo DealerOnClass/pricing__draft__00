@@ -8086,6 +8086,7 @@ button.list-group-item {
   background-color: #ae423f;
 }
 
+.offcanvas,
 .offcanvas-wrapper {
   position: absolute;
   top: 0;
