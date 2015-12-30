@@ -85,22 +85,21 @@ $(".panel-wizard").on("hide.bs.collapse", function() {
 });
 ////////////////////////////////////////
 //
-//  Offcanvas Height
+//  Offcanvas
 //
 $(document).ready( function() {
-    UpdateOffCanvasHeight();
+    UpdateOffcanvasElements();
 });
 $(window).resize( function() {
-    UpdateOffCanvasHeight();
+    UpdateOffcanvasElements();
 });
-function UpdateOffCanvasHeight() {
+function UpdateOffcanvasElements() {
     var navHeight        = $('#nav').height();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
+
     var calculatedHeight = windowHeight - navHeight;
 
-    $('.offcanvas-nav .navbar-sidebar-wrapper').css("height", calculatedHeight);
-
-    $('.offcanvas-inner').css("height", calculatedHeight);
-    $('.offcanvas-inner').css("width", windowWidth);
+    $('[data-adjust-height="true"]').css("height", calculatedHeight);
+    $('[data-adjust-width="true"]').css("width", windowWidth);
 };

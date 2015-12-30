@@ -8093,6 +8093,7 @@ body,
 
 .offcanvas {
   display: table;
+  zoom: 1;
 }
 
 .offcanvas-nav {
