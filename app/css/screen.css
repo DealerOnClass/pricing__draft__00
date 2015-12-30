@@ -8105,6 +8105,11 @@ body,
   vertical-align: top;
 }
 
+.offcanvas-inner {
+  position: relative;
+  overflow-y: scroll;
+}
+
 .navbar {
   position: relative;
   border: 1px solid;
@@ -8355,13 +8360,9 @@ body,
   overflow: visible;
 }
 
-.offcanvas-inner,
 .navbar-sidebar-wrapper {
   position: relative;
   overflow-y: scroll;
-}
-
-.navbar-sidebar-wrapper {
   width: 18em;
 }
 

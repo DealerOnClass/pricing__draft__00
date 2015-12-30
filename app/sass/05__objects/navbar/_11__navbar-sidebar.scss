@@ -11,14 +11,11 @@
     overflow: visible;
 }
 
-.offcanvas-inner,
 .navbar-sidebar-wrapper {
     position: relative;
 
     overflow-y: scroll;
-}
 
-.navbar-sidebar-wrapper {
     width: $navbar-sidebar__width;
 }
 
