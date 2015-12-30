@@ -4,8 +4,6 @@
 
     z-index: $zindex-navbar-fixed;
 
-    @media (min-width:  $grid-float-breakpoint) {
-        border-radius: 0;
-    }
+    border-radius: 0;
 }
 
