@@ -1,19 +1,9 @@
+//
 //  Enable Tooltips && Popovers for demo
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();
 });
-
-//  Dropdown Mega Menu
-//  $("#navbar-dealeron .dropdown-mega-menu a[href^='#ui__']").on('click', function(e) {
-//      e.preventDefault();
-//      var hash = this.hash;
-//      $('html, body').stop().animate({
-//          scrollTop: $(hash).offset().top
-//      }, 1500, 'easeInOutExpo', function() {
-//          window.location.hash = hash;
-//      });
-//  });
 
 //  Easing
 $("#navbar-main .navbar-sidebar-wrapper a[href^='#ui__']").on('click', function(e) {
@@ -63,17 +53,6 @@ $("#navbar-main .navbar-sidebar-wrapper a[href^='#ui__']").on('click', function(
 //-------------------------------------
 //  Thank you Cody House ** end
 
-
-////////////////////////////////////////
-//
-//  Wire
-//
-//  $("[data-toggle='wire']").on("click", function(e) {
-//      e.preventDefault();
-//      $(this).toggleClass("active");
-//      $("#body").toggleClass("wire");
-//  });
-
 ////////////////////////////////////////
 //
 //  Panel Wizard
@@ -115,32 +94,13 @@ $(window).resize( function() {
     UpdateOffCanvasHeight();
 });
 function UpdateOffCanvasHeight() {
-    var navHeight    = $('#nav').height();
-    var windowHeight = $(window).height();
-    var adjustHeight = windowHeight - navHeight;
+    var navHeight        = $('#nav').height();
+    var windowHeight     = $(window).height();
+    var windowWidth      = $(window).width();
+    var calculatedHeight = windowHeight - navHeight;
 
-    $('.offcanvas-nav .navbar-sidebar-wrapper').css("height", adjustHeight);
-    $('.offcanvas-inner').css("height", adjustHeight);
+    $('.offcanvas-nav .navbar-sidebar-wrapper').css("height", calculatedHeight);
+
+    $('.offcanvas-inner').css("height", calculatedHeight);
+    $('.offcanvas-inner').css("width", windowWidth);
 };
-
-////////////////////////////////////////
-//
-//  Open Nav Bar
-//
-//  $('[data-animate="icon-bar"]').click(function(){
-//      $(this).toggleClass('navbar-sidebar-is-open');
-//  });
-//  //  Set icon default && active state if open
-//  $(document).ready( function() {
-//      var icon = $(".navbar-sidebar-collapse.in").attr("data-animate-icon");
-//      $(icon).addClass("navbar-sidebar-is-open");
-//  });
-//  //  Toggle sidebar icon && active state
-//  $(".navbar-sidebar-collapse").on("show.bs.collapse", function() {
-//      var icon = $(this).attr("data-animate-icon");
-//      $(icon).addClass("navbar-sidebar-is-open");
-//  });
-//  $(".navbar-sidebar-collapse").on("hide.bs.collapse", function() {
-//      var icon = $(this).attr("data-animate-icon");
-//      $(icon).removeClass("navbar-sidebar-is-open");
-//  });
