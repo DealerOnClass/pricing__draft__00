@@ -8259,12 +8259,6 @@ button.list-group-item {
   float: left;
   padding: 0.9em 0.9em;
 }
-@media (min-width: 768px) {
-  .navbar-brand {
-    border-top-left-radius: 0.375em;
-    border-bottom-left-radius: 0.375em;
-  }
-}
 
 .navbar-form {
   position: relative;
@@ -8390,7 +8384,7 @@ button.list-group-item {
 
 .navbar-sidebar-wrapper {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 18em;
 }
 
