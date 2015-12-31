@@ -99,8 +99,8 @@ function UpdateOffcanvasElements() {
     var windowWidth      = $(window).width();
     var adjustedHeight   = windowHeight - navHeight;
 
-    $('[offcanvas-set-height="window"]').css("height", windowHeight);
+    $('[offcanvas-set-height="full"]').css("height", windowHeight);
     $('[offcanvas-set-height="offcanvas-nav"]').css("height", adjustedHeight);
-    $('[offcanvas-set-width="window"]').css("width", windowWidth);
-    $('[offcanvas-set-top="offcanvas-nav"]').css("top", navHeight);
+    $('[offcanvas-set-width]').css("width", windowWidth);
+    $('[offcanvas-set-top]').css("top", navHeight);
 };

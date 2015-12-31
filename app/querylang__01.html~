@@ -20,10 +20,9 @@
         </nav>
 
         <div class="container">
-            <hr class="invisible">
             <h3>Query Creation</h3>
             <div class="panel-wizard-container">
-                <div class="panel panel-alt1 panel-wizard">
+                <div class="panel panel-inverse panel-wizard">
                     <a class="panel-heading btn" href="#query__creation__collapse__step1" data-toggle="collapse">
                         <span class="panel-wizard-step">Name and describe your query</span>
                         <i class="panel-wizard-icon fa fa-plus fa-sm" data-toggle="collapse__icon"></i>
@@ -58,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-alt1 panel-wizard">
+                <div class="panel panel-inverse panel-wizard">
                     <a class="panel-heading btn" href="#query__creation__collapse__step2" data-toggle="collapse">
                         <span class="panel-wizard-step">Create your query</span>
                         <i class="panel-wizard-icon fa fa-plus fa-sm" data-toggle="collapse__icon"></i>

@@ -21,7 +21,7 @@ $btn__link--active__color:      $white;
 $btn__link--active__bg:         $primary__color;
 //
 //  Variations
-$btn--lg__padding:              ( $btn__y * ( $base__font-ratio * 1.5 ) ) ( $btn__x * ( $base__font-ratio * 1.5 ) );
+$btn--lg__padding:              ( $btn__y * ( $base__font-ratio * 2 ) ) ( $btn__x * ( $base__font-ratio * 2 ) );
 $btn--md__padding:              ( $btn__y * $base__font-ratio ) ( $btn__x * $base__font-ratio );
 $btn--sm__padding:              ( $btn__y / $base__font-ratio ) ( $btn__x / $base__font-ratio );
 $btn--xs__padding:              ( $btn__y / ( $base__font-ratio * 2 ) ) ( $btn__x / $base__font-ratio );
