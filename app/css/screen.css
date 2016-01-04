@@ -8135,6 +8135,21 @@ button.list-group-item {
   padding-bottom: 4.5em;
 }
 
+.offcanvas-nested {
+  position: relative;
+}
+.offcanvas-nested,
+.offcanvas-nested .offcanvas-nav .navbar-sidebar-wrapper {
+  height: 50vh;
+}
+.offcanvas-nested .offcanvas-body {
+  width: 10000px;
+}
+.offcanvas-nested .offcanvas-inner {
+  height: 100%;
+  padding: 0;
+}
+
 .navbar {
   position: relative;
   border: 1px solid;
@@ -13123,6 +13138,10 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   fill: #3662ad;
   border-color: #3662ad;
   background-color: white;
+}
+
+.margin-x {
+  margin: 0;
 }
 
 .visible-xs {

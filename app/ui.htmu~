@@ -78,7 +78,7 @@
         <!-- Main Nav - Sidebar -->
         <nav id="navbar-main" class="navbar navbar-inverse navbar-stacked navbar-sidebar">
             <div id="ttest51" class="navbar-sidebar-collapse collapse width">
-                <div class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav" offcanvas-set-top="oncanvas-nav">
+                <div class="navbar-sidebar-wrapper" offcanvas-set-height="offcanvas-nav" offcanvas-set-top="offcanvas-nav">
                     <div class="navbar-sidebar-header">
                         <div class="alert raw">
                             <div class="alert-icon">
@@ -7637,7 +7637,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <h3 class="demo__heading">Unordered List</h3>
-                        <ul>
+                        <ul class="text-cta">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>

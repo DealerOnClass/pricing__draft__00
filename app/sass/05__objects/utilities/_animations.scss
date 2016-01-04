@@ -2,6 +2,7 @@
     opacity: 0;
 
     transition: opacity 0.15s linear;
+
     &.in {
         opacity: 1;
     }
@@ -9,6 +10,7 @@
 
 .collapse {
     display: none;
+
     &.in {
         display: block;
     }

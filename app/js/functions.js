@@ -100,7 +100,13 @@ function UpdateOffcanvasElements() {
     var adjustedHeight   = windowHeight - navHeight;
 
     $('[offcanvas-set-height="window"]').css("height", windowHeight);
-    $('[offcanvas-set-height="offcanvas-nav"]').css("height", adjustedHeight);
+    $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
-    $('[offcanvas-set-top="offcanvas-nav"]').css("top", navHeight);
+    $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
 };
+$('[offcanvas-toggle-on]').on('click', function() {
+    $(this).collapse('hide');
+});
+$('[offcanvas-toggle-off]').on('click', function() {
+    $('[offcanvas-toggle-on]').collapse("show");
+});
