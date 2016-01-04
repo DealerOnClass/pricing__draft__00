@@ -18,44 +18,40 @@
                     <div class="navbar raw bg-25">
                         <div class="navbar-header">
                             <a href="#ttest51" class="navbar-brand" data-toggle="collapse" offcanvas-toggle-off>
-                                <i class="fa fa-times"></i>
+                                <i class="fa fa-navicon"></i>
                             </a>
                         </div>
                     </div>
                     <div class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav">
-                        <div class="navbar-sidebar-body">
+                        <div class="navbar-sidebar-header">
                             <div class="media">
                                 <div class="media-left">
-                                    <img class="img-rounded" src="img/profile.png" alt="Itsa me Mario!" width="80" height="80">
+                                    <i class="fa fa-circle fa-4x fa-fw text-25"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h4>Leith Automotive Group</h4>
-                                    <a href="" class="btn btn-rounded btn-xs">Chea son.</a>
+                                    <span class="h4">Leith Automotive Group</span>
+                                    <div class="clearfix"></div>
+                                    <small>Adipisicing commodi asperiores facilis ratione recusandae. Minus ab eos voluptatum!</small>
                                 </div>
                             </div>
                         </div>
                         <div class="navbar-sidebar-body raw">
-                            <hr class="margin-x">
-                            <ul class="nav nav-inverse nav-tabs nav-flush">
-                                <li><a class="active" href="#tab1" data-toggle="tab"><i class="fa fa-star"></i></a></li>
-                                <li><a href="#tab2" data-toggle="tab"><i class="fa fa-rocket"></i></a></li>
-                                <li><a href="#tab3" data-toggle="tab"><i class="fa fa-coffee"></i></a></li>
-                                <li><a href="#tab4" data-toggle="tab"><i class="fa fa-send"></i></a></li>
+                            <ul class="nav nav-inverse nav-tabs nav-justified nav-flush">
+                                <li><a class="active" href="#tab1" data-toggle="tab">Tab 1</a></li>
+                                <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
+                                <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
                             </ul>
-                            <hr class="margin-x">
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tab1">
-                                    <h5 class="text-uppercase">Tab 1 Heading</h5>Lorem ipsum dolor sit amet. 1
+                                    <h5 class="text-uppercase">Tab 1 Heading</h5><p>Lorem ipsum dolor sit amet. 1</p>
                                 </div>
                                 <div class="tab-pane fade" id="tab2">
-                                    <h5 class="text-uppercase">Tab 2 heading</h5>Lorem ipsum dolor sit amet. 2
+                                    <h5 class="text-uppercase">Tab 2 heading</h5><p>Lorem ipsum dolor sit amet. 2</p>
                                 </div>
                                 <div class="tab-pane fade" id="tab3">
-                                    <h5 class="text-uppercase">Tab 3 heading</h5>Lorem ipsum dolor sit amet. 3
+                                    <h5 class="text-uppercase">Tab 3 heading</h5><p>Lorem ipsum dolor sit amet. 3</p>
                                 </div>
-                                <div class="tab-pane fade" id="tab4">
-                                    <h5 class="text-uppercase">Tab 4 heading</h5>Lorem ipsum dolor sit amet. 4
-                                </div>
+
                             </div>
                         </div>
                         <div class="navbar-sidebar-footer">
@@ -65,7 +61,7 @@
             </nav>
 
             <div class="offcanvas-body">
-                <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
+                <nav id="nav" class="navbar navbar-cta navbar-static-top" oncanvas-nav>
                     <div class="pull-right">
                         <a class="navbar-link" href="index.html"><i class="fa fa-home"></i></a>
                     </div>

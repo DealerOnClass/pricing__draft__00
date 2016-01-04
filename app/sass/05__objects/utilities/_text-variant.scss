@@ -13,4 +13,6 @@
 @if $text__state-palette {
     @include text-color-variation($state__palette);
 }
-
+@if $text__opacity-palette {
+    @include text-color-variation($opacity__palette);
+}

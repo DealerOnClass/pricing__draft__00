@@ -2788,45 +2788,27 @@ body {
 }
 
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3,
 h4,
-.h4,
 h5,
-.h5,
-h6,
-.h6 {
+h6 {
   font-family: "AvenirHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 12.75px;
   margin-bottom: 0.75rem;
 }
 h1 small,
 h1 .small,
-.h1 small,
-.h1 .small,
 h2 small,
 h2 .small,
-.h2 small,
-.h2 .small,
 h3 small,
 h3 .small,
-.h3 small,
-.h3 .small,
 h4 small,
 h4 .small,
-.h4 small,
-.h4 .small,
 h5 small,
 h5 .small,
-.h5 small,
-.h5 .small,
 h6 small,
-h6 .small,
-.h6 small,
-.h6 .small {
+h6 .small {
   font-size: 0.75019em;
   color: #b3b3b3;
 }
@@ -2899,7 +2881,7 @@ small,
 hr, .dropdown-menu .divider {
   margin-top: 1.2em;
   margin-bottom: 1.2em;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 0 none;
   border-bottom: 0 none;
   border-left: 0 none;
@@ -7323,7 +7305,6 @@ button.list-group-item {
 
 .media,
 .media-body {
-  overflow: hidden;
   zoom: 1;
 }
 
@@ -8130,7 +8111,7 @@ button.list-group-item {
 
 .offcanvas-inner {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   box-sizing: border-box;
   padding-bottom: 4.5em;
 }
@@ -12259,7 +12240,7 @@ h5 [class*='sortable-'] {
 }
 
 .tab-content {
-  padding: 0.6em 0.9em;
+  padding: 0.9em 0.9em;
 }
 .tab-content > .tab-pane {
   display: none;
@@ -13063,6 +13044,24 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   background-color: #d9534f;
 }
 
+.bg-75 {
+  color: white;
+  border-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.bg-50 {
+  color: white;
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-25 {
+  color: white;
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 .img-responsive {
   max-width: 100%;
   height: auto;
@@ -13435,6 +13434,18 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
 
 .text-danger {
   color: #d9534f;
+}
+
+.text-75 {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.text-50 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.text-25 {
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .logo__svg {

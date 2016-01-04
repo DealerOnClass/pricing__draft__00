@@ -13,4 +13,6 @@
 @if $bg__state-palette {
     @include bg-color-variation($state__palette);
 }
-
+@if $bg__opacity-palette {
+    @include bg-color-variation($opacity__palette);
+}
