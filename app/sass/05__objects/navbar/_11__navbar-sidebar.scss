@@ -13,6 +13,15 @@
     .caret {
         float: right;
     }
+
+    .caret,
+    .fa {
+        color: rgba(255,255,255,0.50);
+    }
+
+    .fa-fw {
+        margin-right: $navbar__x;
+    }
 }
 
 .navbar-sidebar-wrapper {
@@ -26,18 +35,13 @@
 .navbar-sidebar-header,
 .navbar-sidebar-body,
 .navbar-sidebar-footer {
-    padding: ( $navbar__y * 1.5 ) $navbar__x;
+    padding: $navbar__y $navbar__x;
 }
 
 .navbar-sidebar-header {
+    background-color: rgba(0,0,0,0.40);
+}
+
+.navbar-sidebar-divider {
     border-bottom: $one__true__pixel solid rgba(0,0,0,0.20);
 }
-
-.navbar-sidebar-body .navbar-nav {
-    margin: ( $navbar__y * -1.5 ) ( $navbar__x * -1 );
-}
-
-.navbar-sidebar-footer {
-    border-top: $one__true__pixel solid rgba(0,0,0,0.20);
-}
-

@@ -1,0 +1,23 @@
+@-webkit-keyframes alert {
+    0%, 100%, 50% {
+        opacity: 1;
+    }
+
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+@keyframes alert {
+    0%, 100%, 50% {
+        opacity: 1;
+    }
+
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+.notify-alert .fa {
+    animation: alert 2s ease infinite;
+}

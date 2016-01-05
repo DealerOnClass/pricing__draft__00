@@ -110,3 +110,10 @@ $('[offcanvas-toggle-on]').on('click', function() {
 $('[offcanvas-toggle-off]').on('click', function() {
     $('[offcanvas-toggle-on]').collapse("show");
 });
+////////////////////////////////////////
+//
+//  Notify
+//
+$('.notify-alert').on('click', function() {
+    $(this).removeClass("notify-alert");
+});

@@ -1,5 +1,14 @@
+%navbar-link {
+    padding: $navbar__y $navbar__x;
+}
+
 .navbar-link {
     display: inline-block;
-    padding: $navbar__y $navbar__x;
+    @extend %navbar-link;
+}
+
+.navbar-block-link {
+    display: block;
+    @extend %navbar-link;
 }
 

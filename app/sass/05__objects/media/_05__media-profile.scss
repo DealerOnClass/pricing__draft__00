@@ -1,0 +1,27 @@
+.media-profile {
+
+    .media-left,
+    .media-right,
+    .media-object,
+    .media-body {
+        vertical-align: middle;
+    }
+
+    .media-left {
+        font-size: 0;
+    }
+
+    img {
+        font-size: 1rem;
+        height: 40px;
+        width: 40px;
+    }
+
+    .media-left > img {
+        margin-right: 1rem;
+    }
+
+    .media-right > img {
+        margin-left: 1rem;
+    }
+}

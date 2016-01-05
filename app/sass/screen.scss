@@ -236,7 +236,8 @@
     "05__objects/media/01__media",
     "05__objects/media/02__media-body",
     "05__objects/media/03__media-object",
-    "05__objects/media/04__media-alignment";
+    "05__objects/media/04__media-alignment",
+    "05__objects/media/05__media-profile";
 
 @import
     "05__objects/modals/00__var",
@@ -261,6 +262,9 @@
     "05__objects/navs/05__nav-justified",
     "05__objects/navs/06__nav-flush",
     "05__objects/navs/07__colors";
+
+@import
+    "05__objects/notify/01__notify-alert";
 
 @import
     "05__objects/offcanvas/00__var",
