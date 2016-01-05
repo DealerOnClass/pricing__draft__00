@@ -2783,7 +2783,6 @@ html {
 
 body {
   font-family: "AvenirRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  min-width: 300px;
   color: #343c4b;
 }
 
@@ -8134,6 +8133,13 @@ button.list-group-item {
   display: table;
   overflow: hidden;
   zoom: 1;
+  background-color: #343c4b;
+}
+
+.offcanvas,
+.offcanvas-wrapper,
+.offcanvas-inner {
+  min-width: 320px;
 }
 
 .offcanvas-nav {
@@ -8150,6 +8156,7 @@ button.list-group-item {
   overflow-y: auto;
   box-sizing: border-box;
   padding-bottom: 4.5em;
+  background-color: white;
 }
 
 .offcanvas-nested {
@@ -8522,6 +8529,14 @@ button.list-group-item {
     border-bottom-right-radius: 0.375em;
   }
 }
+.navbar-right-override {
+  float: right;
+}
+.navbar-right-override > li {
+  clear: none;
+  float: left;
+}
+
 .navbar-default {
   color: inherit;
   border: 0 none;

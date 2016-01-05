@@ -17,3 +17,13 @@
         border-bottom-right-radius: $navbar__radius;
     }
 }
+
+.navbar-right-override {
+
+    float: right;
+
+    > li {
+        clear: none;
+        float: left;
+    }
+}
