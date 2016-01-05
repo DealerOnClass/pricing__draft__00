@@ -3,18 +3,30 @@
     padding: $navbar__y $navbar__x;
 }
 
-$navbar-profile-img: 24px;
+$navbar-profile-img: $navbar__y * 2;
 .navbar-profile {
+    position: relative;
+
+    @media (max-width: $grid-float-breakpoint-max) {
+        height: calc(#{$navbar-profile-img} + #{$navbar__y * 2});
+        width: calc(#{$navbar-profile-img} + #{$navbar__x * 2});
+    }
 }
 
 .navbar-profile-img {
-    overflow: hidden;
+    position: absolute;
     border-radius: 50%;
     height: $navbar-profile-img;
     width: $navbar-profile-img;
-    margin-bottom: -6px;
+    top: 50%;
+    margin-top: $navbar-profile-img / -2;
+    left: $navbar__x;
 }
 
 .navbar-profile-title {
-    margin-left: $navbar__x / 2;
+    padding-left: calc(#{$navbar-profile-img} + #{$navbar__x});
+
+    @media (max-width: $grid-float-breakpoint-max) {
+        display: none;
+    }
 }

@@ -5,9 +5,9 @@
     border-radius: $navbar__radius;
 
     @include clearfix;
-    @media (max-width: $grid-float-breakpoint-max) {
-        overflow: hidden;
-    }
+    //  @media (max-width: $grid-float-breakpoint-max) {
+    //      overflow: hidden;
+    //  }
 }
 
 .navbar > .container,

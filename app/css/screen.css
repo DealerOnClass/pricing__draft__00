@@ -8184,11 +8184,6 @@ button.list-group-item {
   display: table;
   clear: both;
 }
-@media (max-width: 767px) {
-  .navbar {
-    overflow: hidden;
-  }
-}
 
 .navbar > .container,
 .navbar > .container-fluid {
@@ -8344,16 +8339,33 @@ button.list-group-item {
   padding: 0.9em 0.9em;
 }
 
+.navbar-profile {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .navbar-profile {
+    height: calc(1.8em + 1.8em);
+    width: calc(1.8em + 1.8em);
+  }
+}
+
 .navbar-profile-img {
-  overflow: hidden;
+  position: absolute;
   border-radius: 50%;
-  height: 24px;
-  width: 24px;
-  margin-bottom: -6px;
+  height: 1.8em;
+  width: 1.8em;
+  top: 50%;
+  margin-top: -0.9em;
+  left: 0.9em;
 }
 
 .navbar-profile-title {
-  margin-left: 0.45em;
+  padding-left: calc(1.8em + 0.9em);
+}
+@media (max-width: 767px) {
+  .navbar-profile-title {
+    display: none;
+  }
 }
 
 .navbar-toggle {
@@ -8535,6 +8547,9 @@ button.list-group-item {
 .navbar-right-override > li {
   clear: none;
   float: left;
+}
+.navbar-right-override .dropdown-menu {
+  position: absolute;
 }
 
 .navbar-default {
