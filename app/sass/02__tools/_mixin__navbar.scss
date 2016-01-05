@@ -27,6 +27,11 @@
                     background-color: shade($color, $navbar__contrast);
                 }
             }
+
+            .navbar-search-form .form-control {
+                color: check-color($color, 80, inherit, $white);
+                background-color: shade($color, $navbar__contrast);
+            }
         }
 
         .navbar-#{$class__name} .dropdown-menu {
@@ -48,21 +53,21 @@
                 }
             }
 
-            @media (max-width: $grid-float-breakpoint-max) {
-                background-color: shade($color, $navbar__contrast * 2);
+            //  @media (max-width: $grid-float-breakpoint-max) {
+            //      background-color: shade($color, $navbar__contrast * 2);
 
-                > li > a {
-                    @include state {
-                        background-color: shade($color, $navbar__contrast * 3);
-                    }
-                }
+            //      > li > a {
+            //          @include state {
+            //              background-color: shade($color, $navbar__contrast * 3);
+            //          }
+            //      }
 
-                > li.open > a,
-                > li.active > a,
-                > a.active {
-                    background-color: shade($color, $navbar__contrast * 3);
-                }
-            }
+            //      > li.open > a,
+            //      > li.active > a,
+            //      > a.active {
+            //          background-color: shade($color, $navbar__contrast * 3);
+            //      }
+            //  }
         }
 
         .navbar-#{$class__name}.navbar-stacked {

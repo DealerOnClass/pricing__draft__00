@@ -32,3 +32,22 @@
     }
 }
 
+.navbar-search-form {
+
+    @media (max-width: $grid-float-breakpoint-max) {
+        position: absolute;
+        right: 0;
+        z-index: $zindex-navbar-fixed;
+    }
+
+    &,
+    .form-control {
+        margin: 0;
+    }
+
+    .form-control {
+        border: 0 none;
+        border-radius: 0;
+        height: $base__line-height + ( $navbar__y * 2 );
+    }
+}

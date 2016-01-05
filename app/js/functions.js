@@ -112,8 +112,15 @@ $('[offcanvas-toggle-off]').on('click', function() {
 });
 ////////////////////////////////////////
 //
-//  Notify
+//  Notify Animation Control
 //
 $('.notify-alert').on('click', function() {
     $(this).removeClass("notify-alert");
+});
+////////////////////////////////////////
+//
+//  Navbar Search Focus
+//
+$('#navbar-form').on('shown.bs.collapse', function() {
+    $(this).children("input").focus();
 });

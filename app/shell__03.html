@@ -23,18 +23,18 @@
                             <!--<div class="media media-profile">-->
                                 <!--<div class="media-left">-->
                                     <!--<img class="img-rounded" src="img/profile.png" alt="Itsa me Mario!">-->
-                                <!--</div>-->
+                                    <!--</div>-->
                                 <!--<div class="media-body" style="line-height: 1;">-->
                                     <!--<span class="h5">Artemis Constantinou</span>-->
                                     <!--<small><a href="" class="">artemis@dealeron.com</a></small>-->
+                                    <!--</div>-->
                                 <!--</div>-->
                             <!--</div>-->
-                        <!--</div>-->
                         <!--<ul class="nav nav-inverse nav-tabs nav-flush">-->
                             <!--<li><a class="active" href="#tab1" data-toggle="tab"><i class="fa fa-globe"></i></a></li>-->
                             <!--<li><a href="#tab2" data-toggle="tab"><i class="fa fa-envelope"></i></a></li>-->
                             <!--<li><a class="notify-alert" href="#tab3" data-toggle="tab"><i class="fa fa-flag"></i></a></li>-->
-                        <!--</ul>-->
+                            <!--</ul>-->
                         <!--<div class="navbar-sidebar-divider"></div>-->
                         <!--<div class="tab-content">-->
                             <!--<div class="tab-pane active" id="tab1">-->
@@ -43,16 +43,16 @@
                                     <!--<li><a href="">Ipsum voluptate.</a></li>-->
                                     <!--<li><a href="">Lorem quam.</a></li>-->
                                     <!--<li><a href="">Consectetur ad?</a></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
+                                    <!--</ul>-->
+                                <!--</div>-->
                             <!--<div class="tab-pane fade" id="tab2">-->
                                 <!--<h5>Messages</h5>-->
                                 <!--<ul>-->
                                     <!--<li>Ipsum voluptate.</li>-->
                                     <!--<li>Lorem quam.</li>-->
                                     <!--<li>Consectetur ad?</li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
+                                    <!--</ul>-->
+                                <!--</div>-->
                             <!--<div class="tab-pane fade" id="tab3">-->
                                 <!--<h5>Notifications</h5>-->
                                 <!--<ul>-->
@@ -60,10 +60,10 @@
                                     <!--<li>Consectetur asperiores eveniet.</li>-->
                                     <!--<li>Lorem ad at!</li>-->
                                     <!--<li>Sit sapiente repudiandae!</li>-->
-                                <!--</ul>-->
+                                    <!--</ul>-->
                                 <!--<p>Amet rerum quasi recusandae inventore facere nostrum consequatur! Incidunt itaque?</p>-->
+                                <!--</div>-->
                             <!--</div>-->
-                        <!--</div>-->
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a href="" class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#Settings">
@@ -138,43 +138,28 @@
             <div class="offcanvas-body">
                 <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
                     <ul class="nav navbar-nav navbar-right-override">
-                        <li class="dropdown">
+                        <li>
+                            <form id="navbar-form" class="navbar-search-form form-inline collapse width">
+                                <input class="form-control" id="exampleInputEmail2" type="email">
+                            </form>
+                        </li>
+                        <li>
+                            <a id="navbar-form-link" href="#navbar-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li class="dropdown open">
                             <a class="navbar-profile" href="#" data-toggle="dropdown">
                                 <img class="navbar-profile-img" src="img/profile.png" alt="Itsa me Mario!">
-                                <span class="navbar-profile-title">Artemis Constantinou</span>
+                                <span class="navbar-profile-title caret"></span>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="">Item 1</a></li>
-                                <li><a href="">Item 2</a></li>
-                                <li><a href="">Item 3</a></li>
-                                <li><a href="">Item 4</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown"><i class="fa fa-globe"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="">Item 1</a></li>
-                                <li><a href="">Item 2</a></li>
-                                <li><a href="">Item 3</a></li>
-                                <li><a href="">Item 4</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown"><i class="fa fa-envelope"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="">Item 1</a></li>
-                                <li><a href="">Item 2</a></li>
-                                <li><a href="">Item 3</a></li>
-                                <li><a href="">Item 4</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="notify-alert" href="#" data-toggle="dropdown"><i class="fa fa-flag"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="">Item 1</a></li>
-                                <li><a href="">Item 2</a></li>
-                                <li><a href="">Item 3</a></li>
-                                <li><a href="">Item 4</a></li>
+                            <ul class="dropdown-menu dropdown-menu-right" style="width: 280px;">
+                                <li class="dropdown-menu-header">
+                                    <strong class="h5">Artemis Constantinou</strong>
+                                    <span><a href="">artemis@dealeron.com</a></span>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href=""><i class="fa fa-gear fa-fw"></i>Settings</a></li>
+                                <li><a href="" class="notify-alert"><i class="fa fa-envelope fa-fw"></i>Messages</a></li>
+                                <li><a href=""><i class="fa fa-sign-out fa-fw"></i>Sign Out</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -198,7 +183,7 @@
                             <div class="media">
                                 <div class="media-left">
                                     <p style="width: 5em">
-                                        <small>Elit id pariatur tempora ipsa officia nostrum.</small>
+                                        Elit id pariatur tempora ipsa officia nostrum.</small>
                                     </p>
                                 </div>
                                 <div class="media-body">
