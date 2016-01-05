@@ -38,8 +38,9 @@
     padding: $navbar__y $navbar__x;
 }
 
-.navbar-sidebar-header {
-    background-color: rgba(0,0,0,0.40);
+.navbar-sidebar-close {
+    display: block;
+    background-color: rgba(0,0,0,0.25);
 }
 
 .navbar-sidebar-divider {

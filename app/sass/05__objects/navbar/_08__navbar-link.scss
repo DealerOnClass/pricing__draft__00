@@ -1,14 +1,20 @@
-%navbar-link {
+.navbar-link {
+    display: inline-block;
     padding: $navbar__y $navbar__x;
 }
 
-.navbar-link {
-    display: inline-block;
-    @extend %navbar-link;
+$navbar-profile-img: 24px;
+.navbar-profile {
 }
 
-.navbar-block-link {
-    display: block;
-    @extend %navbar-link;
+.navbar-profile-img {
+    overflow: hidden;
+    border-radius: 50%;
+    height: $navbar-profile-img;
+    width: $navbar-profile-img;
+    margin-bottom: -6px;
 }
 
+.navbar-profile-title {
+    margin-left: $navbar__x / 2;
+}
