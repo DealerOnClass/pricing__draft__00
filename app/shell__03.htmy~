@@ -203,13 +203,14 @@
                     </ul>
                 </nav>
 
-                <div id="navbar-help-collapse" class="collapse">
-                    <div class="hero hero-default hero-lg">
+                <div id="navbar-help-collapse" class="collapse in">
+                    <hr class="margin-x">
+                    <div class="hero hero-main">
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <h4>Support</h4>
-                                    <div class="list-group list-group-default list-group-flush">
+                                    <div class="list-group list-group-main list-group-flush">
                                         <div class="list-group-item media media-profile media-flush">
                                             <div class="media-left">
                                                 <img class="img-circle" src="img/mario.png" alt="Itsa me Mario!" height="50" width="50">
@@ -254,35 +255,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3 col-sm-offset-1">
                                     <h4>Open Tickets</h4>
-                                    <table class="table table-default table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="">Fix navbar</a></td>
-                                                <td>9/14/12</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Stupid button</a></td>
-                                                <td>10/14/12</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">homepage banner</a></td>
-                                                <td>11/14/12</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <a class="btn btn-xs btn-rounded" href="">Create a support ticket</a>
+                                    <a href="">Create a support ticket</a>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3 col-sm-offset-1">
                                     <h4>Billing</h4>
-                                    <table class="table table-default table-striped">
+                                    <table class="table table-main table-striped">
                                         <thead>
                                             <tr>
                                                 <th>Invoice #</th>
@@ -304,7 +283,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <a class="btn btn-xs btn-rounded" href="">View All Invoices</a>
+                                    <a href="">View All Invoices</a>
                                 </div>
                             </div>
                         </div>

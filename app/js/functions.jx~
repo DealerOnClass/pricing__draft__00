@@ -141,11 +141,8 @@ $('#navbar-search-form').on('shown.bs.collapse', function() {
 });
 ////////////////////////////////////////
 //
-//  Navbar Help Icon
+//  Navbar Help
 //
-$('#navbar-help-collapse').on('show.bs.collapse', function() {
+$('#navbar-help-collapse').on('shown.bs.collapse', function() {
     $('#navbar-help-icon').removeClass('fa-question').addClass('fa-remove');
-});
-$('#navbar-help-collapse').on('hide.bs.collapse', function() {
-    $('#navbar-help-icon').removeClass('fa-remove').addClass('fa-question');
 });

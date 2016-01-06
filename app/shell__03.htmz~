@@ -22,7 +22,7 @@
                         <!--<div class="navbar-sidebar-header">-->
                             <!--<div class="media media-profile">-->
                                 <!--<div class="media-left">-->
-                                    <!--<img class="img-rounded" src="img/mario.png" alt="Itsa me Mario!">-->
+                                    <!--<img class="img-rounded" src="img/profile.png" alt="Itsa me Mario!">-->
                                     <!--</div>-->
                                 <!--<div class="media-body" style="line-height: 1;">-->
                                     <!--<span class="h5">Artemis Constantinou</span>-->
@@ -181,7 +181,7 @@
                         <li><a id="navbar-search" href="#navbar-search-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a></li>
                         <li class="dropdown">
                             <a id="navbar-profile" class="navbar-profile" href="#" data-toggle="dropdown">
-                                <img class="navbar-profile-img" src="img/mario.png" alt="Itsa me Mario!">
+                                <img class="navbar-profile-img" src="img/profile.png" alt="Itsa me Mario!">
                                 <span class="navbar-profile-title caret"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right" style="width: 280px;">
@@ -197,116 +197,28 @@
                         </li>
                         <li class="dropdown">
                             <a id="navbar-help" class="bg-20" href="#navbar-help-collapse" data-toggle="collapse">
-                                <i id="navbar-help-icon" class="fa fa-question fa-fw"></i>
+                                <i class="fa fa-question"></i>
                             </a>
+                            <!--<ul class="dropdown-menu dropdown-menu-right">-->
+                                <!--<li class="dropdown-menu-header">-->
+                                    <!--<strong class="h5">Help & Support</strong>-->
+                                    <!--<span><a href="">support@dealeron.com</a></span>-->
+                                <!--</li>-->
+                                <!--<li class="divider"></li>-->
+                                <!--<li><a href="tel:888.888.8888"><i class="fa fa-phone fa-fw"></i> 888.888.8888</a></li>-->
+                            <!--</ul>-->
                         </li>
                     </ul>
                 </nav>
 
-                <div id="navbar-help-collapse" class="collapse">
-                    <div class="hero hero-default hero-lg">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <h4>Support</h4>
-                                    <div class="list-group list-group-default list-group-flush">
-                                        <div class="list-group-item media media-profile media-flush">
-                                            <div class="media-left">
-                                                <img class="img-circle" src="img/mario.png" alt="Itsa me Mario!" height="50" width="50">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="navbar raw">
-                                                    <span class="navbar-text">Mario</span>
-                                                    <ul class="nav navbar-nav navbar-right-override">
-                                                        <li><a href=""><i class="fa fa-phone"></i></a></li>
-                                                        <li><a href=""><i class="fa fa-envelope"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-group-item media media-profile media-flush">
-                                            <div class="media-left">
-                                                <img class="img-circle" src="img/yoshi.png" alt="Itsa me yoshi!" height="50" width="50">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="navbar raw">
-                                                    <span class="navbar-text">Yoshi</span>
-                                                    <ul class="nav navbar-nav navbar-right-override">
-                                                        <li><a href=""><i class="fa fa-phone"></i></a></li>
-                                                        <li><a href=""><i class="fa fa-envelope"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-group-item media media-profile media-flush">
-                                            <div class="media-left">
-                                                <img class="img-circle" src="img/wario.png" alt="Itsa me wario!" height="50" width="50">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="navbar raw">
-                                                    <span class="navbar-text">Wario</span>
-                                                    <ul class="nav navbar-nav navbar-right-override">
-                                                        <li><a href=""><i class="fa fa-phone"></i></a></li>
-                                                        <li><a href=""><i class="fa fa-envelope"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <h4>Open Tickets</h4>
-                                    <table class="table table-default table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="">Fix navbar</a></td>
-                                                <td>9/14/12</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Stupid button</a></td>
-                                                <td>10/14/12</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">homepage banner</a></td>
-                                                <td>11/14/12</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <a class="btn btn-xs btn-rounded" href="">Create a support ticket</a>
-                                </div>
-                                <div class="col-sm-4">
-                                    <h4>Billing</h4>
-                                    <table class="table table-default table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Invoice #</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="">02013</a></td>
-                                                <td>9/14/12</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">02016</a></td>
-                                                <td>10/14/12</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">02019</a></td>
-                                                <td>11/14/12</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <a class="btn btn-xs btn-rounded" href="">View All Invoices</a>
-                                </div>
-                            </div>
+                <div id="navbar-help-collapse" class="collapse in">
+                    <div class="well well-main">
+                        <div class="bg-20 well margin-x">
+                            <button class="navbar-link pull-right" href="#navbar-help-collapse" data-toggle="collapse">
+                                <i class="fa fa-remove"></i>
+                            </button>
+                            <h5>Help & Support</h5>
+                            <p>Dolor laborum distinctio magni iure esse, odio possimus quia quam animi, quis maiores aliquam dignissimos aperiam hic iure molestiae error recusandae. Quo ullam reiciendis quae dolore pariatur. Veniam quam sit!</p>
                         </div>
                     </div>
                 </div>

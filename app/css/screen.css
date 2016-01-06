@@ -3135,6 +3135,12 @@ tbody.collapse.in {
   padding: 0.9em;
 }
 
+.alert-raw {
+  margin-bottom: 0;
+  border-color: transparent;
+  border-radius: 0;
+}
+
 .alert-default {
   color: inherit;
   border-color: transparent;
@@ -6754,6 +6760,22 @@ h5 .btn-group {
   padding: 4.2em 0.9em;
 }
 
+.hero-lg {
+  padding: 8.3979em 1.79955em;
+}
+
+.hero-md {
+  padding: 5.5986em 1.1997em;
+}
+
+.hero-sm {
+  padding: 3.15079em 0.67517em;
+}
+
+.hero-xs {
+  padding: 1.57539em 0.67517em;
+}
+
 .hero-default {
   color: inherit;
   background-color: #e6e6e6;
@@ -7174,6 +7196,11 @@ button.list-group-item {
   margin-bottom: 0;
 }
 
+.list-group-flush .list-group-item {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .list-group-default {
   background-color: #e6e6e6;
 }
@@ -7441,6 +7468,13 @@ button.list-group-item {
 }
 .media-profile .media-right > img {
   margin-left: 1rem;
+}
+
+.media-flush .media-left > img {
+  margin-right: 0;
+}
+.media-flush .media-right > img {
+  margin-left: 0;
 }
 
 .modal-open {
@@ -12852,6 +12886,12 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   padding: 0.3999em 0.67517em;
 }
 
+.well-raw {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-color: transparent;
+}
+
 .well-default {
   color: inherit;
   border-color: transparent;
@@ -13188,7 +13228,7 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
 }
 
 .margin-x {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .visible-xs {

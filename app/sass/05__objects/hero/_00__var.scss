@@ -14,3 +14,9 @@ $hero__state-palette:       true !default;
 //
 //  Base
 $hero__padding:             $hero__y $hero__x;
+//
+//  Variations
+$hero--lg__padding:         ( $hero__y * ( $base__font-ratio * 1.5 ) ) ( $hero__x * ( $base__font-ratio * 1.5 ) );
+$hero--md__padding:         ( $hero__y * $base__font-ratio ) ( $hero__x * $base__font-ratio );
+$hero--sm__padding:         ( $hero__y / $base__font-ratio ) ( $hero__x / $base__font-ratio );
+$hero--xs__padding:         ( $hero__y / ( $base__font-ratio * 2 ) ) ( $hero__x / $base__font-ratio );
