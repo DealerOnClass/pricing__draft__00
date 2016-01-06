@@ -342,6 +342,35 @@ optgroup {
   text-align: center;
 }
 
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
 .fa-glass:before {
   content: "";
 }
@@ -13075,22 +13104,10 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   background-color: #d9534f;
 }
 
-.bg-75 {
+.bg-20 {
   color: white;
-  border-color: rgba(0, 0, 0, 0.75);
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-.bg-50 {
-  color: white;
-  border-color: rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.bg-25 {
-  color: white;
-  border-color: rgba(0, 0, 0, 0.25);
-  background-color: rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .img-responsive {
@@ -13467,16 +13484,8 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   color: #d9534f;
 }
 
-.text-75 {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.text-50 {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.text-25 {
-  color: rgba(0, 0, 0, 0.25);
+.text-20 {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .logo__svg {

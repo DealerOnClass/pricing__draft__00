@@ -129,9 +129,10 @@ $(window).resize( function() {
 });
 function UpdateNavbarSearchForm() {
     var windowWidth      = $(window).width();
+    var helpWidth        = $('#navbar-help').outerWidth();
     var searchWidth      = $('#navbar-search').outerWidth();
     var profileWidth     = $('#navbar-profile').outerWidth();
-    var calculatedWidth  = windowWidth - ( searchWidth + profileWidth );
+    var calculatedWidth  = windowWidth - ( helpWidth + searchWidth + profileWidth );
 
     $('#navbar-search-form-input').css("width", calculatedWidth);
 };
