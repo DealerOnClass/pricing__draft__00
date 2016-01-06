@@ -8264,6 +8264,10 @@ button.list-group-item {
   vertical-align: top;
 }
 
+.offcanvas-body-locked {
+  width: 10000px;
+}
+
 .offcanvas-inner {
   position: relative;
   overflow-y: scroll;
@@ -8274,6 +8278,10 @@ button.list-group-item {
 
 .offcanvas-bg {
   background-color: white;
+}
+
+.offcanvas-inner-locked {
+  width: 100% !important;
 }
 
 .offcanvas-nested {
