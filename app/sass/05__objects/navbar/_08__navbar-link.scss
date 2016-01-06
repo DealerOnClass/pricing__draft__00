@@ -7,10 +7,8 @@ $navbar-profile-img: $navbar__y * 2;
 .navbar-profile {
     position: relative;
 
-    //  @media (max-width: $grid-float-breakpoint-max) {
-        height: $base__line-height + ( $navbar__y * 2 );
-        width: calc(#{$navbar-profile-img} + #{$navbar__x * 2});
-    //  }
+    height: $base__line-height + ( $navbar__y * 2 );
+    width: $navbar-profile-img + ($navbar__x * 2);
 }
 
 .navbar-profile-img {
@@ -20,13 +18,4 @@ $navbar-profile-img: $navbar__y * 2;
     width: $navbar-profile-img;
     top: 50%;
     margin-top: $navbar-profile-img / -2;
-    //  left: $navbar__x;
 }
-
-//  .navbar-profile-title {
-//      padding-left: calc(#{$navbar-profile-img} + #{$navbar__x});
-//
-//      @media (max-width: $grid-float-breakpoint-max) {
-//          display: none;
-//      }
-//  }

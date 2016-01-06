@@ -17,7 +17,7 @@ $breadcrumb__padding:               $breadcrumb__y $breadcrumb__x;
 $breadcrumb__radius:                $breadcrumb__radius;
 //
 //  Components
-$breadcrumb__separator__use-icon:   false !default;
+$breadcrumb__separator__use-icon:   true !default;
 $breadcrumb__separator__icon:       $fa-var-angle-right;
 $breadcrumb__separator__padding:    $breadcrumb__y ( $breadcrumb__x / 4 );
 //

@@ -3352,7 +3352,8 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 }
 .breadcrumb > li > a:after {
   margin-left: 0.9em;
-  content: '/';
+  font: normal normal normal 14px/1 "fontawesome-webfont";
+  content: "";
 }
 
 .breadcrumb-rounded {
@@ -8259,7 +8260,6 @@ button.list-group-item {
 .offcanvas-body {
   display: table-cell;
   vertical-align: top;
-  background-color: white;
 }
 
 .offcanvas-inner {
@@ -8267,6 +8267,10 @@ button.list-group-item {
   overflow-y: scroll;
   box-sizing: border-box;
   padding-bottom: 4.5em;
+  background-color: white;
+}
+
+.offcanvas-bg {
   background-color: white;
 }
 
@@ -8468,7 +8472,7 @@ button.list-group-item {
 .navbar-profile {
   position: relative;
   height: 3.3em;
-  width: calc(1.8em + 1.8em);
+  width: 3.6em;
 }
 
 .navbar-profile-img {

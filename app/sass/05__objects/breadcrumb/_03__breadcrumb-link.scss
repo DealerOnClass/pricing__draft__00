@@ -7,7 +7,7 @@
         margin-left: $breadcrumb__x;
 
         @if $breadcrumb__separator__use-icon {
-            font-family: $fa-font-name;
+            font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} $fa-font-name; // shortening font declaration
 
             content: '#{$breadcrumb__separator__icon}';
         } @else {
