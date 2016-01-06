@@ -1,8 +1,4 @@
 .breadcrumb-rounded {
     border-radius: ($breadcrumb__y * 2) + $base__font-unit;
-
-    > li:first-child > a {
-        padding-left: ( $breadcrumb__x * 1.5 );
-    }
 }
 

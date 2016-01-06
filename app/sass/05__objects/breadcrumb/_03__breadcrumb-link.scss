@@ -3,5 +3,15 @@
 
     padding: $breadcrumb__padding;
 
-    color: inherit;
+    &:after {
+        margin-left: $breadcrumb__x;
+
+        @if $breadcrumb__separator__use-icon {
+            font-family: $fa-font-name;
+
+            content: '#{$breadcrumb__separator__icon}';
+        } @else {
+            content: '/';
+        }
+    }
 }

@@ -126,15 +126,15 @@
                 <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
                     <ul class="nav navbar-nav navbar-right-override">
                         <li>
-                            <form id="navbar-form" class="navbar-search-form form-inline collapse width">
-                                <input class="form-control" id="exampleInputEmail2" type="email">
+                            <form id="navbar-search-form" class="navbar-search-form form-inline collapse width">
+                                <input id="navbar-search-form-input" class="form-control" type="text">
                             </form>
                         </li>
                         <li>
-                            <a id="navbar-form-link" href="#navbar-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a>
+                            <a id="navbar-search" href="#navbar-search-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a>
                         </li>
                         <li class="dropdown">
-                            <a class="navbar-profile" href="#" data-toggle="dropdown">
+                            <a id="navbar-profile" class="navbar-profile" href="#" data-toggle="dropdown">
                                 <img class="navbar-profile-img" src="img/profile.png" alt="Itsa me Mario!">
                                 <span class="navbar-profile-title caret"></span>
                             </a>
@@ -162,6 +162,11 @@
                     </div>
                 </nav>
                 <div class="offcanvas-inner" offcanvas-set-height="oncanvas-nav" offcanvas-set-width="window">
+                    <ol class="breadcrumb breadcrumb-default breadcrumb-flush breadcrumb-sm">
+                        <li><a href="#">Site Content</a></li>
+                        <li><a href="#">Meet Our Staff</a></li>
+                        <li class="active">Edit Staff Members</li>
+                    </ol>
                     <div class="hero">
                         <div class="container">
                             <h2>Shell 03</h2>

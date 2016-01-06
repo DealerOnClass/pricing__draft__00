@@ -3303,43 +3303,58 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 }
 
 .breadcrumb > li {
-  position: relative;
-  display: inline-block;
-  margin-right: -5px;
-}
-.breadcrumb > li:after {
-  position: absolute;
-  top: 0.6em;
-  right: 0;
-  font-family: "fontawesome-webfont";
-  content: "";
-}
-.breadcrumb > li:last-child:after {
-  display: none;
+  float: left;
+  display: block;
 }
 .breadcrumb > li.active {
   font-family: "AvenirHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: inline-block;
   padding: 0.6em 0.9em;
 }
 
 .breadcrumb > li > a {
   display: block;
   padding: 0.6em 0.9em;
-  color: inherit;
+}
+.breadcrumb > li > a:after {
+  margin-left: 0.9em;
+  content: '/';
 }
 
 .breadcrumb-rounded {
   border-radius: 2.2em;
 }
-.breadcrumb-rounded > li:first-child > a {
-  padding-left: 1.35em;
+
+.breadcrumb-flush {
+  border-radius: 0;
+}
+
+.breadcrumb-lg > li > a,
+.breadcrumb-lg > li.active {
+  padding: 1.1997em 1.79955em;
+}
+
+.breadcrumb-md > li > a,
+.breadcrumb-md > li.active {
+  padding: 0.7998em 1.1997em;
+}
+
+.breadcrumb-sm > li > a,
+.breadcrumb-sm > li.active {
+  padding: 0.45011em 0.67517em;
+}
+
+.breadcrumb-xs > li > a,
+.breadcrumb-xs > li.active {
+  padding: 0.22506em 0.67517em;
 }
 
 .breadcrumb-default {
   color: inherit;
-  border-color: transparent;
+  border: 0 none;
   background-color: #e6e6e6;
+}
+.breadcrumb-default > li > a {
+  color: inherit;
 }
 .breadcrumb-default > li > a:hover, .breadcrumb-default > li > a:active, .breadcrumb-default > li > a:focus {
   background-color: #cfcfcf;
@@ -3347,8 +3362,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-inverse {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #343c4b;
+}
+.breadcrumb-inverse > li > a {
+  color: inherit;
 }
 .breadcrumb-inverse > li > a:hover, .breadcrumb-inverse > li > a:active, .breadcrumb-inverse > li > a:focus {
   background-color: #2f3644;
@@ -3356,8 +3374,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-cta {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #f17306;
+}
+.breadcrumb-cta > li > a {
+  color: inherit;
 }
 .breadcrumb-cta > li > a:hover, .breadcrumb-cta > li > a:active, .breadcrumb-cta > li > a:focus {
   background-color: #d96805;
@@ -3365,8 +3386,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-main {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #3662ad;
+}
+.breadcrumb-main > li > a {
+  color: inherit;
 }
 .breadcrumb-main > li > a:hover, .breadcrumb-main > li > a:active, .breadcrumb-main > li > a:focus {
   background-color: #31589c;
@@ -3374,8 +3398,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-alt1 {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #42587d;
+}
+.breadcrumb-alt1 > li > a {
+  color: inherit;
 }
 .breadcrumb-alt1 > li > a:hover, .breadcrumb-alt1 > li > a:active, .breadcrumb-alt1 > li > a:focus {
   background-color: #3b4f71;
@@ -3383,8 +3410,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-alt2 {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #5f7394;
+}
+.breadcrumb-alt2 > li > a {
+  color: inherit;
 }
 .breadcrumb-alt2 > li > a:hover, .breadcrumb-alt2 > li > a:active, .breadcrumb-alt2 > li > a:focus {
   background-color: #566885;
@@ -3392,8 +3422,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-alt3 {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #8193b1;
+}
+.breadcrumb-alt3 > li > a {
+  color: inherit;
 }
 .breadcrumb-alt3 > li > a:hover, .breadcrumb-alt3 > li > a:active, .breadcrumb-alt3 > li > a:focus {
   background-color: #74849f;
@@ -3401,8 +3434,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-success {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #5cb85c;
+}
+.breadcrumb-success > li > a {
+  color: inherit;
 }
 .breadcrumb-success > li > a:hover, .breadcrumb-success > li > a:active, .breadcrumb-success > li > a:focus {
   background-color: #53a653;
@@ -3410,8 +3446,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-info {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #5bc0de;
+}
+.breadcrumb-info > li > a {
+  color: inherit;
 }
 .breadcrumb-info > li > a:hover, .breadcrumb-info > li > a:active, .breadcrumb-info > li > a:focus {
   background-color: #52adc8;
@@ -3419,8 +3458,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-warning {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #f0ad4e;
+}
+.breadcrumb-warning > li > a {
+  color: inherit;
 }
 .breadcrumb-warning > li > a:hover, .breadcrumb-warning > li > a:active, .breadcrumb-warning > li > a:focus {
   background-color: #d89c46;
@@ -3428,8 +3470,11 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 
 .breadcrumb-danger {
   color: white;
-  border-color: transparent;
+  border: 0 none;
   background-color: #d9534f;
+}
+.breadcrumb-danger > li > a {
+  color: inherit;
 }
 .breadcrumb-danger > li > a:hover, .breadcrumb-danger > li > a:active, .breadcrumb-danger > li > a:focus {
   background-color: #c34b47;
@@ -8144,12 +8189,6 @@ button.list-group-item {
   background-color: #343c4b;
 }
 
-.offcanvas,
-.offcanvas-wrapper,
-.offcanvas-inner {
-  min-width: 320px;
-}
-
 .offcanvas-nav {
   position: relative !important;
 }
@@ -8329,12 +8368,10 @@ button.list-group-item {
   }
 }
 
-@media (max-width: 767px) {
-  .navbar-search-form {
-    position: absolute;
-    right: 0;
-    z-index: 1030;
-  }
+.navbar-search-form {
+  position: absolute;
+  right: 0;
+  z-index: 1030;
 }
 .navbar-search-form,
 .navbar-search-form .form-control {

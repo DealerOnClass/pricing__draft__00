@@ -34,11 +34,9 @@
 
 .navbar-search-form {
 
-    @media (max-width: $grid-float-breakpoint-max) {
-        position: absolute;
-        right: 0;
-        z-index: $zindex-navbar-fixed;
-    }
+    position: absolute;
+    right: 0;
+    z-index: $zindex-navbar-fixed;
 
     &,
     .form-control {

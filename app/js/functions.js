@@ -121,6 +121,20 @@ $('.notify-alert').on('click', function() {
 //
 //  Navbar Search Focus
 //
-$('#navbar-form').on('shown.bs.collapse', function() {
-    $(this).children("input").focus();
+$(document).ready( function() {
+    UpdateNavbarSearchForm();
+});
+$(window).resize( function() {
+    UpdateNavbarSearchForm();
+});
+function UpdateNavbarSearchForm() {
+    var windowWidth      = $(window).width();
+    var searchWidth      = $('#navbar-search').outerWidth();
+    var profileWidth     = $('#navbar-profile').outerWidth();
+    var calculatedWidth  = windowWidth - ( searchWidth + profileWidth );
+
+    $('#navbar-search-form-input').css("width", calculatedWidth);
+};
+$('#navbar-search-form').on('shown.bs.collapse', function() {
+    $('#navbar-search-form-input').focus();
 });
