@@ -8263,7 +8263,7 @@ button.list-group-item {
 
 .offcanvas-inner {
   position: relative;
-  overflow-y: auto;
+  overflow-y: scroll;
   box-sizing: border-box;
   padding-bottom: 4.5em;
   background-color: white;
@@ -8655,11 +8655,18 @@ button.list-group-item {
 .navbar-right-override {
   float: right;
 }
-.navbar-right-override > li {
+
+.navbar-left-override {
+  float: left;
+}
+
+.navbar-right-override > li,
+.navbar-left-override > li {
   clear: none;
   float: left;
 }
-.navbar-right-override .dropdown-menu {
+.navbar-right-override .dropdown-menu,
+.navbar-left-override .dropdown-menu {
   position: absolute;
 }
 

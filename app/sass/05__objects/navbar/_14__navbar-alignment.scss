@@ -19,8 +19,15 @@
 }
 
 .navbar-right-override {
-
     float: right;
+}
+
+.navbar-left-override {
+    float: left;
+}
+
+.navbar-right-override,
+.navbar-left-override {
 
     > li {
         clear: none;
