@@ -165,9 +165,23 @@ $('#navbar-help-collapse').on('hide.bs.collapse', function() {
 //
 $('#navbar-sidebar-lock').on('click', function(e) {
     e.preventDefault();
+    $(this).toggleClass('hidden');
+    $('#navbar-sidebar-unlock').toggleClass('hidden');
     $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
+    //
+    $('#navbar-sidebar-wrapper').attr('offcanvas-set-height','window');
+    $('#navbar-sidebar-wrapper').removeAttr('offcanvas-set-top');
+    $('#navbar-sidebar-wrapper').css('height',$(window).height());
+    $('#navbar-sidebar-wrapper').css('top', 0);
 });
 $('#navbar-sidebar-unlock').on('click', function(e) {
     e.preventDefault();
+    $(this).toggleClass('hidden');
+    $('#navbar-sidebar-lock').toggleClass('hidden');
     $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
+    //
+    $('#navbar-sidebar-wrapper').attr('offcanvas-set-height','oncanvas-nav');
+    $('#navbar-sidebar-wrapper').attr('offcanvas-set-top','oncanvas-nav');
+    $('#navbar-sidebar-wrapper').css('height', $(window).height() - $('[oncanvas-nav]').height());
+    $('#navbar-sidebar-wrapper').css('top', $('[oncanvas-nav]').height());
 });
