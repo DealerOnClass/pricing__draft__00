@@ -144,8 +144,10 @@ $('#navbar-search-form').on('shown.bs.collapse', function() {
 //  Navbar Help Icon
 //
 $('#navbar-help-collapse').on('show.bs.collapse', function() {
+    $('#navbar-help').addClass('active');
     $('#navbar-help-icon').removeClass('fa-question').addClass('fa-remove');
 });
 $('#navbar-help-collapse').on('hide.bs.collapse', function() {
+    $('#navbar-help').removeClass('active');
     $('#navbar-help-icon').removeClass('fa-remove').addClass('fa-question');
 });
