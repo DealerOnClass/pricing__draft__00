@@ -163,11 +163,6 @@ $('#navbar-help-collapse').on('hide.bs.collapse', function() {
 //
 //  Navbar Lock
 //
-$('#navbar-sidebar-lock').on('click', function(e) {
-    e.preventDefault();
-    $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
-});
-$('#navbar-sidebar-unlock').on('click', function(e) {
-    e.preventDefault();
-    $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
+$('#navbar-sidebar-lock').on('click', function() {
+    $('#navbar-sidebar-parent').addClass('offcanvas-nav-locked');
 });

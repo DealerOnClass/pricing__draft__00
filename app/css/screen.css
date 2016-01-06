@@ -3344,6 +3344,8 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb > li.active {
   font-family: "AvenirHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.6em 0.9em;
+  position: relative;
+  top: 1px;
 }
 
 .breadcrumb > li > a {
@@ -8253,7 +8255,7 @@ button.list-group-item {
   background-color: #343c4b;
 }
 
-.offcanvas-nav {
+.offcanvas-nav-locked {
   position: relative !important;
 }
 
@@ -8580,8 +8582,7 @@ button.list-group-item {
   padding: 0.9em 0.9em;
 }
 
-.navbar-sidebar-close {
-  display: block;
+.navbar-sidebar-header {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
