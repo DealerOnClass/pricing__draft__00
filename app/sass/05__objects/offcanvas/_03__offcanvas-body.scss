@@ -4,6 +4,9 @@
     vertical-align: top;
 }
 
-.offcanvas-body-locked {
-    width: 10000px;
+
+@media (min-width: $grid-float-breakpoint) {
+    .offcanvas-body-locked {
+        width: 10000px;
+    }
 }

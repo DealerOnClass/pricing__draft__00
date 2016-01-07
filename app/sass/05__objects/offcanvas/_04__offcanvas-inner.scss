@@ -12,6 +12,8 @@
     background-color: $white;
 }
 
-.offcanvas-inner-locked {
-    width: 100% !important;
+@media (min-width: $grid-float-breakpoint) {
+    .offcanvas-inner-locked {
+        width: 100% !important;
+    }
 }

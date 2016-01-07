@@ -85,8 +85,8 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a id="navbar-help" href="#navbar-help-collapse" data-toggle="collapse">
-                        <i id="navbar-help-icon" class="fa fa-question fa-fw"></i>
+                    <a id="navbar-help" class="active" href="#navbar-help-collapse" data-toggle="collapse">
+                        <i id="navbar-help-icon" class="fa fa-remove fa-fw"></i>
                     </a>
                 </li>
             </ul>
@@ -98,9 +98,9 @@
             <nav id="navbar-sidebar-parent" class="offcanvas-nav navbar navbar-inverse navbar-stacked navbar-sidebar">
                 <div id="navbar-sidebar" class="navbar-sidebar-collapse collapse width">
                     <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav">
-                        <div class="navbar-sidebar-header raw">
-                            <a id="navbar-sidebar-lock" class="navbar-link" href=""><i id="navbar-sidebar-lock-icon" class="fa fa-unlock fa-fw"></i></a>
-                            <a id="navbar-sidebar-unlock" class="navbar-link hidden" href=""><i id="navbar-sidebar-unlock-icon" class="fa fa-lock fa-fw"></i></a>
+                        <div class="navbar-sidebar-header raw hidden-xs">
+                            <a id="navbar-sidebar-lock" class="navbar-link" href=""><i id="navbar-sidebar-lock-icon" class="fa fa-unlock fa-fw"></i> Sidebar is unlocked</a>
+                            <a id="navbar-sidebar-unlock" class="navbar-link hidden" href=""><i id="navbar-sidebar-unlock-icon" class="fa fa-lock fa-fw"></i> Sidebar is locked</a>
                         </div>
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
@@ -162,118 +162,180 @@
 
             <div id="offcanvas-body" class="offcanvas-body">
 
-                <div id="navbar-help-collapse" class="collapse">
+                <div id="navbar-help-collapse" class="collapse in">
                     <div class="bg-default" offcanvas-set-height="oncanvas-nav" style="overflow-y: auto">
-                        <div class="hero hero-default hero-sm">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <h4>Support</h4>
-                                        <div class="list-group list-group-default list-group-flush">
-                                            <div class="list-group-item media media-profile media-flush">
-                                                <div class="media-left">
-                                                    <img class="img-circle" src="img/mario.png" alt="Itsa me Mario!" height="50" width="50">
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="navbar raw">
-                                                        <span class="navbar-text pull-left">Mario</span>
+                        <div class="bg-main">
+                            <hr class="margin-x">
+                            <ul class="nav nav-main nav-tabs nav-flush">
+                                <li>
+                                    <a href="#UserSettings" data-toggle="tab">User Settings</a>
+                                </li>
+                                <li class="active"><a href="#Inbox" data-toggle="tab">Inbox</a></li>
+                                <li><a href="#Support" data-toggle="tab">Support</a></li>
+                                <li><a href="#Billing" data-toggle="tab">Billing</a></li>
+                            </ul>
+                            <hr class="margin-x">
+                        </div>
+                        <div class="hero hero-sm">
+                            <div class="container tab-content">
+                                <div class="tab-pane fade" id="UserSettings">
+                                </div>
+                                <div class="tab-pane active" id="Inbox">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h4>Inbox</h4>
+                                            <div class="list-group list-group-default list-group-flush">
+                                                <div class="list-group-item media">
+                                                    <div class="media-left">
+                                                        <img class="img-circle" src="img/mario.png" alt="Itsa me mario!" height="50" width="50">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5>Its ame Mario!<br><small>09/02/2015</small></h5>
+                                                        <p>Adipisicing rerum architecto nobis qui accusamus, rem!</p>
                                                         <ul class="nav navbar-nav navbar-right-override">
-                                                            <li><a href=""><i class="fa fa-phone"></i></a></li>
-                                                            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-paper-plane"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-mail-forward"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-mail-reply"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="list-group-item media media-profile media-flush">
-                                                <div class="media-left">
-                                                    <img class="img-circle" src="img/yoshi.png" alt="Itsa me yoshi!" height="50" width="50">
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="navbar raw">
-                                                        <span class="navbar-text pull-left">Yoshi</span>
+                                                <div class="list-group-item media">
+                                                    <div class="media-left">
+                                                        <img class="img-circle" src="img/yoshi.png" alt="Itsa me yoshi!" height="50" width="50">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5>I like eggs!<br><small>09/03/2015</small></h5>
+                                                        <p>Sit perferendis ipsam doloribus ipsam laboriosam. Ut vel explicabo placeat vitae tempora. Veniam.</p>
                                                         <ul class="nav navbar-nav navbar-right-override">
-                                                            <li><a href=""><i class="fa fa-phone"></i></a></li>
-                                                            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-paper-plane"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-mail-forward"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-mail-reply"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="list-group-item media media-profile media-flush">
-                                                <div class="media-left">
-                                                    <img class="img-circle" src="img/wario.png" alt="Itsa me wario!" height="50" width="50">
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="navbar raw">
-                                                        <span class="navbar-text pull-left">Wario</span>
+                                                <div class="list-group-item media">
+                                                    <div class="media-left">
+                                                        <img class="img-circle" src="img/wario.png" alt="Itsa me wario!" height="50" width="50">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5>Inventory Update<br><small>09/04/2015</small></h5>
+                                                        <p>Consectetur rem quisquam esse molestias omnis in labore perferendis, illo nam laboriosam sequi amet! Esse porro amet ut rem pariatur?</p>
                                                         <ul class="nav navbar-nav navbar-right-override">
-                                                            <li><a href=""><i class="fa fa-phone"></i></a></li>
-                                                            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-paper-plane"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-mail-forward"></i></a></li>
+                                                            <li><a href=""><i class="fa fa-mail-reply"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <hr class="invisible visible-xs">
-                                    <hr class="invisible visible-xs">
-                                    <div class="col-sm-4">
-                                        <h4>Open Tickets</h4>
-                                        <table class="table table-default table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Date</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="">Fix navbar</a></td>
-                                                    <td>9/14/12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Stupid button</a></td>
-                                                    <td>10/14/12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">homepage banner</a></td>
-                                                    <td>11/14/12</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <a class="btn btn-xs btn-default btn-rounded" href="">Create a support ticket</a>
+                                </div>
+                                <div class="tab-pane fade" id="Support">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h4>Support</h4>
+                                            <div class="list-group list-group-default list-group-flush">
+                                                <div class="list-group-item media media-profile media-flush">
+                                                    <div class="media-left">
+                                                        <img class="img-circle" src="img/mario.png" alt="Itsa me Mario!" height="50" width="50">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="navbar raw">
+                                                            <span class="navbar-text pull-left">Mario</span>
+                                                            <ul class="nav navbar-nav navbar-right-override">
+                                                                <li><a href=""><i class="fa fa-phone"></i></a></li>
+                                                                <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item media media-profile media-flush">
+                                                    <div class="media-left">
+                                                        <img class="img-circle" src="img/yoshi.png" alt="Itsa me yoshi!" height="50" width="50">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="navbar raw">
+                                                            <span class="navbar-text pull-left">Yoshi</span>
+                                                            <ul class="nav navbar-nav navbar-right-override">
+                                                                <li><a href=""><i class="fa fa-phone"></i></a></li>
+                                                                <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item media media-profile media-flush">
+                                                    <div class="media-left">
+                                                        <img class="img-circle" src="img/wario.png" alt="Itsa me wario!" height="50" width="50">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="navbar raw">
+                                                            <span class="navbar-text pull-left">Wario</span>
+                                                            <ul class="nav navbar-nav navbar-right-override">
+                                                                <li><a href=""><i class="fa fa-phone"></i></a></li>
+                                                                <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h4>Open Tickets</h4>
+                                            <table class="table table-default table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Date</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="">Fix navbar</a></td>
+                                                        <td>9/14/12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Stupid button</a></td>
+                                                        <td>10/14/12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">homepage banner</a></td>
+                                                        <td>11/14/12</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a class="btn btn-xs btn-default btn-rounded" href="">Create a support ticket</a>
+                                        </div>
                                     </div>
-                                    <hr class="invisible visible-xs">
-                                    <hr class="invisible visible-xs">
-                                    <div class="col-sm-4">
-                                        <h4>Billing</h4>
-                                        <table class="table table-default table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>Invoice #</th>
-                                                    <th>Date</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="">02013</a></td>
-                                                    <td>9/14/12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">02016</a></td>
-                                                    <td>10/14/12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">02019</a></td>
-                                                    <td>11/14/12</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <a class="btn btn-xs btn-default btn-rounded" href="">View All Invoices</a>
-                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Billing">
+                                    <h4>Billing</h4>
+                                    <table class="table table-default table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Invoice #</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="">02013</a></td>
+                                                <td>9/14/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">02016</a></td>
+                                                <td>10/14/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">02019</a></td>
+                                                <td>11/14/12</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="btn btn-xs btn-default btn-rounded" href="">View All Invoices</a>
                                 </div>
                             </div>
                         </div>
-                        <hr class="margin-x">
                     </div>
                 </div>
 

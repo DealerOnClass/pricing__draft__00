@@ -7413,6 +7413,10 @@ button.list-group-item {
   border-bottom-color: rgba(0, 0, 0, 0.15);
 }
 
+.media.list-group-item + .media.list-group-item {
+  margin-top: 1.5em;
+}
+
 .media,
 .media-body {
   zoom: 1;
@@ -8264,10 +8268,11 @@ button.list-group-item {
   vertical-align: top;
 }
 
-.offcanvas-body-locked {
-  width: 10000px;
+@media (min-width: 768px) {
+  .offcanvas-body-locked {
+    width: 10000px;
+  }
 }
-
 .offcanvas-inner {
   position: relative;
   overflow-y: scroll;
@@ -8280,10 +8285,11 @@ button.list-group-item {
   background-color: white;
 }
 
-.offcanvas-inner-locked {
-  width: 100% !important;
+@media (min-width: 768px) {
+  .offcanvas-inner-locked {
+    width: 100% !important;
+  }
 }
-
 .offcanvas-nested {
   position: relative;
 }
