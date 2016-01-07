@@ -93,7 +93,6 @@ $(document).ready( function() {
 });
 $(window).resize( function() {
     UpdateDimensions();
-    //  UpdateSidebar();
 });
 function UpdateDimensions() {
     var navHeight        = $('[oncanvas-nav]').height();
