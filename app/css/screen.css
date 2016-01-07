@@ -5576,6 +5576,26 @@ h5 .btn-group {
   clear: both;
 }
 
+.control-label-lg,
+.form-control-lg {
+  padding: 1.1997em 1.79955em;
+}
+
+.control-label-md,
+.form-control-md {
+  padding: 0.7998em 1.1997em;
+}
+
+.control-label-sm,
+.form-control-sm {
+  padding: 0.45011em 0.67517em;
+}
+
+.control-label-xs,
+.form-control-xs {
+  padding: 0.22506em 0.67517em;
+}
+
 .has-success {
   color: #5cb85c;
 }
@@ -11613,6 +11633,16 @@ h5 [class*='sortable-'] {
   border-radius: 0.375em;
   border-collapse: separate;
   overflow: hidden;
+}
+
+.table-flush > thead > tr > th,
+.table-flush > thead > tr > td,
+.table-flush > tbody > tr > th,
+.table-flush > tbody > tr > td,
+.table-flush > tfoot > tr > th,
+.table-flush > tfoot > tr > td {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .table-default {

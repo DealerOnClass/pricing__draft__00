@@ -26,3 +26,9 @@ $has-danger__icon:                 $fa-var-remove;
 //
 $input__color__placeholder:        $gray__04;
 $input__bg--disabled:              $gray__02;
+//
+//  Variations
+$form--lg__padding:                ( $form__y * ( $base__font-ratio * 1.5 ) ) ( $form__x * ( $base__font-ratio * 1.5 ) );
+$form--md__padding:                ( $form__y * $base__font-ratio ) ( $form__x * $base__font-ratio );
+$form--sm__padding:                ( $form__y / $base__font-ratio ) ( $form__x / $base__font-ratio );
+$form--xs__padding:                ( $form__y / ( $base__font-ratio * 2 ) ) ( $form__x / $base__font-ratio );

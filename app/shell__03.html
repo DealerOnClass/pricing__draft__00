@@ -69,7 +69,7 @@
                 </li>
                 <li><a id="navbar-search" href="#navbar-search-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a></li>
                 <li class="dropdown">
-                    <a id="navbar-profile" class="navbar-profile" href="#" data-toggle="dropdown">
+                    <a id="navbar-profile" class="navbar-profile" href="#navbar-help-collapse" data-toggle="collapse">
                         <img class="navbar-profile-img" src="img/mario.png" alt="Itsa me Mario!">
                         <span class="navbar-profile-title caret"></span>
                     </a>
@@ -84,11 +84,11 @@
                         <li><a href=""><i class="fa fa-sign-out fa-fw"></i>Sign Out</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a id="navbar-help" href="#navbar-help-collapse" data-toggle="collapse">
-                        <i id="navbar-help-icon" class="fa fa-question fa-fw"></i>
-                    </a>
-                </li>
+                <!--<li class="dropdown">-->
+                    <!--<a id="navbar-help" href="#navbar-help-collapse" data-toggle="collapse">-->
+                        <!--<i id="navbar-help-icon" class="fa fa-question fa-fw"></i>-->
+                    <!--</a>-->
+                <!--</li>-->
             </ul>
         </nav>
 
@@ -158,28 +158,53 @@
 
             <div id="offcanvas-body" class="offcanvas-body">
 
-                <div id="navbar-help-collapse" class="collapse">
+                <div id="navbar-help-collapse" class="collapse in">
                     <div class="bg-default" offcanvas-set-height="oncanvas-nav" style="overflow-y: auto">
                         <div class="bg-main">
                             <hr class="divider">
                             <ul class="nav nav-main nav-tabs nav-flush">
-                                <li>
-                                    <a href="#UserSettings" data-toggle="tab">User Settings</a>
+                                <li class="active">
+                                    <a href="#Account" data-toggle="tab">Account</a>
                                 </li>
-                                <li><a href="#Inbox" data-toggle="tab">Inbox</a></li>
-                                <li class="active"><a href="#Support" data-toggle="tab">Support</a></li>
+                                <li><a href="#Messages" data-toggle="tab">Messages</a></li>
+                                <li><a href="#Support" data-toggle="tab">Support</a></li>
                                 <li><a href="#Billing" data-toggle="tab">Billing</a></li>
                             </ul>
                             <hr class="divider">
                         </div>
                         <div class="hero hero-sm">
                             <div class="container tab-content">
-                                <div class="tab-pane fade" id="UserSettings">
-                                </div>
-                                <div class="tab-pane" id="Inbox">
+                                <div class="tab-pane active" id="Account">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <h4>Inbox</h4>
+                                            <h4>Account Settings</h4>
+                                            <table class="table table-borderless table-flush">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>User Name</td>
+                                                        <td><input class="form-control form-control-sm" id="" placeholder="John Doe" type="text"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Password</td>
+                                                        <td><input class="form-control form-control-sm" id="inputPassword" placeholder="Password" type="password"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Email</td>
+                                                        <td><input class="form-control form-control-sm" id="" placeholder="John@email.com" type="email"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td><a class="btn btn-default btn-xs" href="">Submit</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Messages">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h4>Messages</h4>
                                             <div class="list-group list-group-default list-group-flush">
                                                 <div class="list-group-item media">
                                                     <div class="media-left">
@@ -227,7 +252,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane active" id="Support">
+                                <div class="tab-pane" id="Support">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <h4>Support</h4>
@@ -300,7 +325,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <a class="btn btn-xs btn-default btn-rounded" href="">Create a support ticket</a>
+                                            <a class="btn btn-xs btn-default" href="">Create a support ticket</a>
                                         </div>
                                     </div>
                                 </div>
@@ -328,7 +353,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <a class="btn btn-xs btn-default btn-rounded" href="">View All Invoices</a>
+                                    <a class="btn btn-xs btn-default" href="">View All Invoices</a>
                                 </div>
                             </div>
                         </div>

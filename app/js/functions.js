@@ -104,7 +104,16 @@ function UpdateDimensions() {
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
+
+    var searchWidth      = $('#navbar-search').outerWidth();
+    var profileWidth     = $('#navbar-profile').outerWidth();
+    var calculatedWidth  = windowWidth - ( searchWidth + profileWidth );
+
+    $('#navbar-search-form-input').css("width", calculatedWidth);
 };
+$('#navbar-search-form').on('shown.bs.collapse', function() {
+    $('#navbar-search-form-input').focus();
+});
 function UpdateSidebar() {
     var windowWidth      = $(window).width();
 
@@ -138,51 +147,13 @@ $('.notify-alert').on('click', function() {
 });
 ////////////////////////////////////////
 //
-//  Navbar Search Focus
-//
-$(document).ready( function() {
-    UpdateNavbarSearchForm();
-});
-$(window).resize( function() {
-    UpdateNavbarSearchForm();
-});
-function UpdateNavbarSearchForm() {
-    var windowWidth      = $(window).width();
-    var helpWidth        = $('#navbar-help').outerWidth();
-    var searchWidth      = $('#navbar-search').outerWidth();
-    var profileWidth     = $('#navbar-profile').outerWidth();
-    var calculatedWidth  = windowWidth - ( helpWidth + searchWidth + profileWidth );
-
-    $('#navbar-search-form-input').css("width", calculatedWidth);
-};
-$('#navbar-search-form').on('shown.bs.collapse', function() {
-    $('#navbar-search-form-input').focus();
-});
-////////////////////////////////////////
-//
 //  Navbar Help
 //
 $('#navbar-help-collapse').on('show.bs.collapse', function() {
-    $('#navbar-help').addClass('active');
+    $('#navbar-profile').addClass('active');
     $('#navbar-help-icon').removeClass('fa-question').addClass('fa-remove');
 });
 $('#navbar-help-collapse').on('hide.bs.collapse', function() {
-    $('#navbar-help').removeClass('active');
+    $('#navbar-profile').removeClass('active');
     $('#navbar-help-icon').removeClass('fa-remove').addClass('fa-question');
 });
-//  ////////////////////////////////////////
-//  //
-//  //  Navbar Lock
-//  //
-//  $('#navbar-sidebar-lock').on('click', function(e) {
-//      e.preventDefault();
-//      $(this).toggleClass('hidden');
-//      $('#navbar-sidebar-unlock').toggleClass('hidden');
-//      $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
-//  });
-//  $('#navbar-sidebar-unlock').on('click', function(e) {
-//      e.preventDefault();
-//      $(this).toggleClass('hidden');
-//      $('#navbar-sidebar-lock').toggleClass('hidden');
-//      $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
-//  });

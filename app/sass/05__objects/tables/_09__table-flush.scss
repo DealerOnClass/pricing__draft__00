@@ -1,0 +1,13 @@
+.table-flush {
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
