@@ -6,4 +6,8 @@ hr {
     border-right: 0 none;
     border-bottom: 0 none;
     border-left: 0 none;
+
+    &.divider {
+        margin: 0;
+    }
 }

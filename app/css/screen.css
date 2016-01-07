@@ -2914,6 +2914,9 @@ hr, .dropdown-menu .divider {
   border-bottom: 0 none;
   border-left: 0 none;
 }
+hr.divider, .dropdown-menu .divider {
+  margin: 0;
+}
 
 a {
   color: #3662ad;
