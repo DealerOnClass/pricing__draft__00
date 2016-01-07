@@ -10,10 +10,94 @@
     </head>
 
     <body class="offcanvas-wrapper">
-        <div class="offcanvas">
+
+        <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
+            <a id="navbar-sidebar-link" href="#navbar-sidebar" class="pull-left collapse width in" data-toggle="collapse" offcanvas-toggle-on>
+                <div class="navbar-brand">
+                    <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
+                </div>
+            </a>
+            <ul class="nav navbar-nav navbar-left-override">
+                <li>
+                    <a class="navbar-brand" href="#">
+                        <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml"></object>
+                    </a>
+                </li>
+                <li class="dropdown hidden-xs">
+                    <a href="#" data-toggle="dropdown">Accounts</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Account 1</a></li>
+                        <li><a href="">Account 2</a></li>
+                        <li><a href="">Account 3</a></li>
+                        <li><a href="">Account 4</a></li>
+                        <li><a href="">Account 5</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">View All Accounts</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown hidden-xs">
+                    <a href="#" data-toggle="dropdown">Locations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Account 1</a></li>
+                        <li><a href="">Account 2</a></li>
+                        <li><a href="">Account 3</a></li>
+                        <li><a href="">Account 4</a></li>
+                        <li><a href="">Account 5</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">View All Locations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown hidden-xs">
+                    <a href="#" data-toggle="dropdown">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Account 1</a></li>
+                        <li><a href="">Account 2</a></li>
+                        <li><a href="">Account 3</a></li>
+                        <li><a href="">Account 4</a></li>
+                        <li><a href="">Account 5</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">View All Products</a></li>
+                    </ul>
+                </li>
+                <li><a href=""></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right-override">
+                <li>
+                    <form id="navbar-search-form" class="navbar-search-form form-inline collapse width">
+                        <input id="navbar-search-form-input" class="form-control" type="text">
+                    </form>
+                </li>
+                <li><a id="navbar-search" href="#navbar-search-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a></li>
+                <li class="dropdown">
+                    <a id="navbar-profile" class="navbar-profile" href="#" data-toggle="dropdown">
+                        <img class="navbar-profile-img" src="img/mario.png" alt="Itsa me Mario!">
+                        <span class="navbar-profile-title caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="width: 280px;">
+                        <li class="dropdown-menu-header">
+                            <strong class="h5">Artemis Constantinou</strong>
+                            <span><a href="">artemis@dealeron.com</a></span>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href=""><i class="fa fa-gear fa-fw"></i>Settings</a></li>
+                        <li><a href="" class="notify-alert"><i class="fa fa-envelope fa-fw"></i>Messages</a></li>
+                        <li><a href=""><i class="fa fa-sign-out fa-fw"></i>Sign Out</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="navbar-help" href="#navbar-help-collapse" data-toggle="collapse">
+                        <i id="navbar-help-icon" class="fa fa-question fa-fw"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="offcanvas" offcanvas-set-top="oncanvas-nav">
+
             <nav id="navbar-sidebar-parent" class="offcanvas-nav navbar navbar-inverse navbar-stacked navbar-sidebar">
                 <div id="navbar-sidebar" class="navbar-sidebar-collapse collapse width">
-                    <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav" offcanvas-set-top="oncanvas-nav">
+                    <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav">
                         <div class="navbar-sidebar-header raw">
                             <a id="navbar-sidebar-lock" class="navbar-link" href=""><i id="navbar-sidebar-lock-icon" class="fa fa-unlock fa-fw"></i></a>
                             <a id="navbar-sidebar-unlock" class="navbar-link hidden" href=""><i id="navbar-sidebar-unlock-icon" class="fa fa-lock fa-fw"></i></a>
@@ -77,87 +161,6 @@
             </nav>
 
             <div id="offcanvas-body" class="offcanvas-body">
-
-                <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
-                    <a id="navbar-sidebar-link" href="#navbar-sidebar" class="pull-left collapse width in" data-toggle="collapse" offcanvas-toggle-on>
-                        <div class="navbar-brand">
-                            <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
-                        </div>
-                    </a>
-                    <ul class="nav navbar-nav navbar-left-override">
-                        <li>
-                            <a class="navbar-brand" href="#">
-                                <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml"></object>
-                            </a>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" data-toggle="dropdown">Accounts</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Account 1</a></li>
-                                <li><a href="">Account 2</a></li>
-                                <li><a href="">Account 3</a></li>
-                                <li><a href="">Account 4</a></li>
-                                <li><a href="">Account 5</a></li>
-                                <li class="divider"></li>
-                                <li><a href="">View All Accounts</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" data-toggle="dropdown">Locations</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Account 1</a></li>
-                                <li><a href="">Account 2</a></li>
-                                <li><a href="">Account 3</a></li>
-                                <li><a href="">Account 4</a></li>
-                                <li><a href="">Account 5</a></li>
-                                <li class="divider"></li>
-                                <li><a href="">View All Locations</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a href="#" data-toggle="dropdown">Products</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Account 1</a></li>
-                                <li><a href="">Account 2</a></li>
-                                <li><a href="">Account 3</a></li>
-                                <li><a href="">Account 4</a></li>
-                                <li><a href="">Account 5</a></li>
-                                <li class="divider"></li>
-                                <li><a href="">View All Products</a></li>
-                            </ul>
-                        </li>
-                        <li><a href=""></a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right-override">
-                        <li>
-                            <form id="navbar-search-form" class="navbar-search-form form-inline collapse width">
-                                <input id="navbar-search-form-input" class="form-control" type="text">
-                            </form>
-                        </li>
-                        <li><a id="navbar-search" href="#navbar-search-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a></li>
-                        <li class="dropdown">
-                            <a id="navbar-profile" class="navbar-profile" href="#" data-toggle="dropdown">
-                                <img class="navbar-profile-img" src="img/mario.png" alt="Itsa me Mario!">
-                                <span class="navbar-profile-title caret"></span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right" style="width: 280px;">
-                                <li class="dropdown-menu-header">
-                                    <strong class="h5">Artemis Constantinou</strong>
-                                    <span><a href="">artemis@dealeron.com</a></span>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href=""><i class="fa fa-gear fa-fw"></i>Settings</a></li>
-                                <li><a href="" class="notify-alert"><i class="fa fa-envelope fa-fw"></i>Messages</a></li>
-                                <li><a href=""><i class="fa fa-sign-out fa-fw"></i>Sign Out</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a id="navbar-help" href="#navbar-help-collapse" data-toggle="collapse">
-                                <i id="navbar-help-icon" class="fa fa-question fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
 
                 <div id="navbar-help-collapse" class="collapse">
                     <div class="bg-default" offcanvas-set-height="oncanvas-nav" style="overflow-y: auto">
