@@ -88,12 +88,14 @@ $(".panel-wizard").on("hide.bs.collapse", function() {
 //  Offcanvas
 //
 $(document).ready( function() {
-    UpdateElements();
+    UpdateDimensions();
+    UpdateSidebar();
 });
 $(window).resize( function() {
-    UpdateElements();
+    UpdateDimensions();
+    //  UpdateSidebar();
 });
-function UpdateElements() {
+function UpdateDimensions() {
     var navHeight        = $('[oncanvas-nav]').height();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
@@ -103,21 +105,26 @@ function UpdateElements() {
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
+};
+function UpdateSidebar() {
+    var windowWidth      = $(window).width();
 
     if (windowWidth < 767) {
+        $('#navbar-sidebar-parent').addClass('hidden-xs');
         $('#navbar-sidebar').collapse('hide');
         $('#navbar-sidebar-link').removeClass('active');
         $('#navbar-sidebar-icon').removeClass('fa-remove').addClass('fa-navicon');
     } else {
+        $('#navbar-sidebar-parent').removeClass('hidden-xs');
         $('#navbar-sidebar').collapse('show');
         $('#navbar-sidebar-link').addClass('active');
         $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
     };
 };
-//  Using click event instead of collapse b/c of conflicts
 $('#navbar-sidebar-link').on('click', function(e) {
     e.preventDefault();
     if ( $('#navbar-sidebar-icon').hasClass('fa-navicon')) {
+        $('#navbar-sidebar-parent').removeClass('hidden-xs');
         $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
     } else {
         $('#navbar-sidebar-icon').addClass('fa-navicon').removeClass('fa-remove');
