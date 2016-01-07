@@ -7490,8 +7490,6 @@ button.list-group-item {
 }
 .media-profile img {
   font-size: 1rem;
-  height: 40px;
-  width: 40px;
 }
 .media-profile .media-left > img {
   margin-right: 1rem;
@@ -7859,7 +7857,7 @@ button.list-group-item {
 .nav-default > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #b8b8b8;
+  background-color: #c4c4c4;
 }
 .nav-default > li > a[disabled] {
   background-color: #e6e6e6;
@@ -7896,7 +7894,7 @@ button.list-group-item {
 .nav-inverse > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #2a303c;
+  background-color: #2c3340;
 }
 .nav-inverse > li > a[disabled] {
   background-color: #343c4b;
@@ -7933,7 +7931,7 @@ button.list-group-item {
 .nav-cta > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #c15c05;
+  background-color: #cd6205;
 }
 .nav-cta > li > a[disabled] {
   background-color: #f17306;
@@ -7970,7 +7968,7 @@ button.list-group-item {
 .nav-main > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #2b4e8a;
+  background-color: #2e5393;
 }
 .nav-main > li > a[disabled] {
   background-color: #3662ad;
@@ -8007,7 +8005,7 @@ button.list-group-item {
 .nav-alt1 > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #354664;
+  background-color: #384b6a;
 }
 .nav-alt1 > li > a[disabled] {
   background-color: #42587d;
@@ -8044,7 +8042,7 @@ button.list-group-item {
 .nav-alt2 > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #4c5c76;
+  background-color: #51627e;
 }
 .nav-alt2 > li > a[disabled] {
   background-color: #5f7394;
@@ -8081,7 +8079,7 @@ button.list-group-item {
 .nav-alt3 > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #67768e;
+  background-color: #6e7d96;
 }
 .nav-alt3 > li > a[disabled] {
   background-color: #8193b1;
@@ -8118,7 +8116,7 @@ button.list-group-item {
 .nav-success > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #4a934a;
+  background-color: #4e9c4e;
 }
 .nav-success > li > a[disabled] {
   background-color: #5cb85c;
@@ -8155,7 +8153,7 @@ button.list-group-item {
 .nav-info > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #499ab2;
+  background-color: #4da3bd;
 }
 .nav-info > li > a[disabled] {
   background-color: #5bc0de;
@@ -8192,7 +8190,7 @@ button.list-group-item {
 .nav-warning > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #c08a3e;
+  background-color: #cc9342;
 }
 .nav-warning > li > a[disabled] {
   background-color: #f0ad4e;
@@ -8229,7 +8227,7 @@ button.list-group-item {
 .nav-danger > li.open > a:focus {
   color: inherit;
   border-color: transparent;
-  background-color: #ae423f;
+  background-color: #b84743;
 }
 .nav-danger > li > a[disabled] {
   background-color: #d9534f;
@@ -8258,7 +8256,7 @@ button.list-group-item {
     opacity: 0;
   }
 }
-.notify-alert .fa {
+.notify-alert {
   -webkit-animation: alert 2s ease infinite;
   animation: alert 2s ease infinite;
 }
@@ -8523,6 +8521,13 @@ button.list-group-item {
   margin-top: -0.9em;
 }
 
+.navbar-profile-alert {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0.6em;
+}
+
 .navbar-toggle {
   position: relative;
   float: right;
@@ -8752,7 +8757,7 @@ button.list-group-item {
 .navbar-default a.active:hover,
 .navbar-default a.active:active,
 .navbar-default a.active:focus {
-  background-color: #cfcfcf;
+  background-color: #c4c4c4;
 }
 .navbar-default .navbar-search-form .form-control {
   color: inherit;
@@ -8838,7 +8843,7 @@ button.list-group-item {
 .navbar-inverse a.active:hover,
 .navbar-inverse a.active:active,
 .navbar-inverse a.active:focus {
-  background-color: #2f3644;
+  background-color: #2c3340;
 }
 .navbar-inverse .navbar-search-form .form-control {
   color: white;
@@ -8924,7 +8929,7 @@ button.list-group-item {
 .navbar-cta a.active:hover,
 .navbar-cta a.active:active,
 .navbar-cta a.active:focus {
-  background-color: #d96805;
+  background-color: #cd6205;
 }
 .navbar-cta .navbar-search-form .form-control {
   color: white;
@@ -9010,7 +9015,7 @@ button.list-group-item {
 .navbar-main a.active:hover,
 .navbar-main a.active:active,
 .navbar-main a.active:focus {
-  background-color: #31589c;
+  background-color: #2e5393;
 }
 .navbar-main .navbar-search-form .form-control {
   color: white;
@@ -9096,7 +9101,7 @@ button.list-group-item {
 .navbar-alt1 a.active:hover,
 .navbar-alt1 a.active:active,
 .navbar-alt1 a.active:focus {
-  background-color: #3b4f71;
+  background-color: #384b6a;
 }
 .navbar-alt1 .navbar-search-form .form-control {
   color: white;
@@ -9182,7 +9187,7 @@ button.list-group-item {
 .navbar-alt2 a.active:hover,
 .navbar-alt2 a.active:active,
 .navbar-alt2 a.active:focus {
-  background-color: #566885;
+  background-color: #51627e;
 }
 .navbar-alt2 .navbar-search-form .form-control {
   color: white;
@@ -9268,7 +9273,7 @@ button.list-group-item {
 .navbar-alt3 a.active:hover,
 .navbar-alt3 a.active:active,
 .navbar-alt3 a.active:focus {
-  background-color: #74849f;
+  background-color: #6e7d96;
 }
 .navbar-alt3 .navbar-search-form .form-control {
   color: white;
@@ -9354,7 +9359,7 @@ button.list-group-item {
 .navbar-success a.active:hover,
 .navbar-success a.active:active,
 .navbar-success a.active:focus {
-  background-color: #53a653;
+  background-color: #4e9c4e;
 }
 .navbar-success .navbar-search-form .form-control {
   color: white;
@@ -9440,7 +9445,7 @@ button.list-group-item {
 .navbar-info a.active:hover,
 .navbar-info a.active:active,
 .navbar-info a.active:focus {
-  background-color: #52adc8;
+  background-color: #4da3bd;
 }
 .navbar-info .navbar-search-form .form-control {
   color: white;
@@ -9526,7 +9531,7 @@ button.list-group-item {
 .navbar-warning a.active:hover,
 .navbar-warning a.active:active,
 .navbar-warning a.active:focus {
-  background-color: #d89c46;
+  background-color: #cc9342;
 }
 .navbar-warning .navbar-search-form .form-control {
   color: white;
@@ -9612,7 +9617,7 @@ button.list-group-item {
 .navbar-danger a.active:hover,
 .navbar-danger a.active:active,
 .navbar-danger a.active:focus {
-  background-color: #c34b47;
+  background-color: #b84743;
 }
 .navbar-danger .navbar-search-form .form-control {
   color: white;

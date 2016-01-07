@@ -14,3 +14,9 @@
     margin-top: $navbar-profile-img / -2;
 }
 
+.navbar-profile-alert {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: $navbar__x / 1.5;
+}

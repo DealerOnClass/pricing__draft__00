@@ -131,6 +131,7 @@ function UpdateSidebar() {
 };
 $('#navbar-sidebar-link').on('click', function(e) {
     e.preventDefault();
+    $(this).toggleClass('active');
     if ( $('#navbar-sidebar-icon').hasClass('fa-navicon')) {
         $('#navbar-sidebar-parent').removeClass('hidden-xs');
         $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
@@ -142,18 +143,16 @@ $('#navbar-sidebar-link').on('click', function(e) {
 //
 //  Notify Animation Control
 //
-$('.notify-alert').on('click', function() {
-    $(this).removeClass("notify-alert");
+$('.notify-link').on('click', function() {
+    $(this).find(".notify-alert").remove();
 });
-////////////////////////////////////////
-//
-//  Navbar Help
-//
-$('#navbar-help-collapse').on('show.bs.collapse', function() {
-    $('#navbar-profile').addClass('active');
-    $('#navbar-help-icon').removeClass('fa-question').addClass('fa-remove');
-});
-$('#navbar-help-collapse').on('hide.bs.collapse', function() {
-    $('#navbar-profile').removeClass('active');
-    $('#navbar-help-icon').removeClass('fa-remove').addClass('fa-question');
-});
+//  ////////////////////////////////////////
+//  //
+//  //  Navbar Help
+//  //
+//  $('#navbar-profile-collapse').on('show.bs.collapse', function() {
+//      $('#navbar-profile').addClass('active');
+//  });
+//  $('#navbar-profile-collapse').on('hide.bs.collapse', function() {
+//      $('#navbar-profile').removeClass('active');
+//  });

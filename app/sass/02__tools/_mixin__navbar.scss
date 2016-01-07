@@ -24,7 +24,7 @@
             li.active > a,
             a.active {
                 @include state-and-self {
-                    background-color: shade($color, $navbar__contrast);
+                    background-color: shade($color, $navbar__contrast * 1.5);
                 }
             }
 
