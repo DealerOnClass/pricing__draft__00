@@ -8267,12 +8267,12 @@ button.list-group-item {
   display: table-cell;
   vertical-align: top;
 }
-
 @media (min-width: 768px) {
-  .offcanvas-body-locked {
+  .offcanvas-body {
     width: 10000px;
   }
 }
+
 .offcanvas-inner {
   position: relative;
   overflow-y: scroll;
@@ -8280,16 +8280,16 @@ button.list-group-item {
   padding-bottom: 4.5em;
   background-color: white;
 }
+@media (min-width: 768px) {
+  .offcanvas-inner {
+    width: 100% !important;
+  }
+}
 
 .offcanvas-bg {
   background-color: white;
 }
 
-@media (min-width: 768px) {
-  .offcanvas-inner-locked {
-    width: 100% !important;
-  }
-}
 .offcanvas-nested {
   position: relative;
 }

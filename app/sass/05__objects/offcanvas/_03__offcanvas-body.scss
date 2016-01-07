@@ -2,11 +2,8 @@
     display: table-cell;
 
     vertical-align: top;
-}
 
-
-@media (min-width: $grid-float-breakpoint) {
-    .offcanvas-body-locked {
+    @media (min-width: $grid-float-breakpoint) {
         width: 10000px;
     }
 }

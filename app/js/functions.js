@@ -88,12 +88,12 @@ $(".panel-wizard").on("hide.bs.collapse", function() {
 //  Offcanvas
 //
 $(document).ready( function() {
-    UpdateOffcanvasElements();
+    UpdateElements();
 });
 $(window).resize( function() {
-    UpdateOffcanvasElements();
+    UpdateElements();
 });
-function UpdateOffcanvasElements() {
+function UpdateElements() {
     var navHeight        = $('[oncanvas-nav]').height();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
@@ -103,21 +103,26 @@ function UpdateOffcanvasElements() {
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
+
+    if (windowWidth < 767) {
+        $('#navbar-sidebar').collapse('hide');
+        $('#navbar-sidebar-link').removeClass('active');
+        $('#navbar-sidebar-icon').removeClass('fa-remove').addClass('fa-navicon');
+    } else {
+        $('#navbar-sidebar').collapse('show');
+        $('#navbar-sidebar-link').addClass('active');
+        $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
+    };
 };
-$('#navbar-sidebar').on('show.bs.collapse', function() {
-    $('#navbar-sidebar-link').addClass('active');
-    $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
+//  Using click event instead of collapse b/c of conflicts
+$('#navbar-sidebar-link').on('click', function(e) {
+    e.preventDefault();
+    if ( $('#navbar-sidebar-icon').hasClass('fa-navicon')) {
+        $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
+    } else {
+        $('#navbar-sidebar-icon').addClass('fa-navicon').removeClass('fa-remove');
+    };
 });
-$('#navbar-sidebar').on('hide.bs.collapse', function() {
-    $('#navbar-sidebar-link').removeClass('active');
-    $('#navbar-sidebar-icon').removeClass('fa-remove').addClass('fa-navicon');
-});
-//  $('[offcanvas-toggle-on]').on('click', function() {
-//      $(this).collapse('hide');
-//  });
-//  $('[offcanvas-toggle-off]').on('click', function() {
-//      $('[offcanvas-toggle-on]').collapse("show");
-//  });
 ////////////////////////////////////////
 //
 //  Notify Animation Control
@@ -159,25 +164,19 @@ $('#navbar-help-collapse').on('hide.bs.collapse', function() {
     $('#navbar-help').removeClass('active');
     $('#navbar-help-icon').removeClass('fa-remove').addClass('fa-question');
 });
-////////////////////////////////////////
-//
-//  Navbar Lock
-//
-$('#navbar-sidebar-lock').on('click', function(e) {
-    e.preventDefault();
-    $(this).toggleClass('hidden');
-    $('#navbar-sidebar-unlock').toggleClass('hidden');
-    $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
-    //
-    $('#offcanvas-body').toggleClass('offcanvas-body-locked');
-    $('#offcanvas-inner').toggleClass('offcanvas-inner-locked');
-});
-$('#navbar-sidebar-unlock').on('click', function(e) {
-    e.preventDefault();
-    $(this).toggleClass('hidden');
-    $('#navbar-sidebar-lock').toggleClass('hidden');
-    $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
-    //
-    $('#offcanvas-body').toggleClass('offcanvas-body-locked');
-    $('#offcanvas-inner').toggleClass('offcanvas-inner-locked');
-});
+//  ////////////////////////////////////////
+//  //
+//  //  Navbar Lock
+//  //
+//  $('#navbar-sidebar-lock').on('click', function(e) {
+//      e.preventDefault();
+//      $(this).toggleClass('hidden');
+//      $('#navbar-sidebar-unlock').toggleClass('hidden');
+//      $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
+//  });
+//  $('#navbar-sidebar-unlock').on('click', function(e) {
+//      e.preventDefault();
+//      $(this).toggleClass('hidden');
+//      $('#navbar-sidebar-lock').toggleClass('hidden');
+//      $('#navbar-sidebar-parent').toggleClass('offcanvas-nav-locked');
+//  });

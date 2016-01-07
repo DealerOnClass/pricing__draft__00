@@ -6,14 +6,12 @@
     box-sizing: border-box;
     padding-bottom: rhythm(3);
     background-color: $white;
+
+    @media (min-width: $grid-float-breakpoint) {
+        width: 100% !important;
+    }
 }
 
 .offcanvas-bg {
     background-color: $white;
-}
-
-@media (min-width: $grid-float-breakpoint) {
-    .offcanvas-inner-locked {
-        width: 100% !important;
-    }
 }
