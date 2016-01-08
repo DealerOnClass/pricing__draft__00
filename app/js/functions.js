@@ -148,10 +148,20 @@ $('#navbar-sidebar-link').on('click', function(e) {
         $('#navbar-sidebar-icon').addClass('fa-navicon').removeClass('fa-remove');
     };
 });
+//
+//  Navbar Profile Toggle
+$('#navbar-profile-collapse').on('show.bs.collapse', function() {
+    $('#navbar-profile-link').toggleClass('active');
+    $('#navbar-profile-icon').removeClass('fa-navicon').addClass('fa-remove');
+});
+$('#navbar-profile-collapse').on('hide.bs.collapse', function() {
+    $('#navbar-profile-link').toggleClass('active');
+    $('#navbar-profile-icon').addClass('fa-navicon').removeClass('fa-remove');
+});
 ////////////////////////////////////////
 //
 //  Notify Animation Control
 //
-$('.notify').on('click', function() {
+$('[data-disable="notify"]').on('click', function() {
     $(this).find(".notify-icon-alert").remove();
 });

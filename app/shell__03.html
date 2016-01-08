@@ -12,17 +12,11 @@
     <body class="offcanvas-wrapper">
 
         <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
-            <a id="navbar-sidebar-link" href="#navbar-sidebar" class="pull-left" data-toggle="collapse" offcanvas-toggle-on>
-                <div class="navbar-brand">
-                    <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
-                </div>
+            <a id="navbar-sidebar-link" href="#navbar-sidebar" class="navbar-brand" data-toggle="collapse" offcanvas-toggle-on>
+                <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
+                <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml"></object>
             </a>
             <ul class="nav navbar-nav navbar-left-override">
-                <li>
-                    <a class="navbar-brand" href="#">
-                        <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml"></object>
-                    </a>
-                </li>
                 <li class="dropdown hidden-xs">
                     <a href="#" data-toggle="dropdown">Accounts</a>
                     <ul class="dropdown-menu">
@@ -68,20 +62,14 @@
                     </form>
                 </li>
                 <li><a id="navbar-search" href="#navbar-search-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a></li>
-                <li class="dropdown">
-                    <a id="navbar-profile" class="navbar-profile notify" href="#navbar-profile-collapse" data-toggle="collapse">
-                        <img class="navbar-profile-img" src="img/mario.png" alt="Itsa me Mario!">
-                        <span class="navbar-profile-title caret"></span>
-                        <i class="fa fa-exclamation fa-sm notify-icon notify-icon-alert"></i>
+                <li>
+                    <a id="navbar-profile-link" href="#navbar-profile-collapse" data-toggle="collapse" data-disable="notify">
+                        <div class="navbar-profile navbar-profile-navicon notify">
+                            <img class="navbar-profile-img" src="img/mario.png" alt="Itsa me Mario!">
+                            <i class="fa fa-exclamation fa-sm notify-icon notify-icon-alert"></i>
+                        </div>
+                        <i id="navbar-profile-icon" class="fa fa-navicon fa-fw"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-right" style="width: 280px;">
-                        <li class="dropdown-menu-header">
-                            <strong class="h5">Artemis Constantinou</strong>
-                            <span><a href="">artemis@dealeron.com</a></span>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href=""><i class="fa fa-sign-out fa-fw"></i>Sign Out</a></li>
-                    </ul>
                 </li>
             </ul>
         </nav>
@@ -92,6 +80,7 @@
             <nav id="navbar-sidebar-parent" class="offcanvas-nav navbar navbar-inverse navbar-stacked navbar-sidebar hidden-xs">
                 <div id="navbar-sidebar" class="navbar-sidebar-collapse collapse width in">
                     <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav">
+                        <hr class="divider">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a href="" class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#Content">
@@ -164,17 +153,12 @@
                                     <a href="#Settings" data-toggle="tab">Settings</a>
                                 </li>
                                 <li>
-                                    <a class="notify" href="#Support" data-toggle="tab">
-                                        <i class="fa fa-exclamation fa-fw notify-icon notify-icon-alert"></i> Support
+                                    <a href="#Support" data-toggle="tab" data-disable="notify">
+                                        Support
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#Billing" data-toggle="tab">Billing</a>
-                                </li>
-                                <li class="pull-right">
-                                    <a class="active" href="#navbar-profile-collapse" data-toggle="collapse">
-                                        <i class="fa fa-remove"></i>
-                                    </a>
                                 </li>
                             </ul>
                             <hr class="divider">

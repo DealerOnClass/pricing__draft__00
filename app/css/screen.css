@@ -342,6 +342,75 @@ optgroup {
   text-align: center;
 }
 
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  -webkit-filter: none;
+  filter: none;
+}
+
 .fa-stack {
   position: relative;
   display: inline-block;
@@ -8262,13 +8331,18 @@ button.list-group-item {
 
 .notify-icon {
   position: absolute;
-  top: 0.3em;
-  right: 0.45em;
+  top: -0.375em;
+  left: -0.375em;
 }
 
 .notify-icon-alert {
   -webkit-animation: alert 2s ease infinite;
   animation: alert 2s ease infinite;
+}
+
+.notify-right .notify-icon {
+  left: auto;
+  right: -0.375em;
 }
 
 .offcanvas,
@@ -8518,8 +8592,8 @@ button.list-group-item {
 
 .navbar-profile {
   position: relative;
-  height: 3.3em;
-  width: 3.6em;
+  height: 1.8em;
+  width: 1.8em;
 }
 
 .navbar-profile-img {
@@ -8529,6 +8603,11 @@ button.list-group-item {
   width: 1.8em;
   top: 50%;
   margin-top: -0.9em;
+}
+
+.navbar-profile-navicon {
+  float: left;
+  margin-right: 0.9em;
 }
 
 .navbar-toggle {
@@ -13602,6 +13681,15 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   margin-bottom: -0.45em;
   position: relative;
   top: -0.1125em;
+  z-index: 1;
+}
+
+.navbar-brand .fa + .logo__svg {
+  margin-left: 0.375em;
+}
+
+a:hover .logo__svg {
+  cursor: pointer;
 }
 
 .demo__body {
