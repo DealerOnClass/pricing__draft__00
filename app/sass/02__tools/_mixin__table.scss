@@ -11,7 +11,7 @@
 
                 > td,
                 > th {
-                    border-color: $color;
+                    border-color: shade($color, $table__contrast);
                 }
             }
 
