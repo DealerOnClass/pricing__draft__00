@@ -45,11 +45,10 @@ a {
   text-decoration: none;
 }
 
-a[disabled], a[disabled]:hover, a[disabled]:active, a[disabled]:focus,
+a[disabled], a[disabled]:hover, a[disabled]:active,
 button[disabled],
 button[disabled]:hover,
-button[disabled]:active,
-button[disabled]:focus {
+button[disabled]:active {
   cursor: not-allowed;
   box-shadow: none;
   opacity: 0.65;
@@ -2993,7 +2992,7 @@ a {
 a > svg path {
   fill: #3662ad;
 }
-a:hover, a:active, a:focus {
+a:hover, a:active {
   color: #2b4e8a;
 }
 a:active {
@@ -3297,7 +3296,7 @@ tbody.collapse.in {
   background-color: #e6e6e6;
 }
 
-a.badge-default:hover, a.badge-default:active, a.badge-default:focus {
+a.badge-default:hover, a.badge-default:active {
   color: inherit;
   background-color: #cfcfcf;
 }
@@ -3307,7 +3306,7 @@ a.badge-default:hover, a.badge-default:active, a.badge-default:focus {
   background-color: #343c4b;
 }
 
-a.badge-inverse:hover, a.badge-inverse:active, a.badge-inverse:focus {
+a.badge-inverse:hover, a.badge-inverse:active {
   color: white;
   background-color: #2f3644;
 }
@@ -3317,7 +3316,7 @@ a.badge-inverse:hover, a.badge-inverse:active, a.badge-inverse:focus {
   background-color: #f17306;
 }
 
-a.badge-cta:hover, a.badge-cta:active, a.badge-cta:focus {
+a.badge-cta:hover, a.badge-cta:active {
   color: white;
   background-color: #d96805;
 }
@@ -3327,7 +3326,7 @@ a.badge-cta:hover, a.badge-cta:active, a.badge-cta:focus {
   background-color: #3662ad;
 }
 
-a.badge-main:hover, a.badge-main:active, a.badge-main:focus {
+a.badge-main:hover, a.badge-main:active {
   color: white;
   background-color: #31589c;
 }
@@ -3337,7 +3336,7 @@ a.badge-main:hover, a.badge-main:active, a.badge-main:focus {
   background-color: #42587d;
 }
 
-a.badge-alt1:hover, a.badge-alt1:active, a.badge-alt1:focus {
+a.badge-alt1:hover, a.badge-alt1:active {
   color: white;
   background-color: #3b4f71;
 }
@@ -3347,7 +3346,7 @@ a.badge-alt1:hover, a.badge-alt1:active, a.badge-alt1:focus {
   background-color: #5f7394;
 }
 
-a.badge-alt2:hover, a.badge-alt2:active, a.badge-alt2:focus {
+a.badge-alt2:hover, a.badge-alt2:active {
   color: white;
   background-color: #566885;
 }
@@ -3357,7 +3356,7 @@ a.badge-alt2:hover, a.badge-alt2:active, a.badge-alt2:focus {
   background-color: #8193b1;
 }
 
-a.badge-alt3:hover, a.badge-alt3:active, a.badge-alt3:focus {
+a.badge-alt3:hover, a.badge-alt3:active {
   color: white;
   background-color: #74849f;
 }
@@ -3367,7 +3366,7 @@ a.badge-alt3:hover, a.badge-alt3:active, a.badge-alt3:focus {
   background-color: #5cb85c;
 }
 
-a.badge-success:hover, a.badge-success:active, a.badge-success:focus {
+a.badge-success:hover, a.badge-success:active {
   color: white;
   background-color: #53a653;
 }
@@ -3377,7 +3376,7 @@ a.badge-success:hover, a.badge-success:active, a.badge-success:focus {
   background-color: #5bc0de;
 }
 
-a.badge-info:hover, a.badge-info:active, a.badge-info:focus {
+a.badge-info:hover, a.badge-info:active {
   color: white;
   background-color: #52adc8;
 }
@@ -3387,7 +3386,7 @@ a.badge-info:hover, a.badge-info:active, a.badge-info:focus {
   background-color: #f0ad4e;
 }
 
-a.badge-warning:hover, a.badge-warning:active, a.badge-warning:focus {
+a.badge-warning:hover, a.badge-warning:active {
   color: white;
   background-color: #d89c46;
 }
@@ -3397,7 +3396,7 @@ a.badge-warning:hover, a.badge-warning:active, a.badge-warning:focus {
   background-color: #d9534f;
 }
 
-a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
+a.badge-danger:hover, a.badge-danger:active {
   color: white;
   background-color: #c34b47;
 }
@@ -3466,7 +3465,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-default > li > a {
   color: inherit;
 }
-.breadcrumb-default > li > a:hover, .breadcrumb-default > li > a:active, .breadcrumb-default > li > a:focus {
+.breadcrumb-default > li > a:hover, .breadcrumb-default > li > a:active {
   background-color: #cfcfcf;
 }
 
@@ -3478,7 +3477,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-inverse > li > a {
   color: inherit;
 }
-.breadcrumb-inverse > li > a:hover, .breadcrumb-inverse > li > a:active, .breadcrumb-inverse > li > a:focus {
+.breadcrumb-inverse > li > a:hover, .breadcrumb-inverse > li > a:active {
   background-color: #2f3644;
 }
 
@@ -3490,7 +3489,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-cta > li > a {
   color: inherit;
 }
-.breadcrumb-cta > li > a:hover, .breadcrumb-cta > li > a:active, .breadcrumb-cta > li > a:focus {
+.breadcrumb-cta > li > a:hover, .breadcrumb-cta > li > a:active {
   background-color: #d96805;
 }
 
@@ -3502,7 +3501,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-main > li > a {
   color: inherit;
 }
-.breadcrumb-main > li > a:hover, .breadcrumb-main > li > a:active, .breadcrumb-main > li > a:focus {
+.breadcrumb-main > li > a:hover, .breadcrumb-main > li > a:active {
   background-color: #31589c;
 }
 
@@ -3514,7 +3513,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-alt1 > li > a {
   color: inherit;
 }
-.breadcrumb-alt1 > li > a:hover, .breadcrumb-alt1 > li > a:active, .breadcrumb-alt1 > li > a:focus {
+.breadcrumb-alt1 > li > a:hover, .breadcrumb-alt1 > li > a:active {
   background-color: #3b4f71;
 }
 
@@ -3526,7 +3525,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-alt2 > li > a {
   color: inherit;
 }
-.breadcrumb-alt2 > li > a:hover, .breadcrumb-alt2 > li > a:active, .breadcrumb-alt2 > li > a:focus {
+.breadcrumb-alt2 > li > a:hover, .breadcrumb-alt2 > li > a:active {
   background-color: #566885;
 }
 
@@ -3538,7 +3537,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-alt3 > li > a {
   color: inherit;
 }
-.breadcrumb-alt3 > li > a:hover, .breadcrumb-alt3 > li > a:active, .breadcrumb-alt3 > li > a:focus {
+.breadcrumb-alt3 > li > a:hover, .breadcrumb-alt3 > li > a:active {
   background-color: #74849f;
 }
 
@@ -3550,7 +3549,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-success > li > a {
   color: inherit;
 }
-.breadcrumb-success > li > a:hover, .breadcrumb-success > li > a:active, .breadcrumb-success > li > a:focus {
+.breadcrumb-success > li > a:hover, .breadcrumb-success > li > a:active {
   background-color: #53a653;
 }
 
@@ -3562,7 +3561,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-info > li > a {
   color: inherit;
 }
-.breadcrumb-info > li > a:hover, .breadcrumb-info > li > a:active, .breadcrumb-info > li > a:focus {
+.breadcrumb-info > li > a:hover, .breadcrumb-info > li > a:active {
   background-color: #52adc8;
 }
 
@@ -3574,7 +3573,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-warning > li > a {
   color: inherit;
 }
-.breadcrumb-warning > li > a:hover, .breadcrumb-warning > li > a:active, .breadcrumb-warning > li > a:focus {
+.breadcrumb-warning > li > a:hover, .breadcrumb-warning > li > a:active {
   background-color: #d89c46;
 }
 
@@ -3586,7 +3585,7 @@ a.badge-danger:hover, a.badge-danger:active, a.badge-danger:focus {
 .breadcrumb-danger > li > a {
   color: inherit;
 }
-.breadcrumb-danger > li > a:hover, .breadcrumb-danger > li > a:active, .breadcrumb-danger > li > a:focus {
+.breadcrumb-danger > li > a:hover, .breadcrumb-danger > li > a:active {
   background-color: #c34b47;
 }
 
@@ -3664,7 +3663,7 @@ label.btn + input[type="file"] {
   border-color: rgba(0, 0, 0, 0.15);
   background-color: #e6e6e6;
 }
-.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default.active {
+.btn-default:hover, .btn-default:active, .btn-default.active {
   color: inherit;
   background-color: #cfcfcf;
 }
@@ -3676,7 +3675,7 @@ label.btn + input[type="file"] {
   color: inherit;
   background-color: #cfcfcf;
 }
-.btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:active, .btn-default[disabled]:focus {
+.btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:active {
   background-color: #e6e6e6;
 }
 
@@ -3685,7 +3684,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #343c4b;
 }
-.btn-inverse:hover, .btn-inverse:active, .btn-inverse:focus, .btn-inverse.active {
+.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active {
   color: white;
   background-color: #2f3644;
 }
@@ -3697,7 +3696,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #2f3644;
 }
-.btn-inverse[disabled], .btn-inverse[disabled]:hover, .btn-inverse[disabled]:active, .btn-inverse[disabled]:focus {
+.btn-inverse[disabled], .btn-inverse[disabled]:hover, .btn-inverse[disabled]:active {
   background-color: #343c4b;
 }
 
@@ -3706,7 +3705,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #f17306;
 }
-.btn-cta:hover, .btn-cta:active, .btn-cta:focus, .btn-cta.active {
+.btn-cta:hover, .btn-cta:active, .btn-cta.active {
   color: white;
   background-color: #d96805;
 }
@@ -3718,7 +3717,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #d96805;
 }
-.btn-cta[disabled], .btn-cta[disabled]:hover, .btn-cta[disabled]:active, .btn-cta[disabled]:focus {
+.btn-cta[disabled], .btn-cta[disabled]:hover, .btn-cta[disabled]:active {
   background-color: #f17306;
 }
 
@@ -3727,7 +3726,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #3662ad;
 }
-.btn-main:hover, .btn-main:active, .btn-main:focus, .btn-main.active {
+.btn-main:hover, .btn-main:active, .btn-main.active {
   color: white;
   background-color: #31589c;
 }
@@ -3739,7 +3738,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #31589c;
 }
-.btn-main[disabled], .btn-main[disabled]:hover, .btn-main[disabled]:active, .btn-main[disabled]:focus {
+.btn-main[disabled], .btn-main[disabled]:hover, .btn-main[disabled]:active {
   background-color: #3662ad;
 }
 
@@ -3748,7 +3747,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #42587d;
 }
-.btn-alt1:hover, .btn-alt1:active, .btn-alt1:focus, .btn-alt1.active {
+.btn-alt1:hover, .btn-alt1:active, .btn-alt1.active {
   color: white;
   background-color: #3b4f71;
 }
@@ -3760,7 +3759,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #3b4f71;
 }
-.btn-alt1[disabled], .btn-alt1[disabled]:hover, .btn-alt1[disabled]:active, .btn-alt1[disabled]:focus {
+.btn-alt1[disabled], .btn-alt1[disabled]:hover, .btn-alt1[disabled]:active {
   background-color: #42587d;
 }
 
@@ -3769,7 +3768,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #5f7394;
 }
-.btn-alt2:hover, .btn-alt2:active, .btn-alt2:focus, .btn-alt2.active {
+.btn-alt2:hover, .btn-alt2:active, .btn-alt2.active {
   color: white;
   background-color: #566885;
 }
@@ -3781,7 +3780,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #566885;
 }
-.btn-alt2[disabled], .btn-alt2[disabled]:hover, .btn-alt2[disabled]:active, .btn-alt2[disabled]:focus {
+.btn-alt2[disabled], .btn-alt2[disabled]:hover, .btn-alt2[disabled]:active {
   background-color: #5f7394;
 }
 
@@ -3790,7 +3789,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #8193b1;
 }
-.btn-alt3:hover, .btn-alt3:active, .btn-alt3:focus, .btn-alt3.active {
+.btn-alt3:hover, .btn-alt3:active, .btn-alt3.active {
   color: white;
   background-color: #74849f;
 }
@@ -3802,7 +3801,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #74849f;
 }
-.btn-alt3[disabled], .btn-alt3[disabled]:hover, .btn-alt3[disabled]:active, .btn-alt3[disabled]:focus {
+.btn-alt3[disabled], .btn-alt3[disabled]:hover, .btn-alt3[disabled]:active {
   background-color: #8193b1;
 }
 
@@ -3811,7 +3810,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #5cb85c;
 }
-.btn-success:hover, .btn-success:active, .btn-success:focus, .btn-success.active {
+.btn-success:hover, .btn-success:active, .btn-success.active {
   color: white;
   background-color: #53a653;
 }
@@ -3823,7 +3822,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #53a653;
 }
-.btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:active, .btn-success[disabled]:focus {
+.btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:active {
   background-color: #5cb85c;
 }
 
@@ -3832,7 +3831,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #5bc0de;
 }
-.btn-info:hover, .btn-info:active, .btn-info:focus, .btn-info.active {
+.btn-info:hover, .btn-info:active, .btn-info.active {
   color: white;
   background-color: #52adc8;
 }
@@ -3844,7 +3843,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #52adc8;
 }
-.btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:active, .btn-info[disabled]:focus {
+.btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:active {
   background-color: #5bc0de;
 }
 
@@ -3853,7 +3852,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #f0ad4e;
 }
-.btn-warning:hover, .btn-warning:active, .btn-warning:focus, .btn-warning.active {
+.btn-warning:hover, .btn-warning:active, .btn-warning.active {
   color: white;
   background-color: #d89c46;
 }
@@ -3865,7 +3864,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #d89c46;
 }
-.btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:active, .btn-warning[disabled]:focus {
+.btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:active {
   background-color: #f0ad4e;
 }
 
@@ -3874,7 +3873,7 @@ label.btn + input[type="file"] {
   border-color: transparent;
   background-color: #d9534f;
 }
-.btn-danger:hover, .btn-danger:active, .btn-danger:focus, .btn-danger.active {
+.btn-danger:hover, .btn-danger:active, .btn-danger.active {
   color: white;
   background-color: #c34b47;
 }
@@ -3886,7 +3885,7 @@ label.btn + input[type="file"] {
   color: white;
   background-color: #c34b47;
 }
-.btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:active, .btn-danger[disabled]:focus {
+.btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:active {
   background-color: #d9534f;
 }
 
@@ -3896,10 +3895,9 @@ label.btn + input[type="file"] {
   display: inline-block;
   vertical-align: middle;
 }
-.btn-group > .btn:hover, .btn-group > .btn:active, .btn-group > .btn:focus, .btn-group > .btn.active,
+.btn-group > .btn:hover, .btn-group > .btn:active, .btn-group > .btn.active,
 .btn-group-vertical > .btn:hover,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn:focus,
 .btn-group-vertical > .btn.active {
   z-index: 2;
 }
@@ -4646,7 +4644,7 @@ h5 .btn-group {
 .close {
   font-family: "AvenirHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.close:hover, .close:active, .close:focus {
+.close:hover, .close:active {
   cursor: pointer;
   text-decoration: none;
 }
@@ -4718,7 +4716,7 @@ h5 .btn-group {
   border-bottom-right-radius: 0.375em;
   border-bottom-left-radius: 0.375em;
 }
-.dropdown-menu > li > a.active, .dropdown-menu > li > a.active:hover, .dropdown-menu > li > a.active:active, .dropdown-menu > li > a.active:focus, .dropdown-menu > li.active > a, .dropdown-menu > li.active > a:hover, .dropdown-menu > li.active > a:active, .dropdown-menu > li.active > a:focus, .dropdown-menu > li.open > a, .dropdown-menu > li.open > a:hover, .dropdown-menu > li.open > a:active, .dropdown-menu > li.open > a:focus {
+.dropdown-menu > li > a.active, .dropdown-menu > li > a.active:hover, .dropdown-menu > li > a.active:active, .dropdown-menu > li.active > a, .dropdown-menu > li.active > a:hover, .dropdown-menu > li.active > a:active, .dropdown-menu > li.open > a, .dropdown-menu > li.open > a:hover, .dropdown-menu > li.open > a:active {
   color: white;
   border-color: transparent;
   background-color: #3662ad;
@@ -4784,17 +4782,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #e6e6e6;
 }
-.btn-default + .dropdown-menu > li > a:hover, .btn-default + .dropdown-menu > li > a:active, .btn-default + .dropdown-menu > li > a:focus {
+.btn-default + .dropdown-menu > li > a:hover, .btn-default + .dropdown-menu > li > a:active {
   background-color: #cfcfcf;
 }
-.btn-default + .dropdown-menu > li.active > a, .btn-default + .dropdown-menu > li.active > a:hover, .btn-default + .dropdown-menu > li.active > a:active, .btn-default + .dropdown-menu > li.active > a:focus,
+.btn-default + .dropdown-menu > li.active > a, .btn-default + .dropdown-menu > li.active > a:hover, .btn-default + .dropdown-menu > li.active > a:active,
 .btn-default + .dropdown-menu > li > a.active,
 .btn-default + .dropdown-menu > li > a.active:hover,
-.btn-default + .dropdown-menu > li > a.active:active,
-.btn-default + .dropdown-menu > li > a.active:focus {
+.btn-default + .dropdown-menu > li > a.active:active {
   background-color: #b8b8b8;
 }
-.btn-default + .dropdown-menu > li > a[disabled], .btn-default + .dropdown-menu > li > a[disabled]:hover, .btn-default + .dropdown-menu > li > a[disabled]:active, .btn-default + .dropdown-menu > li > a[disabled]:focus {
+.btn-default + .dropdown-menu > li > a[disabled], .btn-default + .dropdown-menu > li > a[disabled]:hover, .btn-default + .dropdown-menu > li > a[disabled]:active {
   background-color: #e6e6e6;
 }
 .btn-group .btn-default.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -4814,17 +4811,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #e6e6e6;
 }
-.dropdown-menu-default > li > a:hover, .dropdown-menu-default > li > a:active, .dropdown-menu-default > li > a:focus {
+.dropdown-menu-default > li > a:hover, .dropdown-menu-default > li > a:active {
   background-color: #cfcfcf;
 }
-.dropdown-menu-default > li.active > a, .dropdown-menu-default > li.active > a:hover, .dropdown-menu-default > li.active > a:active, .dropdown-menu-default > li.active > a:focus,
+.dropdown-menu-default > li.active > a, .dropdown-menu-default > li.active > a:hover, .dropdown-menu-default > li.active > a:active,
 .dropdown-menu-default > li > a.active,
 .dropdown-menu-default > li > a.active:hover,
-.dropdown-menu-default > li > a.active:active,
-.dropdown-menu-default > li > a.active:focus {
+.dropdown-menu-default > li > a.active:active {
   background-color: #b8b8b8;
 }
-.dropdown-menu-default > li > a[disabled], .dropdown-menu-default > li > a[disabled]:hover, .dropdown-menu-default > li > a[disabled]:active, .dropdown-menu-default > li > a[disabled]:focus {
+.dropdown-menu-default > li > a[disabled], .dropdown-menu-default > li > a[disabled]:hover, .dropdown-menu-default > li > a[disabled]:active {
   background-color: #e6e6e6;
 }
 
@@ -4846,17 +4842,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #343c4b;
 }
-.btn-inverse + .dropdown-menu > li > a:hover, .btn-inverse + .dropdown-menu > li > a:active, .btn-inverse + .dropdown-menu > li > a:focus {
+.btn-inverse + .dropdown-menu > li > a:hover, .btn-inverse + .dropdown-menu > li > a:active {
   background-color: #2f3644;
 }
-.btn-inverse + .dropdown-menu > li.active > a, .btn-inverse + .dropdown-menu > li.active > a:hover, .btn-inverse + .dropdown-menu > li.active > a:active, .btn-inverse + .dropdown-menu > li.active > a:focus,
+.btn-inverse + .dropdown-menu > li.active > a, .btn-inverse + .dropdown-menu > li.active > a:hover, .btn-inverse + .dropdown-menu > li.active > a:active,
 .btn-inverse + .dropdown-menu > li > a.active,
 .btn-inverse + .dropdown-menu > li > a.active:hover,
-.btn-inverse + .dropdown-menu > li > a.active:active,
-.btn-inverse + .dropdown-menu > li > a.active:focus {
+.btn-inverse + .dropdown-menu > li > a.active:active {
   background-color: #2a303c;
 }
-.btn-inverse + .dropdown-menu > li > a[disabled], .btn-inverse + .dropdown-menu > li > a[disabled]:hover, .btn-inverse + .dropdown-menu > li > a[disabled]:active, .btn-inverse + .dropdown-menu > li > a[disabled]:focus {
+.btn-inverse + .dropdown-menu > li > a[disabled], .btn-inverse + .dropdown-menu > li > a[disabled]:hover, .btn-inverse + .dropdown-menu > li > a[disabled]:active {
   background-color: #343c4b;
 }
 .btn-group .btn-inverse.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -4876,17 +4871,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #343c4b;
 }
-.dropdown-menu-inverse > li > a:hover, .dropdown-menu-inverse > li > a:active, .dropdown-menu-inverse > li > a:focus {
+.dropdown-menu-inverse > li > a:hover, .dropdown-menu-inverse > li > a:active {
   background-color: #2f3644;
 }
-.dropdown-menu-inverse > li.active > a, .dropdown-menu-inverse > li.active > a:hover, .dropdown-menu-inverse > li.active > a:active, .dropdown-menu-inverse > li.active > a:focus,
+.dropdown-menu-inverse > li.active > a, .dropdown-menu-inverse > li.active > a:hover, .dropdown-menu-inverse > li.active > a:active,
 .dropdown-menu-inverse > li > a.active,
 .dropdown-menu-inverse > li > a.active:hover,
-.dropdown-menu-inverse > li > a.active:active,
-.dropdown-menu-inverse > li > a.active:focus {
+.dropdown-menu-inverse > li > a.active:active {
   background-color: #2a303c;
 }
-.dropdown-menu-inverse > li > a[disabled], .dropdown-menu-inverse > li > a[disabled]:hover, .dropdown-menu-inverse > li > a[disabled]:active, .dropdown-menu-inverse > li > a[disabled]:focus {
+.dropdown-menu-inverse > li > a[disabled], .dropdown-menu-inverse > li > a[disabled]:hover, .dropdown-menu-inverse > li > a[disabled]:active {
   background-color: #343c4b;
 }
 
@@ -4908,17 +4902,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #f17306;
 }
-.btn-cta + .dropdown-menu > li > a:hover, .btn-cta + .dropdown-menu > li > a:active, .btn-cta + .dropdown-menu > li > a:focus {
+.btn-cta + .dropdown-menu > li > a:hover, .btn-cta + .dropdown-menu > li > a:active {
   background-color: #d96805;
 }
-.btn-cta + .dropdown-menu > li.active > a, .btn-cta + .dropdown-menu > li.active > a:hover, .btn-cta + .dropdown-menu > li.active > a:active, .btn-cta + .dropdown-menu > li.active > a:focus,
+.btn-cta + .dropdown-menu > li.active > a, .btn-cta + .dropdown-menu > li.active > a:hover, .btn-cta + .dropdown-menu > li.active > a:active,
 .btn-cta + .dropdown-menu > li > a.active,
 .btn-cta + .dropdown-menu > li > a.active:hover,
-.btn-cta + .dropdown-menu > li > a.active:active,
-.btn-cta + .dropdown-menu > li > a.active:focus {
+.btn-cta + .dropdown-menu > li > a.active:active {
   background-color: #c15c05;
 }
-.btn-cta + .dropdown-menu > li > a[disabled], .btn-cta + .dropdown-menu > li > a[disabled]:hover, .btn-cta + .dropdown-menu > li > a[disabled]:active, .btn-cta + .dropdown-menu > li > a[disabled]:focus {
+.btn-cta + .dropdown-menu > li > a[disabled], .btn-cta + .dropdown-menu > li > a[disabled]:hover, .btn-cta + .dropdown-menu > li > a[disabled]:active {
   background-color: #f17306;
 }
 .btn-group .btn-cta.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -4938,17 +4931,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #f17306;
 }
-.dropdown-menu-cta > li > a:hover, .dropdown-menu-cta > li > a:active, .dropdown-menu-cta > li > a:focus {
+.dropdown-menu-cta > li > a:hover, .dropdown-menu-cta > li > a:active {
   background-color: #d96805;
 }
-.dropdown-menu-cta > li.active > a, .dropdown-menu-cta > li.active > a:hover, .dropdown-menu-cta > li.active > a:active, .dropdown-menu-cta > li.active > a:focus,
+.dropdown-menu-cta > li.active > a, .dropdown-menu-cta > li.active > a:hover, .dropdown-menu-cta > li.active > a:active,
 .dropdown-menu-cta > li > a.active,
 .dropdown-menu-cta > li > a.active:hover,
-.dropdown-menu-cta > li > a.active:active,
-.dropdown-menu-cta > li > a.active:focus {
+.dropdown-menu-cta > li > a.active:active {
   background-color: #c15c05;
 }
-.dropdown-menu-cta > li > a[disabled], .dropdown-menu-cta > li > a[disabled]:hover, .dropdown-menu-cta > li > a[disabled]:active, .dropdown-menu-cta > li > a[disabled]:focus {
+.dropdown-menu-cta > li > a[disabled], .dropdown-menu-cta > li > a[disabled]:hover, .dropdown-menu-cta > li > a[disabled]:active {
   background-color: #f17306;
 }
 
@@ -4970,17 +4962,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #3662ad;
 }
-.btn-main + .dropdown-menu > li > a:hover, .btn-main + .dropdown-menu > li > a:active, .btn-main + .dropdown-menu > li > a:focus {
+.btn-main + .dropdown-menu > li > a:hover, .btn-main + .dropdown-menu > li > a:active {
   background-color: #31589c;
 }
-.btn-main + .dropdown-menu > li.active > a, .btn-main + .dropdown-menu > li.active > a:hover, .btn-main + .dropdown-menu > li.active > a:active, .btn-main + .dropdown-menu > li.active > a:focus,
+.btn-main + .dropdown-menu > li.active > a, .btn-main + .dropdown-menu > li.active > a:hover, .btn-main + .dropdown-menu > li.active > a:active,
 .btn-main + .dropdown-menu > li > a.active,
 .btn-main + .dropdown-menu > li > a.active:hover,
-.btn-main + .dropdown-menu > li > a.active:active,
-.btn-main + .dropdown-menu > li > a.active:focus {
+.btn-main + .dropdown-menu > li > a.active:active {
   background-color: #2b4e8a;
 }
-.btn-main + .dropdown-menu > li > a[disabled], .btn-main + .dropdown-menu > li > a[disabled]:hover, .btn-main + .dropdown-menu > li > a[disabled]:active, .btn-main + .dropdown-menu > li > a[disabled]:focus {
+.btn-main + .dropdown-menu > li > a[disabled], .btn-main + .dropdown-menu > li > a[disabled]:hover, .btn-main + .dropdown-menu > li > a[disabled]:active {
   background-color: #3662ad;
 }
 .btn-group .btn-main.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -5000,17 +4991,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #3662ad;
 }
-.dropdown-menu-main > li > a:hover, .dropdown-menu-main > li > a:active, .dropdown-menu-main > li > a:focus {
+.dropdown-menu-main > li > a:hover, .dropdown-menu-main > li > a:active {
   background-color: #31589c;
 }
-.dropdown-menu-main > li.active > a, .dropdown-menu-main > li.active > a:hover, .dropdown-menu-main > li.active > a:active, .dropdown-menu-main > li.active > a:focus,
+.dropdown-menu-main > li.active > a, .dropdown-menu-main > li.active > a:hover, .dropdown-menu-main > li.active > a:active,
 .dropdown-menu-main > li > a.active,
 .dropdown-menu-main > li > a.active:hover,
-.dropdown-menu-main > li > a.active:active,
-.dropdown-menu-main > li > a.active:focus {
+.dropdown-menu-main > li > a.active:active {
   background-color: #2b4e8a;
 }
-.dropdown-menu-main > li > a[disabled], .dropdown-menu-main > li > a[disabled]:hover, .dropdown-menu-main > li > a[disabled]:active, .dropdown-menu-main > li > a[disabled]:focus {
+.dropdown-menu-main > li > a[disabled], .dropdown-menu-main > li > a[disabled]:hover, .dropdown-menu-main > li > a[disabled]:active {
   background-color: #3662ad;
 }
 
@@ -5032,17 +5022,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #42587d;
 }
-.btn-alt1 + .dropdown-menu > li > a:hover, .btn-alt1 + .dropdown-menu > li > a:active, .btn-alt1 + .dropdown-menu > li > a:focus {
+.btn-alt1 + .dropdown-menu > li > a:hover, .btn-alt1 + .dropdown-menu > li > a:active {
   background-color: #3b4f71;
 }
-.btn-alt1 + .dropdown-menu > li.active > a, .btn-alt1 + .dropdown-menu > li.active > a:hover, .btn-alt1 + .dropdown-menu > li.active > a:active, .btn-alt1 + .dropdown-menu > li.active > a:focus,
+.btn-alt1 + .dropdown-menu > li.active > a, .btn-alt1 + .dropdown-menu > li.active > a:hover, .btn-alt1 + .dropdown-menu > li.active > a:active,
 .btn-alt1 + .dropdown-menu > li > a.active,
 .btn-alt1 + .dropdown-menu > li > a.active:hover,
-.btn-alt1 + .dropdown-menu > li > a.active:active,
-.btn-alt1 + .dropdown-menu > li > a.active:focus {
+.btn-alt1 + .dropdown-menu > li > a.active:active {
   background-color: #354664;
 }
-.btn-alt1 + .dropdown-menu > li > a[disabled], .btn-alt1 + .dropdown-menu > li > a[disabled]:hover, .btn-alt1 + .dropdown-menu > li > a[disabled]:active, .btn-alt1 + .dropdown-menu > li > a[disabled]:focus {
+.btn-alt1 + .dropdown-menu > li > a[disabled], .btn-alt1 + .dropdown-menu > li > a[disabled]:hover, .btn-alt1 + .dropdown-menu > li > a[disabled]:active {
   background-color: #42587d;
 }
 .btn-group .btn-alt1.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -5062,17 +5051,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #42587d;
 }
-.dropdown-menu-alt1 > li > a:hover, .dropdown-menu-alt1 > li > a:active, .dropdown-menu-alt1 > li > a:focus {
+.dropdown-menu-alt1 > li > a:hover, .dropdown-menu-alt1 > li > a:active {
   background-color: #3b4f71;
 }
-.dropdown-menu-alt1 > li.active > a, .dropdown-menu-alt1 > li.active > a:hover, .dropdown-menu-alt1 > li.active > a:active, .dropdown-menu-alt1 > li.active > a:focus,
+.dropdown-menu-alt1 > li.active > a, .dropdown-menu-alt1 > li.active > a:hover, .dropdown-menu-alt1 > li.active > a:active,
 .dropdown-menu-alt1 > li > a.active,
 .dropdown-menu-alt1 > li > a.active:hover,
-.dropdown-menu-alt1 > li > a.active:active,
-.dropdown-menu-alt1 > li > a.active:focus {
+.dropdown-menu-alt1 > li > a.active:active {
   background-color: #354664;
 }
-.dropdown-menu-alt1 > li > a[disabled], .dropdown-menu-alt1 > li > a[disabled]:hover, .dropdown-menu-alt1 > li > a[disabled]:active, .dropdown-menu-alt1 > li > a[disabled]:focus {
+.dropdown-menu-alt1 > li > a[disabled], .dropdown-menu-alt1 > li > a[disabled]:hover, .dropdown-menu-alt1 > li > a[disabled]:active {
   background-color: #42587d;
 }
 
@@ -5094,17 +5082,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #5f7394;
 }
-.btn-alt2 + .dropdown-menu > li > a:hover, .btn-alt2 + .dropdown-menu > li > a:active, .btn-alt2 + .dropdown-menu > li > a:focus {
+.btn-alt2 + .dropdown-menu > li > a:hover, .btn-alt2 + .dropdown-menu > li > a:active {
   background-color: #566885;
 }
-.btn-alt2 + .dropdown-menu > li.active > a, .btn-alt2 + .dropdown-menu > li.active > a:hover, .btn-alt2 + .dropdown-menu > li.active > a:active, .btn-alt2 + .dropdown-menu > li.active > a:focus,
+.btn-alt2 + .dropdown-menu > li.active > a, .btn-alt2 + .dropdown-menu > li.active > a:hover, .btn-alt2 + .dropdown-menu > li.active > a:active,
 .btn-alt2 + .dropdown-menu > li > a.active,
 .btn-alt2 + .dropdown-menu > li > a.active:hover,
-.btn-alt2 + .dropdown-menu > li > a.active:active,
-.btn-alt2 + .dropdown-menu > li > a.active:focus {
+.btn-alt2 + .dropdown-menu > li > a.active:active {
   background-color: #4c5c76;
 }
-.btn-alt2 + .dropdown-menu > li > a[disabled], .btn-alt2 + .dropdown-menu > li > a[disabled]:hover, .btn-alt2 + .dropdown-menu > li > a[disabled]:active, .btn-alt2 + .dropdown-menu > li > a[disabled]:focus {
+.btn-alt2 + .dropdown-menu > li > a[disabled], .btn-alt2 + .dropdown-menu > li > a[disabled]:hover, .btn-alt2 + .dropdown-menu > li > a[disabled]:active {
   background-color: #5f7394;
 }
 .btn-group .btn-alt2.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -5124,17 +5111,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #5f7394;
 }
-.dropdown-menu-alt2 > li > a:hover, .dropdown-menu-alt2 > li > a:active, .dropdown-menu-alt2 > li > a:focus {
+.dropdown-menu-alt2 > li > a:hover, .dropdown-menu-alt2 > li > a:active {
   background-color: #566885;
 }
-.dropdown-menu-alt2 > li.active > a, .dropdown-menu-alt2 > li.active > a:hover, .dropdown-menu-alt2 > li.active > a:active, .dropdown-menu-alt2 > li.active > a:focus,
+.dropdown-menu-alt2 > li.active > a, .dropdown-menu-alt2 > li.active > a:hover, .dropdown-menu-alt2 > li.active > a:active,
 .dropdown-menu-alt2 > li > a.active,
 .dropdown-menu-alt2 > li > a.active:hover,
-.dropdown-menu-alt2 > li > a.active:active,
-.dropdown-menu-alt2 > li > a.active:focus {
+.dropdown-menu-alt2 > li > a.active:active {
   background-color: #4c5c76;
 }
-.dropdown-menu-alt2 > li > a[disabled], .dropdown-menu-alt2 > li > a[disabled]:hover, .dropdown-menu-alt2 > li > a[disabled]:active, .dropdown-menu-alt2 > li > a[disabled]:focus {
+.dropdown-menu-alt2 > li > a[disabled], .dropdown-menu-alt2 > li > a[disabled]:hover, .dropdown-menu-alt2 > li > a[disabled]:active {
   background-color: #5f7394;
 }
 
@@ -5156,17 +5142,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #8193b1;
 }
-.btn-alt3 + .dropdown-menu > li > a:hover, .btn-alt3 + .dropdown-menu > li > a:active, .btn-alt3 + .dropdown-menu > li > a:focus {
+.btn-alt3 + .dropdown-menu > li > a:hover, .btn-alt3 + .dropdown-menu > li > a:active {
   background-color: #74849f;
 }
-.btn-alt3 + .dropdown-menu > li.active > a, .btn-alt3 + .dropdown-menu > li.active > a:hover, .btn-alt3 + .dropdown-menu > li.active > a:active, .btn-alt3 + .dropdown-menu > li.active > a:focus,
+.btn-alt3 + .dropdown-menu > li.active > a, .btn-alt3 + .dropdown-menu > li.active > a:hover, .btn-alt3 + .dropdown-menu > li.active > a:active,
 .btn-alt3 + .dropdown-menu > li > a.active,
 .btn-alt3 + .dropdown-menu > li > a.active:hover,
-.btn-alt3 + .dropdown-menu > li > a.active:active,
-.btn-alt3 + .dropdown-menu > li > a.active:focus {
+.btn-alt3 + .dropdown-menu > li > a.active:active {
   background-color: #67768e;
 }
-.btn-alt3 + .dropdown-menu > li > a[disabled], .btn-alt3 + .dropdown-menu > li > a[disabled]:hover, .btn-alt3 + .dropdown-menu > li > a[disabled]:active, .btn-alt3 + .dropdown-menu > li > a[disabled]:focus {
+.btn-alt3 + .dropdown-menu > li > a[disabled], .btn-alt3 + .dropdown-menu > li > a[disabled]:hover, .btn-alt3 + .dropdown-menu > li > a[disabled]:active {
   background-color: #8193b1;
 }
 .btn-group .btn-alt3.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -5186,17 +5171,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #8193b1;
 }
-.dropdown-menu-alt3 > li > a:hover, .dropdown-menu-alt3 > li > a:active, .dropdown-menu-alt3 > li > a:focus {
+.dropdown-menu-alt3 > li > a:hover, .dropdown-menu-alt3 > li > a:active {
   background-color: #74849f;
 }
-.dropdown-menu-alt3 > li.active > a, .dropdown-menu-alt3 > li.active > a:hover, .dropdown-menu-alt3 > li.active > a:active, .dropdown-menu-alt3 > li.active > a:focus,
+.dropdown-menu-alt3 > li.active > a, .dropdown-menu-alt3 > li.active > a:hover, .dropdown-menu-alt3 > li.active > a:active,
 .dropdown-menu-alt3 > li > a.active,
 .dropdown-menu-alt3 > li > a.active:hover,
-.dropdown-menu-alt3 > li > a.active:active,
-.dropdown-menu-alt3 > li > a.active:focus {
+.dropdown-menu-alt3 > li > a.active:active {
   background-color: #67768e;
 }
-.dropdown-menu-alt3 > li > a[disabled], .dropdown-menu-alt3 > li > a[disabled]:hover, .dropdown-menu-alt3 > li > a[disabled]:active, .dropdown-menu-alt3 > li > a[disabled]:focus {
+.dropdown-menu-alt3 > li > a[disabled], .dropdown-menu-alt3 > li > a[disabled]:hover, .dropdown-menu-alt3 > li > a[disabled]:active {
   background-color: #8193b1;
 }
 
@@ -5218,17 +5202,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #5cb85c;
 }
-.btn-success + .dropdown-menu > li > a:hover, .btn-success + .dropdown-menu > li > a:active, .btn-success + .dropdown-menu > li > a:focus {
+.btn-success + .dropdown-menu > li > a:hover, .btn-success + .dropdown-menu > li > a:active {
   background-color: #53a653;
 }
-.btn-success + .dropdown-menu > li.active > a, .btn-success + .dropdown-menu > li.active > a:hover, .btn-success + .dropdown-menu > li.active > a:active, .btn-success + .dropdown-menu > li.active > a:focus,
+.btn-success + .dropdown-menu > li.active > a, .btn-success + .dropdown-menu > li.active > a:hover, .btn-success + .dropdown-menu > li.active > a:active,
 .btn-success + .dropdown-menu > li > a.active,
 .btn-success + .dropdown-menu > li > a.active:hover,
-.btn-success + .dropdown-menu > li > a.active:active,
-.btn-success + .dropdown-menu > li > a.active:focus {
+.btn-success + .dropdown-menu > li > a.active:active {
   background-color: #4a934a;
 }
-.btn-success + .dropdown-menu > li > a[disabled], .btn-success + .dropdown-menu > li > a[disabled]:hover, .btn-success + .dropdown-menu > li > a[disabled]:active, .btn-success + .dropdown-menu > li > a[disabled]:focus {
+.btn-success + .dropdown-menu > li > a[disabled], .btn-success + .dropdown-menu > li > a[disabled]:hover, .btn-success + .dropdown-menu > li > a[disabled]:active {
   background-color: #5cb85c;
 }
 .btn-group .btn-success.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -5248,17 +5231,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #5cb85c;
 }
-.dropdown-menu-success > li > a:hover, .dropdown-menu-success > li > a:active, .dropdown-menu-success > li > a:focus {
+.dropdown-menu-success > li > a:hover, .dropdown-menu-success > li > a:active {
   background-color: #53a653;
 }
-.dropdown-menu-success > li.active > a, .dropdown-menu-success > li.active > a:hover, .dropdown-menu-success > li.active > a:active, .dropdown-menu-success > li.active > a:focus,
+.dropdown-menu-success > li.active > a, .dropdown-menu-success > li.active > a:hover, .dropdown-menu-success > li.active > a:active,
 .dropdown-menu-success > li > a.active,
 .dropdown-menu-success > li > a.active:hover,
-.dropdown-menu-success > li > a.active:active,
-.dropdown-menu-success > li > a.active:focus {
+.dropdown-menu-success > li > a.active:active {
   background-color: #4a934a;
 }
-.dropdown-menu-success > li > a[disabled], .dropdown-menu-success > li > a[disabled]:hover, .dropdown-menu-success > li > a[disabled]:active, .dropdown-menu-success > li > a[disabled]:focus {
+.dropdown-menu-success > li > a[disabled], .dropdown-menu-success > li > a[disabled]:hover, .dropdown-menu-success > li > a[disabled]:active {
   background-color: #5cb85c;
 }
 
@@ -5280,17 +5262,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #5bc0de;
 }
-.btn-info + .dropdown-menu > li > a:hover, .btn-info + .dropdown-menu > li > a:active, .btn-info + .dropdown-menu > li > a:focus {
+.btn-info + .dropdown-menu > li > a:hover, .btn-info + .dropdown-menu > li > a:active {
   background-color: #52adc8;
 }
-.btn-info + .dropdown-menu > li.active > a, .btn-info + .dropdown-menu > li.active > a:hover, .btn-info + .dropdown-menu > li.active > a:active, .btn-info + .dropdown-menu > li.active > a:focus,
+.btn-info + .dropdown-menu > li.active > a, .btn-info + .dropdown-menu > li.active > a:hover, .btn-info + .dropdown-menu > li.active > a:active,
 .btn-info + .dropdown-menu > li > a.active,
 .btn-info + .dropdown-menu > li > a.active:hover,
-.btn-info + .dropdown-menu > li > a.active:active,
-.btn-info + .dropdown-menu > li > a.active:focus {
+.btn-info + .dropdown-menu > li > a.active:active {
   background-color: #499ab2;
 }
-.btn-info + .dropdown-menu > li > a[disabled], .btn-info + .dropdown-menu > li > a[disabled]:hover, .btn-info + .dropdown-menu > li > a[disabled]:active, .btn-info + .dropdown-menu > li > a[disabled]:focus {
+.btn-info + .dropdown-menu > li > a[disabled], .btn-info + .dropdown-menu > li > a[disabled]:hover, .btn-info + .dropdown-menu > li > a[disabled]:active {
   background-color: #5bc0de;
 }
 .btn-group .btn-info.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -5310,17 +5291,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #5bc0de;
 }
-.dropdown-menu-info > li > a:hover, .dropdown-menu-info > li > a:active, .dropdown-menu-info > li > a:focus {
+.dropdown-menu-info > li > a:hover, .dropdown-menu-info > li > a:active {
   background-color: #52adc8;
 }
-.dropdown-menu-info > li.active > a, .dropdown-menu-info > li.active > a:hover, .dropdown-menu-info > li.active > a:active, .dropdown-menu-info > li.active > a:focus,
+.dropdown-menu-info > li.active > a, .dropdown-menu-info > li.active > a:hover, .dropdown-menu-info > li.active > a:active,
 .dropdown-menu-info > li > a.active,
 .dropdown-menu-info > li > a.active:hover,
-.dropdown-menu-info > li > a.active:active,
-.dropdown-menu-info > li > a.active:focus {
+.dropdown-menu-info > li > a.active:active {
   background-color: #499ab2;
 }
-.dropdown-menu-info > li > a[disabled], .dropdown-menu-info > li > a[disabled]:hover, .dropdown-menu-info > li > a[disabled]:active, .dropdown-menu-info > li > a[disabled]:focus {
+.dropdown-menu-info > li > a[disabled], .dropdown-menu-info > li > a[disabled]:hover, .dropdown-menu-info > li > a[disabled]:active {
   background-color: #5bc0de;
 }
 
@@ -5342,17 +5322,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #f0ad4e;
 }
-.btn-warning + .dropdown-menu > li > a:hover, .btn-warning + .dropdown-menu > li > a:active, .btn-warning + .dropdown-menu > li > a:focus {
+.btn-warning + .dropdown-menu > li > a:hover, .btn-warning + .dropdown-menu > li > a:active {
   background-color: #d89c46;
 }
-.btn-warning + .dropdown-menu > li.active > a, .btn-warning + .dropdown-menu > li.active > a:hover, .btn-warning + .dropdown-menu > li.active > a:active, .btn-warning + .dropdown-menu > li.active > a:focus,
+.btn-warning + .dropdown-menu > li.active > a, .btn-warning + .dropdown-menu > li.active > a:hover, .btn-warning + .dropdown-menu > li.active > a:active,
 .btn-warning + .dropdown-menu > li > a.active,
 .btn-warning + .dropdown-menu > li > a.active:hover,
-.btn-warning + .dropdown-menu > li > a.active:active,
-.btn-warning + .dropdown-menu > li > a.active:focus {
+.btn-warning + .dropdown-menu > li > a.active:active {
   background-color: #c08a3e;
 }
-.btn-warning + .dropdown-menu > li > a[disabled], .btn-warning + .dropdown-menu > li > a[disabled]:hover, .btn-warning + .dropdown-menu > li > a[disabled]:active, .btn-warning + .dropdown-menu > li > a[disabled]:focus {
+.btn-warning + .dropdown-menu > li > a[disabled], .btn-warning + .dropdown-menu > li > a[disabled]:hover, .btn-warning + .dropdown-menu > li > a[disabled]:active {
   background-color: #f0ad4e;
 }
 .btn-group .btn-warning.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -5372,17 +5351,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #f0ad4e;
 }
-.dropdown-menu-warning > li > a:hover, .dropdown-menu-warning > li > a:active, .dropdown-menu-warning > li > a:focus {
+.dropdown-menu-warning > li > a:hover, .dropdown-menu-warning > li > a:active {
   background-color: #d89c46;
 }
-.dropdown-menu-warning > li.active > a, .dropdown-menu-warning > li.active > a:hover, .dropdown-menu-warning > li.active > a:active, .dropdown-menu-warning > li.active > a:focus,
+.dropdown-menu-warning > li.active > a, .dropdown-menu-warning > li.active > a:hover, .dropdown-menu-warning > li.active > a:active,
 .dropdown-menu-warning > li > a.active,
 .dropdown-menu-warning > li > a.active:hover,
-.dropdown-menu-warning > li > a.active:active,
-.dropdown-menu-warning > li > a.active:focus {
+.dropdown-menu-warning > li > a.active:active {
   background-color: #c08a3e;
 }
-.dropdown-menu-warning > li > a[disabled], .dropdown-menu-warning > li > a[disabled]:hover, .dropdown-menu-warning > li > a[disabled]:active, .dropdown-menu-warning > li > a[disabled]:focus {
+.dropdown-menu-warning > li > a[disabled], .dropdown-menu-warning > li > a[disabled]:hover, .dropdown-menu-warning > li > a[disabled]:active {
   background-color: #f0ad4e;
 }
 
@@ -5404,17 +5382,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #d9534f;
 }
-.btn-danger + .dropdown-menu > li > a:hover, .btn-danger + .dropdown-menu > li > a:active, .btn-danger + .dropdown-menu > li > a:focus {
+.btn-danger + .dropdown-menu > li > a:hover, .btn-danger + .dropdown-menu > li > a:active {
   background-color: #c34b47;
 }
-.btn-danger + .dropdown-menu > li.active > a, .btn-danger + .dropdown-menu > li.active > a:hover, .btn-danger + .dropdown-menu > li.active > a:active, .btn-danger + .dropdown-menu > li.active > a:focus,
+.btn-danger + .dropdown-menu > li.active > a, .btn-danger + .dropdown-menu > li.active > a:hover, .btn-danger + .dropdown-menu > li.active > a:active,
 .btn-danger + .dropdown-menu > li > a.active,
 .btn-danger + .dropdown-menu > li > a.active:hover,
-.btn-danger + .dropdown-menu > li > a.active:active,
-.btn-danger + .dropdown-menu > li > a.active:focus {
+.btn-danger + .dropdown-menu > li > a.active:active {
   background-color: #ae423f;
 }
-.btn-danger + .dropdown-menu > li > a[disabled], .btn-danger + .dropdown-menu > li > a[disabled]:hover, .btn-danger + .dropdown-menu > li > a[disabled]:active, .btn-danger + .dropdown-menu > li > a[disabled]:focus {
+.btn-danger + .dropdown-menu > li > a[disabled], .btn-danger + .dropdown-menu > li > a[disabled]:hover, .btn-danger + .dropdown-menu > li > a[disabled]:active {
   background-color: #d9534f;
 }
 .btn-group .btn-danger.dropdown-toggle:nth-child(2n) + .dropdown-menu:after {
@@ -5434,17 +5411,16 @@ h5 .btn-group {
   border-color: transparent;
   background-color: #d9534f;
 }
-.dropdown-menu-danger > li > a:hover, .dropdown-menu-danger > li > a:active, .dropdown-menu-danger > li > a:focus {
+.dropdown-menu-danger > li > a:hover, .dropdown-menu-danger > li > a:active {
   background-color: #c34b47;
 }
-.dropdown-menu-danger > li.active > a, .dropdown-menu-danger > li.active > a:hover, .dropdown-menu-danger > li.active > a:active, .dropdown-menu-danger > li.active > a:focus,
+.dropdown-menu-danger > li.active > a, .dropdown-menu-danger > li.active > a:hover, .dropdown-menu-danger > li.active > a:active,
 .dropdown-menu-danger > li > a.active,
 .dropdown-menu-danger > li > a.active:hover,
-.dropdown-menu-danger > li > a.active:active,
-.dropdown-menu-danger > li > a.active:focus {
+.dropdown-menu-danger > li > a.active:active {
   background-color: #ae423f;
 }
-.dropdown-menu-danger > li > a[disabled], .dropdown-menu-danger > li > a[disabled]:hover, .dropdown-menu-danger > li > a[disabled]:active, .dropdown-menu-danger > li > a[disabled]:focus {
+.dropdown-menu-danger > li > a[disabled], .dropdown-menu-danger > li > a[disabled]:hover, .dropdown-menu-danger > li > a[disabled]:active {
   background-color: #d9534f;
 }
 
@@ -6878,7 +6854,7 @@ h5 .btn-group {
 .hero-default a {
   color: inherit;
 }
-.hero-default .btn:hover, .hero-default .btn:active, .hero-default .btn:focus {
+.hero-default .btn:hover, .hero-default .btn:active {
   color: inherit;
   border-color: #9fa2a8;
   background-color: #cfcfcf;
@@ -6891,7 +6867,7 @@ h5 .btn-group {
 .hero-inverse a {
   color: inherit;
 }
-.hero-inverse .btn:hover, .hero-inverse .btn:active, .hero-inverse .btn:focus {
+.hero-inverse .btn:hover, .hero-inverse .btn:active {
   color: white;
   border-color: #858a93;
   background-color: #2f3644;
@@ -6904,7 +6880,7 @@ h5 .btn-group {
 .hero-cta a {
   color: inherit;
 }
-.hero-cta .btn:hover, .hero-cta .btn:active, .hero-cta .btn:focus {
+.hero-cta .btn:hover, .hero-cta .btn:active {
   color: white;
   border-color: #f7ab6a;
   background-color: #d96805;
@@ -6917,7 +6893,7 @@ h5 .btn-group {
 .hero-main a {
   color: inherit;
 }
-.hero-main .btn:hover, .hero-main .btn:active, .hero-main .btn:focus {
+.hero-main .btn:hover, .hero-main .btn:active {
   color: white;
   border-color: #86a1ce;
   background-color: #31589c;
@@ -6930,7 +6906,7 @@ h5 .btn-group {
 .hero-alt1 a {
   color: inherit;
 }
-.hero-alt1 .btn:hover, .hero-alt1 .btn:active, .hero-alt1 .btn:focus {
+.hero-alt1 .btn:hover, .hero-alt1 .btn:active {
   color: white;
   border-color: #8e9bb1;
   background-color: #3b4f71;
@@ -6943,7 +6919,7 @@ h5 .btn-group {
 .hero-alt2 a {
   color: inherit;
 }
-.hero-alt2 .btn:hover, .hero-alt2 .btn:active, .hero-alt2 .btn:focus {
+.hero-alt2 .btn:hover, .hero-alt2 .btn:active {
   color: white;
   border-color: #9fabbf;
   background-color: #566885;
@@ -6956,7 +6932,7 @@ h5 .btn-group {
 .hero-alt3 a {
   color: inherit;
 }
-.hero-alt3 .btn:hover, .hero-alt3 .btn:active, .hero-alt3 .btn:focus {
+.hero-alt3 .btn:hover, .hero-alt3 .btn:active {
   color: white;
   border-color: #b3bed0;
   background-color: #74849f;
@@ -6969,7 +6945,7 @@ h5 .btn-group {
 .hero-success a {
   color: inherit;
 }
-.hero-success .btn:hover, .hero-success .btn:active, .hero-success .btn:focus {
+.hero-success .btn:hover, .hero-success .btn:active {
   color: white;
   border-color: #9dd49d;
   background-color: #53a653;
@@ -6982,7 +6958,7 @@ h5 .btn-group {
 .hero-info a {
   color: inherit;
 }
-.hero-info .btn:hover, .hero-info .btn:active, .hero-info .btn:focus {
+.hero-info .btn:hover, .hero-info .btn:active {
   color: white;
   border-color: #9dd9eb;
   background-color: #52adc8;
@@ -6995,7 +6971,7 @@ h5 .btn-group {
 .hero-warning a {
   color: inherit;
 }
-.hero-warning .btn:hover, .hero-warning .btn:active, .hero-warning .btn:focus {
+.hero-warning .btn:hover, .hero-warning .btn:active {
   color: white;
   border-color: #f6ce95;
   background-color: #d89c46;
@@ -7008,7 +6984,7 @@ h5 .btn-group {
 .hero-danger a {
   color: inherit;
 }
-.hero-danger .btn:hover, .hero-danger .btn:active, .hero-danger .btn:focus {
+.hero-danger .btn:hover, .hero-danger .btn:active {
   color: white;
   border-color: #e89895;
   background-color: #c34b47;
@@ -7138,7 +7114,7 @@ h5 .btn-group {
   background-color: #e6e6e6;
 }
 
-a.label-default:hover, a.label-default:active, a.label-default:focus {
+a.label-default:hover, a.label-default:active {
   color: inherit;
   background-color: #cfcfcf;
 }
@@ -7149,7 +7125,7 @@ a.label-default:hover, a.label-default:active, a.label-default:focus {
   background-color: #343c4b;
 }
 
-a.label-inverse:hover, a.label-inverse:active, a.label-inverse:focus {
+a.label-inverse:hover, a.label-inverse:active {
   color: white;
   background-color: #2f3644;
 }
@@ -7160,7 +7136,7 @@ a.label-inverse:hover, a.label-inverse:active, a.label-inverse:focus {
   background-color: #f17306;
 }
 
-a.label-cta:hover, a.label-cta:active, a.label-cta:focus {
+a.label-cta:hover, a.label-cta:active {
   color: white;
   background-color: #d96805;
 }
@@ -7171,7 +7147,7 @@ a.label-cta:hover, a.label-cta:active, a.label-cta:focus {
   background-color: #3662ad;
 }
 
-a.label-main:hover, a.label-main:active, a.label-main:focus {
+a.label-main:hover, a.label-main:active {
   color: white;
   background-color: #31589c;
 }
@@ -7182,7 +7158,7 @@ a.label-main:hover, a.label-main:active, a.label-main:focus {
   background-color: #42587d;
 }
 
-a.label-alt1:hover, a.label-alt1:active, a.label-alt1:focus {
+a.label-alt1:hover, a.label-alt1:active {
   color: white;
   background-color: #3b4f71;
 }
@@ -7193,7 +7169,7 @@ a.label-alt1:hover, a.label-alt1:active, a.label-alt1:focus {
   background-color: #5f7394;
 }
 
-a.label-alt2:hover, a.label-alt2:active, a.label-alt2:focus {
+a.label-alt2:hover, a.label-alt2:active {
   color: white;
   background-color: #566885;
 }
@@ -7204,7 +7180,7 @@ a.label-alt2:hover, a.label-alt2:active, a.label-alt2:focus {
   background-color: #8193b1;
 }
 
-a.label-alt3:hover, a.label-alt3:active, a.label-alt3:focus {
+a.label-alt3:hover, a.label-alt3:active {
   color: white;
   background-color: #74849f;
 }
@@ -7215,7 +7191,7 @@ a.label-alt3:hover, a.label-alt3:active, a.label-alt3:focus {
   background-color: #5cb85c;
 }
 
-a.label-success:hover, a.label-success:active, a.label-success:focus {
+a.label-success:hover, a.label-success:active {
   color: white;
   background-color: #53a653;
 }
@@ -7226,7 +7202,7 @@ a.label-success:hover, a.label-success:active, a.label-success:focus {
   background-color: #5bc0de;
 }
 
-a.label-info:hover, a.label-info:active, a.label-info:focus {
+a.label-info:hover, a.label-info:active {
   color: white;
   background-color: #52adc8;
 }
@@ -7237,7 +7213,7 @@ a.label-info:hover, a.label-info:active, a.label-info:focus {
   background-color: #f0ad4e;
 }
 
-a.label-warning:hover, a.label-warning:active, a.label-warning:focus {
+a.label-warning:hover, a.label-warning:active {
   color: white;
   background-color: #d89c46;
 }
@@ -7248,7 +7224,7 @@ a.label-warning:hover, a.label-warning:active, a.label-warning:focus {
   background-color: #d9534f;
 }
 
-a.label-danger:hover, a.label-danger:active, a.label-danger:focus {
+a.label-danger:hover, a.label-danger:active {
   color: white;
   background-color: #c34b47;
 }
@@ -7299,7 +7275,7 @@ button.list-group-item {
 .list-group-default {
   background-color: #e6e6e6;
 }
-.list-group-default a.list-group-item:hover, .list-group-default a.list-group-item:active, .list-group-default a.list-group-item:focus {
+.list-group-default a.list-group-item:hover, .list-group-default a.list-group-item:active {
   color: inherit;
   background-color: #cfcfcf;
 }
@@ -7318,7 +7294,7 @@ button.list-group-item {
 .list-group-inverse {
   background-color: #343c4b;
 }
-.list-group-inverse a.list-group-item:hover, .list-group-inverse a.list-group-item:active, .list-group-inverse a.list-group-item:focus {
+.list-group-inverse a.list-group-item:hover, .list-group-inverse a.list-group-item:active {
   color: white;
   background-color: #2f3644;
 }
@@ -7337,7 +7313,7 @@ button.list-group-item {
 .list-group-cta {
   background-color: #f17306;
 }
-.list-group-cta a.list-group-item:hover, .list-group-cta a.list-group-item:active, .list-group-cta a.list-group-item:focus {
+.list-group-cta a.list-group-item:hover, .list-group-cta a.list-group-item:active {
   color: white;
   background-color: #d96805;
 }
@@ -7356,7 +7332,7 @@ button.list-group-item {
 .list-group-main {
   background-color: #3662ad;
 }
-.list-group-main a.list-group-item:hover, .list-group-main a.list-group-item:active, .list-group-main a.list-group-item:focus {
+.list-group-main a.list-group-item:hover, .list-group-main a.list-group-item:active {
   color: white;
   background-color: #31589c;
 }
@@ -7375,7 +7351,7 @@ button.list-group-item {
 .list-group-alt1 {
   background-color: #42587d;
 }
-.list-group-alt1 a.list-group-item:hover, .list-group-alt1 a.list-group-item:active, .list-group-alt1 a.list-group-item:focus {
+.list-group-alt1 a.list-group-item:hover, .list-group-alt1 a.list-group-item:active {
   color: white;
   background-color: #3b4f71;
 }
@@ -7394,7 +7370,7 @@ button.list-group-item {
 .list-group-alt2 {
   background-color: #5f7394;
 }
-.list-group-alt2 a.list-group-item:hover, .list-group-alt2 a.list-group-item:active, .list-group-alt2 a.list-group-item:focus {
+.list-group-alt2 a.list-group-item:hover, .list-group-alt2 a.list-group-item:active {
   color: white;
   background-color: #566885;
 }
@@ -7413,7 +7389,7 @@ button.list-group-item {
 .list-group-alt3 {
   background-color: #8193b1;
 }
-.list-group-alt3 a.list-group-item:hover, .list-group-alt3 a.list-group-item:active, .list-group-alt3 a.list-group-item:focus {
+.list-group-alt3 a.list-group-item:hover, .list-group-alt3 a.list-group-item:active {
   color: white;
   background-color: #74849f;
 }
@@ -7432,7 +7408,7 @@ button.list-group-item {
 .list-group-success {
   background-color: #5cb85c;
 }
-.list-group-success a.list-group-item:hover, .list-group-success a.list-group-item:active, .list-group-success a.list-group-item:focus {
+.list-group-success a.list-group-item:hover, .list-group-success a.list-group-item:active {
   color: white;
   background-color: #53a653;
 }
@@ -7451,7 +7427,7 @@ button.list-group-item {
 .list-group-info {
   background-color: #5bc0de;
 }
-.list-group-info a.list-group-item:hover, .list-group-info a.list-group-item:active, .list-group-info a.list-group-item:focus {
+.list-group-info a.list-group-item:hover, .list-group-info a.list-group-item:active {
   color: white;
   background-color: #52adc8;
 }
@@ -7470,7 +7446,7 @@ button.list-group-item {
 .list-group-warning {
   background-color: #f0ad4e;
 }
-.list-group-warning a.list-group-item:hover, .list-group-warning a.list-group-item:active, .list-group-warning a.list-group-item:focus {
+.list-group-warning a.list-group-item:hover, .list-group-warning a.list-group-item:active {
   color: white;
   background-color: #d89c46;
 }
@@ -7489,7 +7465,7 @@ button.list-group-item {
 .list-group-danger {
   background-color: #d9534f;
 }
-.list-group-danger a.list-group-item:hover, .list-group-danger a.list-group-item:active, .list-group-danger a.list-group-item:focus {
+.list-group-danger a.list-group-item:hover, .list-group-danger a.list-group-item:active {
   color: white;
   background-color: #c34b47;
 }
@@ -7817,27 +7793,22 @@ button.list-group-item {
   border: 1px solid;
   border-radius: 0.375em;
 }
-.nav-tabs > li > a.active, .nav-tabs > li > a.active:hover, .nav-tabs > li > a.active:active, .nav-tabs > li > a.active:focus,
+.nav-tabs > li > a.active, .nav-tabs > li > a.active:hover, .nav-tabs > li > a.active:active,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:active,
-.nav-tabs > li.active > a:focus,
 .nav-tabs > li.open > a,
 .nav-tabs > li.open > a:hover,
 .nav-tabs > li.open > a:active,
-.nav-tabs > li.open > a:focus,
 .nav-pills > li > a.active,
 .nav-pills > li > a.active:hover,
 .nav-pills > li > a.active:active,
-.nav-pills > li > a.active:focus,
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:active,
-.nav-pills > li.active > a:focus,
 .nav-pills > li.open > a,
 .nav-pills > li.open > a:hover,
-.nav-pills > li.open > a:active,
-.nav-pills > li.open > a:focus {
+.nav-pills > li.open > a:active {
   color: white;
   border-color: transparent;
   background-color: #3662ad;
@@ -7912,18 +7883,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #e6e6e6;
 }
-.nav-default > li > a:hover, .nav-default > li > a:active, .nav-default > li > a:focus {
+.nav-default > li > a:hover, .nav-default > li > a:active {
   background-color: #cfcfcf;
 }
-.nav-default > li > a.active, .nav-default > li > a.active:hover, .nav-default > li > a.active:active, .nav-default > li > a.active:focus,
+.nav-default > li > a.active, .nav-default > li > a.active:hover, .nav-default > li > a.active:active,
 .nav-default > li.active > a,
 .nav-default > li.active > a:hover,
 .nav-default > li.active > a:active,
-.nav-default > li.active > a:focus,
 .nav-default > li.open > a,
 .nav-default > li.open > a:hover,
-.nav-default > li.open > a:active,
-.nav-default > li.open > a:focus {
+.nav-default > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #c4c4c4;
@@ -7935,7 +7904,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #cfcfcf;
 }
-.nav-default .dropdown-menu > li > a:hover, .nav-default .dropdown-menu > li > a:active, .nav-default .dropdown-menu > li > a:focus {
+.nav-default .dropdown-menu > li > a:hover, .nav-default .dropdown-menu > li > a:active {
   background-color: #b8b8b8;
 }
 
@@ -7949,18 +7918,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #343c4b;
 }
-.nav-inverse > li > a:hover, .nav-inverse > li > a:active, .nav-inverse > li > a:focus {
+.nav-inverse > li > a:hover, .nav-inverse > li > a:active {
   background-color: #2f3644;
 }
-.nav-inverse > li > a.active, .nav-inverse > li > a.active:hover, .nav-inverse > li > a.active:active, .nav-inverse > li > a.active:focus,
+.nav-inverse > li > a.active, .nav-inverse > li > a.active:hover, .nav-inverse > li > a.active:active,
 .nav-inverse > li.active > a,
 .nav-inverse > li.active > a:hover,
 .nav-inverse > li.active > a:active,
-.nav-inverse > li.active > a:focus,
 .nav-inverse > li.open > a,
 .nav-inverse > li.open > a:hover,
-.nav-inverse > li.open > a:active,
-.nav-inverse > li.open > a:focus {
+.nav-inverse > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #2c3340;
@@ -7972,7 +7939,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #2f3644;
 }
-.nav-inverse .dropdown-menu > li > a:hover, .nav-inverse .dropdown-menu > li > a:active, .nav-inverse .dropdown-menu > li > a:focus {
+.nav-inverse .dropdown-menu > li > a:hover, .nav-inverse .dropdown-menu > li > a:active {
   background-color: #2a303c;
 }
 
@@ -7986,18 +7953,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #f17306;
 }
-.nav-cta > li > a:hover, .nav-cta > li > a:active, .nav-cta > li > a:focus {
+.nav-cta > li > a:hover, .nav-cta > li > a:active {
   background-color: #d96805;
 }
-.nav-cta > li > a.active, .nav-cta > li > a.active:hover, .nav-cta > li > a.active:active, .nav-cta > li > a.active:focus,
+.nav-cta > li > a.active, .nav-cta > li > a.active:hover, .nav-cta > li > a.active:active,
 .nav-cta > li.active > a,
 .nav-cta > li.active > a:hover,
 .nav-cta > li.active > a:active,
-.nav-cta > li.active > a:focus,
 .nav-cta > li.open > a,
 .nav-cta > li.open > a:hover,
-.nav-cta > li.open > a:active,
-.nav-cta > li.open > a:focus {
+.nav-cta > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #cd6205;
@@ -8009,7 +7974,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #d96805;
 }
-.nav-cta .dropdown-menu > li > a:hover, .nav-cta .dropdown-menu > li > a:active, .nav-cta .dropdown-menu > li > a:focus {
+.nav-cta .dropdown-menu > li > a:hover, .nav-cta .dropdown-menu > li > a:active {
   background-color: #c15c05;
 }
 
@@ -8023,18 +7988,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #3662ad;
 }
-.nav-main > li > a:hover, .nav-main > li > a:active, .nav-main > li > a:focus {
+.nav-main > li > a:hover, .nav-main > li > a:active {
   background-color: #31589c;
 }
-.nav-main > li > a.active, .nav-main > li > a.active:hover, .nav-main > li > a.active:active, .nav-main > li > a.active:focus,
+.nav-main > li > a.active, .nav-main > li > a.active:hover, .nav-main > li > a.active:active,
 .nav-main > li.active > a,
 .nav-main > li.active > a:hover,
 .nav-main > li.active > a:active,
-.nav-main > li.active > a:focus,
 .nav-main > li.open > a,
 .nav-main > li.open > a:hover,
-.nav-main > li.open > a:active,
-.nav-main > li.open > a:focus {
+.nav-main > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #2e5393;
@@ -8046,7 +8009,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #31589c;
 }
-.nav-main .dropdown-menu > li > a:hover, .nav-main .dropdown-menu > li > a:active, .nav-main .dropdown-menu > li > a:focus {
+.nav-main .dropdown-menu > li > a:hover, .nav-main .dropdown-menu > li > a:active {
   background-color: #2b4e8a;
 }
 
@@ -8060,18 +8023,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #42587d;
 }
-.nav-alt1 > li > a:hover, .nav-alt1 > li > a:active, .nav-alt1 > li > a:focus {
+.nav-alt1 > li > a:hover, .nav-alt1 > li > a:active {
   background-color: #3b4f71;
 }
-.nav-alt1 > li > a.active, .nav-alt1 > li > a.active:hover, .nav-alt1 > li > a.active:active, .nav-alt1 > li > a.active:focus,
+.nav-alt1 > li > a.active, .nav-alt1 > li > a.active:hover, .nav-alt1 > li > a.active:active,
 .nav-alt1 > li.active > a,
 .nav-alt1 > li.active > a:hover,
 .nav-alt1 > li.active > a:active,
-.nav-alt1 > li.active > a:focus,
 .nav-alt1 > li.open > a,
 .nav-alt1 > li.open > a:hover,
-.nav-alt1 > li.open > a:active,
-.nav-alt1 > li.open > a:focus {
+.nav-alt1 > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #384b6a;
@@ -8083,7 +8044,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #3b4f71;
 }
-.nav-alt1 .dropdown-menu > li > a:hover, .nav-alt1 .dropdown-menu > li > a:active, .nav-alt1 .dropdown-menu > li > a:focus {
+.nav-alt1 .dropdown-menu > li > a:hover, .nav-alt1 .dropdown-menu > li > a:active {
   background-color: #354664;
 }
 
@@ -8097,18 +8058,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5f7394;
 }
-.nav-alt2 > li > a:hover, .nav-alt2 > li > a:active, .nav-alt2 > li > a:focus {
+.nav-alt2 > li > a:hover, .nav-alt2 > li > a:active {
   background-color: #566885;
 }
-.nav-alt2 > li > a.active, .nav-alt2 > li > a.active:hover, .nav-alt2 > li > a.active:active, .nav-alt2 > li > a.active:focus,
+.nav-alt2 > li > a.active, .nav-alt2 > li > a.active:hover, .nav-alt2 > li > a.active:active,
 .nav-alt2 > li.active > a,
 .nav-alt2 > li.active > a:hover,
 .nav-alt2 > li.active > a:active,
-.nav-alt2 > li.active > a:focus,
 .nav-alt2 > li.open > a,
 .nav-alt2 > li.open > a:hover,
-.nav-alt2 > li.open > a:active,
-.nav-alt2 > li.open > a:focus {
+.nav-alt2 > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #51627e;
@@ -8120,7 +8079,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #566885;
 }
-.nav-alt2 .dropdown-menu > li > a:hover, .nav-alt2 .dropdown-menu > li > a:active, .nav-alt2 .dropdown-menu > li > a:focus {
+.nav-alt2 .dropdown-menu > li > a:hover, .nav-alt2 .dropdown-menu > li > a:active {
   background-color: #4c5c76;
 }
 
@@ -8134,18 +8093,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #8193b1;
 }
-.nav-alt3 > li > a:hover, .nav-alt3 > li > a:active, .nav-alt3 > li > a:focus {
+.nav-alt3 > li > a:hover, .nav-alt3 > li > a:active {
   background-color: #74849f;
 }
-.nav-alt3 > li > a.active, .nav-alt3 > li > a.active:hover, .nav-alt3 > li > a.active:active, .nav-alt3 > li > a.active:focus,
+.nav-alt3 > li > a.active, .nav-alt3 > li > a.active:hover, .nav-alt3 > li > a.active:active,
 .nav-alt3 > li.active > a,
 .nav-alt3 > li.active > a:hover,
 .nav-alt3 > li.active > a:active,
-.nav-alt3 > li.active > a:focus,
 .nav-alt3 > li.open > a,
 .nav-alt3 > li.open > a:hover,
-.nav-alt3 > li.open > a:active,
-.nav-alt3 > li.open > a:focus {
+.nav-alt3 > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #6e7d96;
@@ -8157,7 +8114,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #74849f;
 }
-.nav-alt3 .dropdown-menu > li > a:hover, .nav-alt3 .dropdown-menu > li > a:active, .nav-alt3 .dropdown-menu > li > a:focus {
+.nav-alt3 .dropdown-menu > li > a:hover, .nav-alt3 .dropdown-menu > li > a:active {
   background-color: #67768e;
 }
 
@@ -8171,18 +8128,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5cb85c;
 }
-.nav-success > li > a:hover, .nav-success > li > a:active, .nav-success > li > a:focus {
+.nav-success > li > a:hover, .nav-success > li > a:active {
   background-color: #53a653;
 }
-.nav-success > li > a.active, .nav-success > li > a.active:hover, .nav-success > li > a.active:active, .nav-success > li > a.active:focus,
+.nav-success > li > a.active, .nav-success > li > a.active:hover, .nav-success > li > a.active:active,
 .nav-success > li.active > a,
 .nav-success > li.active > a:hover,
 .nav-success > li.active > a:active,
-.nav-success > li.active > a:focus,
 .nav-success > li.open > a,
 .nav-success > li.open > a:hover,
-.nav-success > li.open > a:active,
-.nav-success > li.open > a:focus {
+.nav-success > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #4e9c4e;
@@ -8194,7 +8149,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #53a653;
 }
-.nav-success .dropdown-menu > li > a:hover, .nav-success .dropdown-menu > li > a:active, .nav-success .dropdown-menu > li > a:focus {
+.nav-success .dropdown-menu > li > a:hover, .nav-success .dropdown-menu > li > a:active {
   background-color: #4a934a;
 }
 
@@ -8208,18 +8163,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5bc0de;
 }
-.nav-info > li > a:hover, .nav-info > li > a:active, .nav-info > li > a:focus {
+.nav-info > li > a:hover, .nav-info > li > a:active {
   background-color: #52adc8;
 }
-.nav-info > li > a.active, .nav-info > li > a.active:hover, .nav-info > li > a.active:active, .nav-info > li > a.active:focus,
+.nav-info > li > a.active, .nav-info > li > a.active:hover, .nav-info > li > a.active:active,
 .nav-info > li.active > a,
 .nav-info > li.active > a:hover,
 .nav-info > li.active > a:active,
-.nav-info > li.active > a:focus,
 .nav-info > li.open > a,
 .nav-info > li.open > a:hover,
-.nav-info > li.open > a:active,
-.nav-info > li.open > a:focus {
+.nav-info > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #4da3bd;
@@ -8231,7 +8184,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #52adc8;
 }
-.nav-info .dropdown-menu > li > a:hover, .nav-info .dropdown-menu > li > a:active, .nav-info .dropdown-menu > li > a:focus {
+.nav-info .dropdown-menu > li > a:hover, .nav-info .dropdown-menu > li > a:active {
   background-color: #499ab2;
 }
 
@@ -8245,18 +8198,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #f0ad4e;
 }
-.nav-warning > li > a:hover, .nav-warning > li > a:active, .nav-warning > li > a:focus {
+.nav-warning > li > a:hover, .nav-warning > li > a:active {
   background-color: #d89c46;
 }
-.nav-warning > li > a.active, .nav-warning > li > a.active:hover, .nav-warning > li > a.active:active, .nav-warning > li > a.active:focus,
+.nav-warning > li > a.active, .nav-warning > li > a.active:hover, .nav-warning > li > a.active:active,
 .nav-warning > li.active > a,
 .nav-warning > li.active > a:hover,
 .nav-warning > li.active > a:active,
-.nav-warning > li.active > a:focus,
 .nav-warning > li.open > a,
 .nav-warning > li.open > a:hover,
-.nav-warning > li.open > a:active,
-.nav-warning > li.open > a:focus {
+.nav-warning > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #cc9342;
@@ -8268,7 +8219,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #d89c46;
 }
-.nav-warning .dropdown-menu > li > a:hover, .nav-warning .dropdown-menu > li > a:active, .nav-warning .dropdown-menu > li > a:focus {
+.nav-warning .dropdown-menu > li > a:hover, .nav-warning .dropdown-menu > li > a:active {
   background-color: #c08a3e;
 }
 
@@ -8282,18 +8233,16 @@ button.list-group-item {
   border-color: transparent;
   background-color: #d9534f;
 }
-.nav-danger > li > a:hover, .nav-danger > li > a:active, .nav-danger > li > a:focus {
+.nav-danger > li > a:hover, .nav-danger > li > a:active {
   background-color: #c34b47;
 }
-.nav-danger > li > a.active, .nav-danger > li > a.active:hover, .nav-danger > li > a.active:active, .nav-danger > li > a.active:focus,
+.nav-danger > li > a.active, .nav-danger > li > a.active:hover, .nav-danger > li > a.active:active,
 .nav-danger > li.active > a,
 .nav-danger > li.active > a:hover,
 .nav-danger > li.active > a:active,
-.nav-danger > li.active > a:focus,
 .nav-danger > li.open > a,
 .nav-danger > li.open > a:hover,
-.nav-danger > li.open > a:active,
-.nav-danger > li.open > a:focus {
+.nav-danger > li.open > a:active {
   color: inherit;
   border-color: transparent;
   background-color: #b84743;
@@ -8305,7 +8254,7 @@ button.list-group-item {
   border: 0 none;
   background-color: #c34b47;
 }
-.nav-danger .dropdown-menu > li > a:hover, .nav-danger .dropdown-menu > li > a:active, .nav-danger .dropdown-menu > li > a:focus {
+.nav-danger .dropdown-menu > li > a:hover, .nav-danger .dropdown-menu > li > a:active {
   background-color: #ae423f;
 }
 
@@ -8464,15 +8413,13 @@ button.list-group-item {
 .navbar-nav > li > a {
   padding: 0.9em 0.9em;
 }
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:hover, .navbar-nav > li > a.active:active, .navbar-nav > li > a.active:focus,
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:hover, .navbar-nav > li > a.active:active,
 .navbar-nav > li.active > a,
 .navbar-nav > li.active > a:hover,
 .navbar-nav > li.active > a:active,
-.navbar-nav > li.active > a:focus,
 .navbar-nav > li.open > a,
 .navbar-nav > li.open > a:hover,
-.navbar-nav > li.open > a:active,
-.navbar-nav > li.open > a:focus {
+.navbar-nav > li.open > a:active {
   color: white;
   border-color: #3662ad;
   background-color: #3662ad;
@@ -8812,33 +8759,27 @@ button.list-group-item {
 .navbar-default button {
   color: inherit;
 }
-.navbar-default a:hover, .navbar-default a:active, .navbar-default a:focus,
+.navbar-default a:hover, .navbar-default a:active,
 .navbar-default button:hover,
-.navbar-default button:active,
-.navbar-default button:focus {
+.navbar-default button:active {
   background-color: #cfcfcf;
 }
-.navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > a:hover, .navbar-default .navbar-nav > li.open > a:active, .navbar-default .navbar-nav > li.open > a:focus,
+.navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > a:hover, .navbar-default .navbar-nav > li.open > a:active,
 .navbar-default .navbar-nav > li.active > a,
 .navbar-default .navbar-nav > li.active > a:hover,
 .navbar-default .navbar-nav > li.active > a:active,
-.navbar-default .navbar-nav > li.active > a:focus,
 .navbar-default .navbar-nav > li > a.active,
 .navbar-default .navbar-nav > li > a.active:hover,
 .navbar-default .navbar-nav > li > a.active:active,
-.navbar-default .navbar-nav > li > a.active:focus,
 .navbar-default li.open > a,
 .navbar-default li.open > a:hover,
 .navbar-default li.open > a:active,
-.navbar-default li.open > a:focus,
 .navbar-default li.active > a,
 .navbar-default li.active > a:hover,
 .navbar-default li.active > a:active,
-.navbar-default li.active > a:focus,
 .navbar-default a.active,
 .navbar-default a.active:hover,
-.navbar-default a.active:active,
-.navbar-default a.active:focus {
+.navbar-default a.active:active {
   background-color: #c4c4c4;
 }
 .navbar-default .navbar-search-form .form-control {
@@ -8853,36 +8794,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #cfcfcf;
 }
-.navbar-default .dropdown-menu > li > a:hover, .navbar-default .dropdown-menu > li > a:active, .navbar-default .dropdown-menu > li > a:focus {
+.navbar-default .dropdown-menu > li > a:hover, .navbar-default .dropdown-menu > li > a:active {
   background-color: #b8b8b8;
 }
-.navbar-default .dropdown-menu > li.open > a, .navbar-default .dropdown-menu > li.open > a:hover, .navbar-default .dropdown-menu > li.open > a:active, .navbar-default .dropdown-menu > li.open > a:focus,
+.navbar-default .dropdown-menu > li.open > a, .navbar-default .dropdown-menu > li.open > a:hover, .navbar-default .dropdown-menu > li.open > a:active,
 .navbar-default .dropdown-menu > li.active > a,
 .navbar-default .dropdown-menu > li.active > a:hover,
 .navbar-default .dropdown-menu > li.active > a:active,
-.navbar-default .dropdown-menu > li.active > a:focus,
 .navbar-default .dropdown-menu > a.active,
 .navbar-default .dropdown-menu > a.active:hover,
-.navbar-default .dropdown-menu > a.active:active,
-.navbar-default .dropdown-menu > a.active:focus {
+.navbar-default .dropdown-menu > a.active:active {
   background-color: #b8b8b8;
 }
 
 .navbar-default.navbar-stacked .dropdown-menu > li > a {
   background-color: #b8b8b8;
 }
-.navbar-default.navbar-stacked .dropdown-menu > li > a:hover, .navbar-default.navbar-stacked .dropdown-menu > li > a:active, .navbar-default.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-default.navbar-stacked .dropdown-menu > li > a:hover, .navbar-default.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #a1a1a1;
 }
-.navbar-default.navbar-stacked .dropdown-menu > li.open > a, .navbar-default.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-default.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-default.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-default.navbar-stacked .dropdown-menu > li.open > a, .navbar-default.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-default.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-default.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-default.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-default.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-default.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-default.navbar-stacked .dropdown-menu > a.active,
 .navbar-default.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-default.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-default.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-default.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #a1a1a1;
 }
 
@@ -8898,33 +8835,27 @@ button.list-group-item {
 .navbar-inverse button {
   color: inherit;
 }
-.navbar-inverse a:hover, .navbar-inverse a:active, .navbar-inverse a:focus,
+.navbar-inverse a:hover, .navbar-inverse a:active,
 .navbar-inverse button:hover,
-.navbar-inverse button:active,
-.navbar-inverse button:focus {
+.navbar-inverse button:active {
   background-color: #2f3644;
 }
-.navbar-inverse .navbar-nav > li.open > a, .navbar-inverse .navbar-nav > li.open > a:hover, .navbar-inverse .navbar-nav > li.open > a:active, .navbar-inverse .navbar-nav > li.open > a:focus,
+.navbar-inverse .navbar-nav > li.open > a, .navbar-inverse .navbar-nav > li.open > a:hover, .navbar-inverse .navbar-nav > li.open > a:active,
 .navbar-inverse .navbar-nav > li.active > a,
 .navbar-inverse .navbar-nav > li.active > a:hover,
 .navbar-inverse .navbar-nav > li.active > a:active,
-.navbar-inverse .navbar-nav > li.active > a:focus,
 .navbar-inverse .navbar-nav > li > a.active,
 .navbar-inverse .navbar-nav > li > a.active:hover,
 .navbar-inverse .navbar-nav > li > a.active:active,
-.navbar-inverse .navbar-nav > li > a.active:focus,
 .navbar-inverse li.open > a,
 .navbar-inverse li.open > a:hover,
 .navbar-inverse li.open > a:active,
-.navbar-inverse li.open > a:focus,
 .navbar-inverse li.active > a,
 .navbar-inverse li.active > a:hover,
 .navbar-inverse li.active > a:active,
-.navbar-inverse li.active > a:focus,
 .navbar-inverse a.active,
 .navbar-inverse a.active:hover,
-.navbar-inverse a.active:active,
-.navbar-inverse a.active:focus {
+.navbar-inverse a.active:active {
   background-color: #2c3340;
 }
 .navbar-inverse .navbar-search-form .form-control {
@@ -8939,36 +8870,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #2f3644;
 }
-.navbar-inverse .dropdown-menu > li > a:hover, .navbar-inverse .dropdown-menu > li > a:active, .navbar-inverse .dropdown-menu > li > a:focus {
+.navbar-inverse .dropdown-menu > li > a:hover, .navbar-inverse .dropdown-menu > li > a:active {
   background-color: #2a303c;
 }
-.navbar-inverse .dropdown-menu > li.open > a, .navbar-inverse .dropdown-menu > li.open > a:hover, .navbar-inverse .dropdown-menu > li.open > a:active, .navbar-inverse .dropdown-menu > li.open > a:focus,
+.navbar-inverse .dropdown-menu > li.open > a, .navbar-inverse .dropdown-menu > li.open > a:hover, .navbar-inverse .dropdown-menu > li.open > a:active,
 .navbar-inverse .dropdown-menu > li.active > a,
 .navbar-inverse .dropdown-menu > li.active > a:hover,
 .navbar-inverse .dropdown-menu > li.active > a:active,
-.navbar-inverse .dropdown-menu > li.active > a:focus,
 .navbar-inverse .dropdown-menu > a.active,
 .navbar-inverse .dropdown-menu > a.active:hover,
-.navbar-inverse .dropdown-menu > a.active:active,
-.navbar-inverse .dropdown-menu > a.active:focus {
+.navbar-inverse .dropdown-menu > a.active:active {
   background-color: #2a303c;
 }
 
 .navbar-inverse.navbar-stacked .dropdown-menu > li > a {
   background-color: #2a303c;
 }
-.navbar-inverse.navbar-stacked .dropdown-menu > li > a:hover, .navbar-inverse.navbar-stacked .dropdown-menu > li > a:active, .navbar-inverse.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-inverse.navbar-stacked .dropdown-menu > li > a:hover, .navbar-inverse.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #242a35;
 }
-.navbar-inverse.navbar-stacked .dropdown-menu > li.open > a, .navbar-inverse.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-inverse.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-inverse.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-inverse.navbar-stacked .dropdown-menu > li.open > a, .navbar-inverse.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-inverse.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-inverse.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-inverse.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-inverse.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-inverse.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-inverse.navbar-stacked .dropdown-menu > a.active,
 .navbar-inverse.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-inverse.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-inverse.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-inverse.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #242a35;
 }
 
@@ -8984,33 +8911,27 @@ button.list-group-item {
 .navbar-cta button {
   color: inherit;
 }
-.navbar-cta a:hover, .navbar-cta a:active, .navbar-cta a:focus,
+.navbar-cta a:hover, .navbar-cta a:active,
 .navbar-cta button:hover,
-.navbar-cta button:active,
-.navbar-cta button:focus {
+.navbar-cta button:active {
   background-color: #d96805;
 }
-.navbar-cta .navbar-nav > li.open > a, .navbar-cta .navbar-nav > li.open > a:hover, .navbar-cta .navbar-nav > li.open > a:active, .navbar-cta .navbar-nav > li.open > a:focus,
+.navbar-cta .navbar-nav > li.open > a, .navbar-cta .navbar-nav > li.open > a:hover, .navbar-cta .navbar-nav > li.open > a:active,
 .navbar-cta .navbar-nav > li.active > a,
 .navbar-cta .navbar-nav > li.active > a:hover,
 .navbar-cta .navbar-nav > li.active > a:active,
-.navbar-cta .navbar-nav > li.active > a:focus,
 .navbar-cta .navbar-nav > li > a.active,
 .navbar-cta .navbar-nav > li > a.active:hover,
 .navbar-cta .navbar-nav > li > a.active:active,
-.navbar-cta .navbar-nav > li > a.active:focus,
 .navbar-cta li.open > a,
 .navbar-cta li.open > a:hover,
 .navbar-cta li.open > a:active,
-.navbar-cta li.open > a:focus,
 .navbar-cta li.active > a,
 .navbar-cta li.active > a:hover,
 .navbar-cta li.active > a:active,
-.navbar-cta li.active > a:focus,
 .navbar-cta a.active,
 .navbar-cta a.active:hover,
-.navbar-cta a.active:active,
-.navbar-cta a.active:focus {
+.navbar-cta a.active:active {
   background-color: #cd6205;
 }
 .navbar-cta .navbar-search-form .form-control {
@@ -9025,36 +8946,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #d96805;
 }
-.navbar-cta .dropdown-menu > li > a:hover, .navbar-cta .dropdown-menu > li > a:active, .navbar-cta .dropdown-menu > li > a:focus {
+.navbar-cta .dropdown-menu > li > a:hover, .navbar-cta .dropdown-menu > li > a:active {
   background-color: #c15c05;
 }
-.navbar-cta .dropdown-menu > li.open > a, .navbar-cta .dropdown-menu > li.open > a:hover, .navbar-cta .dropdown-menu > li.open > a:active, .navbar-cta .dropdown-menu > li.open > a:focus,
+.navbar-cta .dropdown-menu > li.open > a, .navbar-cta .dropdown-menu > li.open > a:hover, .navbar-cta .dropdown-menu > li.open > a:active,
 .navbar-cta .dropdown-menu > li.active > a,
 .navbar-cta .dropdown-menu > li.active > a:hover,
 .navbar-cta .dropdown-menu > li.active > a:active,
-.navbar-cta .dropdown-menu > li.active > a:focus,
 .navbar-cta .dropdown-menu > a.active,
 .navbar-cta .dropdown-menu > a.active:hover,
-.navbar-cta .dropdown-menu > a.active:active,
-.navbar-cta .dropdown-menu > a.active:focus {
+.navbar-cta .dropdown-menu > a.active:active {
   background-color: #c15c05;
 }
 
 .navbar-cta.navbar-stacked .dropdown-menu > li > a {
   background-color: #c15c05;
 }
-.navbar-cta.navbar-stacked .dropdown-menu > li > a:hover, .navbar-cta.navbar-stacked .dropdown-menu > li > a:active, .navbar-cta.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-cta.navbar-stacked .dropdown-menu > li > a:hover, .navbar-cta.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #a95104;
 }
-.navbar-cta.navbar-stacked .dropdown-menu > li.open > a, .navbar-cta.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-cta.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-cta.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-cta.navbar-stacked .dropdown-menu > li.open > a, .navbar-cta.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-cta.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-cta.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-cta.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-cta.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-cta.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-cta.navbar-stacked .dropdown-menu > a.active,
 .navbar-cta.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-cta.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-cta.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-cta.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #a95104;
 }
 
@@ -9070,33 +8987,27 @@ button.list-group-item {
 .navbar-main button {
   color: inherit;
 }
-.navbar-main a:hover, .navbar-main a:active, .navbar-main a:focus,
+.navbar-main a:hover, .navbar-main a:active,
 .navbar-main button:hover,
-.navbar-main button:active,
-.navbar-main button:focus {
+.navbar-main button:active {
   background-color: #31589c;
 }
-.navbar-main .navbar-nav > li.open > a, .navbar-main .navbar-nav > li.open > a:hover, .navbar-main .navbar-nav > li.open > a:active, .navbar-main .navbar-nav > li.open > a:focus,
+.navbar-main .navbar-nav > li.open > a, .navbar-main .navbar-nav > li.open > a:hover, .navbar-main .navbar-nav > li.open > a:active,
 .navbar-main .navbar-nav > li.active > a,
 .navbar-main .navbar-nav > li.active > a:hover,
 .navbar-main .navbar-nav > li.active > a:active,
-.navbar-main .navbar-nav > li.active > a:focus,
 .navbar-main .navbar-nav > li > a.active,
 .navbar-main .navbar-nav > li > a.active:hover,
 .navbar-main .navbar-nav > li > a.active:active,
-.navbar-main .navbar-nav > li > a.active:focus,
 .navbar-main li.open > a,
 .navbar-main li.open > a:hover,
 .navbar-main li.open > a:active,
-.navbar-main li.open > a:focus,
 .navbar-main li.active > a,
 .navbar-main li.active > a:hover,
 .navbar-main li.active > a:active,
-.navbar-main li.active > a:focus,
 .navbar-main a.active,
 .navbar-main a.active:hover,
-.navbar-main a.active:active,
-.navbar-main a.active:focus {
+.navbar-main a.active:active {
   background-color: #2e5393;
 }
 .navbar-main .navbar-search-form .form-control {
@@ -9111,36 +9022,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #31589c;
 }
-.navbar-main .dropdown-menu > li > a:hover, .navbar-main .dropdown-menu > li > a:active, .navbar-main .dropdown-menu > li > a:focus {
+.navbar-main .dropdown-menu > li > a:hover, .navbar-main .dropdown-menu > li > a:active {
   background-color: #2b4e8a;
 }
-.navbar-main .dropdown-menu > li.open > a, .navbar-main .dropdown-menu > li.open > a:hover, .navbar-main .dropdown-menu > li.open > a:active, .navbar-main .dropdown-menu > li.open > a:focus,
+.navbar-main .dropdown-menu > li.open > a, .navbar-main .dropdown-menu > li.open > a:hover, .navbar-main .dropdown-menu > li.open > a:active,
 .navbar-main .dropdown-menu > li.active > a,
 .navbar-main .dropdown-menu > li.active > a:hover,
 .navbar-main .dropdown-menu > li.active > a:active,
-.navbar-main .dropdown-menu > li.active > a:focus,
 .navbar-main .dropdown-menu > a.active,
 .navbar-main .dropdown-menu > a.active:hover,
-.navbar-main .dropdown-menu > a.active:active,
-.navbar-main .dropdown-menu > a.active:focus {
+.navbar-main .dropdown-menu > a.active:active {
   background-color: #2b4e8a;
 }
 
 .navbar-main.navbar-stacked .dropdown-menu > li > a {
   background-color: #2b4e8a;
 }
-.navbar-main.navbar-stacked .dropdown-menu > li > a:hover, .navbar-main.navbar-stacked .dropdown-menu > li > a:active, .navbar-main.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-main.navbar-stacked .dropdown-menu > li > a:hover, .navbar-main.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #264579;
 }
-.navbar-main.navbar-stacked .dropdown-menu > li.open > a, .navbar-main.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-main.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-main.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-main.navbar-stacked .dropdown-menu > li.open > a, .navbar-main.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-main.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-main.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-main.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-main.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-main.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-main.navbar-stacked .dropdown-menu > a.active,
 .navbar-main.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-main.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-main.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-main.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #264579;
 }
 
@@ -9156,33 +9063,27 @@ button.list-group-item {
 .navbar-alt1 button {
   color: inherit;
 }
-.navbar-alt1 a:hover, .navbar-alt1 a:active, .navbar-alt1 a:focus,
+.navbar-alt1 a:hover, .navbar-alt1 a:active,
 .navbar-alt1 button:hover,
-.navbar-alt1 button:active,
-.navbar-alt1 button:focus {
+.navbar-alt1 button:active {
   background-color: #3b4f71;
 }
-.navbar-alt1 .navbar-nav > li.open > a, .navbar-alt1 .navbar-nav > li.open > a:hover, .navbar-alt1 .navbar-nav > li.open > a:active, .navbar-alt1 .navbar-nav > li.open > a:focus,
+.navbar-alt1 .navbar-nav > li.open > a, .navbar-alt1 .navbar-nav > li.open > a:hover, .navbar-alt1 .navbar-nav > li.open > a:active,
 .navbar-alt1 .navbar-nav > li.active > a,
 .navbar-alt1 .navbar-nav > li.active > a:hover,
 .navbar-alt1 .navbar-nav > li.active > a:active,
-.navbar-alt1 .navbar-nav > li.active > a:focus,
 .navbar-alt1 .navbar-nav > li > a.active,
 .navbar-alt1 .navbar-nav > li > a.active:hover,
 .navbar-alt1 .navbar-nav > li > a.active:active,
-.navbar-alt1 .navbar-nav > li > a.active:focus,
 .navbar-alt1 li.open > a,
 .navbar-alt1 li.open > a:hover,
 .navbar-alt1 li.open > a:active,
-.navbar-alt1 li.open > a:focus,
 .navbar-alt1 li.active > a,
 .navbar-alt1 li.active > a:hover,
 .navbar-alt1 li.active > a:active,
-.navbar-alt1 li.active > a:focus,
 .navbar-alt1 a.active,
 .navbar-alt1 a.active:hover,
-.navbar-alt1 a.active:active,
-.navbar-alt1 a.active:focus {
+.navbar-alt1 a.active:active {
   background-color: #384b6a;
 }
 .navbar-alt1 .navbar-search-form .form-control {
@@ -9197,36 +9098,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #3b4f71;
 }
-.navbar-alt1 .dropdown-menu > li > a:hover, .navbar-alt1 .dropdown-menu > li > a:active, .navbar-alt1 .dropdown-menu > li > a:focus {
+.navbar-alt1 .dropdown-menu > li > a:hover, .navbar-alt1 .dropdown-menu > li > a:active {
   background-color: #354664;
 }
-.navbar-alt1 .dropdown-menu > li.open > a, .navbar-alt1 .dropdown-menu > li.open > a:hover, .navbar-alt1 .dropdown-menu > li.open > a:active, .navbar-alt1 .dropdown-menu > li.open > a:focus,
+.navbar-alt1 .dropdown-menu > li.open > a, .navbar-alt1 .dropdown-menu > li.open > a:hover, .navbar-alt1 .dropdown-menu > li.open > a:active,
 .navbar-alt1 .dropdown-menu > li.active > a,
 .navbar-alt1 .dropdown-menu > li.active > a:hover,
 .navbar-alt1 .dropdown-menu > li.active > a:active,
-.navbar-alt1 .dropdown-menu > li.active > a:focus,
 .navbar-alt1 .dropdown-menu > a.active,
 .navbar-alt1 .dropdown-menu > a.active:hover,
-.navbar-alt1 .dropdown-menu > a.active:active,
-.navbar-alt1 .dropdown-menu > a.active:focus {
+.navbar-alt1 .dropdown-menu > a.active:active {
   background-color: #354664;
 }
 
 .navbar-alt1.navbar-stacked .dropdown-menu > li > a {
   background-color: #354664;
 }
-.navbar-alt1.navbar-stacked .dropdown-menu > li > a:hover, .navbar-alt1.navbar-stacked .dropdown-menu > li > a:active, .navbar-alt1.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-alt1.navbar-stacked .dropdown-menu > li > a:hover, .navbar-alt1.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #2e3e58;
 }
-.navbar-alt1.navbar-stacked .dropdown-menu > li.open > a, .navbar-alt1.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-alt1.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-alt1.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-alt1.navbar-stacked .dropdown-menu > li.open > a, .navbar-alt1.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-alt1.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-alt1.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-alt1.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-alt1.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-alt1.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-alt1.navbar-stacked .dropdown-menu > a.active,
 .navbar-alt1.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-alt1.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-alt1.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-alt1.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #2e3e58;
 }
 
@@ -9242,33 +9139,27 @@ button.list-group-item {
 .navbar-alt2 button {
   color: inherit;
 }
-.navbar-alt2 a:hover, .navbar-alt2 a:active, .navbar-alt2 a:focus,
+.navbar-alt2 a:hover, .navbar-alt2 a:active,
 .navbar-alt2 button:hover,
-.navbar-alt2 button:active,
-.navbar-alt2 button:focus {
+.navbar-alt2 button:active {
   background-color: #566885;
 }
-.navbar-alt2 .navbar-nav > li.open > a, .navbar-alt2 .navbar-nav > li.open > a:hover, .navbar-alt2 .navbar-nav > li.open > a:active, .navbar-alt2 .navbar-nav > li.open > a:focus,
+.navbar-alt2 .navbar-nav > li.open > a, .navbar-alt2 .navbar-nav > li.open > a:hover, .navbar-alt2 .navbar-nav > li.open > a:active,
 .navbar-alt2 .navbar-nav > li.active > a,
 .navbar-alt2 .navbar-nav > li.active > a:hover,
 .navbar-alt2 .navbar-nav > li.active > a:active,
-.navbar-alt2 .navbar-nav > li.active > a:focus,
 .navbar-alt2 .navbar-nav > li > a.active,
 .navbar-alt2 .navbar-nav > li > a.active:hover,
 .navbar-alt2 .navbar-nav > li > a.active:active,
-.navbar-alt2 .navbar-nav > li > a.active:focus,
 .navbar-alt2 li.open > a,
 .navbar-alt2 li.open > a:hover,
 .navbar-alt2 li.open > a:active,
-.navbar-alt2 li.open > a:focus,
 .navbar-alt2 li.active > a,
 .navbar-alt2 li.active > a:hover,
 .navbar-alt2 li.active > a:active,
-.navbar-alt2 li.active > a:focus,
 .navbar-alt2 a.active,
 .navbar-alt2 a.active:hover,
-.navbar-alt2 a.active:active,
-.navbar-alt2 a.active:focus {
+.navbar-alt2 a.active:active {
   background-color: #51627e;
 }
 .navbar-alt2 .navbar-search-form .form-control {
@@ -9283,36 +9174,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #566885;
 }
-.navbar-alt2 .dropdown-menu > li > a:hover, .navbar-alt2 .dropdown-menu > li > a:active, .navbar-alt2 .dropdown-menu > li > a:focus {
+.navbar-alt2 .dropdown-menu > li > a:hover, .navbar-alt2 .dropdown-menu > li > a:active {
   background-color: #4c5c76;
 }
-.navbar-alt2 .dropdown-menu > li.open > a, .navbar-alt2 .dropdown-menu > li.open > a:hover, .navbar-alt2 .dropdown-menu > li.open > a:active, .navbar-alt2 .dropdown-menu > li.open > a:focus,
+.navbar-alt2 .dropdown-menu > li.open > a, .navbar-alt2 .dropdown-menu > li.open > a:hover, .navbar-alt2 .dropdown-menu > li.open > a:active,
 .navbar-alt2 .dropdown-menu > li.active > a,
 .navbar-alt2 .dropdown-menu > li.active > a:hover,
 .navbar-alt2 .dropdown-menu > li.active > a:active,
-.navbar-alt2 .dropdown-menu > li.active > a:focus,
 .navbar-alt2 .dropdown-menu > a.active,
 .navbar-alt2 .dropdown-menu > a.active:hover,
-.navbar-alt2 .dropdown-menu > a.active:active,
-.navbar-alt2 .dropdown-menu > a.active:focus {
+.navbar-alt2 .dropdown-menu > a.active:active {
   background-color: #4c5c76;
 }
 
 .navbar-alt2.navbar-stacked .dropdown-menu > li > a {
   background-color: #4c5c76;
 }
-.navbar-alt2.navbar-stacked .dropdown-menu > li > a:hover, .navbar-alt2.navbar-stacked .dropdown-menu > li > a:active, .navbar-alt2.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-alt2.navbar-stacked .dropdown-menu > li > a:hover, .navbar-alt2.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #435168;
 }
-.navbar-alt2.navbar-stacked .dropdown-menu > li.open > a, .navbar-alt2.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-alt2.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-alt2.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-alt2.navbar-stacked .dropdown-menu > li.open > a, .navbar-alt2.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-alt2.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-alt2.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-alt2.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-alt2.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-alt2.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-alt2.navbar-stacked .dropdown-menu > a.active,
 .navbar-alt2.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-alt2.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-alt2.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-alt2.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #435168;
 }
 
@@ -9328,33 +9215,27 @@ button.list-group-item {
 .navbar-alt3 button {
   color: inherit;
 }
-.navbar-alt3 a:hover, .navbar-alt3 a:active, .navbar-alt3 a:focus,
+.navbar-alt3 a:hover, .navbar-alt3 a:active,
 .navbar-alt3 button:hover,
-.navbar-alt3 button:active,
-.navbar-alt3 button:focus {
+.navbar-alt3 button:active {
   background-color: #74849f;
 }
-.navbar-alt3 .navbar-nav > li.open > a, .navbar-alt3 .navbar-nav > li.open > a:hover, .navbar-alt3 .navbar-nav > li.open > a:active, .navbar-alt3 .navbar-nav > li.open > a:focus,
+.navbar-alt3 .navbar-nav > li.open > a, .navbar-alt3 .navbar-nav > li.open > a:hover, .navbar-alt3 .navbar-nav > li.open > a:active,
 .navbar-alt3 .navbar-nav > li.active > a,
 .navbar-alt3 .navbar-nav > li.active > a:hover,
 .navbar-alt3 .navbar-nav > li.active > a:active,
-.navbar-alt3 .navbar-nav > li.active > a:focus,
 .navbar-alt3 .navbar-nav > li > a.active,
 .navbar-alt3 .navbar-nav > li > a.active:hover,
 .navbar-alt3 .navbar-nav > li > a.active:active,
-.navbar-alt3 .navbar-nav > li > a.active:focus,
 .navbar-alt3 li.open > a,
 .navbar-alt3 li.open > a:hover,
 .navbar-alt3 li.open > a:active,
-.navbar-alt3 li.open > a:focus,
 .navbar-alt3 li.active > a,
 .navbar-alt3 li.active > a:hover,
 .navbar-alt3 li.active > a:active,
-.navbar-alt3 li.active > a:focus,
 .navbar-alt3 a.active,
 .navbar-alt3 a.active:hover,
-.navbar-alt3 a.active:active,
-.navbar-alt3 a.active:focus {
+.navbar-alt3 a.active:active {
   background-color: #6e7d96;
 }
 .navbar-alt3 .navbar-search-form .form-control {
@@ -9369,36 +9250,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #74849f;
 }
-.navbar-alt3 .dropdown-menu > li > a:hover, .navbar-alt3 .dropdown-menu > li > a:active, .navbar-alt3 .dropdown-menu > li > a:focus {
+.navbar-alt3 .dropdown-menu > li > a:hover, .navbar-alt3 .dropdown-menu > li > a:active {
   background-color: #67768e;
 }
-.navbar-alt3 .dropdown-menu > li.open > a, .navbar-alt3 .dropdown-menu > li.open > a:hover, .navbar-alt3 .dropdown-menu > li.open > a:active, .navbar-alt3 .dropdown-menu > li.open > a:focus,
+.navbar-alt3 .dropdown-menu > li.open > a, .navbar-alt3 .dropdown-menu > li.open > a:hover, .navbar-alt3 .dropdown-menu > li.open > a:active,
 .navbar-alt3 .dropdown-menu > li.active > a,
 .navbar-alt3 .dropdown-menu > li.active > a:hover,
 .navbar-alt3 .dropdown-menu > li.active > a:active,
-.navbar-alt3 .dropdown-menu > li.active > a:focus,
 .navbar-alt3 .dropdown-menu > a.active,
 .navbar-alt3 .dropdown-menu > a.active:hover,
-.navbar-alt3 .dropdown-menu > a.active:active,
-.navbar-alt3 .dropdown-menu > a.active:focus {
+.navbar-alt3 .dropdown-menu > a.active:active {
   background-color: #67768e;
 }
 
 .navbar-alt3.navbar-stacked .dropdown-menu > li > a {
   background-color: #67768e;
 }
-.navbar-alt3.navbar-stacked .dropdown-menu > li > a:hover, .navbar-alt3.navbar-stacked .dropdown-menu > li > a:active, .navbar-alt3.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-alt3.navbar-stacked .dropdown-menu > li > a:hover, .navbar-alt3.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #5a677c;
 }
-.navbar-alt3.navbar-stacked .dropdown-menu > li.open > a, .navbar-alt3.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-alt3.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-alt3.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-alt3.navbar-stacked .dropdown-menu > li.open > a, .navbar-alt3.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-alt3.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-alt3.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-alt3.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-alt3.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-alt3.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-alt3.navbar-stacked .dropdown-menu > a.active,
 .navbar-alt3.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-alt3.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-alt3.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-alt3.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #5a677c;
 }
 
@@ -9414,33 +9291,27 @@ button.list-group-item {
 .navbar-success button {
   color: inherit;
 }
-.navbar-success a:hover, .navbar-success a:active, .navbar-success a:focus,
+.navbar-success a:hover, .navbar-success a:active,
 .navbar-success button:hover,
-.navbar-success button:active,
-.navbar-success button:focus {
+.navbar-success button:active {
   background-color: #53a653;
 }
-.navbar-success .navbar-nav > li.open > a, .navbar-success .navbar-nav > li.open > a:hover, .navbar-success .navbar-nav > li.open > a:active, .navbar-success .navbar-nav > li.open > a:focus,
+.navbar-success .navbar-nav > li.open > a, .navbar-success .navbar-nav > li.open > a:hover, .navbar-success .navbar-nav > li.open > a:active,
 .navbar-success .navbar-nav > li.active > a,
 .navbar-success .navbar-nav > li.active > a:hover,
 .navbar-success .navbar-nav > li.active > a:active,
-.navbar-success .navbar-nav > li.active > a:focus,
 .navbar-success .navbar-nav > li > a.active,
 .navbar-success .navbar-nav > li > a.active:hover,
 .navbar-success .navbar-nav > li > a.active:active,
-.navbar-success .navbar-nav > li > a.active:focus,
 .navbar-success li.open > a,
 .navbar-success li.open > a:hover,
 .navbar-success li.open > a:active,
-.navbar-success li.open > a:focus,
 .navbar-success li.active > a,
 .navbar-success li.active > a:hover,
 .navbar-success li.active > a:active,
-.navbar-success li.active > a:focus,
 .navbar-success a.active,
 .navbar-success a.active:hover,
-.navbar-success a.active:active,
-.navbar-success a.active:focus {
+.navbar-success a.active:active {
   background-color: #4e9c4e;
 }
 .navbar-success .navbar-search-form .form-control {
@@ -9455,36 +9326,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #53a653;
 }
-.navbar-success .dropdown-menu > li > a:hover, .navbar-success .dropdown-menu > li > a:active, .navbar-success .dropdown-menu > li > a:focus {
+.navbar-success .dropdown-menu > li > a:hover, .navbar-success .dropdown-menu > li > a:active {
   background-color: #4a934a;
 }
-.navbar-success .dropdown-menu > li.open > a, .navbar-success .dropdown-menu > li.open > a:hover, .navbar-success .dropdown-menu > li.open > a:active, .navbar-success .dropdown-menu > li.open > a:focus,
+.navbar-success .dropdown-menu > li.open > a, .navbar-success .dropdown-menu > li.open > a:hover, .navbar-success .dropdown-menu > li.open > a:active,
 .navbar-success .dropdown-menu > li.active > a,
 .navbar-success .dropdown-menu > li.active > a:hover,
 .navbar-success .dropdown-menu > li.active > a:active,
-.navbar-success .dropdown-menu > li.active > a:focus,
 .navbar-success .dropdown-menu > a.active,
 .navbar-success .dropdown-menu > a.active:hover,
-.navbar-success .dropdown-menu > a.active:active,
-.navbar-success .dropdown-menu > a.active:focus {
+.navbar-success .dropdown-menu > a.active:active {
   background-color: #4a934a;
 }
 
 .navbar-success.navbar-stacked .dropdown-menu > li > a {
   background-color: #4a934a;
 }
-.navbar-success.navbar-stacked .dropdown-menu > li > a:hover, .navbar-success.navbar-stacked .dropdown-menu > li > a:active, .navbar-success.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-success.navbar-stacked .dropdown-menu > li > a:hover, .navbar-success.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #408140;
 }
-.navbar-success.navbar-stacked .dropdown-menu > li.open > a, .navbar-success.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-success.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-success.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-success.navbar-stacked .dropdown-menu > li.open > a, .navbar-success.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-success.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-success.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-success.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-success.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-success.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-success.navbar-stacked .dropdown-menu > a.active,
 .navbar-success.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-success.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-success.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-success.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #408140;
 }
 
@@ -9500,33 +9367,27 @@ button.list-group-item {
 .navbar-info button {
   color: inherit;
 }
-.navbar-info a:hover, .navbar-info a:active, .navbar-info a:focus,
+.navbar-info a:hover, .navbar-info a:active,
 .navbar-info button:hover,
-.navbar-info button:active,
-.navbar-info button:focus {
+.navbar-info button:active {
   background-color: #52adc8;
 }
-.navbar-info .navbar-nav > li.open > a, .navbar-info .navbar-nav > li.open > a:hover, .navbar-info .navbar-nav > li.open > a:active, .navbar-info .navbar-nav > li.open > a:focus,
+.navbar-info .navbar-nav > li.open > a, .navbar-info .navbar-nav > li.open > a:hover, .navbar-info .navbar-nav > li.open > a:active,
 .navbar-info .navbar-nav > li.active > a,
 .navbar-info .navbar-nav > li.active > a:hover,
 .navbar-info .navbar-nav > li.active > a:active,
-.navbar-info .navbar-nav > li.active > a:focus,
 .navbar-info .navbar-nav > li > a.active,
 .navbar-info .navbar-nav > li > a.active:hover,
 .navbar-info .navbar-nav > li > a.active:active,
-.navbar-info .navbar-nav > li > a.active:focus,
 .navbar-info li.open > a,
 .navbar-info li.open > a:hover,
 .navbar-info li.open > a:active,
-.navbar-info li.open > a:focus,
 .navbar-info li.active > a,
 .navbar-info li.active > a:hover,
 .navbar-info li.active > a:active,
-.navbar-info li.active > a:focus,
 .navbar-info a.active,
 .navbar-info a.active:hover,
-.navbar-info a.active:active,
-.navbar-info a.active:focus {
+.navbar-info a.active:active {
   background-color: #4da3bd;
 }
 .navbar-info .navbar-search-form .form-control {
@@ -9541,36 +9402,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #52adc8;
 }
-.navbar-info .dropdown-menu > li > a:hover, .navbar-info .dropdown-menu > li > a:active, .navbar-info .dropdown-menu > li > a:focus {
+.navbar-info .dropdown-menu > li > a:hover, .navbar-info .dropdown-menu > li > a:active {
   background-color: #499ab2;
 }
-.navbar-info .dropdown-menu > li.open > a, .navbar-info .dropdown-menu > li.open > a:hover, .navbar-info .dropdown-menu > li.open > a:active, .navbar-info .dropdown-menu > li.open > a:focus,
+.navbar-info .dropdown-menu > li.open > a, .navbar-info .dropdown-menu > li.open > a:hover, .navbar-info .dropdown-menu > li.open > a:active,
 .navbar-info .dropdown-menu > li.active > a,
 .navbar-info .dropdown-menu > li.active > a:hover,
 .navbar-info .dropdown-menu > li.active > a:active,
-.navbar-info .dropdown-menu > li.active > a:focus,
 .navbar-info .dropdown-menu > a.active,
 .navbar-info .dropdown-menu > a.active:hover,
-.navbar-info .dropdown-menu > a.active:active,
-.navbar-info .dropdown-menu > a.active:focus {
+.navbar-info .dropdown-menu > a.active:active {
   background-color: #499ab2;
 }
 
 .navbar-info.navbar-stacked .dropdown-menu > li > a {
   background-color: #499ab2;
 }
-.navbar-info.navbar-stacked .dropdown-menu > li > a:hover, .navbar-info.navbar-stacked .dropdown-menu > li > a:active, .navbar-info.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-info.navbar-stacked .dropdown-menu > li > a:hover, .navbar-info.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #40869b;
 }
-.navbar-info.navbar-stacked .dropdown-menu > li.open > a, .navbar-info.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-info.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-info.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-info.navbar-stacked .dropdown-menu > li.open > a, .navbar-info.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-info.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-info.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-info.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-info.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-info.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-info.navbar-stacked .dropdown-menu > a.active,
 .navbar-info.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-info.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-info.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-info.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #40869b;
 }
 
@@ -9586,33 +9443,27 @@ button.list-group-item {
 .navbar-warning button {
   color: inherit;
 }
-.navbar-warning a:hover, .navbar-warning a:active, .navbar-warning a:focus,
+.navbar-warning a:hover, .navbar-warning a:active,
 .navbar-warning button:hover,
-.navbar-warning button:active,
-.navbar-warning button:focus {
+.navbar-warning button:active {
   background-color: #d89c46;
 }
-.navbar-warning .navbar-nav > li.open > a, .navbar-warning .navbar-nav > li.open > a:hover, .navbar-warning .navbar-nav > li.open > a:active, .navbar-warning .navbar-nav > li.open > a:focus,
+.navbar-warning .navbar-nav > li.open > a, .navbar-warning .navbar-nav > li.open > a:hover, .navbar-warning .navbar-nav > li.open > a:active,
 .navbar-warning .navbar-nav > li.active > a,
 .navbar-warning .navbar-nav > li.active > a:hover,
 .navbar-warning .navbar-nav > li.active > a:active,
-.navbar-warning .navbar-nav > li.active > a:focus,
 .navbar-warning .navbar-nav > li > a.active,
 .navbar-warning .navbar-nav > li > a.active:hover,
 .navbar-warning .navbar-nav > li > a.active:active,
-.navbar-warning .navbar-nav > li > a.active:focus,
 .navbar-warning li.open > a,
 .navbar-warning li.open > a:hover,
 .navbar-warning li.open > a:active,
-.navbar-warning li.open > a:focus,
 .navbar-warning li.active > a,
 .navbar-warning li.active > a:hover,
 .navbar-warning li.active > a:active,
-.navbar-warning li.active > a:focus,
 .navbar-warning a.active,
 .navbar-warning a.active:hover,
-.navbar-warning a.active:active,
-.navbar-warning a.active:focus {
+.navbar-warning a.active:active {
   background-color: #cc9342;
 }
 .navbar-warning .navbar-search-form .form-control {
@@ -9627,36 +9478,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #d89c46;
 }
-.navbar-warning .dropdown-menu > li > a:hover, .navbar-warning .dropdown-menu > li > a:active, .navbar-warning .dropdown-menu > li > a:focus {
+.navbar-warning .dropdown-menu > li > a:hover, .navbar-warning .dropdown-menu > li > a:active {
   background-color: #c08a3e;
 }
-.navbar-warning .dropdown-menu > li.open > a, .navbar-warning .dropdown-menu > li.open > a:hover, .navbar-warning .dropdown-menu > li.open > a:active, .navbar-warning .dropdown-menu > li.open > a:focus,
+.navbar-warning .dropdown-menu > li.open > a, .navbar-warning .dropdown-menu > li.open > a:hover, .navbar-warning .dropdown-menu > li.open > a:active,
 .navbar-warning .dropdown-menu > li.active > a,
 .navbar-warning .dropdown-menu > li.active > a:hover,
 .navbar-warning .dropdown-menu > li.active > a:active,
-.navbar-warning .dropdown-menu > li.active > a:focus,
 .navbar-warning .dropdown-menu > a.active,
 .navbar-warning .dropdown-menu > a.active:hover,
-.navbar-warning .dropdown-menu > a.active:active,
-.navbar-warning .dropdown-menu > a.active:focus {
+.navbar-warning .dropdown-menu > a.active:active {
   background-color: #c08a3e;
 }
 
 .navbar-warning.navbar-stacked .dropdown-menu > li > a {
   background-color: #c08a3e;
 }
-.navbar-warning.navbar-stacked .dropdown-menu > li > a:hover, .navbar-warning.navbar-stacked .dropdown-menu > li > a:active, .navbar-warning.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-warning.navbar-stacked .dropdown-menu > li > a:hover, .navbar-warning.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #a87937;
 }
-.navbar-warning.navbar-stacked .dropdown-menu > li.open > a, .navbar-warning.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-warning.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-warning.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-warning.navbar-stacked .dropdown-menu > li.open > a, .navbar-warning.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-warning.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-warning.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-warning.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-warning.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-warning.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-warning.navbar-stacked .dropdown-menu > a.active,
 .navbar-warning.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-warning.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-warning.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-warning.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #a87937;
 }
 
@@ -9672,33 +9519,27 @@ button.list-group-item {
 .navbar-danger button {
   color: inherit;
 }
-.navbar-danger a:hover, .navbar-danger a:active, .navbar-danger a:focus,
+.navbar-danger a:hover, .navbar-danger a:active,
 .navbar-danger button:hover,
-.navbar-danger button:active,
-.navbar-danger button:focus {
+.navbar-danger button:active {
   background-color: #c34b47;
 }
-.navbar-danger .navbar-nav > li.open > a, .navbar-danger .navbar-nav > li.open > a:hover, .navbar-danger .navbar-nav > li.open > a:active, .navbar-danger .navbar-nav > li.open > a:focus,
+.navbar-danger .navbar-nav > li.open > a, .navbar-danger .navbar-nav > li.open > a:hover, .navbar-danger .navbar-nav > li.open > a:active,
 .navbar-danger .navbar-nav > li.active > a,
 .navbar-danger .navbar-nav > li.active > a:hover,
 .navbar-danger .navbar-nav > li.active > a:active,
-.navbar-danger .navbar-nav > li.active > a:focus,
 .navbar-danger .navbar-nav > li > a.active,
 .navbar-danger .navbar-nav > li > a.active:hover,
 .navbar-danger .navbar-nav > li > a.active:active,
-.navbar-danger .navbar-nav > li > a.active:focus,
 .navbar-danger li.open > a,
 .navbar-danger li.open > a:hover,
 .navbar-danger li.open > a:active,
-.navbar-danger li.open > a:focus,
 .navbar-danger li.active > a,
 .navbar-danger li.active > a:hover,
 .navbar-danger li.active > a:active,
-.navbar-danger li.active > a:focus,
 .navbar-danger a.active,
 .navbar-danger a.active:hover,
-.navbar-danger a.active:active,
-.navbar-danger a.active:focus {
+.navbar-danger a.active:active {
   background-color: #b84743;
 }
 .navbar-danger .navbar-search-form .form-control {
@@ -9713,36 +9554,32 @@ button.list-group-item {
   border-color: transparent;
   background-color: #c34b47;
 }
-.navbar-danger .dropdown-menu > li > a:hover, .navbar-danger .dropdown-menu > li > a:active, .navbar-danger .dropdown-menu > li > a:focus {
+.navbar-danger .dropdown-menu > li > a:hover, .navbar-danger .dropdown-menu > li > a:active {
   background-color: #ae423f;
 }
-.navbar-danger .dropdown-menu > li.open > a, .navbar-danger .dropdown-menu > li.open > a:hover, .navbar-danger .dropdown-menu > li.open > a:active, .navbar-danger .dropdown-menu > li.open > a:focus,
+.navbar-danger .dropdown-menu > li.open > a, .navbar-danger .dropdown-menu > li.open > a:hover, .navbar-danger .dropdown-menu > li.open > a:active,
 .navbar-danger .dropdown-menu > li.active > a,
 .navbar-danger .dropdown-menu > li.active > a:hover,
 .navbar-danger .dropdown-menu > li.active > a:active,
-.navbar-danger .dropdown-menu > li.active > a:focus,
 .navbar-danger .dropdown-menu > a.active,
 .navbar-danger .dropdown-menu > a.active:hover,
-.navbar-danger .dropdown-menu > a.active:active,
-.navbar-danger .dropdown-menu > a.active:focus {
+.navbar-danger .dropdown-menu > a.active:active {
   background-color: #ae423f;
 }
 
 .navbar-danger.navbar-stacked .dropdown-menu > li > a {
   background-color: #ae423f;
 }
-.navbar-danger.navbar-stacked .dropdown-menu > li > a:hover, .navbar-danger.navbar-stacked .dropdown-menu > li > a:active, .navbar-danger.navbar-stacked .dropdown-menu > li > a:focus {
+.navbar-danger.navbar-stacked .dropdown-menu > li > a:hover, .navbar-danger.navbar-stacked .dropdown-menu > li > a:active {
   background-color: #983a37;
 }
-.navbar-danger.navbar-stacked .dropdown-menu > li.open > a, .navbar-danger.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-danger.navbar-stacked .dropdown-menu > li.open > a:active, .navbar-danger.navbar-stacked .dropdown-menu > li.open > a:focus,
+.navbar-danger.navbar-stacked .dropdown-menu > li.open > a, .navbar-danger.navbar-stacked .dropdown-menu > li.open > a:hover, .navbar-danger.navbar-stacked .dropdown-menu > li.open > a:active,
 .navbar-danger.navbar-stacked .dropdown-menu > li.active > a,
 .navbar-danger.navbar-stacked .dropdown-menu > li.active > a:hover,
 .navbar-danger.navbar-stacked .dropdown-menu > li.active > a:active,
-.navbar-danger.navbar-stacked .dropdown-menu > li.active > a:focus,
 .navbar-danger.navbar-stacked .dropdown-menu > a.active,
 .navbar-danger.navbar-stacked .dropdown-menu > a.active:hover,
-.navbar-danger.navbar-stacked .dropdown-menu > a.active:active,
-.navbar-danger.navbar-stacked .dropdown-menu > a.active:focus {
+.navbar-danger.navbar-stacked .dropdown-menu > a.active:active {
   background-color: #983a37;
 }
 
@@ -9764,11 +9601,10 @@ button.list-group-item {
   border: 1px solid;
   border-radius: 2.7em;
 }
-.pager > li.active > a, .pager > li.active > a:hover, .pager > li.active > a:active, .pager > li.active > a:focus,
+.pager > li.active > a, .pager > li.active > a:hover, .pager > li.active > a:active,
 .pager > li > a.active,
 .pager > li > a.active:hover,
-.pager > li > a.active:active,
-.pager > li > a.active:focus {
+.pager > li > a.active:active {
   color: white;
   border-color: transparent;
   background-color: #3662ad;
@@ -9804,14 +9640,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #e6e6e6;
 }
-.pager-default > li > a:hover, .pager-default > li > a:active, .pager-default > li > a:focus {
+.pager-default > li > a:hover, .pager-default > li > a:active {
   background-color: #cfcfcf;
 }
-.pager-default > li.active > a, .pager-default > li.active > a:hover, .pager-default > li.active > a:active, .pager-default > li.active > a:focus,
+.pager-default > li.active > a, .pager-default > li.active > a:hover, .pager-default > li.active > a:active,
 .pager-default > li > a.active,
 .pager-default > li > a.active:hover,
-.pager-default > li > a.active:active,
-.pager-default > li > a.active:focus {
+.pager-default > li > a.active:active {
   border-color: transparent;
   background-color: #cfcfcf;
 }
@@ -9826,14 +9661,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #343c4b;
 }
-.pager-inverse > li > a:hover, .pager-inverse > li > a:active, .pager-inverse > li > a:focus {
+.pager-inverse > li > a:hover, .pager-inverse > li > a:active {
   background-color: #2f3644;
 }
-.pager-inverse > li.active > a, .pager-inverse > li.active > a:hover, .pager-inverse > li.active > a:active, .pager-inverse > li.active > a:focus,
+.pager-inverse > li.active > a, .pager-inverse > li.active > a:hover, .pager-inverse > li.active > a:active,
 .pager-inverse > li > a.active,
 .pager-inverse > li > a.active:hover,
-.pager-inverse > li > a.active:active,
-.pager-inverse > li > a.active:focus {
+.pager-inverse > li > a.active:active {
   border-color: transparent;
   background-color: #2f3644;
 }
@@ -9848,14 +9682,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #f17306;
 }
-.pager-cta > li > a:hover, .pager-cta > li > a:active, .pager-cta > li > a:focus {
+.pager-cta > li > a:hover, .pager-cta > li > a:active {
   background-color: #d96805;
 }
-.pager-cta > li.active > a, .pager-cta > li.active > a:hover, .pager-cta > li.active > a:active, .pager-cta > li.active > a:focus,
+.pager-cta > li.active > a, .pager-cta > li.active > a:hover, .pager-cta > li.active > a:active,
 .pager-cta > li > a.active,
 .pager-cta > li > a.active:hover,
-.pager-cta > li > a.active:active,
-.pager-cta > li > a.active:focus {
+.pager-cta > li > a.active:active {
   border-color: transparent;
   background-color: #d96805;
 }
@@ -9870,14 +9703,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #3662ad;
 }
-.pager-main > li > a:hover, .pager-main > li > a:active, .pager-main > li > a:focus {
+.pager-main > li > a:hover, .pager-main > li > a:active {
   background-color: #31589c;
 }
-.pager-main > li.active > a, .pager-main > li.active > a:hover, .pager-main > li.active > a:active, .pager-main > li.active > a:focus,
+.pager-main > li.active > a, .pager-main > li.active > a:hover, .pager-main > li.active > a:active,
 .pager-main > li > a.active,
 .pager-main > li > a.active:hover,
-.pager-main > li > a.active:active,
-.pager-main > li > a.active:focus {
+.pager-main > li > a.active:active {
   border-color: transparent;
   background-color: #31589c;
 }
@@ -9892,14 +9724,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #42587d;
 }
-.pager-alt1 > li > a:hover, .pager-alt1 > li > a:active, .pager-alt1 > li > a:focus {
+.pager-alt1 > li > a:hover, .pager-alt1 > li > a:active {
   background-color: #3b4f71;
 }
-.pager-alt1 > li.active > a, .pager-alt1 > li.active > a:hover, .pager-alt1 > li.active > a:active, .pager-alt1 > li.active > a:focus,
+.pager-alt1 > li.active > a, .pager-alt1 > li.active > a:hover, .pager-alt1 > li.active > a:active,
 .pager-alt1 > li > a.active,
 .pager-alt1 > li > a.active:hover,
-.pager-alt1 > li > a.active:active,
-.pager-alt1 > li > a.active:focus {
+.pager-alt1 > li > a.active:active {
   border-color: transparent;
   background-color: #3b4f71;
 }
@@ -9914,14 +9745,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5f7394;
 }
-.pager-alt2 > li > a:hover, .pager-alt2 > li > a:active, .pager-alt2 > li > a:focus {
+.pager-alt2 > li > a:hover, .pager-alt2 > li > a:active {
   background-color: #566885;
 }
-.pager-alt2 > li.active > a, .pager-alt2 > li.active > a:hover, .pager-alt2 > li.active > a:active, .pager-alt2 > li.active > a:focus,
+.pager-alt2 > li.active > a, .pager-alt2 > li.active > a:hover, .pager-alt2 > li.active > a:active,
 .pager-alt2 > li > a.active,
 .pager-alt2 > li > a.active:hover,
-.pager-alt2 > li > a.active:active,
-.pager-alt2 > li > a.active:focus {
+.pager-alt2 > li > a.active:active {
   border-color: transparent;
   background-color: #566885;
 }
@@ -9936,14 +9766,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #8193b1;
 }
-.pager-alt3 > li > a:hover, .pager-alt3 > li > a:active, .pager-alt3 > li > a:focus {
+.pager-alt3 > li > a:hover, .pager-alt3 > li > a:active {
   background-color: #74849f;
 }
-.pager-alt3 > li.active > a, .pager-alt3 > li.active > a:hover, .pager-alt3 > li.active > a:active, .pager-alt3 > li.active > a:focus,
+.pager-alt3 > li.active > a, .pager-alt3 > li.active > a:hover, .pager-alt3 > li.active > a:active,
 .pager-alt3 > li > a.active,
 .pager-alt3 > li > a.active:hover,
-.pager-alt3 > li > a.active:active,
-.pager-alt3 > li > a.active:focus {
+.pager-alt3 > li > a.active:active {
   border-color: transparent;
   background-color: #74849f;
 }
@@ -9958,14 +9787,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5cb85c;
 }
-.pager-success > li > a:hover, .pager-success > li > a:active, .pager-success > li > a:focus {
+.pager-success > li > a:hover, .pager-success > li > a:active {
   background-color: #53a653;
 }
-.pager-success > li.active > a, .pager-success > li.active > a:hover, .pager-success > li.active > a:active, .pager-success > li.active > a:focus,
+.pager-success > li.active > a, .pager-success > li.active > a:hover, .pager-success > li.active > a:active,
 .pager-success > li > a.active,
 .pager-success > li > a.active:hover,
-.pager-success > li > a.active:active,
-.pager-success > li > a.active:focus {
+.pager-success > li > a.active:active {
   border-color: transparent;
   background-color: #53a653;
 }
@@ -9980,14 +9808,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5bc0de;
 }
-.pager-info > li > a:hover, .pager-info > li > a:active, .pager-info > li > a:focus {
+.pager-info > li > a:hover, .pager-info > li > a:active {
   background-color: #52adc8;
 }
-.pager-info > li.active > a, .pager-info > li.active > a:hover, .pager-info > li.active > a:active, .pager-info > li.active > a:focus,
+.pager-info > li.active > a, .pager-info > li.active > a:hover, .pager-info > li.active > a:active,
 .pager-info > li > a.active,
 .pager-info > li > a.active:hover,
-.pager-info > li > a.active:active,
-.pager-info > li > a.active:focus {
+.pager-info > li > a.active:active {
   border-color: transparent;
   background-color: #52adc8;
 }
@@ -10002,14 +9829,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #f0ad4e;
 }
-.pager-warning > li > a:hover, .pager-warning > li > a:active, .pager-warning > li > a:focus {
+.pager-warning > li > a:hover, .pager-warning > li > a:active {
   background-color: #d89c46;
 }
-.pager-warning > li.active > a, .pager-warning > li.active > a:hover, .pager-warning > li.active > a:active, .pager-warning > li.active > a:focus,
+.pager-warning > li.active > a, .pager-warning > li.active > a:hover, .pager-warning > li.active > a:active,
 .pager-warning > li > a.active,
 .pager-warning > li > a.active:hover,
-.pager-warning > li > a.active:active,
-.pager-warning > li > a.active:focus {
+.pager-warning > li > a.active:active {
   border-color: transparent;
   background-color: #d89c46;
 }
@@ -10024,14 +9850,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #d9534f;
 }
-.pager-danger > li > a:hover, .pager-danger > li > a:active, .pager-danger > li > a:focus {
+.pager-danger > li > a:hover, .pager-danger > li > a:active {
   background-color: #c34b47;
 }
-.pager-danger > li.active > a, .pager-danger > li.active > a:hover, .pager-danger > li.active > a:active, .pager-danger > li.active > a:focus,
+.pager-danger > li.active > a, .pager-danger > li.active > a:hover, .pager-danger > li.active > a:active,
 .pager-danger > li > a.active,
 .pager-danger > li > a.active:hover,
-.pager-danger > li > a.active:active,
-.pager-danger > li > a.active:focus {
+.pager-danger > li > a.active:active {
   border-color: transparent;
   background-color: #c34b47;
 }
@@ -10059,11 +9884,10 @@ button.list-group-item {
   border-top-right-radius: 0.375em;
   border-bottom-right-radius: 0.375em;
 }
-.pagination > li.active > a, .pagination > li.active > a:hover, .pagination > li.active > a:active, .pagination > li.active > a:focus,
+.pagination > li.active > a, .pagination > li.active > a:hover, .pagination > li.active > a:active,
 .pagination > li > a.active,
 .pagination > li > a.active:hover,
-.pagination > li > a.active:active,
-.pagination > li > a.active:focus {
+.pagination > li > a.active:active {
   z-index: 20;
   color: white;
   border-color: transparent;
@@ -10106,14 +9930,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #e6e6e6;
 }
-.pagination-default > li > a:hover, .pagination-default > li > a:active, .pagination-default > li > a:focus {
+.pagination-default > li > a:hover, .pagination-default > li > a:active {
   background-color: #cfcfcf;
 }
-.pagination-default > li.active > a, .pagination-default > li.active > a:hover, .pagination-default > li.active > a:active, .pagination-default > li.active > a:focus,
+.pagination-default > li.active > a, .pagination-default > li.active > a:hover, .pagination-default > li.active > a:active,
 .pagination-default > li > a.active,
 .pagination-default > li > a.active:hover,
-.pagination-default > li > a.active:active,
-.pagination-default > li > a.active:focus {
+.pagination-default > li > a.active:active {
   border-color: transparent;
   background-color: #b8b8b8;
 }
@@ -10129,14 +9952,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #343c4b;
 }
-.pagination-inverse > li > a:hover, .pagination-inverse > li > a:active, .pagination-inverse > li > a:focus {
+.pagination-inverse > li > a:hover, .pagination-inverse > li > a:active {
   background-color: #2f3644;
 }
-.pagination-inverse > li.active > a, .pagination-inverse > li.active > a:hover, .pagination-inverse > li.active > a:active, .pagination-inverse > li.active > a:focus,
+.pagination-inverse > li.active > a, .pagination-inverse > li.active > a:hover, .pagination-inverse > li.active > a:active,
 .pagination-inverse > li > a.active,
 .pagination-inverse > li > a.active:hover,
-.pagination-inverse > li > a.active:active,
-.pagination-inverse > li > a.active:focus {
+.pagination-inverse > li > a.active:active {
   border-color: transparent;
   background-color: #2a303c;
 }
@@ -10152,14 +9974,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #f17306;
 }
-.pagination-cta > li > a:hover, .pagination-cta > li > a:active, .pagination-cta > li > a:focus {
+.pagination-cta > li > a:hover, .pagination-cta > li > a:active {
   background-color: #d96805;
 }
-.pagination-cta > li.active > a, .pagination-cta > li.active > a:hover, .pagination-cta > li.active > a:active, .pagination-cta > li.active > a:focus,
+.pagination-cta > li.active > a, .pagination-cta > li.active > a:hover, .pagination-cta > li.active > a:active,
 .pagination-cta > li > a.active,
 .pagination-cta > li > a.active:hover,
-.pagination-cta > li > a.active:active,
-.pagination-cta > li > a.active:focus {
+.pagination-cta > li > a.active:active {
   border-color: transparent;
   background-color: #c15c05;
 }
@@ -10175,14 +9996,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #3662ad;
 }
-.pagination-main > li > a:hover, .pagination-main > li > a:active, .pagination-main > li > a:focus {
+.pagination-main > li > a:hover, .pagination-main > li > a:active {
   background-color: #31589c;
 }
-.pagination-main > li.active > a, .pagination-main > li.active > a:hover, .pagination-main > li.active > a:active, .pagination-main > li.active > a:focus,
+.pagination-main > li.active > a, .pagination-main > li.active > a:hover, .pagination-main > li.active > a:active,
 .pagination-main > li > a.active,
 .pagination-main > li > a.active:hover,
-.pagination-main > li > a.active:active,
-.pagination-main > li > a.active:focus {
+.pagination-main > li > a.active:active {
   border-color: transparent;
   background-color: #2b4e8a;
 }
@@ -10198,14 +10018,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #42587d;
 }
-.pagination-alt1 > li > a:hover, .pagination-alt1 > li > a:active, .pagination-alt1 > li > a:focus {
+.pagination-alt1 > li > a:hover, .pagination-alt1 > li > a:active {
   background-color: #3b4f71;
 }
-.pagination-alt1 > li.active > a, .pagination-alt1 > li.active > a:hover, .pagination-alt1 > li.active > a:active, .pagination-alt1 > li.active > a:focus,
+.pagination-alt1 > li.active > a, .pagination-alt1 > li.active > a:hover, .pagination-alt1 > li.active > a:active,
 .pagination-alt1 > li > a.active,
 .pagination-alt1 > li > a.active:hover,
-.pagination-alt1 > li > a.active:active,
-.pagination-alt1 > li > a.active:focus {
+.pagination-alt1 > li > a.active:active {
   border-color: transparent;
   background-color: #354664;
 }
@@ -10221,14 +10040,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5f7394;
 }
-.pagination-alt2 > li > a:hover, .pagination-alt2 > li > a:active, .pagination-alt2 > li > a:focus {
+.pagination-alt2 > li > a:hover, .pagination-alt2 > li > a:active {
   background-color: #566885;
 }
-.pagination-alt2 > li.active > a, .pagination-alt2 > li.active > a:hover, .pagination-alt2 > li.active > a:active, .pagination-alt2 > li.active > a:focus,
+.pagination-alt2 > li.active > a, .pagination-alt2 > li.active > a:hover, .pagination-alt2 > li.active > a:active,
 .pagination-alt2 > li > a.active,
 .pagination-alt2 > li > a.active:hover,
-.pagination-alt2 > li > a.active:active,
-.pagination-alt2 > li > a.active:focus {
+.pagination-alt2 > li > a.active:active {
   border-color: transparent;
   background-color: #4c5c76;
 }
@@ -10244,14 +10062,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #8193b1;
 }
-.pagination-alt3 > li > a:hover, .pagination-alt3 > li > a:active, .pagination-alt3 > li > a:focus {
+.pagination-alt3 > li > a:hover, .pagination-alt3 > li > a:active {
   background-color: #74849f;
 }
-.pagination-alt3 > li.active > a, .pagination-alt3 > li.active > a:hover, .pagination-alt3 > li.active > a:active, .pagination-alt3 > li.active > a:focus,
+.pagination-alt3 > li.active > a, .pagination-alt3 > li.active > a:hover, .pagination-alt3 > li.active > a:active,
 .pagination-alt3 > li > a.active,
 .pagination-alt3 > li > a.active:hover,
-.pagination-alt3 > li > a.active:active,
-.pagination-alt3 > li > a.active:focus {
+.pagination-alt3 > li > a.active:active {
   border-color: transparent;
   background-color: #67768e;
 }
@@ -10267,14 +10084,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5cb85c;
 }
-.pagination-success > li > a:hover, .pagination-success > li > a:active, .pagination-success > li > a:focus {
+.pagination-success > li > a:hover, .pagination-success > li > a:active {
   background-color: #53a653;
 }
-.pagination-success > li.active > a, .pagination-success > li.active > a:hover, .pagination-success > li.active > a:active, .pagination-success > li.active > a:focus,
+.pagination-success > li.active > a, .pagination-success > li.active > a:hover, .pagination-success > li.active > a:active,
 .pagination-success > li > a.active,
 .pagination-success > li > a.active:hover,
-.pagination-success > li > a.active:active,
-.pagination-success > li > a.active:focus {
+.pagination-success > li > a.active:active {
   border-color: transparent;
   background-color: #4a934a;
 }
@@ -10290,14 +10106,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #5bc0de;
 }
-.pagination-info > li > a:hover, .pagination-info > li > a:active, .pagination-info > li > a:focus {
+.pagination-info > li > a:hover, .pagination-info > li > a:active {
   background-color: #52adc8;
 }
-.pagination-info > li.active > a, .pagination-info > li.active > a:hover, .pagination-info > li.active > a:active, .pagination-info > li.active > a:focus,
+.pagination-info > li.active > a, .pagination-info > li.active > a:hover, .pagination-info > li.active > a:active,
 .pagination-info > li > a.active,
 .pagination-info > li > a.active:hover,
-.pagination-info > li > a.active:active,
-.pagination-info > li > a.active:focus {
+.pagination-info > li > a.active:active {
   border-color: transparent;
   background-color: #499ab2;
 }
@@ -10313,14 +10128,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #f0ad4e;
 }
-.pagination-warning > li > a:hover, .pagination-warning > li > a:active, .pagination-warning > li > a:focus {
+.pagination-warning > li > a:hover, .pagination-warning > li > a:active {
   background-color: #d89c46;
 }
-.pagination-warning > li.active > a, .pagination-warning > li.active > a:hover, .pagination-warning > li.active > a:active, .pagination-warning > li.active > a:focus,
+.pagination-warning > li.active > a, .pagination-warning > li.active > a:hover, .pagination-warning > li.active > a:active,
 .pagination-warning > li > a.active,
 .pagination-warning > li > a.active:hover,
-.pagination-warning > li > a.active:active,
-.pagination-warning > li > a.active:focus {
+.pagination-warning > li > a.active:active {
   border-color: transparent;
   background-color: #c08a3e;
 }
@@ -10336,14 +10150,13 @@ button.list-group-item {
   border-color: transparent;
   background-color: #d9534f;
 }
-.pagination-danger > li > a:hover, .pagination-danger > li > a:active, .pagination-danger > li > a:focus {
+.pagination-danger > li > a:hover, .pagination-danger > li > a:active {
   background-color: #c34b47;
 }
-.pagination-danger > li.active > a, .pagination-danger > li.active > a:hover, .pagination-danger > li.active > a:active, .pagination-danger > li.active > a:focus,
+.pagination-danger > li.active > a, .pagination-danger > li.active > a:hover, .pagination-danger > li.active > a:active,
 .pagination-danger > li > a.active,
 .pagination-danger > li > a.active:hover,
-.pagination-danger > li > a.active:active,
-.pagination-danger > li > a.active:focus {
+.pagination-danger > li > a.active:active {
   border-color: transparent;
   background-color: #ae423f;
 }
@@ -10478,7 +10291,7 @@ button.list-group-item {
   border-color: #cfcfcf;
   background-color: #e6e6e6;
 }
-.panel-default .panel-heading.btn:hover, .panel-default .panel-heading.btn:active, .panel-default .panel-heading.btn:focus, .panel-default .panel-heading.current {
+.panel-default .panel-heading.btn:hover, .panel-default .panel-heading.btn:active, .panel-default .panel-heading.current {
   border-color: #cfcfcf;
   background-color: #cfcfcf;
 }
@@ -10495,7 +10308,7 @@ button.list-group-item {
   border-color: #343c4b;
   background-color: #343c4b;
 }
-.panel-inverse .panel-heading.btn:hover, .panel-inverse .panel-heading.btn:active, .panel-inverse .panel-heading.btn:focus, .panel-inverse .panel-heading.current {
+.panel-inverse .panel-heading.btn:hover, .panel-inverse .panel-heading.btn:active, .panel-inverse .panel-heading.current {
   border-color: #2f3644;
   background-color: #2f3644;
 }
@@ -10512,7 +10325,7 @@ button.list-group-item {
   border-color: #f17306;
   background-color: #f17306;
 }
-.panel-cta .panel-heading.btn:hover, .panel-cta .panel-heading.btn:active, .panel-cta .panel-heading.btn:focus, .panel-cta .panel-heading.current {
+.panel-cta .panel-heading.btn:hover, .panel-cta .panel-heading.btn:active, .panel-cta .panel-heading.current {
   border-color: #d96805;
   background-color: #d96805;
 }
@@ -10529,7 +10342,7 @@ button.list-group-item {
   border-color: #3662ad;
   background-color: #3662ad;
 }
-.panel-main .panel-heading.btn:hover, .panel-main .panel-heading.btn:active, .panel-main .panel-heading.btn:focus, .panel-main .panel-heading.current {
+.panel-main .panel-heading.btn:hover, .panel-main .panel-heading.btn:active, .panel-main .panel-heading.current {
   border-color: #31589c;
   background-color: #31589c;
 }
@@ -10546,7 +10359,7 @@ button.list-group-item {
   border-color: #42587d;
   background-color: #42587d;
 }
-.panel-alt1 .panel-heading.btn:hover, .panel-alt1 .panel-heading.btn:active, .panel-alt1 .panel-heading.btn:focus, .panel-alt1 .panel-heading.current {
+.panel-alt1 .panel-heading.btn:hover, .panel-alt1 .panel-heading.btn:active, .panel-alt1 .panel-heading.current {
   border-color: #3b4f71;
   background-color: #3b4f71;
 }
@@ -10563,7 +10376,7 @@ button.list-group-item {
   border-color: #5f7394;
   background-color: #5f7394;
 }
-.panel-alt2 .panel-heading.btn:hover, .panel-alt2 .panel-heading.btn:active, .panel-alt2 .panel-heading.btn:focus, .panel-alt2 .panel-heading.current {
+.panel-alt2 .panel-heading.btn:hover, .panel-alt2 .panel-heading.btn:active, .panel-alt2 .panel-heading.current {
   border-color: #566885;
   background-color: #566885;
 }
@@ -10580,7 +10393,7 @@ button.list-group-item {
   border-color: #8193b1;
   background-color: #8193b1;
 }
-.panel-alt3 .panel-heading.btn:hover, .panel-alt3 .panel-heading.btn:active, .panel-alt3 .panel-heading.btn:focus, .panel-alt3 .panel-heading.current {
+.panel-alt3 .panel-heading.btn:hover, .panel-alt3 .panel-heading.btn:active, .panel-alt3 .panel-heading.current {
   border-color: #74849f;
   background-color: #74849f;
 }
@@ -10597,7 +10410,7 @@ button.list-group-item {
   border-color: #5cb85c;
   background-color: #5cb85c;
 }
-.panel-success .panel-heading.btn:hover, .panel-success .panel-heading.btn:active, .panel-success .panel-heading.btn:focus, .panel-success .panel-heading.current {
+.panel-success .panel-heading.btn:hover, .panel-success .panel-heading.btn:active, .panel-success .panel-heading.current {
   border-color: #53a653;
   background-color: #53a653;
 }
@@ -10614,7 +10427,7 @@ button.list-group-item {
   border-color: #5bc0de;
   background-color: #5bc0de;
 }
-.panel-info .panel-heading.btn:hover, .panel-info .panel-heading.btn:active, .panel-info .panel-heading.btn:focus, .panel-info .panel-heading.current {
+.panel-info .panel-heading.btn:hover, .panel-info .panel-heading.btn:active, .panel-info .panel-heading.current {
   border-color: #52adc8;
   background-color: #52adc8;
 }
@@ -10631,7 +10444,7 @@ button.list-group-item {
   border-color: #f0ad4e;
   background-color: #f0ad4e;
 }
-.panel-warning .panel-heading.btn:hover, .panel-warning .panel-heading.btn:active, .panel-warning .panel-heading.btn:focus, .panel-warning .panel-heading.current {
+.panel-warning .panel-heading.btn:hover, .panel-warning .panel-heading.btn:active, .panel-warning .panel-heading.current {
   border-color: #d89c46;
   background-color: #d89c46;
 }
@@ -10648,7 +10461,7 @@ button.list-group-item {
   border-color: #d9534f;
   background-color: #d9534f;
 }
-.panel-danger .panel-heading.btn:hover, .panel-danger .panel-heading.btn:active, .panel-danger .panel-heading.btn:focus, .panel-danger .panel-heading.current {
+.panel-danger .panel-heading.btn:hover, .panel-danger .panel-heading.btn:active, .panel-danger .panel-heading.current {
   border-color: #c34b47;
   background-color: #c34b47;
 }

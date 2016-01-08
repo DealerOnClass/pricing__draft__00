@@ -10,19 +10,19 @@
 //      }
 //  }
 @mixin state {
-    &:hover, &:active, &:focus {
+    &:hover, &:active {
         @content;
     }
 }
 
 @mixin state-and-active {
-    &:hover, &:active, &:focus, &.active {
+    &:hover, &:active, &.active {
         @content;
     }
 }
 
 @mixin state-and-self {
-    &, &:hover, &:active, &:focus {
+    &, &:hover, &:active {
         @content;
     }
 }
