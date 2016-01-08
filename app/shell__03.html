@@ -69,10 +69,10 @@
                 </li>
                 <li><a id="navbar-search" href="#navbar-search-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a></li>
                 <li class="dropdown">
-                    <a id="navbar-profile" class="navbar-profile notify-link" href="#navbar-profile-collapse" data-toggle="collapse">
+                    <a id="navbar-profile" class="navbar-profile notify" href="#navbar-profile-collapse" data-toggle="collapse">
                         <img class="navbar-profile-img" src="img/mario.png" alt="Itsa me Mario!">
                         <span class="navbar-profile-title caret"></span>
-                        <span class="navbar-profile-alert"><i class="fa fa-exclamation fa-sm notify-alert"></i></span>
+                        <i class="fa fa-exclamation fa-sm notify-icon notify-icon-alert"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right" style="width: 280px;">
                         <li class="dropdown-menu-header">
@@ -80,16 +80,9 @@
                             <span><a href="">artemis@dealeron.com</a></span>
                         </li>
                         <li class="divider"></li>
-                        <!--<li><a href=""><i class="fa fa-gear fa-fw"></i>Settings</a></li>-->
-                        <!--<li><a href="" class="notify-alert"><i class="fa fa-envelope fa-fw"></i>Messages</a></li>-->
                         <li><a href=""><i class="fa fa-sign-out fa-fw"></i>Sign Out</a></li>
                     </ul>
                 </li>
-                <!--<li class="dropdown">-->
-                    <!--<a id="navbar-help-link" href="#navbar-profile-collapse" data-toggle="collapse">-->
-                        <!--<i id="navbar-help-icon" class="fa fa-navicon fa-fw"></i>-->
-                    <!--</a>-->
-                <!--</li>-->
             </ul>
         </nav>
 
@@ -165,18 +158,30 @@
                             <hr class="divider">
                             <ul class="nav nav-main nav-tabs nav-flush">
                                 <li class="active">
-                                    <a href="#Account" data-toggle="tab">Account</a>
+                                    <a href="#UserProfile" data-toggle="tab">User Profile</a>
                                 </li>
-                                <li><a href="#Messages" data-toggle="tab">Inbox</a></li>
-                                <li><a class="notify-link" href="#Tickets" data-toggle="tab"><i class="fa fa-exclamation fa-fw notify-alert"></i>Tickets</a></li>
-                                <li><a href="#Billing" data-toggle="tab">Billing</a></li>
-                                <li class="pull-right"><a class="active" href="#navbar-profile-collapse" data-toggle="collapse"><i class="fa fa-remove"></i></a></li>
+                                <li>
+                                    <a href="#Settings" data-toggle="tab">Settings</a>
+                                </li>
+                                <li>
+                                    <a class="notify" href="#Support" data-toggle="tab">
+                                        <i class="fa fa-exclamation fa-fw notify-icon notify-icon-alert"></i> Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Billing" data-toggle="tab">Billing</a>
+                                </li>
+                                <li class="pull-right">
+                                    <a class="active" href="#navbar-profile-collapse" data-toggle="collapse">
+                                        <i class="fa fa-remove"></i>
+                                    </a>
+                                </li>
                             </ul>
                             <hr class="divider">
                         </div>
                         <div class="hero hero-sm">
                             <div class="container tab-content">
-                                <div class="tab-pane active" id="Account">
+                                <div class="tab-pane active" id="UserProfile">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <h4>Welcome Mario!</h4>
@@ -184,7 +189,7 @@
                                             <a class="btn btn-default btn-xs" href="">Logout Son</a>
                                         </div>
                                         <hr class="invisible">
-                                        <hr>
+                                        <hr class="visible-xs">
                                         <hr class="invisible">
                                         <div class="col-sm-6">
                                             <h4>Update Settings</h4>
@@ -211,7 +216,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="Messages">
+                                <div class="tab-pane fade" id="Settings">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <h4>Inbox</h4>
@@ -262,10 +267,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="Tickets">
+                                <div class="tab-pane" id="Support">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <h4></h4>
+                                            <h4>Your Support Team</h4>
                                             <div class="list-group list-group-default list-group-flush">
                                                 <div class="list-group-item media media-profile media-flush">
                                                     <div class="media-left">

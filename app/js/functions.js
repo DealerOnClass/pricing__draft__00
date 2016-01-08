@@ -85,35 +85,42 @@ $(".panel-wizard").on("hide.bs.collapse", function() {
 });
 ////////////////////////////////////////
 //
-//  Offcanvas
+//  Offcanvas Magic
 //
 $(document).ready( function() {
     UpdateDimensions();
     UpdateSidebar();
 });
+
 $(window).resize( function() {
     UpdateDimensions();
 });
+
 function UpdateDimensions() {
+    //
+    //  Global Config
     var navHeight        = $('[oncanvas-nav]').height();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
     var adjustedHeight   = windowHeight - navHeight;
-
     $('[offcanvas-set-height="window"]').css("height", windowHeight);
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
-
+    //
+    //  Search Bar
     var searchWidth      = $('#navbar-search').outerWidth();
     var profileWidth     = $('#navbar-profile').outerWidth();
     var calculatedWidth  = windowWidth - ( searchWidth + profileWidth );
-
     $('#navbar-search-form-input').css("width", calculatedWidth);
 };
+//
+//  Search Bar
 $('#navbar-search-form').on('shown.bs.collapse', function() {
     $('#navbar-search-form-input').focus();
 });
+//
+//  Sidebar Media Query
 function UpdateSidebar() {
     var windowWidth      = $(window).width();
 
@@ -129,6 +136,8 @@ function UpdateSidebar() {
         $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
     };
 };
+//
+//  Sidebar Icon Toggle
 $('#navbar-sidebar-link').on('click', function(e) {
     e.preventDefault();
     $(this).toggleClass('active');
@@ -143,16 +152,6 @@ $('#navbar-sidebar-link').on('click', function(e) {
 //
 //  Notify Animation Control
 //
-$('.notify-link').on('click', function() {
-    $(this).find(".notify-alert").remove();
+$('.notify').on('click', function() {
+    $(this).find(".notify-icon-alert").remove();
 });
-//  ////////////////////////////////////////
-//  //
-//  //  Navbar Help
-//  //
-//  $('#navbar-profile-collapse').on('show.bs.collapse', function() {
-//      $('#navbar-profile').addClass('active');
-//  });
-//  $('#navbar-profile-collapse').on('hide.bs.collapse', function() {
-//      $('#navbar-profile').removeClass('active');
-//  });

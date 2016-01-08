@@ -18,6 +18,16 @@
     }
 }
 
-.notify-alert {
+.notify {
+    position: relative;
+}
+
+.notify-icon {
+    position: absolute;
+    top: $global__y / 2;
+    right: $global__x / 2;
+}
+
+.notify-icon-alert {
     animation: alert 2s ease infinite;
 }

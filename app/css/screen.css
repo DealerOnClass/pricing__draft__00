@@ -8256,7 +8256,17 @@ button.list-group-item {
     opacity: 0;
   }
 }
-.notify-alert {
+.notify {
+  position: relative;
+}
+
+.notify-icon {
+  position: absolute;
+  top: 0.3em;
+  right: 0.45em;
+}
+
+.notify-icon-alert {
   -webkit-animation: alert 2s ease infinite;
   animation: alert 2s ease infinite;
 }
@@ -8519,13 +8529,6 @@ button.list-group-item {
   width: 1.8em;
   top: 50%;
   margin-top: -0.9em;
-}
-
-.navbar-profile-alert {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0.6em;
 }
 
 .navbar-toggle {
