@@ -136,28 +136,41 @@ function UpdateSidebar() {
         $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
     };
 };
-//
+
 //  Sidebar Icon Toggle
-$('#navbar-sidebar-link').on('click', function(e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-    if ( $('#navbar-sidebar-icon').hasClass('fa-navicon')) {
-        $('#navbar-sidebar-parent').removeClass('hidden-xs');
-        $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
-    } else {
-        $('#navbar-sidebar-icon').addClass('fa-navicon').removeClass('fa-remove');
+$('#navbar-sidebar').on('show.bs.collapse', function(e) {
+    if (e.target == this) {
+        $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
     };
 });
-//
-//  Navbar Profile Toggle
-$('#navbar-profile-collapse').on('show.bs.collapse', function() {
-    $('#navbar-profile-link').toggleClass('active');
-    $('#navbar-profile-icon').removeClass('fa-navicon').addClass('fa-remove');
+
+$('#navbar-sidebar').on('hide.bs.collapse', function(e) {
+    if (e.target == this) {
+        $("#navbar-sidebar-icon").removeClass("fa-remove").addClass("fa-navicon");
+    };
 });
-$('#navbar-profile-collapse').on('hide.bs.collapse', function() {
-    $('#navbar-profile-link').toggleClass('active');
-    $('#navbar-profile-icon').addClass('fa-navicon').removeClass('fa-remove');
-});
+
+//  //  Sidebar Icon Toggle
+//  $('#navbar-sidebar-link').on('click', function(e) {
+//      e.preventDefault();
+//      $(this).toggleClass('active');
+//      if ( $('#navbar-sidebar-icon').hasClass('fa-navicon')) {
+//          $('#navbar-sidebar-parent').removeClass('hidden-xs');
+//          $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
+//      } else {
+//          $('#navbar-sidebar-icon').addClass('fa-navicon').removeClass('fa-remove');
+//      };
+//  });
+
+//  //  Navbar Profile Toggle
+//  $('#navbar-profile-collapse').on('show.bs.collapse', function() {
+//      $('#navbar-profile-link').toggleClass('active');
+//      $('#navbar-profile-icon').removeClass('fa-navicon').addClass('fa-remove');
+//  });
+//  $('#navbar-profile-collapse').on('hide.bs.collapse', function() {
+//      $('#navbar-profile-link').toggleClass('active');
+//      $('#navbar-profile-icon').addClass('fa-navicon').removeClass('fa-remove');
+//  });
 ////////////////////////////////////////
 //
 //  Notify Animation Control
