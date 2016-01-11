@@ -110,7 +110,7 @@ function UpdateDimensions() {
     //
     //  Search Bar
     var searchWidth      = $('#navbar-search').outerWidth();
-    var profileWidth     = $('#navbar-profile').outerWidth();
+    var profileWidth     = $('#navbar-profile-link').outerWidth();
     var calculatedWidth  = windowWidth - ( searchWidth + profileWidth );
     $('#navbar-search-form-input').css("width", calculatedWidth);
 };
