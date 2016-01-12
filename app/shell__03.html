@@ -12,10 +12,11 @@
     <body class="offcanvas-wrapper">
 
         <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
-            <a id="navbar-sidebar-link" href="#navbar-sidebar" class="navbar-brand" data-toggle="collapse">
+            <a id="navbar-sidebar-link" href="#navbar-sidebar" class="navbar-brand navbar-brand-svg" data-toggle="collapse">
                 <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
-                <!--<object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml"></object>-->
-                <img class="logo__svg" src="img/logo__symbol.svg" alt="">
+                <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml">
+                    <img class="logo__svg" src="img/logo__symbol.svg" alt="">
+                </object>
             </a>
             <ul class="nav navbar-nav navbar-left-override">
                 <li class="dropdown hidden-xs">
@@ -65,12 +66,10 @@
                 <li><a id="navbar-search" href="#navbar-search-form" class="navbar-link" data-toggle="collapse"><i class="fa fa-search"></i></a></li>
                 <li>
                     <a id="navbar-profile-link" href="#navbar-profile-collapse" data-toggle="collapse" data-disable="notify">
-                        <!--<div class="navbar-profile navbar-profile-navicon notify">-->
                         <div class="navbar-profile notify">
                             <img class="navbar-profile-img" src="img/mario.png" alt="Itsa me Mario!">
                             <i class="fa fa-exclamation fa-sm notify-icon notify-icon-alert"></i>
                         </div>
-                        <!--<i id="navbar-profile-icon" class="fa fa-navicon fa-fw"></i>-->
                     </a>
                 </li>
             </ul>

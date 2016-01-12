@@ -8473,6 +8473,20 @@ button.list-group-item {
   padding: 0.9em 0.9em;
 }
 
+.navbar-brand-svg {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-brand-svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .navbar-form {
   position: relative;
   top: 0.075em;
@@ -13490,7 +13504,6 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   margin-bottom: -0.45em;
   position: relative;
   top: -0.1125em;
-  z-index: 1;
 }
 
 .navbar-brand .fa + .logo__svg {
