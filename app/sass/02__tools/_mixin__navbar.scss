@@ -30,7 +30,7 @@
 
             .navbar-search-form .form-control {
                 color: check-color($color, 80, inherit, $white);
-                background-color: shade($color, $navbar__contrast);
+                background-color: shade($color, $navbar__contrast * 1.5);
             }
         }
 

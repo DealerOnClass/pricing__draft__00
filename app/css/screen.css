@@ -8528,6 +8528,9 @@ button.list-group-item {
   border-radius: 0;
   height: 3.3em;
 }
+.navbar-search-form .form-control:focus {
+  box-shadow: none;
+}
 
 .navbar-text {
   margin-right: 0.9em;
@@ -8794,7 +8797,7 @@ button.list-group-item {
 }
 .navbar-default .navbar-search-form .form-control {
   color: inherit;
-  background-color: #cfcfcf;
+  background-color: #c4c4c4;
 }
 
 .navbar-default .dropdown-menu {
@@ -8870,7 +8873,7 @@ button.list-group-item {
 }
 .navbar-inverse .navbar-search-form .form-control {
   color: white;
-  background-color: #2f3644;
+  background-color: #2c3340;
 }
 
 .navbar-inverse .dropdown-menu {
@@ -8946,7 +8949,7 @@ button.list-group-item {
 }
 .navbar-cta .navbar-search-form .form-control {
   color: white;
-  background-color: #d96805;
+  background-color: #cd6205;
 }
 
 .navbar-cta .dropdown-menu {
@@ -9022,7 +9025,7 @@ button.list-group-item {
 }
 .navbar-main .navbar-search-form .form-control {
   color: white;
-  background-color: #31589c;
+  background-color: #2e5393;
 }
 
 .navbar-main .dropdown-menu {
@@ -9098,7 +9101,7 @@ button.list-group-item {
 }
 .navbar-alt1 .navbar-search-form .form-control {
   color: white;
-  background-color: #3b4f71;
+  background-color: #384b6a;
 }
 
 .navbar-alt1 .dropdown-menu {
@@ -9174,7 +9177,7 @@ button.list-group-item {
 }
 .navbar-alt2 .navbar-search-form .form-control {
   color: white;
-  background-color: #566885;
+  background-color: #51627e;
 }
 
 .navbar-alt2 .dropdown-menu {
@@ -9250,7 +9253,7 @@ button.list-group-item {
 }
 .navbar-alt3 .navbar-search-form .form-control {
   color: white;
-  background-color: #74849f;
+  background-color: #6e7d96;
 }
 
 .navbar-alt3 .dropdown-menu {
@@ -9326,7 +9329,7 @@ button.list-group-item {
 }
 .navbar-success .navbar-search-form .form-control {
   color: white;
-  background-color: #53a653;
+  background-color: #4e9c4e;
 }
 
 .navbar-success .dropdown-menu {
@@ -9402,7 +9405,7 @@ button.list-group-item {
 }
 .navbar-info .navbar-search-form .form-control {
   color: white;
-  background-color: #52adc8;
+  background-color: #4da3bd;
 }
 
 .navbar-info .dropdown-menu {
@@ -9478,7 +9481,7 @@ button.list-group-item {
 }
 .navbar-warning .navbar-search-form .form-control {
   color: white;
-  background-color: #d89c46;
+  background-color: #cc9342;
 }
 
 .navbar-warning .dropdown-menu {
@@ -9554,7 +9557,7 @@ button.list-group-item {
 }
 .navbar-danger .navbar-search-form .form-control {
   color: white;
-  background-color: #c34b47;
+  background-color: #b84743;
 }
 
 .navbar-danger .dropdown-menu {

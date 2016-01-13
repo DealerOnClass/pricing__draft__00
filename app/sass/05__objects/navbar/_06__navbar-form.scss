@@ -47,5 +47,9 @@
         border: 0 none;
         border-radius: 0;
         height: $base__line-height + ( $navbar__y * 2 );
+
+        &:focus {
+            box-shadow: none;
+        }
     }
 }
