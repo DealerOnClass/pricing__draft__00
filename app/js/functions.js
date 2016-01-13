@@ -140,6 +140,7 @@ function UpdateSidebar() {
         $('#navbar-sidebar').addClass('in');
         $('#navbar-sidebar-link').addClass('active');
         $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
+        $("#offcanvas-backdrop").addClass("active");
     };
 };
 ////////////////////////////////////////
