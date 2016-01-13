@@ -29,7 +29,9 @@
 
     overflow-y: auto;
 
-    width: $navbar-sidebar__width;
+    @media (min-width: $grid-float-breakpoint) {
+        width: $navbar-sidebar__width !important;
+    }
 }
 
 .navbar-sidebar-header,

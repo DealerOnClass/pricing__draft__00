@@ -1,7 +1,9 @@
 .offcanvas-nav {
-    position: relative !important;
+    position: absolute !important;
 }
-//
-//  .offcanvas-nav-locked {
-//      position: relative !important;
-//  }
+
+@media (min-width: $grid-float-breakpoint) {
+    .offcanvas-nav {
+        position: relative !important;
+    }
+}

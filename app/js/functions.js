@@ -106,6 +106,7 @@ function UpdateDimensions() {
     $('[offcanvas-set-height="window"]').css("height", windowHeight);
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
+    $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth * .75);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
     //
     //  Search Bar
@@ -143,20 +144,26 @@ function UpdateSidebar() {
 };
 ////////////////////////////////////////
 //
-//  Sidebar Icon Toggle
+//  Sidebar Collapse Function
 //
 $('#navbar-sidebar').on('show.bs.collapse', function(e) {
     if (e.target == this) {
         $("#navbar-sidebar-link").toggleClass("active");
         $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
+        $("#offcanvas-backdrop").addClass("active");
     };
 });
 $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
     if (e.target == this) {
         $("#navbar-sidebar-link").toggleClass("active");
         $("#navbar-sidebar-icon").removeClass("fa-remove").addClass("fa-navicon");
+        $("#offcanvas-backdrop").removeClass("active");
     };
 });
+$('#offcanvas-backdrop').on('click', function() {
+    $('#navbar-sidebar').collapse('hide');
+});
+
 ////////////////////////////////////////
 //
 //  Navbar Profile Toggle
