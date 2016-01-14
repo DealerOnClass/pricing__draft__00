@@ -6996,6 +6996,10 @@ h5 .btn-group {
   border-radius: 0.375em;
 }
 
+.img-rounded-sm {
+  border-radius: 0.28132em;
+}
+
 .img-circle {
   overflow: hidden;
   border-radius: 50%;
