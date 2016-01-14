@@ -8315,9 +8315,10 @@ button.list-group-item {
 
 .offcanvas-nav {
   position: absolute !important;
+  z-index: 1200 !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .offcanvas-nav {
     position: relative !important;
   }
@@ -8338,7 +8339,7 @@ button.list-group-item {
   box-sizing: border-box;
   background-color: white;
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .offcanvas-inner {
     width: 100% !important;
   }
@@ -8361,7 +8362,7 @@ button.list-group-item {
 
 #offcanvas-backdrop {
   position: absolute;
-  z-index: 1000;
+  z-index: 1100;
   top: 0;
   right: 0;
   bottom: 0;
@@ -8667,10 +8668,10 @@ button.list-group-item {
   z-index: 1025;
   top: 0;
   left: 0;
+  overflow: visible;
   height: 100%;
   border-width: 0;
   border-radius: 0;
-  overflow: visible;
 }
 .navbar-sidebar .caret {
   float: right;
@@ -8686,11 +8687,7 @@ button.list-group-item {
 .navbar-sidebar-wrapper {
   position: relative;
   overflow-y: auto;
-}
-@media (min-width: 768px) {
-  .navbar-sidebar-wrapper {
-    width: 18em !important;
-  }
+  width: 18em !important;
 }
 
 .navbar-sidebar-header,

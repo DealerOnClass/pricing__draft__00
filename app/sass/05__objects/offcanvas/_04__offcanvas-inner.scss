@@ -6,7 +6,7 @@
     box-sizing: border-box;
     background-color: $white;
 
-    @media (min-width: $grid-float-breakpoint) {
+    @media (max-width: $offcanvas-breakpoint-max) {
         width: 100% !important;
     }
 }

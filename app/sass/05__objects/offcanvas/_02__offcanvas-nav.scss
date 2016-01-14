@@ -1,8 +1,9 @@
 .offcanvas-nav {
     position: absolute !important;
+    z-index: 1200 !important;
 }
 
-@media (min-width: $grid-float-breakpoint) {
+@media (min-width: $offcanvas-breakpoint) {
     .offcanvas-nav {
         position: relative !important;
     }

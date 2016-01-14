@@ -100,13 +100,15 @@ function UpdateDimensions() {
     //
     //  Global Config
     var navHeight        = $('[oncanvas-nav]').height();
+    var navWidth         = $('[offcanvas-nav]').outerWidth();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
     var adjustedHeight   = windowHeight - navHeight;
     $('[offcanvas-set-height="window"]').css("height", windowHeight);
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
-    $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth * .75);
+    //  $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth * .75);
+    $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth - navWidth);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
     //
     //  Search Bar
@@ -132,15 +134,14 @@ $('#navbar-search-form').on('hide.bs.collapse', function() {
 function UpdateSidebar() {
     var windowWidth      = $(window).width();
 
-    if (windowWidth < 767) {
+    if (windowWidth < 991) {
         $('#navbar-sidebar').removeClass('in');
-        $('#navbar-sidebar-link').removeClass('active');
+        //  $('#navbar-sidebar-link').removeClass('active');
         $('#navbar-sidebar-icon').removeClass('fa-remove').addClass('fa-navicon');
     } else {
         $('#navbar-sidebar').addClass('in');
-        $('#navbar-sidebar-link').addClass('active');
+        //  $('#navbar-sidebar-link').addClass('active');
         $('#navbar-sidebar-icon').removeClass('fa-navicon').addClass('fa-remove');
-        $("#offcanvas-backdrop").addClass("active");
     };
 };
 ////////////////////////////////////////
@@ -149,16 +150,16 @@ function UpdateSidebar() {
 //
 $('#navbar-sidebar').on('show.bs.collapse', function(e) {
     if (e.target == this) {
-        $("#navbar-sidebar-link").toggleClass("active");
+        //  $("#navbar-sidebar-link").toggleClass("active");
         $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
-        $("#offcanvas-backdrop").addClass("active");
+        //  $("#offcanvas-backdrop").addClass("active");
     };
 });
 $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
     if (e.target == this) {
-        $("#navbar-sidebar-link").toggleClass("active");
+        //  $("#navbar-sidebar-link").toggleClass("active");
         $("#navbar-sidebar-icon").removeClass("fa-remove").addClass("fa-navicon");
-        $("#offcanvas-backdrop").removeClass("active");
+        //  $("#offcanvas-backdrop").removeClass("active");
     };
 });
 $('#offcanvas-backdrop').on('click', function() {

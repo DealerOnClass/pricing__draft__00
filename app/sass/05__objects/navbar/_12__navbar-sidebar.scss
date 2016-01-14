@@ -4,11 +4,12 @@
     top: 0;
     left: 0;
 
+    overflow: visible;
+
     height: 100%;
 
     border-width: 0;
     border-radius: 0;
-    overflow: visible;
 
     .caret {
         float: right;
@@ -29,9 +30,7 @@
 
     overflow-y: auto;
 
-    @media (min-width: $grid-float-breakpoint) {
-        width: $navbar-sidebar__width !important;
-    }
+    width: $navbar-sidebar__width !important;
 }
 
 .navbar-sidebar-header,
