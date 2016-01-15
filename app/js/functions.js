@@ -103,7 +103,7 @@ function UpdateDimensions() {
     $('[offcanvas-set-height="window"]').css("height", windowHeight);
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
-    //  $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth * .75);
+    $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth * .80);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
 
     var logoWidth        = $('#navbar-sidebar-link').outerWidth();

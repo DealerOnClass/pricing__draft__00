@@ -8674,7 +8674,11 @@ button.list-group-item {
 .navbar-sidebar-wrapper {
   position: relative;
   overflow-y: auto;
-  width: 16em !important;
+}
+@media (min-width: 500px) {
+  .navbar-sidebar-wrapper {
+    width: 16em !important;
+  }
 }
 
 .navbar-sidebar-header,
