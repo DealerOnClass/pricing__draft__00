@@ -96,8 +96,6 @@ $(window).resize( function() {
 });
 
 function UpdateDimensions() {
-    //
-    //  Global Config
     var navHeight        = $('[oncanvas-nav]').height();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
@@ -107,8 +105,7 @@ function UpdateDimensions() {
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
     //  $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth * .75);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
-    //
-    //  Search Bar
+
     var logoWidth        = $('#navbar-sidebar-link').outerWidth();
     var searchWidth      = $('#navbar-search-link').outerWidth();
     var profileWidth     = $('#navbar-profile-link').outerWidth();
@@ -133,13 +130,31 @@ $('#navbar-search-form').on('hide.bs.collapse', function() {
 //
 $('#navbar-sidebar').on('show.bs.collapse', function(e) {
     if (e.target == this) {
+        $("#offcanvas-backdrop").removeClass("invisible");
         $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
+        $("#offcanvas-backdrop").addClass("in");
     };
 });
 $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
     if (e.target == this) {
         $("#navbar-sidebar-icon").removeClass("fa-remove").addClass("fa-navicon");
+        $("#offcanvas-backdrop").removeClass("in");
     };
+});
+$('#navbar-sidebar').on('hidden.bs.collapse', function(e) {
+    if (e.target == this) {
+        $("#offcanvas-backdrop").addClass("invisible");
+    };
+});
+$('#offcanvas-backdrop').on('click', function() {
+    $('#navbar-sidebar').collapse('hide');
+});
+////////////////////////////////////////
+//
+//  Notify Animation Control
+//
+$('[data-disable="notify"]').on('click', function() {
+    $(this).find(".notify-icon-alert").remove();
 });
 //  ////////////////////////////////////////
 //  //
@@ -151,10 +166,3 @@ $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
 //  $('#navbar-profile-collapse').on('hide.bs.collapse', function() {
 //      $('#navbar-profile-link').toggleClass('active');
 //  });
-////////////////////////////////////////
-//
-//  Notify Animation Control
-//
-$('[data-disable="notify"]').on('click', function() {
-    $(this).find(".notify-icon-alert").remove();
-});
