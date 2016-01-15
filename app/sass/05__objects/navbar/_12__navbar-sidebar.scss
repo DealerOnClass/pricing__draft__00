@@ -43,6 +43,6 @@
     background-color: rgba(0,0,0,0.25);
 }
 
-.navbar-sidebar-divider {
-    border-bottom: $one__true__pixel solid rgba(0,0,0,0.20);
+.navbar-sidebar-nav .dropdown-menu > li > a {
+    padding-left: $navbar__x * 3;
 }
