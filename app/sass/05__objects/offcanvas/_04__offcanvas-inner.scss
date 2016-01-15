@@ -5,8 +5,4 @@
 
     box-sizing: border-box;
     background-color: $white;
-
-    @media (min-width: $offcanvas-breakpoint) {
-        width: 100% !important;
-    }
 }

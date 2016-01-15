@@ -8314,7 +8314,12 @@ button.list-group-item {
 }
 
 .offcanvas-nav {
-  position: relative !important;
+  position: absolute !important;
+}
+@media (min-width: 992px) {
+  .offcanvas-nav {
+    position: relative !important;
+  }
 }
 
 .offcanvas-body {
@@ -8332,11 +8337,6 @@ button.list-group-item {
   overflow-y: scroll;
   box-sizing: border-box;
   background-color: white;
-}
-@media (min-width: 992px) {
-  .offcanvas-inner {
-    width: 100% !important;
-  }
 }
 
 .offcanvas-nested {

@@ -99,7 +99,6 @@ function UpdateDimensions() {
     //
     //  Global Config
     var navHeight        = $('[oncanvas-nav]').height();
-    var navWidth         = $('[offcanvas-nav]').outerWidth();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
     var adjustedHeight   = windowHeight - navHeight;
@@ -107,7 +106,6 @@ function UpdateDimensions() {
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
     //  $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth * .75);
-    $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth - navWidth);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
     //
     //  Search Bar
