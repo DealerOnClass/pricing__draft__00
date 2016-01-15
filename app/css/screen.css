@@ -7524,12 +7524,6 @@ button.list-group-item {
   vertical-align: bottom;
 }
 
-.media-profile .media-left,
-.media-profile .media-right,
-.media-profile .media-object,
-.media-profile .media-body {
-  vertical-align: middle;
-}
 .media-profile .media-left {
   font-size: 0;
 }
@@ -7541,6 +7535,9 @@ button.list-group-item {
 }
 .media-profile .media-right > img {
   margin-left: 1rem;
+}
+.media-profile .media-body {
+  line-height: 1.333;
 }
 
 .media-flush .media-left > img {
@@ -8660,11 +8657,9 @@ button.list-group-item {
   border-width: 0;
   border-radius: 0;
 }
-.navbar-sidebar .fa-fw {
-  margin-right: 0.9em;
-}
 
 .navbar-sidebar-icon {
+  margin-right: 0.9em;
   color: rgba(255, 255, 255, 0.5);
 }
 

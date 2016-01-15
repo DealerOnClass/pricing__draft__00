@@ -10,13 +10,11 @@
 
     border-width: 0;
     border-radius: 0;
-
-    .fa-fw {
-        margin-right: $navbar__x;
-    }
 }
 
 .navbar-sidebar-icon {
+    margin-right: $navbar__x;
+
     color: rgba(255,255,255,0.50);
 }
 
