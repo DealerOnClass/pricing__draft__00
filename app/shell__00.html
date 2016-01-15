@@ -9,9 +9,7 @@
         <link href="css/screen.css" rel="stylesheet">
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                if (WindowWidth() < 991) {
-                    //  HideSidebar();
-                } else {
+                if (WindowWidth() > 991) {
                     ShowSidebar();
                 }
             });
@@ -22,18 +20,12 @@
             function ShowSidebar() {
                 var sidebar     = document.getElementById("navbar-sidebar");
                 var sidebarIcon = document.getElementById("navbar-sidebar-icon");
+                var backdrop    = document.getElementById("offcanvas-backdrop");
 
                 sidebar.className += " in";
                 sidebarIcon.className = sidebarIcon.className.replace( /(?:^|\s)fa-navicon(?!\S)/g , '' );
                 sidebarIcon.className += " fa-remove";
-            };
-            function HideSidebar() {
-                var sidebar     = document.getElementById("navbar-sidebar");
-                var sidebarIcon = document.getElementById("navbar-sidebar-icon");
-
-                sidebar.className = sidebar.className.replace( /(?:^|\s)in(?!\S)/g , '' );
-                sidebarIcon.className = sidebarIcon.className.replace( /(?:^|\s)fa-remove(?!\S)/g , '' );
-                sidebarIcon.className += " fa-navicon";
+                backdrop.className += " in";
             };
         </script>
     </head>
