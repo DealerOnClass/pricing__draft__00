@@ -8315,6 +8315,16 @@ button.list-group-item {
   background-color: #343c4b;
 }
 
+.offcanvas,
+.offcanvas-wrapper,
+.offcanvas-nav,
+.offcanvas-inner,
+.navbar-sidebar-wrapper {
+  -webkit-transform: -webkit-translateZ(0);
+  transform: -webkit-translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
 .offcanvas-nav {
   position: absolute !important;
   z-index: 1100 !important;
@@ -8325,6 +8335,10 @@ button.list-group-item {
   }
 }
 
+.offcanvas-body {
+  display: table-cell;
+  vertical-align: top;
+}
 @media (min-width: 768px) {
   .offcanvas-body {
     width: 10000px;

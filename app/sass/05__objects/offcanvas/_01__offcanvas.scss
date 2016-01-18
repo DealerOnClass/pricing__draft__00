@@ -16,11 +16,17 @@
     display: table;
     overflow: hidden;
     zoom: 1;
+
     background-color: $inverse__color;
 }
+
 //
-//  .offcanvas,
-//  .offcanvas-wrapper,
-//  .offcanvas-inner {
-//      min-width: 320px;
-//  }
+//  Repair "repaints on scroll" performance issue
+.offcanvas,
+.offcanvas-wrapper,
+.offcanvas-nav,
+.offcanvas-inner,
+.navbar-sidebar-wrapper {
+    transform: -webkit-translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
