@@ -13550,10 +13550,6 @@ span[data-toggle="tooltip"][data-style="danger"]:after {
   top: -0.1125em;
 }
 
-.navbar-brand .fa + .logo__svg {
-  margin-left: 0.375em;
-}
-
 a:hover .logo__svg {
   cursor: pointer;
 }

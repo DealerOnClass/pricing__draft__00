@@ -156,16 +156,6 @@ $('#offcanvas-backdrop').on('click', function() {
 $('[data-disable="notify"]').on('click', function() {
     $(this).find(".notify-icon-alert").remove();
 });
-//  ////////////////////////////////////////
-//  //
-//  //  Navbar Profile Toggle
-//  //
-//  $('#navbar-profile-collapse').on('show.bs.collapse', function() {
-//      $('#navbar-profile-link').toggleClass('active');
-//  });
-//  $('#navbar-profile-collapse').on('hide.bs.collapse', function() {
-//      $('#navbar-profile-link').toggleClass('active');
-//  });
 ////////////////////////////////////////
 //
 //  Navbar Website Toggle
