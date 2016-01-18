@@ -27,6 +27,6 @@
 .offcanvas-nav,
 .offcanvas-inner,
 .navbar-sidebar-wrapper {
-    transform: -webkit-translateZ(0);
-    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }

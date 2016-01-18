@@ -8320,9 +8320,10 @@ button.list-group-item {
 .offcanvas-nav,
 .offcanvas-inner,
 .navbar-sidebar-wrapper {
-  -webkit-transform: -webkit-translateZ(0);
-  transform: -webkit-translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .offcanvas-nav {
