@@ -11,6 +11,8 @@
             document.addEventListener('DOMContentLoaded', function() {
                 if (WindowWidth() > 991) {
                     ShowSidebar();
+                } else {
+                    HideSidebar();
                 }
             });
             function WindowWidth() {
@@ -27,6 +29,10 @@
                 sidebarIcon.className += " fa-remove";
                 backdrop.className += " in";
             };
+            function HideSidebar() {
+                var backdrop    = document.getElementById("offcanvas-backdrop");
+                backdrop.className += " invisible";
+            }
         </script>
     </head>
 
@@ -256,7 +262,7 @@
             </nav>
 
             <div id="offcanvas-body" class="offcanvas-body">
-                <div id="offcanvas-backdrop" class="offcanvas-backdrop fade invisible"></div>
+                <div id="offcanvas-backdrop" class="offcanvas-backdrop fade"></div>
                 <div id="offcanvas-inner" class="offcanvas-inner" offcanvas-set-height="oncanvas-nav">
 
                     <!--<div class="bg-main">-->
@@ -356,7 +362,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
     <script src="js/functions.js"></script>
 </body>
 

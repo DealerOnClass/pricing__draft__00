@@ -1,8 +1,9 @@
 .offcanvas-nav {
-    position: absolute;
-    z-index: 1100;
+    border-radius: 0 !important;
+    position: absolute !important;
+    z-index: 1100 !important;
 
     @media (min-width: $offcanvas-breakpoint) {
-        position: relative;
+        position: relative !important;
     }
 }
