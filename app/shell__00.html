@@ -141,53 +141,47 @@
             <nav id="offcanvas-nav" class="offcanvas-nav navbar navbar-inverse navbar-stacked navbar-sidebar">
                 <div id="navbar-sidebar" class="navbar-sidebar-collapse collapse width">
                     <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav" offcanvas-set-width="offcanvas-nav">
-                        <a class="btn btn-inverse btn-block text-left" href="">
-                            <small><strong>AMSI Auto Group</strong></small>
-                        </a>
                         <div class="navbar-sidebar-header">
                             <div class="media media-profile">
-                                <div class="media-left">
+                                <div class="media-left media-middle">
                                     <img class="img-rounded-sm" src="img/toyota.jpg" alt="Gimmie dem eggs!" height="50" width="50">
                                 </div>
-                                <div class="media-body">
-                                    <ul class="list-unstyled margin-x">
+                                <div class="media-body media-middle">
+                                    <ul class="list-inline margin-x">
                                         <li>
-                                            <strong>Scott Clark Toyota</strong>
-                                        </li>
-                                        <!--<li>-->
-                                            <!--<a href="http://www.scottclarktoyota.com">-->
-                                                <!--<i class="fa fa-fa-fw"></i>-->
-                                                <!--<small>AMSI Auto Group</small>-->
-                                            <!--</a>-->
-                                        <!--</li>-->
-                                        <li>
-                                            <a href="http://www.scottclarktoyota.com">
-                                                <!--<i class="fa fa-globe fa-fw"></i>-->
-                                                <small>scottclarktoyota.com</small>
+                                            <h5 class="margin-x">Scott Clark Toyota</h5>
+                                            <a class="text-muted" href="http://www.scottclarktoyota.com">
+                                                <i class="fa fa-globe fa-fw xs"></i>
+                                                <small>Visit Website | 9682</small>
                                             </a>
-                                        </li>
-                                        <li>
-                                            <!--<i class="fa fa-circle fa-fw text-success"></i>-->
-                                            <small>4974</small>
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="media-right media-middle">
+                                    <a id="navbar-sidebar-nested-link" href="#navbar-sidebar-nested" class="navbar-link text-muted" data-toggle="collapse">
+                                        <i id="navbar-sidebar-nested-icon" class="fa fa-angle-down fa-fw fa-md"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!--<a class="btn btn-inverse btn-block text-left" href="">-->
-                            <!--<i class="fa fa-circle fa-fw text-success"></i>-->
-                            <!--4974-->
-                        <!--</a>-->
+
+                        <div id="navbar-sidebar-nested" class="collapse">
+                            <div class="navbar-sidebar-header">
+                                <p>Sit totam magnam perferendis vero dolores? Illum maiores expedita iure consequuntur nostrum. Nostrum unde est aut magni perspiciatis cumque ex? Nobis sequi quisquam numquam fugit beatae assumenda doloremque ipsam? Maiores?</p>
+                            </div>
+                        </div>
+
                         <hr class="divider">
+
                         <div class="navbar-sidebar-nav">
                             <ul class="nav navbar-nav">
                                 <li class="dropdown">
-                                    <a href="" class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#Content">
-                                        <i class="navbar-sidebar-icon fa fa-file fa-fw"></i>
-                                        Content
-                                        <span class="navbar-sidebar-icon caret fa-fw pull-right"></span>
+                                    <a href="" class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#Website">
+                                        <i class="navbar-sidebar-icon text-muted fa fa-file fa-fw"></i>
+                                        Website
+                                        <span class="navbar-sidebar-icon text-muted caret fa-fw pull-right"></span>
                                     </a>
-                                    <ul id="Content" class="collapse dropdown-menu">
+                                    <ul id="Website" class="collapse dropdown-menu">
                                         <li><a href="">Item 1</a></li>
                                         <li><a href="">Item 2</a></li>
                                         <li><a href="">Item 3</a></li>
@@ -195,12 +189,12 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="" class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#Leads">
-                                        <i class="navbar-sidebar-icon fa fa-rocket fa-fw"></i>
-                                        Leads
-                                        <span class="navbar-sidebar-icon caret fa-fw pull-right"></span>
+                                    <a href="" class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#BTS">
+                                        <i class="navbar-sidebar-icon text-muted fa fa-rocket fa-fw"></i>
+                                        BTS
+                                        <span class="navbar-sidebar-icon text-muted caret fa-fw pull-right"></span>
                                     </a>
-                                    <ul id="Leads" class="collapse dropdown-menu">
+                                    <ul id="BTS" class="collapse dropdown-menu">
                                         <li><a href="">Item 1</a></li>
                                         <li><a href="">Item 2</a></li>
                                         <li><a href="">Item 3</a></li>
@@ -209,9 +203,9 @@
                                 </li>
                                 <li class="dropdown">
                                     <a href="" class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#Inventory">
-                                        <i class="navbar-sidebar-icon fa fa-shopping-cart fa-fw"></i>
+                                        <i class="navbar-sidebar-icon text-muted fa fa-shopping-cart fa-fw"></i>
                                         Inventory
-                                        <span class="navbar-sidebar-icon caret fa-fw pull-right"></span>
+                                        <span class="navbar-sidebar-icon text-muted caret fa-fw pull-right"></span>
                                     </a>
                                     <ul id="Inventory" class="collapse dropdown-menu">
                                         <li><a href="">Item 1</a></li>
@@ -222,9 +216,9 @@
                                 </li>
                                 <li class="dropdown">
                                     <a href="" class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#Reporting">
-                                        <i class="navbar-sidebar-icon fa fa-area-chart fa-fw"></i>
+                                        <i class="navbar-sidebar-icon text-muted fa fa-area-chart fa-fw"></i>
                                         Reporting
-                                        <span class="navbar-sidebar-icon caret fa-fw pull-right"></span>
+                                        <span class="navbar-sidebar-icon text-muted caret fa-fw pull-right"></span>
                                     </a>
                                     <ul id="Reporting" class="collapse dropdown-menu">
                                         <li><a href="">Item 1</a></li>
@@ -235,11 +229,12 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </nav>
 
-            <div id="offcanvas-body" class="offcanvas-body">
+            <div id="offcanvas-body" class="offcanvas-item offcanvas-body">
 
 
                 <div id="offcanvas-inner" class="offcanvas-inner" offcanvas-set-height="oncanvas-nav">

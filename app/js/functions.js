@@ -166,3 +166,13 @@ $('[data-disable="notify"]').on('click', function() {
 //  $('#navbar-profile-collapse').on('hide.bs.collapse', function() {
 //      $('#navbar-profile-link').toggleClass('active');
 //  });
+////////////////////////////////////////
+//
+//  Navbar Website Toggle
+//
+$('#navbar-sidebar-nested').on('show.bs.collapse', function() {
+    $("#navbar-sidebar-nested-icon").removeClass("fa-angle-down").addClass("fa-angle-up");
+});
+$('#navbar-sidebar-nested').on('hide.bs.collapse', function() {
+    $("#navbar-sidebar-nested-icon").removeClass("fa-angle-up").addClass("fa-angle-down");
+});

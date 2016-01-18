@@ -15,12 +15,13 @@
         font-size: 1rem;
     }
 
-    .media-left > img {
-        margin-right: 1rem;
+    .media-left,
+    .media-right {
+        padding: 0;
     }
 
-    .media-right > img {
-        margin-left: 1rem;
+    .media-left > img {
+        margin-right: 1rem;
     }
 
     .media-body {
