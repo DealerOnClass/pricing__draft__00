@@ -8327,12 +8327,12 @@ button.list-group-item {
 }
 
 .offcanvas-nav {
-  position: absolute !important;
-  z-index: 1100 !important;
+  position: absolute;
+  z-index: 1100;
 }
 @media (min-width: 992px) {
   .offcanvas-nav {
-    position: relative !important;
+    position: relative;
   }
 }
 
@@ -8340,7 +8340,7 @@ button.list-group-item {
   display: table-cell;
   vertical-align: top;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .offcanvas-body {
     width: 10000px;
   }

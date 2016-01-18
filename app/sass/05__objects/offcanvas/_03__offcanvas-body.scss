@@ -3,7 +3,7 @@
 
     vertical-align: top;
 
-    @media (min-width: $grid-float-breakpoint) {
+    @media (min-width: $offcanvas-breakpoint) {
         width: 10000px;
     }
 }
