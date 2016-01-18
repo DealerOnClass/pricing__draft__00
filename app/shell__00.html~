@@ -166,26 +166,17 @@
                             </div>
                         </div>
 
-
-                        <div id="navbar-sidebar-nested" class="collapse">
+                        <div id="navbar-sidebar-nested" class="collapse in">
                             <div class="navbar-sidebar-header">
-                                <table class="table table-borderless table-condensed table-flush xs margin-x">
+                                <table class="table table-borderless table-flush">
                                     <tbody>
                                         <tr>
-                                            <td class="text-muted">Account:</td>
+                                            <td class="text-muted">Acct:</td>
                                             <td>AMSI Auto Group</td>
                                         </tr>
                                         <tr>
-                                            <td class="text-muted">Site ID:</td>
+                                            <td class="text-muted">Id:</td>
                                             <td>9682</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-muted">Site Url:</td>
-                                            <td>http://www.scottclarktoyota.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-muted">Support:</td>
-                                            <td>Team Green</td>
                                         </tr>
                                     </tbody>
                                 </table>
