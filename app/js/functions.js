@@ -131,13 +131,13 @@ $('#navbar-search-form').on('hide.bs.collapse', function() {
 $('#navbar-sidebar').on('show.bs.collapse', function(e) {
     if (e.target == this) {
         $("#offcanvas-backdrop").removeClass("invisible");
-        $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
+        //  $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
         $("#offcanvas-backdrop").addClass("in");
     };
 });
 $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
     if (e.target == this) {
-        $("#navbar-sidebar-icon").removeClass("fa-remove").addClass("fa-navicon");
+        //  $("#navbar-sidebar-icon").removeClass("fa-remove").addClass("fa-navicon");
         $("#offcanvas-backdrop").removeClass("in");
     };
 });

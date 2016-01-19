@@ -21,12 +21,12 @@
             };
             function ShowSidebar() {
                 var sidebar     = document.getElementById("navbar-sidebar");
-                var sidebarIcon = document.getElementById("navbar-sidebar-icon");
+                //  var sidebarIcon = document.getElementById("navbar-sidebar-icon");
                 var backdrop    = document.getElementById("offcanvas-backdrop");
 
                 sidebar.className += " in";
-                sidebarIcon.className = sidebarIcon.className.replace( /(?:^|\s)fa-navicon(?!\S)/g , '' );
-                sidebarIcon.className += " fa-remove";
+                //  sidebarIcon.className = sidebarIcon.className.replace( /(?:^|\s)fa-navicon(?!\S)/g , '' );
+                //  sidebarIcon.className += " fa-remove";
                 backdrop.className += " in";
             };
             function HideSidebar() {
@@ -40,7 +40,7 @@
 
         <nav id="nav" class="navbar navbar-main navbar-static-top" oncanvas-nav>
             <a id="navbar-sidebar-link" href="#navbar-sidebar" class="navbar-brand navbar-brand-svg" data-toggle="collapse">
-                <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw visible-sm-inline-block visible-xs-inline-block"></i>
+                <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
                 <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml">
                     <img class="logo__svg" src="img/logo__symbol.svg" alt="">
                 </object>
