@@ -6,13 +6,15 @@
 
     &,
     > li,
-    > li > a {
+    > li > a,
+    .nav-item {
         position: relative;
 
         display: block;
     }
 
-    > li > a {
+    > li > a,
+    .nav-item {
         box-sizing: border-box;
         padding: $nav__link__padding;
     }

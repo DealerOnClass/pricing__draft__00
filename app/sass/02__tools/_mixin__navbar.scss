@@ -5,10 +5,6 @@
             border: 0 none;
             background-color: $color;
 
-            svg path {
-                fill: check-color($color, 80, $body__color, $white);
-            }
-
             a,
             button {
                 color: inherit;
@@ -35,11 +31,11 @@
         }
 
         .navbar-#{$class__name} .dropdown-menu {
-            background-color: shade($color, $navbar__contrast);
+            background-color: shade($color, $navbar__contrast * 1.5);
 
             > li > a {
                 border-color: transparent;
-                background-color: shade($color, $navbar__contrast);
+                background-color: shade($color, $navbar__contrast * 1.5);
                 @include state {
                     background-color: shade($color, $navbar__contrast * 2);
                 }

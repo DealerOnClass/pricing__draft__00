@@ -2,6 +2,11 @@
     padding: ( $dropdown__y * 1.5 ) ( $dropdown__x * 1.5 );
 }
 
+.dropdown-menu-body {
+    padding: ( $dropdown__x * 1.5 );
+    min-width: 200px;
+}
+
 .dropdown-menu > li {
 
     &.dropdown-header,
