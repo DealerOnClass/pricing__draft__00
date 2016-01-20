@@ -38,34 +38,6 @@
 
     <body id="offcanvas-wrapper" class="offcanvas-wrapper">
 
-        <div id="navbar-profile" class="collapse">
-            <a class="btn btn-link pull-right" href="#navbar-profile" data-toggle="collapse"><i class="fa fa-remove fa-fw"></i></a>
-            <!--<hr class="divider">-->
-            <!--<ul class="nav nav-default nav-tabs nav-flush">-->
-                <!--<li class="active">-->
-                    <!--<a href="#Profile" data-toggle="tab">Profile</a>-->
-                    <!--</li>-->
-                <!--<li class="pull-right">-->
-                    <!--<a href="#navbar-profile" data-toggle="collapse"><i class="fa fa-remove fa-fw"></i></a>-->
-                    <!--</li>-->
-            <!--</ul>-->
-            <div class="hero hero-xs">
-                <div class="container tab-content">
-                    <div id="Profile" class="tab-pane active">
-                        <h3>Welcome, Mario.</h3>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <p><a href="">mario@itsamemario.com</a></p>
-                                <a class="btn btn-main" href="">Sign Out</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="navbar-profile-backdrop" class="offcanvas-backdrop fade invisible"></div>
-
         <nav id="oncanvas-nav" class="oncanvas-nav navbar navbar-main navbar-static-top" oncanvas-nav>
             <a id="navbar-sidebar-link" href="#navbar-sidebar" class="navbar-brand navbar-brand-svg" data-toggle="collapse">
                 <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
@@ -291,7 +263,40 @@
 
                 <div id="offcanvas-backdrop" class="offcanvas-backdrop fade"></div>
 
+                <div id="navbar-profile" class="collapse">
+                    <a class="btn btn-link pull-right" href="#navbar-profile" data-toggle="collapse">
+                        <i class="fa fa-remove fa-fw"></i>
+                    </a>
+                    <!--<hr class="divider">-->
+                    <!--<ul class="nav nav-default nav-tabs nav-flush">-->
+                        <!--<li class="active">-->
+                            <!--<a href="#Profile" data-toggle="tab">Profile</a>-->
+                            <!--</li>-->
+                        <!--<li class="pull-right">-->
+                            <!--<a href="#navbar-profile" data-toggle="collapse"><i class="fa fa-remove fa-fw"></i></a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <div class="hero hero-xs">
+                        <div class="container tab-content">
+                            <div id="Profile" class="tab-pane active">
+                                <h3>Welcome, Mario.</h3>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p><a href="">mario@itsamemario.com</a></p>
+                                        <a class="btn btn-main" href="">Sign Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divider hidden-sm hidden-xs">
+                </div>
+
+
                 <div id="offcanvas-inner" class="offcanvas-inner" offcanvas-set-height="oncanvas-nav">
+
+                    <div id="navbar-profile-backdrop" class="offcanvas-backdrop fade invisible"></div>
+
                     <div class="hero">
                         <div class="container">
                             <h2>Shell 00</h2>
