@@ -166,38 +166,38 @@ $('#navbar-sidebar-nested').on('show.bs.collapse', function() {
 $('#navbar-sidebar-nested').on('hide.bs.collapse', function() {
     $("#navbar-sidebar-nested-icon").removeClass("fa-angle-up").addClass("fa-angle-down");
 });
-////////////////////////////////////////
-//
-//  Navbar Profile Toggle
-//
-$('#navbar-profile').on('show.bs.collapse', function() {
-    $("#navbar-profile-backdrop").removeClass("invisible");
-    $("#navbar-profile-backdrop").addClass("in");
-});
-$('#navbar-profile').on('hide.bs.collapse', function() {
-    $("#navbar-profile-backdrop").removeClass("in");
-});
-$('#navbar-profile').on('hidden.bs.collapse', function() {
-    $("#navbar-profile-backdrop").addClass("invisible");
-});
-$('#navbar-profile-backdrop').on('click', function() {
-    $('#navbar-profile').collapse('hide');
-});
-////////////////////////////////////////
-//
-//  Navbar Swipe Events
-//
-//  $('#offcanvas-wrapper').swipe( {
-//      swipeRight:function() {
-//          $('#navbar-sidebar').collapse('show');
-//      },
-//      threshold: 0,
-//      allowPageScroll: "vertical"
+//  ////////////////////////////////////////
+//  //
+//  //  Navbar Profile Toggle
+//  //
+//  $('#navbar-profile').on('show.bs.collapse', function() {
+//      $("#navbar-profile-backdrop").removeClass("invisible");
+//      $("#navbar-profile-backdrop").addClass("in");
 //  });
-//  $('#offcanvas-nav').swipe( {
-//      swipeLeft:function() {
-//          $('#navbar-sidebar').collapse('hide');
-//      },
-//      threshold: 0,
-//      allowPageScroll: "vertical"
+//  $('#navbar-profile').on('hide.bs.collapse', function() {
+//      $("#navbar-profile-backdrop").removeClass("in");
 //  });
+//  $('#navbar-profile').on('hidden.bs.collapse', function() {
+//      $("#navbar-profile-backdrop").addClass("invisible");
+//  });
+//  $('#navbar-profile-backdrop').on('click', function() {
+//      $('#navbar-profile').collapse('hide');
+//  });
+//  ////////////////////////////////////////
+//  //
+//  //  Navbar Swipe Events
+//  //
+//  //  $('#offcanvas-wrapper').swipe( {
+//  //      swipeRight:function() {
+//  //          $('#navbar-sidebar').collapse('show');
+//  //      },
+//  //      threshold: 0,
+//  //      allowPageScroll: "vertical"
+//  //  });
+//  //  $('#offcanvas-nav').swipe( {
+//  //      swipeLeft:function() {
+//  //          $('#navbar-sidebar').collapse('hide');
+//  //      },
+//  //      threshold: 0,
+//  //      allowPageScroll: "vertical"
+//  //  });
