@@ -166,3 +166,20 @@ $('#navbar-sidebar-nested').on('show.bs.collapse', function() {
 $('#navbar-sidebar-nested').on('hide.bs.collapse', function() {
     $("#navbar-sidebar-nested-icon").removeClass("fa-angle-up").addClass("fa-angle-down");
 });
+////////////////////////////////////////
+//
+//  Navbar Profile Toggle
+//
+$('#navbar-profile').on('show.bs.collapse', function() {
+    $("#navbar-profile-backdrop").removeClass("invisible");
+    $("#navbar-profile-backdrop").addClass("in");
+});
+$('#navbar-profile').on('hide.bs.collapse', function() {
+    $("#navbar-profile-backdrop").removeClass("in");
+});
+$('#navbar-profile').on('hidden.bs.collapse', function() {
+    $("#navbar-profile-backdrop").addClass("invisible");
+});
+$('#navbar-profile-backdrop').on('click', function() {
+    $('#navbar-profile').collapse('hide');
+});
