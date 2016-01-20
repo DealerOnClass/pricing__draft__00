@@ -183,3 +183,22 @@ $('#navbar-profile').on('hidden.bs.collapse', function() {
 $('#navbar-profile-backdrop').on('click', function() {
     $('#navbar-profile').collapse('hide');
 });
+////////////////////////////////////////
+//
+//  Navbar Swipe Events
+//
+$('#offcanvas-wrapper').swipe( {
+    swipeRight:function() {
+        $('#navbar-sidebar').collapse('show');
+    },
+    swipeLeft:function() {
+        $('#navbar-sidebar').collapse('hide');
+    },
+    swipeDown:function() {
+        $('#navbar-profile').collapse('show');
+    },
+    swipeUp:function() {
+        $('#navbar-profile').collapse('hide');
+    },
+    threshold: 0
+});
