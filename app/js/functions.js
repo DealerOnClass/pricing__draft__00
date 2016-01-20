@@ -200,5 +200,6 @@ $('#offcanvas-wrapper').swipe( {
     swipeUp:function() {
         $('#navbar-profile').collapse('hide');
     },
-    threshold: 0
+    threshold: 0,
+    allowPageScroll: "vertical"
 });
