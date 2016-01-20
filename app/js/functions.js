@@ -187,17 +187,17 @@ $('#navbar-profile-backdrop').on('click', function() {
 //
 //  Navbar Swipe Events
 //
-$('#offcanvas-wrapper').swipe( {
-    swipeRight:function() {
-        $('#navbar-sidebar').collapse('show');
-    },
-    threshold: 0,
-    allowPageScroll: "vertical"
-});
-$('#offcanvas-nav').swipe( {
-    swipeLeft:function() {
-        $('#navbar-sidebar').collapse('hide');
-    },
-    threshold: 0,
-    allowPageScroll: "vertical"
-});
+//  $('#offcanvas-wrapper').swipe( {
+//      swipeRight:function() {
+//          $('#navbar-sidebar').collapse('show');
+//      },
+//      threshold: 0,
+//      allowPageScroll: "vertical"
+//  });
+//  $('#offcanvas-nav').swipe( {
+//      swipeLeft:function() {
+//          $('#navbar-sidebar').collapse('hide');
+//      },
+//      threshold: 0,
+//      allowPageScroll: "vertical"
+//  });
