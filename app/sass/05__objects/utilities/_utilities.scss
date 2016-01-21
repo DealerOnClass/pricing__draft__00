@@ -40,6 +40,16 @@
     position: fixed;
 }
 
+// For Magical Table
+// -------------------------
+[table-magic="active"] {
+    background-color: white;
+    border-right: 30px solid white;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 0;
+}
+
 // Raw
 // -------------------------
 .raw {

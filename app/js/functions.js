@@ -206,17 +206,51 @@ $('#navbar-profile-backdrop').on('click', function() {
 //  Table Magic
 //
 $(document).ready( function() {
-    stickTo(true, ".table-magical-header", ".offcanvas-inner", "container");
+    stickTo("[table-magic='inactive']", ".offcanvas-inner");
+    magicTable();
+});
+$(window).resize( function() {
+    magicTable();
+});
+$('.offcanvas-inner').scroll( function() {
+    //  console.log( $(this).scrollTop() );
+    var tabletostick = $('[table-magic="active"]');
+
+    var tablefromtop = $('[table-magic="inactive"]').offset().top;
+    //  console.log( tablefromtop );
+
+    var navheight = $('[oncanvas-nav]').height();
+    //  console.log( navheight );
+
+    if ( tablefromtop <= navheight ) {
+        tabletostick.addClass("in");
+        tabletostick.css("top", $(this).scrollTop() );
+        //  console.log("the header should be stuck");
+    } else {
+        tabletostick.removeClass("in");
+        //  console.log("the header should be unstuck");
+    }
 });
 
-function stickTo(table, start, end, wrapper) {
+function stickTo(start, dest) {
 
     var clone = $(start).clone();
 
-    if ( table ) {
+    clone.children("tbody").remove();
+    clone.prependTo(dest).attr("table-magic","active").addClass("fade");
 
-    }
+};
 
-    clone.prependTo(end).wrap("<div class='" + wrapper + "'></div>");
+function magicTable() {
+
+    var active__table     = $('[table-magic="active"]');
+    var active__table__th = active__table.children("thead").children("tr").children("th");
+
+    var inactive__table     = $('[table-magic="inactive"]');
+    var inactive__table__th = inactive__table.children("thead").children("tr").children("th");
+
+    active__table__th.each( function(index) {
+        $(this).css("width", inactive__table__th.eq(index).width() );
+    });
 
 };
