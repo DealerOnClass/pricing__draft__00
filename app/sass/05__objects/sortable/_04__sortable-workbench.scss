@@ -33,3 +33,10 @@
         padding-right: $btn__x * 3.5;
     }
 }
+
+.sortable-worbench-single {
+
+    &:before {
+        content: 'Drop item from Toolbox here';
+    }
+}

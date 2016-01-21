@@ -6,6 +6,10 @@
     > tbody,
     > tfoot {
         > tr {
+            > th {
+                font-family: $primary__font--bold;
+            }
+
             > th,
             > td {
                 padding: $table__padding;

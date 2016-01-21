@@ -2,6 +2,7 @@
 <html lang="en">
 
     <head>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,11 +35,13 @@
                 backdrop.className += " invisible";
             }
         </script>
+
     </head>
 
     <body id="offcanvas-wrapper" class="offcanvas-wrapper">
 
         <nav id="oncanvas-nav" class="oncanvas-nav navbar navbar-main navbar-static-top" oncanvas-nav>
+
             <a id="navbar-sidebar-link" href="#navbar-sidebar" class="navbar-brand navbar-brand-svg" data-toggle="collapse">
                 <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
                 <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml">
@@ -139,21 +142,14 @@
                     </a>
                 </li>
             </ul>
+
         </nav>
 
         <div id="navbar-profile" class="collapse">
+
             <a class="btn btn-link pull-right" href="#navbar-profile" data-toggle="collapse">
                 <i class="fa fa-remove fa-fw"></i>
             </a>
-            <!--<hr class="divider">-->
-            <!--<ul class="nav nav-default nav-tabs nav-flush">-->
-                <!--<li class="active">-->
-                    <!--<a href="#Profile" data-toggle="tab">Profile</a>-->
-                    <!--</li>-->
-                <!--<li class="pull-right">-->
-                    <!--<a href="#navbar-profile" data-toggle="collapse"><i class="fa fa-remove fa-fw"></i></a>-->
-                    <!--</li>-->
-                <!--</ul>-->
             <div class="hero hero-xs">
                 <div class="container tab-content">
                     <div id="Profile" class="tab-pane active">
@@ -162,12 +158,14 @@
                             <div class="col-sm-4">
                                 <p><a href="">mario@itsamemario.com</a></p>
                                 <a class="btn btn-main" href="">Sign Out</a>
+                                <a class="btn btn-main" href="/index.html">Go Home</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr class="divider">
+            <!--<hr class="divider hidden-sm hidden-xs">-->
+
         </div>
 
         <div id="navbar-profile-backdrop" class="offcanvas-backdrop fade invisible"></div>
@@ -291,7 +289,6 @@
             </nav>
 
             <div id="offcanvas-body" class="offcanvas-body">
-
                 <div id="offcanvas-backdrop" class="offcanvas-backdrop fade"></div>
 
                 <div id="offcanvas-inner" class="offcanvas-inner" offcanvas-set-height="oncanvas-nav">
@@ -373,6 +370,7 @@
         <script src="js/tether.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/functions.js"></script>
+
     </body>
 
 </html>
