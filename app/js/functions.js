@@ -224,11 +224,11 @@ $('.offcanvas-inner').scroll( function() {
     //  console.log( navheight );
 
     if ( tablefromtop <= navheight ) {
-        tabletostick.removeClass("invisible");
+        tabletostick.addClass("in").removeClass("invisible");
         tabletostick.css("top", 0 );
         //  console.log("the header should be stuck");
     } else {
-        tabletostick.addClass("invisible");
+        tabletostick.removeClass("in").addClass("invisible");
         //  console.log("the header should be unstuck");
     }
 });
@@ -238,7 +238,7 @@ function stickTo(start, dest) {
     var clone = $(start).clone();
 
     clone.children("tbody").remove();
-    clone.prependTo(dest).wrap("<div class='table-magic-wrapper invisible'>").attr("table-magic","active");
+    clone.prependTo(dest).wrap("<div class='table-magic-wrapper fade invisible'>").attr("table-magic","active");
 
 };
 
