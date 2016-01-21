@@ -214,9 +214,7 @@ function stickTo(table, start, end, wrapper) {
     var clone = $(start).clone();
 
     if ( table ) {
-        console.log("this is a table");
-    } else {
-        console.log("this isn't a table");
+
     }
 
     clone.prependTo(end).wrap("<div class='" + wrapper + "'></div>");
