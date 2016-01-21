@@ -213,23 +213,15 @@ $(window).resize( function() {
     magicTable();
 });
 $('.offcanvas-inner').scroll( function() {
-    //  console.log( $(this).scrollTop() );
-    //  var tabletostick = $('[table-magic="active"]');
+
     var tabletostick = $('.table-magic-wrapper');
-
     var tablefromtop = $('[table-magic="inactive"]').offset().top;
-    //  console.log( tablefromtop );
-
     var navheight = $('[oncanvas-nav]').height();
-    //  console.log( navheight );
 
     if ( tablefromtop <= navheight ) {
-        tabletostick.addClass("in").removeClass("invisible");
-        tabletostick.css("top", 0 );
-        //  console.log("the header should be stuck");
+        tabletostick.addClass("in").removeClass("invisible").css("top", 0);
     } else {
         tabletostick.removeClass("in").addClass("invisible");
-        //  console.log("the header should be unstuck");
     }
 });
 
