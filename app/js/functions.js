@@ -206,7 +206,7 @@ $('#navbar-profile-backdrop').on('click', function() {
 //  Table Magic
 //
 $(document).ready( function() {
-    stickTo("[table-magic='inactive']", ".offcanvas-inner");
+    stickTo("[table-magic='inactive']", ".offcanvas-body");
     magicTable();
 });
 $(window).resize( function() {
@@ -214,7 +214,8 @@ $(window).resize( function() {
 });
 $('.offcanvas-inner').scroll( function() {
     //  console.log( $(this).scrollTop() );
-    var tabletostick = $('[table-magic="active"]');
+    //  var tabletostick = $('[table-magic="active"]');
+    var tabletostick = $('.table-magic-wrapper');
 
     var tablefromtop = $('[table-magic="inactive"]').offset().top;
     //  console.log( tablefromtop );
@@ -223,11 +224,11 @@ $('.offcanvas-inner').scroll( function() {
     //  console.log( navheight );
 
     if ( tablefromtop <= navheight ) {
-        tabletostick.addClass("in");
-        tabletostick.css("top", $(this).scrollTop() );
+        tabletostick.removeClass("invisible");
+        tabletostick.css("top", 0 );
         //  console.log("the header should be stuck");
     } else {
-        tabletostick.removeClass("in");
+        tabletostick.addClass("invisible");
         //  console.log("the header should be unstuck");
     }
 });
@@ -237,7 +238,7 @@ function stickTo(start, dest) {
     var clone = $(start).clone();
 
     clone.children("tbody").remove();
-    clone.prependTo(dest).attr("table-magic","active").addClass("fade");
+    clone.prependTo(dest).wrap("<div class='table-magic-wrapper invisible'>").attr("table-magic","active");
 
 };
 

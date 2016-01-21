@@ -42,12 +42,17 @@
 
 // For Magical Table
 // -------------------------
-[table-magic="active"] {
+.table-magic-wrapper {
     background-color: white;
-    border-right: 30px solid white;
-    border-left: 30px solid white;
     position: absolute;
     top: 0;
+    left: 0;
+    z-index: 5;
+    padding-left: 30px;
+
+    .table {
+        margin: 0;
+    }
 }
 
 // Raw
