@@ -50,6 +50,10 @@
     z-index: 5;
     padding-left: 29px;
 
+    @media ( max-width: $offcanvas-breakpoint-max ) {
+        display: none;
+    }
+
     .table {
         margin: 0;
     }

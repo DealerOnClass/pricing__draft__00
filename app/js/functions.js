@@ -194,24 +194,6 @@ $('#navbar-profile').on('hidden.bs.collapse', function() {
 $('#navbar-profile-backdrop').on('click', function() {
     $('#navbar-profile').collapse('hide');
 });
-//  ////////////////////////////////////////
-//  //
-//  //  Navbar Swipe Events
-//  //
-//  //  $('#offcanvas-wrapper').swipe( {
-//  //      swipeRight:function() {
-//  //          $('#navbar-sidebar').collapse('show');
-//  //      },
-//  //      threshold: 0,
-//  //      allowPageScroll: "vertical"
-//  //  });
-//  //  $('#offcanvas-nav').swipe( {
-//  //      swipeLeft:function() {
-//  //          $('#navbar-sidebar').collapse('hide');
-//  //      },
-//  //      threshold: 0,
-//  //      allowPageScroll: "vertical"
-//  //  });
 ////////////////////////////////////////
 //
 //  Table Magic
@@ -263,3 +245,21 @@ function updateMagicTable(delay) {
     }, delay );
 
 };
+//  ////////////////////////////////////////
+//  //
+//  //  Navbar Swipe Events
+//  //
+//  //  $('#offcanvas-wrapper').swipe( {
+//  //      swipeRight:function() {
+//  //          $('#navbar-sidebar').collapse('show');
+//  //      },
+//  //      threshold: 0,
+//  //      allowPageScroll: "vertical"
+//  //  });
+//  //  $('#offcanvas-nav').swipe( {
+//  //      swipeLeft:function() {
+//  //          $('#navbar-sidebar').collapse('hide');
+//  //      },
+//  //      threshold: 0,
+//  //      allowPageScroll: "vertical"
+//  //  });
