@@ -124,6 +124,9 @@ $('#navbar-search-form').on('show.bs.collapse', function() {
 $('#navbar-search-form').on('hide.bs.collapse', function() {
     $('#navbar-search-link').toggleClass("active");
 });
+$('#navbar-search-form-input').focusout( function() {
+    $('#navbar-search-form').collapse('hide');
+});
 ////////////////////////////////////////
 //
 //  Sidebar Collapse Function
@@ -133,6 +136,7 @@ $('#navbar-sidebar').on('show.bs.collapse', function(e) {
         $("#offcanvas-backdrop").removeClass("invisible");
         //  $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
         $("#offcanvas-backdrop").addClass("in");
+        updateMagicTable();
     };
 });
 $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
@@ -144,6 +148,7 @@ $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
 $('#navbar-sidebar').on('hidden.bs.collapse', function(e) {
     if (e.target == this) {
         $("#offcanvas-backdrop").addClass("invisible");
+        updateMagicTable();
     };
 });
 $('#offcanvas-backdrop').on('click', function() {
@@ -207,10 +212,10 @@ $('#navbar-profile-backdrop').on('click', function() {
 //
 $(document).ready( function() {
     stickTo("[table-magic='inactive']", ".offcanvas-body");
-    magicTable();
+    updateMagicTable();
 });
 $(window).resize( function() {
-    magicTable();
+    updateMagicTable();
 });
 $('.offcanvas-inner').scroll( function() {
 
@@ -234,16 +239,19 @@ function stickTo(start, dest) {
 
 };
 
-function magicTable() {
+function updateMagicTable() {
 
-    var active__table     = $('[table-magic="active"]');
-    var active__table__th = active__table.children("thead").children("tr").children("th");
+    var active__table          = $('[table-magic="active"]');
+    var active__table__th      = active__table.children("thead").children("tr").children("th");
 
-    var inactive__table     = $('[table-magic="inactive"]');
-    var inactive__table__th = inactive__table.children("thead").children("tr").children("th");
+    var inactive__table        = $('[table-magic="inactive"]');
+    var inactive__table__th    = inactive__table.children("thead").children("tr").children("th");
+    var inactive__table__width = inactive__table.width();
 
     active__table__th.each( function(index) {
-        $(this).css("width", inactive__table__th.eq(index).width() );
+        $(this).css("width", inactive__table__th.eq(index).width());
     });
+
+    active__table.css("width", inactive__table__width);
 
 };
