@@ -136,19 +136,25 @@ $('#navbar-sidebar').on('show.bs.collapse', function(e) {
         $("#offcanvas-backdrop").removeClass("invisible");
         //  $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
         $("#offcanvas-backdrop").addClass("in");
-        updateMagicTable();
+
+        console.log("show the sidebar");
+        updateMagicTable(350);
     };
 });
 $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
     if (e.target == this) {
         //  $("#navbar-sidebar-icon").removeClass("fa-remove").addClass("fa-navicon");
         $("#offcanvas-backdrop").removeClass("in");
+
+        console.log("hide the sidebar");
     };
 });
 $('#navbar-sidebar').on('hidden.bs.collapse', function(e) {
     if (e.target == this) {
         $("#offcanvas-backdrop").addClass("invisible");
-        updateMagicTable();
+
+        console.log("hidden sidebar");
+        updateMagicTable(350);
     };
 });
 $('#offcanvas-backdrop').on('click', function() {
@@ -211,47 +217,49 @@ $('#navbar-profile-backdrop').on('click', function() {
 //  Table Magic
 //
 $(document).ready( function() {
-    stickTo("[table-magic='inactive']", ".offcanvas-body");
-    updateMagicTable();
+    createMagicTable("[table-magic='inactive']", ".offcanvas-body");
+    updateMagicTable(200);
 });
-$(window).resize( function() {
-    updateMagicTable();
-});
-$('.offcanvas-inner').scroll( function() {
 
+$(window).resize( function() {
+    updateMagicTable(0);
+});
+
+$('.offcanvas-inner').scroll( function() {
     var tabletostick = $('.table-magic-wrapper');
     var tablefromtop = $('[table-magic="inactive"]').offset().top;
     var navheight = $('[oncanvas-nav]').height();
 
     if ( tablefromtop <= navheight ) {
-        tabletostick.addClass("in").removeClass("invisible").css("top", 0);
+        tabletostick.removeClass("invisible").css("top", 0);
     } else {
-        tabletostick.removeClass("in").addClass("invisible");
+        tabletostick.addClass("invisible");
     }
 });
 
-function stickTo(start, dest) {
-
-    var clone = $(start).clone();
+function createMagicTable(tableToMagicalize, dest) {
+    var clone = $(tableToMagicalize).clone();
 
     clone.children("tbody").remove();
-    clone.prependTo(dest).wrap("<div class='table-magic-wrapper fade invisible'>").attr("table-magic","active");
-
+    clone.prependTo(dest).wrap("<div class='table-magic-wrapper invisible'>").attr("table-magic","active");
 };
 
-function updateMagicTable() {
+function updateMagicTable(delay) {
 
-    var active__table          = $('[table-magic="active"]');
-    var active__table__th      = active__table.children("thead").children("tr").children("th");
+    var delay = delay;
 
-    var inactive__table        = $('[table-magic="inactive"]');
-    var inactive__table__th    = inactive__table.children("thead").children("tr").children("th");
-    var inactive__table__width = inactive__table.width();
+    setTimeout( function() {
 
-    active__table__th.each( function(index) {
-        $(this).css("width", inactive__table__th.eq(index).width());
-    });
+        var active__table          = $('[table-magic="active"]');
+        var active__table__th      = active__table.children("thead").children("tr").children("th");
 
-    active__table.css("width", inactive__table__width);
+        var inactive__table        = $('[table-magic="inactive"]');
+        var inactive__table__th    = inactive__table.children("tbody").children("tr").children("td");
+
+        active__table__th.each( function(index) {
+            $(this).css("width", inactive__table__th.eq(index).width());
+        });
+
+    }, delay );
 
 };

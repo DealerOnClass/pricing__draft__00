@@ -53,6 +53,10 @@
     .table {
         margin: 0;
     }
+
+    .table th {
+        transition: width .15s ease-in-out .3s;
+    }
 }
 
 // Raw
