@@ -30,7 +30,8 @@ $default__palette: (
 ) !default;
 
 $inverse__palette: (
-    'inverse':  $inverse__color,
+    'inverse':       $inverse__color,
+    'inverse-dark':  shade($inverse__color, 20%),
 ) !default;
 
 $primary__palette: (

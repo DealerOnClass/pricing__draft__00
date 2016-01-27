@@ -20,10 +20,6 @@
     position: relative;
 
     overflow-y: auto;
-
-    @media ( min-width: 500px ) {
-        width: $navbar-sidebar__width !important;
-    }
 }
 
 .navbar-sidebar-header,

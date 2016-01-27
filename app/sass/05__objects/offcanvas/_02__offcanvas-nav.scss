@@ -10,4 +10,10 @@
     @media (min-width: $offcanvas-breakpoint) {
         position: relative;
     }
+
+    .navbar-sidebar-wrapper {
+        @media ( min-width: 500px ) {
+            width: $navbar-sidebar__width !important;
+        }
+    }
 }

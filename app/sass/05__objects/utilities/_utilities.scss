@@ -59,7 +59,7 @@
     }
 
     .table th {
-        transition: width .15s ease-in-out .3s;
+        transition: width .15s ease-in-out;
     }
 }
 
@@ -90,6 +90,7 @@
 .margin-x {
     margin: 0 !important;
 }
+
 .border-x {
     border: 0 !important;
 }

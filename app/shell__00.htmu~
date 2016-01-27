@@ -175,7 +175,8 @@
             <nav id="offcanvas-nav" class="offcanvas-nav navbar navbar-inverse navbar-stacked">
                 <div id="navbar-sidebar" class="navbar-sidebar-collapse collapse width">
                     <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav" offcanvas-set-width="offcanvas-nav">
-                        <div class="navbar-sidebar-body bg-inverse-dark">
+                        <hr class="divider">
+                        <div class="navbar-sidebar-header">
                             <div class="media media-profile">
                                 <div class="media-left">
                                     <img class="img-rounded-sm" src="img/toyota.jpg" alt="Gimmie dem eggs!" height="50" width="50">
@@ -293,70 +294,9 @@
             <div id="offcanvas-body" class="offcanvas-body">
                 <div id="offcanvas-backdrop" class="offcanvas-backdrop fade"></div>
 
-                <div id="navbar-sidebar-nested" class="bg-default collapse in">
-                    <div id="navbar-sidebar-nested-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav">
-                        <div class="container">
-                            <h3>Website Snapshot</h3>
-                            <ol class="breadcrumb breadcrumb-default breadcrumb-flush row">
-                                <li><a href="#">AMSI</a></li>
-                                <li class="active">Chrylser Dodge Jeep Ram of Chatanooga</li>
-                            </ol>
-                            <p>Associated Agency Account: Force Marketing</p>
-                            <h3>Products</h3>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <table class="table table-rounded">
-                                        <thead>
-                                            <tr>
-                                                <th>Active</th>
-                                                <th>Type</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="">Chameleon Elite</a></td>
-                                                <td>Website</td>
-                                                <td>9/15/2014</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Spin Car Interactive</a></td>
-                                                <td>Add-On(Video)</td>
-                                                <td>4/21/2015</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-sm-6">
-                                    <table class="table table-rounded text-muted">
-                                        <thead>
-                                            <tr>
-                                                <th>Cancelled</th>
-                                                <th>Type</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="">Pre-Launch Page Migration</a></td>
-                                                <td>Add-On</td>
-                                                <td>4/3/2015</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Homepage Banner Design</a></td>
-                                                <td>Add-On</td>
-                                                <td>4/3/2015</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Elite SEO</a></td>
-                                                <td>Add-On(SEO)</td>
-                                                <td>7/3/2015</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                <div id="navbar-sidebar-nested" class="navbar-sidebar-collapse-nested collapse in">
+                    <div id="navbar-sidebar-nested-wrapper" class="navbar-sidebar-nested-wrapper" offcanvas-set-height="oncanvas-nav">
+                        <p>Dolor et aperiam commodi eius repudiandae aperiam, molestias! Dicta exercitationem modi corrupti odit laborum ea? Voluptatum ipsa sequi nihil modi autem, corporis consectetur ducimus quaerat. Consequatur repudiandae corrupti totam voluptatibus!</p>
                     </div>
                 </div>
 
