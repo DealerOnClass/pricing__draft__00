@@ -15,3 +15,10 @@
         }
     }
 }
+
+.breadcrumb > li:last-child > a {
+
+    &:after {
+        display: none;
+    }
+}

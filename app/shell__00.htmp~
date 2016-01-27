@@ -192,16 +192,16 @@
                                     </ul>
                                 </div>
                                 <div class="media-right media-middle">
-                                    <a id="navbar-sidebar-collapse-link" href="#navbar-sidebar-collapse" class="visible-xs visible-sm navbar-link" data-toggle="collapse">
-                                        <i id="navbar-sidebar-collapse-icon" class="fa fa-angle-down fa-fw fa-md"></i>
+                                    <a id="navbar-sidebar-collapse-link" href="#navbar-sidebar-collapse" class="navbar-link" data-toggle="collapse">
+                                        <i id="navbar-sidebar-collapse-icon" class="fa fa-angle-up fa-fw fa-md"></i>
                                     </a>
-                                    <a id="navbar-sidebar-nested-link" href="#navbar-sidebar-nested" class="hidden-xs hidden-sm navbar-link" data-toggle="collapse">
+                                    <a id="navbar-sidebar-nested-link" href="#navbar-sidebar-nested" class="navbar-link" data-toggle="collapse">
                                         <i id="navbar-sidebar-nested-icon" class="fa fa-angle-right fa-fw fa-md"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div id="navbar-sidebar-collapse" class="hidden-lg hidden-md collapse">
+                        <div id="navbar-sidebar-collapse" class="collapse in">
                             <div class="navbar-sidebar-item navbar-sidebar-header">
                                 <div class="xs">
                                     <p>
@@ -244,7 +244,7 @@
                                     </tbody>
                                     <thead>
                                         <tr>
-                                            <th class="navbar-sidebar-title">Cancelled Products</th>
+                                            <th class="navbar-sidebar-title">Canceled Products</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -326,8 +326,8 @@
                 </div>
             </nav>
 
-            <nav id="offcanvas-nav-nested" class="hidden-sm hidden-xs offcanvas-nav offcanvas-nav-nested navbar navbar-inverse navbar-stacked">
-                <div id="navbar-sidebar-nested" class="navbar-sidebar-collapse collapse width">
+            <nav id="offcanvas-nav-nested" class="offcanvas-nav offcanvas-nav-nested navbar navbar-inverse navbar-stacked">
+                <div id="navbar-sidebar-nested" class="navbar-sidebar-collapse collapse width in">
                     <div class="navbar-sidebar-wrapper navbar-sidebar-header" offcanvas-set-height="oncanvas-nav">
                         <div class="container-fluid">
                             <div class="navbar-sidebar-item">

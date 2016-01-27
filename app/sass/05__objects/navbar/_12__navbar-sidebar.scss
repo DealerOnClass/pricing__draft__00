@@ -22,14 +22,8 @@
     overflow-y: auto;
 }
 
-.navbar-sidebar-header,
-.navbar-sidebar-body,
-.navbar-sidebar-footer {
+.navbar-sidebar-item {
     padding: $navbar__y $navbar__x;
-}
-
-.navbar-sidebar-header {
-    background-color: rgba(0,0,0,0.2);
 }
 
 .navbar-sidebar-nav .dropdown-menu > li > a {

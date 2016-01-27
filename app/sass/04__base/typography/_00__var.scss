@@ -4,12 +4,12 @@ $body__font:            $primary__font--regular;
 $body__color:           $inverse__color;
 //
 //  Heading
-$heading__font:         $primary__font--bold;
+$heading__font:         $primary__font--regular;    // was --bold
 $heading__small__size:  $h6__font-size;
 $heading__small__color: $gray__03;
 //
 //  Display
-$display__font:         $primary__font--bold;
+$display__font:         $primary__font--regular;    // was --bold
 //
 //  Links
 $link__color:           $primary__color;

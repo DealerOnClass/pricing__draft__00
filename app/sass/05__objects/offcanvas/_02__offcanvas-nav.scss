@@ -3,9 +3,13 @@
 }
 
 .offcanvas-nav.navbar {
-    border-radius: 0;
     position: absolute;
     z-index: 1100;
+
+    &,
+    &.navbar-stacked .navbar-nav {
+        border-radius: 0;
+    }
 
     @media (min-width: $offcanvas-breakpoint) {
         position: relative;
@@ -14,6 +18,17 @@
     .navbar-sidebar-wrapper {
         @media ( min-width: 500px ) {
             width: $navbar-sidebar__width !important;
+        }
+    }
+}
+
+.offcanvas-nav-nested.navbar {
+    position: absolute;
+    left: $navbar-sidebar__width;
+
+    .navbar-sidebar-wrapper {
+        @media ( min-width: 500px ) {
+            width: calc(#{$screen-md-min} - #{$navbar-sidebar__width}) !important;
         }
     }
 }

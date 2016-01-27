@@ -175,16 +175,16 @@
             <nav id="offcanvas-nav" class="offcanvas-nav navbar navbar-inverse navbar-stacked">
                 <div id="navbar-sidebar" class="navbar-sidebar-collapse collapse width">
                     <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav" offcanvas-set-width="offcanvas-nav">
-                        <div class="navbar-sidebar-item navbar-sidebar-header">
+                        <div class="navbar-sidebar-item bg-inverse-dark">
                             <div class="media media-profile">
                                 <div class="media-left">
-                                    <img class="img-rounded-sm" src="img/toyota.jpg" alt="Toyota Logo" height="50" width="50">
+                                    <img class="img-rounded-sm" src="img/toyota.jpg" alt="Gimmie dem eggs!" height="50" width="50">
                                 </div>
                                 <div class="media-body media-middle">
                                     <ul class="list-inline margin-x">
                                         <li>
-                                            <h5 class="navbar-sidebar-title margin-x"><strong>Chrysler Dodge Jeep Ram of Chatanooga</strong></h5>
-                                            <a href="http://www.scottclarktoyota.com">
+                                            <h5 class="margin-x">Chrysler Dodge Jeep Ram of Chatanooga</h5>
+                                            <a class="text-muted" href="http://www.scottclarktoyota.com">
                                                 <i class="fa fa-globe fa-fw xs"></i>
                                                 <small>Visit Website | 9682</small>
                                             </a>
@@ -192,79 +192,39 @@
                                     </ul>
                                 </div>
                                 <div class="media-right media-middle">
-                                    <a id="navbar-sidebar-collapse-link" href="#navbar-sidebar-collapse" class="visible-xs visible-sm navbar-link" data-toggle="collapse">
-                                        <i id="navbar-sidebar-collapse-icon" class="fa fa-angle-down fa-fw fa-md"></i>
-                                    </a>
-                                    <a id="navbar-sidebar-nested-link" href="#navbar-sidebar-nested" class="hidden-xs hidden-sm navbar-link" data-toggle="collapse">
-                                        <i id="navbar-sidebar-nested-icon" class="fa fa-angle-right fa-fw fa-md"></i>
+                                    <a id="navbar-sidebar-nested-link" href="#navbar-sidebar-nested" class="navbar-link text-muted" data-toggle="collapse">
+                                        <i id="navbar-sidebar-nested-icon" class="fa fa-angle-left fa-fw fa-md"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div id="navbar-sidebar-collapse" class="hidden-lg hidden-md collapse">
+
+                        <div id="navbar-sidebar-collapse" class="collapse">
                             <div class="navbar-sidebar-item navbar-sidebar-header">
-                                <div class="xs">
-                                    <p>
-                                        <strong class="navbar-sidebar-title">Associated Account:</strong><br>
-                                        AMSI <i class="fa fa-angle-right"></i> Chrysler Dodge Jeep Ram of Chatanooga
-                                    </p>
-                                    <p>
-                                        <strong class="navbar-sidebar-title">Agnecy/Partner:</strong><br>
-                                        Force Marketing
-                                    </p>
-                                    <p>
-                                        <strong class="navbar-sidebar-title">Website ID:</strong><br>
-                                        9682
-                                    </p>
-                                    <p>
-                                        <strong class="navbar-sidebar-title">Website Url:</strong><br>
-                                        http://www.scottclarktoyota.com
-                                    </p>
-                                    <p>
-                                        <strong class="navbar-sidebar-title">Support:</strong><br>
-                                        Team Green
-                                    </p>
-                                </div>
-                                <table class="table table-borderless table-condensed table-flush xs">
-                                    <thead>
-                                        <tr>
-                                            <th class="navbar-sidebar-title">Active Products</th>
-                                            <th>Date</th>
-                                        </tr>
-                                    </thead>
+                                <table class="table table-borderless table-condensed table-flush xs margin-x">
                                     <tbody>
                                         <tr>
-                                            <td><a href="">Chameleon Elite</a></td>
-                                            <td>9/15/2014</td>
+                                            <td class="text-muted">Account:</td>
+                                            <td>AMSI Auto Group</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="">Spin Car Interactive</a></td>
-                                            <td>4/21/2015</td>
-                                        </tr>
-                                    </tbody>
-                                    <thead>
-                                        <tr>
-                                            <th class="navbar-sidebar-title">Cancelled Products</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><a href="">Pre-Launch Page Migration</a></td>
-                                            <td>4/3/2015</td>
+                                            <td class="text-muted">Site ID:</td>
+                                            <td>9682</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="">Homepage Banner Design</a></td>
-                                            <td>4/3/2015</td>
+                                            <td class="text-muted">Site Url:</td>
+                                            <td>http://www.scottclarktoyota.com</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="">Elite SEO</a></td>
-                                            <td>7/3/2015</td>
+                                            <td class="text-muted">Support:</td>
+                                            <td>Team Green</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+
+                        <hr class="divider">
 
                         <div class="navbar-sidebar-nav">
                             <ul class="nav navbar-nav">
@@ -326,86 +286,64 @@
                 </div>
             </nav>
 
-            <nav id="offcanvas-nav-nested" class="hidden-sm hidden-xs offcanvas-nav offcanvas-nav-nested navbar navbar-inverse navbar-stacked">
-                <div id="navbar-sidebar-nested" class="navbar-sidebar-collapse collapse width">
+            <nav id="offcanvas-nav-nested" class="offcanvas-nav offcanvas-nav-nested navbar navbar-inverse navbar-stacked">
+                <div id="navbar-sidebar-nested" class="navbar-sidebar-collapse collapse width in">
                     <div class="navbar-sidebar-wrapper navbar-sidebar-header" offcanvas-set-height="oncanvas-nav">
-                        <div class="container-fluid">
-                            <div class="navbar-sidebar-item">
-                                <br>
-                                <h3 class="navbar-sidebar-title">Overview</h3>
-                                <table class="table table-borderless table-rounded table-condensed margin-x">
-                                    <tbody>
-                                        <tr>
-                                            <td><strong>Associated Account:</strong></td>
-                                            <td>AMSI <i class="fa fa-angle-right"></i> Chrylser Dodge Jeep Ram of Chatanooga</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Agency/Partner:</strong></td>
-                                            <td>Force Marketing</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Website ID:</strong></td>
-                                            <td>64541</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Website Url:</strong></td>
-                                            <td>http://www.scottclarktoyota.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Support:</strong></td>
-                                            <td>Team Green</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="navbar-sidebar-item">
-                                <h3 class="navbar-sidebar-title">Products</h3>
-                                <table class="table table-borderless table-rounded table-condensed table-flush">
-                                    <thead>
-                                        <tr>
-                                            <th>Active</th>
-                                            <th>Type</th>
-                                            <th>Date</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><a href="">Chameleon Elite</a></td>
-                                            <td>Website</td>
-                                            <td>9/15/2014</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="">Spin Car Interactive</a></td>
-                                            <td>Add-On(Video)</td>
-                                            <td>4/21/2015</td>
-                                        </tr>
-                                    </tbody>
-                                    <thead>
-                                        <tr>
-                                            <th>Cancelled</th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><a href="">Pre-Launch Page Migration</a></td>
-                                            <td>Add-On</td>
-                                            <td>4/3/2015</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="">Homepage Banner Design</a></td>
-                                            <td>Add-On</td>
-                                            <td>4/3/2015</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="">Elite SEO</a></td>
-                                            <td>Add-On(SEO)</td>
-                                            <td>7/3/2015</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="navbar-sidebar-item">
+                            <ol class="breadcrumb breadcrumb-flush breadcrumb-rounded">
+                                <li><a href="#">Site Content</a></li>
+                                <li class="active">Edit Staff Members</li>
+                            </ol>
+                        </div>
+                        <div class="navbar-sidebar-item">
+                        </div>
+                        <div class="navbar-sidebar-item">
+                            <h3>Products</h3>
+                            <table class="table table-borderless table-rounded table-flush">
+                                <thead>
+                                    <tr>
+                                        <th>Active</th>
+                                        <th>Type</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">Chameleon Elite</a></td>
+                                        <td>Website</td>
+                                        <td>9/15/2014</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Spin Car Interactive</a></td>
+                                        <td>Add-On(Video)</td>
+                                        <td>4/21/2015</td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th>Cancelled</th>
+                                        <th>Type</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">Pre-Launch Page Migration</a></td>
+                                        <td>Add-On</td>
+                                        <td>4/3/2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Homepage Banner Design</a></td>
+                                        <td>Add-On</td>
+                                        <td>4/3/2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Elite SEO</a></td>
+                                        <td>Add-On(SEO)</td>
+                                        <td>7/3/2015</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

@@ -86,5 +86,15 @@
                 }
             }
         }
+
+        .navbar-#{$class__name} {
+            .navbar-sidebar-header {
+                background-color: check-color($color, 80, shade($color, $navbar__contrast / 2), shade($color, $navbar__contrast * 2));
+                color: check-color($color, 80, shade($color, 60%), tint($color, 60%));
+            }
+            .navbar-sidebar-title {
+                color: check-color($color, 80, shade($color, 60%), tint($color, 80%));
+            }
+        }
     }
 }

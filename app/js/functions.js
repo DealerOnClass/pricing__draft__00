@@ -172,10 +172,16 @@ $('[data-disable="notify"]').on('click', function() {
 //  Navbar Website Toggle
 //
 $('#navbar-sidebar-nested').on('show.bs.collapse', function() {
-    $("#navbar-sidebar-nested-icon").removeClass("fa-angle-down").addClass("fa-angle-up");
+    $("#navbar-sidebar-nested-icon").removeClass("fa-angle-right").addClass("fa-angle-left");
 });
 $('#navbar-sidebar-nested').on('hide.bs.collapse', function() {
-    $("#navbar-sidebar-nested-icon").removeClass("fa-angle-up").addClass("fa-angle-down");
+    $("#navbar-sidebar-nested-icon").removeClass("fa-angle-left").addClass("fa-angle-right");
+});
+$('#navbar-sidebar-collapse').on('show.bs.collapse', function() {
+    $("#navbar-sidebar-collapse-icon").removeClass("fa-angle-down").addClass("fa-angle-up");
+});
+$('#navbar-sidebar-collapse').on('hide.bs.collapse', function() {
+    $("#navbar-sidebar-collapse-icon").removeClass("fa-angle-up").addClass("fa-angle-down");
 });
 ////////////////////////////////////////
 //
