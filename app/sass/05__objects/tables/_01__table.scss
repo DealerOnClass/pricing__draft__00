@@ -35,9 +35,4 @@
             }
         }
     }
-
-    > tbody + thead > tr > th,
-    > tbody + thead > tr > td {
-        padding-top: $table__y * 4;
-    }
 }

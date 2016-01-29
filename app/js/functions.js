@@ -97,11 +97,14 @@ $(window).resize( function() {
 
 function UpdateDimensions() {
     var navHeight        = $('[oncanvas-nav]').height();
+    var navWidth         = $('#offcanvas-nav').width();
     var windowHeight     = $(window).height();
     var windowWidth      = $(window).width();
     var adjustedHeight   = windowHeight - navHeight;
+    var adjustedWidth    = windowWidth - navWidth;
     $('[offcanvas-set-height="window"]').css("height", windowHeight);
     $('[offcanvas-set-height="oncanvas-nav"]').css("height", adjustedHeight);
+    $('[offcanvas-set-width="sidebar"]').css("width", adjustedWidth);
     $('[offcanvas-set-width="window"]').css("width", windowWidth);
     $('[offcanvas-set-width="offcanvas-nav"]').css("width", windowWidth * .80);
     $('[offcanvas-set-top="oncanvas-nav"]').css("top", navHeight);
@@ -133,27 +136,25 @@ $('#navbar-search-form-input').focusout( function() {
 //
 $('#navbar-sidebar').on('show.bs.collapse', function(e) {
     if (e.target == this) {
+        if ( $("#navbar-sidebar-nested").hasClass("was-open") ) {
+            $("#navbar-sidebar-nested").collapse("show").removeClass("was-open");
+        };
         $("#offcanvas-backdrop").removeClass("invisible");
-        //  $("#navbar-sidebar-icon").removeClass("fa-navicon").addClass("fa-remove");
         $("#offcanvas-backdrop").addClass("in");
-
-        console.log("show the sidebar");
         updateMagicTable(350);
     };
 });
 $('#navbar-sidebar').on('hide.bs.collapse', function(e) {
     if (e.target == this) {
-        //  $("#navbar-sidebar-icon").removeClass("fa-remove").addClass("fa-navicon");
+        if ( $("#navbar-sidebar-nested").hasClass("in") ) {
+            $("#navbar-sidebar-nested").addClass("was-open").collapse("hide");
+        };
         $("#offcanvas-backdrop").removeClass("in");
-
-        console.log("hide the sidebar");
     };
 });
 $('#navbar-sidebar').on('hidden.bs.collapse', function(e) {
     if (e.target == this) {
         $("#offcanvas-backdrop").addClass("invisible");
-
-        console.log("hidden sidebar");
         updateMagicTable(350);
     };
 });
@@ -171,18 +172,43 @@ $('[data-disable="notify"]').on('click', function() {
 //
 //  Navbar Website Toggle
 //
-$('#navbar-sidebar-nested').on('show.bs.collapse', function() {
-    $("#navbar-sidebar-nested-icon").removeClass("fa-angle-right").addClass("fa-angle-left");
+//  Desktop
+$('#navbar-sidebar-nested').on('show.bs.collapse', function(e) {
+    if (e.target == this) {
+        $("#offcanvas-inner-wrapper").removeClass("force-auto-width");
+        $("#navbar-sidebar-nested-icon").removeClass("fa-angle-right").addClass("fa-angle-left");
+        //  //
+        //  $("#offcanvas-nested-backdrop").removeClass("invisible");
+        //  $("#offcanvas-nested-backdrop").addClass("in");
+    };
 });
-$('#navbar-sidebar-nested').on('hide.bs.collapse', function() {
-    $("#navbar-sidebar-nested-icon").removeClass("fa-angle-left").addClass("fa-angle-right");
+$('#navbar-sidebar-nested').on('hide.bs.collapse', function(e) {
+    if (e.target == this) {
+        $("#navbar-sidebar-nested-icon").removeClass("fa-angle-left").addClass("fa-angle-right");
+        //  //
+        //  $("#offcanvas-nested-backdrop").removeClass("in");
+    };
 });
+$('#navbar-sidebar-nested').on('hidden.bs.collapse', function(e) {
+    if (e.target == this) {
+        $("#offcanvas-inner-wrapper").addClass("force-auto-width");
+        //  //
+        //  $("#offcanvas-nested-backdrop").addClass("invisible");
+    };
+});
+//
+//  Mobile
 $('#navbar-sidebar-collapse').on('show.bs.collapse', function() {
     $("#navbar-sidebar-collapse-icon").removeClass("fa-angle-down").addClass("fa-angle-up");
 });
 $('#navbar-sidebar-collapse').on('hide.bs.collapse', function() {
     $("#navbar-sidebar-collapse-icon").removeClass("fa-angle-up").addClass("fa-angle-down");
 });
+//  //
+//  //  Backdrop
+//  $('#offcanvas-nested-backdrop').on('click', function() {
+//      $('#navbar-nested-sidebar').collapse('hide');
+//  });
 ////////////////////////////////////////
 //
 //  Navbar Profile Toggle

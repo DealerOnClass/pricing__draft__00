@@ -22,9 +22,12 @@
             };
             function ShowSidebar() {
                 var sidebar     = document.getElementById("navbar-sidebar");
+                //  var sidebarIcon = document.getElementById("navbar-sidebar-icon");
                 var backdrop    = document.getElementById("offcanvas-backdrop");
 
                 sidebar.className += " in";
+                //  sidebarIcon.className = sidebarIcon.className.replace( /(?:^|\s)fa-navicon(?!\S)/g , '' );
+                //  sidebarIcon.className += " fa-remove";
                 backdrop.className += " in";
             };
             function HideSidebar() {
@@ -40,7 +43,7 @@
         <nav id="oncanvas-nav" class="oncanvas-nav navbar navbar-main navbar-static-top" oncanvas-nav>
 
             <a id="navbar-sidebar-link" href="#navbar-sidebar" class="navbar-brand navbar-brand-svg" data-toggle="collapse">
-                <i id="navbar-sidebar-icon" class="visible-sm-inline-block visible-xs-inline-block fa fa-navicon fa-fw"></i>
+                <i id="navbar-sidebar-icon" class="fa fa-navicon fa-fw"></i>
                 <object class="logo__svg" data='img/logo__symbol.svg' type="image/svg+xml">
                     <img class="logo__svg" src="img/logo__symbol.svg" alt="">
                 </object>
@@ -118,30 +121,6 @@
                         <li><a href="">View All Products</a></li>
                     </ul>
                 </li>
-                <li class="dropdown hidden-xs">
-                    <a href="#" data-toggle="dropdown">Users</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="">Account 1</a></li>
-                        <li><a href="">Account 2</a></li>
-                        <li><a href="">Account 3</a></li>
-                        <li><a href="">Account 4</a></li>
-                        <li><a href="">Account 5</a></li>
-                        <li class="divider"></li>
-                        <li><a href="">View All Products</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown hidden-xs">
-                    <a href="#" data-toggle="dropdown">Admin</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="">Account 1</a></li>
-                        <li><a href="">Account 2</a></li>
-                        <li><a href="">Account 3</a></li>
-                        <li><a href="">Account 4</a></li>
-                        <li><a href="">Account 5</a></li>
-                        <li class="divider"></li>
-                        <li><a href="">View All Products</a></li>
-                    </ul>
-                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right-override">
                 <li>
@@ -163,6 +142,7 @@
                     </a>
                 </li>
             </ul>
+
         </nav>
 
         <div id="navbar-profile" class="collapse">
@@ -184,15 +164,18 @@
                     </div>
                 </div>
             </div>
+            <!--<hr class="divider hidden-sm hidden-xs">-->
+
         </div>
 
         <div id="navbar-profile-backdrop" class="offcanvas-backdrop fade invisible"></div>
 
         <div id="offcanvas" class="offcanvas" offcanvas-set-top="oncanvas-nav">
 
-            <nav id="offcanvas-nav" class="offcanvas-nav navbar navbar-inverse navbar-stacked">
+            <nav id="offcanvas-nav" class="offfcanvas-nav navbar navbar-inverse navbar-stacked">
                 <div id="navbar-sidebar" class="navbar-sidebar-collapse collapse width">
-                    <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav" offcanvas-set-width="offcanvas-nav">
+
+                    <div id="navbar-sidebar-wrapper" class="navbar-sidebar-wrapper" offcanvas-set-height="oncanvas-nav" offfcanvas-set-width="offcanvas-nav">
                         <div class="navbar-sidebar-item navbar-sidebar-header">
                             <div class="media media-profile">
                                 <div class="media-left">
@@ -219,6 +202,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div id="navbar-sidebar-collapse" class="hidden-lg hidden-md collapse">
                             <div class="navbar-sidebar-item navbar-sidebar-header">
                                 <div class="xs">
@@ -247,19 +231,16 @@
                                     <thead>
                                         <tr>
                                             <th class="navbar-sidebar-title">Active Products</th>
-                                            <th>ID:</th>
                                             <th>Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><a href="">Chameleon Elite</a></td>
-                                            <td>32523</td>
                                             <td>9/15/2014</td>
                                         </tr>
                                         <tr>
                                             <td><a href="">Spin Car Interactive</a></td>
-                                            <td>32523</td>
                                             <td>4/21/2015</td>
                                         </tr>
                                     </tbody>
@@ -344,166 +325,224 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div class="navbar-sidebar-wrapper navbar-sidebar-header" offcanvas-set-height="oncanvas-nav">
+                        <div class="container-fluid">
+                            <div class="navbar-sidebar-item">
+                                <br>
+                                <h3 class="navbar-sidebar-title">Overview</h3>
+                                <table class="table table-borderless table-rounded table-condensed margin-x">
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Associated Account:</strong></td>
+                                            <td>AMSI <i class="fa fa-angle-right"></i> Chrylser Dodge Jeep Ram of Chatanooga</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Agency/Partner:</strong></td>
+                                            <td>Force Marketing</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Website ID:</strong></td>
+                                            <td>64541</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Website Url:</strong></td>
+                                            <td>http://www.scottclarktoyota.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Support:</strong></td>
+                                            <td>Team Green</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="navbar-sidebar-item">
+                                <h3 class="navbar-sidebar-title">Products</h3>
+                                <table class="table table-borderless table-rounded table-condensed table-flush">
+                                    <thead>
+                                        <tr>
+                                            <th>Active</th>
+                                            <th>Type</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="">Chameleon Elite</a></td>
+                                            <td>Website</td>
+                                            <td>9/15/2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">Spin Car Interactive</a></td>
+                                            <td>Add-On(Video)</td>
+                                            <td>4/21/2015</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <th>Cancelled</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="">Pre-Launch Page Migration</a></td>
+                                            <td>Add-On</td>
+                                            <td>4/3/2015</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">Homepage Banner Design</a></td>
+                                            <td>Add-On</td>
+                                            <td>4/3/2015</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">Elite SEO</a></td>
+                                            <td>Add-On(SEO)</td>
+                                            <td>7/3/2015</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </nav>
 
-            <div id="offcanvas-body" class="offcanvas-body">
+            <!--<nav id="offcanvas-nav-nested" class="hidden-sm hidden-xs offcanvas-nav offcanvas-nav-nested navbar navbar-inverse navbar-stacked">-->
+                <!--<div id="navbar-sidebar-nested" class="navbar-sidebar-collapse collapse width">-->
+                    <!--<div class="navbar-sidebar-wrapper navbar-sidebar-header" offcanvas-set-height="oncanvas-nav">-->
+                        <!--<div class="container-fluid">-->
+                            <!--<div class="navbar-sidebar-item">-->
+                                <!--<br>-->
+                                <!--<h3 class="navbar-sidebar-title">Overview</h3>-->
+                                <!--<table class="table table-borderless table-rounded table-condensed margin-x">-->
+                                    <!--<tbody>-->
+                                        <!--<tr>-->
+                                            <!--<td><strong>Associated Account:</strong></td>-->
+                                            <!--<td>AMSI <i class="fa fa-angle-right"></i> Chrylser Dodge Jeep Ram of Chatanooga</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td><strong>Agency/Partner:</strong></td>-->
+                                            <!--<td>Force Marketing</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td><strong>Website ID:</strong></td>-->
+                                            <!--<td>64541</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td><strong>Website Url:</strong></td>-->
+                                            <!--<td>http://www.scottclarktoyota.com</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td><strong>Support:</strong></td>-->
+                                            <!--<td>Team Green</td>-->
+                                        <!--</tr>-->
+                                    <!--</tbody>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                            <!--<div class="navbar-sidebar-item">-->
+                                <!--<h3 class="navbar-sidebar-title">Products</h3>-->
+                                <!--<table class="table table-borderless table-rounded table-condensed table-flush">-->
+                                    <!--<thead>-->
+                                        <!--<tr>-->
+                                            <!--<th>Active</th>-->
+                                            <!--<th>Type</th>-->
+                                            <!--<th>Date</th>-->
+                                        <!--</tr>-->
+                                    <!--</thead>-->
+                                    <!--<tbody>-->
+                                        <!--<tr>-->
+                                            <!--<td><a href="">Chameleon Elite</a></td>-->
+                                            <!--<td>Website</td>-->
+                                            <!--<td>9/15/2014</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td><a href="">Spin Car Interactive</a></td>-->
+                                            <!--<td>Add-On(Video)</td>-->
+                                            <!--<td>4/21/2015</td>-->
+                                        <!--</tr>-->
+                                    <!--</tbody>-->
+                                    <!--<thead>-->
+                                        <!--<tr>-->
+                                            <!--<th>Cancelled</th>-->
+                                            <!--<th></th>-->
+                                            <!--<th></th>-->
+                                        <!--</tr>-->
+                                    <!--</thead>-->
+                                    <!--<tbody>-->
+                                        <!--<tr>-->
+                                            <!--<td><a href="">Pre-Launch Page Migration</a></td>-->
+                                            <!--<td>Add-On</td>-->
+                                            <!--<td>4/3/2015</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td><a href="">Homepage Banner Design</a></td>-->
+                                            <!--<td>Add-On</td>-->
+                                            <!--<td>4/3/2015</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td><a href="">Elite SEO</a></td>-->
+                                            <!--<td>Add-On(SEO)</td>-->
+                                            <!--<td>7/3/2015</td>-->
+                                        <!--</tr>-->
+                                    <!--</tbody>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</nav>-->
 
+            <div id="offcanvas-body" class="offcanvas-body">
                 <div id="offcanvas-backdrop" class="offcanvas-backdrop fade"></div>
 
-                <nav id="offcanvas-nav-nested" class="hidden-sm hidden-xs offcanvas-nav offcanvas-nav-nested navbar navbar-inverse navbar-stacked">
-                    <div id="navbar-sidebar-nested" class="navbar-sidebar-collapse collapse width">
-                        <div class="navbar-sidebar-wrapper navbar-sidebar-header" offcanvas-set-height="oncanvas-nav">
-                            <div class="container-fluid">
-                                <div class="navbar-sidebar-item">
-                                    <br>
-                                    <h3 class="navbar-sidebar-title">Overview</h3>
-                                    <table class="table table-borderless table-rounded table-condensed margin-x">
-                                        <tbody>
-                                            <tr>
-                                                <td><strong>Associated Account:</strong></td>
-                                                <td>AMSI <i class="fa fa-angle-right"></i> Chrylser Dodge Jeep Ram of Chatanooga</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Agency/Partner:</strong></td>
-                                                <td>Force Marketing</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Website ID:</strong></td>
-                                                <td>64541</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Website Url:</strong></td>
-                                                <td>http://www.scottclarktoyota.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Support:</strong></td>
-                                                <td><i class="fa fa-circle fa-fw xs text-success"></i> Team Green</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="navbar-sidebar-item">
-                                    <h3 class="navbar-sidebar-title">Products</h3>
-                                    <table class="table table-borderless table-rounded table-condensed table-flush">
-                                        <thead>
-                                            <tr>
-                                                <th>Active</th>
-                                                <th>ID:</th>
-                                                <th>Type</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="">Chameleon Elite</a></td>
-                                                <td>3245</td>
-                                                <td>Website</td>
-                                                <td>9/15/2014</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Spin Car Interactive</a></td>
-                                                <td>2945</td>
-                                                <td>Add-On(Video)</td>
-                                                <td>4/21/2015</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="text-muted">
-                                        <a class="btn btn-link btn-xs btn-flush" href="#cancelled-products-table" data-toggle="collapse">
-                                            <strong>Cancelled</strong>
-                                            <i class="fa fa-angle-down"></i>
-                                        </a>
-                                        <div id="cancelled-products-table" class="collapse in" style="margin-top: -2em">
-                                            <table class="table table-borderless table-rounded table-condensed table-flush margin-x">
-                                                <thead>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th>ID:</th>
-                                                        <th>Type</th>
-                                                        <th>Date</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><a href="">Pre-Launch Page Migration</a></td>
-                                                        <td>3241</td>
-                                                        <td>Add-On</td>
-                                                        <td>4/3/2015</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="">Homepage Banner Design</a></td>
-                                                        <td>3412</td>
-                                                        <td>Add-On</td>
-                                                        <td>4/3/2015</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="">Elite SEO</a></td>
-                                                        <td>8312</td>
-                                                        <td>Add-On(SEO)</td>
-                                                        <td>7/3/2015</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                <div id="offcanvas-inner" class="offcanvas-inner" offcanvas-set-height="oncanvas-nav">
 
+                    <div class="hero">
+                        <div class="container">
+                            <h2>Shell 00</h2>
+                            <h4>Its almost official - with swipe</h4>
+                            <hr>
+                            <div class="media">
+                                <div class="media-left">
+                                    <p style="width: 5em">
+                                        <small> Elit id pariatur tempora ipsa officia nostrum.</small>
+                                    </p>
+                                </div>
+                                <div class="media-body">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4">
+                                            <p>Ipsum molestias accusamus nulla illo ex deleniti error tempora sunt voluptas consectetur aliquid debitis? Mollitia veritatis exercitationem a iure omnis doloremque?</p>
+                                            <p>Nihil rerum omnis quas maiores maxime ipsum accusamus. Vero explicabo rem quas dignissimos maxime! Blanditiis nihil eius ullam commodi suscipit!</p>
+                                            <p>Saepe inventore at exercitationem veniam vel. Dolorum autem.</p>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <p>Elit soluta reprehenderit repellendus nulla ducimus provident ipsa veritatis!</p>
+                                            <p>Reprehenderit ex omnis distinctio nostrum veniam consequuntur distinctio adipisci quos hic officiis omnis exercitationem. Doloremque a neque saepe magni labore error necessitatibus! Et alias praesentium eum odio tempora soluta. Id ut accusamus aliquam corrupti debitis quisquam. Eum mollitia velit libero qui.</p>
+                                        </div>
                                     </div>
+                                    <p>
+                                        <a class="btn btn-cta" data-toggle="modal" href="#myModal">Default Modal</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </nav>
-
-                <div id="offcanvas-nested-backdrop" class="offcanvas-nested-backdrop fade invisible"></div>
-
-                <div id="offcanvas-inner" class="offcanvas-inner" offcanvas-set-height="oncanvas-nav">
-
-                    <div id="offcanvas-inner-wrapper" class="offcanvas-inner-wrapper force-auto-width" offcanvas-set-width="sidebar">
-                        <div class="hero">
-                            <div class="container">
-                                <h2>Shell 00</h2>
-                                <h4>Its almost official - with swipe</h4>
-                                <hr>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <p style="width: 5em">
-                                            <small> Elit id pariatur tempora ipsa officia nostrum.</small>
-                                        </p>
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-4">
-                                                <p>Ipsum molestias accusamus nulla illo ex deleniti error tempora sunt voluptas consectetur aliquid debitis? Mollitia veritatis exercitationem a iure omnis doloremque?</p>
-                                                <p>Nihil rerum omnis quas maiores maxime ipsum accusamus. Vero explicabo rem quas dignissimos maxime! Blanditiis nihil eius ullam commodi suscipit!</p>
-                                                <p>Saepe inventore at exercitationem veniam vel. Dolorum autem.</p>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4">
-                                                <p>Elit soluta reprehenderit repellendus nulla ducimus provident ipsa veritatis!</p>
-                                                <p>Reprehenderit ex omnis distinctio nostrum veniam consequuntur distinctio adipisci quos hic officiis omnis exercitationem. Doloremque a neque saepe magni labore error necessitatibus! Et alias praesentium eum odio tempora soluta. Id ut accusamus aliquam corrupti debitis quisquam. Eum mollitia velit libero qui.</p>
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <a class="btn btn-cta" data-toggle="modal" href="#myModal">Default Modal</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-offset-3 col-sm-6">
-                                    <h2>Lorem incidunt.</h2>
-                                    <p>Ipsum molestias accusamus nulla illo ex deleniti error tempora sunt voluptas consectetur aliquid debitis? Mollitia veritatis exercitationem a iure omnis doloremque?</p>
-                                    <p>Nihil rerum omnis quas maiores maxime ipsum accusamus. Vero explicabo rem quas dignissimos maxime! Blanditiis nihil eius ullam commodi suscipit!</p>
-                                    <p>Saepe inventore at exercitationem veniam vel. Dolorum autem.</p>
-                                    <p>Elit soluta reprehenderit repellendus nulla ducimus provident ipsa veritatis!</p>
-                                    <p>Reprehenderit ex omnis distinctio nostrum veniam consequuntur distinctio adipisci quos hic officiis omnis exercitationem. Doloremque a neque saepe magni labore error necessitatibus! Et alias praesentium eum odio tempora soluta. Id ut accusamus aliquam corrupti debitis quisquam. Eum mollitia velit libero qui.</p>
-                                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-offset-3 col-sm-6">
+                                <h2>Lorem incidunt.</h2>
+                                <p>Ipsum molestias accusamus nulla illo ex deleniti error tempora sunt voluptas consectetur aliquid debitis? Mollitia veritatis exercitationem a iure omnis doloremque?</p>
+                                <p>Nihil rerum omnis quas maiores maxime ipsum accusamus. Vero explicabo rem quas dignissimos maxime! Blanditiis nihil eius ullam commodi suscipit!</p>
+                                <p>Saepe inventore at exercitationem veniam vel. Dolorum autem.</p>
+                                <p>Elit soluta reprehenderit repellendus nulla ducimus provident ipsa veritatis!</p>
+                                <p>Reprehenderit ex omnis distinctio nostrum veniam consequuntur distinctio adipisci quos hic officiis omnis exercitationem. Doloremque a neque saepe magni labore error necessitatibus! Et alias praesentium eum odio tempora soluta. Id ut accusamus aliquam corrupti debitis quisquam. Eum mollitia velit libero qui.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>

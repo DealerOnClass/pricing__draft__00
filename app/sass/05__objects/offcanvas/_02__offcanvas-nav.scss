@@ -23,8 +23,7 @@
 }
 
 .offcanvas-nav-nested.navbar {
-    position: absolute;
-    left: $navbar-sidebar__width;
+    //  position: absolute;
 
     .navbar-sidebar-wrapper {
         @media ( min-width: 500px ) {

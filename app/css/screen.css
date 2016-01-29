@@ -3701,6 +3701,11 @@ label.btn + input[type="file"] {
   padding: 0.22506em 0.67517em;
 }
 
+.btn-flush {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .btn-default {
   color: inherit;
   border-color: rgba(0, 0, 0, 0.15);
@@ -8564,10 +8569,6 @@ button.list-group-item {
   }
 }
 
-.offcanvas-nav-nested.navbar {
-  position: absolute;
-  left: 18em;
-}
 @media (min-width: 500px) {
   .offcanvas-nav-nested.navbar .navbar-sidebar-wrapper {
     width: calc(992px - 18em) !important;
@@ -8589,8 +8590,13 @@ button.list-group-item {
 .offcanvas-inner {
   position: relative;
   overflow-y: auto;
+  overflow-x: hidden;
   box-sizing: border-box;
   background-color: white;
+}
+
+.offcanvas-inner-wrapper.force-auto-width {
+  width: auto !important;
 }
 
 .offcanvas-nested {
@@ -8608,6 +8614,7 @@ button.list-group-item {
   padding: 0;
 }
 
+.offcanvas-nested-backdrop,
 .offcanvas-backdrop {
   position: fixed;
   z-index: 1050;
@@ -11948,10 +11955,6 @@ h5 [class*='sortable-'] {
 .table > thead:first-child > tr:first-child > th,
 .table > thead:first-child > tr:first-child > td {
   border-top: 0;
-}
-.table > tbody + thead > tr > th,
-.table > tbody + thead > tr > td {
-  padding-top: 2.4em;
 }
 
 .table-condensed > thead > tr > th,
