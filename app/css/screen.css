@@ -6979,8 +6979,8 @@ h5 .btn-group {
 }
 
 .hero {
-  padding-top: 4.2em 0.9em;
-  padding-bottom: 4.2em 0.9em;
+  padding-top: 4.2em 0;
+  padding-bottom: 4.2em 0;
 }
 
 .hero-lg {
@@ -7450,6 +7450,10 @@ button.list-group-item {
 .list-group-flush .list-group-item {
   padding-right: 0;
   padding-left: 0;
+}
+
+.list-group-raw .list-group-item {
+  border-color: transparent;
 }
 
 .list-group-default {
