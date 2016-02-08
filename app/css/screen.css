@@ -5611,6 +5611,10 @@ h5 .btn-group {
   background-color: #cccccc;
 }
 
+.form-control-flat {
+  border-color: transparent;
+}
+
 .control-label,
 .form-control-static {
   margin-bottom: 0;
@@ -6975,23 +6979,28 @@ h5 .btn-group {
 }
 
 .hero {
-  padding: 4.2em 0.9em;
+  padding-top: 4.2em 0.9em;
+  padding-bottom: 4.2em 0.9em;
 }
 
 .hero-lg {
-  padding: 8.3979em 1.79955em;
+  padding-top: 8.3979em 1.79955em;
+  padding-bottom: 8.3979em 1.79955em;
 }
 
 .hero-md {
-  padding: 5.5986em 1.1997em;
+  padding-top: 5.5986em 1.1997em;
+  padding-bottom: 5.5986em 1.1997em;
 }
 
 .hero-sm {
-  padding: 3.15079em 0.67517em;
+  padding-top: 3.15079em 0.67517em;
+  padding-bottom: 3.15079em 0.67517em;
 }
 
 .hero-xs {
-  padding: 1.57539em 0.67517em;
+  padding-top: 1.57539em 0.67517em;
+  padding-bottom: 1.57539em 0.67517em;
 }
 
 .hero-default {
