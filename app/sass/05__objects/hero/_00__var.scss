@@ -13,10 +13,10 @@ $hero__neutral-palette:     true !default;
 $hero__state-palette:       true !default;
 //
 //  Base
-$hero__padding:             $hero__y $hero__x;
+$hero__padding:             $hero__y 0;
 //
 //  Variations
-$hero--lg__padding:         ( $hero__y * ( $base__font-ratio * 1.5 ) ) ( $hero__x * ( $base__font-ratio * 1.5 ) );
-$hero--md__padding:         ( $hero__y * $base__font-ratio ) ( $hero__x * $base__font-ratio );
-$hero--sm__padding:         ( $hero__y / $base__font-ratio ) ( $hero__x / $base__font-ratio );
-$hero--xs__padding:         ( $hero__y / ( $base__font-ratio * 2 ) ) ( $hero__x / $base__font-ratio );
+$hero--lg__padding:         $hero__y * ( $base__font-ratio * 1.5 ) 0;
+$hero--md__padding:         $hero__y * $base__font-ratio 0;
+$hero--sm__padding:         $hero__y / $base__font-ratio 0;
+$hero--xs__padding:         $hero__y / ( $base__font-ratio * 2 ) 0;

@@ -6984,23 +6984,19 @@ h5 .btn-group {
 }
 
 .hero-lg {
-  padding-top: 8.3979em 1.79955em;
-  padding-bottom: 8.3979em 1.79955em;
+  padding: 8.3979em 0;
 }
 
 .hero-md {
-  padding-top: 5.5986em 1.1997em;
-  padding-bottom: 5.5986em 1.1997em;
+  padding: 5.5986em 0;
 }
 
 .hero-sm {
-  padding-top: 3.15079em 0.67517em;
-  padding-bottom: 3.15079em 0.67517em;
+  padding: 3.15079em 0;
 }
 
 .hero-xs {
-  padding-top: 1.57539em 0.67517em;
-  padding-bottom: 1.57539em 0.67517em;
+  padding: 1.57539em 0;
 }
 
 .hero-default {
